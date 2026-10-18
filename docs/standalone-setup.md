@@ -171,6 +171,7 @@ commands are rejected.
 
 ```bash
 bash scripts/check.sh
+backend/.venv/bin/python -m playwright install chromium
 backend/.venv/bin/python scripts/browser_installer.py
 ```
 

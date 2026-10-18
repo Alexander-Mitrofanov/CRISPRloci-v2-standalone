@@ -205,6 +205,31 @@ def test_resume_space_check_is_tied_to_choices_and_exact_source_lock(tmp_path, m
     assert not plan.system(tmp_path, value)["resuming"]
 
 
+def test_interrupted_native_environment_repairs_missing_dependencies(tmp_path, monkeypatch):
+    import provision_tools
+
+    (tmp_path / "bin").mkdir()
+    (tmp_path / "bin/python").write_text("partial Conda transaction")
+    commands = []
+    monkeypatch.setattr(provision_tools, "run", lambda command, **kwargs: commands.append(command))
+    provision_tools.prepare_environment("micromamba", "RNAalifold-v2", tmp_path, {})
+    assert commands[0][:2] == ["micromamba", "install"]
+    assert "mafft=7.526" in commands[0]
+    assert "--prefix" in commands[0]
+
+
+def test_interrupted_model_download_discards_unverified_partial(tmp_path, monkeypatch):
+    from runtime import context_tools
+
+    content = b"pinned reference"
+    destination = tmp_path / "models.tar.gz"
+    (tmp_path / "models.tar.gz.partial").write_bytes(b"interrupted")
+    monkeypatch.setattr(context_tools, "urlopen", lambda *a, **k: Response(content))
+    context_tools.download("https://example.org/models", destination, limit=1024,
+                           sha256=hashlib.sha256(content).hexdigest())
+    assert destination.read_bytes() == content
+
+
 @pytest.mark.parametrize("invalid", ["modes", "catalog", None])
 def test_candidate_api_checks_all_modes_and_catalogue_before_activation(tmp_path, monkeypatch, invalid):
     from installer import verify

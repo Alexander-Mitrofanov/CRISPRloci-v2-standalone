@@ -25,6 +25,7 @@ def spacer_index(arguments):
             if position == 1 or position % 1000 == 0 or position == total:
                 emit("Building the spacer database", position, total, "records")
             yield record
+        emit("Finalizing and verifying the spacer database")
 
     database._records = records
     return main(["database-index", *arguments])

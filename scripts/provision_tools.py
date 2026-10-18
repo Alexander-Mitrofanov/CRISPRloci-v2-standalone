@@ -61,6 +61,29 @@ CONTEXT_REQUIREMENTS = {
     "DefenseFinder-v2": "requirements-context.lock",
     "RNAalifold-v2": "requirements.lock",
 }
+VENV_TOOLS = {
+    "CasAndra", "CRISPRleader-v2", "CRISPRrepeat", "CRISPRspacer",
+    "CRISPRmap-v2", "RepeatTyper", "SpacePHARER", "CCTK", "clinker-v2",
+}
+
+
+def prepare_environment(conda, name, prefix, env):
+    """Complete an unreceipted environment, including an interrupted transaction.
+
+    Completed environments are verified and skipped by build() before this call.
+    A Python executable alone cannot prove that a Conda transaction finished.
+    """
+    if name in VENV_TOOLS:
+        if not (prefix / "bin/python").exists():
+            run([sys.executable, "-m", "venv", prefix], env=env)
+        return
+    dependencies = list(CONTEXT_CONDA.get(name, ["python=3.12", "pip"]))
+    if name not in CONTEXT_CONDA:
+        dependencies += (["infernal=1.1.4", "fasta3=36.3.8", "blast>=2.12"]
+                         if name == "CRISPRtracrRNA-v3" else ["mafft=7.526", "graphviz"])
+    action = "install" if (prefix / "bin/python").exists() else "create"
+    run([conda, action, "--yes", "--prefix", prefix, "--override-channels",
+         "-c", "conda-forge", "-c", "bioconda", *dependencies], env=env)
 
 
 def context_command(name, package, prefix, command, env):
@@ -293,47 +316,7 @@ def build(lock_path, resume=False):
             command = [executable]
         else:
             prefix = envs / name
-            if not (prefix / "bin/python").exists():
-                if name in {
-                    "CasAndra",
-                    "CRISPRleader-v2",
-                    "CRISPRrepeat",
-                    "CRISPRspacer",
-                    "CRISPRmap-v2",
-                    "RepeatTyper",
-                    "SpacePHARER",
-                    "CCTK",
-                    "clinker-v2",
-                }:
-                    run([sys.executable, "-m", "venv", prefix], env=env)
-                else:
-                    dependencies = CONTEXT_CONDA.get(name, ["python=3.12", "pip"])
-                    if name in CONTEXT_CONDA:
-                        pass
-                    elif name == "CRISPRtracrRNA-v3":
-                        dependencies += [
-                            "infernal=1.1.4",
-                            "fasta3=36.3.8",
-                            "blast>=2.12",
-                        ]
-                    else:
-                        dependencies += ["mafft=7.526", "graphviz"]
-                    run(
-                        [
-                            conda,
-                            "create",
-                            "--yes",
-                            "--prefix",
-                            prefix,
-                            "--override-channels",
-                            "-c",
-                            "conda-forge",
-                            "-c",
-                            "bioconda",
-                            *dependencies,
-                        ],
-                        env=env,
-                    )
+            prepare_environment(conda, name, prefix, env)
             python = prefix / "bin/python"
             install = [python, "-m", "pip", "install"]
             constraints = package / (
@@ -367,23 +350,22 @@ def build(lock_path, resume=False):
             # Keep its native executable in a separate prefix; the v3 Python
             # orchestration package remains on supported Python 3.12.
             native_prefix = envs / "IntaRNA"
-            if not (native_prefix / "bin/IntaRNA").exists():
-                run(
-                    [
-                        conda,
-                        "create",
-                        "--yes",
-                        "--prefix",
-                        native_prefix,
-                        "--override-channels",
-                        "-c",
-                        "conda-forge",
-                        "-c",
-                        "bioconda",
-                        "intarna=3.2.0",
-                    ],
-                    env=env,
-                )
+            run(
+                [
+                    conda,
+                    "install" if (native_prefix / "bin/IntaRNA").exists() else "create",
+                    "--yes",
+                    "--prefix",
+                    native_prefix,
+                    "--override-channels",
+                    "-c",
+                    "conda-forge",
+                    "-c",
+                    "bioconda",
+                    "intarna=3.2.0",
+                ],
+                env=env,
+            )
             extra_bins.append(native_prefix / "bin")
             (target / "IntaRNA.conda-explicit.txt").write_text(
                 subprocess.check_output(

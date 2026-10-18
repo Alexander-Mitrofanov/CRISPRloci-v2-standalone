@@ -27,6 +27,11 @@ def download(url, destination, *, limit, sha256=None):
     """Bounded download to a new operator staging file; never called by a job."""
     destination = Path(destination)
     temporary = destination.with_name(destination.name + ".partial")
+    if temporary.is_symlink():
+        raise ValueError("Reference download staging file must not be a symlink")
+    # A terminated installer may not execute its finally block. Only complete,
+    # checksum-verified downloads are reused; interrupted bytes start afresh.
+    temporary.unlink(missing_ok=True)
     try:
         with urlopen(url, timeout=120) as response, temporary.open("xb") as stream:
             total = 0
