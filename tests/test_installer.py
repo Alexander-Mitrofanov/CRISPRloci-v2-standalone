@@ -214,7 +214,11 @@ def test_candidate_api_checks_all_modes_and_catalogue_before_activation(tmp_path
     (root / "frontend/src/contracts/module-ports-v1.json").write_text('{"detection":"target"}')
     release = root / "candidate"
     process = SimpleNamespace(poll=lambda: None, send_signal=lambda *_: None, wait=lambda **_: 0)
-    monkeypatch.setattr(verify.subprocess, "Popen", lambda *a, **k: process)
+    def launch(*args, **kwargs):
+        assert (root / ".runtime/active.lock").is_file()
+        return process
+
+    monkeypatch.setattr(verify.subprocess, "Popen", launch)
 
     def response(url, **kwargs):
         if url.endswith("health"):

@@ -24,6 +24,12 @@ def verify_local(root, work, release, value):
     with socket.socket() as socket_:
         socket_.bind(("127.0.0.1", 0))
         port = socket_.getsockname()[1]
+    active_lock = root / ".runtime/active.lock"
+    active_lock.parent.mkdir(exist_ok=True)
+    if active_lock.is_symlink():
+        raise ValueError("The runtime service lock must not be a symlink")
+    with active_lock.open("a"):
+        pass
     data = work / ("local-verification-" + str(time.time_ns()))
     process = subprocess.Popen([sys.executable, str(root / "scripts/serve.py"), "--release", str(release),
                                 "--data-root", str(data), "--port", str(port)], cwd=root, env=env)
