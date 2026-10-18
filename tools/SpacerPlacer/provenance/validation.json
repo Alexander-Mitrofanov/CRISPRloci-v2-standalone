@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-27",
+  "version": "1.0.1.post2",
+  "platform": "Linux x86-64",
+  "python": "3.12.13",
+  "regression_tests": {
+    "passed": 88,
+    "failed": 0
+  },
+  "source_preservation": "Runtime, scientific data, examples, fixtures and tests match original SHA-256 hashes",
+  "wheel": {
+    "filename": "spacerplacer-1.0.1.post2-py3-none-linux_x86_64.whl",
+    "sha256": "e8d6d6c1beed02896d6562627fada7dad64e90cf8bfe531bc99eaf725b721021",
+    "linux_native_helpers_executable": true
+  },
+  "smoke": {
+    "input": "example_datasets/tomida_datasets/CRISPR1/G1.fa",
+    "source_cli_exit": 0,
+    "installed_wheel_cli_exit": 0,
+    "plotting": false
+  },
+  "scope": "Source extraction, regression suite, wheel build/install, and bundled-example verification; full web-server integration is a later step."
+}

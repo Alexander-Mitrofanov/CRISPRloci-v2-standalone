@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 560 320"
+  role="img"
+  aria-labelledby="title description"
+>
+  <title id="title">Evolutionary comparison of CRISPR spacer-array order</title>
+  <desc id="description">
+    The same related spacer arrays are shown in input and reversed order, reconstructed on two
+    small history trees, and compared by evolutionary likelihood without selecting an outcome.
+  </desc>
+  <metadata>
+    Adapted from Fehrenbach et al. (2025), Figure 1,
+    https://doi.org/10.1371/journal.pcbi.1013706. Licensed under CC BY 4.0,
+    https://creativecommons.org/licenses/by/4.0/.
+  </metadata>
+
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#071024" flood-opacity="0.2" />
+    </filter>
+    <marker
+      id="arrow-burgundy"
+      viewBox="0 0 10 10"
+      refX="8"
+      refY="5"
+      markerWidth="6"
+      markerHeight="6"
+      orient="auto-start-reverse"
+    >
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ad1f3b" />
+    </marker>
+    <style>
+      .label {
+        font: 700 11px ui-sans-serif, system-ui, sans-serif;
+        letter-spacing: 1.15px;
+      }
+      .micro {
+        font: 650 9.5px ui-sans-serif, system-ui, sans-serif;
+      }
+      .spacer-id {
+        fill: #17213a;
+        font: 750 9.2px ui-monospace, SFMono-Regular, Consolas, monospace;
+        text-anchor: middle;
+      }
+      .tree {
+        fill: none;
+        stroke: #46516a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+      }
+      .history-card {
+        fill: #fffdf8;
+        stroke: #d8cfc1;
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+
+  <rect x="8" y="8" width="544" height="304" rx="20" fill="#f3eee4" filter="url(#shadow)" />
+  <rect x="8.5" y="8.5" width="543" height="303" rx="19.5" fill="none" stroke="#ffffff" />
+
+  <text x="28" y="31" class="label" fill="#ad1f3b">EVOLUTIONARY ORDER COMPARISON</text>
+  <text x="28" y="50" class="micro" fill="#6b6270">SAME RELATED ARRAYS · TWO ORDER HYPOTHESES</text>
+
+  <g aria-label="Input-order spacer alignment">
+    <text x="29" y="71" class="label" fill="#17213a">INPUT ORDER</text>
+    <rect x="28" y="79" width="206" height="69" rx="9" fill="#fffdf8" stroke="#ad1f3b" />
+    <rect x="38" y="89" width="186" height="14" rx="4" fill="#f1d4a9" />
+    <rect x="38" y="106" width="186" height="14" rx="4" fill="#d8d0df" />
+    <rect x="38" y="123" width="186" height="14" rx="4" fill="#c9dfc0" />
+
+    <g transform="translate(47 91)">
+      <rect width="17" height="10" rx="2" fill="#5c9bd3" /><text x="8.5" y="7.7" class="spacer-id">6</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#e77878" /><text x="31.5" y="7.7" class="spacer-id">5</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#62b65d" /><text x="54.5" y="7.7" class="spacer-id">4</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#b6a3da" /><text x="77.5" y="7.7" class="spacer-id">3</text>
+      <rect x="92" width="17" height="10" rx="2" fill="#e6a34a" /><text x="100.5" y="7.7" class="spacer-id">2</text>
+      <rect x="115" width="17" height="10" rx="2" fill="#b9cf68" /><text x="123.5" y="7.7" class="spacer-id">1</text>
+    </g>
+    <g transform="translate(70 108)">
+      <rect width="17" height="10" rx="2" fill="#e77878" /><text x="8.5" y="7.7" class="spacer-id">5</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#62b65d" /><text x="31.5" y="7.7" class="spacer-id">4</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#b6a3da" /><text x="54.5" y="7.7" class="spacer-id">3</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#e6a34a" /><text x="77.5" y="7.7" class="spacer-id">2</text>
+      <rect x="92" width="17" height="10" rx="2" fill="#b9cf68" /><text x="100.5" y="7.7" class="spacer-id">1</text>
+    </g>
+    <g transform="translate(93 125)">
+      <rect width="17" height="10" rx="2" fill="#62b65d" /><text x="8.5" y="7.7" class="spacer-id">4</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#b6a3da" /><text x="31.5" y="7.7" class="spacer-id">3</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#e6a34a" /><text x="54.5" y="7.7" class="spacer-id">2</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#b9cf68" /><text x="77.5" y="7.7" class="spacer-id">1</text>
+    </g>
+  </g>
+
+  <g aria-label="Reverse the spacer order">
+    <path
+      d="M252 98 C262 77 287 72 304 87"
+      fill="none"
+      stroke="#ad1f3b"
+      stroke-width="3"
+      marker-end="url(#arrow-burgundy)"
+    />
+    <path
+      d="M308 128 C298 148 273 153 256 138"
+      fill="none"
+      stroke="#ad1f3b"
+      stroke-width="3"
+      marker-end="url(#arrow-burgundy)"
+    />
+    <text x="280" y="116" class="micro" fill="#6b6270" text-anchor="middle">REVERSE</text>
+  </g>
+
+  <g aria-label="Reversed-order spacer alignment">
+    <text x="326" y="71" class="label" fill="#17213a">REVERSED ORDER</text>
+    <rect x="326" y="79" width="206" height="69" rx="9" fill="#fffdf8" stroke="#ad1f3b" />
+    <rect x="336" y="89" width="186" height="14" rx="4" fill="#f1d4a9" />
+    <rect x="336" y="106" width="186" height="14" rx="4" fill="#d8d0df" />
+    <rect x="336" y="123" width="186" height="14" rx="4" fill="#c9dfc0" />
+
+    <g transform="translate(345 91)">
+      <rect width="17" height="10" rx="2" fill="#b9cf68" /><text x="8.5" y="7.7" class="spacer-id">1</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#e6a34a" /><text x="31.5" y="7.7" class="spacer-id">2</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#b6a3da" /><text x="54.5" y="7.7" class="spacer-id">3</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#62b65d" /><text x="77.5" y="7.7" class="spacer-id">4</text>
+      <rect x="92" width="17" height="10" rx="2" fill="#e77878" /><text x="100.5" y="7.7" class="spacer-id">5</text>
+      <rect x="115" width="17" height="10" rx="2" fill="#5c9bd3" /><text x="123.5" y="7.7" class="spacer-id">6</text>
+    </g>
+    <g transform="translate(368 108)">
+      <rect width="17" height="10" rx="2" fill="#b9cf68" /><text x="8.5" y="7.7" class="spacer-id">1</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#e6a34a" /><text x="31.5" y="7.7" class="spacer-id">2</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#b6a3da" /><text x="54.5" y="7.7" class="spacer-id">3</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#62b65d" /><text x="77.5" y="7.7" class="spacer-id">4</text>
+      <rect x="92" width="17" height="10" rx="2" fill="#e77878" /><text x="100.5" y="7.7" class="spacer-id">5</text>
+    </g>
+    <g transform="translate(391 125)">
+      <rect width="17" height="10" rx="2" fill="#b9cf68" /><text x="8.5" y="7.7" class="spacer-id">1</text>
+      <rect x="23" width="17" height="10" rx="2" fill="#e6a34a" /><text x="31.5" y="7.7" class="spacer-id">2</text>
+      <rect x="46" width="17" height="10" rx="2" fill="#b6a3da" /><text x="54.5" y="7.7" class="spacer-id">3</text>
+      <rect x="69" width="17" height="10" rx="2" fill="#62b65d" /><text x="77.5" y="7.7" class="spacer-id">4</text>
+    </g>
+  </g>
+
+  <path d="M131 149 V164" stroke="#ad1f3b" stroke-width="2" marker-end="url(#arrow-burgundy)" />
+  <path d="M429 149 V164" stroke="#ad1f3b" stroke-width="2" marker-end="url(#arrow-burgundy)" />
+
+  <g aria-label="Input-order evolutionary reconstruction">
+    <rect x="28" y="169" width="206" height="65" rx="9" class="history-card" />
+    <text x="39" y="185" class="micro" fill="#6b6270">RECONSTRUCT HISTORY</text>
+    <path d="M48 219 H86 V199 H118 M86 209 H139 V191 H174 M139 218 H191" class="tree" />
+    <circle cx="48" cy="219" r="3" fill="#46516a" />
+    <circle cx="118" cy="199" r="3" fill="#5c9bd3" />
+    <circle cx="174" cy="191" r="3" fill="#5c9bd3" />
+    <circle cx="191" cy="218" r="3" fill="#5c9bd3" />
+    <path d="M101 202 l6 -10 l6 10 z" fill="#62b65d" stroke="#276f32" />
+    <text x="107" y="213" class="micro" fill="#276f32" text-anchor="middle">+</text>
+    <path d="M149 199 l8 8 m0 -8 l-8 8" stroke="#c74351" stroke-width="2.4" stroke-linecap="round" />
+  </g>
+
+  <g aria-label="Reversed-order evolutionary reconstruction">
+    <rect x="326" y="169" width="206" height="65" rx="9" class="history-card" />
+    <text x="337" y="185" class="micro" fill="#6b6270">RECONSTRUCT HISTORY</text>
+    <path d="M346 219 H380 V193 H418 M380 209 H442 V201 H474 M442 221 H498" class="tree" />
+    <circle cx="346" cy="219" r="3" fill="#46516a" />
+    <circle cx="418" cy="193" r="3" fill="#5c9bd3" />
+    <circle cx="474" cy="201" r="3" fill="#5c9bd3" />
+    <circle cx="498" cy="221" r="3" fill="#5c9bd3" />
+    <path d="M401 198 l6 -10 l6 10 z" fill="#62b65d" stroke="#276f32" />
+    <text x="407" y="209" class="micro" fill="#276f32" text-anchor="middle">+</text>
+    <path d="M452 205 l8 8 m0 -8 l-8 8" stroke="#c74351" stroke-width="2.4" stroke-linecap="round" />
+  </g>
+
+  <path d="M131 235 V247 H250" fill="none" stroke="#ad1f3b" stroke-width="2" />
+  <path d="M429 235 V247 H310" fill="none" stroke="#ad1f3b" stroke-width="2" />
+
+  <g aria-label="Neutral likelihood comparison and possible outcomes">
+    <rect x="184" y="242" width="192" height="36" rx="18" fill="#ad1f3b" />
+    <text x="280" y="257" class="micro" fill="#ffffff" text-anchor="middle">
+      COMPARE EVOLUTIONARY LIKELIHOODS
+    </text>
+    <text x="280" y="270" class="micro" fill="#f3dbe1" text-anchor="middle">
+      L(input) ↔ L(reversed)
+    </text>
+
+    <rect x="71" y="288" width="118" height="18" rx="9" fill="#fffdf8" stroke="#6b6270" />
+    <rect x="221" y="288" width="118" height="18" rx="9" fill="#fffdf8" stroke="#6b6270" />
+    <rect x="371" y="288" width="118" height="18" rx="9" fill="#fffdf8" stroke="#6b6270" />
+    <text x="130" y="300" class="micro" fill="#46516a" text-anchor="middle">INPUT ORDER</text>
+    <text x="280" y="300" class="micro" fill="#46516a" text-anchor="middle">UNRESOLVED</text>
+    <text x="430" y="300" class="micro" fill="#46516a" text-anchor="middle">REVERSED ORDER</text>
+  </g>
+</svg>

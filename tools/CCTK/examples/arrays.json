@@ -1,0 +1,74 @@
+{
+  "schema": {
+    "name": "cctk.arrays",
+    "version": "1.0.0"
+  },
+  "arrays": [
+    {
+      "id": "a0",
+      "array_id": "array_1",
+      "source_id": "source0",
+      "strand": null,
+      "spacers": [
+        {
+          "id": "occ0",
+          "ordinal": 1,
+          "sequence": "ACGTTGCA",
+          "status": "observed"
+        },
+        {
+          "id": "occ1",
+          "ordinal": 2,
+          "sequence": "GATTACAA",
+          "status": "observed"
+        },
+        {
+          "id": "occ2",
+          "ordinal": 3,
+          "sequence": "GATTACAA",
+          "status": "observed"
+        },
+        {
+          "id": "gap",
+          "ordinal": 4,
+          "sequence": null,
+          "status": "deletion"
+        }
+      ]
+    },
+    {
+      "id": "a1",
+      "array_id": "array_1",
+      "source_id": "source1",
+      "strand": null,
+      "spacers": [
+        {
+          "id": "occ0",
+          "ordinal": 1,
+          "sequence": "GATTACAA",
+          "status": "observed"
+        },
+        {
+          "id": "occ1",
+          "ordinal": 2,
+          "sequence": "TTGGAACC",
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "array_id": "array_1",
+      "source_id": "source2",
+      "strand": null,
+      "spacers": [
+        {
+          "id": "occ0",
+          "ordinal": 1,
+          "sequence": "CCCCGGGG",
+          "status": "observed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "Sequences": [
+    {
+      "Id": "contig-1",
+      "Length": 1000,
+      "Crisprs": [
+        {
+          "Evidence_Level": 4,
+          "Name": "array-a",
+          "Start": 10,
+          "End": 200,
+          "Spacers": 3,
+          "DR_Consensus": "ACGTACGT",
+          "CRISPRDirection": "+",
+          "Regions": [
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "AAAA"},
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "AAAT"},
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "AATT"}
+          ]
+        },
+        {
+          "Evidence_Level": 4,
+          "Name": "array-b",
+          "Start": 300,
+          "End": 500,
+          "Spacers": 3,
+          "DR_Consensus": "ACGTACGT",
+          "CRISPRDirection": "+",
+          "Regions": [
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "AAAT"},
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "AATT"},
+            {"Type": "DR", "Sequence": "ACGTACGT"},
+            {"Type": "Spacer", "Sequence": "ATTT"}
+          ]
+        }
+      ]
+    }
+  ]
+}

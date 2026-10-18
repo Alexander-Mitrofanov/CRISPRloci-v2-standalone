@@ -1,0 +1,5 @@
+WARNING: The directory '/home/alex/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /tmp/tracrrna-quality-final/dist/CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl
+Installing collected packages: CRISPRtracrRNA
+Successfully installed CRISPRtracrRNA-3.0.0
+Wheel check passed: CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl, version 3.0.0, 27 verified resources, console and module entry points.

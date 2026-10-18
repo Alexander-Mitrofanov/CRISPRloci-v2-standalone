@@ -1,0 +1,122 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "viral_search",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "1-based-inclusive-subject-forward",
+    "retrieval_completeness": "heuristic",
+    "outcome": "matches",
+    "reference": {
+      "name": "synthetic",
+      "source_release": "test",
+      "content_sha256": "17cfd913e0a6ff2939a7af381edde776179dd144856d49c39d9f3d3023867df5",
+      "reference_sha256": "9f6cfe9c6bf32e4fcd40907668eee3c7763ba5f0741436e25a866bdb385f9916"
+    },
+    "policy": {
+      "profile": "full-query-ungapped-hsp",
+      "max_substitutions": 2,
+      "strands": "both",
+      "topology": "linear",
+      "array_overlap": "unknown",
+      "host_inference": "not_performed",
+      "pam": "not_evaluated"
+    },
+    "queries": [
+      {
+        "id": "q000000001",
+        "source_id": "spacer_1",
+        "length": 32,
+        "sha256": "f5ed32796e7e68f047ca1992f1a833ac7d47f1f3a6501feb31e46a28f74a00d6",
+        "outcome": "matches",
+        "skip_reasons": [],
+        "subject_limit_saturated": false,
+        "sequence": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT"
+      },
+      {
+        "id": "q000000002",
+        "source_id": "spacer_2",
+        "length": 32,
+        "sha256": "51b9a62157be892e8dd7cb9082d4840543cb66d8e8bebf5a11b2810280409463",
+        "outcome": "matches",
+        "skip_reasons": [],
+        "subject_limit_saturated": false,
+        "sequence": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG"
+      },
+      {
+        "id": "q000000003",
+        "source_id": "spacer_3",
+        "length": 32,
+        "sha256": "ab8a131dcbfd9d68271cb73be9fc1087ab6690a204d4297310a1ef6e83207111",
+        "outcome": "matches",
+        "skip_reasons": [],
+        "subject_limit_saturated": false,
+        "sequence": "GGACTCGAGATACTACCGGTATCGCTACTCAC"
+      }
+    ],
+    "subjects": [
+      {
+        "accession": "SYNTHETIC_1.1",
+        "title": "Generated test DNA; not a biological viral genome",
+        "length": 112,
+        "sha256": "4078ca4dd9fd6908bbe3887178b35b93eac14038bf2e2ede3e2eda9e971489d7",
+        "taxid": null
+      },
+      {
+        "accession": "SYNTHETIC_2.1",
+        "title": "Generated test DNA; not a biological viral genome",
+        "length": 112,
+        "sha256": "419031e371f972c0b5fe8126961a49e1b410c695ada1248c5951397830a6de1e",
+        "taxid": null
+      },
+      {
+        "accession": "SYNTHETIC_3.1",
+        "title": "Generated test DNA; not a biological viral genome",
+        "length": 112,
+        "sha256": "6245a7055bc83f0c4b8aa1bf914cf7ede7679e0a35bad49fa62498490e32af61",
+        "taxid": null
+      }
+    ],
+    "matches": [
+      {
+        "id": "h000000001",
+        "subject_accession": "SYNTHETIC_1.1",
+        "subject_start": 36,
+        "subject_end": 67,
+        "relative_strand": "+",
+        "substitutions": 0,
+        "evalue": 4.71e-16,
+        "bitscore": 63.9,
+        "subject_sequence_forward": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+        "query_id": "q000000001"
+      },
+      {
+        "id": "h000000002",
+        "subject_accession": "SYNTHETIC_2.1",
+        "subject_start": 36,
+        "subject_end": 67,
+        "relative_strand": "+",
+        "substitutions": 0,
+        "evalue": 4.71e-16,
+        "bitscore": 63.9,
+        "subject_sequence_forward": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+        "query_id": "q000000002"
+      },
+      {
+        "id": "h000000003",
+        "subject_accession": "SYNTHETIC_3.1",
+        "subject_start": 36,
+        "subject_end": 67,
+        "relative_strand": "+",
+        "substitutions": 0,
+        "evalue": 4.71e-16,
+        "bitscore": 63.9,
+        "subject_sequence_forward": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+        "query_id": "q000000003"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "leader",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "zero_based_half_open",
+    "prediction_performed": false,
+    "context_semantics": "analysis-window-not-biological-boundary",
+    "flank_length": 37,
+    "sources": [
+      {
+        "id": "example_record_01",
+        "length": 1121,
+        "sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "topology": "unknown"
+      }
+    ],
+    "arrays": [
+      {
+        "id": "CRISPR-422-580-bf1",
+        "source_id": "example_record_01",
+        "category": "Bona-fide",
+        "segments": [
+          {
+            "end": 580,
+            "start": 421
+          }
+        ]
+      }
+    ],
+    "contexts": [
+      {
+        "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:left",
+        "source_id": "example_record_01",
+        "array_id": "CRISPR-422-580-bf1",
+        "side": "left",
+        "strand": "+",
+        "segments": [
+          {
+            "end": 421,
+            "start": 384
+          }
+        ],
+        "sequence": "ATGTAGTTTGCGAACGTTTAAAAACATAATTTGAAAA",
+        "truncated_reason": null,
+        "observed_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+        "repeat_segments": [
+          {
+            "end": 451,
+            "start": 421
+          }
+        ]
+      },
+      {
+        "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:right",
+        "source_id": "example_record_01",
+        "array_id": "CRISPR-422-580-bf1",
+        "side": "right",
+        "strand": "-",
+        "segments": [
+          {
+            "end": 617,
+            "start": 580
+          }
+        ],
+        "sequence": "ACTTGTAACCCATCGCTGTCCCTTTGACAAAAATCGC",
+        "truncated_reason": null,
+        "observed_repeat": "ATTTACATTTCACAATAAGTAACTAAAACG",
+        "repeat_segments": [
+          {
+            "end": 580,
+            "start": 550
+          }
+        ]
+      }
+    ]
+  }
+}

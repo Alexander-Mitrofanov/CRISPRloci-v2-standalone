@@ -1,0 +1,61 @@
+name: Performance report
+description: Report reproducible runtime, memory, throughput, or scaling behavior.
+title: "[Performance] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version and source identity
+      placeholder: "CRISPRidentify 2.3.2; archive SHA-256 ..."
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command and concurrency
+      description: Include every performance-related option and outer scheduler setting.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware and execution environment
+      description: CPU model, allocated vCPU, RAM, storage, VM/container, OS, and competing workload.
+    validations:
+      required: true
+  - type: textarea
+    id: cohort
+    attributes:
+      label: Input cohort
+      description: Manifest identity, genome count, total bases, size distribution, and cache state.
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Measurement method and result
+      description: Wall time, CPU time, peak RSS, repetitions, failures, timeouts, and excluded inputs.
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: Baseline
+      description: Exact baseline version, command, cohort, and output-equivalence or region-recall contract.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Supporting artifacts
+      description: Link or describe non-sensitive timing tables and logs.
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Measurement confirmation
+      options:
+        - label: Baseline and candidate used the same inputs and stated resource allocation.
+          required: true
+        - label: I kept measured results separate from projections.
+          required: true

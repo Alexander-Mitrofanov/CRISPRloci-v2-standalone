@@ -1,0 +1,839 @@
+{
+  "schema": {
+    "name": "crisprloci.sequence-set",
+    "version": "1.0.0"
+  },
+  "kind": "spacer",
+  "molecule": "DNA",
+  "complete": true,
+  "records": [
+    {
+      "id": "example_record_01",
+      "sequence": "GGGCAGTCTCAGTCGCCCATTCTGAACGGCAAAG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 1,
+        "start": 201,
+        "end": 234
+      }
+    },
+    {
+      "id": "example_record_02",
+      "sequence": "TTGCAGCGCGTGAGCCGTTCGTCGATCTCGGTGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 2,
+        "start": 401,
+        "end": 434
+      }
+    },
+    {
+      "id": "example_record_03",
+      "sequence": "CTGGAGGTGATGACGATGGAAGAGCTACACAAGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 3,
+        "start": 601,
+        "end": 634
+      }
+    },
+    {
+      "id": "example_record_04",
+      "sequence": "GGCACAAAAGTCGCCGCGCCGGCCATCATCGGAG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 4,
+        "start": 801,
+        "end": 834
+      }
+    },
+    {
+      "id": "example_record_05",
+      "sequence": "CGCCGCTGCCGCCGCTTTTGTCGAGGCCCTGCGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 5,
+        "start": 1001,
+        "end": 1034
+      }
+    },
+    {
+      "id": "example_record_06",
+      "sequence": "CATGCGGTCGTGTTCGTCCAGCAACTTCCTCACGGTCTTGCGCAAAGCACGCGCATAGTCATATGCGCCGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 6,
+        "start": 1201,
+        "end": 1271
+      }
+    },
+    {
+      "id": "example_record_07",
+      "sequence": "TAGACGGCTCCGTGTAACGCCCTCTGTCTTGGGA",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 7,
+        "start": 1401,
+        "end": 1434
+      }
+    },
+    {
+      "id": "example_record_08",
+      "sequence": "TCGCAGTACTGGCCGATGGCGTAAAGCCCCCACG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 8,
+        "start": 1601,
+        "end": 1634
+      }
+    },
+    {
+      "id": "example_record_09",
+      "sequence": "CGGCCTTGTGGATCATGATACGTCCCCGTGACGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 9,
+        "start": 1801,
+        "end": 1834
+      }
+    },
+    {
+      "id": "example_record_10",
+      "sequence": "TCGTCGATCCGATCCAGTTTCACGCAGTAGTATG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 10,
+        "start": 2001,
+        "end": 2034
+      }
+    },
+    {
+      "id": "example_record_11",
+      "sequence": "ACAGATTTCGGCCCTTACACGCTGCGCCTCGACG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 11,
+        "start": 2201,
+        "end": 2234
+      }
+    },
+    {
+      "id": "example_record_12",
+      "sequence": "CGCCGGGCGTCGTTCAGTACGAGGAGGGTCCGGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 12,
+        "start": 2401,
+        "end": 2434
+      }
+    },
+    {
+      "id": "example_record_13",
+      "sequence": "TGAAACGATTGGTGCAATTGACGATGGATATCGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 13,
+        "start": 2601,
+        "end": 2634
+      }
+    },
+    {
+      "id": "example_record_14",
+      "sequence": "GAGCGCGCTGTAGCCCATGCCCTGCGCGATGCGG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 14,
+        "start": 2801,
+        "end": 2834
+      }
+    },
+    {
+      "id": "example_record_15",
+      "sequence": "CCCACCCCTGACGACAGAGGGCGACTCGCTCCCG",
+      "origin": {
+        "source_id": "example_source_01",
+        "source_sha256": "30859fcae40ccf2af53c186d5a4f7c7cba7beb6cb4edc916c5aa2b94e09f2dad",
+        "array_id": "example-array",
+        "ordinal": 15,
+        "start": 3001,
+        "end": 3034
+      }
+    },
+    {
+      "id": "example_record_16",
+      "sequence": "CGAAATTGTAAAATCTATATCCGTTGATTCAACAAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 1,
+        "start": 201,
+        "end": 236
+      }
+    },
+    {
+      "id": "example_record_17",
+      "sequence": "CTTAATTTGATAGTCATAATTTATTTCCTCCTATTTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 2,
+        "start": 401,
+        "end": 437
+      }
+    },
+    {
+      "id": "example_record_18",
+      "sequence": "TATAGAAAGGAGTTGATACAGTGAAGGATGTTTTAG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 3,
+        "start": 601,
+        "end": 636
+      }
+    },
+    {
+      "id": "example_record_19",
+      "sequence": "CTTATAAACGACATTTTAGAAGCAGGAGTAGAAAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 4,
+        "start": 801,
+        "end": 835
+      }
+    },
+    {
+      "id": "example_record_20",
+      "sequence": "CTTGTAACCCATCGCTGTCCCTTTGACAAAAATCGC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 5,
+        "start": 1001,
+        "end": 1036
+      }
+    },
+    {
+      "id": "example_record_21",
+      "sequence": "CGCTACATGCTTGATGTGCTTTACACAAAAGAGAGCA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 6,
+        "start": 1201,
+        "end": 1237
+      }
+    },
+    {
+      "id": "example_record_22",
+      "sequence": "CGCCATTTACAATCACCCTTCCGGAGTTTGATCTGT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 7,
+        "start": 1401,
+        "end": 1436
+      }
+    },
+    {
+      "id": "example_record_23",
+      "sequence": "AATTACATAAAATCACTTTGCTAATTGCATAGTTTTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 8,
+        "start": 1601,
+        "end": 1637
+      }
+    },
+    {
+      "id": "example_record_24",
+      "sequence": "ATTTTTTTCATTTTCTAAGTCCTCATATTTCAAAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 9,
+        "start": 1801,
+        "end": 1835
+      }
+    },
+    {
+      "id": "example_record_25",
+      "sequence": "TAAGATGTCCGATAATGAACACGCATTCTCTGTTTTG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 10,
+        "start": 2001,
+        "end": 2037
+      }
+    },
+    {
+      "id": "example_record_26",
+      "sequence": "CTGGCAGGGATGTCAGCGAAACAATTCCAGAAAGCC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 11,
+        "start": 2201,
+        "end": 2236
+      }
+    },
+    {
+      "id": "example_record_27",
+      "sequence": "GGCATTGCGATTATTTCATGTCTTGCAGGGGTAGCTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 12,
+        "start": 2401,
+        "end": 2437
+      }
+    },
+    {
+      "id": "example_record_28",
+      "sequence": "ATATTTGACCGTGCCCGGTAAAACTACCGCAAACGT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 13,
+        "start": 2601,
+        "end": 2636
+      }
+    },
+    {
+      "id": "example_record_29",
+      "sequence": "CGCGCGCTATTTGCGCCATTTCTAGCATATCTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 14,
+        "start": 2801,
+        "end": 2833
+      }
+    },
+    {
+      "id": "example_record_30",
+      "sequence": "TTGTTTGCTCCTGCATGCTTATCAACAAAAAATTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 15,
+        "start": 3001,
+        "end": 3035
+      }
+    },
+    {
+      "id": "example_record_31",
+      "sequence": "CTTGCCAAGTTTTCTGGTCCAGCTTCCCATATTTCT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 16,
+        "start": 3201,
+        "end": 3236
+      }
+    },
+    {
+      "id": "example_record_32",
+      "sequence": "GTTCGCTTAAGACCTTGTCTATATAGCCTTTAATAAC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 17,
+        "start": 3401,
+        "end": 3437
+      }
+    },
+    {
+      "id": "example_record_33",
+      "sequence": "CGCTGTAATTGACTTAATACTTGTGACGAATTCACC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 18,
+        "start": 3601,
+        "end": 3636
+      }
+    },
+    {
+      "id": "example_record_34",
+      "sequence": "ACACATCTTGAAAAGTTCTTTTCTGTCCCGCTTCTAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 19,
+        "start": 3801,
+        "end": 3837
+      }
+    },
+    {
+      "id": "example_record_35",
+      "sequence": "TACAAGGAATTGTAATGTCTGCTGGAACCAAACTGA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 20,
+        "start": 4001,
+        "end": 4036
+      }
+    },
+    {
+      "id": "example_record_36",
+      "sequence": "TCTTCTAAGCGATCTAAAAACTCTTTTTTAAACCAG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 21,
+        "start": 4201,
+        "end": 4236
+      }
+    },
+    {
+      "id": "example_record_37",
+      "sequence": "GAAGAAACAATTCAAGAACATACGGATAATTTAT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 22,
+        "start": 4401,
+        "end": 4434
+      }
+    },
+    {
+      "id": "example_record_38",
+      "sequence": "AACCAAGTTATCACGGATGCTAACGTTATCTCTAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 23,
+        "start": 4601,
+        "end": 4635
+      }
+    },
+    {
+      "id": "example_record_39",
+      "sequence": "AAATACAATCCGTGACTCTGTATTTAATAAAATCCAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 24,
+        "start": 4801,
+        "end": 4837
+      }
+    },
+    {
+      "id": "example_record_40",
+      "sequence": "GAAAAGCAAAAAAACAAAGATAAGTTAGGTTTGCAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 25,
+        "start": 5001,
+        "end": 5036
+      }
+    },
+    {
+      "id": "example_record_41",
+      "sequence": "TATATAATGATGTAGGAGTTATGAATATTTTGTATTA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 26,
+        "start": 5201,
+        "end": 5237
+      }
+    },
+    {
+      "id": "example_record_42",
+      "sequence": "AAAACTAGCGAATCAATACGGAATTAAGAATTACAC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 27,
+        "start": 5401,
+        "end": 5436
+      }
+    },
+    {
+      "id": "example_record_43",
+      "sequence": "CCGTTCGCTCTGTAGAACAAAACTTCCCGGATTTCTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 28,
+        "start": 5601,
+        "end": 5637
+      }
+    },
+    {
+      "id": "example_record_44",
+      "sequence": "GAAAAAAGCAGATACGGAAACAGGTGACACTGCTCA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 29,
+        "start": 5801,
+        "end": 5836
+      }
+    },
+    {
+      "id": "example_record_45",
+      "sequence": "TAATGACATCTGGTGATAAAATTGTTGAAAAAAGC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 30,
+        "start": 6001,
+        "end": 6035
+      }
+    },
+    {
+      "id": "example_record_46",
+      "sequence": "TACATGTCGTTTAACCCGCCTCGAAATCCTTATGAG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 31,
+        "start": 6201,
+        "end": 6236
+      }
+    },
+    {
+      "id": "example_record_47",
+      "sequence": "TCCAAACTCCTTCCGCACATTGGGCAATATTTTATA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 32,
+        "start": 6401,
+        "end": 6436
+      }
+    },
+    {
+      "id": "example_record_48",
+      "sequence": "TAAAGAAGCGTGATGGTTGTCTAAGCCGTCGAACAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 33,
+        "start": 6601,
+        "end": 6636
+      }
+    },
+    {
+      "id": "example_record_49",
+      "sequence": "GCAAAACAACAAATTGGAAAGATGTTTTTTTTCT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 34,
+        "start": 6801,
+        "end": 6834
+      }
+    },
+    {
+      "id": "example_record_50",
+      "sequence": "TCATGTTGCAGGTGTAGAGCTAAATCCAAGTAGACTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 35,
+        "start": 7001,
+        "end": 7037
+      }
+    },
+    {
+      "id": "example_record_51",
+      "sequence": "CGTGAACCTATTTATCAGAAACAACCTATCCAAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 36,
+        "start": 7201,
+        "end": 7234
+      }
+    },
+    {
+      "id": "example_record_52",
+      "sequence": "ATTGAGGTGTATTACTGTCGCCAGTTGAGTAACCAG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 37,
+        "start": 7401,
+        "end": 7436
+      }
+    },
+    {
+      "id": "example_record_53",
+      "sequence": "AAGTGATACAATGTGTTTTTTATTGTCGATGTGGAC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 38,
+        "start": 7601,
+        "end": 7636
+      }
+    },
+    {
+      "id": "example_record_54",
+      "sequence": "CTCTACAATCAGTGCATTTCTTTCTTCCCATTTCCA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 39,
+        "start": 7801,
+        "end": 7836
+      }
+    },
+    {
+      "id": "example_record_55",
+      "sequence": "ACACATATACAGCCATGAATATAGGAGATATGCAC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 40,
+        "start": 8001,
+        "end": 8035
+      }
+    },
+    {
+      "id": "example_record_56",
+      "sequence": "CATGACTCCCTTAACATGTGCAAACACCATTTAAGA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 41,
+        "start": 8201,
+        "end": 8236
+      }
+    },
+    {
+      "id": "example_record_57",
+      "sequence": "GCGAGATAAGTTATATATAACAACTTCGCATTCCGC",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 42,
+        "start": 8401,
+        "end": 8436
+      }
+    },
+    {
+      "id": "example_record_58",
+      "sequence": "ATTTGAGTCATATCATACTCACCTCGTTGTCCAACGT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 43,
+        "start": 8601,
+        "end": 8637
+      }
+    },
+    {
+      "id": "example_record_59",
+      "sequence": "TTTAGCAATTGGGCTACGAAAAACCAACGTGAAGCG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 44,
+        "start": 8801,
+        "end": 8836
+      }
+    },
+    {
+      "id": "example_record_60",
+      "sequence": "GAAATTGCACAAGAGCTTATGCTAGAAGAGTTGA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 45,
+        "start": 9001,
+        "end": 9034
+      }
+    },
+    {
+      "id": "example_record_61",
+      "sequence": "TTTGACAACAGTAAACGACTTTGCAGACCTTATTAA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 46,
+        "start": 9201,
+        "end": 9236
+      }
+    },
+    {
+      "id": "example_record_62",
+      "sequence": "AAATAGTGATACAGATAGTTTTGAGGTAAGTTATTA",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 47,
+        "start": 9401,
+        "end": 9436
+      }
+    },
+    {
+      "id": "example_record_63",
+      "sequence": "AAAATGGACTTCTCCCGATGATTGGACAGCTCCGTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 48,
+        "start": 9601,
+        "end": 9636
+      }
+    },
+    {
+      "id": "example_record_64",
+      "sequence": "CGGGTAATATACGTGTACTTATATAGGGGATATGT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 49,
+        "start": 9801,
+        "end": 9835
+      }
+    },
+    {
+      "id": "example_record_65",
+      "sequence": "TTAGATGATTCTTTCACTGGCTCTTTTTCTGGCTG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 50,
+        "start": 10001,
+        "end": 10035
+      }
+    },
+    {
+      "id": "example_record_66",
+      "sequence": "GCTTTTGTCAACATCCCGCTAAAACTTCTACACGGTTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 51,
+        "start": 10201,
+        "end": 10238
+      }
+    },
+    {
+      "id": "example_record_67",
+      "sequence": "AGGTGCTTCACTATTTTCAGATACGACTTCTTTTTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 52,
+        "start": 10401,
+        "end": 10436
+      }
+    },
+    {
+      "id": "example_record_68",
+      "sequence": "CGTTTTAAACAATTTGACCACTCCTACATTTTGATTT",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 53,
+        "start": 10601,
+        "end": 10637
+      }
+    },
+    {
+      "id": "example_record_69",
+      "sequence": "CATGAGAATATACGATGGAGAAATTTTAGTCCATG",
+      "origin": {
+        "source_id": "example_source_02",
+        "source_sha256": "ddccf5cfbff7700320394d25c261ee331de4284c165a96c7e77b27a09e8a3666",
+        "array_id": "example-array",
+        "ordinal": 54,
+        "start": 10801,
+        "end": 10835
+      }
+    }
+  ]
+}

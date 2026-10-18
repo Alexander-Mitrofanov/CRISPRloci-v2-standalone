@@ -1,0 +1,128 @@
+[
+  {
+    "name": "biopython",
+    "version": "1.85",
+    "notices": [
+      "licenses/biopython-1.85-LICENSE",
+      "licenses/biopython-1.85-LICENSE.rst"
+    ],
+    "source_urls": [
+      "Documentation, https://biopython.org/wiki/Documentation",
+      "Source, https://github.com/biopython/biopython/",
+      "Tracker, https://github.com/biopython/biopython/issues"
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.2.6",
+    "notices": [
+      "licenses/numpy-2.2.6-LICENSE.txt"
+    ],
+    "source_urls": [
+      "homepage, https://numpy.org",
+      "documentation, https://numpy.org/doc/",
+      "source, https://github.com/numpy/numpy",
+      "download, https://pypi.org/project/numpy/#files",
+      "tracker, https://github.com/numpy/numpy/issues",
+      "release notes, https://numpy.org/doc/stable/release"
+    ]
+  },
+  {
+    "name": "scipy",
+    "version": "1.15.3",
+    "notices": [
+      "licenses/scipy-1.15.3-LICENSE.txt"
+    ],
+    "source_urls": [
+      "homepage, https://scipy.org/",
+      "documentation, https://docs.scipy.org/doc/scipy/",
+      "source, https://github.com/scipy/scipy",
+      "download, https://github.com/scipy/scipy/releases",
+      "tracker, https://github.com/scipy/scipy/issues"
+    ]
+  },
+  {
+    "name": "gffutils",
+    "version": "0.13",
+    "notices": [
+      "licenses/gffutils-0.13-LICENSE"
+    ],
+    "source_urls": [
+      "https://github.com/daler/gffutils"
+    ]
+  },
+  {
+    "name": "disjoint-set",
+    "version": "0.8.0",
+    "notices": [
+      "licenses/disjoint-set-0.8.0-LICENSE"
+    ],
+    "source_urls": [
+      "https://github.com/mrapacz/disjoint_set"
+    ]
+  },
+  {
+    "name": "pyfaidx",
+    "version": "0.9.0.4",
+    "notices": [
+      "licenses/pyfaidx-0.9.0.4-LICENSE"
+    ],
+    "source_urls": [
+      "Homepage, https://github.com/mdshw5/pyfaidx/",
+      "Author homepage, http://mattshirley.com"
+    ]
+  },
+  {
+    "name": "argh",
+    "version": "0.31.3",
+    "notices": [
+      "licenses/argh-0.31.3-COPYING",
+      "licenses/argh-0.31.3-COPYING.LESSER"
+    ],
+    "source_urls": [
+      "Discussions, https://github.com/neithere/argh/discussions",
+      "Documentation, https://argh.readthedocs.io/en/latest",
+      "Homepage, https://github.com/neithere/argh",
+      "Issue Tracker, https://github.com/neithere/argh/issues",
+      "Releases, https://github.com/neithere/argh/releases"
+    ]
+  },
+  {
+    "name": "argcomplete",
+    "version": "3.7.2",
+    "notices": [
+      "licenses/argcomplete-3.7.2-LICENSE.rst",
+      "licenses/argcomplete-3.7.2-NOTICE"
+    ],
+    "source_urls": [
+      "Homepage, https://github.com/kislyuk/argcomplete",
+      "Documentation, https://kislyuk.github.io/argcomplete",
+      "Source Code, https://github.com/kislyuk/argcomplete",
+      "Issue Tracker, https://github.com/kislyuk/argcomplete/issues",
+      "Change Log, https://github.com/kislyuk/argcomplete/blob/develop/Changes.rst"
+    ]
+  },
+  {
+    "name": "simplejson",
+    "version": "4.2.0",
+    "notices": [
+      "licenses/simplejson-4.2.0-LICENSE.txt"
+    ],
+    "source_urls": [
+      "https://github.com/simplejson/simplejson"
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "notices": [
+      "licenses/packaging-26.3-LICENSE",
+      "licenses/packaging-26.3-LICENSE.APACHE",
+      "licenses/packaging-26.3-LICENSE.BSD"
+    ],
+    "source_urls": [
+      "Documentation, https://packaging.pypa.io/",
+      "Source, https://github.com/pypa/packaging"
+    ]
+  }
+]

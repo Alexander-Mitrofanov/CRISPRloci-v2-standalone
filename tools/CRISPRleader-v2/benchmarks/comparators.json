@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "audit_date": "2026-09-27",
+  "inventory_status": "candidate_not_frozen",
+  "exhaustive_search_claim": false,
+  "comparators": [
+    {
+      "id": "crisprleader_original",
+      "name": "CRISPRleader",
+      "tasks": [
+        "conserved_core",
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.1093/bioinformatics/btw454",
+      "role": "direct_core_comparator",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "crisprstrand",
+      "name": "CRISPRstrand",
+      "tasks": [
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.1093/bioinformatics/btu459",
+      "role": "repeat_orientation_family",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "crisprdirection",
+      "name": "CRISPRDirection",
+      "tasks": [
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.1093/bioinformatics/btu114",
+      "role": "weighted_orientation_family",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "crisprdetect",
+      "name": "CRISPRDetect",
+      "tasks": [
+        "array_detection",
+        "transcription_orientation"
+      ],
+      "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4869251/",
+      "role": "deployment_pipeline",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "crisprcasfinder",
+      "name": "CRISPRCasFinder",
+      "tasks": [
+        "array_detection",
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.1093/nar/gky425",
+      "role": "deployment_pipeline",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "potential_orientation",
+      "name": "Potential Orientation (CRISPRCasFinder)",
+      "tasks": [
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.3389/fmicb.2019.02054",
+      "role": "context_component_baseline",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "cas_orientation",
+      "name": "Cas Orientation",
+      "tasks": [
+        "transcription_orientation"
+      ],
+      "primary_source": "https://doi.org/10.3389/fmicb.2019.02054",
+      "role": "context_baseline",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "leader_motifs_2025",
+      "name": "Buyukyoruk et al. motif annotation",
+      "tasks": [
+        "motif_evidence",
+        "subtype_annotation"
+      ],
+      "primary_source": "https://doi.org/10.1089/crispr.2024.0093",
+      "role": "motif_annotation_comparator",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "evor",
+      "name": "CRISPR-evOr",
+      "tasks": [
+        "acquisition_orientation"
+      ],
+      "primary_source": "https://doi.org/10.1371/journal.pcbi.1013706",
+      "role": "separate_semantic_track",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    },
+    {
+      "id": "crisprloci_original",
+      "name": "CRISPRloci",
+      "tasks": [
+        "integrated_annotation"
+      ],
+      "primary_source": "https://doi.org/10.1093/nar/gkab456",
+      "role": "historical_deployment_pipeline",
+      "execution_status": "not_run",
+      "version": null,
+      "reference_digest": null,
+      "configuration_digest": null,
+      "eligibility": "requires_protocol_review"
+    }
+  ]
+}

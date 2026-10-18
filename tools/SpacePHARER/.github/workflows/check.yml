@@ -1,0 +1,21 @@
+name: verify
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline-engine:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-test.lock
+      - run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DHAVE_SSE4_1=1 -DHAVE_AVX2=0 && cmake --build build --parallel 2 && ctest --test-dir build --output-on-failure
+      - run: |
+          git clone https://github.com/soedinglab/spacepharer.git /tmp/original
+          git -C /tmp/original checkout d1e94c04025be6e04fd8204f4f8bb1ea782e993c
+          cmake -S /tmp/original -B /tmp/original-build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS='-include cstdint' -DHAVE_SSE4_1=1 -DHAVE_AVX2=0
+          cmake --build /tmp/original-build --parallel 2
+      - run: pip install . && SPACEPHARER_NATIVE="$PWD/build/src/spacepharer-native" SPACEPHARER_ORACLE=/tmp/original-build/src/spacepharer pytest
+      - run: ruff check python tests && ruff format --check python tests && mypy python && python -m build && python scripts/check_private_data.py workspace

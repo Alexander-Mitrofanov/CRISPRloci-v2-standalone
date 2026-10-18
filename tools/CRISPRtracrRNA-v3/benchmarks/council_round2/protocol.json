@@ -1,0 +1,78 @@
+{
+  "version": "council-round2-v1",
+  "frozen_date": "2026-09-27",
+  "plan": "docs/COUNCIL_IMPROVEMENT_PLAN.md",
+  "plan_sha256": "4928592891d03d70ab06faae313c6b39f3248afa34774aa97a43c4b3d2e86a0d",
+  "baseline": "benchmarks/council_round2/baseline",
+  "default": {
+    "intarna_batch_size": 128,
+    "short_anti_repeat_rescue": false,
+    "similarity": 0.7,
+    "coverage": 0.6,
+    "model_rescue_evalue": 1e-05
+  },
+  "experimental": {
+    "short_anti_repeat_rescue": true,
+    "model_type": "II",
+    "min_query_span": 12,
+    "min_identity": 0.8,
+    "min_anchored_paired_bases": 10,
+    "min_anchored_paired_fraction": 0.5,
+    "energy_strictly_below": 0,
+    "support_cm_evalue": 0.01,
+    "support_terminator_evalue": 0.001,
+    "cm_duplex_overlap_strictly_below": 10
+  },
+  "controls": {
+    "namespace": "crisprtracrrna-council-controls-v1",
+    "master_seed": 20260927,
+    "genomic_labels": [
+      "Esp2",
+      "Bbo",
+      "Cca2",
+      "Cca1",
+      "Cga",
+      "Cme1",
+      "Ffr",
+      "Ghy2",
+      "Orh",
+      "Psp",
+      "Ain",
+      "Kki",
+      "Lsp1",
+      "Lan",
+      "Rsp",
+      "Cme3",
+      "Ghe",
+      "Mse",
+      "Sth1A"
+    ],
+    "genomic_replicates": 1,
+    "conditional_repeat_shuffle_replicates": [
+      1,
+      2
+    ],
+    "conditional_repeat_derangements": 1
+  },
+  "resources": {
+    "workers": 2,
+    "threads_per_locus": 1
+  },
+  "gates": {
+    "success": 79,
+    "mapped": 78,
+    "default_localized": 68,
+    "experimental_useful_localized_min": 69,
+    "top1_min": 53,
+    "top5_min": 63,
+    "coverage90_min": 64,
+    "raw_hypotheses_max": 5092,
+    "p95_max": 288,
+    "per_locus_max": 928,
+    "added_short_per_locus_max": 100,
+    "experimental_wall_ratio_max": 2,
+    "repeat_control_short_median_max": 1,
+    "repeat_control_short_max": 10,
+    "default_exact_equivalence": true
+  }
+}

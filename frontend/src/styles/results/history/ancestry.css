@@ -1,0 +1,119 @@
+.ancestor-browser {
+  padding: 20px 24px;
+  background: #eef1eb;
+}
+.ancestor-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 3px 3px 8px;
+}
+.ancestor-tabs button {
+  min-width: 110px;
+  padding: 9px 11px;
+  border: 1px solid var(--action);
+  color: var(--action-text);
+  background: var(--action-soft);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+}
+.ancestor-tabs button.active {
+  color: var(--on-action);
+  border-color: var(--action-pressed);
+  background: var(--action-pressed);
+}
+.ancestor-tabs small {
+  display: block;
+  margin-top: 3px;
+  color: inherit;
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.75;
+}
+.ancestor-state {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-top: 9px;
+  padding: 16px;
+  border-top: 3px solid var(--group-accent);
+  background: white;
+}
+.ancestor-state > div:first-child > * {
+  display: block;
+}
+.ancestor-state span {
+  color: var(--group-dark);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.ancestor-state strong {
+  margin-top: 3px;
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.ancestor-state small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.history-spacer-strip {
+  display: flex;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.history-spacer-strip i {
+  width: 23px;
+  min-width: 23px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(24, 49, 44, 0.25);
+  border-radius: 2px;
+  color: #17352c;
+  font:
+    normal 600 0.7rem ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-spacer-strip i.absent {
+  color: #a4afa9;
+  border-color: #d8ddd7;
+  background: #edf0eb;
+}
+.history-caveat {
+  margin: 0;
+  padding: 15px 24px 20px;
+  color: #5d6e67;
+  background: #eef1eb;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+.history-size-limit {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 24px;
+  color: #52665e;
+}
+.history-size-limit .icon {
+  color: var(--group-accent);
+}
+.history-size-limit strong {
+  color: var(--ink);
+  font-size: 0.86rem;
+}
+.history-size-limit p {
+  margin: 5px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}

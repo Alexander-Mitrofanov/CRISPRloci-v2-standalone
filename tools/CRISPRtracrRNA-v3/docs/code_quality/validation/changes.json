@@ -1,0 +1,78 @@
+[
+  {
+    "path": ".github/workflows/ci.yml",
+    "kind": "modified"
+  },
+  {
+    "path": "README.md",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/check_wheel.py",
+    "kind": "added"
+  },
+  {
+    "path": "scripts/dependencies.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/adapters.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/config.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/evidence.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/models.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/pipeline.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/process.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/reporting.py",
+    "kind": "added"
+  },
+  {
+    "path": "src/crisprtracrrna/search.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/sequence.py",
+    "kind": "modified"
+  },
+  {
+    "path": "src/crisprtracrrna/short_rescue_policy.py",
+    "kind": "added"
+  },
+  {
+    "path": "tests/test_dependency_updates.py",
+    "kind": "modified"
+  },
+  {
+    "path": "tests/test_publication.py",
+    "kind": "added"
+  },
+  {
+    "path": "tests/test_runtime_contracts.py",
+    "kind": "added"
+  },
+  {
+    "path": "tests/test_science_contracts.py",
+    "kind": "added"
+  },
+  {
+    "path": "tests/test_wheel_check.py",
+    "kind": "added"
+  }
+]

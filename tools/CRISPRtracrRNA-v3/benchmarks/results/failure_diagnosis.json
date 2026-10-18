@@ -1,0 +1,5846 @@
+{
+  "stage": "final_fixed/complete",
+  "methods": "Retained CRISPRidentify, FASTA36 and cmscan outputs; matching requires same contig/strand, >=20 nt and >=50% shorter interval. Alternate BLAST uses identical identity/coverage gates and masks. Both repeat orientations are queried. Isolated-reference alignments use known truth and are diagnostic only.",
+  "limits": "Absence of a cmscan table hit does not prove biological absence of a family. Scores and candidate counts are not calibrated precision estimates. No parameters or models were fitted to these references.",
+  "misses": [
+    {
+      "label": "Esp2",
+      "reference_id": "gasiunas2020_000069",
+      "truth": {
+        "contig": "REF_Esp2",
+        "start": 26354,
+        "end": 26446,
+        "strand": "+"
+      },
+      "reference_length": 93,
+      "published_repeat": "GTTTGAGAGTAGTGTAATTTCATAAGGTACTGAAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-20002-20300-p1",
+          "interval": {
+            "end": 20300,
+            "length": 299,
+            "start": 20002
+          },
+          "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+          "category": "Possible",
+          "score": 0.731831274564937,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 0,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0,
+          "best_truth_alignment": null,
+          "truth_alignments": []
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 274,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.2777777777777778,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 10,
+            "interval": {
+              "start": 26354,
+              "end": 26363
+            },
+            "identity": 1.0,
+            "coverage": 0.2777777777777778,
+            "bitscore": 20.3,
+            "evalue": 0.8,
+            "truth_overlap_nt": 10,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 20.3,
+              "evalue": 0.8,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 20.3,
+              "evalue": 0.8,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3888888888888889,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 10,
+            "interval": {
+              "start": 26354,
+              "end": 26363
+            },
+            "identity": 1.0,
+            "coverage": 0.2777777777777778,
+            "bitscore": 16.2,
+            "evalue": 0.044,
+            "truth_overlap_nt": 10,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 16.2,
+              "evalue": 0.044,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 14,
+              "interval": {
+                "start": 26411,
+                "end": 26424
+              },
+              "identity": 0.7143,
+              "coverage": 0.3888888888888889,
+              "bitscore": 11.4,
+              "evalue": 0.71,
+              "truth_overlap_nt": 14,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 16.1,
+              "evalue": 0.047,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 14,
+              "interval": {
+                "start": 26411,
+                "end": 26424
+              },
+              "identity": 0.7143,
+              "coverage": 0.3888888888888889,
+              "bitscore": 11.4,
+              "evalue": 0.71,
+              "truth_overlap_nt": 14,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 2,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.2777777777777778,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 10,
+            "interval": {
+              "start": 26354,
+              "end": 26363
+            },
+            "identity": 1.0,
+            "coverage": 0.2777777777777778,
+            "bitscore": 20.3,
+            "evalue": 0.002,
+            "truth_overlap_nt": 10,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 20.3,
+              "evalue": 0.002,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 20.3,
+              "evalue": 0.002,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 0,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0,
+          "best_truth_alignment": null,
+          "truth_alignments": []
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3888888888888889,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 36,
+            "query_span": 10,
+            "interval": {
+              "start": 26354,
+              "end": 26363
+            },
+            "identity": 1.0,
+            "coverage": 0.2777777777777778,
+            "bitscore": 16.2,
+            "evalue": 0.045,
+            "truth_overlap_nt": 10,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 16.2,
+              "evalue": 0.045,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 36,
+              "query_span": 14,
+              "interval": {
+                "start": 26411,
+                "end": 26424
+              },
+              "identity": 0.7143,
+              "coverage": 0.3888888888888889,
+              "bitscore": 11.2,
+              "evalue": 0.76,
+              "truth_overlap_nt": 14,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 36,
+              "query_span": 10,
+              "interval": {
+                "start": 26354,
+                "end": 26363
+              },
+              "identity": 1.0,
+              "coverage": 0.2777777777777778,
+              "bitscore": 15.7,
+              "evalue": 0.062,
+              "truth_overlap_nt": 10,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 36,
+              "query_span": 14,
+              "interval": {
+                "start": 26411,
+                "end": 26424
+              },
+              "identity": 0.7143,
+              "coverage": 0.3888888888888889,
+              "bitscore": 11.4,
+              "evalue": 0.71,
+              "truth_overlap_nt": 14,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 4,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000002",
+        "interval": {
+          "start": 19937,
+          "end": 20122,
+          "length": 186
+        },
+        "strand": "+",
+        "distance_nt": 6231,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Esp2/report.json": "9ffc45fce5b49c716a6ead2914bd618e8cdd9495bf94f4c411965b42eef96fff",
+        "benchmarks/final_fixed/complete/Esp2/work/f000001.s000001/identify/f000001-s000001/report.json": "89c0c414df735842ac7d5702ae44edb09777c7af6ab6e263fc6cef260fc8761a",
+        "benchmarks/final_fixed/complete/Esp2/work/f000001.s000001/anti-repeat.tsv": "f0415b8e0cbb53dcb1cb480eee4ddc16e9b577332b89f2cab1c8cb6f88d36a19",
+        "benchmarks/final_fixed/complete/Esp2/work/f000001.s000001/repeats.fasta": "e6a0a5899168b63674eb991c79cc79ddf01ff070bc25afe3f3958d369a6390c2",
+        "benchmarks/diagnostics/final_failures/Esp2/genomic-blast.tsv": "9ad3f1fea5a0c2edadb4ce172620c7c81393164263f1991dbaee0165cf8706f2",
+        "benchmarks/diagnostics/final_failures/Esp2/isolated-fasta.tsv": "7cc3512b299ffea0bcfea7235dbc89a3e4db119648a334b327ef810697983f8f",
+        "benchmarks/diagnostics/final_failures/Esp2/isolated-blast.tsv": "83d1e7d73c2e4ff3e28ec200542a6d2ddb43577134198920daacf95176f6347b",
+        "benchmarks/diagnostics/final_failures/Esp2/published-repeats.fasta": "02a82dfde4bb959b5c6efe35aef6f656948644460098595a41905e966b36ca4b",
+        "benchmarks/diagnostics/final_failures/Esp2/published-anti-search.tsv": "3990a3e30abcbf9d12f870363cf032868742dc8a0dbedd64fba5393264ab43ac",
+        "benchmarks/diagnostics/final_failures/Esp2/published-isolated-reference.tsv": "6efd1bcc46255beabddc9a278db749dbd2dea36fdc8667dda8d8c4c4b90a0620"
+      }
+    },
+    {
+      "label": "Bbo",
+      "reference_id": "gasiunas2020_000120",
+      "truth": {
+        "contig": "REF_Bbo",
+        "start": 334,
+        "end": 437,
+        "strand": "+"
+      },
+      "reference_length": 104,
+      "published_repeat": "GTTTCAAATTCAATCTAAAGCCCCTCTGATATACTGG",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-5980-6862-p1",
+          "interval": {
+            "end": 6862,
+            "length": 883,
+            "start": 5980
+          },
+          "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+          "category": "Possible",
+          "score": 0.6878336730856635,
+          "published_repeat_exact_either_orientation": false,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": false,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 24,
+          "truth_overlapping_alignments": 0,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0,
+          "best_truth_alignment": null,
+          "truth_alignments": []
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 70,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34210526315789475,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 38,
+            "query_span": 13,
+            "interval": {
+              "start": 357,
+              "end": 369
+            },
+            "identity": 1.0,
+            "coverage": 0.34210526315789475,
+            "bitscore": 26.3,
+            "evalue": 0.003,
+            "truth_overlap_nt": 13,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 38,
+              "query_span": 13,
+              "interval": {
+                "start": 357,
+                "end": 369
+              },
+              "identity": 1.0,
+              "coverage": 0.34210526315789475,
+              "bitscore": 26.3,
+              "evalue": 0.003,
+              "truth_overlap_nt": 13,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 38,
+              "query_span": 13,
+              "interval": {
+                "start": 357,
+                "end": 369
+              },
+              "identity": 1.0,
+              "coverage": 0.34210526315789475,
+              "bitscore": 26.3,
+              "evalue": 0.003,
+              "truth_overlap_nt": 13,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 38,
+            "query_span": 19,
+            "interval": {
+              "start": 351,
+              "end": 369
+            },
+            "identity": 0.8421,
+            "coverage": 0.5,
+            "bitscore": 22.2,
+            "evalue": 0.00085,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 38,
+              "query_span": 19,
+              "interval": {
+                "start": 351,
+                "end": 369
+              },
+              "identity": 0.8421,
+              "coverage": 0.5,
+              "bitscore": 22.1,
+              "evalue": 0.0009,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 38,
+              "query_span": 26,
+              "interval": {
+                "start": 388,
+                "end": 413
+              },
+              "identity": 0.6923,
+              "coverage": 0.6842105263157895,
+              "bitscore": 19.3,
+              "evalue": 0.0063,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "identity"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 38,
+              "query_span": 19,
+              "interval": {
+                "start": 351,
+                "end": 369
+              },
+              "identity": 0.8421,
+              "coverage": 0.5,
+              "bitscore": 22.2,
+              "evalue": 0.00085,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 38,
+              "query_span": 26,
+              "interval": {
+                "start": 388,
+                "end": 413
+              },
+              "identity": 0.6923,
+              "coverage": 0.6842105263157895,
+              "bitscore": 19.3,
+              "evalue": 0.0061,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "identity"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 2,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34210526315789475,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 38,
+            "query_span": 13,
+            "interval": {
+              "start": 357,
+              "end": 369
+            },
+            "identity": 1.0,
+            "coverage": 0.34210526315789475,
+            "bitscore": 26.3,
+            "evalue": 4.06e-05,
+            "truth_overlap_nt": 13,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 38,
+              "query_span": 13,
+              "interval": {
+                "start": 357,
+                "end": 369
+              },
+              "identity": 1.0,
+              "coverage": 0.34210526315789475,
+              "bitscore": 26.3,
+              "evalue": 4.06e-05,
+              "truth_overlap_nt": 13,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 38,
+              "query_span": 13,
+              "interval": {
+                "start": 357,
+                "end": 369
+              },
+              "identity": 1.0,
+              "coverage": 0.34210526315789475,
+              "bitscore": 26.3,
+              "evalue": 4.06e-05,
+              "truth_overlap_nt": 13,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 24,
+          "truth_overlapping_alignments": 0,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0,
+          "best_truth_alignment": null,
+          "truth_alignments": []
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5135135135135135,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 37,
+            "query_span": 19,
+            "interval": {
+              "start": 351,
+              "end": 369
+            },
+            "identity": 0.8421,
+            "coverage": 0.5135135135135135,
+            "bitscore": 21.9,
+            "evalue": 0.00097,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 37,
+              "query_span": 19,
+              "interval": {
+                "start": 351,
+                "end": 369
+              },
+              "identity": 0.8421,
+              "coverage": 0.5135135135135135,
+              "bitscore": 21.9,
+              "evalue": 0.00097,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 37,
+              "query_span": 26,
+              "interval": {
+                "start": 388,
+                "end": 413
+              },
+              "identity": 0.6923,
+              "coverage": 0.7027027027027027,
+              "bitscore": 19.1,
+              "evalue": 0.0067,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "identity"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 37,
+              "query_span": 19,
+              "interval": {
+                "start": 351,
+                "end": 369
+              },
+              "identity": 0.8421,
+              "coverage": 0.5135135135135135,
+              "bitscore": 21.8,
+              "evalue": 0.001,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 37,
+              "query_span": 26,
+              "interval": {
+                "start": 388,
+                "end": 413
+              },
+              "identity": 0.6923,
+              "coverage": 0.7027027027027027,
+              "bitscore": 19.1,
+              "evalue": 0.007,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "identity"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 44,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000002",
+        "interval": {
+          "start": 5650,
+          "end": 5841,
+          "length": 192
+        },
+        "strand": "+",
+        "distance_nt": 5212,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Bbo/report.json": "fd4e028ec7a96c5b167ea8d3fe277cf1360f6cd142617467647d36048a3e05fe",
+        "benchmarks/final_fixed/complete/Bbo/work/f000001.s000001/identify/f000001-s000001/report.json": "24564e96391b91b1b8260b2aa17bc245bb48b99e1be56cd55602f81d582ed44d",
+        "benchmarks/final_fixed/complete/Bbo/work/f000001.s000001/anti-repeat.tsv": "441c9c887be4ecfd1448f6e50bcf047c4be834f8d8b8c614f9044f4d0db9dc9f",
+        "benchmarks/final_fixed/complete/Bbo/work/f000001.s000001/repeats.fasta": "6de3d56abc2f63570eed83674dd69a24931d2c058e43ff265dbaa4a2b8a022fc",
+        "benchmarks/diagnostics/final_failures/Bbo/genomic-blast.tsv": "ac09d6e5ab9ef99dcafa44e96fa4fbb55b2458468832bdf503559775646336bf",
+        "benchmarks/diagnostics/final_failures/Bbo/isolated-fasta.tsv": "d50bb56334ed3d8b9e0ebc4aff81e93940e779bc1b74feed2d8134e42dfb8c8f",
+        "benchmarks/diagnostics/final_failures/Bbo/isolated-blast.tsv": "32ea9185e34a36d5fc0df4b37837263b1dbb97e194ceb9d0ebf896f23a9dc116",
+        "benchmarks/diagnostics/final_failures/Bbo/published-repeats.fasta": "b0f22badaefbc9036cbb25bf555f21c852295c0468929111f8406ed06698f9d6",
+        "benchmarks/diagnostics/final_failures/Bbo/published-anti-search.tsv": "a5f7453e3886b9bb480fac37826ebe15100f9a66459316bbaf34361cc69156d0",
+        "benchmarks/diagnostics/final_failures/Bbo/published-isolated-reference.tsv": "9fd043d930494211f72c1cbd7eef6cac114ae2190952c377dd8d69b3bc470d69"
+      }
+    },
+    {
+      "label": "Cca2",
+      "reference_id": "gasiunas2020_000121",
+      "truth": {
+        "contig": "REF_Cca2",
+        "start": 7054,
+        "end": 7152,
+        "strand": "-"
+      },
+      "reference_length": 99,
+      "published_repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-821-2456-p1",
+          "interval": {
+            "end": 2456,
+            "length": 1636,
+            "start": 821
+          },
+          "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+          "category": "Possible",
+          "score": 0.7088239371121651,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4444444444444444,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 16,
+            "interval": {
+              "start": 7118,
+              "end": 7133
+            },
+            "identity": 0.9375,
+            "coverage": 0.4444444444444444,
+            "bitscore": 29.4,
+            "evalue": 0.00045,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 29.4,
+              "evalue": 0.00045,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 28.9,
+              "evalue": 0.0006,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 38,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3333333333333333,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 12,
+            "interval": {
+              "start": 7122,
+              "end": 7133
+            },
+            "identity": 1.0,
+            "coverage": 0.3333333333333333,
+            "bitscore": 24.3,
+            "evalue": 0.011,
+            "truth_overlap_nt": 12,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 12,
+              "interval": {
+                "start": 7122,
+                "end": 7133
+              },
+              "identity": 1.0,
+              "coverage": 0.3333333333333333,
+              "bitscore": 24.3,
+              "evalue": 0.011,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 12,
+              "interval": {
+                "start": 7122,
+                "end": 7133
+              },
+              "identity": 1.0,
+              "coverage": 0.3333333333333333,
+              "bitscore": 24.3,
+              "evalue": 0.011,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4722222222222222,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 16,
+            "interval": {
+              "start": 7118,
+              "end": 7133
+            },
+            "identity": 0.9375,
+            "coverage": 0.4444444444444444,
+            "bitscore": 25.0,
+            "evalue": 0.00011,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 25.0,
+              "evalue": 0.00011,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 17,
+              "interval": {
+                "start": 7091,
+                "end": 7109
+              },
+              "identity": 0.7646999999999999,
+              "coverage": 0.4722222222222222,
+              "bitscore": 11.8,
+              "evalue": 0.62,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 24.6,
+              "evalue": 0.00014,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 17,
+              "interval": {
+                "start": 7091,
+                "end": 7109
+              },
+              "identity": 0.7646999999999999,
+              "coverage": 0.4722222222222222,
+              "bitscore": 12.0,
+              "evalue": 0.59,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 2,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3333333333333333,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 36,
+            "query_span": 12,
+            "interval": {
+              "start": 7122,
+              "end": 7133
+            },
+            "identity": 1.0,
+            "coverage": 0.3333333333333333,
+            "bitscore": 24.3,
+            "evalue": 0.000143,
+            "truth_overlap_nt": 12,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 36,
+              "query_span": 12,
+              "interval": {
+                "start": 7122,
+                "end": 7133
+              },
+              "identity": 1.0,
+              "coverage": 0.3333333333333333,
+              "bitscore": 24.3,
+              "evalue": 0.000143,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 36,
+              "query_span": 12,
+              "interval": {
+                "start": 7122,
+                "end": 7133
+              },
+              "identity": 1.0,
+              "coverage": 0.3333333333333333,
+              "bitscore": 24.3,
+              "evalue": 0.000143,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4444444444444444,
+          "best_truth_alignment": {
+            "query": "published_r",
+            "repeat_length": 36,
+            "query_span": 16,
+            "interval": {
+              "start": 7118,
+              "end": 7133
+            },
+            "identity": 0.9375,
+            "coverage": 0.4444444444444444,
+            "bitscore": 29.4,
+            "evalue": 0.00045,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 29.0,
+              "evalue": 0.00056,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 29.4,
+              "evalue": 0.00045,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4722222222222222,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 36,
+            "query_span": 16,
+            "interval": {
+              "start": 7118,
+              "end": 7133
+            },
+            "identity": 0.9375,
+            "coverage": 0.4444444444444444,
+            "bitscore": 24.7,
+            "evalue": 0.00013,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 24.7,
+              "evalue": 0.00013,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 36,
+              "query_span": 17,
+              "interval": {
+                "start": 7091,
+                "end": 7109
+              },
+              "identity": 0.7646999999999999,
+              "coverage": 0.4722222222222222,
+              "bitscore": 12.1,
+              "evalue": 0.57,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 36,
+              "query_span": 16,
+              "interval": {
+                "start": 7118,
+                "end": 7133
+              },
+              "identity": 0.9375,
+              "coverage": 0.4444444444444444,
+              "bitscore": 24.3,
+              "evalue": 0.00017,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 36,
+              "query_span": 17,
+              "interval": {
+                "start": 7091,
+                "end": 7109
+              },
+              "identity": 0.7646999999999999,
+              "coverage": 0.4722222222222222,
+              "bitscore": 11.9,
+              "evalue": 0.62,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 0,
+      "nearest_same_strand_candidate": null,
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Cca2/report.json": "4f9e1235e91f733626b1ab561ac71724731b95280e45d30b01ea779929171e78",
+        "benchmarks/final_fixed/complete/Cca2/work/f000001.s000001/identify/f000001-s000001/report.json": "9b833d31fd0abcb0f3af6adc156661bc2b6879d17f6dbd6b79fdac2159ad06ad",
+        "benchmarks/final_fixed/complete/Cca2/work/f000001.s000001/anti-repeat.tsv": "87979374b760be76ac431c7a41df5610d7369395c0f9d03483246a2afbb1a66c",
+        "benchmarks/final_fixed/complete/Cca2/work/f000001.s000001/repeats.fasta": "d4e15fedf1f0eed2402e91c84f9716df332ca517f0008541185c3dd084b58b5c",
+        "benchmarks/diagnostics/final_failures/Cca2/genomic-blast.tsv": "44db738313647f34eaf97b8f947268cde3db5f37674687e2c3aaf35c51306798",
+        "benchmarks/diagnostics/final_failures/Cca2/isolated-fasta.tsv": "d130f0317633943bc71cd1d3715a81ddd5ca388e80dd3b390e22c6b93d632ee2",
+        "benchmarks/diagnostics/final_failures/Cca2/isolated-blast.tsv": "717230e6aa3cd9c82047cb9533333fb5d2a5dcac222dc1f379c09d51be0e7a7c",
+        "benchmarks/diagnostics/final_failures/Cca2/published-repeats.fasta": "20ac39b5c9c0c05aa558c1c1e801e935ea7b954c5e8dcab8af480101cd222a07",
+        "benchmarks/diagnostics/final_failures/Cca2/published-anti-search.tsv": "9623f2a450ebfb8a4448feec52986f24942135388070d1e310151c9a37a9aeec",
+        "benchmarks/diagnostics/final_failures/Cca2/published-isolated-reference.tsv": "53ea782ac2b711e847849de0bdaa7006daa3fadb8d7a90ab646ca4490ff15acd"
+      }
+    },
+    {
+      "label": "Cca1",
+      "reference_id": "gasiunas2020_000134",
+      "truth": {
+        "contig": "REF_Cca1",
+        "start": 789,
+        "end": 860,
+        "strand": "-"
+      },
+      "reference_length": 72,
+      "published_repeat": "GTTGTAACTAATCACAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-6602-7495-bf1",
+          "interval": {
+            "end": 7495,
+            "length": 894,
+            "start": 6602
+          },
+          "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+          "category": "Bona-fide",
+          "score": 0.7952381864052892,
+          "published_repeat_exact_either_orientation": false,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": false,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 98,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 22.5,
+            "evalue": 0.091,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.4,
+              "evalue": 0.095,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.5,
+              "evalue": 0.091,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 446,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 30.2,
+            "evalue": 0.00035,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 30.2,
+              "evalue": 0.00035,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 30.2,
+              "evalue": 0.00035,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 22.9,
+            "evalue": 0.00044,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.9,
+              "evalue": 0.00044,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 825,
+                "end": 832
+              },
+              "identity": 0.875,
+              "coverage": 0.1702127659574468,
+              "bitscore": 11.4,
+              "evalue": 0.71,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.9,
+              "evalue": 0.00045,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 825,
+                "end": 832
+              },
+              "identity": 0.875,
+              "coverage": 0.1702127659574468,
+              "bitscore": 11.4,
+              "evalue": 0.72,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 2,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 30.2,
+            "evalue": 2.24e-06,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 30.2,
+              "evalue": 2.24e-06,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 30.2,
+              "evalue": 2.24e-06,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 98,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 21.9,
+            "evalue": 0.13,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 21.9,
+              "evalue": 0.13,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 21.8,
+              "evalue": 0.14,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.3191489361702128,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 15,
+            "interval": {
+              "start": 846,
+              "end": 860
+            },
+            "identity": 1.0,
+            "coverage": 0.3191489361702128,
+            "bitscore": 22.7,
+            "evalue": 0.0005,
+            "truth_overlap_nt": 15,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.7,
+              "evalue": 0.0005,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 825,
+                "end": 832
+              },
+              "identity": 0.875,
+              "coverage": 0.1702127659574468,
+              "bitscore": 11.4,
+              "evalue": 0.72,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 846,
+                "end": 860
+              },
+              "identity": 1.0,
+              "coverage": 0.3191489361702128,
+              "bitscore": 22.7,
+              "evalue": 0.00049,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 825,
+                "end": 832
+              },
+              "identity": 0.875,
+              "coverage": 0.1702127659574468,
+              "bitscore": 11.3,
+              "evalue": 0.74,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [
+        {
+          "interval": {
+            "start": 789,
+            "end": 845,
+            "length": 57
+          },
+          "strand": "-",
+          "score": 22.0,
+          "evalue": 0.0045,
+          "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+        },
+        {
+          "interval": {
+            "start": 789,
+            "end": 844,
+            "length": 56
+          },
+          "strand": "-",
+          "score": 12.7,
+          "evalue": 0.0064,
+          "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+        }
+      ],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": {
+        "interval": {
+          "start": 789,
+          "end": 845,
+          "length": 57
+        },
+        "strand": "-",
+        "score": 22.0,
+        "evalue": 0.0045,
+        "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+      },
+      "model_diagnosis": "localized_hit_above_rescue_evalue_cutoff",
+      "candidate_count": 192,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000001",
+        "interval": {
+          "start": 7376,
+          "end": 7577,
+          "length": 202
+        },
+        "strand": "-",
+        "distance_nt": 6515,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Cca1/report.json": "9efc1cff2474bcaec62271b7f623270b4ef2e5045d66786d8b2a252cb814d796",
+        "benchmarks/final_fixed/complete/Cca1/work/f000001.s000001/identify/f000001-s000001/report.json": "cf8f874a5ac1ab0f2517e908678cff226411b46fbbdd0606d755a152ea6bf318",
+        "benchmarks/final_fixed/complete/Cca1/work/f000001.s000001/anti-repeat.tsv": "08b73554ea4b3097cb3b4293e3f4103d7c67f6e4d726e59ce29ddb5b0ae87528",
+        "benchmarks/final_fixed/complete/Cca1/work/f000001.s000001/repeats.fasta": "85b2b92d2980562aa1341d7fe43c5f076a46ccf10125d876224df5ec2bd3d21b",
+        "benchmarks/diagnostics/final_failures/Cca1/genomic-blast.tsv": "3d1b664a6f6eed1e5f83feefd9584a111b8ca290876d5b940cad7e39cfdd7bd5",
+        "benchmarks/diagnostics/final_failures/Cca1/isolated-fasta.tsv": "124e15646932699cf416c3a52aa4bd2ef423e3a5b77871172942926e5cf8ae6b",
+        "benchmarks/diagnostics/final_failures/Cca1/isolated-blast.tsv": "ff305ad665c8d0fc77b3c71238d14271f537957e30a127c5cc8937c12ece7d8d",
+        "benchmarks/diagnostics/final_failures/Cca1/published-repeats.fasta": "78dbc869b01a6822cee88eb72e40593258f8ae4ae7fb1571c53f30494d51f80f",
+        "benchmarks/diagnostics/final_failures/Cca1/published-anti-search.tsv": "cfb1319e4f422f0e713849b7da2834f8432f54547ec3fd4e3edc23ca78c5a210",
+        "benchmarks/diagnostics/final_failures/Cca1/published-isolated-reference.tsv": "b4741f33b2a3c06542e45b027719f0bbb204c038fb55d870388e15988b14efdf"
+      }
+    },
+    {
+      "label": "Cga",
+      "reference_id": "gasiunas2020_000135",
+      "truth": {
+        "contig": "REF_Cga",
+        "start": 810,
+        "end": 911,
+        "strand": "-"
+      },
+      "reference_length": 102,
+      "published_repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-6499-8240-p1",
+          "interval": {
+            "end": 8240,
+            "length": 1742,
+            "start": 6499
+          },
+          "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+          "category": "Possible",
+          "score": 0.709733350902113,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 6,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5531914893617021,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 26,
+            "interval": {
+              "start": 867,
+              "end": 892
+            },
+            "identity": 0.9615,
+            "coverage": 0.5531914893617021,
+            "bitscore": 37.8,
+            "evalue": 1.9e-06,
+            "truth_overlap_nt": 26,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 37.8,
+              "evalue": 1.9e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 36.4,
+              "evalue": 4.9e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 130,
+          "truth_overlapping_alignments": 6,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5106382978723404,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 24,
+            "interval": {
+              "start": 867,
+              "end": 890
+            },
+            "identity": 1.0,
+            "coverage": 0.5106382978723404,
+            "bitscore": 48.1,
+            "evalue": 1.2e-09,
+            "truth_overlap_nt": 24,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 867,
+                "end": 890
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 48.1,
+              "evalue": 1.2e-09,
+              "truth_overlap_nt": 24,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 846,
+                "end": 853
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 4.2,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 908,
+                "end": 914
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 17.0,
+              "truth_overlap_nt": 4,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 867,
+                "end": 890
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 48.1,
+              "evalue": 1.2e-09,
+              "truth_overlap_nt": 24,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 846,
+                "end": 853
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 4.2,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 908,
+                "end": 914
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 17.0,
+              "truth_overlap_nt": 4,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5531914893617021,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 47,
+            "query_span": 26,
+            "interval": {
+              "start": 867,
+              "end": 892
+            },
+            "identity": 0.9615,
+            "coverage": 0.5531914893617021,
+            "bitscore": 30.8,
+            "evalue": 2.6e-06,
+            "truth_overlap_nt": 26,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 30.3,
+              "evalue": 3.6e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 892,
+                "end": 908
+              },
+              "identity": 0.8824,
+              "coverage": 0.40425531914893614,
+              "bitscore": 13.9,
+              "evalue": 0.27,
+              "truth_overlap_nt": 17,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 30.8,
+              "evalue": 2.6e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 892,
+                "end": 908
+              },
+              "identity": 0.8824,
+              "coverage": 0.40425531914893614,
+              "bitscore": 13.8,
+              "evalue": 0.28,
+              "truth_overlap_nt": 17,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5106382978723404,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 24,
+            "interval": {
+              "start": 867,
+              "end": 890
+            },
+            "identity": 1.0,
+            "coverage": 0.5106382978723404,
+            "bitscore": 48.1,
+            "evalue": 1.33e-11,
+            "truth_overlap_nt": 24,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 867,
+                "end": 890
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 48.1,
+              "evalue": 1.33e-11,
+              "truth_overlap_nt": 24,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 846,
+                "end": 853
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 0.047,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 867,
+                "end": 890
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 48.1,
+              "evalue": 1.33e-11,
+              "truth_overlap_nt": 24,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 846,
+                "end": 853
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 0.047,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 6,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5531914893617021,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 26,
+            "interval": {
+              "start": 867,
+              "end": 892
+            },
+            "identity": 0.9615,
+            "coverage": 0.5531914893617021,
+            "bitscore": 38.3,
+            "evalue": 1.3e-06,
+            "truth_overlap_nt": 26,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 38.3,
+              "evalue": 1.3e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 38.2,
+              "evalue": 1.3e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5531914893617021,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 26,
+            "interval": {
+              "start": 867,
+              "end": 892
+            },
+            "identity": 0.9615,
+            "coverage": 0.5531914893617021,
+            "bitscore": 31.7,
+            "evalue": 1.4e-06,
+            "truth_overlap_nt": 26,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 31.7,
+              "evalue": 1.4e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 892,
+                "end": 908
+              },
+              "identity": 0.8824,
+              "coverage": 0.40425531914893614,
+              "bitscore": 13.8,
+              "evalue": 0.29,
+              "truth_overlap_nt": 17,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 26,
+              "interval": {
+                "start": 867,
+                "end": 892
+              },
+              "identity": 0.9615,
+              "coverage": 0.5531914893617021,
+              "bitscore": 28.9,
+              "evalue": 9.9e-06,
+              "truth_overlap_nt": 26,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 892,
+                "end": 908
+              },
+              "identity": 0.8824,
+              "coverage": 0.40425531914893614,
+              "bitscore": 13.6,
+              "evalue": 0.33,
+              "truth_overlap_nt": 17,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 8,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000001",
+        "interval": {
+          "start": 8121,
+          "end": 8322,
+          "length": 202
+        },
+        "strand": "-",
+        "distance_nt": 7209,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Cga/report.json": "bbe5534451b122aedb21f137947bb4df4b45146dd6d74eb477afbb6ac946a8b9",
+        "benchmarks/final_fixed/complete/Cga/work/f000001.s000001/identify/f000001-s000001/report.json": "2c13a7e70f7bfcb0b032ab1776001814ba01bb4cb1aac2722a1e6864ee6401ca",
+        "benchmarks/final_fixed/complete/Cga/work/f000001.s000001/anti-repeat.tsv": "a1a89982cc84826cd8d735f838f0fc058be654a8188c7599c45abebc25b3d612",
+        "benchmarks/final_fixed/complete/Cga/work/f000001.s000001/repeats.fasta": "228493ed51f25d165b037f46508003ba84fe82e388812c737dd8d7fcb7b45ea6",
+        "benchmarks/diagnostics/final_failures/Cga/genomic-blast.tsv": "0a643f07a812d635dc24835c1c1941e2c48b20e18bb172bf8fd68a451adde189",
+        "benchmarks/diagnostics/final_failures/Cga/isolated-fasta.tsv": "3eeec14a31cf2476a68c40562f11a9d1474b69ab9fa97d5728eceb3e1001b462",
+        "benchmarks/diagnostics/final_failures/Cga/isolated-blast.tsv": "5f52d3eac754cd98a82a3556181fc8e88991a80dc0a1a825270f4264165a5f54",
+        "benchmarks/diagnostics/final_failures/Cga/published-repeats.fasta": "2de2c94e1c6cc15acb19a1be773642c6f9aa522aa62e6b67e0d445a0a365cd21",
+        "benchmarks/diagnostics/final_failures/Cga/published-anti-search.tsv": "8cf3e32dc8e958c1c747f39c9dfb9413af461f350199083d534a168d987786fe",
+        "benchmarks/diagnostics/final_failures/Cga/published-isolated-reference.tsv": "e9da46bbae18a3851b603cdbeb21ce2b6352a594ad26f67934d097f25945647b"
+      }
+    },
+    {
+      "label": "Cme1",
+      "reference_id": "gasiunas2020_000136",
+      "truth": {
+        "contig": "REF_Cme1",
+        "start": 5776,
+        "end": 5883,
+        "strand": "+"
+      },
+      "reference_length": 108,
+      "published_repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-6-203-p1",
+          "interval": {
+            "end": 203,
+            "length": 198,
+            "start": 6
+          },
+          "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+          "category": "Possible",
+          "score": 0.6705478101454587,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34782608695652173,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 21.9,
+            "evalue": 0.073,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 21.9,
+              "evalue": 0.073,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 21.6,
+              "evalue": 0.087,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 118,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34782608695652173,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 32.2,
+            "evalue": 4.74e-05,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 32.2,
+              "evalue": 4.74e-05,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 5836,
+                "end": 5843
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 2.8,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 32.2,
+              "evalue": 4.74e-05,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 5836,
+                "end": 5843
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 2.8,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.391304347826087,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 20.5,
+            "evalue": 0.0033,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 20.3,
+              "evalue": 0.0039,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 18,
+              "interval": {
+                "start": 5788,
+                "end": 5805
+              },
+              "identity": 0.7222,
+              "coverage": 0.391304347826087,
+              "bitscore": 13.1,
+              "evalue": 0.44,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 20.5,
+              "evalue": 0.0033,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 18,
+              "interval": {
+                "start": 5788,
+                "end": 5805
+              },
+              "identity": 0.7222,
+              "coverage": 0.391304347826087,
+              "bitscore": 13.1,
+              "evalue": 0.43,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34782608695652173,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 32.2,
+            "evalue": 8.21e-07,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 32.2,
+              "evalue": 8.21e-07,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 5836,
+                "end": 5843
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.049,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 32.2,
+              "evalue": 8.21e-07,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 5836,
+                "end": 5843
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.049,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.34782608695652173,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 22.0,
+            "evalue": 0.069,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 22.0,
+              "evalue": 0.069,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 21.8,
+              "evalue": 0.08,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.391304347826087,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 46,
+            "query_span": 16,
+            "interval": {
+              "start": 5807,
+              "end": 5822
+            },
+            "identity": 1.0,
+            "coverage": 0.34782608695652173,
+            "bitscore": 20.6,
+            "evalue": 0.0031,
+            "truth_overlap_nt": 16,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 20.6,
+              "evalue": 0.0031,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 18,
+              "interval": {
+                "start": 5788,
+                "end": 5805
+              },
+              "identity": 0.7222,
+              "coverage": 0.391304347826087,
+              "bitscore": 13.2,
+              "evalue": 0.4,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 16,
+              "interval": {
+                "start": 5807,
+                "end": 5822
+              },
+              "identity": 1.0,
+              "coverage": 0.34782608695652173,
+              "bitscore": 20.5,
+              "evalue": 0.0034,
+              "truth_overlap_nt": 16,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 18,
+              "interval": {
+                "start": 5788,
+                "end": 5805
+              },
+              "identity": 0.7222,
+              "coverage": 0.391304347826087,
+              "bitscore": 13.2,
+              "evalue": 0.4,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [
+        {
+          "interval": {
+            "start": 5824,
+            "end": 5880,
+            "length": 57
+          },
+          "strand": "+",
+          "score": 11.3,
+          "evalue": 0.012,
+          "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+        },
+        {
+          "interval": {
+            "start": 5823,
+            "end": 5880,
+            "length": 58
+          },
+          "strand": "+",
+          "score": 15.4,
+          "evalue": 0.13,
+          "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+        }
+      ],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": {
+        "interval": {
+          "start": 5824,
+          "end": 5880,
+          "length": 57
+        },
+        "strand": "+",
+        "score": 11.3,
+        "evalue": 0.012,
+        "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+      },
+      "model_diagnosis": "localized_hit_above_rescue_evalue_cutoff",
+      "candidate_count": 0,
+      "nearest_same_strand_candidate": null,
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Cme1/report.json": "01e2cb622039c0b2bdcff8013efd75f863246d1e990d42e43892d10ad783712a",
+        "benchmarks/final_fixed/complete/Cme1/work/f000001.s000001/identify/f000001-s000001/report.json": "c0c47e716ae7d5bf182bf50d1128ec44b69d5ff8a72c94e8908f615f5c5545de",
+        "benchmarks/final_fixed/complete/Cme1/work/f000001.s000001/anti-repeat.tsv": "6eb4d9a0b500cedfdbab5bbbbee4ecf4cf708a62a83b2a344e3d8e3bb794e94b",
+        "benchmarks/final_fixed/complete/Cme1/work/f000001.s000001/repeats.fasta": "850ef1c75320a892033b84347ad205a15df96345bd7a8580721350c2fc28525e",
+        "benchmarks/diagnostics/final_failures/Cme1/genomic-blast.tsv": "0548559bbc6843eb8b607a235ba40f1ba17f8f4bd0f8eff1c80b359ed7296c05",
+        "benchmarks/diagnostics/final_failures/Cme1/isolated-fasta.tsv": "8d2125a2591c652b59d8797841eaedfe8f66f72ce7769ab47445f42673dad8c3",
+        "benchmarks/diagnostics/final_failures/Cme1/isolated-blast.tsv": "d1bf94497aa155ead3ec88577e4fd1bb47788394f27cefb9009f11214fcb608b",
+        "benchmarks/diagnostics/final_failures/Cme1/published-repeats.fasta": "905e125809a6fe0a82ea83a06d7ad3eb08caa495172eceb08ece048150040966",
+        "benchmarks/diagnostics/final_failures/Cme1/published-anti-search.tsv": "229dfdc16d23b0508267a4a344918f9d8d93832144e2faf510d09644456c70c4",
+        "benchmarks/diagnostics/final_failures/Cme1/published-isolated-reference.tsv": "0194d688decb7c81edeba52760a0c013abe90eec732e061bb14dab8fd3f1fcaf"
+      }
+    },
+    {
+      "label": "Ffr",
+      "reference_id": "gasiunas2020_000137",
+      "truth": {
+        "contig": "REF_Ffr",
+        "start": 1077,
+        "end": 1155,
+        "strand": "-"
+      },
+      "reference_length": 79,
+      "published_repeat": "TTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-7647-8299-p1",
+          "interval": {
+            "end": 8299,
+            "length": 653,
+            "start": 7647
+          },
+          "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+          "category": "Possible",
+          "score": 0.7310131415527826,
+          "published_repeat_exact_either_orientation": false,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": false,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5652173913043478,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 46,
+            "query_span": 26,
+            "interval": {
+              "start": 1134,
+              "end": 1158
+            },
+            "identity": 0.96,
+            "coverage": 0.5652173913043478,
+            "bitscore": 27.2,
+            "evalue": 0.0025,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 26,
+              "interval": {
+                "start": 1134,
+                "end": 1158
+              },
+              "identity": 0.96,
+              "coverage": 0.5652173913043478,
+              "bitscore": 26.4,
+              "evalue": 0.0044,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 26,
+              "interval": {
+                "start": 1134,
+                "end": 1158
+              },
+              "identity": 0.96,
+              "coverage": 0.5652173913043478,
+              "bitscore": 27.2,
+              "evalue": 0.0025,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 226,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5217391304347826,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 24,
+            "interval": {
+              "start": 1134,
+              "end": 1156
+            },
+            "identity": 0.95833,
+            "coverage": 0.5217391304347826,
+            "bitscore": 32.2,
+            "evalue": 6.44e-05,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 24,
+              "interval": {
+                "start": 1134,
+                "end": 1156
+              },
+              "identity": 0.95833,
+              "coverage": 0.5217391304347826,
+              "bitscore": 32.2,
+              "evalue": 6.44e-05,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 1113,
+                "end": 1120
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 3.8,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 24,
+              "interval": {
+                "start": 1134,
+                "end": 1156
+              },
+              "identity": 0.95833,
+              "coverage": 0.5217391304347826,
+              "bitscore": 32.2,
+              "evalue": 6.44e-05,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 1113,
+                "end": 1120
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 3.8,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 46,
+            "query_span": 23,
+            "interval": {
+              "start": 1134,
+              "end": 1155
+            },
+            "identity": 1.0,
+            "coverage": 0.5,
+            "bitscore": 26.1,
+            "evalue": 5.1e-05,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 1.0,
+              "coverage": 0.5,
+              "bitscore": 24.9,
+              "evalue": 0.00011,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 19,
+              "interval": {
+                "start": 1103,
+                "end": 1120
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.41304347826086957,
+              "bitscore": 14.1,
+              "evalue": 0.19,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 1.0,
+              "coverage": 0.5,
+              "bitscore": 26.1,
+              "evalue": 5.1e-05,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 19,
+              "interval": {
+                "start": 1103,
+                "end": 1120
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.41304347826086957,
+              "bitscore": 14.3,
+              "evalue": 0.16,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 23,
+            "interval": {
+              "start": 1134,
+              "end": 1155
+            },
+            "identity": 0.95652,
+            "coverage": 0.5,
+            "bitscore": 30.2,
+            "evalue": 2.41e-06,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 0.95652,
+              "coverage": 0.5,
+              "bitscore": 30.2,
+              "evalue": 2.41e-06,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 1113,
+                "end": 1120
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.036,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 0.95652,
+              "coverage": 0.5,
+              "bitscore": 30.2,
+              "evalue": 2.41e-06,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 1113,
+                "end": 1120
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.036,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5777777777777777,
+          "best_truth_alignment": {
+            "query": "published_r",
+            "repeat_length": 45,
+            "query_span": 26,
+            "interval": {
+              "start": 1134,
+              "end": 1158
+            },
+            "identity": 0.96,
+            "coverage": 0.5777777777777777,
+            "bitscore": 27.1,
+            "evalue": 0.0028,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 45,
+              "query_span": 26,
+              "interval": {
+                "start": 1134,
+                "end": 1158
+              },
+              "identity": 0.96,
+              "coverage": 0.5777777777777777,
+              "bitscore": 26.8,
+              "evalue": 0.0033,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 45,
+              "query_span": 26,
+              "interval": {
+                "start": 1134,
+                "end": 1158
+              },
+              "identity": 0.96,
+              "coverage": 0.5777777777777777,
+              "bitscore": 27.1,
+              "evalue": 0.0028,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5111111111111111,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 45,
+            "query_span": 23,
+            "interval": {
+              "start": 1134,
+              "end": 1155
+            },
+            "identity": 1.0,
+            "coverage": 0.5111111111111111,
+            "bitscore": 26.0,
+            "evalue": 5.1e-05,
+            "truth_overlap_nt": 22,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 45,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 1.0,
+              "coverage": 0.5111111111111111,
+              "bitscore": 26.0,
+              "evalue": 5.1e-05,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 45,
+              "query_span": 19,
+              "interval": {
+                "start": 1103,
+                "end": 1120
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.4222222222222222,
+              "bitscore": 14.2,
+              "evalue": 0.17,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 45,
+              "query_span": 23,
+              "interval": {
+                "start": 1134,
+                "end": 1155
+              },
+              "identity": 1.0,
+              "coverage": 0.5111111111111111,
+              "bitscore": 25.1,
+              "evalue": 9.6e-05,
+              "truth_overlap_nt": 22,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 45,
+              "query_span": 19,
+              "interval": {
+                "start": 1103,
+                "end": 1120
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.4222222222222222,
+              "bitscore": 14.1,
+              "evalue": 0.18,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 0,
+      "nearest_same_strand_candidate": null,
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Ffr/report.json": "b30ac0cd5143467374eeb1086df3754b2946fde6b7cd84d113e6565e6d7d3d89",
+        "benchmarks/final_fixed/complete/Ffr/work/f000001.s000001/identify/f000001-s000001/report.json": "e844f63b87867e95c92c1da5b9befd3540cbb243039c5711117030f98c713ef7",
+        "benchmarks/final_fixed/complete/Ffr/work/f000001.s000001/anti-repeat.tsv": "cc9501a06fd9c07eba4b3e5e38d5fe82d3d233fe0f03e9c5341f803d8e7f88e1",
+        "benchmarks/final_fixed/complete/Ffr/work/f000001.s000001/repeats.fasta": "3c383848568ff482888d1f04f413a4f38be1fa95158c5c339c9e8167b4743b82",
+        "benchmarks/diagnostics/final_failures/Ffr/genomic-blast.tsv": "7f5606e9655139178efc25786e066e8c6739e40345545a689a53b099f7b28670",
+        "benchmarks/diagnostics/final_failures/Ffr/isolated-fasta.tsv": "de0fc1e630b6e3b6407c75e87dab474b418311c670547471c0b6dbff2bb2fba5",
+        "benchmarks/diagnostics/final_failures/Ffr/isolated-blast.tsv": "6ab6525c1530cb956252b3fdec2af0965a2c836c07fa824a29334eab42e3a987",
+        "benchmarks/diagnostics/final_failures/Ffr/published-repeats.fasta": "8dea6665e14973da3b05166ce0a3a1d89c46073855c7452624750ce4daf47faa",
+        "benchmarks/diagnostics/final_failures/Ffr/published-anti-search.tsv": "2c71563e5ab9489d4fa9403fa5bfac4889ac95ede7a515a3112eb6436330de22",
+        "benchmarks/diagnostics/final_failures/Ffr/published-isolated-reference.tsv": "e9ac2ecc4e18e5417d126166f3feaed2d116ad5a7c69c30f48fd8b749a7846aa"
+      }
+    },
+    {
+      "label": "Ghy2",
+      "reference_id": "gasiunas2020_000138",
+      "truth": {
+        "contig": "REF_Ghy2",
+        "start": 7651,
+        "end": 7736,
+        "strand": "+"
+      },
+      "reference_length": 86,
+      "published_repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-35-2206-p1",
+          "interval": {
+            "end": 2206,
+            "length": 2172,
+            "start": 35
+          },
+          "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+          "category": "Possible",
+          "score": 0.7177353248761653,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.43478260869565216,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 46,
+            "query_span": 20,
+            "interval": {
+              "start": 7655,
+              "end": 7673
+            },
+            "identity": 0.9473999999999999,
+            "coverage": 0.43478260869565216,
+            "bitscore": 24.8,
+            "evalue": 0.013,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 24.5,
+              "evalue": 0.016,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 24.8,
+              "evalue": 0.013,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 74,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.17391304347826086,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 8,
+            "interval": {
+              "start": 7655,
+              "end": 7662
+            },
+            "identity": 1.0,
+            "coverage": 0.17391304347826086,
+            "bitscore": 16.4,
+            "evalue": 3.5,
+            "truth_overlap_nt": 8,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 7655,
+                "end": 7662
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 3.5,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 7,
+              "interval": {
+                "start": 7687,
+                "end": 7693
+              },
+              "identity": 1.0,
+              "coverage": 0.15217391304347827,
+              "bitscore": 14.4,
+              "evalue": 14.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 7655,
+                "end": 7662
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 3.5,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 7,
+              "interval": {
+                "start": 7687,
+                "end": 7693
+              },
+              "identity": 1.0,
+              "coverage": 0.15217391304347827,
+              "bitscore": 14.4,
+              "evalue": 14.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.43478260869565216,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 20,
+            "interval": {
+              "start": 7655,
+              "end": 7673
+            },
+            "identity": 0.9473999999999999,
+            "coverage": 0.43478260869565216,
+            "bitscore": 22.6,
+            "evalue": 0.00064,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 22.6,
+              "evalue": 0.00064,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 12,
+              "interval": {
+                "start": 7721,
+                "end": 7732
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.2608695652173913,
+              "bitscore": 14.9,
+              "evalue": 0.12,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 22.3,
+              "evalue": 0.00079,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 12,
+              "interval": {
+                "start": 7721,
+                "end": 7732
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.2608695652173913,
+              "bitscore": 14.8,
+              "evalue": 0.13,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.17391304347826086,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 46,
+            "query_span": 8,
+            "interval": {
+              "start": 7655,
+              "end": 7662
+            },
+            "identity": 1.0,
+            "coverage": 0.17391304347826086,
+            "bitscore": 16.4,
+            "evalue": 0.04,
+            "truth_overlap_nt": 8,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 7655,
+                "end": 7662
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.04,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 46,
+              "query_span": 7,
+              "interval": {
+                "start": 7687,
+                "end": 7693
+              },
+              "identity": 1.0,
+              "coverage": 0.15217391304347827,
+              "bitscore": 14.4,
+              "evalue": 0.16,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 8,
+              "interval": {
+                "start": 7655,
+                "end": 7662
+              },
+              "identity": 1.0,
+              "coverage": 0.17391304347826086,
+              "bitscore": 16.4,
+              "evalue": 0.04,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 46,
+              "query_span": 7,
+              "interval": {
+                "start": 7687,
+                "end": 7693
+              },
+              "identity": 1.0,
+              "coverage": 0.15217391304347827,
+              "bitscore": 14.4,
+              "evalue": 0.16,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.43478260869565216,
+          "best_truth_alignment": {
+            "query": "published_r",
+            "repeat_length": 46,
+            "query_span": 20,
+            "interval": {
+              "start": 7655,
+              "end": 7673
+            },
+            "identity": 0.9473999999999999,
+            "coverage": 0.43478260869565216,
+            "bitscore": 24.3,
+            "evalue": 0.017,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 23.8,
+              "evalue": 0.024,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 24.3,
+              "evalue": 0.017,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.43478260869565216,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 46,
+            "query_span": 20,
+            "interval": {
+              "start": 7655,
+              "end": 7673
+            },
+            "identity": 0.9473999999999999,
+            "coverage": 0.43478260869565216,
+            "bitscore": 22.7,
+            "evalue": 0.00057,
+            "truth_overlap_nt": 19,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 22.7,
+              "evalue": 0.00057,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 46,
+              "query_span": 12,
+              "interval": {
+                "start": 7721,
+                "end": 7732
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.2608695652173913,
+              "bitscore": 15.0,
+              "evalue": 0.12,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 20,
+              "interval": {
+                "start": 7655,
+                "end": 7673
+              },
+              "identity": 0.9473999999999999,
+              "coverage": 0.43478260869565216,
+              "bitscore": 22.1,
+              "evalue": 0.00089,
+              "truth_overlap_nt": 19,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 46,
+              "query_span": 12,
+              "interval": {
+                "start": 7721,
+                "end": 7732
+              },
+              "identity": 0.8332999999999999,
+              "coverage": 0.2608695652173913,
+              "bitscore": 14.7,
+              "evalue": 0.13,
+              "truth_overlap_nt": 12,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": null,
+      "model_diagnosis": "no_localizing_hit_reported_by_existing_models",
+      "candidate_count": 0,
+      "nearest_same_strand_candidate": null,
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Ghy2/report.json": "263439bcd5368e2c3ac0cabeb62ed929bd5f9a67a0a690405724295e2116ac7b",
+        "benchmarks/final_fixed/complete/Ghy2/work/f000001.s000001/identify/f000001-s000001/report.json": "a62946e2257ce1aa515204178a01d54ea11dfbfd9a2d36f7b052161ff7b6d50c",
+        "benchmarks/final_fixed/complete/Ghy2/work/f000001.s000001/anti-repeat.tsv": "904d5507de8f2614ee187343e346c95c472eab805d36d4d3453d6c79b10bd03c",
+        "benchmarks/final_fixed/complete/Ghy2/work/f000001.s000001/repeats.fasta": "2780afbb3e492c83dce1cc4b4bf7169b56931c3d37751393bbd567642353d012",
+        "benchmarks/diagnostics/final_failures/Ghy2/genomic-blast.tsv": "9ef3ae983ac3be64a3dd211c110bae1a9943c0bf262b3a6f4add1304a0a85328",
+        "benchmarks/diagnostics/final_failures/Ghy2/isolated-fasta.tsv": "a8f9082c30b1d3fc9b59577d9702d797769fad43ba7246e4f3bf96b40402c9e0",
+        "benchmarks/diagnostics/final_failures/Ghy2/isolated-blast.tsv": "608dec64e5668b52886a6c4444dcab0e8b0e11ebc9da83d91e2db133e2773855",
+        "benchmarks/diagnostics/final_failures/Ghy2/published-repeats.fasta": "58c1da45d1e9b72d156beda3e94d15f89e08c531a1a9a3adda30edbb27a6e543",
+        "benchmarks/diagnostics/final_failures/Ghy2/published-anti-search.tsv": "ada1d34205708ec398e330b2fd75432214e2c1af5236f729f81c9baf217e99d5",
+        "benchmarks/diagnostics/final_failures/Ghy2/published-isolated-reference.tsv": "adfe98b606344a32e287c5521b6696a3d43c5348e52837c452ca3b7778fdd91c"
+      }
+    },
+    {
+      "label": "Orh",
+      "reference_id": "gasiunas2020_000139",
+      "truth": {
+        "contig": "REF_Orh",
+        "start": 8170,
+        "end": 8276,
+        "strand": "+"
+      },
+      "reference_length": 107,
+      "published_repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-927-2124-bf1",
+          "interval": {
+            "end": 2124,
+            "length": 1198,
+            "start": 927
+          },
+          "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+          "category": "Bona-fide",
+          "score": 0.859269222112828,
+          "published_repeat_exact_either_orientation": true,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": true,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 6,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.9565,
+            "coverage": 0.48936170212765956,
+            "bitscore": 30.8,
+            "evalue": 0.00027,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 30.8,
+              "evalue": 0.00027,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 29.9,
+              "evalue": 0.0005,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 252,
+          "truth_overlapping_alignments": 6,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.95652,
+            "coverage": 0.48936170212765956,
+            "bitscore": 38.2,
+            "evalue": 1.35e-06,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.95652,
+              "coverage": 0.48936170212765956,
+              "bitscore": 38.2,
+              "evalue": 1.35e-06,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 8208,
+                "end": 8215
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 5.0,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 8229,
+                "end": 8235
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 20.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.95652,
+              "coverage": 0.48936170212765956,
+              "bitscore": 38.2,
+              "evalue": 1.35e-06,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 8208,
+                "end": 8215
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 5.0,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 8229,
+                "end": 8235
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 20.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "repeat000000r",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.9565,
+            "coverage": 0.48936170212765956,
+            "bitscore": 28.6,
+            "evalue": 1.2e-05,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 28.4,
+              "evalue": 1.4e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 8174,
+                "end": 8188
+              },
+              "identity": 0.8,
+              "coverage": 0.3191489361702128,
+              "bitscore": 14.7,
+              "evalue": 0.18,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 28.6,
+              "evalue": 1.2e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 8174,
+                "end": 8188
+              },
+              "identity": 0.8,
+              "coverage": 0.3191489361702128,
+              "bitscore": 14.7,
+              "evalue": 0.17,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 6,
+          "truth_overlapping_alignments": 6,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.95652,
+            "coverage": 0.48936170212765956,
+            "bitscore": 38.2,
+            "evalue": 1.35e-08,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.95652,
+              "coverage": 0.48936170212765956,
+              "bitscore": 38.2,
+              "evalue": 1.35e-08,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 8208,
+                "end": 8215
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 0.05,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 8229,
+                "end": 8235
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 0.2,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.95652,
+              "coverage": 0.48936170212765956,
+              "bitscore": 38.2,
+              "evalue": 1.35e-08,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 8,
+              "interval": {
+                "start": 8208,
+                "end": 8215
+              },
+              "identity": 1.0,
+              "coverage": 0.1702127659574468,
+              "bitscore": 16.4,
+              "evalue": 0.05,
+              "truth_overlap_nt": 8,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 47,
+              "query_span": 7,
+              "interval": {
+                "start": 8229,
+                "end": 8235
+              },
+              "identity": 1.0,
+              "coverage": 0.14893617021276595,
+              "bitscore": 14.4,
+              "evalue": 0.2,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 6,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "published_r",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.9565,
+            "coverage": 0.48936170212765956,
+            "bitscore": 30.9,
+            "evalue": 0.00026,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 30.1,
+              "evalue": 0.00045,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 30.9,
+              "evalue": 0.00026,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.48936170212765956,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 23,
+            "interval": {
+              "start": 8193,
+              "end": 8215
+            },
+            "identity": 0.9565,
+            "coverage": 0.48936170212765956,
+            "bitscore": 29.6,
+            "evalue": 6.2e-06,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 29.6,
+              "evalue": 6.2e-06,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 8174,
+                "end": 8188
+              },
+              "identity": 0.8,
+              "coverage": 0.3191489361702128,
+              "bitscore": 14.9,
+              "evalue": 0.15,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 23,
+              "interval": {
+                "start": 8193,
+                "end": 8215
+              },
+              "identity": 0.9565,
+              "coverage": 0.48936170212765956,
+              "bitscore": 28.3,
+              "evalue": 1.5e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 15,
+              "interval": {
+                "start": 8174,
+                "end": 8188
+              },
+              "identity": 0.8,
+              "coverage": 0.3191489361702128,
+              "bitscore": 14.8,
+              "evalue": 0.16,
+              "truth_overlap_nt": 15,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [
+        {
+          "interval": {
+            "start": 8216,
+            "end": 8273,
+            "length": 58
+          },
+          "strand": "+",
+          "score": 22.2,
+          "evalue": 0.0038,
+          "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+        },
+        {
+          "interval": {
+            "start": 8217,
+            "end": 8272,
+            "length": 56
+          },
+          "strand": "+",
+          "score": 12.3,
+          "evalue": 0.0081,
+          "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+        }
+      ],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": {
+        "interval": {
+          "start": 8216,
+          "end": 8273,
+          "length": 58
+        },
+        "strand": "+",
+        "score": 22.2,
+        "evalue": 0.0038,
+        "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+      },
+      "model_diagnosis": "localized_hit_above_rescue_evalue_cutoff",
+      "candidate_count": 4,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000002",
+        "interval": {
+          "start": 845,
+          "end": 1046,
+          "length": 202
+        },
+        "strand": "+",
+        "distance_nt": 7123,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Orh/report.json": "76b4bad4d8cdc8e60078c2b39951df58677b7bc39dce2beaf4529ea1aba8e9b7",
+        "benchmarks/final_fixed/complete/Orh/work/f000001.s000001/identify/f000001-s000001/report.json": "e3010a3846189c5a55727f7d47731965b1a752e0f7986c6613580d094881cefe",
+        "benchmarks/final_fixed/complete/Orh/work/f000001.s000001/anti-repeat.tsv": "668a40743ae69721edbc5b6853a912908d66f4de459c332be918fcbddbb0dce1",
+        "benchmarks/final_fixed/complete/Orh/work/f000001.s000001/repeats.fasta": "ef38df75ae3ee7575c54ffc8a83800c7a4a435b065e2503b19370db0239fe326",
+        "benchmarks/diagnostics/final_failures/Orh/genomic-blast.tsv": "8c7046ce95724addfd1329c6cd32ca7608142e17821f5bdae9c1e0679e0c8f68",
+        "benchmarks/diagnostics/final_failures/Orh/isolated-fasta.tsv": "0e207d681600bd9263201b83f5e94392c0c761d5d8f550667bc11d80a9b7bce3",
+        "benchmarks/diagnostics/final_failures/Orh/isolated-blast.tsv": "2541153bbf71ca310d0542e63ab6f73874bc533991d2cb90b745ef3636df5033",
+        "benchmarks/diagnostics/final_failures/Orh/published-repeats.fasta": "71d3754f6cb75f802028406cb1eb8a7991e12ff258f0369d8fd2293dda4a80b3",
+        "benchmarks/diagnostics/final_failures/Orh/published-anti-search.tsv": "20f06948c8a8e82a8afbd5cce26cc575857429d920f38e79f4684b01421925c8",
+        "benchmarks/diagnostics/final_failures/Orh/published-isolated-reference.tsv": "598ae5415fb6dc8b4ed3a552f981fde97ea18345644ddba94327f79ca1c9dfa2"
+      }
+    },
+    {
+      "label": "Psp",
+      "reference_id": "gasiunas2020_000141",
+      "truth": {
+        "contig": "REF_Psp",
+        "start": 627,
+        "end": 731,
+        "strand": "-"
+      },
+      "reference_length": 105,
+      "published_repeat": "GCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "successful_execution": true,
+      "arrays": [
+        {
+          "id": "CRISPR-7014-7368-bf1",
+          "interval": {
+            "end": 7368,
+            "length": 355,
+            "start": 7014
+          },
+          "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+          "category": "Bona-fide",
+          "score": 0.7672118481696123,
+          "published_repeat_exact_either_orientation": false,
+          "truth_overlap_nt": 0
+        }
+      ],
+      "any_exact_repeat_either_orientation": false,
+      "array_masks_truth": false,
+      "published_repeat_substitution_rescues_genomic_alignment": false,
+      "settings": {
+        "similarity": 0.7,
+        "coverage": 0.6,
+        "mask_arrays": true,
+        "model_rescue": true,
+        "model_rescue_evalue": 1e-05,
+        "tail_length": 150,
+        "upstream_length": 5
+      },
+      "anti_repeat_diagnosis": "short_repeat_similarity_below_coverage_gate",
+      "alignment_diagnostics": {
+        "pipeline_fasta_genome": {
+          "total_alignments": 22,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4897959183673469,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 49,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 1.0,
+            "coverage": 0.4897959183673469,
+            "bitscore": 30.3,
+            "evalue": 0.0003,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.4897959183673469,
+              "bitscore": 30.3,
+              "evalue": 0.0003,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.4897959183673469,
+              "bitscore": 29.6,
+              "evalue": 0.0005,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_genome": {
+          "total_alignments": 140,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4897959183673469,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 49,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 0.95833,
+            "coverage": 0.4897959183673469,
+            "bitscore": 32.2,
+            "evalue": 6.56e-05,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 0.95833,
+              "coverage": 0.4897959183673469,
+              "bitscore": 32.2,
+              "evalue": 6.56e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 7,
+              "interval": {
+                "start": 667,
+                "end": 673
+              },
+              "identity": 1.0,
+              "coverage": 0.14285714285714285,
+              "bitscore": 14.4,
+              "evalue": 15.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 0.95833,
+              "coverage": 0.4897959183673469,
+              "bitscore": 32.2,
+              "evalue": 6.56e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 7,
+              "interval": {
+                "start": 667,
+                "end": 673
+              },
+              "identity": 1.0,
+              "coverage": 0.14285714285714285,
+              "bitscore": 14.4,
+              "evalue": 15.0,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4897959183673469,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 49,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 1.0,
+            "coverage": 0.4897959183673469,
+            "bitscore": 28.4,
+            "evalue": 1.5e-05,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.4897959183673469,
+              "bitscore": 28.4,
+              "evalue": 1.5e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 19,
+              "interval": {
+                "start": 713,
+                "end": 730
+              },
+              "identity": 0.7778,
+              "coverage": 0.3877551020408163,
+              "bitscore": 12.8,
+              "evalue": 0.52,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.4897959183673469,
+              "bitscore": 27.9,
+              "evalue": 2e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 19,
+              "interval": {
+                "start": 713,
+                "end": 730
+              },
+              "identity": 0.7778,
+              "coverage": 0.3877551020408163,
+              "bitscore": 12.9,
+              "evalue": 0.49,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "diagnostic_blast_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.4897959183673469,
+          "best_truth_alignment": {
+            "query": "repeat000000f",
+            "repeat_length": 49,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 0.95833,
+            "coverage": 0.4897959183673469,
+            "bitscore": 32.2,
+            "evalue": 8.57e-07,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 0.95833,
+              "coverage": 0.4897959183673469,
+              "bitscore": 32.2,
+              "evalue": 8.57e-07,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000f",
+              "repeat_length": 49,
+              "query_span": 7,
+              "interval": {
+                "start": 667,
+                "end": 673
+              },
+              "identity": 1.0,
+              "coverage": 0.14285714285714285,
+              "bitscore": 14.4,
+              "evalue": 0.2,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 0.95833,
+              "coverage": 0.4897959183673469,
+              "bitscore": 32.2,
+              "evalue": 8.57e-07,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "repeat000000r",
+              "repeat_length": 49,
+              "query_span": 7,
+              "interval": {
+                "start": 667,
+                "end": 673
+              },
+              "identity": 1.0,
+              "coverage": 0.14285714285714285,
+              "bitscore": 14.4,
+              "evalue": 0.2,
+              "truth_overlap_nt": 7,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_genome": {
+          "total_alignments": 22,
+          "truth_overlapping_alignments": 2,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5106382978723404,
+          "best_truth_alignment": {
+            "query": "published_r",
+            "repeat_length": 47,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 1.0,
+            "coverage": 0.5106382978723404,
+            "bitscore": 30.5,
+            "evalue": 0.00026,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 29.0,
+              "evalue": 0.00072,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 30.5,
+              "evalue": 0.00026,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        },
+        "published_repeat_fasta_isolated": {
+          "total_alignments": 4,
+          "truth_overlapping_alignments": 4,
+          "truth_overlapping_passing_default_gates": 0,
+          "max_truth_coverage_among_identity_passing": 0.5106382978723404,
+          "best_truth_alignment": {
+            "query": "published_f",
+            "repeat_length": 47,
+            "query_span": 24,
+            "interval": {
+              "start": 687,
+              "end": 709
+            },
+            "identity": 1.0,
+            "coverage": 0.5106382978723404,
+            "bitscore": 28.1,
+            "evalue": 1.8e-05,
+            "truth_overlap_nt": 23,
+            "truth_distance_nt": 0,
+            "blocked_by": [
+              "coverage"
+            ]
+          },
+          "truth_alignments": [
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 28.1,
+              "evalue": 1.8e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_f",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 713,
+                "end": 730
+              },
+              "identity": 0.7778,
+              "coverage": 0.40425531914893614,
+              "bitscore": 12.7,
+              "evalue": 0.53,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 24,
+              "interval": {
+                "start": 687,
+                "end": 709
+              },
+              "identity": 1.0,
+              "coverage": 0.5106382978723404,
+              "bitscore": 27.2,
+              "evalue": 3.2e-05,
+              "truth_overlap_nt": 23,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            },
+            {
+              "query": "published_r",
+              "repeat_length": 47,
+              "query_span": 19,
+              "interval": {
+                "start": 713,
+                "end": 730
+              },
+              "identity": 0.7778,
+              "coverage": 0.40425531914893614,
+              "bitscore": 12.7,
+              "evalue": 0.53,
+              "truth_overlap_nt": 18,
+              "truth_distance_nt": 0,
+              "blocked_by": [
+                "coverage"
+              ]
+            }
+          ]
+        }
+      },
+      "genomic_model_localizing_hits": [
+        {
+          "interval": {
+            "start": 629,
+            "end": 686,
+            "length": 58
+          },
+          "strand": "-",
+          "score": 24.4,
+          "evalue": 0.00077,
+          "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+        }
+      ],
+      "genomic_model_wrong_strand_overlapping_hits": [],
+      "best_localizing_model_hit": {
+        "interval": {
+          "start": 629,
+          "end": 686,
+          "length": 58
+        },
+        "strand": "-",
+        "score": 24.4,
+        "evalue": 0.00077,
+        "model": "II.cm:dataset_169b62a4-0981-4d86-b8bf-5ee33a075298"
+      },
+      "model_diagnosis": "localized_hit_above_rescue_evalue_cutoff",
+      "candidate_count": 40,
+      "nearest_same_strand_candidate": {
+        "id": "candidate000001",
+        "interval": {
+          "start": 6404,
+          "end": 6607,
+          "length": 204
+        },
+        "strand": "-",
+        "distance_nt": 5672,
+        "truth_overlap_nt": 0,
+        "origin": "anti_repeat"
+      },
+      "ranking_failure": false,
+      "evidence_sha256": {
+        "benchmarks/final_fixed/complete/Psp/report.json": "389469a148351f79149d570434bf300c04c3aa88d004545bcfc78522c642af3b",
+        "benchmarks/final_fixed/complete/Psp/work/f000001.s000001/identify/f000001-s000001/report.json": "6d5c6d22c04a9c73ade2001b592e61c2609532e9ed07ad43adf9b9931c788cc0",
+        "benchmarks/final_fixed/complete/Psp/work/f000001.s000001/anti-repeat.tsv": "0ff971915580b8d5864914dbc07c1df0f5f2a3e79eb256717c73c11d109c42a9",
+        "benchmarks/final_fixed/complete/Psp/work/f000001.s000001/repeats.fasta": "3c3a1abead7c00dbbc5c53ec36c4da2fd7d7d7a67046fee2620fa113bfe076c2",
+        "benchmarks/diagnostics/final_failures/Psp/genomic-blast.tsv": "f567e2aff9ad688d4120db89e4742161458df33f358d079b3337d0e4f1b29f27",
+        "benchmarks/diagnostics/final_failures/Psp/isolated-fasta.tsv": "9e89ce39e99fcd0453e50188c72524cb261c765fce21fafc96dd403cf9f94a4c",
+        "benchmarks/diagnostics/final_failures/Psp/isolated-blast.tsv": "0e46728a606398c74fd87573b44c508a2fca45abc52c3958fc5f3d0dcef45c19",
+        "benchmarks/diagnostics/final_failures/Psp/published-repeats.fasta": "791f2aa58a4b37098978d5b5e709465cd1a05f4cee78f347b14fbdfaa68d5860",
+        "benchmarks/diagnostics/final_failures/Psp/published-anti-search.tsv": "83e94d7a1fbd4735f9572ec5743501ec879b8a4bdb1734e4159f8bb387f2b75b",
+        "benchmarks/diagnostics/final_failures/Psp/published-isolated-reference.tsv": "b57ddcc89c33699b716b4272eb901e9a8062b60e77933f421e9952b931ffee86"
+      }
+    }
+  ],
+  "partial_boundary_rescues": [
+    {
+      "label": "Lan",
+      "truth": {
+        "contig": "REF_Lan",
+        "start": 1032,
+        "end": 1130,
+        "strand": "-"
+      },
+      "reference_length": 99,
+      "prediction_interval": {
+        "start": 1033,
+        "end": 1090,
+        "length": 58
+      },
+      "origin": "covariance_model",
+      "boundary_kind": "model_supported_region",
+      "truth_overlap_nt": 58,
+      "reference_coverage": 0.5858585858585859,
+      "rank": 1,
+      "best_model_evalue": 6.1e-26,
+      "explanation": "The CM identifies a conserved subregion. No passing anti-repeat supplies an oriented extension window; the rescue reports only model-supported coordinates and does not assert complete transcript boundaries."
+    },
+    {
+      "label": "Rsp",
+      "truth": {
+        "contig": "REF_Rsp",
+        "start": 14843,
+        "end": 14939,
+        "strand": "-"
+      },
+      "reference_length": 97,
+      "prediction_interval": {
+        "start": 14845,
+        "end": 14904,
+        "length": 60
+      },
+      "origin": "covariance_model",
+      "boundary_kind": "model_supported_region",
+      "truth_overlap_nt": 60,
+      "reference_coverage": 0.6185567010309279,
+      "rank": 3,
+      "best_model_evalue": 1.5e-06,
+      "explanation": "The CM identifies a conserved subregion. No passing anti-repeat supplies an oriented extension window; the rescue reports only model-supported coordinates and does not assert complete transcript boundaries."
+    },
+    {
+      "label": "Cme3",
+      "truth": {
+        "contig": "REF_Cme3",
+        "start": 5000,
+        "end": 5092,
+        "strand": "+"
+      },
+      "reference_length": 93,
+      "prediction_interval": {
+        "start": 5035,
+        "end": 5092,
+        "length": 58
+      },
+      "origin": "covariance_model",
+      "boundary_kind": "model_supported_region",
+      "truth_overlap_nt": 58,
+      "reference_coverage": 0.6236559139784946,
+      "rank": 1,
+      "best_model_evalue": 5.5e-10,
+      "explanation": "The CM identifies a conserved subregion. No passing anti-repeat supplies an oriented extension window; the rescue reports only model-supported coordinates and does not assert complete transcript boundaries."
+    },
+    {
+      "label": "Ghe",
+      "truth": {
+        "contig": "REF_Ghe",
+        "start": 8097,
+        "end": 8192,
+        "strand": "+"
+      },
+      "reference_length": 96,
+      "prediction_interval": {
+        "start": 8132,
+        "end": 8192,
+        "length": 61
+      },
+      "origin": "covariance_model",
+      "boundary_kind": "model_supported_region",
+      "truth_overlap_nt": 61,
+      "reference_coverage": 0.6354166666666666,
+      "rank": 1,
+      "best_model_evalue": 4.6e-10,
+      "explanation": "The CM identifies a conserved subregion. No passing anti-repeat supplies an oriented extension window; the rescue reports only model-supported coordinates and does not assert complete transcript boundaries."
+    }
+  ],
+  "model_threshold_diagnostic": [
+    {
+      "threshold": 1e-05,
+      "model_detected": 34,
+      "union_with_anti_repeat_detected": 68,
+      "raw_hit_count": 69
+    },
+    {
+      "threshold": 0.0001,
+      "model_detected": 35,
+      "union_with_anti_repeat_detected": 68,
+      "raw_hit_count": 78
+    },
+    {
+      "threshold": 0.001,
+      "model_detected": 38,
+      "union_with_anti_repeat_detected": 69,
+      "raw_hit_count": 89
+    },
+    {
+      "threshold": 0.01,
+      "model_detected": 42,
+      "union_with_anti_repeat_detected": 71,
+      "raw_hit_count": 110
+    },
+    {
+      "threshold": 0.1,
+      "model_detected": 45,
+      "union_with_anti_repeat_detected": 72,
+      "raw_hit_count": 153
+    },
+    {
+      "threshold": 1,
+      "model_detected": 45,
+      "union_with_anti_repeat_detected": 72,
+      "raw_hit_count": 206
+    },
+    {
+      "threshold": 10,
+      "model_detected": 45,
+      "union_with_anti_repeat_detected": 72,
+      "raw_hit_count": 307
+    }
+  ],
+  "pooled_sequence_threshold_diagnostic": {
+    "II": {
+      "thresholds": [
+        {
+          "threshold": 1e-05,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 7063,
+          "shuffled_sequences_any_hit": 1,
+          "shuffled_sequences_any_strand_span20": 1
+        },
+        {
+          "threshold": 0.0001,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 9680,
+          "shuffled_sequences_any_hit": 8,
+          "shuffled_sequences_any_strand_span20": 6
+        },
+        {
+          "threshold": 0.001,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 12393,
+          "shuffled_sequences_any_hit": 32,
+          "shuffled_sequences_any_strand_span20": 26
+        },
+        {
+          "threshold": 0.01,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 14409,
+          "shuffled_sequences_any_hit": 132,
+          "shuffled_sequences_any_strand_span20": 103
+        },
+        {
+          "threshold": 0.1,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 15048,
+          "shuffled_sequences_any_hit": 382,
+          "shuffled_sequences_any_strand_span20": 282
+        },
+        {
+          "threshold": 1,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 15116,
+          "shuffled_sequences_any_hit": 527,
+          "shuffled_sequences_any_strand_span20": 397
+        },
+        {
+          "threshold": 10,
+          "unique_sequences": 42320,
+          "recognized_correct_strand_span20": 15124,
+          "shuffled_sequences_any_hit": 532,
+          "shuffled_sequences_any_strand_span20": 401
+        }
+      ],
+      "membership": "Canonical catalog membership: II, II-* or unknown for the Type II screen; V or V-* for Type V. Type III and VI are excluded. Both retained scan batches are joined by sequence hash; the first batch wins duplicate hashes.",
+      "caveat": "E-values depend on search space: this pooled sequence scan is not a calibration of the per-genome rescue E-value. Mononucleotide shuffled sequences are not verified biological negatives.",
+      "input_sha256": {
+        "benchmarks/final/sequences/II/hits.json": "eaf5fa22850ccf2dd0db71ec711778ebcd071063008774c2efefc0ffc7f1cd07",
+        "benchmarks/final/sequences/II/sequence_ids.json": "59188b0ff77dab46c1077c3e9a8dee5d3de2e53c285846b8233a01d872696326",
+        "benchmarks/final/sequences/II/cm-input.fasta": "5f20d95c6d9e2a873dfccf4b36d801d9e965118b6b003de90e8c643c61aa6e10",
+        "benchmarks/final/additional_sequences/II/hits.json": "df52b575e7cac3c9a4449753b60342be297e4236a86560bb023da9862095727f",
+        "benchmarks/final/additional_sequences/II/sequence_ids.json": "21ebd0926c39df5117a82a6a37ccb4a0dcb6f9fa882afcb7add976a98f6088df",
+        "benchmarks/final/additional_sequences/II/cm-input.fasta": "53f36a51e88cb2ccd8ae4afc6bcadc4e3002776914d35ff23b65342d9ff481db",
+        "benchmarks/final/chyou_sequences/II/hits.json": "df1e4c80d41af1c969e1a2c5d1a48758f7f496111d007cdd9105dad624df2a38",
+        "benchmarks/final/chyou_sequences/II/sequence_ids.json": "d65db68c13bbeec78d72e0c72d62dc3c0007c5522def75f983afbedb8d8e2489",
+        "benchmarks/final/chyou_sequences/II/cm-input.fasta": "5f129b95e750ea9a61911b0b4968ed70ed5fa1920670797eaf215cc00869059a",
+        "benchmarks/final/briner_sequences/II/hits.json": "a606da9340a103a0b77205d99ea27e822bd91ba4a545c661337ed341fc786f65",
+        "benchmarks/final/briner_sequences/II/sequence_ids.json": "87da84e4ad36ca1e317e2b87f01c97a198ee4ebad2de23ee80e4cf81876b4268",
+        "benchmarks/final/briner_sequences/II/cm-input.fasta": "16fd42c36240fa475acfe00aeb7e232c0708f93c384a4f96d631878c077cf964"
+      }
+    },
+    "V": {
+      "thresholds": [
+        {
+          "threshold": 1e-05,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 111,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 0.0001,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 111,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 0.001,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 111,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 0.01,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 112,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 0.1,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 112,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 1,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 112,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        },
+        {
+          "threshold": 10,
+          "unique_sequences": 185,
+          "recognized_correct_strand_span20": 112,
+          "shuffled_sequences_any_hit": 0,
+          "shuffled_sequences_any_strand_span20": 0
+        }
+      ],
+      "membership": "Canonical catalog membership: II, II-* or unknown for the Type II screen; V or V-* for Type V. Type III and VI are excluded. Both retained scan batches are joined by sequence hash; the first batch wins duplicate hashes.",
+      "caveat": "E-values depend on search space: this pooled sequence scan is not a calibration of the per-genome rescue E-value. Mononucleotide shuffled sequences are not verified biological negatives.",
+      "input_sha256": {
+        "benchmarks/final/sequences/V/hits.json": "5d28f505a3342a16de6680b03caf41afb69e30f977d88605e973782ad2692769",
+        "benchmarks/final/sequences/V/sequence_ids.json": "e9bb1e4abc5fd3ad422ddb7581d04f4cf7991fdc15f126183241d98ca4da5dd2",
+        "benchmarks/final/sequences/V/cm-input.fasta": "4b50f003828cabe0e5f46721ea09d57668126ce025d566fb9a7253dd76417f71",
+        "benchmarks/final/additional_sequences/V/hits.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "benchmarks/final/additional_sequences/V/sequence_ids.json": "0550352ab5e10926968c15a3b3470a686db2fef6412e8830d82b2e5dab53735e",
+        "benchmarks/final/additional_sequences/V/cm-input.fasta": "033064150d504230fe9434d11d2453fe38b6679a6104b02191ad8aeb1e3fe714"
+      }
+    }
+  }
+}

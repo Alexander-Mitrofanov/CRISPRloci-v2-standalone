@@ -1,0 +1,4 @@
+# CPU-only inference environment; model bytes are independently SHA-256 checked.
+numpy==2.3.4
+scipy==1.16.3
+xgboost-cpu==3.1.1

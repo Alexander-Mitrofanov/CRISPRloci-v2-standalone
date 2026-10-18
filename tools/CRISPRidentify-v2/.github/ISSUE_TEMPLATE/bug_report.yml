@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a reproducible installation, crash, or output-integrity problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this form for vulnerabilities or confidential sequence data.
+        Follow SECURITY.md for security issues and use a minimal public or
+        synthetic sequence whenever possible.
+  - type: input
+    id: version
+    attributes:
+      label: Version and source identity
+      description: Include ./crispridentify --version and the release-archive SHA-256.
+      placeholder: "CRISPRidentify 2.3.2; archive SHA-256 ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, architecture, installer, CPU allocation, and RAM.
+      placeholder: "Ubuntu 24.04 x86-64; locked install; 8 vCPU; 32 GiB RAM"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command
+      description: Remove credentials and private paths.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input identity
+      description: Public accession or synthetic fixture, sequence SHA-256, record count, and total bases.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: Include the full error or smallest relevant log tail.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Environment doctor output
+      description: Output from scripts/check_environment.py with secrets removed.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: bundled_example
+    attributes:
+      label: Does the bundled example reproduce the problem?
+      options:
+        - "Yes"
+        - "No"
+        - "Not tested"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data and disclosure confirmation
+      options:
+        - label: I removed credentials, confidential data, and personally identifiable sequence data.
+          required: true
+        - label: This report does not contain undisclosed security vulnerability details.
+          required: true

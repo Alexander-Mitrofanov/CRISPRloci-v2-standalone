@@ -1,0 +1,275 @@
+{
+  "records": {
+    "synthetic": "GATTACAACGTTGCAAGTCGTCAGATTACACCCCCCCCCCCCCCCCCCCCACGTTGCAAGTCGTCATTTTTTTTTTTGACGACTTGCAACGT"
+  },
+  "reports": [
+    {
+      "schema": {
+        "name": "CRISPRidentify-report",
+        "version": "1.2.0"
+      },
+      "coordinate_system": {
+        "indexing": 1,
+        "end_inclusive": true,
+        "reference": "input_forward_strand",
+        "orientation_is_separate": true
+      },
+      "source": {
+        "id": "synthetic",
+        "length": 92,
+        "sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+        "sha256_scope": "uppercase_sequence"
+      },
+      "arrays": [
+        {
+          "id": "native_array_1",
+          "source_interval": {
+            "start": 1,
+            "end": 30,
+            "length": 30
+          },
+          "source_sequence": "GATTACAACGTTGCAAGTCGTCAGATTACA",
+          "category": "Bona-fide",
+          "orientation": {
+            "strand": null
+          },
+          "repeat_count": 2,
+          "spacer_count": 1,
+          "non_deleted_spacer_count": 1,
+          "spacer_deletion_count": 0,
+          "repeats": [
+            {
+              "index": 1,
+              "sequence": "GATTACA",
+              "source_interval": {
+                "start": 1,
+                "end": 7,
+                "length": 7
+              }
+            },
+            {
+              "index": 2,
+              "sequence": "GATTACA",
+              "source_interval": {
+                "start": 24,
+                "end": 30,
+                "length": 7
+              }
+            }
+          ],
+          "spacers": [
+            {
+              "index": 1,
+              "sequence": "ACGTTGCAAGTCGTCA",
+              "source_interval": {
+                "start": 8,
+                "end": 23,
+                "length": 16
+              }
+            }
+          ],
+          "spacer_deletions": []
+        }
+      ]
+    }
+  ],
+  "search": {
+    "coordinate_system": "1-based inclusive forward target; ordered segments for origin-crossing matches",
+    "counts": {
+      "alignment_occurrences": 3,
+      "ambiguous_windows": 0,
+      "assessed_windows": 77,
+      "candidate_matches": 2,
+      "eligible_queries": 1,
+      "excluded_array_matches": 1,
+      "query_occurrences": 1,
+      "targets": 1,
+      "unique_eligible_sequences": 1
+    },
+    "coverage": [
+      {
+        "ambiguous_windows": 0,
+        "assessed_windows": 77,
+        "possible_windows": 77,
+        "query_occurrence_count": 1,
+        "query_sha256": "16afca7e92136e2be4b7a6592f728521e9cc96864496001372110bfd049c6f5e",
+        "target_id": "synthetic"
+      }
+    ],
+    "execution_status": "completed",
+    "inventory_sha256": "c9eeea227b414a396c996202c3ecd132ddcb81f3b138716888a70b8dde8c31a7",
+    "matches": [
+      {
+        "array_overlap": "source_array",
+        "confidence": null,
+        "evalue": null,
+        "excluded": true,
+        "gaps": 0,
+        "id": "match-00000001",
+        "identities": 16,
+        "left_flank_forward": "GATTACA",
+        "overlapping_array_ids": [
+          "array-000001"
+        ],
+        "pam_status": "not_evaluated",
+        "query_coverage": 1.0,
+        "query_end": 16,
+        "query_id": "spacer-000001",
+        "query_length": 16,
+        "query_sha256": "16afca7e92136e2be4b7a6592f728521e9cc96864496001372110bfd049c6f5e",
+        "query_start": 1,
+        "relative_strand": "+",
+        "right_flank_forward": "GATTACACCC",
+        "same_declared_assembly": null,
+        "same_source_record": true,
+        "substitutions": 0,
+        "target_end": 23,
+        "target_id": "synthetic",
+        "target_segments": [
+          {
+            "end": 23,
+            "start": 8
+          }
+        ],
+        "target_sequence_forward": "ACGTTGCAAGTCGTCA",
+        "target_sequence_query_frame": "ACGTTGCAAGTCGTCA",
+        "target_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+        "target_start": 8,
+        "wraps_origin": false
+      },
+      {
+        "array_overlap": "outside_reported_arrays",
+        "confidence": null,
+        "evalue": null,
+        "excluded": false,
+        "gaps": 0,
+        "id": "match-00000002",
+        "identities": 16,
+        "left_flank_forward": "CCCCCCCCCC",
+        "overlapping_array_ids": [],
+        "pam_status": "not_evaluated",
+        "query_coverage": 1.0,
+        "query_end": 16,
+        "query_id": "spacer-000001",
+        "query_length": 16,
+        "query_sha256": "16afca7e92136e2be4b7a6592f728521e9cc96864496001372110bfd049c6f5e",
+        "query_start": 1,
+        "relative_strand": "+",
+        "right_flank_forward": "TTTTTTTTTT",
+        "same_declared_assembly": null,
+        "same_source_record": true,
+        "substitutions": 0,
+        "target_end": 66,
+        "target_id": "synthetic",
+        "target_segments": [
+          {
+            "end": 66,
+            "start": 51
+          }
+        ],
+        "target_sequence_forward": "ACGTTGCAAGTCGTCA",
+        "target_sequence_query_frame": "ACGTTGCAAGTCGTCA",
+        "target_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+        "target_start": 51,
+        "wraps_origin": false
+      },
+      {
+        "array_overlap": "outside_reported_arrays",
+        "confidence": null,
+        "evalue": null,
+        "excluded": false,
+        "gaps": 0,
+        "id": "match-00000003",
+        "identities": 16,
+        "left_flank_forward": "TTTTTTTTTT",
+        "overlapping_array_ids": [],
+        "pam_status": "not_evaluated",
+        "query_coverage": 1.0,
+        "query_end": 16,
+        "query_id": "spacer-000001",
+        "query_length": 16,
+        "query_sha256": "16afca7e92136e2be4b7a6592f728521e9cc96864496001372110bfd049c6f5e",
+        "query_start": 1,
+        "relative_strand": "-",
+        "right_flank_forward": null,
+        "same_declared_assembly": null,
+        "same_source_record": true,
+        "substitutions": 0,
+        "target_end": 92,
+        "target_id": "synthetic",
+        "target_segments": [
+          {
+            "end": 92,
+            "start": 77
+          }
+        ],
+        "target_sequence_forward": "TGACGACTTGCAACGT",
+        "target_sequence_query_frame": "ACGTTGCAAGTCGTCA",
+        "target_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+        "target_start": 77,
+        "wraps_origin": false
+      }
+    ],
+    "outcome": "matches",
+    "policy": {
+      "array_padding": 0,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "flank": 10,
+      "max_candidates": 2000000,
+      "max_evidence_bytes": 20000000,
+      "max_hits": 10000,
+      "max_length": 1000,
+      "max_pairs": 100000,
+      "max_work": 500000000,
+      "min_length": 16,
+      "scope": "same-record",
+      "substitutions": 0,
+      "timeout": 300
+    },
+    "queries": [
+      {
+        "array_id": "array-000001",
+        "boundary": null,
+        "category": "Bona-fide",
+        "end": 23,
+        "id": "spacer-000001",
+        "kind": "observed",
+        "ordinal": 1,
+        "sequence": "ACGTTGCAAGTCGTCA",
+        "sha256": "16afca7e92136e2be4b7a6592f728521e9cc96864496001372110bfd049c6f5e",
+        "source_id": "synthetic",
+        "source_orientation": null,
+        "start": 8,
+        "status": "eligible"
+      }
+    ],
+    "reference": null,
+    "results_truncated": false,
+    "retrieval": "exhaustive_full_length_hamming",
+    "retrieval_scope": "eligible queries and unambiguous windows of the declared targets, at most one circular lap",
+    "schema": {
+      "name": "crisprspacer.analysis",
+      "version": "1.0.0"
+    },
+    "search_complete": true,
+    "source_targets": true,
+    "targets_sha256": "848df54af9a91d544f1a13ea7dc10aff66d58654bfe89dbddf491725030623b6",
+    "tool_version": "0.3.1",
+    "warnings": [
+      "Sequence matches do not establish functional targeting, active infection, immunity or host range.",
+      "PAMs are not evaluated. Missing metadata remains unknown.",
+      "Array exclusions cover reported arrays only; undetected or omitted arrays may remain."
+    ]
+  },
+  "regions": [
+    {
+      "id": "region000001",
+      "source_id": "synthetic",
+      "start": 45,
+      "end": 70
+    }
+  ]
+}

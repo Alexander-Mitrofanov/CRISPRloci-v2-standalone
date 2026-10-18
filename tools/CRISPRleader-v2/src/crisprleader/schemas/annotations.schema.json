@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Structural schema only. Source hashes, interval ordering, containment, nonoverlap, strand and sequence reconstruction require the Python validators.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "coordinate_system",
+    "sources",
+    "arrays"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "coordinate_system": {
+      "const": "zero_based_half_open"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100000,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "arrays": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "$ref": "#/$defs/array"
+      }
+    }
+  },
+  "$defs": {
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segments",
+        "sequence"
+      ],
+      "properties": {
+        "segments": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/segment"
+          }
+        },
+        "sequence": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[ACGTRYSWKMBDHVNacgtryswkmbdhvn]+$"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "length",
+        "sha256",
+        "topology"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[!-~]+$",
+          "not": {
+            "pattern": ">"
+          }
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "topology": {
+          "enum": [
+            "linear",
+            "circular",
+            "unknown"
+          ]
+        },
+        "topology_provenance": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "topology": {
+                "const": "circular"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "topology_provenance"
+            ],
+            "properties": {
+              "topology_provenance": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "array": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_id",
+        "segments",
+        "terminal_repeats",
+        "consensus_repeat"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[!-~]+$",
+          "not": {
+            "pattern": ">"
+          }
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[!-~]+$",
+          "not": {
+            "pattern": ">"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/segment"
+          }
+        },
+        "terminal_repeats": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/anchor"
+          }
+        },
+        "consensus_repeat": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[ACGTRYSWKMBDHVNacgtryswkmbdhvn]+$"
+        },
+        "strand": {
+          "enum": [
+            "+",
+            "-",
+            "?"
+          ]
+        },
+        "strand_constraint": {
+          "type": "boolean"
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "title": "CRisprleader native array annotations 1.0.0"
+}

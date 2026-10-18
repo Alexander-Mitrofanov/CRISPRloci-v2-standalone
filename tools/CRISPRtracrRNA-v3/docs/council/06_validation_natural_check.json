@@ -1,0 +1,2445 @@
+{
+  "source_archive_linkage": {
+    "archived_detector_pinned_native": {
+      "source_files": 12,
+      "archive_sha256": "acc7437bf034dfcf818d3abfeb4a141a69b8ac0c3990796c00b6a61a54604918"
+    },
+    "current_default_pinned_native": {
+      "source_files": 13,
+      "archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe"
+    },
+    "current_experimental_pinned_native": {
+      "source_files": 13,
+      "archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe"
+    }
+  },
+  "evidence_hashes_verified": {
+    "historical": 0,
+    "archived_detector_pinned_native": 13913,
+    "current_default_pinned_native": 4655,
+    "current_experimental_pinned_native": 5261
+  },
+  "same_dependency_default_exact": true,
+  "experimental_preserves_all_standard_predictions": true,
+  "historical68_losses": {
+    "archived_detector_pinned_native": [],
+    "current_default_pinned_native": [],
+    "current_experimental_pinned_native": []
+  },
+  "dependency_deltas": [
+    {
+      "label": "Lpn",
+      "old_count": 12,
+      "archived_count": 10,
+      "old_rank": 5,
+      "archived_rank": 5
+    },
+    {
+      "label": "Lsp2",
+      "old_count": 14,
+      "archived_count": 16,
+      "old_rank": 1,
+      "archived_rank": 1
+    }
+  ],
+  "experimental_gained_labels": [
+    "Cca1",
+    "Cga",
+    "Cme1",
+    "Ffr",
+    "Ghy2",
+    "Orh",
+    "Psp"
+  ],
+  "experimental_lost_labels": [],
+  "added_max_per_locus": 1,
+  "wall_ratio": 1.0091544643319088,
+  "stages": {
+    "historical": {
+      "complete": 79,
+      "localized": 68,
+      "top_k": {
+        "1": 53,
+        "3": 61,
+        "5": 63,
+        "10": 64
+      },
+      "mrr": 0.7283666082366188,
+      "coverage90": 64,
+      "count": 3395,
+      "median": 12,
+      "p95": 192,
+      "max": 464,
+      "length_median": 191,
+      "length_p95": 202,
+      "length_max": 204,
+      "admitted": [],
+      "classes": {
+        "historical_unspecified": 3395
+      },
+      "rows": [
+        {
+          "label": "Lpn",
+          "detected": true,
+          "rank": 5,
+          "coverage": 0.9562043795620438,
+          "count": 12
+        },
+        {
+          "label": "Khu",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 72
+        },
+        {
+          "label": "Ain",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cgl",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Esp1",
+          "detected": true,
+          "rank": 13,
+          "coverage": 1.0,
+          "count": 32
+        },
+        {
+          "label": "Esp2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Fma",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lce",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Lrh",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lsp1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Lsp2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 14
+        },
+        {
+          "label": "Pac",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Tba",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Tde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 228
+        },
+        {
+          "label": "Tpu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Vpa",
+          "detected": true,
+          "rank": 29,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Efa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Eit",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Lan",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.5858585858585859,
+          "count": 9
+        },
+        {
+          "label": "Lmo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Sag1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sag2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Sdy",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 40
+        },
+        {
+          "label": "Sga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Smu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sra",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Bni",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Ece",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Edo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 56
+        },
+        {
+          "label": "Fho",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Mga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 108
+        },
+        {
+          "label": "Mse",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 464
+        },
+        {
+          "label": "Sgo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 100
+        },
+        {
+          "label": "Sma2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 145
+        },
+        {
+          "label": "Ssa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssi",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 104
+        },
+        {
+          "label": "Sth1A",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 128
+        },
+        {
+          "label": "Tsp",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Bok",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 20
+        },
+        {
+          "label": "Cco",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cpe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Dde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc2",
+          "detected": null,
+          "rank": null,
+          "coverage": null,
+          "count": 0
+        },
+        {
+          "label": "Ghy3",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghy4",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Gsp",
+          "detected": true,
+          "rank": 5,
+          "coverage": 1.0,
+          "count": 80
+        },
+        {
+          "label": "Kki",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Nme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Nsp",
+          "detected": true,
+          "rank": 83,
+          "coverage": 1.0,
+          "count": 168
+        },
+        {
+          "label": "Tmo",
+          "detected": true,
+          "rank": 9,
+          "coverage": 0.9632352941176471,
+          "count": 20
+        },
+        {
+          "label": "Nsa",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Jpa",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.9813084112149533,
+          "count": 128
+        },
+        {
+          "label": "Rsp",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.6185567010309279,
+          "count": 9
+        },
+        {
+          "label": "Bbo",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 44
+        },
+        {
+          "label": "Cca2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Cme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Cme3",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6236559139784946,
+          "count": 1
+        },
+        {
+          "label": "Cme4",
+          "detected": true,
+          "rank": 88,
+          "coverage": 1.0,
+          "count": 176
+        },
+        {
+          "label": "Csa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6354166666666666,
+          "count": 1
+        },
+        {
+          "label": "Ghh1",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghh2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghy1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Msc",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Sdo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Spa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.968421052631579,
+          "count": 232
+        },
+        {
+          "label": "Cca1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 192
+        },
+        {
+          "label": "Cga",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 8
+        },
+        {
+          "label": "Cme1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ffr",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ghy2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Orh",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Phi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Psp",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 40
+        },
+        {
+          "label": "Wvi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.956140350877193,
+          "count": 8
+        }
+      ],
+      "batch_wall_seconds": null
+    },
+    "archived_detector_pinned_native": {
+      "complete": 79,
+      "localized": 68,
+      "top_k": {
+        "1": 53,
+        "3": 61,
+        "5": 63,
+        "10": 64
+      },
+      "mrr": 0.7283666082366188,
+      "coverage90": 64,
+      "count": 3395,
+      "median": 10,
+      "p95": 192,
+      "max": 464,
+      "length_median": 191,
+      "length_p95": 202,
+      "length_max": 204,
+      "admitted": [],
+      "classes": {
+        "historical_unspecified": 3395
+      },
+      "rows": [
+        {
+          "label": "Lpn",
+          "detected": true,
+          "rank": 5,
+          "coverage": 0.9562043795620438,
+          "count": 10
+        },
+        {
+          "label": "Khu",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 72
+        },
+        {
+          "label": "Ain",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cgl",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Esp1",
+          "detected": true,
+          "rank": 13,
+          "coverage": 1.0,
+          "count": 32
+        },
+        {
+          "label": "Esp2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Fma",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lce",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Lrh",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lsp1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Lsp2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Pac",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Tba",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Tde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 228
+        },
+        {
+          "label": "Tpu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Vpa",
+          "detected": true,
+          "rank": 29,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Efa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Eit",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Lan",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.5858585858585859,
+          "count": 9
+        },
+        {
+          "label": "Lmo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Sag1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sag2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Sdy",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 40
+        },
+        {
+          "label": "Sga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Smu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sra",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Bni",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Ece",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Edo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 56
+        },
+        {
+          "label": "Fho",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Mga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 108
+        },
+        {
+          "label": "Mse",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 464
+        },
+        {
+          "label": "Sgo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 100
+        },
+        {
+          "label": "Sma2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 145
+        },
+        {
+          "label": "Ssa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssi",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 104
+        },
+        {
+          "label": "Sth1A",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 128
+        },
+        {
+          "label": "Tsp",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Bok",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 20
+        },
+        {
+          "label": "Cco",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cpe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Dde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc2",
+          "detected": null,
+          "rank": null,
+          "coverage": null,
+          "count": 0
+        },
+        {
+          "label": "Ghy3",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghy4",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Gsp",
+          "detected": true,
+          "rank": 5,
+          "coverage": 1.0,
+          "count": 80
+        },
+        {
+          "label": "Kki",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Nme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Nsp",
+          "detected": true,
+          "rank": 83,
+          "coverage": 1.0,
+          "count": 168
+        },
+        {
+          "label": "Tmo",
+          "detected": true,
+          "rank": 9,
+          "coverage": 0.9632352941176471,
+          "count": 20
+        },
+        {
+          "label": "Nsa",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Jpa",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.9813084112149533,
+          "count": 128
+        },
+        {
+          "label": "Rsp",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.6185567010309279,
+          "count": 9
+        },
+        {
+          "label": "Bbo",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 44
+        },
+        {
+          "label": "Cca2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Cme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Cme3",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6236559139784946,
+          "count": 1
+        },
+        {
+          "label": "Cme4",
+          "detected": true,
+          "rank": 88,
+          "coverage": 1.0,
+          "count": 176
+        },
+        {
+          "label": "Csa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6354166666666666,
+          "count": 1
+        },
+        {
+          "label": "Ghh1",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghh2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghy1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Msc",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Sdo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Spa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.968421052631579,
+          "count": 232
+        },
+        {
+          "label": "Cca1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 192
+        },
+        {
+          "label": "Cga",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 8
+        },
+        {
+          "label": "Cme1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ffr",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ghy2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Orh",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Phi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Psp",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 40
+        },
+        {
+          "label": "Wvi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.956140350877193,
+          "count": 8
+        }
+      ],
+      "batch_wall_seconds": 390.5267751739957
+    },
+    "current_default_pinned_native": {
+      "complete": 79,
+      "localized": 68,
+      "top_k": {
+        "1": 53,
+        "3": 61,
+        "5": 63,
+        "10": 64
+      },
+      "mrr": 0.7283666082366188,
+      "coverage90": 64,
+      "count": 3395,
+      "median": 10,
+      "p95": 192,
+      "max": 464,
+      "length_median": 191,
+      "length_p95": 202,
+      "length_max": 204,
+      "admitted": [],
+      "classes": {
+        "sequence_duplex": 2268,
+        "sequence_duplex_cm": 5,
+        "sequence_only": 321,
+        "sequence_duplex_terminator": 570,
+        "sequence_terminator": 122,
+        "sequence_duplex_cm_terminator": 91,
+        "sequence_cm_terminator": 13,
+        "cm_only": 5
+      },
+      "rows": [
+        {
+          "label": "Lpn",
+          "detected": true,
+          "rank": 5,
+          "coverage": 0.9562043795620438,
+          "count": 10
+        },
+        {
+          "label": "Khu",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 72
+        },
+        {
+          "label": "Ain",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cgl",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Esp1",
+          "detected": true,
+          "rank": 13,
+          "coverage": 1.0,
+          "count": 32
+        },
+        {
+          "label": "Esp2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Fma",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lce",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Lrh",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lsp1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Lsp2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Pac",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Tba",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Tde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 228
+        },
+        {
+          "label": "Tpu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Vpa",
+          "detected": true,
+          "rank": 29,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Efa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Eit",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Lan",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.5858585858585859,
+          "count": 9
+        },
+        {
+          "label": "Lmo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Sag1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sag2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Sdy",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 40
+        },
+        {
+          "label": "Sga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Smu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sra",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Bni",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Ece",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Edo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 56
+        },
+        {
+          "label": "Fho",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Mga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 108
+        },
+        {
+          "label": "Mse",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 464
+        },
+        {
+          "label": "Sgo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 100
+        },
+        {
+          "label": "Sma2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 145
+        },
+        {
+          "label": "Ssa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssi",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 104
+        },
+        {
+          "label": "Sth1A",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 128
+        },
+        {
+          "label": "Tsp",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Bok",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 20
+        },
+        {
+          "label": "Cco",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cpe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Dde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc2",
+          "detected": null,
+          "rank": null,
+          "coverage": null,
+          "count": 0
+        },
+        {
+          "label": "Ghy3",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghy4",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Gsp",
+          "detected": true,
+          "rank": 5,
+          "coverage": 1.0,
+          "count": 80
+        },
+        {
+          "label": "Kki",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Nme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Nsp",
+          "detected": true,
+          "rank": 83,
+          "coverage": 1.0,
+          "count": 168
+        },
+        {
+          "label": "Tmo",
+          "detected": true,
+          "rank": 9,
+          "coverage": 0.9632352941176471,
+          "count": 20
+        },
+        {
+          "label": "Nsa",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Jpa",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.9813084112149533,
+          "count": 128
+        },
+        {
+          "label": "Rsp",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.6185567010309279,
+          "count": 9
+        },
+        {
+          "label": "Bbo",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 44
+        },
+        {
+          "label": "Cca2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Cme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Cme3",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6236559139784946,
+          "count": 1
+        },
+        {
+          "label": "Cme4",
+          "detected": true,
+          "rank": 88,
+          "coverage": 1.0,
+          "count": 176
+        },
+        {
+          "label": "Csa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6354166666666666,
+          "count": 1
+        },
+        {
+          "label": "Ghh1",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghh2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghy1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Msc",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Sdo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Spa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.968421052631579,
+          "count": 232
+        },
+        {
+          "label": "Cca1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 192
+        },
+        {
+          "label": "Cga",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 8
+        },
+        {
+          "label": "Cme1",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ffr",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Ghy2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Orh",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Phi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Psp",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 40
+        },
+        {
+          "label": "Wvi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.956140350877193,
+          "count": 8
+        }
+      ],
+      "batch_wall_seconds": 344.02045306100626
+    },
+    "current_experimental_pinned_native": {
+      "complete": 79,
+      "localized": 75,
+      "top_k": {
+        "1": 60,
+        "3": 68,
+        "5": 70,
+        "10": 71
+      },
+      "mrr": 0.8181101979802085,
+      "coverage90": 68,
+      "count": 3406,
+      "median": 10,
+      "p95": 193,
+      "max": 464,
+      "length_median": 191.0,
+      "length_p95": 202,
+      "length_max": 204,
+      "admitted": [
+        {
+          "label": "Eit",
+          "id": "short_candidate000001",
+          "class": "sequence_duplex_terminator"
+        },
+        {
+          "label": "Lan",
+          "id": "short_candidate000000",
+          "class": "sequence_duplex_cm"
+        },
+        {
+          "label": "Sga",
+          "id": "short_candidate000000",
+          "class": "sequence_duplex_cm"
+        },
+        {
+          "label": "Cme3",
+          "id": "short_candidate000002",
+          "class": "sequence_duplex_cm_terminator"
+        },
+        {
+          "label": "Cca1",
+          "id": "short_candidate000001",
+          "class": "sequence_duplex_cm_terminator"
+        },
+        {
+          "label": "Cga",
+          "id": "short_candidate000001",
+          "class": "sequence_duplex_terminator"
+        },
+        {
+          "label": "Cme1",
+          "id": "short_candidate000000",
+          "class": "sequence_duplex_cm_terminator"
+        },
+        {
+          "label": "Ffr",
+          "id": "short_candidate000001",
+          "class": "sequence_duplex_terminator"
+        },
+        {
+          "label": "Ghy2",
+          "id": "short_candidate000000",
+          "class": "sequence_duplex_terminator"
+        },
+        {
+          "label": "Orh",
+          "id": "short_candidate000002",
+          "class": "sequence_duplex_cm_terminator"
+        },
+        {
+          "label": "Psp",
+          "id": "short_candidate000001",
+          "class": "sequence_duplex_cm_terminator"
+        }
+      ],
+      "classes": {
+        "sequence_duplex": 2268,
+        "sequence_duplex_cm": 7,
+        "sequence_only": 321,
+        "sequence_duplex_terminator": 574,
+        "sequence_terminator": 122,
+        "sequence_duplex_cm_terminator": 96,
+        "sequence_cm_terminator": 13,
+        "cm_only": 5
+      },
+      "rows": [
+        {
+          "label": "Lpn",
+          "detected": true,
+          "rank": 5,
+          "coverage": 0.9562043795620438,
+          "count": 10
+        },
+        {
+          "label": "Khu",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 72
+        },
+        {
+          "label": "Ain",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cgl",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Esp1",
+          "detected": true,
+          "rank": 13,
+          "coverage": 1.0,
+          "count": 32
+        },
+        {
+          "label": "Esp2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 4
+        },
+        {
+          "label": "Fma",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lce",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Lrh",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Lsp1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Lsp2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Pac",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Tba",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Tde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 228
+        },
+        {
+          "label": "Tpu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Vpa",
+          "detected": true,
+          "rank": 29,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Efa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Eit",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 85
+        },
+        {
+          "label": "Lan",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 10
+        },
+        {
+          "label": "Lmo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 16
+        },
+        {
+          "label": "Sag1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sag2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Sdy",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Seq2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 40
+        },
+        {
+          "label": "Sga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 13
+        },
+        {
+          "label": "Smu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Sra",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Bni",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Ece",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Edo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 56
+        },
+        {
+          "label": "Fho",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Mga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 108
+        },
+        {
+          "label": "Mse",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 464
+        },
+        {
+          "label": "Sgo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 100
+        },
+        {
+          "label": "Sma2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 145
+        },
+        {
+          "label": "Ssa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssi",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ssu",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 104
+        },
+        {
+          "label": "Sth1A",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 128
+        },
+        {
+          "label": "Tsp",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 64
+        },
+        {
+          "label": "Bok",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 20
+        },
+        {
+          "label": "Cco",
+          "detected": true,
+          "rank": 3,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Cpe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 12
+        },
+        {
+          "label": "Dde",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc2",
+          "detected": null,
+          "rank": null,
+          "coverage": null,
+          "count": 0
+        },
+        {
+          "label": "Ghy3",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghy4",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 84
+        },
+        {
+          "label": "Gsp",
+          "detected": true,
+          "rank": 5,
+          "coverage": 1.0,
+          "count": 80
+        },
+        {
+          "label": "Kki",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Nme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Nsp",
+          "detected": true,
+          "rank": 83,
+          "coverage": 1.0,
+          "count": 168
+        },
+        {
+          "label": "Tmo",
+          "detected": true,
+          "rank": 9,
+          "coverage": 0.9632352941176471,
+          "count": 20
+        },
+        {
+          "label": "Nsa",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Jpa",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.9813084112149533,
+          "count": 128
+        },
+        {
+          "label": "Rsp",
+          "detected": true,
+          "rank": 3,
+          "coverage": 0.6185567010309279,
+          "count": 9
+        },
+        {
+          "label": "Bbo",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 44
+        },
+        {
+          "label": "Cca2",
+          "detected": false,
+          "rank": null,
+          "coverage": 0,
+          "count": 0
+        },
+        {
+          "label": "Cme2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Cme3",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.8924731182795699,
+          "count": 2
+        },
+        {
+          "label": "Cme4",
+          "detected": true,
+          "rank": 88,
+          "coverage": 1.0,
+          "count": 176
+        },
+        {
+          "label": "Csa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghc1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghe",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.6354166666666666,
+          "count": 1
+        },
+        {
+          "label": "Ghh1",
+          "detected": true,
+          "rank": 2,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Ghh2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 4
+        },
+        {
+          "label": "Ghy1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 44
+        },
+        {
+          "label": "Msc",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Sdo",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Spa",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.968421052631579,
+          "count": 232
+        },
+        {
+          "label": "Cca1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 193
+        },
+        {
+          "label": "Cga",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.8627450980392157,
+          "count": 9
+        },
+        {
+          "label": "Cme1",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.7592592592592593,
+          "count": 1
+        },
+        {
+          "label": "Ffr",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 1
+        },
+        {
+          "label": "Ghy2",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 1
+        },
+        {
+          "label": "Orh",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.8317757009345794,
+          "count": 5
+        },
+        {
+          "label": "Phi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 1.0,
+          "count": 8
+        },
+        {
+          "label": "Psp",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.8380952380952381,
+          "count": 41
+        },
+        {
+          "label": "Wvi",
+          "detected": true,
+          "rank": 1,
+          "coverage": 0.956140350877193,
+          "count": 8
+        }
+      ],
+      "batch_wall_seconds": 347.16977602800034
+    }
+  }
+}

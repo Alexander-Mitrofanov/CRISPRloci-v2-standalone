@@ -1,0 +1,27 @@
+{
+  "artifacts": {
+    "model.joblib": {
+      "sha256": "afaf3cd7014b7221abb2b36c389c8f8e562bd7ebcff5728ac0c0ec5d18f74e9a",
+      "size": 4249840
+    },
+    "model_card.json": {
+      "sha256": "4cec8eab0fb0547f5c0e015a60fed673e41673a8a14a64ac2e7d7484d9553f15",
+      "size": 1463
+    }
+  },
+  "created_at": "2026-08-01T02:32:36.143364+00:00",
+  "inputs": {
+    "evaluation_rule_metrics_sha256": "c93a44744e21e2781e90e4bb6f913b3878216978e510041c5e760138ea6a9f87",
+    "orf_manifest_sha256": "1fe6c07a99770384619c4e8fec0b569c08fe157df9a2d3439e47f0277ede1a35",
+    "production_predictions_sha256": "4b61d80a7ec2757eddc2a8c9b7554c6ee18f22ab81bd25fbd76b77ad0a0a87ac",
+    "split_manifest_sha256": "63a917b5179fdfd3f94f671894531831d69ab9582f7a3109332ea4ac9fd4c769"
+  },
+  "model_id": "casandra-cassette-architecture-extratrees-v2-production-refit",
+  "omitted_training_artifacts": {
+    "production_constructed_cassettes.jsonl": {
+      "sha256": "16235273bfc72f5bc29371c409c91dc7c7413fb025432f37f8b18d2a00d58b61",
+      "size": 1783999
+    }
+  },
+  "schema_version": 2
+}

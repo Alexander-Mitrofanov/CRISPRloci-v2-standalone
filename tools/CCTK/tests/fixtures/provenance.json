@@ -1,0 +1,23 @@
+{
+  "upstream_commit": "fe94fde10a2855cbcc3bf118a253ec097d3a5e46",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.8",
+    "DendroPy": "5.0.8",
+    "pillow": "12.3.0"
+  },
+  "fixture_sha256": {
+    "evolution_arrays.txt": "e974133ed5d83e5730744d05349dd50383c8aa61f5d25fcb9d9b76285e150da0",
+    "colours.json": "a583da096e8c43e12d87a017464bf63da28a32f5df081735bf0613f66d2347be",
+    "arrays.txt": "88d71de8456c6be89e89f5cc6b302658f7403a9221f358141d6cf6b5d1d21c59",
+    "Array_clusters.txt": "3825b9a0ca5428d8d6398386d626c2529b34dab206152eb59d54a1601224bc4b",
+    "evolution_tree.nwk": "1bd4a170aa8c503f1272c0cb8999ce076b9050d73069f1ad506a249f87a5b43e",
+    "diff.png": "3419d23b4e685556067ddc395d1629556af9b4d8e53fd82ef30bf0f9656ebe7a",
+    "Array_network.txt": "ac47df7ff3e0b5d503453a6c9c57e02887ba79bdf8c1584a738e0c4c114337bc",
+    "mapping.txt": "fc13d3b37d7722b8e464db1e666bb3dd29de7ed0135a780d383a0b5a3a0e4a5f",
+    "constrain.nwk": "4b30ce6fc007ce74d4b14f6fd9260141b2b1d99b9d84815c783910fe676f7cf0",
+    "tree_arrays.txt": "7b349f283e954e1a90b5ab4042adf9c91dcd61a69b5e992b88992c2cc2049b9e",
+    "oracle.json": "b93167175b9b0e23f736cb85333e759965b389450030a7f4bf4416921e858270"
+  }
+}

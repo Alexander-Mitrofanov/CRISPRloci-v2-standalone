@@ -1,0 +1,885 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "id": "crispridentify",
+      "name": "CRISPRidentify",
+      "modes": ["detection", "reconstruction", "orientation", "leader", "repeat_context"],
+      "description": "Detect CRISPR arrays and score candidates.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc/README.md",
+      "revision": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "cli_modes": [
+        {
+          "name": "crispridentify (direct flags)",
+          "description": "Detect arrays in each submitted DNA record."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--fast_run",
+          "label": "Fast search",
+          "type": "boolean",
+          "default": true,
+          "description": "Uses the shipped fast search; disabling it runs the historical full search."
+        },
+        {
+          "flag": "--fast_run_seed_profile",
+          "label": "Fast-search seed profile",
+          "type": "enum",
+          "default": "balanced",
+          "description": "Selects the fast search seed/gap profile: balanced, historical legacy, or sensitive normal-mode seeds. Requires fast search.",
+          "choices": ["balanced", "legacy", "sensitive"],
+          "requires": {
+            "--fast_run": true
+          }
+        },
+        {
+          "flag": "--degenerated",
+          "label": "Degenerated repeat search",
+          "type": "boolean",
+          "default": true,
+          "description": "Searches for degenerated or terminal repeats at candidate array ends."
+        },
+        {
+          "flag": "--min_len_rep",
+          "label": "Minimum repeat length",
+          "type": "integer",
+          "default": 21,
+          "description": "Minimum average candidate repeat length in bases.",
+          "min": 10,
+          "max": 100
+        },
+        {
+          "flag": "--max_len_rep",
+          "label": "Maximum repeat length",
+          "type": "integer",
+          "default": 55,
+          "description": "Maximum average candidate repeat length in bases.",
+          "min": 10,
+          "max": 100
+        },
+        {
+          "flag": "--min_len_spacer",
+          "label": "Minimum spacer length",
+          "type": "integer",
+          "default": 18,
+          "description": "Minimum average candidate spacer length in bases.",
+          "min": 1,
+          "max": 500
+        },
+        {
+          "flag": "--max_len_spacer",
+          "label": "Maximum spacer length",
+          "type": "integer",
+          "default": 78,
+          "description": "Maximum average candidate spacer length in bases.",
+          "min": 1,
+          "max": 500
+        },
+        {
+          "flag": "--min_repeats",
+          "label": "Minimum repeat count",
+          "type": "integer",
+          "default": 3,
+          "description": "Minimum repeats required in a candidate array. Two-repeat candidates need cautious interpretation.",
+          "min": 2,
+          "max": 20
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--file", "--input_folder", "--result_folder", "--json_report"],
+          "description": "Inputs and canonical outputs are assigned by the job worker."
+        },
+        {
+          "flags": ["--cpu", "--folder_jobs"],
+          "description": "CPU allocation and concurrent lanes follow the service resource budget."
+        },
+        {
+          "flags": ["--cas", "--strand", "--is_element"],
+          "description": "The workflow controls orientation annotation and any optional Cas or IS-element stages."
+        }
+      ]
+    },
+    {
+      "id": "casandra",
+      "name": "CasAndra",
+      "modes": ["cas"],
+      "description": "Call genes from DNA, identify Cas proteins and classify cassettes.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CasAndra/blob/ba046f90242ac91dc075183ea51dcbedfac28484/README.md",
+      "revision": "ba046f90242ac91dc075183ea51dcbedfac28484",
+      "cli_modes": [
+        {
+          "name": "predict-genome",
+          "description": "The web workflow calls genes and classifies Cas cassettes from DNA."
+        },
+        {
+          "name": "predict-proteins / annotate-proteins / classify-cassette",
+          "description": "Standalone protein classification, provenance-bound protein annotation, or classification of an ordered protein cassette."
+        },
+        {
+          "name": "inspect-model",
+          "description": "Operator verification and inspection of a frozen model bundle."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--gene-mode",
+          "label": "Gene calling mode",
+          "type": "enum",
+          "default": "auto",
+          "description": "Auto selects a gene-calling mode from sequence length; single trains on a genome, and meta uses metagenomic models.",
+          "choices": ["auto", "single", "meta"]
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--genome", "--genbank", "--gff3", "--input", "--output", "--model"],
+          "description": "The job supplies DNA and output locations; the model bundle is provisioned by the operator."
+        },
+        {
+          "flags": ["--translation-table"],
+          "description": "The requested code affects single-genome training or supplied GFF3 translation; metagenomic calling selects codes per gene. The web workflow leaves this at its shipped default."
+        }
+      ]
+    },
+    {
+      "id": "crispr_tracrrna",
+      "name": "CRISPRtracrRNA",
+      "modes": ["tracrrna", "loci"],
+      "description": "Screen covariance models or run the complete locus workflow.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/9307e26677335ac4d2cf67fbd3c9294c9a08f7f4/README.md",
+      "revision": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "cli_modes": [
+        {
+          "name": "run --mode model",
+          "description": "tracrRNA screening runs covariance models on submitted DNA."
+        },
+        {
+          "name": "run --mode complete",
+          "description": "Locus annotation combines internal array detection, gene calls, anti-repeat matching and covariance evidence."
+        },
+        {
+          "name": "doctor",
+          "description": "Operator inspection of scientific runtime dependencies."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--model-rescue",
+          "label": "Covariance-model rescue",
+          "type": "boolean",
+          "default": true,
+          "description": "Adds supported covariance-model candidates to the complete workflow; disabling it retains the anti-repeat route.",
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--model-rescue-evalue",
+          "label": "Model-rescue E-value",
+          "type": "number",
+          "default": 1e-5,
+          "description": "Maximum E-value for covariance-model rescue evidence; lower values are more stringent.",
+          "min": 1e-20,
+          "max": 1,
+          "modes": ["loci"],
+          "requires": {
+            "--model-rescue": true
+          }
+        },
+        {
+          "flag": "--identify-preset",
+          "label": "Internal array search",
+          "type": "enum",
+          "default": "balanced",
+          "description": "Selects the shipped array-detection preset used internally by the complete tracrRNA workflow.",
+          "choices": ["balanced", "region-screen", "full"],
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--gene-mode",
+          "label": "Internal gene calling",
+          "type": "enum",
+          "default": "auto",
+          "description": "Chooses automatic, single-genome or metagenomic gene calling in the complete tracrRNA workflow.",
+          "choices": ["auto", "single", "meta"],
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--similarity",
+          "label": "Anti-repeat identity",
+          "type": "number",
+          "default": 0.7,
+          "description": "Minimum identity fraction for anti-repeat matches.",
+          "min": 0,
+          "max": 1,
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--coverage",
+          "label": "Anti-repeat coverage",
+          "type": "number",
+          "default": 0.6,
+          "description": "Minimum covered fraction for anti-repeat matches.",
+          "min": 0,
+          "max": 1,
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--tail-length",
+          "label": "Candidate tail length",
+          "type": "integer",
+          "default": 150,
+          "description": "Bases retained after an anti-repeat match when constructing RNA candidates.",
+          "min": 1,
+          "max": 1000,
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--upstream-length",
+          "label": "Candidate upstream length",
+          "type": "integer",
+          "default": 5,
+          "description": "Bases retained upstream of an anti-repeat match.",
+          "min": 0,
+          "max": 100,
+          "modes": ["loci"]
+        },
+        {
+          "flag": "--merge-gap",
+          "label": "Candidate merge gap",
+          "type": "integer",
+          "default": 150,
+          "description": "Maximum genomic gap for merging covariance-model hits in model-only screening.",
+          "min": 0,
+          "max": 1000,
+          "modes": ["tracrrna"]
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--model-type"],
+          "description": "Type II / V-K is selected in the workflow options below."
+        },
+        {
+          "flags": [
+            "--threads",
+            "--timeout",
+            "--config",
+            "--input",
+            "--output",
+            "--search-backend"
+          ],
+          "description": "The worker owns execution limits, paths and the installed search backend."
+        }
+      ]
+    },
+    {
+      "id": "spacerplacer",
+      "name": "SpacerPlacer",
+      "modes": ["reconstruction"],
+      "description": "Reconstruct ancestral spacer arrays and compare deletion models.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/SpacerPlacer/blob/2a91510a8ec98e02507921b56e94df16cf6e0bd5/README.md",
+      "revision": "2a91510a8ec98e02507921b56e94df16cf6e0bd5",
+      "cli_modes": [
+        {
+          "name": "--input_type ccdb",
+          "description": "Uses source-verified CRISPRCasDB-style array groups prepared from detected arrays."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--seed",
+          "label": "Random seed",
+          "type": "integer",
+          "default": 2357,
+          "description": "Seeds MAFFT alignment and the random spacer encoding used for large groups; changing it can change the alignment.",
+          "min": 0,
+          "max": 2147483647
+        },
+        {
+          "flag": "--tree_construction_method",
+          "label": "Tree construction",
+          "type": "enum",
+          "default": "upgma",
+          "description": "Chooses UPGMA or neighbor joining when estimating the tree from spacer arrays.",
+          "choices": ["upgma", "nj"]
+        },
+        {
+          "flag": "--insertion_rate",
+          "label": "Reconstruction insertion rate",
+          "type": "number",
+          "default": 1e-5,
+          "description": "Sets the insertion rate in the ancestral reconstruction model.",
+          "min": 1e-10,
+          "max": 100
+        },
+        {
+          "flag": "--deletion_rate",
+          "label": "Reconstruction deletion rate",
+          "type": "number",
+          "default": 0.1,
+          "description": "Sets the deletion rate in the ancestral reconstruction model.",
+          "min": 1e-10,
+          "max": 100
+        },
+        {
+          "flag": "--extend_branches",
+          "label": "Branch extension",
+          "type": "number",
+          "default": 0,
+          "description": "Adds length to branches before ancestral reconstruction; zero leaves lengths unchanged.",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "flag": "--significance_level",
+          "label": "Model comparison significance",
+          "type": "number",
+          "default": 0.05,
+          "description": "Changes the likelihood-ratio-test cutoff for preferring the block deletion model.",
+          "min": 1e-6,
+          "max": 0.999999
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--input_type", "--tree_path"],
+          "description": "The workflow supplies source-verified array groups and estimates a tree; uploaded trees are not supported."
+        },
+        {
+          "flags": [
+            "--cluster_spacers_max_distance",
+            "--no_alpha_bias_correction",
+            "--no_rho_bias_correction"
+          ],
+          "description": "Spacer matching and bias requests are set in workflow options; operator safety policy can disable bias corrections."
+        },
+        {
+          "flags": ["--alignment_workers", "--allow_unsafe_pickle", "--allow_existing_output"],
+          "description": "Concurrency and new output directories are managed; unsafe pickle input is unavailable."
+        }
+      ]
+    },
+    {
+      "id": "crispr_evor",
+      "name": "evOr",
+      "modes": ["orientation"],
+      "description": "Compare array orientations and reconstruct the selected orientation.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/evOr/blob/505dafe5bc1134d935b33dfd1de7d9872a6eeae3/README.md",
+      "revision": "505dafe5bc1134d935b33dfd1de7d9872a6eeae3",
+      "cli_modes": [
+        {
+          "name": "crispr-evor --input_type ccdb",
+          "description": "Uses source-verified CRISPRCasDB-style array groups; the evOr command always enables forward/reverse comparison."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--seed",
+          "label": "Random seed",
+          "type": "integer",
+          "default": 2357,
+          "description": "Seeds MAFFT alignment and the random spacer encoding used for large groups; changing it can change the alignment.",
+          "min": 0,
+          "max": 2147483647
+        },
+        {
+          "flag": "--tree_construction_method",
+          "label": "Tree construction",
+          "type": "enum",
+          "default": "upgma",
+          "description": "Chooses UPGMA or neighbor joining when estimating the tree from spacer arrays.",
+          "choices": ["upgma", "nj"]
+        },
+        {
+          "flag": "--insertion_rate",
+          "label": "Reconstruction insertion rate",
+          "type": "number",
+          "default": 1e-5,
+          "description": "Sets the insertion rate in the ancestral reconstruction model.",
+          "min": 1e-10,
+          "max": 100
+        },
+        {
+          "flag": "--deletion_rate",
+          "label": "Reconstruction deletion rate",
+          "type": "number",
+          "default": 0.1,
+          "description": "Sets the deletion rate in the ancestral reconstruction model.",
+          "min": 1e-10,
+          "max": 100
+        },
+        {
+          "flag": "--extend_branches",
+          "label": "Branch extension",
+          "type": "number",
+          "default": 0,
+          "description": "Adds length to branches before ancestral reconstruction; zero leaves lengths unchanged.",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "flag": "--significance_level",
+          "label": "Model comparison significance",
+          "type": "number",
+          "default": 0.05,
+          "description": "Changes the likelihood-ratio-test cutoff for preferring the block deletion model.",
+          "min": 1e-6,
+          "max": 0.999999
+        },
+        {
+          "flag": "--orientation_decision_boundary",
+          "label": "Orientation decision boundary",
+          "type": "number",
+          "default": 5,
+          "description": "Minimum absolute forward/reverse log-likelihood difference for an orientation call; higher values leave more orientations undetermined.",
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--determine_orientation"],
+          "description": "Enabled by the orientation workflow."
+        },
+        {
+          "flags": [
+            "--cluster_spacers_max_distance",
+            "--no_alpha_bias_correction",
+            "--no_rho_bias_correction"
+          ],
+          "description": "Spacer matching and bias requests are set in workflow options."
+        },
+        {
+          "flags": [
+            "--alignment_workers",
+            "--tree_path",
+            "--allow_unsafe_pickle",
+            "--allow_existing_output"
+          ],
+          "description": "Execution resources, estimated trees and new outputs follow the worker policy."
+        }
+      ]
+    },
+    {
+      "id": "crisprleader",
+      "name": "CRISPRleader",
+      "modes": ["leader", "loci"],
+      "description": "Extract both flanks of detected arrays, with source coordinates.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2/blob/b5310163835649cdd89b0e03afb2a90b5421d675/README.md",
+      "revision": "b5310163835649cdd89b0e03afb2a90b5421d675",
+      "cli_modes": [
+        {
+          "name": "extract",
+          "description": "Extract adjacent genomic windows; these are not predicted leader boundaries."
+        },
+        {
+          "name": "predict",
+          "description": "Unavailable in the pinned release: biological references, inference policy and evaluation are incomplete."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": ["--flank-length"],
+          "description": "Adjust the flank length in workflow options below."
+        },
+        {
+          "flags": ["--fasta", "--arrays", "--output"],
+          "description": "Source-verified arrays and output locations come from the workflow."
+        }
+      ]
+    },
+    {
+      "id": "crisprrepeat",
+      "name": "CRISPRrepeat",
+      "modes": ["repeats", "repeat_context"],
+      "description": "Fold supplied repeats or compare isolated repeat folds with local array context.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat/blob/602155c329681944d5aefad843b0b64663dc5c11/README.md",
+      "revision": "602155c329681944d5aefad843b0b64663dc5c11",
+      "cli_modes": [
+        {
+          "name": "crisprrepeat (without --reports)",
+          "description": "Fold each submitted repeat; DNA evaluates both orientations and transcribed RNA uses forward only."
+        },
+        {
+          "name": "crisprrepeat --reports",
+          "description": "Uses canonical detected-array reports with the original genome to evaluate repeat instances in local context."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--temperature",
+          "label": "Folding temperature (\u00b0C)",
+          "type": "number",
+          "default": 37,
+          "description": "Changes the ViennaRNA thermodynamic model temperature for all folds.",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "flag": "--no-lonely-pairs",
+          "label": "Exclude lonely pairs",
+          "type": "boolean",
+          "default": false,
+          "description": "Excludes isolated base pairs from the folding model."
+        },
+        {
+          "flag": "--window",
+          "label": "Local window length",
+          "type": "integer",
+          "default": 150,
+          "description": "Maximum local folding window in bases. Short contexts use their own length.",
+          "min": 10,
+          "max": 300,
+          "modes": ["repeat_context"]
+        },
+        {
+          "flag": "--span",
+          "label": "Maximum pairing span",
+          "type": "integer",
+          "default": 80,
+          "description": "Maximum local base-pair span, including endpoints; must not exceed the window.",
+          "min": 5,
+          "max": 300,
+          "modes": ["repeat_context"]
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--molecule"],
+          "description": "DNA / RNA is selected next to the repeat input."
+        },
+        {
+          "flags": ["--orientation"],
+          "description": "Both DNA orientations are retained; transcribed RNA uses forward orientation."
+        },
+        {
+          "flags": ["--input", "--output", "--reports", "--reference", "--timeout", "--categories"],
+          "description": "The workflow binds source records, reports, categories, output locations and execution limits."
+        }
+      ]
+    },
+    {
+      "id": "crisprmap",
+      "name": "CRISPRmap",
+      "modes": ["repeat_map"],
+      "description": "Map repeats against a frozen annotated reference.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2/blob/4b35029a3600a983a7e3d0a63190377d60a31769/README.md",
+      "revision": "4b35029a3600a983a7e3d0a63190377d60a31769",
+      "cli_modes": [
+        {
+          "name": "classify",
+          "description": "Search both orientations for the nearest reference matches."
+        },
+        {
+          "name": "build-reference / inspect-reference",
+          "description": "Reference creation and verification are operator tasks."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--max-distance",
+          "label": "Maximum edit distance",
+          "type": "integer",
+          "default": 3,
+          "description": "Maximum global substitutions, insertions and deletions; zero restricts results to exact matches.",
+          "min": 0,
+          "max": 3
+        },
+        {
+          "flag": "--top-k",
+          "label": "Displayed reference hits",
+          "type": "integer",
+          "default": 20,
+          "description": "Caps displayed nearest ties per repeat. All nearest ties still determine annotation evidence.",
+          "min": 1,
+          "max": 100
+        }
+      ],
+      "managed": [
+        {
+          "flags": ["--reference", "--input", "--output"],
+          "description": "The worker supplies the pinned reference and job files."
+        },
+        {
+          "flags": ["--max-comparisons", "--deadline-seconds"],
+          "description": "Comparison and execution budgets are managed by the service."
+        }
+      ]
+    },
+    {
+      "id": "crisprspacer",
+      "name": "CRISPRspacer",
+      "modes": ["protospacer", "viral_search"],
+      "description": "Search an immutable observed-spacer collection or a viral reference.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRspacer/blob/ddea3f5da9d5ff6a33802046bdb0e0a762029d23/README.md",
+      "revision": "ddea3f5da9d5ff6a33802046bdb0e0a762029d23",
+      "cli_modes": [
+        {
+          "name": "database-search",
+          "description": "Match submitted target DNA against observed spacers using exact full-length matches."
+        },
+        {
+          "name": "viral-search",
+          "description": "Search supplied spacers against the frozen viral BLAST reference, then filter full-query matches."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": ["--max-mismatches"],
+          "description": "Viral search allows 0\u20132 substitutions, selected beside search direction. This flag does not exist in database-search."
+        },
+        {
+          "flags": [
+            "--database",
+            "--reference",
+            "--expected-database-sha256",
+            "--expected-reference-sha256"
+          ],
+          "description": "References and their digests are pinned by the operator."
+        },
+        {
+          "flags": [
+            "--targets",
+            "--spacers",
+            "--output",
+            "--blastn",
+            "--threads",
+            "--timeout",
+            "--max-hits",
+            "--max-candidates",
+            "--max-hsps"
+          ],
+          "description": "Paths, executable choice and bounded work limits are owned by the worker."
+        }
+      ]
+    },
+    {
+      "id": "repeattyper",
+      "name": "RepeatTyper",
+      "modes": ["repeat_type"],
+      "description": "Predict repeat-derived subtype evidence using the preserved 37-class model.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/RepeatTyper/blob/d55ebf535f21591d44a0229fd809795ddc330cda/README.md",
+      "revision": "d55ebf535f21591d44a0229fd809795ddc330cda",
+      "cli_modes": [
+        {
+          "name": "repeattyper classify",
+          "description": "Classify supplied repeat occurrences offline."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--threshold",
+          "label": "Minimum model score",
+          "type": "number",
+          "default": 0.75,
+          "min": 0,
+          "max": 1,
+          "step": 0.01,
+          "description": "Below this score, retain the winner but leave the prediction unknown. Scores are not calibrated confidence."
+        }
+      ],
+      "managed": [
+        {
+          "label": "Worker-managed inputs and outputs",
+          "flags": ["--input", "--output"]
+        }
+      ]
+    },
+    {
+      "id": "spacepharer",
+      "name": "SpacePHARER",
+      "modes": ["spacer_association"],
+      "description": "Combine translated and nucleotide spacer evidence within explicit groups against an immutable phage reference database.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/SpacePHARER/blob/8dabb0d0f4d7c880854d8cf0190215e09b1b641d/README.md",
+      "revision": "8dabb0d0f4d7c880854d8cf0190215e09b1b641d",
+      "cli_modes": [
+        {
+          "name": "spacepharer associate",
+          "description": "Evaluate explicit spacer group associations offline."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--fdr",
+          "label": "Maximum empirical FDR",
+          "type": "number",
+          "default": 0.05,
+          "min": 0.001,
+          "max": 0.5,
+          "step": 0.001,
+          "description": "Applied only when the native target/control distribution supports calibration. Uncalibrated candidates remain unaccepted."
+        }
+      ],
+      "managed": [
+        {
+          "label": "Worker-managed input, reference and resource budget",
+          "flags": ["--input", "--groups", "--reference", "--output", "--threads", "--memory-mb"]
+        }
+      ]
+    },
+    {
+      "id": "cctk",
+      "name": "CCTK",
+      "modes": ["array_compare"],
+      "description": "Compare observed ordered spacer occurrences and exact sharing networks.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CCTK/blob/c2f619fb3dde849a7874ca243b487d2e6af062f8/README.md",
+      "revision": "c2f619fb3dde849a7874ca243b487d2e6af062f8",
+      "cli_modes": [
+        {
+          "name": "cctk compare",
+          "description": "Compare complete observed spacer lists; no evolutionary inference."
+        }
+      ],
+      "flags": [
+        {
+          "flag": "--identity",
+          "label": "DNA equality",
+          "type": "enum",
+          "default": "exact",
+          "description": "Reverse-complement equality changes matching only; it never infers strand or acquisition order.",
+          "choices": ["exact", "reverse-complement"]
+        },
+        {
+          "flag": "--min-shared",
+          "label": "Minimum shared spacers",
+          "type": "integer",
+          "default": 1,
+          "min": 1,
+          "max": 500,
+          "step": 1,
+          "description": "Apply this distinct-spacer threshold to both edges and connected components."
+        }
+      ],
+      "managed": [
+        {
+          "label": "Worker-managed inputs, order, plot and output",
+          "flags": ["--input", "--outdir", "--order", "--plot", "--seed"]
+        }
+      ]
+    },
+    {
+      "id": "clinker",
+      "name": "clinker-v2",
+      "modes": ["locus_compare"],
+      "description": "Compare source-verified CDS translations and local gene organization.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/clinker-v2/blob/1526377ef54bedaae2980c4013c6de91805cf59a/README.md",
+      "revision": "1526377ef54bedaae2980c4013c6de91805cf59a",
+      "cli_modes": [
+        {
+          "name": "clinker-v2 compare",
+          "description": "Compare source-verified CDS translations and local gene organization."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": ["--input", "--features", "--outdir", "--identity"],
+          "description": "Inputs, outputs, pinned scientific policy and bounded execution are assigned by the isolated worker."
+        }
+      ]
+    },
+    {
+      "id": "phigaro",
+      "name": "Phigaro-v2",
+      "modes": ["prophage_context"],
+      "description": "Predict source-bound prophage regions with the pinned pVOG reference.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/Phigaro-v2/blob/0fae62b856a6b76d716a2dca230ced12e4221e9f/README.md",
+      "revision": "0fae62b856a6b76d716a2dca230ced12e4221e9f",
+      "cli_modes": [
+        {
+          "name": "phigaro-v2 predict",
+          "description": "Predict source-bound prophage regions with the pinned pVOG reference."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": [
+            "--input",
+            "--output",
+            "--models-hmm",
+            "--models-sha256",
+            "--prodigal",
+            "--hmmsearch",
+            "--threads",
+            "--timeout-seconds"
+          ],
+          "description": "Inputs, outputs, pinned scientific policy and bounded execution are assigned by the isolated worker."
+        }
+      ]
+    },
+    {
+      "id": "isescan",
+      "name": "ISEScan-v2",
+      "modes": ["insertion_context"],
+      "description": "Predict insertion-sequence context with pinned native models.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/ISEScan-v2/blob/30877d2ca43f042a4789c4185859e97d4d9a1a7a/README.md",
+      "revision": "30877d2ca43f042a4789c4185859e97d4d9a1a7a",
+      "cli_modes": [
+        {
+          "name": "isescan-v2",
+          "description": "Predict insertion-sequence context with pinned native models."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": ["--input", "--output", "--threads", "--timeout-seconds"],
+          "description": "Inputs, outputs, pinned scientific policy and bounded execution are assigned by the isolated worker."
+        }
+      ]
+    },
+    {
+      "id": "defensefinder",
+      "name": "DefenseFinder-v2",
+      "modes": ["defense_context"],
+      "description": "Assess known defense systems using frozen HMM and system-rule models.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/DefenseFinder-v2/blob/f579941ca35fb4bd26fcd4c35fcffc23df9d91a2/README.md",
+      "revision": "f579941ca35fb4bd26fcd4c35fcffc23df9d91a2",
+      "cli_modes": [
+        {
+          "name": "defense-context",
+          "description": "Assess known defense systems using frozen HMM and system-rule models."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": ["--input", "--output", "--models-dir", "--hmmer", "--workers"],
+          "description": "Inputs, outputs, pinned scientific policy and bounded execution are assigned by the isolated worker."
+        }
+      ]
+    },
+    {
+      "id": "rnaalifold",
+      "name": "RNAalifold-v2",
+      "modes": ["rna_family"],
+      "description": "Align an oriented homologous RNA family and predict comparative pairing evidence.",
+      "documentation": "https://github.com/Alexander-Mitrofanov/RNAalifold-v2/blob/0498c888203ba7bd6a8e6c6e35a27229adc61d1e/README.md",
+      "revision": "0498c888203ba7bd6a8e6c6e35a27229adc61d1e",
+      "cli_modes": [
+        {
+          "name": "rnaalifold-v2",
+          "description": "Align an oriented homologous RNA family and predict comparative pairing evidence."
+        }
+      ],
+      "flags": [],
+      "managed": [
+        {
+          "flags": [
+            "--input",
+            "--output",
+            "--molecule",
+            "--mafft",
+            "--threads",
+            "--timeout-seconds"
+          ],
+          "description": "Inputs, outputs, pinned scientific policy and bounded execution are assigned by the isolated worker."
+        }
+      ]
+    }
+  ]
+}

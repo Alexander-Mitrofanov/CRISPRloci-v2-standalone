@@ -1,0 +1,873 @@
+[
+  {
+    "path": "raw/PMC10278012.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10278012/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 129428,
+    "sha256": "1f01c00ccd20820c9f7b98a0b2f0dec8ca32b8482eee816757b325f3bd691725"
+  },
+  {
+    "path": "raw/PMC10278012_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10278012/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 15252306,
+    "sha256": "153233e6d9671ac4f12fc751e24bf81f6699e8238529b1d00164b61eef169766"
+  },
+  {
+    "path": "raw/PMC11246509.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11246509/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 184803,
+    "sha256": "e5b3171f5a272ba92de77a679eee68d518259c7e0bb00e51e9e22eb775e810fc"
+  },
+  {
+    "path": "raw/PMC11246509_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11246509/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 10719392,
+    "sha256": "d509fb14ea13d262173de3fcb832d0ba0fcef3f3752372d1e32cf2a151809689"
+  },
+  {
+    "path": "raw/PMC11685505.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11685505/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 162099,
+    "sha256": "66d721614253ec2ea6000725dcaabb09dbf182d88b770435064fb3d51e99113a"
+  },
+  {
+    "path": "raw/PMC11685505_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11685505/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 21143957,
+    "sha256": "4f131163e7be1fd18abdc1738ff90f92448ee1f3e319ef4a67722b83e6437675"
+  },
+  {
+    "path": "raw/PMC12416283.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12416283/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 94308,
+    "sha256": "72fb344096a049223a6e5c65e70b3d1256fe847e8d291f3327c47f5baf582ec2"
+  },
+  {
+    "path": "raw/PMC12416283_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12416283/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 5237643,
+    "sha256": "e461210ce6a257c822f65adbfabb4d6a935002807941bedf4c784e5cfdc69d70"
+  },
+  {
+    "path": "raw/PMC12422970.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12422970/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 157853,
+    "sha256": "92deee8daa6e66c9f7c4e410dbf633aa40f5ea4387f6d6ab18aa1d8534294eae"
+  },
+  {
+    "path": "raw/PMC12422970_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12422970/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 17179730,
+    "sha256": "fb0519c3c73c5061f16ef8db38b1b106c3eabd2a99c830f53898b9c4594c142a"
+  },
+  {
+    "path": "raw/PMC13186708.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13186708/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 212329,
+    "sha256": "d3ead32bad52fd9cbafb57c4e162f5b893688c611ca68e3bfae35435fe6337ce"
+  },
+  {
+    "path": "raw/PMC13186708_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13186708/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 18794351,
+    "sha256": "3107ef1e776a700325b6bc39674119543d018f2f146ee510fb37ddc95e9f439c"
+  },
+  {
+    "path": "raw/PMC3737331.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3737331/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 167053,
+    "sha256": "4247b6a8225c104e42f92232b3c7daeefd596ddc859085da6f3df416cece783e"
+  },
+  {
+    "path": "raw/PMC3737331_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3737331/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 1473959,
+    "sha256": "6114e5de842a3cbc935c2574a4c3a41c909a96fe189e22c8e24b95007b6477c5"
+  },
+  {
+    "path": "raw/PMC4041416.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4041416/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 173827,
+    "sha256": "7ea8cd3b38c0dbde390ba2d80264294e42d8403982add3ff15d90374e26c09c9"
+  },
+  {
+    "path": "raw/PMC4041416_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4041416/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 6020970,
+    "sha256": "cb622cb05490d3bf81dafab5d7f94c09234a80fceda97fe9a8c90ad42f67c74f"
+  },
+  {
+    "path": "raw/PMC6255809.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6255809/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 113419,
+    "sha256": "201239ff5f17dc63322541f46d1a3aa84ef77240635dcc81abd1676ab156e1d9"
+  },
+  {
+    "path": "raw/PMC6255809_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6255809/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 9716876,
+    "sha256": "ce43f79dc5d043270aa0c084d151e51786545c2994705d0a605fed8370009d76"
+  },
+  {
+    "path": "raw/PMC6546382.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6546382/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 145326,
+    "sha256": "e6bcd9960c0e7703f4854e2c1e48553615f5ec2e13d8574b6ba9d68ed387a3a1"
+  },
+  {
+    "path": "raw/PMC6546382_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6546382/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 10031702,
+    "sha256": "46ce8dc560dc0517f348ff54b2befb002660a00e80f4671b4f4eea52183f0400"
+  },
+  {
+    "path": "raw/PMC7606464.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7606464/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 150185,
+    "sha256": "c805595f9ca56028b80150eab88338364abd76ef0f16a209b56e2e7bfc41641a"
+  },
+  {
+    "path": "raw/PMC7606464_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7606464/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 15389926,
+    "sha256": "c02dcee802e03e6ccf18b73f68566072f60158c641a76abb16adc1bfa8586c25"
+  },
+  {
+    "path": "raw/PMC8548392.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8548392/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 99960,
+    "sha256": "8f4459f84f6efbb94745abcaeb3a7678f51daace44d114d687fadec0e67b5b4f"
+  },
+  {
+    "path": "raw/PMC8548392_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8548392/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 15500317,
+    "sha256": "1c5c03281b326e4b9ef88d3fb328ee678c1df3211d4560be3675b964abf1f60a"
+  },
+  {
+    "path": "raw/PMC9486595.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9486595/fullTextXML",
+    "kind": "article_xml",
+    "bytes": 84706,
+    "sha256": "4c056ce295d5cd7fb5b007df03e6dbbf3a1019064a288fd3c33105cabf957df3"
+  },
+  {
+    "path": "raw/PMC9486595_supp.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9486595/supplementaryFiles",
+    "kind": "supplement_zip",
+    "bytes": 655028,
+    "sha256": "39b25b617765716aca016e64a5dcdaa448b1f93a52aaa02eecb78a9834467899"
+  },
+  {
+    "path": "raw/AllCas9_TracrRNA_Systems.xlsx",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/AllCas9_TracrRNA_Systems.xlsx",
+    "kind": "supplement_table",
+    "bytes": 6985215,
+    "sha256": "260d0e3a02ca40a3431d89aa8379def64e46f09de709da9cdbad5f3904e57d3c"
+  },
+  {
+    "path": "raw/DooleySupTable1.csv",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/DooleySupTable1.csv",
+    "kind": "supplement_table",
+    "bytes": 15010,
+    "sha256": "fef3cf6dc3678e5c1d831d1eae10e5dd03934027399cd1747886c4033c334d07"
+  },
+  {
+    "path": "raw/DooleySupTable2.csv",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/DooleySupTable2.csv",
+    "kind": "supplement_table",
+    "bytes": 154,
+    "sha256": "a0c1c40c20617f84d65ebd8299ff70f745a9f62fc5475003e305a4fd9a6b81da"
+  },
+  {
+    "path": "raw/DooleySupTable3.xlsx",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/DooleySupTable3.xlsx",
+    "kind": "supplement_table",
+    "bytes": 9538285,
+    "sha256": "6b30e6b6dfbfafa1ac20ee3422296605541fa1887df2b1b7968a39f29ae2554a"
+  },
+  {
+    "path": "raw/DooleySupTable4.xlsx",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/DooleySupTable4.xlsx",
+    "kind": "supplement_table",
+    "bytes": 66872,
+    "sha256": "0f46e87e3bd63d83c9e62cbce176285e5e0dc6eae3d5f5ab211f8bc0524b5216"
+  },
+  {
+    "path": "raw/DooleySupTable5.xlsx",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/tables/DooleySupTable5.xlsx",
+    "kind": "supplement_table",
+    "bytes": 40276,
+    "sha256": "74d4c29f58f5119eb7b5dbcb66c1a592fbdef9ff642b88eb70fb02118505fc46"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ain.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ain.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8669,
+    "sha256": "f32b148f07839af2e0a1d064a1e588e64725acebb885565352e93db64ffb3367"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Bbo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Bbo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8591,
+    "sha256": "c7f5e50e22d6e3600533a115caa2d6540f7c350d3f549c1fca5a5f516f15e87b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Bni.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Bni.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40840,
+    "sha256": "ce6bd22d8492de657ed562c994ac3632ebc3eed9b33069f7ed19d519833d784d"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Bok.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Bok.fasta",
+    "kind": "reference_fasta",
+    "bytes": 7141,
+    "sha256": "7a706026bb97fdcfab2c42787a884a4118b2f9a1707dc0efb8b0f4998c69b607"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cca1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cca1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 11613,
+    "sha256": "690944d8c2d2de559e75e072fb9689e2ed368fc37eeec7d7489ba1d77cb2d76e"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cca2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cca2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8643,
+    "sha256": "c511cccf4f5df28c2fdfc2a16b262b819afe48438254717e6f3db48d23a98b03"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cco.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cco.fasta",
+    "kind": "reference_fasta",
+    "bytes": 22976,
+    "sha256": "d84ccdc039235d7204ce809340ebbb5cfc430d5397ac0b108e4d4cb4944dfc5b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cga.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cga.fasta",
+    "kind": "reference_fasta",
+    "bytes": 9346,
+    "sha256": "af6a6cae310336d19c954bb3f5e62d4223b986d0b799b68a084502a73fed0f1b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cgl.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cgl.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8691,
+    "sha256": "d2ee84bd1893abb30559d1567b85b5015d2fbe75adfe4cc5e4cd1a20e8744187"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cme1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cme1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 6381,
+    "sha256": "4fa49aadef116d2a893b834a2898a5b6f9e836495356741a5ca598c931f6ea5b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cme2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cme2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 4994,
+    "sha256": "4df100e476bae8478deeac1b0877eddf436b0202b94854b0e517d3c6b6e250b7"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cme3.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cme3.fasta",
+    "kind": "reference_fasta",
+    "bytes": 6440,
+    "sha256": "174f69665b87c76b88849ecb5bae5376b33a4a712736ad1eadf013005076aded"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cme4.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cme4.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10753,
+    "sha256": "588e9f3ca265416037ee54b83ef9424d72599bcc540ea0c965ace5eb4979222e"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Cpe.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Cpe.fasta",
+    "kind": "reference_fasta",
+    "bytes": 41503,
+    "sha256": "a82d41cf7642ac2cf2050bfcf3d4d3ca84da43183fa03959f356dd9435353736"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Csa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Csa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 13994,
+    "sha256": "299f3012a45b994e9ffbfce2548b56100e0df1ae6caa36ae935aa3783e8ae3bd"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Dde.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Dde.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8586,
+    "sha256": "b75ae23d71766a91d1a9bd6f219efd4ea3cd1ef57051c058fc6a195f3bbf14f6"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ece.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ece.fasta",
+    "kind": "reference_fasta",
+    "bytes": 43090,
+    "sha256": "2540d2d12279eaaacdc37b16e4294e781b226977a7ae4d774e18663b3f315bb9"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Edo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Edo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8609,
+    "sha256": "ec725c45c6d62de2d976325cfefcabf54dd9d379dd837f694fedc84b07a25ff2"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Efa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Efa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 11641,
+    "sha256": "201da40853e3dec30ffba39cee7e5e5a4089ac77080df0922f1d02b29753e862"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Eit.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Eit.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10301,
+    "sha256": "dce1a8187256a28a1ce4dbe8d1acfc2b906f76c21565f640fc1aeb3be0056658"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Esp1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Esp1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 15778,
+    "sha256": "c78ca7bcc41aecb58b007c93d7b27a4a556f5a28e6cc42b12d3f50d0fa509ca6"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Esp2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Esp2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40312,
+    "sha256": "5703542708540d63b3fd8a306c30ac616f5c2ce2feaff6a29608cbff35cd5208"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ffr.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ffr.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8663,
+    "sha256": "158b4e3a3b46bd68e8dedb70dd1015fa4aab26bafa93f988531017d8fd71aeb0"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Fho.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Fho.fasta",
+    "kind": "reference_fasta",
+    "bytes": 13711,
+    "sha256": "ee04ccb0887ee7ab20988ff5fd3ceef08381b6dede2b1ada8932dc0f2b1ba15e"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Fma.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Fma.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8644,
+    "sha256": "efb0620ed40e7f77db62ff3a16c3c566aeca4d117638f6872f0b0afa2a9d7785"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghc1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghc1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 5784,
+    "sha256": "76be814a4ef5bdbf1fcac317c77532dd523ceb636c87b92c562c8e50f6964a23"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghc2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghc2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10410,
+    "sha256": "56bf58087c77987a7ce492bbc37a4d71cf3ae0dccfc127dc0dd23cef75d6353a"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghe.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghe.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8619,
+    "sha256": "562c640cdd1db1f8f08c6da627d427fedce5a8836b35e0243eff51e79db29f86"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghh1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghh1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8288,
+    "sha256": "54e7254c17c1ef5e47ab06f795cd96403fc2e1c24ebad0cdf1d863b9d526c1e8"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghh2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghh2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8862,
+    "sha256": "c80e23d60b2f92b19bfee7167c1f70eb51a05211be7ffe3c428d1e4e389b1045"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghy1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghy1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 6887,
+    "sha256": "7b36983da6e5d62cb40af891a5845d38be8a24e843571a9f4a465d71375325c0"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghy2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghy2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 7908,
+    "sha256": "1badb5e0c5d3ab9c150c5b57674cc19c564fa4ded2f4dd725dfaf871f094e401"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghy3.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghy3.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8670,
+    "sha256": "5f830c30afd57c3dec1b010a3bb5211f0e7c9f9242b43211c87c6b033f641c5a"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ghy4.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ghy4.fasta",
+    "kind": "reference_fasta",
+    "bytes": 7993,
+    "sha256": "ded75bce56f0a4c8cfde69daa2de8f2dae6ea5d538818fb83c20e8b43df0c86b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Gsp.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Gsp.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8379,
+    "sha256": "e541e1e348fceca1f7c5f034550a8f6e5b930ba4de433c2cff05054f90858db6"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Jpa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Jpa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 28879,
+    "sha256": "2cf829cdfa9f464fd2158725f5d8627564b5cb9dc8b99c6d68acb7202c87a626"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Khu.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Khu.fasta",
+    "kind": "reference_fasta",
+    "bytes": 12490,
+    "sha256": "120d25c16e0a9e01d0e8e55ea36fa225a3ae1a081c2016e7e4beb789fe388143"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Kki.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Kki.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40312,
+    "sha256": "337a954ed6fac1b0826e1a49fc56d229fbab882179e4b850fdf2dbec2b7a92d5"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lan.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lan.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8680,
+    "sha256": "70945f31e4162853039c83e4379492068713ead5af643faf80c8b74e85d8d0b5"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lce.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lce.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8632,
+    "sha256": "583eada9f6f32214c21219513f81ce63c7a5a549550fc4ceb4872af3d6b38107"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lmo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lmo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8674,
+    "sha256": "4c526a12f5f6ffb867d09187967ee56536f185ba8889eff899000d8a9a8a1ff1"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lpn.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lpn.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8665,
+    "sha256": "d442f780e239a45c1a322a876789ff2b31236a5a72488d8fbf53636ba25b7b93"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lrh.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lrh.fasta",
+    "kind": "reference_fasta",
+    "bytes": 13080,
+    "sha256": "121b5fad4474dc557efd69332a83165d5181976be53d7cf80179de642da64e0b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lsp1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lsp1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8750,
+    "sha256": "a1275d7f98693c4b8af3e2a8b000a8f8a35dccf85ff4e6a6e653d8028e67a3e4"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Lsp2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lsp2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 41369,
+    "sha256": "77eabdcc98769c548ef591323c6ae83c7948ae607bdb9ab89f60439e399ce557"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Mga.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Mga.fasta",
+    "kind": "reference_fasta",
+    "bytes": 11610,
+    "sha256": "7078456de004dca35b670d13120b8b79ee382997e1ecd8fd69d0d7e35d072b55"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Msc.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Msc.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40707,
+    "sha256": "0aa9195cb3febdd520b04fd81a522849d8d4c52e2702eca1baa73b1b2c6e62c3"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Mse.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Mse.fasta",
+    "kind": "reference_fasta",
+    "bytes": 90139,
+    "sha256": "019fb3d522878622e4697faeee9ea660876754e69f79497e272eb4e0dbad4b16"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Nme2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Nme2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 31468,
+    "sha256": "544707ef445b27bc2e15f02b66a8db05f36ec8f713ffd0530a56f38b995f4613"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Nsa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Nsa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40709,
+    "sha256": "6ac0a1cf8773786729d2105e32d26cd477f32157b3ed617e1ef07f2eb02f4c15"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Nsp.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Nsp.fasta",
+    "kind": "reference_fasta",
+    "bytes": 12481,
+    "sha256": "369ab7c2c377a863b131bf6796778b93618bf0c2d6bbf453caeb123a9a2ecebc"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Orh.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Orh.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10933,
+    "sha256": "d63006d4164becdba8ca5691cdfcc2d4bd86763c76275c98c5eb5f7b3cb1f5c9"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Pac.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Pac.fasta",
+    "kind": "reference_fasta",
+    "bytes": 11799,
+    "sha256": "fff75acf5680319fd5f102deab1d02cd21d4ff6379e62ac7a1a8c7436ef7e1c7"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Phi.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Phi.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8608,
+    "sha256": "f8d25b6d7650469ac7a9c0253303a7c4e9ae90f675a0e9680ea0799c3f711d72"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Psp.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Psp.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8174,
+    "sha256": "9e608cbf4321a491f43e37080ec712898c0605a6bcdb4c71d20a2d89efc86d09"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Rsp.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Rsp.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40441,
+    "sha256": "4e000ca4f33692ebad2e83f7f938dacfb26e734d980977d64df700a210c9289d"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sag1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sag1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40512,
+    "sha256": "a4a80a5e2ae12de2136b68cfe5a0395e3715b104344cb1255c2f50f97f7bc8dc"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sag2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sag2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8571,
+    "sha256": "4dd6c1ebbbe45b4a144ccbf4cbb706a678401d6fb453d8f8240ce3706f5472a0"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sdo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sdo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40707,
+    "sha256": "81b114fe64f3a3133a9ecc47b07413e8b469a22551ef1f5bb4dde6b68ad53e38"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sdy.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sdy.fasta",
+    "kind": "reference_fasta",
+    "bytes": 12107,
+    "sha256": "8681ce0d54f309d9629f5e42c648115b06dafb35d4f87a38c269bc9a4db093cf"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Seq1.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Seq1.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8659,
+    "sha256": "3f91f5adbd68b45fafa8f037de623cc7eb70b0cb88ddb97d988190536205f3f2"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Seq2.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Seq2.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10010,
+    "sha256": "d0e60dd4fe49d7653c13909049f14da79df204bbd5741d03b2d28ea68ccc5f02"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sga.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sga.fasta",
+    "kind": "reference_fasta",
+    "bytes": 18691,
+    "sha256": "0830274bca3377ede9cb209660a5c3f98ffd624750d6f853bee15bf187270f63"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sgo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sgo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 13249,
+    "sha256": "7300ed5b6f1ca1dfcac7ff21c8e2020d5969d4b48ee3869005b53393ec55d5ce"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sma.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sma.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10601,
+    "sha256": "d4ada73bb795825556ae91c2d1854953a94c64e1ec229bdb9d85f0b9032700c7"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Smu.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Smu.fasta",
+    "kind": "reference_fasta",
+    "bytes": 12138,
+    "sha256": "9583f5d227760d8fb07eae8dbdb404d1cbe8039503f4f83cf222140e6b6f8f1c"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Spa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Spa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 44916,
+    "sha256": "159189161e69232fcd4440c2e227553a38060e965b25a5bd744f137c71f4bd65"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sra.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sra.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40443,
+    "sha256": "1c7c990f8fcd94548c59dbebe39c7eb13ab9ca4b2e890e80bc3707a97328e3b0"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ssa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ssa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10331,
+    "sha256": "05b8c59d7df989d135a508eaec0aaa7e30cdfacc786990ffd4994247ef5d5f0c"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ssi.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ssi.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8631,
+    "sha256": "f95669b62b2b4209f3609d4c2bf6404c769f64cfa9e71ce5d531072fdbfb0f58"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Ssu.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ssu.fasta",
+    "kind": "reference_fasta",
+    "bytes": 10979,
+    "sha256": "3261674be0d0e015ed4f47ba774741a2e673785a7dd0047171e367afeaef0f4f"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Sth1A.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Sth1A.fasta",
+    "kind": "reference_fasta",
+    "bytes": 13264,
+    "sha256": "6402b260a95c2e5daa0efa9bfb5594a5cf242fbe3f475a8ed778b412c0865367"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Tba.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Tba.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8677,
+    "sha256": "3847ba91df7fab4262d3bd4080ca61eb34be7cb745fa7e2bd256f6c6cc028d2b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Tde.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Tde.fasta",
+    "kind": "reference_fasta",
+    "bytes": 15643,
+    "sha256": "41117bc7ba05beb9b5e516186d5e0422eeaa07bedbb1acc2ea6cb80eb7e480d6"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Tmo.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Tmo.fasta",
+    "kind": "reference_fasta",
+    "bytes": 11957,
+    "sha256": "bc15b17f9096bb0ff9eb7b1b1c9d6f214933521e67c91c4fc08df93bd724023b"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Tpu.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Tpu.fasta",
+    "kind": "reference_fasta",
+    "bytes": 40178,
+    "sha256": "659e78fea2b6bf90746451000c4d5d468cfdeb4007ff3825a7335cfd356763fe"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Tsp.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Tsp.fasta",
+    "kind": "reference_fasta",
+    "bytes": 9416,
+    "sha256": "307e3544ad08f3c3009d110eb31f776165a7099acab36acab67220230c106b55"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Vpa.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Vpa.fasta",
+    "kind": "reference_fasta",
+    "bytes": 8636,
+    "sha256": "096178c112c18561d2541f75334049a58a63398f33f205b27c6b2f9ba1a48e5a"
+  },
+  {
+    "path": "raw/dooley_loci/REF_Wvi.fasta",
+    "url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Wvi.fasta",
+    "kind": "reference_fasta",
+    "bytes": 18952,
+    "sha256": "e625f39a97988ef5c3e544f25eb1ac7cb22591b6f8c6f5dc68f560e10eaafec4"
+  },
+  {
+    "path": "raw/RF02348_seed.fasta",
+    "url": "https://rfam.org/family/RF02348/alignment/fastau",
+    "kind": "family_seed_fasta",
+    "bytes": 4455,
+    "sha256": "d66b5125729de9abc1c5a7fc8d5aeceae986149766d843246cbbaf50c5815b8b"
+  },
+  {
+    "path": "raw/alternate_retrieval/S1 tracrRNA characteristics.pdf",
+    "url": "https://ndownloader.figshare.com/files/12379430",
+    "kind": "supplement_file",
+    "bytes": 105349,
+    "sha256": "9ad818c02147b89cab2bf5ad4e50347922d400d665219d0247f4e257808b38b5",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S10 Supplementary Text and Figure Legends.docx",
+    "url": "https://ndownloader.figshare.com/files/12379433",
+    "kind": "supplement_file",
+    "bytes": 19783,
+    "sha256": "fa99bbd283e3997ac0b93d77d11f6f475db29947196afcfb16ec113bd3766765",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S2 SVM testing.pdf",
+    "url": "https://ndownloader.figshare.com/files/12379436",
+    "kind": "supplement_file",
+    "bytes": 76138,
+    "sha256": "44f3ecda65589f8f31ca215d30a7437f533f505c33ecc0376f84671632671512",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S3 Compare Chyou and Chylinski.txt",
+    "url": "https://ndownloader.figshare.com/files/12379439",
+    "kind": "supplement_file",
+    "bytes": 17049,
+    "sha256": "cac6c3dfe1f902c034941e37be0ff95a90a876643aacaa3dd30e1ef1c5509f0a",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S4 tracrRNA all prediction.txt",
+    "url": "https://ndownloader.figshare.com/files/12379442",
+    "kind": "supplement_file",
+    "bytes": 769829,
+    "sha256": "faa98498cb493650e5ad7f02d1ae0e6369edaef50f6d0d0184e2920521c89a56",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S5 Genome context of tracRNAs.pdf",
+    "url": "https://ndownloader.figshare.com/files/12379445",
+    "kind": "supplement_file",
+    "bytes": 4823792,
+    "sha256": "7aebce31c40e18cbf81172fb56a1944bef5d4f4de19345008931e82bc1556893",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S6 Taxtree tracrRNA.pdf",
+    "url": "https://ndownloader.figshare.com/files/12379448",
+    "kind": "supplement_file",
+    "bytes": 102483,
+    "sha256": "a58a1e6715d1f4a57f652699a7c89395d98afc7eceae851a4a6d9ac24536c9c3",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S7 Additional validation statistics.docx",
+    "url": "https://ndownloader.figshare.com/files/12379451",
+    "kind": "supplement_file",
+    "bytes": 35283,
+    "sha256": "721a977a0b6f3fea654c775b1d982d9b0ec2e4c3afc001f8cb089d7d5069b43e",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S8 Tail clusters cm.txt",
+    "url": "https://ndownloader.figshare.com/files/12379454",
+    "kind": "supplement_file",
+    "bytes": 502651,
+    "sha256": "b4920db6e4df3d6c046a94772b29f46804a736c37134987339b67d3ac972527d",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/S9 Repeat clusters.txt",
+    "url": "https://ndownloader.figshare.com/files/12379457",
+    "kind": "supplement_file",
+    "bytes": 15309,
+    "sha256": "abb509a80ebff97cbac45b00ed35f55c5515ca78c7fe6f816ef8b615cc904b72",
+    "dataset": "10.6084/m9.figshare.6807203.v3"
+  },
+  {
+    "path": "raw/alternate_retrieval/briner_mmc1.pdf",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1097276514007515-mmc1.pdf",
+    "kind": "supplement_pdf",
+    "bytes": 2686949,
+    "sha256": "ddac48d05e4806ce9a140ac9d42d9b60d32cc32fef237d8fce2a78b4dd17c836"
+  }
+]

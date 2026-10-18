@@ -1,0 +1,2442 @@
+--- before/.github/workflows/ci.yml
++++ after/.github/workflows/ci.yml
+@@ -19,5 +19,4 @@
+       - run: mypy
+       - run: pytest -q -m 'not integration'
+       - run: python -m build
+-      - run: python -m pip install --force-reinstall --no-deps dist/*.whl
+-      - run: crisprtracrrna --version
++      - run: python scripts/check_wheel.py dist/*.whl
+--- before/README.md
++++ after/README.md
+@@ -170,7 +170,14 @@
+ mypy
+ CRISPRTRACRRNA_TEST_CONFIG="$PWD/local.toml" pytest -q -m integration
+ python -m build
+-```
++python scripts/check_wheel.py dist/*.whl
++```
++
++The wheel check installs one built wheel into a fresh temporary environment without
++index access or dependencies. From outside the source tree it checks both entry points,
++the installed version, resource checksums, model indexes, typing marker, and ERPIN permissions.
++Keep only the intended wheel in `dist/`, or pass its exact filename. Source tests remain
++separate because maintenance scripts and benchmark fixtures are not wheel contents.
+ 
+ Runtime and resource provenance are documented in [THIRD_PARTY.md](THIRD_PARTY.md).
+ 
+--- before/scripts/check_wheel.py
++++ after/scripts/check_wheel.py
+@@ -0,0 +1,134 @@
++#!/usr/bin/env python3
++"""Check one built wheel in a fresh environment without accessing a package index."""
++
++from __future__ import annotations
++
++import argparse
++import hashlib
++import importlib.metadata
++import json
++import os
++import subprocess
++import sys
++import tempfile
++import venv
++from pathlib import Path
++
++
++def verify_resources(package: Path) -> int:
++    """Verify distribution assets without invoking scientific executables."""
++    if not (package / "py.typed").is_file():
++        raise RuntimeError("Installed package is missing py.typed")
++    data = package / "data"
++    manifest = json.loads((data / "manifest.json").read_text())
++    required = {"erpin/erpin", "erpin/rho-indep.epn"}
++    required.update(
++        f"models/{model}.cm{suffix}"
++        for model in ("II", "V-1", "V-2", "V-3", "V-4")
++        for suffix in ("", ".i1f", ".i1i", ".i1m", ".i1p")
++    )
++    if missing := required.difference(manifest):
++        raise RuntimeError(f"Installed manifest omits required resources: {sorted(missing)}")
++    for relative, expected in manifest.items():
++        resource = data / relative
++        if not resource.resolve().is_relative_to(data.resolve()):
++            raise RuntimeError(f"Manifest resource is outside package data: {relative}")
++        if not resource.is_file():
++            raise RuntimeError(f"Installed resource is missing: {relative}")
++        if hashlib.sha256(resource.read_bytes()).hexdigest() != expected:
++            raise RuntimeError(f"Installed resource checksum mismatch: {relative}")
++    if sys.platform == "linux" and not os.access(data / "erpin/erpin", os.X_OK):
++        raise RuntimeError("Installed ERPIN executable has lost executable permission")
++    return len(manifest)
++
++
++def verify_installation() -> None:
++    import crisprtracrrna
++
++    package = Path(crisprtracrrna.__file__).resolve().parent
++    if not package.is_relative_to(Path(sys.prefix).resolve()) or sys.prefix == sys.base_prefix:
++        raise RuntimeError(f"Package did not import from the isolated environment: {package}")
++    version = importlib.metadata.version("CRISPRtracrRNA")
++    if crisprtracrrna.__version__ != version:
++        raise RuntimeError("Installed package and distribution versions disagree")
++    resources = verify_resources(package)
++    print(json.dumps({"version": version, "resources": resources, "package": str(package)}))
++
++
++def check_wheel(wheel: Path) -> None:
++    wheel = wheel.resolve(strict=True)
++    if wheel.suffix != ".whl":
++        raise ValueError(f"Expected a wheel file: {wheel}")
++    with tempfile.TemporaryDirectory(prefix="crisprtracrrna-wheel-") as temporary:
++        work = Path(temporary)
++        environment = work / "venv"
++        venv.EnvBuilder(with_pip=True).create(environment)
++        binaries = environment / ("Scripts" if os.name == "nt" else "bin")
++        python = binaries / ("python.exe" if os.name == "nt" else "python")
++        # The console launcher cannot receive -I. Remove inherited Python path
++        # overrides and exclude the working directory from its import search.
++        child_env = {
++            key: value for key, value in os.environ.items() if not key.startswith("PYTHON")
++        }
++        child_env["PYTHONSAFEPATH"] = "1"
++        subprocess.run(
++            [
++                str(python),
++                "-I",
++                "-m",
++                "pip",
++                "install",
++                "--no-index",
++                "--no-deps",
++                "--disable-pip-version-check",
++                str(wheel),
++            ],
++            cwd=work,
++            env=child_env,
++            check=True,
++        )
++        inspected = subprocess.run(
++            [str(python), "-I", str(Path(__file__).resolve()), "--check-installed"],
++            cwd=work,
++            env=child_env,
++            check=True,
++            capture_output=True,
++            text=True,
++        )
++        result = json.loads(inspected.stdout)
++        console = binaries / ("crisprtracrrna.exe" if os.name == "nt" else "crisprtracrrna")
++        for command in ([str(console)], [str(python), "-I", "-m", "crisprtracrrna"]):
++            for option in ("--version", "--help"):
++                completed = subprocess.run(
++                    [*command, option],
++                    cwd=work,
++                    env=child_env,
++                    check=True,
++                    capture_output=True,
++                    text=True,
++                )
++                if not completed.stdout.strip():
++                    raise RuntimeError(f"Installed command produced no output: {command} {option}")
++                if option == "--version" and result["version"] not in completed.stdout:
++                    raise RuntimeError(f"Installed command reported a different version: {command}")
++        print(
++            f"Wheel check passed: {wheel.name}, version {result['version']}, "
++            f"{result['resources']} verified resources, console and module entry points."
++        )
++
++
++def main() -> None:
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("wheel", type=Path, nargs="?")
++    parser.add_argument("--check-installed", action="store_true", help=argparse.SUPPRESS)
++    args = parser.parse_args()
++    if args.check_installed:
++        verify_installation()
++    elif args.wheel is not None:
++        check_wheel(args.wheel)
++    else:
++        parser.error("provide the path to one built wheel")
++
++
++if __name__ == "__main__":
++    main()
+--- before/scripts/dependencies.py
++++ after/scripts/dependencies.py
+@@ -10,6 +10,8 @@
+ import argparse
+ import json
+ import subprocess
++import sys
++import tempfile
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+@@ -34,14 +36,17 @@
+             "preserve that checkout elsewhere before syncing"
+         )
+     destination.parent.mkdir(parents=True, exist_ok=True)
+-    git("clone", "--no-checkout", "--filter=blob:none", entry["url"], str(destination))
+-    git("checkout", "--detach", entry["commit"], cwd=destination)
++    with tempfile.TemporaryDirectory(prefix=f".{name}-", dir=destination.parent) as staging:
++        checkout = Path(staging) / "checkout"
++        git("clone", "--no-checkout", "--filter=blob:none", entry["url"], str(checkout))
++        git("checkout", "--detach", entry["commit"], cwd=checkout)
++        checkout.rename(destination)
+     print(f"{name}: {git('rev-parse', 'HEAD', cwd=destination)}")
+ 
+ 
+ def update(name: str, ref: str, lock: dict[str, dict[str, str]]) -> None:
+-    if ref.startswith("-"):
+-        raise ValueError("A Git ref cannot begin with '-'")
++    if not ref.strip() or ref.startswith("-") or ":" in ref:
++        raise ValueError("Use a nonempty Git tag, branch, or commit, not an option or refspec")
+     destination = ROOT / "external" / name
+     if git("status", "--porcelain", cwd=destination):
+         raise RuntimeError(f"Refusing update: {destination} has local changes")
+@@ -52,15 +57,56 @@
+         raise RuntimeError(
+             "Current checkout differs from lock; resolve the mismatch before updating"
+         )
++    branch = git("rev-parse", "--abbrev-ref", "HEAD", cwd=destination)
+     git("fetch", "origin", ref, cwd=destination)
+-    new = git("rev-parse", "FETCH_HEAD", cwd=destination)
+-    git("checkout", "--detach", new, cwd=destination)
+-    lock[name]["commit"] = new
+-    lock[name]["previous_commit"] = old
+-    lock[name]["requested_ref"] = ref
+-    temporary = ROOT / "upstream-lock.json.tmp"
+-    temporary.write_text(json.dumps(lock, indent=2) + "\n")
+-    temporary.replace(ROOT / "upstream-lock.json")
++    new = git("rev-parse", "--verify", "FETCH_HEAD^{commit}", cwd=destination)
++    proposed = {key: dict(value) for key, value in lock.items()}
++    proposed[name].update(commit=new, previous_commit=old, requested_ref=ref)
++    temporary = None
++    checkout_attempted = False
++    try:
++        with tempfile.NamedTemporaryFile(
++            mode="w",
++            encoding="utf-8",
++            prefix=".upstream-lock-",
++            suffix=".json",
++            dir=ROOT,
++            delete=False,
++        ) as handle:
++            temporary = Path(handle.name)
++            json.dump(proposed, handle, indent=2)
++            handle.write("\n")
++        checkout_attempted = True
++        git("checkout", "--detach", new, cwd=destination)
++        temporary.replace(ROOT / "upstream-lock.json")
++        temporary = None  # Publication consumed the staging path; no cleanup remains.
++    except Exception as update_error:
++        if checkout_attempted:
++            try:
++                if branch == "HEAD":
++                    git("checkout", "--detach", old, cwd=destination)
++                else:
++                    git("checkout", "--no-guess", branch, cwd=destination)
++            except Exception as restoration_error:
++                raise RuntimeError(
++                    f"Dependency update failed: {update_error}; restoration also failed: "
++                    f"{restoration_error}. The lock was not published. Restore {destination} "
++                    f"to {old} ({'detached HEAD' if branch == 'HEAD' else f'branch {branch}'}) "
++                    "before retrying."
++                ) from update_error
++        raise
++    finally:
++        if temporary is not None:
++            pending_error = sys.exception()
++            try:
++                temporary.unlink(missing_ok=True)
++            except OSError as cleanup_error:
++                detail = f"Could not remove staged lock {temporary}: {cleanup_error}"
++                if pending_error is not None:
++                    pending_error.add_note(detail)
++                else:
++                    print(detail, file=sys.stderr)
++    lock[name] = proposed[name]
+     print(f"{name}: {old} -> {new}")
+     print(
+         "Reinstall/rebuild this upstream using its instructions, "
+--- before/src/crisprtracrrna/adapters.py
++++ after/src/crisprtracrrna/adapters.py
+@@ -9,7 +9,7 @@
+ from typing import Any, cast
+ 
+ from .config import Settings
+-from .errors import ContractError
++from .errors import ContractError, TracrError
+ from .models import Array, Interval, Sequence
+ from .process import Runner
+ from .sequence import normalize
+@@ -23,15 +23,27 @@
+     return digest.hexdigest()
+ 
+ 
+-def load_json(path: Path) -> dict[str, Any]:
++def _decode_json_object(text: str) -> dict[str, Any]:
++    """Decode an upstream record without accepting nonfinite JSON numbers."""
++
+     def invalid_constant(value: str) -> None:
+         raise ValueError(f"Non-finite JSON number {value}")
+ 
++    def finite_float(value: str) -> float:
++        number = float(value)
++        if not math.isfinite(number):
++            raise ValueError(f"Non-finite JSON number {value}")
++        return number
++
++    data = json.loads(text, parse_constant=invalid_constant, parse_float=finite_float)
++    if not isinstance(data, dict):
++        raise ValueError("Expected JSON object")
++    return cast(dict[str, Any], data)
++
++
++def load_json(path: Path) -> dict[str, Any]:
+     try:
+-        data = json.loads(path.read_text(encoding="utf-8"), parse_constant=invalid_constant)
+-        if not isinstance(data, dict):
+-            raise ValueError("Expected JSON object")
+-        return cast(dict[str, Any], data)
++        return _decode_json_object(path.read_text(encoding="utf-8"))
+     except (OSError, ValueError) as exc:
+         raise ContractError(f"Cannot read structured report {path}: {exc}") from exc
+ 
+@@ -81,14 +93,23 @@
+             score = float(row["certainty_score"])
+             if not math.isfinite(score) or not 0 <= score <= 1:
+                 raise ValueError("Invalid array score")
+-            if row["id"] in seen:
++            identifier = row["id"]
++            if not isinstance(identifier, str) or not identifier:
++                raise ValueError("Array id must be a nonempty string")
++            if identifier in seen:
+                 raise ValueError("Duplicate array id")
+-            seen.add(row["id"])
++            seen.add(identifier)
++            try:
++                repeat = normalize(row["consensus_repeat"])
++            except TracrError as exc:
++                raise ContractError(
++                    f"Incompatible CRISPRidentify report {path}: invalid consensus repeat: {exc}"
++                ) from exc
+             arrays.append(
+                 Array(
+-                    row["id"],
++                    identifier,
+                     interval,
+-                    normalize(row["consensus_repeat"]),
++                    repeat,
+                     strand,
+                     row["category"],
+                     score,
+@@ -134,26 +155,47 @@
+             or manifest["schema_version"] != 5
+         ):
+             raise ValueError("Unsupported CasAndra genome report schema (expected 5)")
++        input_digest = sha256_file(fasta)
+         if not any(
+-            row["sha256"] == sha256_file(fasta) and row["kind"] == "genome_fasta"
+-            for row in run["inputs"]
++            row["sha256"] == input_digest and row["kind"] == "genome_fasta" for row in run["inputs"]
+         ):
+             raise ValueError("CasAndra input digest does not match")
++        for count in ("genes", "cas_cassettes"):
++            if type(run[count]) is not int or run[count] < 0:
++                raise ValueError(f"CasAndra {count} count must be a nonnegative integer")
+         result: dict[str, Any] = {"run": run, "status": "computed"}
+         for filename, key in (("proteins.jsonl", "genes"), ("cassettes.jsonl", "cassettes")):
+             path = directory / filename
+             if sha256_file(path) != manifest["files"][filename]["sha256"]:
+                 raise ValueError(f"CasAndra checksum mismatch: {filename}")
+-            rows = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+-            for row in rows:
+-                interval = Interval.from_public(row["start_1based"], row["end_1based_inclusive"])
+-                if interval.end > len(source.bases) or row["contig_id"] != source.id:
+-                    raise ValueError("CasAndra coordinates or contig do not match the source")
+-                if key == "genes":
+-                    if type(row["prediction"]["is_cas"]) is not bool:
+-                        raise ValueError("CasAndra is_cas must be a boolean")
+-                elif not isinstance(row["final_classification"], dict):
+-                    raise ValueError("Missing CasAndra cassette classification")
++            rows = []
++            with path.open(encoding="utf-8") as handle:
++                for number, line in enumerate(handle, 1):
++                    if not line.strip():
++                        continue
++                    try:
++                        row = _decode_json_object(line)
++                        interval = Interval.from_public(
++                            row["start_1based"], row["end_1based_inclusive"]
++                        )
++                        if interval.end > len(source.bases) or row["contig_id"] != source.id:
++                            raise ValueError(
++                                "CasAndra coordinates or contig do not match the source"
++                            )
++                        if key == "genes":
++                            if type(row["prediction"]["is_cas"]) is not bool:
++                                raise ValueError("CasAndra is_cas must be a boolean")
++                        else:
++                            if not isinstance(row["final_classification"], dict):
++                                raise ValueError("Missing CasAndra cassette classification")
++                            identifier = row["cassette_id"]
++                            if not isinstance(identifier, str) or not identifier:
++                                raise ValueError("CasAndra cassette id must be a nonempty string")
++                    except (KeyError, TypeError, ValueError) as exc:
++                        raise ContractError(
++                            f"Incompatible CasAndra record {path}:{number}: {exc}"
++                        ) from exc
++                    rows.append(row)
+             result[key] = rows
+         if len(result["genes"]) != run["genes"] or len(result["cassettes"]) != run["cas_cassettes"]:
+             raise ValueError("CasAndra record count mismatch")
+--- before/src/crisprtracrrna/config.py
++++ after/src/crisprtracrrna/config.py
+@@ -4,6 +4,7 @@
+ 
+ import math
+ import tomllib
++from collections.abc import Mapping
+ from dataclasses import asdict, dataclass, field
+ from pathlib import Path
+ from typing import Any
+@@ -11,6 +12,26 @@
+ from .errors import TracrError
+ 
+ DATA = Path(__file__).parent / "data"
++
++
++def _finite_number(value: object) -> bool:
++    return (
++        isinstance(value, (int, float))
++        and not isinstance(value, bool)
++        and (isinstance(value, int) or math.isfinite(value))
++    )
++
++
++def _nonempty_string(value: object) -> bool:
++    return isinstance(value, str) and bool(value)
++
++
++def _string_array(value: object, *, allow_empty: bool = False) -> bool:
++    return (
++        isinstance(value, (tuple, list))
++        and (allow_empty or bool(value))
++        and all(_nonempty_string(part) for part in value)
++    )
+ 
+ 
+ @dataclass(frozen=True)
+@@ -79,18 +100,12 @@
+                 raise TracrError(f"{name} must be a nonnegative integer")
+         for name in ("similarity", "coverage"):
+             value = getattr(self, name)
+-            if (
+-                not isinstance(value, (int, float))
+-                or not math.isfinite(value)
+-                or not 0 <= value <= 1
+-            ):
++            if not _finite_number(value) or not 0 <= value <= 1:
+                 raise TracrError(f"{name} must be finite and between 0 and 1")
+-        if (
+-            not isinstance(self.timeout, (int, float))
+-            or not math.isfinite(self.timeout)
+-            or self.timeout <= 0
+-        ):
+-            raise TracrError("timeout must be finite and positive")
++        for name in ("timeout", "model_rescue_evalue"):
++            value = getattr(self, name)
++            if not _finite_number(value) or value <= 0:
++                raise TracrError(f"{name} must be finite and positive")
+         if type(self.type_v_motifs) is not bool:
+             raise TracrError("type_v_motifs must be a boolean")
+         if type(self.model_rescue) is not bool:
+@@ -101,29 +116,16 @@
+             raise TracrError("Short anti-repeat rescue requires Type II complete mode")
+         if type(self.mask_arrays) is not bool:
+             raise TracrError("mask_arrays must be a boolean")
+-        if (
+-            isinstance(self.model_rescue_evalue, bool)
+-            or not isinstance(self.model_rescue_evalue, (int, float))
+-            or not math.isfinite(self.model_rescue_evalue)
+-            or self.model_rescue_evalue <= 0
+-        ):
+-            raise TracrError("model_rescue_evalue must be finite and positive")
+         if self.type_v_motifs and self.model_type != "V":
+             raise TracrError("Type V motif analysis requires model_type V")
+         for name in ("cmscan", "fasta36", "blastn", "intarna", "erpin", "erpin_model"):
+-            if not isinstance(getattr(self, name), str) or not getattr(self, name):
++            if not _nonempty_string(getattr(self, name)):
+                 raise TracrError(f"{name} must be a nonempty string")
+-        if not isinstance(self.models, (tuple, list)) or any(
+-            not isinstance(p, str) or not p for p in self.models
+-        ):
++        if not _string_array(self.models, allow_empty=True):
+             raise TracrError("models must be an array of paths")
+-        for command in (self.identify_command, self.casandra_command):
+-            if (
+-                not isinstance(command, (tuple, list))
+-                or not command
+-                or any(not isinstance(x, str) or not x for x in command)
+-            ):
+-                raise TracrError("External commands must be nonempty arrays of strings")
++        for name in ("identify_command", "casandra_command"):
++            if not _string_array(getattr(self, name)):
++                raise TracrError(f"{name} must be a nonempty array of nonempty strings")
+         if not isinstance(self.environment, dict) or any(
+             not isinstance(k, str) or not isinstance(v, str) for k, v in self.environment.items()
+         ):
+@@ -140,9 +142,10 @@
+             "anti_tail",
+             "tail_terminator",
+         }
+-        if set(self.weights) != expected or any(
+-            not isinstance(w, (int, float)) or not math.isfinite(w) or w < 0
+-            for w in self.weights.values()
++        if (
++            not isinstance(self.weights, Mapping)
++            or set(self.weights) != expected
++            or any(not _finite_number(w) or w < 0 for w in self.weights.values())
+         ):
+             raise TracrError(
+                 f"weights must be finite, nonnegative, and use keys {sorted(expected)}"
+@@ -172,20 +175,26 @@
+         # File-valued settings resolve relative to the config, not the caller's CWD.
+         for key in ("models",):
+             if key in values:
+-                if not isinstance(values[key], list) or any(
+-                    not isinstance(p, str) for p in values[key]
+-                ):
++                if not _string_array(values[key], allow_empty=True):
+                     raise TracrError("models must be an array of paths")
+                 values[key] = tuple(str((path.parent / p).resolve()) for p in values[key])
+         for key in ("erpin_model",):
+             if key in values:
++                if not _nonempty_string(values[key]):
++                    raise TracrError(f"{key} must be a nonempty string")
+                 values[key] = str((path.parent / values[key]).resolve())
+         for key in ("cmscan", "fasta36", "blastn", "intarna", "erpin"):
+-            if key in values and "/" in values[key]:
++            if key not in values:
++                continue
++            if not _nonempty_string(values[key]):
++                raise TracrError(f"{key} must be a nonempty string")
++            if "/" in values[key]:
+                 # Resolving a venv's Python symlink would bypass its environment.
+                 values[key] = str((path.parent / values[key]).absolute())
+         for key in ("identify_command", "casandra_command"):
+-            if key in values and isinstance(values[key], list):
++            if key in values:
++                if not _string_array(values[key]):
++                    raise TracrError(f"{key} must be a nonempty array of nonempty strings")
+                 values[key] = tuple(
+                     str((path.parent / part).absolute())
+                     if isinstance(part, str)
+--- before/src/crisprtracrrna/evidence.py
++++ after/src/crisprtracrrna/evidence.py
+@@ -10,6 +10,7 @@
+ from .config import Settings
+ from .models import Array, Candidate, Hit, Interval, Sequence
+ from .sequence import subsequence
++from .short_rescue_policy import SHORT_RESCUE_POLICY
+ 
+ 
+ def best_hit(hits: list[Hit], forward_only: bool = False) -> Hit | None:
+@@ -304,7 +305,7 @@
+         )
+         target_positions = interaction["target_paired_positions"]
+         repeat_positions = interaction["repeat_paired_positions"]
+-        if interaction["energy_kcal_mol"] >= 0:
++        if interaction["energy_kcal_mol"] >= SHORT_RESCUE_POLICY.energy_strictly_below:
+             reasons.append("nonnegative_energy")
+         for t, q in zip(target_positions, reversed(repeat_positions), strict=True):
+             bases = (candidate.sequence[t - 1] + candidate.anti.repeat[q - 1]).replace("T", "U")
+@@ -313,23 +314,26 @@
+                 anchored.append(t)
+         if any(p["bases"] not in {"AU", "UA", "GC", "CG", "GU", "UG"} for p in pairs):
+             reasons.append("noncanonical_or_ambiguous_pair")
+-        if len(anchored) < 10:
++        if len(anchored) < SHORT_RESCUE_POLICY.min_anchored_paired_bases:
+             reasons.append("fewer_than_10_anchored_paired_bases")
+-        if len(anchored) / candidate.anti_local.length < 0.5:
++        if (
++            len(anchored) / candidate.anti_local.length
++            < SHORT_RESCUE_POLICY.min_anchored_paired_fraction
++        ):
+             reasons.append("less_than_half_anchor_paired")
+         supported_models = [
+             h
+             for h in models
+             if h.strand == "+"
+-            and h.evalue <= 0.01
++            and h.evalue <= SHORT_RESCUE_POLICY.cm_evalue_max
+             and h.interval.start >= target.start
+-            and h.interval.overlap(target) < 10
++            and h.interval.overlap(target) < SHORT_RESCUE_POLICY.cm_duplex_overlap_strictly_below
+         ]
+         supported_terms = [
+             h
+             for h in terms
+             if h.strand == "+"
+-            and h.evalue <= 0.001
++            and h.evalue <= SHORT_RESCUE_POLICY.terminator_evalue_max
+             and h.interval.start >= target.end
+             and h.interval.end <= len(candidate.sequence)
+         ]
+@@ -349,16 +353,7 @@
+         if settings.models
+         else "bundled II",
+         "seed_target_range": candidate.anti_local.public(),
+-        "thresholds": {
+-            "min_query_span": 12,
+-            "min_identity": 0.8,
+-            "min_anchored_paired_bases": 10,
+-            "min_anchored_paired_fraction": 0.5,
+-            "energy_strictly_below": 0,
+-            "cm_evalue_max": 0.01,
+-            "cm_duplex_overlap_strictly_below": 10,
+-            "terminator_evalue_max": 0.001,
+-        },
++        "thresholds": SHORT_RESCUE_POLICY.public(),
+     }
+ 
+ 
+--- before/src/crisprtracrrna/models.py
++++ after/src/crisprtracrrna/models.py
+@@ -15,11 +15,15 @@
+     end: int
+ 
+     def __post_init__(self) -> None:
++        if type(self.start) is not int or type(self.end) is not int:
++            raise ValueError("Interval coordinates must be integers")
+         if self.start < 0 or self.end <= self.start:
+             raise ValueError(f"Invalid half-open interval [{self.start}, {self.end})")
+ 
+     @classmethod
+     def from_public(cls, start: int, end: int) -> Interval:
++        if type(start) is not int or type(end) is not int:
++            raise ValueError("Public coordinates must be integers")
+         if start > end:
+             raise ValueError("Public coordinates must be ordered; strand is separate")
+         return cls(start - 1, end)
+--- before/src/crisprtracrrna/pipeline.py
++++ after/src/crisprtracrrna/pipeline.py
+@@ -2,8 +2,6 @@
+ 
+ from __future__ import annotations
+ 
+-import csv
+-import json
+ import logging
+ import os
+ import shutil
+@@ -13,7 +11,6 @@
+ from datetime import UTC, datetime
+ from pathlib import Path
+ from typing import Any
+-from urllib.parse import quote
+ 
+ from . import __version__
+ from .adapters import load_json, run_casandra, run_identify, sha256_file
+@@ -28,6 +25,9 @@
+ )
+ from .models import AntiRepeat, Hit, Sequence
+ from .process import Runner
++from .reporting import _assign_export_ids
++from .reporting import atomic_json as atomic_json
++from .reporting import write_exports as write_exports
+ from .search import interactions, make_candidates, scan_models, search_anti_repeats, terminators
+ from .sequence import input_files, read_fasta, write_fasta
+ 
+@@ -70,12 +70,6 @@
+             "Checks paths and bundled resources; upstream runtimes are verified during execution."
+         ),
+     }
+-
+-
+-def atomic_json(path: Path, value: Any) -> None:
+-    temporary = path.with_name(path.name + ".tmp")
+-    temporary.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+-    temporary.replace(path)
+ 
+ 
+ def command_provenance(
+@@ -253,94 +247,6 @@
+     }
+ 
+ 
+-def write_exports(output: Path, records: list[dict[str, Any]]) -> None:
+-    fields = [
+-        "source_file",
+-        "sequence_id",
+-        "prediction_id",
+-        "candidate_origin",
+-        "admission_branch",
+-        "evidence_class",
+-        "boundary_kind",
+-        "start",
+-        "end",
+-        "strand",
+-        "sequence",
+-        "score",
+-        "evalue",
+-        "array_id",
+-        "array_category",
+-        "anti_repeat_identity",
+-        "anti_repeat_coverage",
+-        "interaction_energy_kcal_mol",
+-        "model_score",
+-        "terminator_evalue",
+-        "cas_cassette_id",
+-        "cas_distance_bases",
+-    ]
+-    with (
+-        (output / "summary.csv").open("w", newline="", encoding="utf-8") as handle,
+-        (output / "predictions.fasta").open("w", encoding="utf-8") as fasta,
+-        (output / "predictions.gff3").open("w", encoding="utf-8") as gff,
+-    ):
+-        writer = csv.DictWriter(handle, fieldnames=fields)
+-        writer.writeheader()
+-        gff.write("##gff-version 3\n")
+-        for record in records:
+-            source = record["source"]
+-            # Prefix with record key to avoid collisions across files with reused contig IDs.
+-            seqid = quote(record["key"] + ":" + source["id"], safe="._:-")
+-            gff.write(f"##sequence-region {seqid} 1 {source['length']}\n")
+-            for ordinal, prediction in enumerate(record["predictions"], 1):
+-                identity = f"{record['key']}.p{ordinal:06d}"
+-                prediction["export_id"] = identity
+-                interval = prediction["interval"]
+-                ranking = prediction.get("ranking", {})
+-                interaction_row = prediction.get("interaction") or {}
+-                model = prediction.get("model_hit") or {}
+-                term = prediction.get("terminator") or {}
+-                cas = prediction.get("cas_context") or {}
+-                anti = prediction.get("anti_repeat") or {}
+-                array = prediction.get("array") or {}
+-                writer.writerow(
+-                    {
+-                        "source_file": source["file"],
+-                        "sequence_id": source["id"],
+-                        "prediction_id": identity,
+-                        "candidate_origin": prediction.get("candidate_origin", "covariance_model"),
+-                        "admission_branch": prediction.get("admission_branch", "model_mode"),
+-                        "evidence_class": prediction.get("evidence_class", "cm_only"),
+-                        "boundary_kind": prediction.get("boundary_kind", "merged_model_region"),
+-                        "start": interval["start"],
+-                        "end": interval["end"],
+-                        "strand": prediction["strand"],
+-                        "sequence": prediction["sequence"],
+-                        "score": ranking.get("score", prediction.get("best_score")),
+-                        "evalue": prediction.get("best_evalue"),
+-                        "array_id": array.get("id"),
+-                        "array_category": array.get("category"),
+-                        "anti_repeat_identity": anti.get("identity"),
+-                        "anti_repeat_coverage": anti.get("coverage"),
+-                        "interaction_energy_kcal_mol": interaction_row.get("energy_kcal_mol"),
+-                        "model_score": model.get("score"),
+-                        "terminator_evalue": term.get("evalue"),
+-                        "cas_cassette_id": cas.get("id"),
+-                        "cas_distance_bases": cas.get("distance_bases"),
+-                    }
+-                )
+-                fasta.write(
+-                    f">{identity} source={quote(source['id'], safe='._-')} "
+-                    f"start={interval['start']} end={interval['end']} "
+-                    f"strand={prediction['strand']}\n"
+-                    f"{prediction['sequence']}\n"
+-                )
+-                gff.write(
+-                    f"{seqid}\tCRISPRtracrRNA\tncRNA\t{interval['start']}\t{interval['end']}\t.\t"
+-                    f"{prediction['strand']}\t.\tID={identity};inference=ab%20initio%20prediction;"
+-                    "product=tracrRNA%20candidate\n"
+-                )
+-
+-
+ def run(input_path: Path, output: Path, settings: Settings) -> dict[str, Any]:
+     files = input_files(input_path)
+     readiness = doctor(settings)
+@@ -350,13 +256,13 @@
+     if output.exists():
+         raise TracrError(f"Refusing to overwrite existing output: {output}")
+     output.mkdir(parents=True)
+-    work = output / "work"
+-    work.mkdir()
+     started = time.monotonic()
+     records: list[dict[str, Any]] = []
+-    config = settings.public()
+-    atomic_json(output / "configuration.json", config)
+     try:
++        work = output / "work"
++        work.mkdir()
++        config = settings.public()
++        atomic_json(output / "configuration.json", config)
+         for file_index, path in enumerate(files, 1):
+             input_digest = sha256_file(path)
+             for sequence_index, original in enumerate(read_fasta(path), 1):
+@@ -377,8 +283,9 @@
+                     },
+                     **result,
+                 }
++                _assign_export_ids(record)
++                atomic_json(work / key / "record.json", record)
+                 records.append(record)
+-                atomic_json(work / key / "record.json", record)
+         write_exports(output, records)
+         report = {
+             "schema": {"name": "CRISPRtracrRNA-report", "version": "3.0.0"},
+@@ -415,8 +322,11 @@
+         atomic_json(output / "report.json", report)
+         return report
+     except BaseException as exc:
+-        atomic_json(
+-            output / "failure.json",
+-            {"status": "failed", "error": str(exc), "completed_sequences": len(records)},
+-        )
++        try:
++            atomic_json(
++                output / "failure.json",
++                {"status": "failed", "error": str(exc), "completed_sequences": len(records)},
++            )
++        except BaseException:
++            LOG.exception("Could not publish failure marker at %s", output / "failure.json")
+         raise
+--- before/src/crisprtracrrna/process.py
++++ after/src/crisprtracrrna/process.py
+@@ -15,6 +15,14 @@
+ from .errors import ToolError
+ 
+ 
++def _stderr_tail(path: Path, limit: int = 3000) -> str:
++    # UTF-8 uses at most four bytes per character; retain the full log on disk.
++    with path.open("rb") as handle:
++        size = handle.seek(0, os.SEEK_END)
++        handle.seek(max(0, size - 4 * limit))
++        return handle.read(4 * limit).decode("utf-8", errors="replace")[-limit:]
++
++
+ class Runner:
+     def __init__(
+         self, directory: Path, timeout: float = 3600, environment: dict[str, str] | None = None
+@@ -28,17 +36,31 @@
+ 
+     def run(
+         self,
+-        command: list[str],
++        command: list[str] | tuple[str, ...],
+         *,
+         cwd: Path | None = None,
+         stdout: Path | None = None,
+         environment: dict[str, str] | None = None,
+     ) -> Path:
++        if (
++            not isinstance(command, (list, tuple))
++            or not command
++            or any(not isinstance(part, str) for part in command)
++            or not command[0]
++        ):
++            raise ToolError("Command must be an array of strings with a nonempty executable")
+         ordinal = len(self.records) + 1
+         output = stdout or self.directory / f"{ordinal:04d}.stdout.log"
+         error = self.directory / f"{ordinal:04d}.stderr.log"
+         env = {**self.environment, **(environment or {})}
+-        executable = shutil.which(command[0], path=env.get("PATH"))
++        child_cwd = (cwd or self.directory).absolute()
++        # Popen interprets explicit relative paths and relative PATH entries in
++        # the child's cwd. Use that same context for provenance and execution.
++        search_path = os.pathsep.join(
++            str(child_cwd / entry) for entry in env.get("PATH", os.defpath).split(os.pathsep)
++        )
++        program = str(child_cwd / command[0]) if os.path.dirname(command[0]) else command[0]
++        executable = shutil.which(program, path=search_path)
+         if not executable:
+             raise ToolError(f"Executable not found: {command[0]}")
+         command = [executable, *command[1:]]
+@@ -48,7 +70,7 @@
+         record: dict[str, object] = {
+             "argv": command,
+             "executable_sha256": self._digests[executable],
+-            "cwd": str(cwd or self.directory),
++            "cwd": str(child_cwd),
+             "stdout": str(output),
+             "stderr": str(error),
+             "timeout_seconds": self.timeout,
+@@ -59,7 +81,7 @@
+             with output.open("wb") as out, error.open("wb") as err:
+                 proc = subprocess.Popen(
+                     command,
+-                    cwd=cwd or self.directory,
++                    cwd=child_cwd,
+                     env=env,
+                     stdout=out,
+                     stderr=err,
+@@ -79,7 +101,7 @@
+                     raise
+                 record["returncode"] = code
+                 if code:
+-                    tail = error.read_text(errors="replace")[-3000:]
++                    tail = _stderr_tail(error)
+                     raise ToolError(f"{command[0]} exited {code}. See {error}\n{tail}")
+         except subprocess.TimeoutExpired as exc:
+             record["timed_out"] = True
+--- before/src/crisprtracrrna/reporting.py
++++ after/src/crisprtracrrna/reporting.py
+@@ -0,0 +1,126 @@
++"""Publication of retained JSON evidence and deterministic prediction exports."""
++
++from __future__ import annotations
++
++import csv
++import json
++import logging
++from pathlib import Path
++from typing import Any
++from urllib.parse import quote
++from uuid import uuid4
++
++LOG = logging.getLogger(__name__)
++
++
++def atomic_json(path: Path, value: Any) -> None:
++    """Replace a JSON file atomically, cleaning up an abandoned publication attempt."""
++    temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
++    created = False
++    try:
++        # Exclusive creation gives each attempt its own sibling and respects umask.
++        with temporary.open("x", encoding="utf-8") as handle:
++            created = True
++            handle.write(json.dumps(value, indent=2, allow_nan=False) + "\n")
++        temporary.replace(path)
++    finally:
++        if created:
++            try:
++                temporary.unlink(missing_ok=True)
++            except OSError:
++                # Cleanup is diagnostic; it must not hide the publication failure.
++                LOG.warning("Could not remove temporary JSON file %s", temporary, exc_info=True)
++
++
++def _assign_export_ids(record: dict[str, Any]) -> None:
++    """Give predictions the same identities in retained records and final exports."""
++    for ordinal, prediction in enumerate(record["predictions"], 1):
++        prediction["export_id"] = f"{record['key']}.p{ordinal:06d}"
++
++
++def write_exports(output: Path, records: list[dict[str, Any]]) -> None:
++    fields = [
++        "source_file",
++        "sequence_id",
++        "prediction_id",
++        "candidate_origin",
++        "admission_branch",
++        "evidence_class",
++        "boundary_kind",
++        "start",
++        "end",
++        "strand",
++        "sequence",
++        "score",
++        "evalue",
++        "array_id",
++        "array_category",
++        "anti_repeat_identity",
++        "anti_repeat_coverage",
++        "interaction_energy_kcal_mol",
++        "model_score",
++        "terminator_evalue",
++        "cas_cassette_id",
++        "cas_distance_bases",
++    ]
++    with (
++        (output / "summary.csv").open("w", newline="", encoding="utf-8") as handle,
++        (output / "predictions.fasta").open("w", encoding="utf-8") as fasta,
++        (output / "predictions.gff3").open("w", encoding="utf-8") as gff,
++    ):
++        writer = csv.DictWriter(handle, fieldnames=fields)
++        writer.writeheader()
++        gff.write("##gff-version 3\n")
++        for record in records:
++            _assign_export_ids(record)
++            source = record["source"]
++            # Prefix with record key to avoid collisions across files with reused contig IDs.
++            seqid = quote(record["key"] + ":" + source["id"], safe="._:-")
++            gff.write(f"##sequence-region {seqid} 1 {source['length']}\n")
++            for prediction in record["predictions"]:
++                identity = prediction["export_id"]
++                interval = prediction["interval"]
++                ranking = prediction.get("ranking", {})
++                interaction_row = prediction.get("interaction") or {}
++                model = prediction.get("model_hit") or {}
++                term = prediction.get("terminator") or {}
++                cas = prediction.get("cas_context") or {}
++                anti = prediction.get("anti_repeat") or {}
++                array = prediction.get("array") or {}
++                writer.writerow(
++                    {
++                        "source_file": source["file"],
++                        "sequence_id": source["id"],
++                        "prediction_id": identity,
++                        "candidate_origin": prediction.get("candidate_origin", "covariance_model"),
++                        "admission_branch": prediction.get("admission_branch", "model_mode"),
++                        "evidence_class": prediction.get("evidence_class", "cm_only"),
++                        "boundary_kind": prediction.get("boundary_kind", "merged_model_region"),
++                        "start": interval["start"],
++                        "end": interval["end"],
++                        "strand": prediction["strand"],
++                        "sequence": prediction["sequence"],
++                        "score": ranking.get("score", prediction.get("best_score")),
++                        "evalue": prediction.get("best_evalue"),
++                        "array_id": array.get("id"),
++                        "array_category": array.get("category"),
++                        "anti_repeat_identity": anti.get("identity"),
++                        "anti_repeat_coverage": anti.get("coverage"),
++                        "interaction_energy_kcal_mol": interaction_row.get("energy_kcal_mol"),
++                        "model_score": model.get("score"),
++                        "terminator_evalue": term.get("evalue"),
++                        "cas_cassette_id": cas.get("id"),
++                        "cas_distance_bases": cas.get("distance_bases"),
++                    }
++                )
++                fasta.write(
++                    f">{identity} source={quote(source['id'], safe='._-')} "
++                    f"start={interval['start']} end={interval['end']} "
++                    f"strand={prediction['strand']}\n"
++                    f"{prediction['sequence']}\n"
++                )
++                gff.write(
++                    f"{seqid}\tCRISPRtracrRNA\tncRNA\t{interval['start']}\t{interval['end']}\t.\t"
++                    f"{prediction['strand']}\t.\tID={identity};inference=ab%20initio%20prediction;"
++                    "product=tracrRNA%20candidate\n"
++                )
+--- before/src/crisprtracrrna/search.py
++++ after/src/crisprtracrrna/search.py
+@@ -16,6 +16,7 @@
+ from .models import AntiRepeat, Array, Candidate, Hit, Interval, Sequence, Strand
+ from .process import Runner
+ from .sequence import reverse_complement, subsequence, write_fasta
++from .short_rescue_policy import SHORT_RESCUE_POLICY
+ 
+ 
+ def finite(value: str) -> float:
+@@ -124,7 +125,11 @@
+             if not 0 <= identity <= 1:
+                 raise ValueError("Invalid alignment identity")
+             if short:
+-                if coverage >= settings.coverage or q_interval.length < 12 or identity < 0.8:
++                if (
++                    coverage >= settings.coverage
++                    or q_interval.length < SHORT_RESCUE_POLICY.min_query_span
++                    or identity < SHORT_RESCUE_POLICY.min_identity
++                ):
+                     continue
+             elif coverage < settings.coverage or identity < settings.similarity:
+                 continue
+--- before/src/crisprtracrrna/sequence.py
++++ after/src/crisprtracrrna/sequence.py
+@@ -26,6 +26,8 @@
+ 
+ 
+ def subsequence(bases: str, interval: Interval, strand: Strand = "+") -> str:
++    if strand not in ("+", "-"):
++        raise TracrError("Sequence strand must be '+' or '-'")
+     if interval.end > len(bases):
+         raise TracrError("Sequence interval exceeds contig length")
+     part = bases[interval.start : interval.end]
+--- before/src/crisprtracrrna/short_rescue_policy.py
++++ after/src/crisprtracrrna/short_rescue_policy.py
+@@ -0,0 +1,31 @@
++"""Frozen experimental admission thresholds shared by filtering and reporting."""
++
++from dataclasses import dataclass
++from typing import Final
++
++
++@dataclass(frozen=True)
++class ShortRescuePolicy:
++    min_query_span: int = 12
++    min_identity: float = 0.8
++    min_anchored_paired_bases: int = 10
++    min_anchored_paired_fraction: float = 0.5
++    energy_strictly_below: int = 0
++    cm_evalue_max: float = 0.01
++    cm_duplex_overlap_strictly_below: int = 10
++    terminator_evalue_max: float = 0.001
++
++    def public(self) -> dict[str, int | float]:
++        return {
++            "min_query_span": self.min_query_span,
++            "min_identity": self.min_identity,
++            "min_anchored_paired_bases": self.min_anchored_paired_bases,
++            "min_anchored_paired_fraction": self.min_anchored_paired_fraction,
++            "energy_strictly_below": self.energy_strictly_below,
++            "cm_evalue_max": self.cm_evalue_max,
++            "cm_duplex_overlap_strictly_below": self.cm_duplex_overlap_strictly_below,
++            "terminator_evalue_max": self.terminator_evalue_max,
++        }
++
++
++SHORT_RESCUE_POLICY: Final = ShortRescuePolicy()
+--- before/tests/test_dependency_updates.py
++++ after/tests/test_dependency_updates.py
+@@ -3,6 +3,7 @@
+ import importlib.util
+ import json
+ import subprocess
++from copy import deepcopy
+ from pathlib import Path
+ 
+ import pytest
+@@ -26,7 +27,8 @@
+     return git(path, "rev-parse", "HEAD")
+ 
+ 
+-def test_independent_update_preserves_unmodified_sources_and_lock(tmp_path, monkeypatch):
++@pytest.fixture
++def checkout(tmp_path, monkeypatch):
+     upstream = tmp_path / "upstream"
+     upstream.mkdir()
+     git(upstream, "init", "-b", "main")
+@@ -35,10 +37,16 @@
+     root.mkdir()
+     monkeypatch.setattr(dependencies, "ROOT", root)
+     lock = {"CasAndra": {"url": str(upstream), "commit": first}}
++    (root / "upstream-lock.json").write_text(json.dumps(lock) + "\n")
+     dependencies.sync("CasAndra", lock["CasAndra"])
++    return upstream, root, root / "external/CasAndra", lock
++
++
++def test_independent_update_preserves_unmodified_sources_and_lock(checkout):
++    upstream, root, target, lock = checkout
++    first = lock["CasAndra"]["commit"]
+     second = commit(upstream, "v2")
+     dependencies.update("CasAndra", "main", lock)
+-    target = root / "external/CasAndra"
+     assert git(target, "rev-parse", "HEAD") == second
+     assert not git(target, "status", "--porcelain")
+     saved = json.loads((root / "upstream-lock.json").read_text())
+@@ -48,3 +56,271 @@
+     with pytest.raises(RuntimeError, match="local changes"):
+         dependencies.update("CasAndra", "main", lock)
+     assert (target / "runtime.py").read_text() == "local modification"
++
++
++def test_annotated_tag_records_commit_and_allows_later_sync_and_update(checkout):
++    upstream, root, target, lock = checkout
++    second = commit(upstream, "v2")
++    git(
++        upstream,
++        "-c",
++        "user.name=Test",
++        "-c",
++        "user.email=test@example.invalid",
++        "tag",
++        "-a",
++        "release",
++        "-m",
++        "Release",
++    )
++    assert git(upstream, "rev-parse", "release") != second
++    dependencies.update("CasAndra", "release", lock)
++    assert lock["CasAndra"]["commit"] == git(target, "rev-parse", "HEAD") == second
++    assert json.loads((root / "upstream-lock.json").read_text()) == lock
++    dependencies.sync("CasAndra", lock["CasAndra"])
++    third = commit(upstream, "v3")
++    dependencies.update("CasAndra", "main", lock)
++    assert lock["CasAndra"]["commit"] == git(target, "rev-parse", "HEAD") == third
++
++
++@pytest.mark.parametrize("attached", [False, True])
++@pytest.mark.parametrize("failure", ["staging", "replacement", "checkout"])
++def test_failed_update_preserves_lock_checkout_and_owned_temporary_files(
++    checkout, monkeypatch, attached, failure
++):
++    upstream, root, target, lock = checkout
++    first = lock["CasAndra"]["commit"]
++    second = commit(upstream, "v2")
++    if attached:
++        git(target, "checkout", "main")
++    original = deepcopy(lock)
++    lock_bytes = (root / "upstream-lock.json").read_bytes()
++    unrelated = root / ".upstream-lock-unrelated.json"
++    unrelated.write_text("belongs to someone else")
++
++    if failure == "staging":
++
++        def fail_write(value, handle, **kwargs):
++            handle.write("partial JSON")
++            raise OSError("injected staging failure")
++
++        monkeypatch.setattr(dependencies.json, "dump", fail_write)
++    elif failure == "replacement":
++
++        def fail_replace(self, target):
++            raise OSError("injected replacement failure")
++
++        monkeypatch.setattr(Path, "replace", fail_replace)
++    else:
++        original_git = dependencies.git
++
++        def fail_checkout(*args, **kwargs):
++            result = original_git(*args, **kwargs)
++            if args == ("checkout", "--detach", second):
++                raise OSError("injected checkout failure after HEAD changed")
++            return result
++
++        monkeypatch.setattr(dependencies, "git", fail_checkout)
++
++    with pytest.raises(OSError, match=f"injected {failure} failure"):
++        dependencies.update("CasAndra", "main", lock)
++    assert lock == original
++    assert (root / "upstream-lock.json").read_bytes() == lock_bytes
++    assert git(target, "rev-parse", "HEAD") == first
++    assert git(target, "rev-parse", "--abbrev-ref", "HEAD") == ("main" if attached else "HEAD")
++    assert not git(target, "status", "--porcelain")
++    assert sorted(root.glob(".upstream-lock-*.json")) == [unrelated]
++    assert unrelated.read_text() == "belongs to someone else"
++
++
++def test_restoration_failure_reports_both_errors_and_recovery_state(checkout, monkeypatch):
++    upstream, root, target, lock = checkout
++    first = lock["CasAndra"]["commit"]
++    second = commit(upstream, "v2")
++    original = deepcopy(lock)
++    lock_bytes = (root / "upstream-lock.json").read_bytes()
++    original_git = dependencies.git
++
++    def fail_restore(*args, **kwargs):
++        if args == ("checkout", "--detach", first):
++            raise OSError("injected restoration failure")
++        return original_git(*args, **kwargs)
++
++    def fail_replace(self, target):
++        raise OSError("injected replacement failure")
++
++    monkeypatch.setattr(dependencies, "git", fail_restore)
++    monkeypatch.setattr(Path, "replace", fail_replace)
++    with pytest.raises(RuntimeError) as error:
++        dependencies.update("CasAndra", "main", lock)
++    message = str(error.value)
++    for detail in (
++        "injected replacement failure",
++        "injected restoration failure",
++        str(target),
++        first,
++    ):
++        assert detail in message
++    assert "lock was not published" in message
++    assert lock == original
++    assert (root / "upstream-lock.json").read_bytes() == lock_bytes
++    assert git(target, "rev-parse", "HEAD") == second
++    assert not list(root.glob(".upstream-lock-*.json"))
++
++
++@pytest.mark.parametrize("attached", [False, True])
++@pytest.mark.parametrize("restoration_fails", [False, True])
++def test_cleanup_failure_preserves_primary_error_and_recovery_diagnostics(
++    checkout, monkeypatch, attached, restoration_fails
++):
++    upstream, root, target, lock = checkout
++    first = lock["CasAndra"]["commit"]
++    second = commit(upstream, "v2")
++    if attached:
++        git(target, "checkout", "main")
++    original = deepcopy(lock)
++    lock_bytes = (root / "upstream-lock.json").read_bytes()
++    original_git = dependencies.git
++    original_unlink = Path.unlink
++    publication_error = OSError("injected publication failure")
++    restore_command = (
++        ("checkout", "--no-guess", "main")
++        if attached
++        else (
++            "checkout",
++            "--detach",
++            first,
++        )
++    )
++
++    def fail_replace(self, target):
++        raise publication_error
++
++    def fail_cleanup(self, *args, **kwargs):
++        if self.name.startswith(".upstream-lock-"):
++            raise PermissionError("injected cleanup failure")
++        return original_unlink(self, *args, **kwargs)
++
++    def conditional_restore(*args, **kwargs):
++        if restoration_fails and args == restore_command:
++            raise OSError("injected restoration failure")
++        return original_git(*args, **kwargs)
++
++    monkeypatch.setattr(Path, "replace", fail_replace)
++    monkeypatch.setattr(Path, "unlink", fail_cleanup)
++    monkeypatch.setattr(dependencies, "git", conditional_restore)
++    with pytest.raises(RuntimeError if restoration_fails else OSError) as error:
++        dependencies.update("CasAndra", "main", lock)
++    if restoration_fails:
++        assert error.value.__cause__ is publication_error
++        for detail in ("injected publication failure", "injected restoration failure", first):
++            assert detail in str(error.value)
++    else:
++        assert error.value is publication_error
++    residue = list(root.glob(".upstream-lock-*.json"))
++    assert len(residue) == 1
++    assert error.value.__notes__ == [
++        f"Could not remove staged lock {residue[0]}: injected cleanup failure"
++    ]
++    assert lock == original
++    assert (root / "upstream-lock.json").read_bytes() == lock_bytes
++    assert git(target, "rev-parse", "HEAD") == (second if restoration_fails else first)
++    expected_branch = "main" if attached and not restoration_fails else "HEAD"
++    assert git(target, "rev-parse", "--abbrev-ref", "HEAD") == expected_branch
++    assert not git(target, "status", "--porcelain")
++
++
++def test_successful_publication_does_not_remove_the_consumed_staging_path(checkout, monkeypatch):
++    upstream, root, target, lock = checkout
++    second = commit(upstream, "v2")
++    original_unlink = Path.unlink
++    cleanup_attempts = []
++
++    def fail_cleanup(self, *args, **kwargs):
++        if self.name.startswith(".upstream-lock-"):
++            cleanup_attempts.append(self)
++            raise PermissionError("injected cleanup failure")
++        return original_unlink(self, *args, **kwargs)
++
++    monkeypatch.setattr(Path, "unlink", fail_cleanup)
++    dependencies.update("CasAndra", "main", lock)
++    assert cleanup_attempts == []
++    assert json.loads((root / "upstream-lock.json").read_text()) == lock
++    assert lock["CasAndra"]["commit"] == git(target, "rev-parse", "HEAD") == second
++    assert not list(root.glob(".upstream-lock-*.json"))
++
++
++@pytest.mark.parametrize("ref", ["", " ", "--all", "main:refs/heads/main"])
++def test_unsupported_ref_is_rejected_before_git(ref, monkeypatch):
++    def unexpected_git(*args, **kwargs):
++        pytest.fail("invalid refs must not invoke Git")
++
++    monkeypatch.setattr(dependencies, "git", unexpected_git)
++    with pytest.raises(ValueError, match="Git tag, branch, or commit"):
++        dependencies.update("CasAndra", ref, {})
++
++
++@pytest.mark.parametrize("mismatch", ["remote", "commit"])
++def test_update_refuses_remote_or_head_mismatch_before_fetch(checkout, monkeypatch, mismatch):
++    upstream, root, target, lock = checkout
++    if mismatch == "remote":
++        lock["CasAndra"]["url"] = str(upstream / "other")
++    else:
++        lock["CasAndra"]["commit"] = "0" * 40
++    original = deepcopy(lock)
++    lock_bytes = (root / "upstream-lock.json").read_bytes()
++    original_git = dependencies.git
++
++    def no_fetch(*args, **kwargs):
++        assert args[0] != "fetch"
++        return original_git(*args, **kwargs)
++
++    monkeypatch.setattr(dependencies, "git", no_fetch)
++    with pytest.raises(RuntimeError, match="remote|differs from lock"):
++        dependencies.update("CasAndra", "main", lock)
++    assert lock == original
++    assert (root / "upstream-lock.json").read_bytes() == lock_bytes
++    assert not git(target, "status", "--porcelain")
++
++
++@pytest.mark.parametrize("failure", ["clone", "checkout"])
++def test_failed_sync_leaves_no_destination_and_corrected_retry_succeeds(
++    tmp_path, monkeypatch, failure
++):
++    upstream = tmp_path / "upstream"
++    upstream.mkdir()
++    git(upstream, "init", "-b", "main")
++    first = commit(upstream, "v1")
++    root = tmp_path / "project"
++    monkeypatch.setattr(dependencies, "ROOT", root)
++    good = {"url": str(upstream), "commit": first}
++    bad = dict(good)
++    bad["url" if failure == "clone" else "commit"] = "nonexistent"
++    with pytest.raises(subprocess.CalledProcessError):
++        dependencies.sync("CasAndra", bad)
++    assert not list((root / "external").iterdir())
++    dependencies.sync("CasAndra", good)
++    assert git(root / "external/CasAndra", "rev-parse", "HEAD") == first
++    assert list((root / "external").iterdir()) == [root / "external/CasAndra"]
++
++
++def test_sync_preserves_preexisting_directory(tmp_path, monkeypatch):
++    monkeypatch.setattr(dependencies, "ROOT", tmp_path)
++    target = tmp_path / "external/CasAndra"
++    target.mkdir(parents=True)
++    sentinel = target / "keep.txt"
++    sentinel.write_text("original contents")
++    with pytest.raises(subprocess.CalledProcessError):
++        dependencies.sync("CasAndra", {"url": "unused", "commit": "unused"})
++    assert list(target.iterdir()) == [sentinel]
++    assert sentinel.read_text() == "original contents"
++
++
++def test_sync_keeps_untracked_build_products_in_existing_pinned_checkout(checkout):
++    _, _, target, lock = checkout
++    product = target / "build/native.so"
++    product.parent.mkdir()
++    product.write_bytes(b"build product")
++    dependencies.sync("CasAndra", lock["CasAndra"])
++    assert product.read_bytes() == b"build product"
++    assert git(target, "rev-parse", "HEAD") == lock["CasAndra"]["commit"]
+--- before/tests/test_publication.py
++++ after/tests/test_publication.py
+@@ -0,0 +1,366 @@
++"""Publication consistency, compatibility, and failure-boundary contracts."""
++
++import csv
++import hashlib
++import json
++import os
++from contextlib import contextmanager
++from copy import deepcopy
++from pathlib import Path
++
++import pytest
++
++from crisprtracrrna import pipeline, reporting
++from crisprtracrrna.config import Settings
++from crisprtracrrna.errors import ToolError, TracrError
++
++
++def predictions():
++    return [
++        {
++            "id": "model_1",
++            "interval": {"start": 2, "end": 4},
++            "strand": "-",
++            "sequence": "ACG",
++            "best_score": 20,
++            "best_evalue": 1e-8,
++        },
++        {
++            "id": "short_candidate_1",
++            "interval": {"start": 5, "end": 7},
++            "strand": "+",
++            "sequence": "TTA",
++            "ranking": {"score": 3.25},
++            "candidate_origin": "anti_repeat",
++            "admission_branch": "short_rescue",
++            "evidence_class": "interaction_cm_terminator",
++            "boundary_kind": "transcript_hypothesis",
++            "array": {"id": "array,1", "category": "Bona-fide"},
++            "anti_repeat": {"identity": 0.9, "coverage": 0.8},
++            "interaction": {"energy_kcal_mol": -10.5},
++            "model_hit": {"score": 22.5},
++            "terminator": {"evalue": 0.001},
++            "cas_context": {"id": "cassette_1", "distance_bases": 25},
++            "short_rescue_admission": {"accepted": True},
++        },
++    ]
++
++
++@pytest.fixture
++def mocked_run(tmp_path, monkeypatch):
++    inputs = tmp_path / "inputs,quoted"
++    inputs.mkdir()
++    (inputs / "a.fasta").write_text(">shared;id%=x first header\nACGTTTACGT\n>empty\nAAAAAAAAAA\n")
++    (inputs / "b.fasta").write_text(">shared;id%=x second header\nACGTTTACGT\n")
++
++    def analyze(source, work, settings):
++        work.mkdir()
++        rows = predictions() if source.id == "f000001.s000001" else []
++        if source.id == "f000002.s000001":
++            rows = predictions()[:1]
++        return {
++            "predictions": rows,
++            # Accepted short-rescue proposals alias their prediction dictionaries.
++            "short_rescue_proposals": rows[1:],
++            "arrays": [],
++            "cas": {"status": "not_requested"},
++        }
++
++    monkeypatch.setattr(pipeline, "doctor", lambda settings: {"ready": True})
++    monkeypatch.setattr(pipeline, "analyze_record", analyze)
++    monkeypatch.setattr(pipeline, "command_provenance", lambda *args: {"command": []})
++    model = tmp_path / "model.cm"
++    model.write_text("mock covariance model\n")
++    return inputs, tmp_path / "output", Settings(mode="model", models=(str(model),))
++
++
++def test_retained_records_match_final_report_and_export_identities(mocked_run, monkeypatch):
++    inputs, output, settings = mocked_run
++    publications = []
++
++    def publish(path, value):
++        publications.append(path.relative_to(output).as_posix())
++        reporting.atomic_json(path, value)
++
++    monkeypatch.setattr(pipeline, "atomic_json", publish)
++    returned = pipeline.run(inputs, output, settings)
++    report = json.loads((output / "report.json").read_text())
++    assert report["records"] == returned["records"]
++    assert report["summary"] == {"sequence_count": 3, "prediction_count": 3}
++    assert publications[-2:] == ["manifest.json", "report.json"]
++    assert not (output / "failure.json").exists()
++    identities = []
++    for record in report["records"]:
++        retained = json.loads((output / "work" / record["key"] / "record.json").read_text())
++        assert retained == record
++        identities.extend(prediction["export_id"] for prediction in record["predictions"])
++    assert identities == [
++        "f000001.s000001.p000001",
++        "f000001.s000001.p000002",
++        "f000002.s000001.p000001",
++    ]
++    first = report["records"][0]
++    assert first["short_rescue_proposals"][0] == first["predictions"][1]
++    assert report["records"][1]["predictions"] == []
++    with (output / "summary.csv").open(newline="") as handle:
++        rows = list(csv.DictReader(handle))
++    assert [row["prediction_id"] for row in rows] == identities
++    assert rows[0]["source_file"] == str(inputs / "a.fasta")
++    assert rows[0]["sequence_id"] == rows[2]["sequence_id"] == "shared;id%=x"
++    fasta = (output / "predictions.fasta").read_text()
++    gff = (output / "predictions.gff3").read_text()
++    for identity in identities:
++        assert f">{identity} " in fasta
++        assert f"ID={identity};" in gff
++    assert "source=shared%3Bid%25%3Dx" in fasta
++    assert "f000001.s000001:shared%3Bid%25%3Dx" in gff
++    assert "f000002.s000001:shared%3Bid%25%3Dx" in gff
++    manifest = json.loads((output / "manifest.json").read_text())
++    assert manifest["algorithm"] == "sha256"
++    assert set(manifest["files"]) == {
++        "configuration.json",
++        "summary.csv",
++        "predictions.fasta",
++        "predictions.gff3",
++        *(f"work/{record['key']}/record.json" for record in report["records"]),
++    }
++    for name, digest in manifest["files"].items():
++        assert hashlib.sha256((output / name).read_bytes()).hexdigest() == digest
++
++
++def test_export_bytes_preserve_model_defaults_and_complete_evidence(tmp_path):
++    """These literal bytes were checked against the frozen pre-refactor exporter."""
++    record = {
++        "key": "r1",
++        "source": {"file": 'some,"file.fasta', "id": "seq;1%=x", "length": 10},
++        "predictions": predictions(),
++    }
++    original = deepcopy(record)
++    pipeline.write_exports(tmp_path, [record])
++    expected_csv = (
++        "source_file,sequence_id,prediction_id,candidate_origin,admission_branch,evidence_class,"
++        "boundary_kind,start,end,strand,sequence,score,evalue,array_id,array_category,"
++        "anti_repeat_identity,anti_repeat_coverage,interaction_energy_kcal_mol,model_score,"
++        "terminator_evalue,cas_cassette_id,cas_distance_bases\r\n"
++        '"some,""file.fasta",seq;1%=x,r1.p000001,covariance_model,model_mode,cm_only,'
++        "merged_model_region,2,4,-,ACG,20,1e-08,,,,,,,,,\r\n"
++        '"some,""file.fasta",seq;1%=x,r1.p000002,anti_repeat,short_rescue,'
++        "interaction_cm_terminator,transcript_hypothesis,5,7,+,TTA,3.25,,"
++        '"array,1",Bona-fide,0.9,0.8,-10.5,22.5,0.001,cassette_1,25\r\n'
++    )
++    expected_fasta = (
++        ">r1.p000001 source=seq%3B1%25%3Dx start=2 end=4 strand=-\nACG\n"
++        ">r1.p000002 source=seq%3B1%25%3Dx start=5 end=7 strand=+\nTTA\n"
++    )
++    expected_gff = (
++        "##gff-version 3\n##sequence-region r1:seq%3B1%25%3Dx 1 10\n"
++        "r1:seq%3B1%25%3Dx\tCRISPRtracrRNA\tncRNA\t2\t4\t.\t-\t.\t"
++        "ID=r1.p000001;inference=ab%20initio%20prediction;product=tracrRNA%20candidate\n"
++        "r1:seq%3B1%25%3Dx\tCRISPRtracrRNA\tncRNA\t5\t7\t.\t+\t.\t"
++        "ID=r1.p000002;inference=ab%20initio%20prediction;product=tracrRNA%20candidate\n"
++    )
++    assert (tmp_path / "summary.csv").read_bytes() == expected_csv.encode()
++    assert (tmp_path / "predictions.fasta").read_bytes() == expected_fasta.encode()
++    assert (tmp_path / "predictions.gff3").read_bytes() == expected_gff.encode()
++    for ordinal, prediction in enumerate(record["predictions"], 1):
++        assert prediction.pop("export_id") == f"r1.p{ordinal:06d}"
++    assert record == original
++
++
++@pytest.mark.parametrize(
++    ("stage", "completed"),
++    [
++        ("work", 0),
++        ("settings", 0),
++        ("configuration.json", 0),
++        ("record.json", 1),
++        ("exports", 3),
++        ("manifest.json", 3),
++        ("report.json", 3),
++    ],
++)
++def test_publication_failures_leave_failure_marker_with_persisted_count(
++    mocked_run, monkeypatch, stage, completed
++):
++    inputs, output, settings = mocked_run
++    primary = OSError(f"injected {stage} failure")
++
++    def fail(*args, **kwargs):
++        raise primary
++
++    original_mkdir = Path.mkdir
++
++    def mkdir(path, *args, **kwargs):
++        if path == output / "work":
++            raise primary
++        return original_mkdir(path, *args, **kwargs)
++
++    def publish(path, value):
++        if path.name == stage and (stage != "record.json" or path.parent.name == "f000001.s000002"):
++            raise primary
++        reporting.atomic_json(path, value)
++
++    if stage == "work":
++        monkeypatch.setattr(Path, "mkdir", mkdir)
++    elif stage == "settings":
++        monkeypatch.setattr(Settings, "public", fail)
++    elif stage == "exports":
++        monkeypatch.setattr(pipeline, "write_exports", fail)
++    else:
++        monkeypatch.setattr(pipeline, "atomic_json", publish)
++    with pytest.raises(OSError) as caught:
++        pipeline.run(inputs, output, settings)
++    assert caught.value is primary
++    assert not (output / "report.json").exists()
++    assert len(list(output.glob("work/*/record.json"))) == completed
++    assert json.loads((output / "failure.json").read_text()) == {
++        "status": "failed",
++        "error": str(primary),
++        "completed_sequences": completed,
++    }
++
++
++@pytest.mark.parametrize("error_type", [ToolError, KeyboardInterrupt, SystemExit])
++def test_failure_marker_error_never_masks_primary_exception(
++    mocked_run, monkeypatch, caplog, error_type
++):
++    inputs, output, settings = mocked_run
++    primary = error_type("primary scientific failure or interruption")
++
++    def analyze(*args):
++        raise primary
++
++    def publish(path, value):
++        if path.name == "failure.json":
++            raise OSError("secondary storage failure")
++        reporting.atomic_json(path, value)
++
++    monkeypatch.setattr(pipeline, "analyze_record", analyze)
++    monkeypatch.setattr(pipeline, "atomic_json", publish)
++    with pytest.raises(error_type) as caught:
++        pipeline.run(inputs, output, settings)
++    assert caught.value is primary
++    assert not (output / "report.json").exists()
++    assert "Could not publish failure marker" in caplog.text
++    assert "secondary storage failure" in caplog.text
++
++
++def test_preflight_and_existing_output_remain_untouched(mocked_run, monkeypatch):
++    inputs, output, settings = mocked_run
++    monkeypatch.setattr(pipeline, "doctor", lambda _: {"ready": False, "errors": ["not ready"]})
++    with pytest.raises(TracrError, match="Preflight failed"):
++        pipeline.run(inputs, output, settings)
++    assert not output.exists()
++    output.mkdir()
++    retained = output / "report.json"
++    retained.write_bytes(b"existing successful run\n")
++    monkeypatch.setattr(pipeline, "doctor", lambda _: {"ready": True})
++    with pytest.raises(TracrError, match="Refusing to overwrite"):
++        pipeline.run(inputs, output, settings)
++    assert list(output.iterdir()) == [retained]
++    assert retained.read_bytes() == b"existing successful run\n"
++
++
++@pytest.mark.parametrize("value", [object(), float("nan"), float("inf"), -float("inf")])
++def test_atomic_serialization_failure_preserves_previous_file(tmp_path, value):
++    destination = tmp_path / "report.json"
++    destination.write_bytes(b"previous publication\n")
++    with pytest.raises((TypeError, ValueError)):
++        reporting.atomic_json(destination, {"value": value})
++    assert destination.read_bytes() == b"previous publication\n"
++    assert list(tmp_path.iterdir()) == [destination]
++
++
++@pytest.mark.parametrize("stage", ["write", "replace"])
++def test_atomic_io_failure_cleans_partial_file_and_preserves_destination(
++    tmp_path, monkeypatch, stage
++):
++    destination = tmp_path / "report.json"
++    destination.write_bytes(b"previous publication\n")
++    primary = OSError(f"injected {stage} failure")
++    original_open = Path.open
++
++    @contextmanager
++    def failing_open(path, *args, **kwargs):
++        with original_open(path, *args, **kwargs) as handle:
++
++            class FailingWriter:
++                def write(self, data):
++                    handle.write(data[:3])
++                    raise primary
++
++            yield FailingWriter()
++
++    def replace(*args):
++        raise primary
++
++    with monkeypatch.context() as patch:
++        if stage == "write":
++            patch.setattr(Path, "open", failing_open)
++        else:
++            patch.setattr(Path, "replace", replace)
++        with pytest.raises(OSError) as caught:
++            reporting.atomic_json(destination, {"value": 1})
++    assert caught.value is primary
++    assert destination.read_bytes() == b"previous publication\n"
++    assert list(tmp_path.iterdir()) == [destination]
++
++
++def test_atomic_cleanup_error_is_logged_without_hiding_primary(tmp_path, monkeypatch, caplog):
++    destination = tmp_path / "report.json"
++    destination.write_bytes(b"previous publication\n")
++    primary = OSError("primary replace failure")
++
++    def replace(*args):
++        raise primary
++
++    def unlink(*args, **kwargs):
++        raise OSError("secondary cleanup failure")
++
++    with monkeypatch.context() as patch:
++        patch.setattr(Path, "replace", replace)
++        patch.setattr(Path, "unlink", unlink)
++        with pytest.raises(OSError) as caught:
++            reporting.atomic_json(destination, {"value": 1})
++    assert caught.value is primary
++    assert destination.read_bytes() == b"previous publication\n"
++    assert "Could not remove temporary JSON file" in caplog.text
++    assert "secondary cleanup failure" in caplog.text
++
++
++def test_atomic_attempts_use_distinct_siblings_and_leave_existing_tmp_untouched(
++    tmp_path, monkeypatch
++):
++    destination = tmp_path / "report.json"
++    old_temporary = tmp_path / "report.json.tmp"
++    old_temporary.write_bytes(b"belongs to another attempt\n")
++    attempts = []
++    original_replace = Path.replace
++
++    def replace(temporary, target):
++        attempts.append(temporary)
++        assert temporary.parent == destination.parent
++        assert target == destination
++        return original_replace(temporary, target)
++
++    monkeypatch.setattr(Path, "replace", replace)
++    reporting.atomic_json(destination, {"value": "first"})
++    reporting.atomic_json(destination, {"value": "café"})
++    assert len(set(attempts)) == 2
++    assert old_temporary.read_bytes() == b"belongs to another attempt\n"
++    assert destination.read_bytes() == b'{\n  "value": "caf\\u00e9"\n}\n'
++    assert set(tmp_path.iterdir()) == {destination, old_temporary}
++
++
++@pytest.mark.skipif(os.name != "posix", reason="POSIX umask permissions")
++def test_atomic_publication_respects_normal_file_creation_permissions(tmp_path):
++    reference = tmp_path / "normal.json"
++    reference.write_text("{}\n")
++    destination = tmp_path / "atomic.json"
++    reporting.atomic_json(destination, {})
++    assert destination.stat().st_mode & 0o777 == reference.stat().st_mode & 0o777
++
++
++def test_pipeline_publication_helpers_remain_reexports():
++    assert pipeline.atomic_json is reporting.atomic_json
++    assert pipeline.write_exports is reporting.write_exports
+--- before/tests/test_runtime_contracts.py
++++ after/tests/test_runtime_contracts.py
+@@ -0,0 +1,279 @@
++"""Input boundaries and process provenance stay explicit and reproducible."""
++
++import hashlib
++import json
++import os
++import sys
++from pathlib import Path
++
++import pytest
++
++from crisprtracrrna import cli
++from crisprtracrrna.config import Settings, load_settings
++from crisprtracrrna.errors import ToolError, TracrError
++from crisprtracrrna.models import Interval
++from crisprtracrrna.process import Runner, _stderr_tail
++from crisprtracrrna.sequence import subsequence
++
++
++@pytest.mark.parametrize("name", ["timeout", "similarity", "coverage", "model_rescue_evalue"])
++@pytest.mark.parametrize("value", [True, False, None, "0.5", float("nan"), float("inf")])
++def test_numeric_settings_reject_invalid_values(name, value):
++    with pytest.raises(TracrError, match=name):
++        Settings(**{name: value})
++
++
++@pytest.mark.parametrize(
++    "name", ["threads", "tail_length", "intarna_batch_size", "upstream_length", "merge_gap"]
++)
++@pytest.mark.parametrize("value", [True, False, 1.0, None, "1"])
++def test_integer_settings_reject_coercible_values(name, value):
++    with pytest.raises(TracrError, match=name):
++        Settings(**{name: value})
++
++
++@pytest.mark.parametrize("weights", [None, [], "array", 4, {"array": 0.5}])
++def test_weights_require_the_complete_mapping(weights):
++    with pytest.raises(TracrError, match="weights"):
++        Settings(weights=weights)
++
++
++@pytest.mark.parametrize("value", [True, False, None, "0.5", float("nan"), float("inf"), -1])
++def test_weights_reject_invalid_numbers(value):
++    weights = {**Settings().weights, "array": value}
++    with pytest.raises(TracrError, match="weights"):
++        Settings(weights=weights)
++
++
++@pytest.mark.parametrize("name", ["cmscan", "fasta36", "blastn", "intarna", "erpin", "erpin_model"])
++@pytest.mark.parametrize("value", ['""', "4", "true", "[]"])
++def test_config_path_shapes_fail_before_resolution(tmp_path, name, value):
++    config = tmp_path / "settings.toml"
++    config.write_text(f"{name} = {value}\n")
++    with pytest.raises(TracrError, match=name):
++        load_settings(config, {})
++
++
++@pytest.mark.parametrize("name", ["models", "identify_command", "casandra_command"])
++@pytest.mark.parametrize("value", ['[""]', '["valid", 4]', '"tool"', "4"])
++def test_config_arrays_reject_malformed_items(tmp_path, name, value):
++    config = tmp_path / "settings.toml"
++    config.write_text(f"{name} = {value}\n")
++    with pytest.raises(TracrError, match=name):
++        load_settings(config, {})
++
++
++def test_config_paths_overrides_literal_arguments_and_redaction(tmp_path):
++    interpreter = tmp_path / "venv/bin/python"
++    interpreter.parent.mkdir(parents=True)
++    interpreter.symlink_to(sys.executable)
++    config = tmp_path / "settings.toml"
++    config.write_text(
++        'threads = 2\nmodels = ["data/custom.cm"]\nerpin_model = "data/custom.epn"\n'
++        'cmscan = "venv/bin/python"\n'
++        'identify_command = ["venv/bin/python", "scripts/identify.py", "--flag", '
++        '"--output=data/results", "--data/path", "$(literal)"]\n'
++        '[environment]\nTOKEN = "private-value"\n'
++    )
++    settings = load_settings(config, {"threads": 4, "coverage": None, "similarity": 0.9})
++    assert settings.threads == 4
++    assert settings.similarity == 0.9
++    assert settings.coverage == Settings().coverage
++    assert settings.models == (str(tmp_path / "data/custom.cm"),)
++    assert settings.erpin_model == str(tmp_path / "data/custom.epn")
++    assert settings.cmscan == str(interpreter)
++    assert settings.identify_command == (
++        str(interpreter),
++        str(tmp_path / "scripts/identify.py"),
++        "--flag",
++        "--output=data/results",
++        "--data/path",
++        "$(literal)",
++    )
++    assert settings.public()["environment"] == ["TOKEN"]
++    assert "private-value" not in json.dumps(settings.public())
++
++
++@pytest.mark.parametrize("factory", [Interval, Interval.from_public])
++@pytest.mark.parametrize("start,end", [(0.0, 2), (1, 2.0), (False, 2), (1, True), ("1", 2)])
++def test_coordinates_reject_nonintegers_before_arithmetic(factory, start, end):
++    with pytest.raises(ValueError, match="integers"):
++        factory(start, end)
++
++
++@pytest.mark.parametrize("strand", ["?", "", None, 0])
++def test_subsequence_rejects_unknown_strands(strand):
++    with pytest.raises(TracrError, match="strand"):
++        subsequence("ACGTA", Interval(1, 4), strand)
++
++
++def test_valid_coordinate_conversions_and_strands_are_unchanged():
++    interval = Interval.from_public(2, 4)
++    assert interval == Interval(1, 4)
++    assert interval.public() == {"start": 2, "end": 4, "length": 3}
++    assert subsequence("ACGTA", interval, "+") == "CGT"
++    assert subsequence("ACGTA", interval, "-") == "ACG"
++
++
++@pytest.mark.parametrize("command", [[], (), "echo", None, [""], [4], ["echo", None]])
++def test_runner_rejects_malformed_argv(tmp_path, command):
++    with pytest.raises(ToolError, match="Command"):
++        Runner(tmp_path).run(command)
++
++
++@pytest.mark.parametrize(
++    "arguments,expected",
++    [(["-c", ""], ""), (["-c", "import sys; print(repr(sys.argv[1]))", ""], "''\n")],
++)
++def test_runner_preserves_valid_empty_argument_strings(tmp_path, arguments, expected):
++    runner = Runner(tmp_path)
++    assert runner.run([sys.executable, *arguments]).read_text() == expected
++    assert runner.records[0]["argv"][1:] == arguments
++
++
++def _tool(path, text):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    path.write_text(f"#!/bin/sh\nprintf '%s\\n' '{text}'\n")
++    path.chmod(0o755)
++    return path
++
++
++@pytest.mark.parametrize("lookup", ["explicit", "relative_path", "empty_path"])
++def test_runner_resolves_and_hashes_the_child_executable(tmp_path, monkeypatch, lookup):
++    caller = tmp_path / "caller"
++    child = caller / "child"
++    relative = "bin/tool" if lookup == "relative_path" else "tool"
++    _tool(caller / relative, "wrong caller executable")
++    expected = _tool(child / relative, "child executable")
++    monkeypatch.chdir(caller)
++    runner = Runner(
++        tmp_path / "logs", environment={"PATH": "bin" if lookup == "relative_path" else ""}
++    )
++    command = "./tool" if lookup == "explicit" else "tool"
++    output = runner.run([command], cwd=Path("child"))
++    assert output.read_text().strip() == "child executable"
++    record = runner.records[0]
++    assert record["argv"] == [str(expected)]
++    assert record["cwd"] == str(child)
++    assert record["executable_sha256"] == hashlib.sha256(expected.read_bytes()).hexdigest()
++    assert json.loads((runner.directory / "commands.json").read_text())[0] == record
++
++
++def test_runner_preserves_path_search_order_and_default_child_cwd(tmp_path):
++    first = _tool(tmp_path / "bin/tool", "first")
++    _tool(tmp_path / "tool", "second")
++    runner = Runner(tmp_path, environment={"PATH": f"bin{os.pathsep}"})
++    assert runner.run(("tool",)).read_text().strip() == "first"
++    assert runner.records[0]["argv"] == [str(first)]
++
++
++def test_runner_keeps_the_executable_symlink(tmp_path):
++    interpreter = tmp_path / "venv/bin/python"
++    interpreter.parent.mkdir(parents=True)
++    interpreter.symlink_to(sys.executable)
++    runner = Runner(tmp_path / "logs")
++    output = runner.run([str(interpreter), "-c", "import sys; print(sys.executable)"])
++    assert output.read_text().strip() == str(interpreter)
++    assert runner.records[0]["argv"][0] == str(interpreter)
++    assert str(interpreter) != str(interpreter.resolve())
++
++
++def test_failed_process_keeps_full_multibyte_evidence_and_bounded_diagnostic(tmp_path):
++    runner = Runner(tmp_path)
++    diagnostic = "\U0001f9ec" * 20_000 + "FINAL_MARKER"
++    script = (
++        "import sys; sys.stderr.buffer.write("
++        "('\\U0001f9ec' * 20000 + 'FINAL_MARKER').encode('utf-8')); sys.exit(9)"
++    )
++    with pytest.raises(ToolError, match="exited 9") as failure:
++        runner.run([sys.executable, "-c", script])
++    assert str(failure.value).split("\n", 1)[1] == diagnostic[-3000:]
++    assert (tmp_path / "0001.stderr.log").read_text() == diagnostic
++    assert runner.records[0]["returncode"] == 9
++
++
++def test_stderr_tail_reads_a_bounded_window_at_a_utf8_boundary(tmp_path, monkeypatch):
++    path = tmp_path / "stderr"
++    diagnostic = "\U0001f9ec" * 8000 + "FINAL"
++    path.write_text(diagnostic, encoding="utf-8")
++    original_open = Path.open
++    reads = []
++
++    class BoundedReader:
++        def __init__(self):
++            self.handle = original_open(path, "rb")
++
++        def __enter__(self):
++            return self
++
++        def __exit__(self, *args):
++            self.handle.close()
++
++        def seek(self, *args):
++            return self.handle.seek(*args)
++
++        def read(self, size=-1):
++            assert 0 <= size <= 12000
++            reads.append(size)
++            return self.handle.read(size)
++
++    monkeypatch.setattr(Path, "open", lambda *args, **kwargs: BoundedReader())
++    assert _stderr_tail(path) == diagnostic[-3000:]
++    assert reads == [12000]
++
++
++def test_cli_legacy_aliases_and_explicit_booleans(tmp_path, monkeypatch):
++    captured = []
++
++    def run(source, output, settings):
++        captured.append((source, output, settings))
++        return {"summary": {"sequence_count": 1, "prediction_count": 0}}
++
++    monkeypatch.setattr(cli, "run", run)
++    source, output = tmp_path / "input.fa", tmp_path / "result"
++    assert (
++        cli.main(
++            [
++                "--file",
++                str(source),
++                "--output_folder",
++                str(output),
++                "--run_type",
++                "model_run",
++                "--model_type",
++                "v",
++                "--perform_type_v_anti_repeat_analysis",
++                "False",
++                "--anti_repeat_similarity_threshold",
++                "0.8",
++                "--anti_repeat_coverage_threshold",
++                "0.75",
++                "--no-model-rescue",
++                "--no-mask-arrays",
++            ]
++        )
++        == 0
++    )
++    assert len(captured) == 1
++    actual_source, actual_output, settings = captured[0]
++    assert (actual_source, actual_output) == (source, output)
++    assert (settings.mode, settings.model_type) == ("model", "V")
++    assert settings.type_v_motifs is False
++    assert settings.model_rescue is False
++    assert settings.mask_arrays is False
++    assert (settings.similarity, settings.coverage) == (0.8, 0.75)
++
++
++def test_cli_doctor_applies_overrides_and_bare_boolean_flags(tmp_path, monkeypatch):
++    captured = []
++
++    def doctor(settings):
++        captured.append(settings)
++        return {"ready": True}
++
++    monkeypatch.setattr(cli, "doctor", doctor)
++    config = tmp_path / "settings.toml"
++    config.write_text('model_type = "V"\nthreads = 2\n')
++    assert cli.main(["doctor", "--config", str(config), "--threads", "4", "--type-v-motifs"]) == 0
++    assert captured[0].threads == 4
++    assert captured[0].type_v_motifs is True
+--- before/tests/test_science_contracts.py
++++ after/tests/test_science_contracts.py
+@@ -0,0 +1,331 @@
++"""External-report failures and frozen experimental gate regression coverage."""
++
++import copy
++import json
++from dataclasses import replace
++
++import pytest
++
++from crisprtracrrna.adapters import load_json, parse_casandra, parse_identify, sha256_file
++from crisprtracrrna.config import Settings
++from crisprtracrrna.errors import ContractError
++from crisprtracrrna.evidence import short_rescue_admission
++from crisprtracrrna.models import AntiRepeat, Array, Candidate, Hit, Interval, Sequence
++from crisprtracrrna.sequence import write_fasta
++
++
++@pytest.fixture
++def source():
++    return Sequence("seq", "seq", "ACGT" * 20)
++
++
++@pytest.fixture
++def identify(source):
++    return {
++        "schema": {"name": "CRISPRidentify-report", "version": "1.2.0"},
++        "coordinate_system": {
++            "indexing": 1,
++            "end_inclusive": True,
++            "reference": "input_forward_strand",
++        },
++        "source": {"id": source.id, "length": len(source.bases), "sha256": source.sha256},
++        "validation": {"status": "valid"},
++        "arrays": [
++            {
++                "id": "array1",
++                "category": "Bona-fide",
++                "certainty_score": 0.9,
++                "source_interval": {"start": 1, "end": 4},
++                "consensus_repeat": "ACGT",
++                "orientation": {"strand": "-"},
++                "validation": {"status": "valid"},
++            }
++        ],
++    }
++
++
++@pytest.fixture
++def casandra(tmp_path, source):
++    fasta = tmp_path / "input.fa"
++    write_fasta(fasta, [source])
++    records = {
++        "proteins.jsonl": {
++            "contig_id": source.id,
++            "start_1based": 1,
++            "end_1based_inclusive": 9,
++            "prediction": {"is_cas": True},
++        },
++        "cassettes.jsonl": {
++            "cassette_id": "c1",
++            "contig_id": source.id,
++            "start_1based": 1,
++            "end_1based_inclusive": 12,
++            "final_classification": {"type": "II"},
++        },
++    }
++    for name, record in records.items():
++        (tmp_path / name).write_text(json.dumps(record) + "\n", encoding="utf-8")
++    run = {
++        "schema_version": 5,
++        "program": "CasAndra",
++        "genes": 1,
++        "cas_cassettes": 1,
++        "inputs": [{"kind": "genome_fasta", "sha256": sha256_file(fasta)}],
++    }
++    (tmp_path / "run.json").write_text(json.dumps(run), encoding="utf-8")
++    manifest = {
++        "schema_version": 5,
++        "files": {name: {"sha256": sha256_file(tmp_path / name)} for name in records},
++    }
++    (tmp_path / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
++    return tmp_path, fasta
++
++
++def rewrite_checked_record(directory, filename, text):
++    """Keep the checksum valid so tests reach the structured-record boundary."""
++    path = directory / filename
++    path.write_text(text, encoding="utf-8")
++    manifest_path = directory / "manifest.json"
++    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
++    manifest["files"][filename]["sha256"] = sha256_file(path)
++    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
++
++
++def update_run(directory, **updates):
++    path = directory / "run.json"
++    report = json.loads(path.read_text(encoding="utf-8"))
++    report.update(updates)
++    path.write_text(json.dumps(report), encoding="utf-8")
++
++
++@pytest.mark.parametrize("number", ["NaN", "Infinity", "-Infinity", "1e999", "-1e999"])
++def test_structured_json_rejects_nonfinite_additive_fields(tmp_path, number):
++    path = tmp_path / "report.json"
++    path.write_text('{"optional": [1, {"number": ' + number + "}]}", encoding="utf-8")
++    with pytest.raises(ContractError, match="Non-finite") as error:
++        load_json(path)
++    assert str(path) in str(error.value)
++
++
++@pytest.mark.parametrize("text", ["[]", "null", "5"])
++def test_structured_json_requires_an_object(tmp_path, text):
++    path = tmp_path / "report.json"
++    path.write_text(text, encoding="utf-8")
++    with pytest.raises(ContractError, match="Expected JSON object"):
++        load_json(path)
++
++
++@pytest.mark.parametrize("filename", ["proteins.jsonl", "cassettes.jsonl"])
++@pytest.mark.parametrize("number", ["NaN", "Infinity", "-Infinity", "1e999", "-1e999"])
++def test_casandra_rejects_nonfinite_additive_fields(casandra, source, filename, number):
++    directory, fasta = casandra
++    original = (directory / filename).read_text(encoding="utf-8")
++    extra = json.loads(original)
++    extra["optional"] = {"nonwinning": [0, "NONFINITE"]}
++    malformed = json.dumps(extra).replace('"NONFINITE"', number)
++    rewrite_checked_record(directory, filename, original + "\n" + malformed + "\n")
++    with pytest.raises(ContractError, match="Non-finite") as error:
++        parse_casandra(directory, fasta, source)
++    assert f"{directory / filename}:3:" in str(error.value)
++
++
++@pytest.mark.parametrize("text", ["[]", "null", "5", "{broken"])
++def test_casandra_malformed_later_line_has_file_and_physical_line(casandra, source, text):
++    directory, fasta = casandra
++    filename = "cassettes.jsonl"
++    original = (directory / filename).read_text(encoding="utf-8")
++    rewrite_checked_record(directory, filename, original + "\n" + text + "\n")
++    with pytest.raises(ContractError) as error:
++        parse_casandra(directory, fasta, source)
++    assert f"{directory / filename}:3:" in str(error.value)
++
++
++def test_casandra_preserves_utf8_finite_additions_blank_lines_and_row_order(casandra, source):
++    directory, fasta = casandra
++    expected = {}
++    for filename, key in (("proteins.jsonl", "genes"), ("cassettes.jsonl", "cassettes")):
++        first = json.loads((directory / filename).read_text(encoding="utf-8"))
++        first["optional"] = {"label": "première", "finite": [1e100, -1e-100, 0]}
++        second = copy.deepcopy(first)
++        second["optional"]["label"] = "第二"
++        if key == "cassettes":
++            second["cassette_id"] = "c2"
++        expected[key] = [first, second]
++        lines = "\n \n" + "\n\n".join(json.dumps(r, ensure_ascii=False) for r in expected[key])
++        rewrite_checked_record(directory, filename, lines + "\n")
++    update_run(directory, genes=2, cas_cassettes=2, optional={"finite": 1e100})
++    result = parse_casandra(directory, fasta, source)
++    assert result["genes"] == expected["genes"]
++    assert result["cassettes"] == expected["cassettes"]
++    assert result["run"]["optional"] == {"finite": 1e100}
++
++
++@pytest.mark.parametrize("identifier", [None, "", 42, False, []])
++def test_identify_rejects_missing_or_invalid_consumed_ids(tmp_path, identify, source, identifier):
++    row = identify["arrays"][0]
++    if identifier is None:
++        del row["id"]
++    else:
++        row["id"] = identifier
++    path = tmp_path / "report.json"
++    path.write_text(json.dumps(identify), encoding="utf-8")
++    with pytest.raises(ContractError) as error:
++        parse_identify(path, source)
++    assert str(path) in str(error.value)
++
++
++@pytest.mark.parametrize("identifier", [None, "", 42, False, []])
++def test_casandra_rejects_missing_or_invalid_consumed_ids(casandra, source, identifier):
++    directory, fasta = casandra
++    filename = "cassettes.jsonl"
++    row = json.loads((directory / filename).read_text(encoding="utf-8"))
++    if identifier is None:
++        del row["cassette_id"]
++    else:
++        row["cassette_id"] = identifier
++    rewrite_checked_record(directory, filename, json.dumps(row) + "\n")
++    with pytest.raises(ContractError) as error:
++        parse_casandra(directory, fasta, source)
++    assert f"{directory / filename}:1:" in str(error.value)
++
++
++@pytest.mark.parametrize("key", ["genes", "cas_cassettes"])
++@pytest.mark.parametrize("count", [True, False, -1, 1.0, 1.5, "1"])
++def test_casandra_consumed_counts_are_nonnegative_integers(casandra, source, key, count):
++    directory, fasta = casandra
++    update_run(directory, **{key: count})
++    with pytest.raises(ContractError, match="nonnegative integer"):
++        parse_casandra(directory, fasta, source)
++
++
++def test_casandra_accepts_zero_counts(casandra, source):
++    directory, fasta = casandra
++    for filename in ("proteins.jsonl", "cassettes.jsonl"):
++        rewrite_checked_record(directory, filename, "\n")
++    update_run(directory, genes=0, cas_cassettes=0)
++    result = parse_casandra(directory, fasta, source)
++    assert result["genes"] == [] and result["cassettes"] == []
++
++
++@pytest.mark.parametrize("repeat", ["", "ACGT!", None, 42])
++def test_identify_malformed_repeat_uses_path_scoped_contract_error(
++    tmp_path, identify, source, repeat
++):
++    identify["arrays"][0]["consensus_repeat"] = repeat
++    path = tmp_path / "report.json"
++    path.write_text(json.dumps(identify), encoding="utf-8")
++    with pytest.raises(ContractError) as error:
++        parse_identify(path, source)
++    assert str(path) in str(error.value)
++
++
++def test_identify_ignores_unaccepted_array_fields(tmp_path, identify, source):
++    identify["arrays"].append({"category": "Alternative", "id": [], "consensus_repeat": "!"})
++    identify["arrays"][0]["consensus_repeat"] = "acgu"
++    path = tmp_path / "report.json"
++    path.write_text(json.dumps(identify), encoding="utf-8")
++    arrays, preserved = parse_identify(path, source)
++    assert len(arrays) == 1 and arrays[0].repeat == "ACGT"
++    assert preserved == identify
++
++
++@pytest.mark.parametrize("coordinate", [True, 1.0, "1", None])
++def test_identify_invalid_coordinate_types_remain_contract_errors(
++    tmp_path, identify, source, coordinate
++):
++    identify["arrays"][0]["source_interval"]["start"] = coordinate
++    path = tmp_path / "report.json"
++    path.write_text(json.dumps(identify), encoding="utf-8")
++    with pytest.raises(ContractError, match="coordinates must be integers"):
++        parse_identify(path, source)
++
++
++@pytest.mark.parametrize("coordinate", [True, 1.0, "1", None])
++def test_casandra_invalid_coordinate_types_remain_contract_errors(casandra, source, coordinate):
++    directory, fasta = casandra
++    filename = "proteins.jsonl"
++    row = json.loads((directory / filename).read_text(encoding="utf-8"))
++    row["start_1based"] = coordinate
++    rewrite_checked_record(directory, filename, json.dumps(row))
++    with pytest.raises(ContractError, match="coordinates must be integers"):
++        parse_casandra(directory, fasta, source)
++
++
++def test_casandra_checksum_failure_precedes_json_validation(casandra, source):
++    directory, fasta = casandra
++    (directory / "proteins.jsonl").write_text("{broken", encoding="utf-8")
++    with pytest.raises(ContractError, match="checksum mismatch"):
++        parse_casandra(directory, fasta, source)
++
++
++def test_casandra_input_digest_requires_matching_kind(casandra, source):
++    directory, fasta = casandra
++    digest = sha256_file(fasta)
++    update_run(
++        directory,
++        inputs=[
++            {"kind": "protein_fasta", "sha256": digest},
++            {"kind": "genome_fasta", "sha256": "x"},
++        ],
++    )
++    with pytest.raises(ContractError, match="input digest"):
++        parse_casandra(directory, fasta, source)
++    update_run(
++        directory,
++        inputs=[
++            {"kind": "protein_fasta", "sha256": "x"},
++            {"kind": "genome_fasta", "sha256": digest},
++        ],
++    )
++    assert parse_casandra(directory, fasta, source)["status"] == "computed"
++
++
++@pytest.fixture
++def short_candidate():
++    array = Array("array", Interval(250, 300), "T" * 20, "+", "Possible", 0.8)
++    anti = AntiRepeat(array, array.repeat, "+", Interval(100, 120), "+", 0.9, 0.5, True)
++    return Candidate("c", anti, Interval(95, 180), "A" * 85, Interval(5, 25))
++
++
++def short_duplex(energy=-4, paired=20):
++    return {
++        "target_interval": Interval(5, 25).public(),
++        "energy_kcal_mol": energy,
++        "target_paired_positions": list(range(6, 6 + paired)),
++        "repeat_paired_positions": list(range(1, 1 + paired)),
++    }
++
++
++@pytest.mark.parametrize("energy, accepted", [(-0.0001, True), (0, False), (0.0001, False)])
++def test_short_admission_preserves_strict_energy_boundary(short_candidate, energy, accepted):
++    model = Hit("c", Interval(25, 60), "+", 5, 0.01)
++    result = short_rescue_admission(short_candidate, [model], [], short_duplex(energy), Settings())
++    assert result["accepted"] is accepted
++    assert result["rejection_reasons"] == ([] if accepted else ["nonnegative_energy"])
++
++
++def test_short_admission_preserves_literal_thresholds_and_rejection_order(short_candidate):
++    result = short_rescue_admission(
++        replace(short_candidate, sequence="C" * 85), [], [], short_duplex(0, 9), Settings()
++    )
++    assert result["rejection_reasons"] == [
++        "nonnegative_energy",
++        "noncanonical_or_ambiguous_pair",
++        "fewer_than_10_anchored_paired_bases",
++        "less_than_half_anchor_paired",
++        "no_independent_regional_support",
++    ]
++    # Compare serialized output to the literal pre-change schema, retaining key
++    # order and integer/float representation as well as numeric values.
++    assert json.dumps(result["thresholds"]) == json.dumps(
++        {
++            "min_query_span": 12,
++            "min_identity": 0.8,
++            "min_anchored_paired_bases": 10,
++            "min_anchored_paired_fraction": 0.5,
++            "energy_strictly_below": 0,
++            "cm_evalue_max": 0.01,
++            "cm_duplex_overlap_strictly_below": 10,
++            "terminator_evalue_max": 0.001,
++        }
++    )
+--- before/tests/test_wheel_check.py
++++ after/tests/test_wheel_check.py
+@@ -0,0 +1,64 @@
++"""Ensure the distribution check detects missing and damaged scientific assets."""
++
++import hashlib
++import importlib.util
++import json
++import sys
++from pathlib import Path
++
++import pytest
++
++ROOT = Path(__file__).resolve().parents[1]
++spec = importlib.util.spec_from_file_location("wheel_check", ROOT / "scripts/check_wheel.py")
++wheel_check = importlib.util.module_from_spec(spec)
++spec.loader.exec_module(wheel_check)
++
++
++@pytest.fixture
++def package(tmp_path):
++    package = tmp_path / "package"
++    package.mkdir()
++    (package / "py.typed").touch()
++    names = json.loads((ROOT / "src/crisprtracrrna/data/manifest.json").read_text())
++    manifest = {}
++    for relative in names:
++        path = package / "data" / relative
++        path.parent.mkdir(parents=True, exist_ok=True)
++        path.write_bytes(relative.encode())
++        manifest[relative] = hashlib.sha256(path.read_bytes()).hexdigest()
++    (package / "data/manifest.json").write_text(json.dumps(manifest))
++    (package / "data/erpin/erpin").chmod(0o755)
++    return package
++
++
++def test_resource_check_accepts_complete_intact_distribution(package):
++    assert wheel_check.verify_resources(package) == 27
++
++
++@pytest.mark.parametrize("filename", ["py.typed", "data/models/II.cm.i1f"])
++def test_resource_check_rejects_missing_required_files(package, filename):
++    (package / filename).unlink()
++    with pytest.raises(RuntimeError, match="missing"):
++        wheel_check.verify_resources(package)
++
++
++def test_resource_check_rejects_incomplete_manifest(package):
++    path = package / "data/manifest.json"
++    manifest = json.loads(path.read_text())
++    del manifest["models/II.cm"]
++    path.write_text(json.dumps(manifest))
++    with pytest.raises(RuntimeError, match="omits required resources"):
++        wheel_check.verify_resources(package)
++
++
++def test_resource_check_rejects_corrupted_asset(package):
++    (package / "data/models/II.cm").write_bytes(b"corrupted model")
++    with pytest.raises(RuntimeError, match="checksum mismatch: models/II.cm"):
++        wheel_check.verify_resources(package)
++
++
++@pytest.mark.skipif(sys.platform != "linux", reason="Bundled executable targets Linux")
++def test_resource_check_rejects_lost_executable_permission(package):
++    (package / "data/erpin/erpin").chmod(0o644)
++    with pytest.raises(RuntimeError, match="lost executable permission"):
++        wheel_check.verify_resources(package)

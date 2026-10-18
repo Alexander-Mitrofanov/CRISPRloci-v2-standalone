@@ -1,0 +1,271 @@
+{
+  "example": {
+    "input": {
+      "base_count": 61319,
+      "file_sha256": "c9158b2f68f1e3c1cba57d6cf6ce94609d975c8fdae4b40b45671ae533663c91",
+      "filename": "input.fasta",
+      "normalized_sha256": "dcce9fd708de68dc57bfec5b6111f1c63c4efa48014cee1ba37653d18c7a0233",
+      "record_count": 1
+    },
+    "source_note": "Pinned tool example with masked identifiers. Reference searches use bundled demonstration references, not the full production databases.",
+    "submission_options": {
+      "bias_corrections": true,
+      "category_policy": "bona_fide_possible",
+      "spacer_distance": 1,
+      "tracr_model_type": "V"
+    },
+    "verification": {
+      "independent_runs": 2,
+      "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+      "scientific_results_identical": true,
+      "variable_fields": [
+        "execution durations"
+      ]
+    }
+  },
+  "job": {
+    "artifacts": [],
+    "input": {
+      "base_count": 61319,
+      "filename": "input.fasta",
+      "record_count": 1,
+      "sha256": "dcce9fd708de68dc57bfec5b6111f1c63c4efa48014cee1ba37653d18c7a0233",
+      "source_ids": [
+        "example_record_01"
+      ]
+    },
+    "mode": "tracrrna",
+    "options": {
+      "association_grouping": null,
+      "bias_corrections_effective": true,
+      "bias_corrections_requested": true,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "molecule": "DNA",
+      "spacer_distance": 1,
+      "tool_options": {},
+      "tracr_model_type": "V",
+      "viral_max_mismatches": 2,
+      "warnings": []
+    },
+    "status": "completed",
+    "summary": {
+      "adapter": null,
+      "array_compare": {
+        "arrays": [],
+        "available": false,
+        "edges": []
+      },
+      "casandra": {
+        "cassettes": [],
+        "genes": [],
+        "status": "not_requested"
+      },
+      "crisprleader": {
+        "contexts": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "detection": {
+        "accepted_categories": [
+          "Bona-fide",
+          "Possible"
+        ],
+        "array_count": 0,
+        "arrays": [],
+        "arrays_scope": "selected_for_analysis",
+        "arrays_truncated": false,
+        "category_counts": {},
+        "report_count": 0,
+        "report_schema_versions": {},
+        "score_semantics": {
+          "model_score_is_probability": false,
+          "note": "Raw model scores are not calibrated probabilities.",
+          "primary_interpretation": "category"
+        },
+        "selected_array_count": 0,
+        "selected_category_counts": {},
+        "source_count": 0,
+        "unselected_array_count": 0
+      },
+      "orientation": null,
+      "pipeline": {
+        "stages": {
+          "tracrrna": {
+            "duration_seconds": 0.665367,
+            "status": "completed"
+          }
+        }
+      },
+      "pipeline_status": "completed",
+      "protospacer": {
+        "available": false,
+        "matches": []
+      },
+      "provenance": {
+        "parameters": {
+          "bias_corrections": true,
+          "category_policy": "bona_fide_possible",
+          "leader_flank_length": 500,
+          "spacer_distance": 1,
+          "tool_options": {},
+          "tracr_model_type": "V"
+        },
+        "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+        "repositories": [
+          {
+            "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+            "display_name": "CasAndra",
+            "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git"
+          },
+          {
+            "commit": "ae7e97b210421224f9e15f84fac8db2f3b7ffd84",
+            "display_name": "CCTK",
+            "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git"
+          },
+          {
+            "commit": "369241d16a724eca487a65fd791340cb13122bde",
+            "display_name": "evOr",
+            "repository": "https://github.com/Alexander-Mitrofanov/evOr.git"
+          },
+          {
+            "commit": "ca225a2a3be38e7dee917b483d2d4e2732be4318",
+            "display_name": "CRISPRtracrRNA-v3",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git"
+          },
+          {
+            "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+            "display_name": "CRISPRidentify-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git"
+          },
+          {
+            "commit": "5051d07ab827356792d6a954308ddc5157bd623e",
+            "display_name": "CRISPRleader-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git"
+          },
+          {
+            "commit": "b1990e3fa08b435d12539419387599d9f08fe375",
+            "display_name": "CRISPRmap-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git"
+          },
+          {
+            "commit": "eb26716becfc6c991039aac0db5a7c16d41d1332",
+            "display_name": "CRISPRrepeat",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git"
+          },
+          {
+            "commit": "0e495166486273c9a130556ee640c713497de5bd",
+            "display_name": "CRISPRspacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git"
+          },
+          {
+            "commit": "29727e2456d3d71ffda96ee27f54d13cf50a3023",
+            "display_name": "RepeatTyper",
+            "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git"
+          },
+          {
+            "commit": "f11ee0d85c706237c3d215bf21703933cd1f8037",
+            "display_name": "SpacePHARER",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git"
+          },
+          {
+            "commit": "87993c9f928fc7893cbc4c9f98df9341e39ffe56",
+            "display_name": "SpacerPlacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git"
+          }
+        ],
+        "tool_versions": {
+          "CCTK": "2.0.2",
+          "CRISPRidentify-v2": "2.3.2",
+          "CRISPRleader-v2": "2.0.0a1",
+          "CRISPRloci integration": "0.13.1",
+          "CRISPRmap-v2": "2.1.0a2",
+          "CRISPRrepeat": "1.0.1",
+          "CRISPRspacer": "0.3.1",
+          "CRISPRtracrRNA-v3": "3.0.0",
+          "CasAndra": "0.3.0.dev2",
+          "RepeatTyper": "2.0.1",
+          "SpacePHARER": "2.1.1",
+          "SpacerPlacer": "1.0.1.post3",
+          "evOr": "1.0.3"
+        }
+      },
+      "reconstruction": null,
+      "repeat_map": {
+        "available": false,
+        "results": []
+      },
+      "repeat_type": {
+        "available": false,
+        "results": []
+      },
+      "repeats": {
+        "instances": [],
+        "status": "not_requested"
+      },
+      "schema_version": "1.0.0",
+      "spacer_association": {
+        "associations": [],
+        "available": false
+      },
+      "tracrrna": {
+        "candidates": [
+          {
+            "anti_repeat_coverage": null,
+            "anti_repeat_identity": null,
+            "array_id": null,
+            "boundary_kind": null,
+            "end": 13301,
+            "evalue": 1.7e-11,
+            "evidence_class": null,
+            "id": "f000001.s000001.p000001",
+            "interaction_energy": null,
+            "origin": null,
+            "score": 56.2,
+            "score_kind": "covariance_model_bits",
+            "sequence": "CGCACCGTAAATTATGTTCTTAATTGAACCTCTAGATTACGGAAAAGGGTTAGTTTGACTGTCGGTAGATAGTTTTGCTTTCTGGCCCTAGTAGCTGTCCACCCTGATGCTGATTTCTACAATTTAGATTGTAGGGATAATAACCTGTAAAAAGAGATTAGCTGATAATTTCATTTTATGGGGAAGGTGCGCTCCCAGCAATAAGTGGCGTGGGTTTACCACAGCGATGGCTACTGAATCACCTCCGACC",
+            "source_id": "example_record_01",
+            "start": 13052,
+            "strand": "-"
+          }
+        ],
+        "mode": "model",
+        "model_type": "V",
+        "prediction_count": 1,
+        "score_is_probability": false,
+        "sequence_count": 1,
+        "sources": [
+          {
+            "id": "example_record_01",
+            "length": 61319,
+            "sha256": "42e0e7ff6adada3f78095fdab5fed70682c5584aec26f5e73b9ed5d5f8145456"
+          }
+        ],
+        "status": "completed",
+        "truncated": false
+      },
+      "viral_search": {
+        "available": false,
+        "candidate_viruses": [],
+        "matches": [],
+        "queries": []
+      },
+      "warnings": [
+        "Public artifact omitted because it was invalid or contained a private path: logs/tracrrna.stdout.log",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/configuration.json",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/report.json",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/summary.csv",
+        "Worker log omitted because it contained a private path: attempt-001.stdout.log",
+        "Worker log omitted because it was empty: attempt-001.stderr.log"
+      ]
+    }
+  },
+  "schema": {
+    "name": "crisprloci.web-example",
+    "version": "1.0.0"
+  }
+}

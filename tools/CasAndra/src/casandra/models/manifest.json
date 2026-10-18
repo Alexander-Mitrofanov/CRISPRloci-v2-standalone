@@ -1,0 +1,92 @@
+{
+  "accuracy_claim_source": "No new accuracy claim: fixed floor cap for opened development evaluation only.",
+  "artifacts": {
+    "cassette_architecture/manifest.json": {
+      "sha256": "eab384bc5e80244c744129751d5fbd2554ab0917ac183170ee2fdaa420585b43",
+      "size": 430
+    },
+    "cassette_architecture/model.joblib": {
+      "sha256": "181aa68154bcf8b08e3e74dbf9b1cc6602927d95127752716f120fcc1bcf2b1e",
+      "size": 4270649
+    },
+    "cassette_architecture/model_card.json": {
+      "sha256": "e14ad5cadca89e08e0d35edc300687ac59063f2faecd8dfb6955a6fa7a26931c",
+      "size": 895
+    },
+    "config.json": {
+      "sha256": "0605dcebece5d9d7b4b13d86960e7176ecc4c49ce1f0aba707a32e72e6d8c393",
+      "size": 1598
+    },
+    "protein/build_audit.json": {
+      "sha256": "09391b96bbe8f9576287ab54b188b3957f0e74b2fbe22ecf94660d68b6a38c51",
+      "size": 1321
+    },
+    "protein/manifest.json": {
+      "sha256": "2b6be38785983c049c18321abf3c0898bac211ae4e3fd6b39de2a95ef066b0c5",
+      "size": 2247
+    },
+    "protein/model_card.json": {
+      "sha256": "5baffdc7ab0d04336a53b4e230cc8091772591a13f89052a01e069200aac5c2d",
+      "size": 649
+    },
+    "protein/profile_metadata.json": {
+      "sha256": "8e340f92724e4941e1eb22cbef7ba920f3f280f5284a714f2a8fa9a318531436",
+      "size": 178880
+    },
+    "protein/profiles.hmm": {
+      "sha256": "7e1495ff2378435736fcc2f2325a1bfed8fdbdd97a12f19839e836ceaa61e369",
+      "size": 60767826
+    },
+    "protein/specificity/floor_cap_provenance.json": {
+      "sha256": "270907a772e8d4ceaaf5803446e8bed214c8083cf403f86ba2959266ddcb9764",
+      "size": 213574
+    },
+    "protein/specificity/inherited_competition.json": {
+      "sha256": "d5ddf6ca8477e3a3c6bb1e302eab1cb73fbc1a4912834534a165f6f29df884ef",
+      "size": 681
+    },
+    "protein/specificity/inherited_floor.json": {
+      "sha256": "cc0fd0576e643023df192f6e972946d9e54e5042aae02237f3ad6aa4eef086e0",
+      "size": 62214
+    },
+    "protein/specificity/inherited_profiles.hmm": {
+      "sha256": "d72000016cab9df16973a0b8902670063a56831790efd75e23dced8986efd242",
+      "size": 2251931
+    },
+    "protein/specificity/manifest.json": {
+      "sha256": "c2f5a60f4390c15965f4eae5864f12865fadef886503fb60a9a8f0db4e702c5c",
+      "size": 2132
+    },
+    "protein/specificity/new_bank_source_manifest.json": {
+      "sha256": "68e2cb7d9535ec0de627b835da75a8c36b32185c26b43db47de8eeb8d20d27d6",
+      "size": 1357
+    },
+    "protein/specificity/new_profile_metadata.json": {
+      "sha256": "e765a3a36fa777bfd791896152e626d65322b6f043d54d21efe2d397e67c6d04",
+      "size": 31220
+    },
+    "protein/specificity/new_profiles.hmm": {
+      "sha256": "dc982a66dc835272551d5e8f549474cf1453eed23b19074dec4f5461c7de347b",
+      "size": 7806231
+    },
+    "protein/specificity/repair_policy.json": {
+      "sha256": "075b2fd88e484cfba5064998917b7d8a611f8f827b58395953b6b0703c794b40",
+      "size": 336318
+    },
+    "protein/specificity/source_provenance.json": {
+      "sha256": "053e3896f42adda5a2eb6649e67361ae7593eec08c93268f8515afb898d159d5",
+      "size": 1840
+    }
+  },
+  "bundle_id": "casandra-full361-v3-cap15-2026-09-20-v1",
+  "parent_bundle_manifest_sha256": "4e527cf17c56b9967a6e1c7664238196df9a0c0da76b9d7f7f99c55cc9a9ec41",
+  "parent_candidate_manifest_sha256": "3b7d6f08e0933d5f8ec53e96bf0f6bc611ea3b236dbb42c662ed22e71820facd",
+  "role": "local_successor_candidate",
+  "schema_version": 4,
+  "training_splits": [
+    "train",
+    "validation",
+    "test",
+    "cross_task_exclusions_restored_for_deployment"
+  ]
+}

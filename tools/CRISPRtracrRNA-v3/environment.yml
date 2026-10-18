@@ -1,0 +1,14 @@
+name: crisprtracrrna-v3
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python>=3.11
+  - pip
+  - infernal=1.1.4
+  - fasta3=36.3.8
+  - intarna=3.2.0
+  - blast>=2.12
+  - pip:
+      - -e .

@@ -1,0 +1,479 @@
+{
+  "example": {
+    "input": {
+      "base_count": 24,
+      "file_sha256": "d01f0397444dc16a7e31d1036fd7052fb44ad70fd6c678585b2084d1959bc940",
+      "filename": "input.json",
+      "normalized_sha256": "09b8da03ceb6f136b801f7aa5da573ae10d052edc43e1e06a1df9598f02db2db",
+      "record_count": 6
+    },
+    "source_note": "Pinned tool example with masked identifiers. Reference searches use bundled demonstration references, not the full production databases.",
+    "submission_options": {
+      "bias_corrections": true,
+      "category_policy": "bona_fide_possible",
+      "spacer_distance": 1
+    },
+    "verification": {
+      "independent_runs": 2,
+      "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+      "scientific_results_identical": true,
+      "variable_fields": [
+        "execution durations"
+      ]
+    }
+  },
+  "job": {
+    "artifacts": [],
+    "input": {
+      "base_count": 24,
+      "filename": "input.fasta",
+      "record_count": 6,
+      "sha256": "09b8da03ceb6f136b801f7aa5da573ae10d052edc43e1e06a1df9598f02db2db",
+      "source_ids": [
+        "occ000000_000001",
+        "occ000000_000002",
+        "occ000000_000004",
+        "occ000001_000001",
+        "occ000001_000002",
+        "occ000002_000001"
+      ]
+    },
+    "mode": "array_compare",
+    "options": {
+      "association_grouping": null,
+      "bias_corrections_effective": true,
+      "bias_corrections_requested": true,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "molecule": "DNA",
+      "spacer_distance": 1,
+      "tool_options": {},
+      "tracr_model_type": "II",
+      "viral_max_mismatches": 2,
+      "warnings": []
+    },
+    "status": "completed",
+    "summary": {
+      "adapter": null,
+      "array_compare": {
+        "arrays": [
+          {
+            "array_id": "same-array-name",
+            "boundary": {
+              "exact": false,
+              "occurrence_path": "unassessed",
+              "repeat_phase": "unassessed"
+            },
+            "category": "Possible",
+            "evidence_status": "observed",
+            "id": "array000000",
+            "interval": {
+              "end": 12,
+              "start": 1
+            },
+            "model_score": null,
+            "observed_spacer_count": 3,
+            "source_id": "control-A",
+            "spacers": [
+              {
+                "end": 4,
+                "id": "control-A-spacer1",
+                "ordinal": 1,
+                "sequence": "ACGT",
+                "start": 1,
+                "status": "observed",
+                "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0"
+              },
+              {
+                "end": 8,
+                "id": "control-A-spacer2",
+                "ordinal": 2,
+                "sequence": "ACGT",
+                "start": 5,
+                "status": "observed",
+                "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0"
+              },
+              {
+                "boundary_position": 8,
+                "id": "gap000003",
+                "ordinal": 3,
+                "sequence": null,
+                "status": "deletion",
+                "symbol": null
+              },
+              {
+                "end": 12,
+                "id": "control-A-spacer4",
+                "ordinal": 4,
+                "sequence": "TTAA",
+                "start": 9,
+                "status": "observed",
+                "symbol": "s_cb2e529279de84aecfdb787e88817cb78bc9c94ae728c2dc8c82fd270d65c4b6"
+              }
+            ],
+            "spacers_truncated": false,
+            "strand": null
+          },
+          {
+            "array_id": "same-array-name",
+            "boundary": {
+              "exact": false,
+              "occurrence_path": "unassessed",
+              "repeat_phase": "unassessed"
+            },
+            "category": "Possible",
+            "evidence_status": "observed",
+            "id": "array000001",
+            "interval": {
+              "end": 8,
+              "start": 1
+            },
+            "model_score": null,
+            "observed_spacer_count": 2,
+            "source_id": "control-B",
+            "spacers": [
+              {
+                "end": 4,
+                "id": "control-B-spacer1",
+                "ordinal": 1,
+                "sequence": "ACGT",
+                "start": 1,
+                "status": "observed",
+                "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0"
+              },
+              {
+                "end": 8,
+                "id": "control-B-spacer2",
+                "ordinal": 2,
+                "sequence": "CCCC",
+                "start": 5,
+                "status": "observed",
+                "symbol": "s_90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87"
+              }
+            ],
+            "spacers_truncated": false,
+            "strand": "-"
+          },
+          {
+            "array_id": "isolated",
+            "boundary": {
+              "exact": false,
+              "occurrence_path": "unassessed",
+              "repeat_phase": "unassessed"
+            },
+            "category": "Possible",
+            "evidence_status": "observed",
+            "id": "array000002",
+            "interval": {
+              "end": 4,
+              "start": 1
+            },
+            "model_score": null,
+            "observed_spacer_count": 1,
+            "source_id": "control-C",
+            "spacers": [
+              {
+                "end": 4,
+                "id": "control-C-spacer1",
+                "ordinal": 1,
+                "sequence": "GGGG",
+                "start": 1,
+                "status": "observed",
+                "symbol": "s_93ccf25b78706fdc6a82f98b6b7a1ca441de9d5522fd27d7ed7913c19b6fb944"
+              }
+            ],
+            "spacers_truncated": false,
+            "strand": "+"
+          },
+          {
+            "array_id": "deletion-only",
+            "boundary": {
+              "exact": false,
+              "occurrence_path": "unassessed",
+              "repeat_phase": "unassessed"
+            },
+            "category": "Possible",
+            "evidence_status": "no_observed_spacers",
+            "id": "array000003",
+            "interval": {
+              "end": 1,
+              "start": 1
+            },
+            "model_score": null,
+            "observed_spacer_count": 0,
+            "source_id": "control-D",
+            "spacers": [
+              {
+                "boundary_position": 0,
+                "id": "gap000001",
+                "ordinal": 1,
+                "sequence": null,
+                "status": "deletion",
+                "symbol": null
+              }
+            ],
+            "spacers_truncated": false,
+            "strand": null
+          }
+        ],
+        "arrays_truncated": false,
+        "available": true,
+        "components": [
+          [
+            "array000000",
+            "array000001"
+          ],
+          [
+            "array000002"
+          ],
+          [
+            "array000003"
+          ]
+        ],
+        "counts": {
+          "arrays": 4,
+          "components": 3,
+          "deletions": 2,
+          "edges": 1,
+          "isolates": 2,
+          "spacer_occurrences": 6
+        },
+        "edges": [
+          {
+            "a": "array000000",
+            "b": "array000001",
+            "jaccard": 0.3333333333333333,
+            "nshared": 1,
+            "shared_symbols": [
+              "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0"
+            ],
+            "shared_symbols_truncated": false
+          }
+        ],
+        "edges_truncated": false,
+        "execution_completed": true,
+        "interpretation": "Observed sharing only; source-forward order is not inferred acquisition order or a phylogeny.",
+        "isolates": [
+          "array000002",
+          "array000003"
+        ],
+        "options": {
+          "identity": "exact",
+          "min_shared": 1,
+          "order": "supplied"
+        },
+        "origin_semantics": "Uploaded source descriptors, origin coordinates, categories, model scores and boundary annotations are client-supplied metadata; source genomes and claimed producers were not independently verified in this comparison.",
+        "schema": {
+          "name": "crisprloci.array-comparison",
+          "version": "1.0.0"
+        },
+        "sources": [
+          {
+            "id": "control-A",
+            "length": 12,
+            "sha256": "680a8445fb26801252347189a4b8b36afed5db34436cddde82b9e662f519a136"
+          },
+          {
+            "id": "control-B",
+            "length": 8,
+            "sha256": "baad849cef1468e26c042fa5429729733b3c0bea01ff975cbb97e2c0dfcb2e8d"
+          },
+          {
+            "id": "control-C",
+            "length": 4,
+            "sha256": "93ccf25b78706fdc6a82f98b6b7a1ca441de9d5522fd27d7ed7913c19b6fb944"
+          },
+          {
+            "id": "control-D",
+            "length": 1,
+            "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+          }
+        ],
+        "submitted_sha256": "d01f0397444dc16a7e31d1036fd7052fb44ad70fd6c678585b2084d1959bc940",
+        "tool": {
+          "name": "CCTK",
+          "version": "2.0.2"
+        },
+        "coordinate_system": "1-based-inclusive-source-forward",
+        "score_semantics": "uncalibrated-model-score"
+      },
+      "casandra": {
+        "cassettes": [],
+        "genes": [],
+        "status": "not_requested"
+      },
+      "crisprleader": {
+        "contexts": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "detection": {
+        "accepted_categories": [
+          "Bona-fide",
+          "Possible"
+        ],
+        "array_count": 0,
+        "arrays": [],
+        "arrays_scope": "selected_for_analysis",
+        "arrays_truncated": false,
+        "category_counts": {},
+        "report_count": 0,
+        "report_schema_versions": {},
+        "score_semantics": {
+          "model_score_is_probability": false,
+          "note": "Raw model scores are not calibrated probabilities.",
+          "primary_interpretation": "category"
+        },
+        "selected_array_count": 0,
+        "selected_category_counts": {},
+        "source_count": 0,
+        "unselected_array_count": 0
+      },
+      "orientation": null,
+      "pipeline": {
+        "stages": {
+          "cctk": {
+            "duration_seconds": 0.915623,
+            "status": "completed"
+          }
+        }
+      },
+      "pipeline_status": "completed",
+      "protospacer": {
+        "available": false,
+        "matches": []
+      },
+      "provenance": {
+        "parameters": {
+          "bias_corrections": true,
+          "category_policy": "bona_fide_possible",
+          "leader_flank_length": 500,
+          "spacer_distance": 1,
+          "tool_options": {},
+          "tracr_model_type": "II"
+        },
+        "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+        "repositories": [
+          {
+            "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+            "display_name": "CasAndra",
+            "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git"
+          },
+          {
+            "commit": "ae7e97b210421224f9e15f84fac8db2f3b7ffd84",
+            "display_name": "CCTK",
+            "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git"
+          },
+          {
+            "commit": "369241d16a724eca487a65fd791340cb13122bde",
+            "display_name": "evOr",
+            "repository": "https://github.com/Alexander-Mitrofanov/evOr.git"
+          },
+          {
+            "commit": "ca225a2a3be38e7dee917b483d2d4e2732be4318",
+            "display_name": "CRISPRtracrRNA-v3",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git"
+          },
+          {
+            "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+            "display_name": "CRISPRidentify-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git"
+          },
+          {
+            "commit": "5051d07ab827356792d6a954308ddc5157bd623e",
+            "display_name": "CRISPRleader-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git"
+          },
+          {
+            "commit": "b1990e3fa08b435d12539419387599d9f08fe375",
+            "display_name": "CRISPRmap-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git"
+          },
+          {
+            "commit": "eb26716becfc6c991039aac0db5a7c16d41d1332",
+            "display_name": "CRISPRrepeat",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git"
+          },
+          {
+            "commit": "0e495166486273c9a130556ee640c713497de5bd",
+            "display_name": "CRISPRspacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git"
+          },
+          {
+            "commit": "29727e2456d3d71ffda96ee27f54d13cf50a3023",
+            "display_name": "RepeatTyper",
+            "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git"
+          },
+          {
+            "commit": "f11ee0d85c706237c3d215bf21703933cd1f8037",
+            "display_name": "SpacePHARER",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git"
+          },
+          {
+            "commit": "87993c9f928fc7893cbc4c9f98df9341e39ffe56",
+            "display_name": "SpacerPlacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git"
+          }
+        ],
+        "tool_versions": {
+          "CCTK": "2.0.2",
+          "CRISPRidentify-v2": "2.3.2",
+          "CRISPRleader-v2": "2.0.0a1",
+          "CRISPRloci integration": "0.13.1",
+          "CRISPRmap-v2": "2.1.0a2",
+          "CRISPRrepeat": "1.0.1",
+          "CRISPRspacer": "0.3.1",
+          "CRISPRtracrRNA-v3": "3.0.0",
+          "CasAndra": "0.3.0.dev2",
+          "RepeatTyper": "2.0.1",
+          "SpacePHARER": "2.1.1",
+          "SpacerPlacer": "1.0.1.post3",
+          "evOr": "1.0.3"
+        }
+      },
+      "reconstruction": null,
+      "repeat_map": {
+        "available": false,
+        "results": []
+      },
+      "repeat_type": {
+        "available": false,
+        "results": []
+      },
+      "repeats": {
+        "instances": [],
+        "status": "not_requested"
+      },
+      "schema_version": "1.0.0",
+      "spacer_association": {
+        "associations": [],
+        "available": false
+      },
+      "tracrrna": {
+        "candidates": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "viral_search": {
+        "available": false,
+        "candidate_viruses": [],
+        "matches": [],
+        "queries": []
+      },
+      "warnings": [
+        "Bundle file omitted because it is empty: logs/cctk.stdout.log",
+        "Bundle file omitted because it is empty: logs/cctk.stderr.log",
+        "Worker log omitted because it contained a private path: attempt-001.stdout.log",
+        "Worker log omitted because it was empty: attempt-001.stderr.log"
+      ]
+    }
+  },
+  "schema": {
+    "name": "crisprloci.web-example",
+    "version": "1.0.0"
+  }
+}

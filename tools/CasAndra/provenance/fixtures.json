@@ -1,0 +1,34 @@
+{
+  "tests/fixtures/policies/margin10.json": {
+    "sha256": "50dbcedda9683d8a881940095c400a1a0abff84ebc3764018a431f62dd23dbca",
+    "source": "NAR web server publication/production_successor_v5_2026-09-19/runtime/bundles_v2/margin10/protein/specificity/repair_policy.json"
+  },
+  "tests/fixtures/policies/v3.json": {
+    "sha256": "6e33876e26bb680ab6b227102915b2ca115f5b4e2af1b0fb0c1e8cff62b8969d",
+    "source": "NAR web server publication/production_successor_v5_2026-09-19/runtime/bundles_v2/v3/protein/specificity/repair_policy.json"
+  },
+  "tests/fixtures/specificity/evidence/intersection_predictions.jsonl": {
+    "sha256": "f83b6bee9eb08b6d9fd185a09a5f78b4460cacb5f6ef2a2b0000d18a1b8c5b0b",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/evidence/intersection_predictions.jsonl"
+  },
+  "tests/fixtures/specificity/evidence/new_auxiliary_hits.jsonl": {
+    "sha256": "27da77a1fb9a26e8b0e4ba46b2722b271f75771702f5f5f780db56fff503f047",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/evidence/new_auxiliary_hits.jsonl"
+  },
+  "tests/fixtures/specificity/evidence/ordered_hits.jsonl": {
+    "sha256": "42347f29664034aa5afc1606dc74eeeb101cd5ce9deaffab86cd8c0bfe92365f",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/evidence/ordered_hits.jsonl"
+  },
+  "tests/fixtures/specificity/evidence/previous_auxiliary_hits.jsonl": {
+    "sha256": "98c23ebefe36f1d8ec8db7256d412c403857adb32ecdd22f28afdfc01c5596bf",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/evidence/previous_auxiliary_hits.jsonl"
+  },
+  "tests/fixtures/specificity/evidence/production_predictions.jsonl": {
+    "sha256": "27b1a501f8cfbda6caaca1c2a9cb5fc878af8c13c0b3150b89866d788f154c6d",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/evidence/production_predictions.jsonl"
+  },
+  "tests/fixtures/specificity/input.jsonl": {
+    "sha256": "ef34c0451d154aa0cc0aaf9f19ce384b2dc4f26b136a7cf0bfa4eedd581f494b",
+    "source": "NAR web server publication/false_positive_repair_v3/checks/wrapper_smoke/input.jsonl"
+  }
+}

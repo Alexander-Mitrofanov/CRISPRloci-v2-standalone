@@ -1,0 +1,26 @@
+{
+  "accuracy_not_estimated": true,
+  "hyperparameters": {
+    "class_weight": "balanced",
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "n_estimators": 500
+  },
+  "missing_feature_cassettes": [
+    "JAISVX010000005.1|42197..42497|JAISVX010000005.1_42197_42497|JAISVX010000005.1:36914-50814",
+    "JBJTUB010000049.1|3236..5407|MFM7389249.1|JBJTUB010000049.1:1-5946",
+    "NZ_CM003139.1.1319041-1320859|CRISPR|NZ_CM003139.1:1313708-1338547",
+    "NZ_CP019791.1.3437957-3438107|CRISPR|NZ_CP019791.1:3424601-3453820"
+  ],
+  "model_id": "casandra-kira-2026-09-15-full-v1-architecture",
+  "random_seed": 20250731,
+  "role": "deployment_refit_not_evaluation_model",
+  "source_cassettes": 721,
+  "source_dataset_sha256": "08cd666591f21e802faf977229f26e40e5c56172e0cf3efbd9766d0fcf52a9e4",
+  "training_cassettes": 717,
+  "training_splits": [
+    "train",
+    "validation",
+    "test"
+  ]
+}

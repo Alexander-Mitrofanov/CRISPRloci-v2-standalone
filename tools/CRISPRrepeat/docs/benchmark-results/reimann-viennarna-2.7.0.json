@@ -1,0 +1,619 @@
+{
+  "schema": {
+    "name": "CRISPRrepeat-published-benchmark",
+    "version": "1.0.0"
+  },
+  "created_at_utc": "2026-09-27T15:52:05.927616+00:00",
+  "tool": {
+    "name": "CRISPRrepeat",
+    "version": "1.0.0"
+  },
+  "runtime": {
+    "python": "3.12.7",
+    "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39"
+  },
+  "fixture_sha256": "01af0f61c4ea4a4c8d4ed4fd83c501d5eb4585beae1ed5f5a1103d9049500fbd",
+  "script_sha256": "8037f264b30a29c95169f14576f018e3c4e0f02c63377e1ba6a3e00823bdf416",
+  "source": {
+    "citation": "Reimann et al. (2017), Structural constraints and enzymatic promiscuity in the Cas6-dependent generation of crRNAs, Nucleic Acids Research 45:915\u2013925",
+    "doi": "10.1093/nar/gkw786",
+    "url": "https://doi.org/10.1093/nar/gkw786",
+    "supplement_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5741207/supplementaryFiles",
+    "supplement_file": "gkw786_supp.docx",
+    "supplement_sha256": "707a800dbfd82c357dce3208ab9ff61ef54e0896daae108cf896a63bfc15ca7e",
+    "retrieved_date": "2026-09-27",
+    "sequence_table": "Supplemental Table S2",
+    "experimental_labels_table": "Supplemental Table S3",
+    "organism": "Synechocystis sp. PCC 6803",
+    "experimental_scope": "Published in vitro cleavage observations; related fragments from one study, not independent validation across CRISPR systems.",
+    "extraction": "RNA letters copied from Table S2; whitespace and cleavage slashes removed. Initial synthetic GG retained. Repeat intervals located by exact match to the 37-nt repeat.",
+    "published_score_label": "Accuracy of structural repeats",
+    "published_score_scope": "Author-reported model scores, distinct from experimental cleavage labels and from the current implementation's inferred-MFE support."
+  },
+  "molecule": "RNA",
+  "orientation": "transcribed_5prime_to_3prime",
+  "coordinate_system": "zero-based half-open within the complete experimental transcript",
+  "repeat_sequence": "GUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAAC",
+  "cases": [
+    {
+      "id": "CRISPR2_VIII_190nt",
+      "length": 190,
+      "rna_sequence": "GGUGAUAACGGGAUGCCAGCCCUAAAGGUGAUGAGCGGGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACCGUUAUCCGGCAAAGAAACCACACUACUAAGCUCGACAAGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACUGGGCCGGGCGCGAGUUGUCCUCCUGUCCGAGGCCCCAC",
+      "rna_sha256": "d4c04d2d394b2186949a6f0476877daac3e87a9a92ec0237e1b34c938aa4b8a3",
+      "purpose": "Identical repeats in one transcript with different context support and cleavage outcomes.",
+      "runs": [
+        {
+          "preset": "default_local",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 150,
+            "span": 80,
+            "no_lonely_pairs": false
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 150,
+            "span": 80,
+            "requested_window": 150,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R6",
+              "start": 38,
+              "end": 75,
+              "experimental_cleavage": {
+                "Cas6-1": false,
+                "Cas6-2a": false
+              },
+              "published_model_score": 0.004,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9596725565672972,
+                "context_pair_support": 0.5600921628370721,
+                "support_change": -0.39958039373022514
+              }
+            },
+            {
+              "id": "R7",
+              "start": 114,
+              "end": 151,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.9773,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9596725565672972,
+                "context_pair_support": 0.9478926029214516,
+                "support_change": -0.011779953645845609
+              }
+            }
+          ]
+        },
+        {
+          "preset": "local_no_lonely_pairs",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 150,
+            "span": 80,
+            "no_lonely_pairs": true
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 150,
+            "span": 80,
+            "requested_window": 150,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R6",
+              "start": 38,
+              "end": 75,
+              "experimental_cleavage": {
+                "Cas6-1": false,
+                "Cas6-2a": false
+              },
+              "published_model_score": 0.004,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.5600637441352296,
+                "support_change": -0.4011168808102169
+              }
+            },
+            {
+              "id": "R7",
+              "start": 114,
+              "end": 151,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.9773,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.9519081398447753,
+                "support_change": -0.009272485100671246
+              }
+            }
+          ]
+        },
+        {
+          "preset": "whole_fragment_no_lonely_pairs",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 190,
+            "span": 80,
+            "no_lonely_pairs": true
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 190,
+            "span": 80,
+            "requested_window": 190,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R6",
+              "start": 38,
+              "end": 75,
+              "experimental_cleavage": {
+                "Cas6-1": false,
+                "Cas6-2a": false
+              },
+              "published_model_score": 0.004,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.0049783170709506675,
+                "support_change": -0.9562023078744959
+              }
+            },
+            {
+              "id": "R7",
+              "start": 114,
+              "end": 151,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.9773,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.9447940141408562,
+                "support_change": -0.016386610804590362
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CRISPR2_I_121nt",
+      "length": 121,
+      "rna_sequence": "GGCGGGGCUUGGGGGGUUGGAGUCCCCGCCCCCGUGGUGGGAGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACUGUGAGUUGCAUAAUGCCUCCUAAUGGCUGUUGGACUCAUAA",
+      "rna_sha256": "e2834559fdcb0201dc5ce6f588649bf791e1706cc0f122bc6c896982e4c6658d",
+      "purpose": "Challenge case: experimentally cleaved despite low published structural support.",
+      "runs": [
+        {
+          "preset": "default_local",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 150,
+            "span": 80,
+            "no_lonely_pairs": false
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 121,
+            "span": 80,
+            "requested_window": 150,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R3",
+              "start": 42,
+              "end": 79,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.0001,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9596725565672972,
+                "context_pair_support": 0.00021326402785260887,
+                "support_change": -0.9594592925394446
+              }
+            }
+          ]
+        },
+        {
+          "preset": "local_no_lonely_pairs",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 150,
+            "span": 80,
+            "no_lonely_pairs": true
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 121,
+            "span": 80,
+            "requested_window": 150,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R3",
+              "start": 42,
+              "end": 79,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.0001,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.00020252137304366315,
+                "support_change": -0.9609781035724029
+              }
+            }
+          ]
+        },
+        {
+          "preset": "whole_fragment_no_lonely_pairs",
+          "model": {
+            "engine": "ViennaRNA",
+            "version": "2.7.0",
+            "parameters": "RNA_Turner2004",
+            "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "dangles": 2,
+            "salt_molar": 1.021,
+            "minimum_loop_size": 3,
+            "allow_GU": true,
+            "pseudoknots": false,
+            "numeric_cutoff": 0.0,
+            "pair_coordinates": "zero-based indices; maximum span includes endpoints",
+            "temperature": 37.0,
+            "window": 121,
+            "span": 80,
+            "no_lonely_pairs": true
+          },
+          "effective_context": {
+            "status": "completed",
+            "method": "local_window_pair_averages",
+            "window": 121,
+            "span": 80,
+            "requested_window": 121,
+            "requested_span": 80
+          },
+          "isolated_mfe_structure": "................(((((....))))).......",
+          "isolated_mfe_kcal_mol": -9.199999809265137,
+          "repeats": [
+            {
+              "id": "R3",
+              "start": 42,
+              "end": 79,
+              "experimental_cleavage": {
+                "Cas6-1": true,
+                "Cas6-2a": true
+              },
+              "published_model_score": 0.0001,
+              "computed_comparison": {
+                "status": "completed",
+                "reason": null,
+                "motif_origin": "isolated_mfe_hypothesis",
+                "motif_pairs": [
+                  [
+                    16,
+                    29
+                  ],
+                  [
+                    17,
+                    28
+                  ],
+                  [
+                    18,
+                    27
+                  ],
+                  [
+                    19,
+                    26
+                  ],
+                  [
+                    20,
+                    25
+                  ]
+                ],
+                "isolated_pair_support": 0.9611806249454465,
+                "context_pair_support": 0.00020252137304366315,
+                "support_change": -0.9609781035724029
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Two related substrates from one study are a reproduction exercise, not held-out biological validation.",
+    "Current pair sets come from isolated MFE hypotheses, not a recovered curated motif from the paper.",
+    "ViennaRNA 2.7.0 and these scores differ from the published model; exact published scores are not reproduced.",
+    "Experimental cleavage labels and published model scores are retained separately from current predictions.",
+    "No cleavage threshold, classification or universal accuracy estimate is produced.",
+    "Changing the window can materially change support even for the same sequence and maximum pair span.",
+    "Elapsed time describes this small run and is not a scalability benchmark."
+  ],
+  "elapsed_seconds": 0.23568689300736878
+}

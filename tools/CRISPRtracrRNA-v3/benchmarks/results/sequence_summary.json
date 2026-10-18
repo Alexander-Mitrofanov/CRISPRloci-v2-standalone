@@ -1,0 +1,343 @@
+{
+  "catalog_records": 304447,
+  "screened_records": 303212,
+  "not_assessed_records": 1235,
+  "by_model_pool": {
+    "II": {
+      "unique_sequences": 42320,
+      "recognized_unique_sequences": 15124,
+      "shuffles_with_any_hit": 532
+    },
+    "V": {
+      "unique_sequences": 185,
+      "recognized_unique_sequences": 112,
+      "shuffles_with_any_hit": 0
+    }
+  },
+  "scan_input_sha256": {
+    "benchmarks/final/sequences/II/cm-input.fasta": "5f20d95c6d9e2a873dfccf4b36d801d9e965118b6b003de90e8c643c61aa6e10",
+    "benchmarks/final/sequences/V/cm-input.fasta": "4b50f003828cabe0e5f46721ea09d57668126ce025d566fb9a7253dd76417f71",
+    "benchmarks/final/additional_sequences/II/cm-input.fasta": "53f36a51e88cb2ccd8ae4afc6bcadc4e3002776914d35ff23b65342d9ff481db",
+    "benchmarks/final/additional_sequences/V/cm-input.fasta": "033064150d504230fe9434d11d2453fe38b6679a6104b02191ad8aeb1e3fe714",
+    "benchmarks/final/chyou_sequences/II/cm-input.fasta": "5f129b95e750ea9a61911b0b4968ed70ed5fa1920670797eaf215cc00869059a",
+    "benchmarks/final/briner_sequences/II/cm-input.fasta": "16fd42c36240fa475acfe00aeb7e232c0708f93c384a4f96d631878c077cf964"
+  },
+  "scan_batches": [
+    "final/sequences",
+    "final/additional_sequences",
+    "final/chyou_sequences",
+    "final/briner_sequences"
+  ],
+  "by_source": {
+    "chylinski2014": {
+      "records": 63,
+      "screened": 63,
+      "detected": 37,
+      "not_assessed": 0
+    },
+    "gasiunas2020": {
+      "records": 79,
+      "screened": 79,
+      "detected": 50,
+      "not_assessed": 0
+    },
+    "faure2018_reference": {
+      "records": 215,
+      "screened": 215,
+      "detected": 160,
+      "not_assessed": 0
+    },
+    "faure2018_barrangou": {
+      "records": 144,
+      "screened": 144,
+      "detected": 123,
+      "not_assessed": 0
+    },
+    "faure2018_predicted": {
+      "records": 3353,
+      "screened": 3352,
+      "detected": 2353,
+      "not_assessed": 1
+    },
+    "alexander2023": {
+      "records": 96,
+      "screened": 96,
+      "detected": 29,
+      "not_assessed": 0
+    },
+    "ziemann2025": {
+      "records": 112,
+      "screened": 112,
+      "detected": 112,
+      "not_assessed": 0
+    },
+    "dooley2021_predicted": {
+      "records": 41741,
+      "screened": 41741,
+      "detected": 13056,
+      "not_assessed": 0
+    },
+    "atlas2025_predicted": {
+      "records": 258031,
+      "screened": 256797,
+      "detected": 119197,
+      "not_assessed": 1234
+    },
+    "cas12f2026_components": {
+      "records": 14,
+      "screened": 14,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "rfam_RF02348_seed": {
+      "records": 37,
+      "screened": 37,
+      "detected": 37,
+      "not_assessed": 0
+    },
+    "chyou2019_predicted": {
+      "records": 521,
+      "screened": 521,
+      "detected": 169,
+      "not_assessed": 0
+    },
+    "briner2014": {
+      "records": 41,
+      "screened": 41,
+      "detected": 41,
+      "not_assessed": 0
+    }
+  },
+  "by_subtype": {
+    "II": {
+      "records": 42681,
+      "screened": 42681,
+      "detected": 13501,
+      "not_assessed": 0
+    },
+    "II-B": {
+      "records": 41,
+      "screened": 41,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "II-A": {
+      "records": 255746,
+      "screened": 255746,
+      "detected": 119831,
+      "not_assessed": 0
+    },
+    "II-C": {
+      "records": 740,
+      "screened": 740,
+      "detected": 318,
+      "not_assessed": 0
+    },
+    "V-B": {
+      "records": 8,
+      "screened": 8,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "unknown": {
+      "records": 3747,
+      "screened": 3747,
+      "detected": 1601,
+      "not_assessed": 0
+    },
+    "V-E": {
+      "records": 2,
+      "screened": 2,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "I-B": {
+      "records": 115,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 115
+    },
+    "V-A": {
+      "records": 63,
+      "screened": 63,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "V-K_V1": {
+      "records": 91,
+      "screened": 91,
+      "detected": 91,
+      "not_assessed": 0
+    },
+    "V-K_V2": {
+      "records": 21,
+      "screened": 21,
+      "detected": 21,
+      "not_assessed": 0
+    },
+    "I-C": {
+      "records": 687,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 687
+    },
+    "I-F": {
+      "records": 29,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 29
+    },
+    "III-D": {
+      "records": 9,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 9
+    },
+    "III-B": {
+      "records": 8,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 8
+    },
+    "I-F_T": {
+      "records": 2,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 2
+    },
+    "I-E": {
+      "records": 90,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 90
+    },
+    "III-A": {
+      "records": 223,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 223
+    },
+    "I-G": {
+      "records": 9,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 9
+    },
+    "V-F": {
+      "records": 24,
+      "screened": 24,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "V-F1": {
+      "records": 48,
+      "screened": 48,
+      "detected": 1,
+      "not_assessed": 0
+    },
+    "VI": {
+      "records": 18,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 18
+    },
+    "I-A": {
+      "records": 37,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 37
+    },
+    "I-D": {
+      "records": 2,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 2
+    },
+    "IV-A1": {
+      "records": 5,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 5
+    },
+    "III-C": {
+      "records": 1,
+      "screened": 0,
+      "detected": 0,
+      "not_assessed": 1
+    }
+  },
+  "by_evidence": {
+    "published_mixed_prediction_and_validation": {
+      "records": 63,
+      "screened": 63,
+      "detected": 37,
+      "not_assessed": 0
+    },
+    "biochemically_supported_system": {
+      "records": 79,
+      "screened": 79,
+      "detected": 50,
+      "not_assessed": 0
+    },
+    "published_reference_compilation": {
+      "records": 400,
+      "screened": 400,
+      "detected": 324,
+      "not_assessed": 0
+    },
+    "computational_prediction": {
+      "records": 303646,
+      "screened": 302411,
+      "detected": 134775,
+      "not_assessed": 1235
+    },
+    "active_system_with_engineered_sgRNA": {
+      "records": 96,
+      "screened": 96,
+      "detected": 29,
+      "not_assessed": 0
+    },
+    "computational_prediction_with_selected_expression_validation": {
+      "records": 112,
+      "screened": 112,
+      "detected": 112,
+      "not_assessed": 0
+    },
+    "published_tracr_component_of_engineered_sgRNA": {
+      "records": 14,
+      "screened": 14,
+      "detected": 0,
+      "not_assessed": 0
+    },
+    "curated_family_seed_region": {
+      "records": 37,
+      "screened": 37,
+      "detected": 37,
+      "not_assessed": 0
+    }
+  },
+  "by_source_subset": {
+    "not_applicable": {
+      "records": 303926,
+      "screened": 302691,
+      "detected": 135195,
+      "not_assessed": 1235
+    },
+    "conservative_single_prediction": {
+      "records": 275,
+      "screened": 275,
+      "detected": 116,
+      "not_assessed": 0
+    },
+    "multiple_prediction_alternative": {
+      "records": 246,
+      "screened": 246,
+      "detected": 53,
+      "not_assessed": 0
+    }
+  },
+  "recognition_rule": "Reported hit on + strand, >=20 nt model span; not full boundary recovery",
+  "controls": "One mononucleotide shuffle per unique sequence, seed20260926; any strand hit. Not biological negatives. First batch retained for duplicate hashes. RNG stream depends on pool membership/order: exact historical control counts require the retained cm-input.fasta files identified by the input hashes.",
+  "history": "Canonical exact major-type grouping. Initial raw summaries used startswith II/V, which also included III/VI. Retained hits are rejoined here; III/VI do not enter corrected denominators.",
+  "interpretation": "Recognition of predicted sequences measures model agreement; no universal biological sensitivity or precision estimate."
+}

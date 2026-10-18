@@ -1,0 +1,3 @@
+gcc -g -O -msse2 -o ../bin/fasta36 comp_mthr9.o	 work_thr2.o pthr_subs2.o compacc2_t.o   showbest.o build_ares.o re_getlib.o mshowalign2_t.o htime.o apam.o doinit.o init_fa.o drop_nfa.o wm_align.o calcons_fa.o scale_se.o karlin.o  lgetlib.o lgetaa_m.o c_dispn.o ncbl2_mlib.o lib_sel.o url_subs.o mrandom.o -lm /usr/lib/x86_64-linux-gnu/libz.so.1 -lpthread
+/usr/bin/ld: compacc2_t.o: in function `build_lib_db':
+/home/alex/CodexProjects/CRISPRtracrRNA/new_version/native/fasta36-seeded-20260927/fasta36-fasta-v36.3.8g/src/compacc2e.c:1564:(.text+0x31cb): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'

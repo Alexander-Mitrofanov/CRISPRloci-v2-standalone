@@ -1,0 +1,42 @@
+[
+  {
+    "path": "test_real_type_v_models_and_mo0/type-v/report.json",
+    "sha256": "27a7cf909784c23582bb0110f2d92f2f08ffa60d6211b6c42dda097981c9d428",
+    "summary": {
+      "sequence_count": 1,
+      "prediction_count": 1
+    }
+  },
+  {
+    "path": "test_real_zero_hit_report0/negative/report.json",
+    "sha256": "6bafcfddd83f08b1bd653a72052a627114c567bff6d3d0b1496bf20df3606a3a",
+    "summary": {
+      "sequence_count": 1,
+      "prediction_count": 0
+    }
+  },
+  {
+    "path": "test_real_complete_pipeline0/complete/report.json",
+    "sha256": "5cd25c8e1283c7c69ee5da47327dfa9c2fb526594a1a87db01bd816f5147ad8a",
+    "summary": {
+      "sequence_count": 1,
+      "prediction_count": 97
+    }
+  },
+  {
+    "path": "test_real_models_multifasta_an0/full/report.json",
+    "sha256": "def99873604afb16f2354d2af8b5580d702525f8bf50efd55424f5600dead37f",
+    "summary": {
+      "sequence_count": 1,
+      "prediction_count": 4
+    }
+  },
+  {
+    "path": "test_real_models_multifasta_an0/multi/report.json",
+    "sha256": "4aba54724359af39b3e2e12d6f1aeb9416621079ddda94913162fbc06a9bffa3",
+    "summary": {
+      "sequence_count": 2,
+      "prediction_count": 2
+    }
+  }
+]

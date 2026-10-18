@@ -1,0 +1,579 @@
+{
+  "analysis_mode": "context_extraction",
+  "arrays": [
+    {
+      "category": "Bona-fide",
+      "consensus_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965",
+      "metadata": {
+        "identify_original": {
+          "architecture": [
+            {
+              "index": 1,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 451,
+                "length": 30,
+                "start": 422
+              },
+              "type": "repeat"
+            },
+            {
+              "index": 1,
+              "sequence": "ACAGATCAAACTCCGGAAGGGTGATTGTAAATGG",
+              "source_interval": {
+                "end": 485,
+                "length": 34,
+                "start": 452
+              },
+              "type": "spacer"
+            },
+            {
+              "index": 2,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 515,
+                "length": 30,
+                "start": 486
+              },
+              "type": "repeat"
+            },
+            {
+              "index": 2,
+              "sequence": "TGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAG",
+              "source_interval": {
+                "end": 550,
+                "length": 35,
+                "start": 516
+              },
+              "type": "spacer"
+            },
+            {
+              "index": 3,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 580,
+                "length": 30,
+                "start": 551
+              },
+              "type": "repeat"
+            }
+          ],
+          "boundary_assessment": {
+            "alternative_relationships": [],
+            "assessment_id": "boundary-assessment-sha256:88c00453574cf09df318ca266150f3ecb9c93adea7650f76b1a36ed691d6eb18",
+            "coordinate_system": {
+              "empty_spacers": {
+                "indexing": 0,
+                "name": "zero_based_interbase",
+                "one_based_inclusive_interval": null,
+                "reference": "original_input_forward_strand",
+                "representation": "interbase_boundary"
+              },
+              "internal": {
+                "end_exclusive": true,
+                "indexing": 0,
+                "name": "zero_based_half_open",
+                "reference": "original_input_forward_strand"
+              },
+              "public_nonempty_intervals": {
+                "conversion": "public_start=internal_start+1; public_end=internal_end",
+                "end_inclusive": true,
+                "indexing": 1,
+                "name": "one_based_inclusive",
+                "reference": "original_input_forward_strand"
+              }
+            },
+            "dimensions": {
+              "occurrence_path": {
+                "alternative_geometry_ids": [],
+                "dimension": "occurrence_path",
+                "reason_codes": [],
+                "reported_geometry_role": "representative",
+                "representative_geometry_id": "boundary-geometry-sha256:43fadc94a2b41db91cc61b0f2f77e5d14dc72932e65ebc244d7ff5c5683fb994",
+                "selection_policy_id": null,
+                "status": "unassessed"
+              },
+              "repeat_phase": {
+                "alternative_geometry_ids": [],
+                "dimension": "repeat_phase",
+                "reason_codes": [],
+                "reported_geometry_role": "representative",
+                "representative_geometry_id": "boundary-geometry-sha256:43fadc94a2b41db91cc61b0f2f77e5d14dc72932e65ebc244d7ff5c5683fb994",
+                "selection_policy_id": null,
+                "status": "unassessed"
+              }
+            },
+            "integration_contract": {
+              "alternative_relationship_semantics": "explicit_labeled_source_valid_geometries_only",
+              "fuzzy_family_semantics": "shared_fuzzy_family_id_is_not_alternative_evidence",
+              "internal_coordinates": "zero_based_half_open",
+              "mutation_semantics": "pure_normalization_no_candidate_category_or_pipeline_mutation",
+              "public_coordinates": "one_based_inclusive_for_nonempty_intervals_and_zero_based_interbase_for_empty_spacers",
+              "reported_geometry_semantics": "representative_never_implicitly_exact",
+              "source_hash_scope": "uppercase_sequence",
+              "source_requirement": "complete_original_input_forward_strand_sequence_is_required",
+              "status_semantics": [
+                "unassessed_means_no_explicit_alternative_was_adjudicated",
+                "policy_selected_means_policy_chose_the_representative_not_exact",
+                "ambiguous_means_one_or_more_explicit_alternatives_remain"
+              ]
+            },
+            "reported_geometry": {
+              "exact_boundary_claim": false,
+              "geometry_id": "boundary-geometry-sha256:43fadc94a2b41db91cc61b0f2f77e5d14dc72932e65ebc244d7ff5c5683fb994",
+              "repeat_count": 3,
+              "repeats": [
+                {
+                  "interval": {
+                    "internal_0based_half_open": {
+                      "end": 451,
+                      "start": 421
+                    },
+                    "length": 30,
+                    "public_1based_inclusive": {
+                      "end": 451,
+                      "start": 422
+                    }
+                  },
+                  "ordinal": 1,
+                  "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+                  "sha256": "26d7f0f54508a4aadd14484d0a75e552d81f4e8a79149cef7a312feaac909c17",
+                  "sha256_scope": "uppercase_source_slice"
+                },
+                {
+                  "interval": {
+                    "internal_0based_half_open": {
+                      "end": 515,
+                      "start": 485
+                    },
+                    "length": 30,
+                    "public_1based_inclusive": {
+                      "end": 515,
+                      "start": 486
+                    }
+                  },
+                  "ordinal": 2,
+                  "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+                  "sha256": "26d7f0f54508a4aadd14484d0a75e552d81f4e8a79149cef7a312feaac909c17",
+                  "sha256_scope": "uppercase_source_slice"
+                },
+                {
+                  "interval": {
+                    "internal_0based_half_open": {
+                      "end": 580,
+                      "start": 550
+                    },
+                    "length": 30,
+                    "public_1based_inclusive": {
+                      "end": 580,
+                      "start": 551
+                    }
+                  },
+                  "ordinal": 3,
+                  "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+                  "sha256": "26d7f0f54508a4aadd14484d0a75e552d81f4e8a79149cef7a312feaac909c17",
+                  "sha256_scope": "uppercase_source_slice"
+                }
+              ],
+              "role": "representative",
+              "source_interval": {
+                "internal_0based_half_open": {
+                  "end": 580,
+                  "start": 421
+                },
+                "length": 159,
+                "public_1based_inclusive": {
+                  "end": 580,
+                  "start": 422
+                }
+              },
+              "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+              "source_slice_sha256": "f62f33c43dd212a0387543a8fc54b5697a4301246fd24696aa2cd1ee7b171cdc",
+              "source_slice_sha256_scope": "uppercase_source_slice",
+              "spacer_count": 2,
+              "spacers": [
+                {
+                  "interval": {
+                    "internal_0based_half_open": {
+                      "end": 485,
+                      "start": 451
+                    },
+                    "length": 34,
+                    "public_1based_inclusive": {
+                      "end": 485,
+                      "start": 452
+                    }
+                  },
+                  "ordinal": 1,
+                  "sequence": "ACAGATCAAACTCCGGAAGGGTGATTGTAAATGG",
+                  "sha256": "53c944ab10213278f5ed6175c836e98b8c594513524be62a33397ac5812b8f3d",
+                  "sha256_scope": "uppercase_source_slice"
+                },
+                {
+                  "interval": {
+                    "internal_0based_half_open": {
+                      "end": 550,
+                      "start": 515
+                    },
+                    "length": 35,
+                    "public_1based_inclusive": {
+                      "end": 550,
+                      "start": 516
+                    }
+                  },
+                  "ordinal": 2,
+                  "sequence": "TGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAG",
+                  "sha256": "a31be9635fd505629aa0332eea91facaa69e77d6ca016e7ace888388169fff58",
+                  "sha256_scope": "uppercase_source_slice"
+                }
+              ]
+            },
+            "reported_geometry_role": "representative",
+            "schema": {
+              "name": "crispridentify.boundary_assessment",
+              "version": "1.0.0"
+            },
+            "source": {
+              "length": 1121,
+              "reference": "original_input_forward_strand",
+              "sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+              "sha256_scope": "uppercase_sequence"
+            }
+          },
+          "category": "Bona-fide",
+          "category_key": "bona-fide",
+          "category_position": 0,
+          "certainty_score": 0.7508878399378084,
+          "classification_basis": {
+            "coordinate_system": "zero_based_half_open",
+            "final_category_before_source_transactions": "Bona-fide",
+            "legacy_locus_key": [
+              218,
+              902
+            ],
+            "method": "model_score_band",
+            "raw_score_band": "score_at_least_0.75",
+            "structural_filter": {
+              "decision": "passed",
+              "predicate_results": [
+                {
+                  "predicate": "minimum_repeat_count",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "minimum_mean_repeat_length",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "maximum_mean_repeat_length",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "maximum_mean_spacer_length",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "minimum_mean_spacer_length",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "maximum_long_spacer_burden",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "identical_spacer_burden",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "spacer_terminal_dominance",
+                  "status": "insufficient_sample"
+                },
+                {
+                  "predicate": "repeat_terminal_columns",
+                  "status": "passed"
+                },
+                {
+                  "predicate": "overall_repeat_consistency",
+                  "status": "passed"
+                }
+              ],
+              "structural_valid": true,
+              "terminal_dominance": {
+                "begin_dominance": 0.5,
+                "end_dominance": 1.0,
+                "maximum_allowed_dominance": 0.8,
+                "minimum_sample_size": 5,
+                "nonempty_spacer_count": 2,
+                "reason": "terminal_dominance_not_authorized_at_small_n",
+                "status": "insufficient_sample"
+              }
+            }
+          },
+          "consensus_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+          "feature_sets": [
+            {
+              "features": [
+                {
+                  "name": "repeat_len",
+                  "value": 30.0
+                },
+                {
+                  "name": "number_repeats",
+                  "value": 3.0
+                },
+                {
+                  "name": "repeat_similarity",
+                  "value": 1.0
+                },
+                {
+                  "name": "at_richness",
+                  "value": 0.7666666666666667
+                },
+                {
+                  "name": "avg_spacer_len",
+                  "value": 34.5
+                },
+                {
+                  "name": "spacer_similarity",
+                  "value": 0.33678928924442886
+                },
+                {
+                  "name": "number_mismatches",
+                  "value": 0.0
+                },
+                {
+                  "name": "spacer_evenness",
+                  "value": -0.0
+                },
+                {
+                  "name": "mfe_score",
+                  "value": -2.0
+                },
+                {
+                  "name": "blast_score_1",
+                  "value": 17.7
+                }
+              ],
+              "model_index": 1
+            }
+          ],
+          "id": "CRISPR-422-580-bf1",
+          "legacy_interval_key": [
+            218,
+            902
+          ],
+          "non_deleted_spacer_count": 2,
+          "orientation": {
+            "label": "Forward",
+            "status": "computed",
+            "strand": "+"
+          },
+          "repeat_count": 3,
+          "repeats": [
+            {
+              "index": 1,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 451,
+                "length": 30,
+                "start": 422
+              }
+            },
+            {
+              "index": 2,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 515,
+                "length": 30,
+                "start": 486
+              }
+            },
+            {
+              "index": 3,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "source_interval": {
+                "end": 580,
+                "length": 30,
+                "start": 551
+              }
+            }
+          ],
+          "source_interval": {
+            "end": 580,
+            "length": 159,
+            "start": 422
+          },
+          "source_sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAATACAGATCAAACTCCGGAAGGGTGATTGTAAATGGCGTTTTAGTTACTTATTGTGAAATGTAAATTGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAGCGTTTTAGTTACTTATTGTGAAATGTAAAT",
+          "spacer_count": 2,
+          "spacer_deletion_count": 0,
+          "spacer_deletions": [],
+          "spacers": [
+            {
+              "index": 1,
+              "sequence": "ACAGATCAAACTCCGGAAGGGTGATTGTAAATGG",
+              "source_interval": {
+                "end": 485,
+                "length": 34,
+                "start": 452
+              }
+            },
+            {
+              "index": 2,
+              "sequence": "TGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAG",
+              "source_interval": {
+                "end": 550,
+                "length": 35,
+                "start": 516
+              }
+            }
+          ],
+          "validation": {
+            "issues": [],
+            "method": "independent_original_sequence_slicing",
+            "source_reconstructed": true,
+            "status": "valid"
+          }
+        },
+        "orientation_is_supplied_evidence": true,
+        "sequence_frame": "input_forward_strand"
+      },
+      "segments": [
+        {
+          "end": 580,
+          "start": 421
+        }
+      ],
+      "source_id": "example_record_01",
+      "strand": "+",
+      "strand_constraint": false,
+      "terminal_repeats": [
+        {
+          "segments": [
+            {
+              "end": 451,
+              "start": 421
+            }
+          ],
+          "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT"
+        },
+        {
+          "segments": [
+            {
+              "end": 580,
+              "start": 550
+            }
+          ],
+          "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "anchor": {
+        "segments": [
+          {
+            "end": 451,
+            "start": 421
+          }
+        ],
+        "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT"
+      },
+      "array_id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965",
+      "consensus_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:left",
+      "metadata": {
+        "extraction_policy": "adjacent-window-excluding-focal-array",
+        "source_length": 1121,
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "topology": "unknown",
+        "window_is_biological_boundary": false
+      },
+      "observed_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "requested_length": 5000,
+      "segments": [
+        {
+          "end": 421,
+          "start": 0
+        }
+      ],
+      "sequence": "AGTAACTTAGTAGAGTTGCTGTTTTTTTGTTATCTGTCGACCTCGAGTAGCGTGAAAAATACCGGGGATCGACAGAAAGTTGTAAGTGGTTGGGGTGGAAGAAGTTTGGCGGTATTTGCTTGGGGAAATCTTCCGGATAAGAGGAGATTTTAGATGTTTTTTTGTAGGTCGACAGAAATAGCTCTTTGAGGTAAGATGGGAGTAAGAAGAAAAGTTAGTGGGTTTTAGTTACTTATTGTGAAATGTAAATACACAAATATGAAAAAACTTCTATTAAAAGCAATTCCATCCTGTTTTAGTTACTTATTGTGAAATGTAAATAAACCTATCACATTTAAGTATTTAGAGATTCCTAAAGTTTTAGTTACTTATTGTGAAATGTAAATGTAGTTTGCGAACGTTTAAAAACATAATTTGAAAA",
+      "side": "left",
+      "source_id": "example_record_01",
+      "strand": "+",
+      "truncated_reason": "unknown_topology_boundary"
+    },
+    {
+      "anchor": {
+        "segments": [
+          {
+            "end": 580,
+            "start": 550
+          }
+        ],
+        "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT"
+      },
+      "array_id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965",
+      "consensus_repeat": "ATTTACATTTCACAATAAGTAACTAAAACG",
+      "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:right",
+      "metadata": {
+        "extraction_policy": "adjacent-window-excluding-focal-array",
+        "source_length": 1121,
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "topology": "unknown",
+        "window_is_biological_boundary": false
+      },
+      "observed_repeat": "ATTTACATTTCACAATAAGTAACTAAAACG",
+      "requested_length": 5000,
+      "segments": [
+        {
+          "end": 1121,
+          "start": 580
+        }
+      ],
+      "sequence": "ACCCAATTAATGAGGGGTTTGTTTTTTGGAATTTATTTGCAAGGAATAATTATAACGGAAATAGATAATCCTATGTATAACAGGTTTTCATTTATATTTCATCTTAAGAAATTAAAACGAAAGTCATTACTTTTGGTTATTTTGCTGCTTCTGCATTTACCAATTCTGAATGATTGAATAAAACAATACTACACGCTATTGTTGTTTTCCAAAGGAACCAAATTTACATTTCACAATAAGTAACTAAAACGAAATTGTAAAATCTATATCCGTTGATTCAACAAAATTTACATTTCACAATAAGTAACTAAAACTTAATTTGATAGTCATAATTTATTTCCTCCTATTTTATTTACATTTCACAATAAGTAACTAAAATATAGAAAGGAGTTGATACAGTGAAGGATGTTTTAGATTTACATTTCACAATAAGTAACTAAAACTTATAAACGACATTTTAGAAGCAGGAGTAGAAAAATTTACATTTCACAATAAGTAACTAAAACTTGTAACCCATCGCTGTCCCTTTGACAAAAATCGC",
+      "side": "right",
+      "source_id": "example_record_01",
+      "strand": "-",
+      "truncated_reason": "unknown_topology_boundary"
+    }
+  ],
+  "coordinate_system": "zero_based_half_open",
+  "effective_config": {
+    "flank_length": 5000,
+    "max_arrays": 10000,
+    "max_bases": 50000000,
+    "max_candidates": 20000,
+    "max_flank_length": 5000,
+    "policy_version": "leader-policy-v1",
+    "threads": 1,
+    "timeout_seconds": 120.0
+  },
+  "execution_status": "completed",
+  "predictions": [],
+  "provenance": {
+    "annotation_filename": "record-000001.arrays.json",
+    "created_at": "2026-09-27T15:42:20.366484+00:00",
+    "input_filename": "source.fasta"
+  },
+  "reference": null,
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "id": "example_record_01",
+      "length": 1121,
+      "sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+      "topology": "unknown",
+      "topology_provenance": null
+    }
+  ],
+  "tool": {
+    "name": "CRisprleader v2",
+    "version": "2.0.0a1"
+  },
+  "warnings": [
+    "Context extraction only: no scientific inference was performed.",
+    "Extracted windows are not inferred leader lengths or functional annotations."
+  ]
+}

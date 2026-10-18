@@ -1,0 +1,54 @@
+{
+  "historical_exact_equivalence": "failed",
+  "initial_default_metrics": {
+    "inputs": 79,
+    "complete": 79,
+    "candidate_count": 3397,
+    "bases": 1364763,
+    "candidates_per_mb": 2489.0768580332265,
+    "candidate_median": 12,
+    "candidate_p95": 192,
+    "candidate_max": 464,
+    "length_p95": 202,
+    "batch_wall_seconds": 346.4218403679988,
+    "short_admitted": 0,
+    "short_proposals": 0,
+    "mapped": 78,
+    "localized": 68,
+    "top_k": {
+      "1": 53,
+      "3": 61,
+      "5": 63,
+      "10": 64
+    },
+    "mrr": 0.7283666082366188,
+    "coverage90": 64
+  },
+  "Lsp2": {
+    "inputs_identical": {
+      "input.fasta": true,
+      "anti-search.fasta": true,
+      "repeats.fasta": true
+    },
+    "native_rows_historical": 7,
+    "native_rows_initial_new": 8,
+    "added_alignment_fields_excluding_evalue_bitscore": [
+      [
+        "repeat000000r",
+        "f000001.s000001",
+        "88.46",
+        "26",
+        "3",
+        "0",
+        "26",
+        "1",
+        "19880",
+        "19905"
+      ]
+    ],
+    "removed_alignment_fields_excluding_evalue_bitscore": [],
+    "old_native_output_sha256": "c5ed6e31de92c9dc94b6cd02ee6878dfe59127deb10e5de35d8d9e7d3f8baaa7",
+    "new_native_output_sha256": "ca132d14251d2fa17e8e12ba32b500976e393e6620120ec0d4189c38b0c49ce0"
+  },
+  "inference": "Difference occurs before IntaRNA. This inspection alone does not establish the stochastic mechanism; native RNG diagnosis pending."
+}

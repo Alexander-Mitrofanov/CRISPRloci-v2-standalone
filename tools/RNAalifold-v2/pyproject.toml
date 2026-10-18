@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "rnaalifold-v2"
+version = "1.0.1"
+description = "Bounded homologous RNA family alignment and comparative folding"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["ViennaRNA==2.7.0"]
+license = {file = "LICENSE"}
+[project.scripts]
+rnaalifold-v2 = "rna_family_tool.cli:main"
+[tool.setuptools.packages.find]
+include = ["rna_family_tool*"]
+
+[tool.setuptools.data-files]
+"share/rnaalifold-v2/licenses" = ["licenses/ViennaRNA-2.7.0-COPYING.txt", "licenses/MAFFT-core-license.txt"]

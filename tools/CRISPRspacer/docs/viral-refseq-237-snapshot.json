@@ -1,0 +1,156 @@
+{
+  "blast_distribution": {
+    "bytes": 296006458,
+    "sha256": "3888112d8207831aa47371d93583c601f058f88b5db22dc782438b039a3a411b"
+  },
+  "blast_version": "2.17.0+",
+  "bundle_bytes": 1343792830,
+  "content_sha256": "9966cb660457a77d8df63db38c59b3d3f7399bf964569adb5f3082be98ff32ad",
+  "implementation_commit": "c52c4e201822e62b6c294fd60b2418be2dfd0f43",
+  "native_integrity": "blastdbcheck -full passed with separate pinned taxonomy lookup",
+  "offline_service_account_verification": {
+    "counts": {
+      "accepted_hsps": 7,
+      "eligible_query_occurrences": 7,
+      "matched_query_occurrences": 7,
+      "matched_subject_accessions": 3,
+      "matched_unique_query_sequences": 6,
+      "query_occurrences": 9,
+      "raw_hsps": 8780,
+      "rejected_hsps": 8773,
+      "rejection_reasons": {
+        "ambiguous_subject": 0,
+        "gapped": 0,
+        "partial_query": 8773,
+        "too_many_substitutions": 5
+      },
+      "unique_eligible_query_sequences": 6
+    },
+    "network_interfaces": [
+      [
+        1,
+        "lo"
+      ]
+    ],
+    "reference_read_only": true,
+    "seconds": 10.253,
+    "service_account": "crisprsvc",
+    "standalone_software_read_only": true,
+    "status": "passed"
+  },
+  "record_count": 19625,
+  "recorded_at_utc": "2026-09-28T14:45:06.896794+00:00",
+  "reference_sha256": "46c121401692b68c7dc3dce910d159411b1f6ebbe257538159d6f2257bc99ecf",
+  "reproduction_note": "Native DB metadata can contain build dates. Rebuilding preserves source/content identity; reference.json hash need not be byte-identical across paths or builds.",
+  "schema": "crisprspacer.vm-viral-provisioning/1",
+  "scope": "Complete viral RefSeq genomic nucleotide inventory from release237, including phages; records are not species counts.",
+  "search_verification": {
+    "query_fixture": "VM-only derived reference intervals; not a biological benchmark",
+    "reference_sha256": "46c121401692b68c7dc3dce910d159411b1f6ebbe257538159d6f2257bc99ecf",
+    "reference_validation": "passed",
+    "searches": [
+      {
+        "counts": {
+          "accepted_hsps": 7,
+          "eligible_query_occurrences": 7,
+          "matched_query_occurrences": 7,
+          "matched_subject_accessions": 3,
+          "matched_unique_query_sequences": 6,
+          "query_occurrences": 9,
+          "raw_hsps": 8780,
+          "rejected_hsps": 8773,
+          "rejection_reasons": {
+            "ambiguous_subject": 0,
+            "gapped": 0,
+            "partial_query": 8773,
+            "too_many_substitutions": 788
+          },
+          "unique_eligible_query_sequences": 6
+        },
+        "evidence_validation": "passed",
+        "known_source_matches_verified": 7,
+        "max_substitutions": 0,
+        "outcome": "matches",
+        "seconds": 9.026
+      },
+      {
+        "counts": {
+          "accepted_hsps": 7,
+          "eligible_query_occurrences": 7,
+          "matched_query_occurrences": 7,
+          "matched_subject_accessions": 3,
+          "matched_unique_query_sequences": 6,
+          "query_occurrences": 9,
+          "raw_hsps": 8780,
+          "rejected_hsps": 8773,
+          "rejection_reasons": {
+            "ambiguous_subject": 0,
+            "gapped": 0,
+            "partial_query": 8773,
+            "too_many_substitutions": 5
+          },
+          "unique_eligible_query_sequences": 6
+        },
+        "evidence_validation": "passed",
+        "known_source_matches_verified": 7,
+        "max_substitutions": 2,
+        "outcome": "matches",
+        "seconds": 8.856
+      }
+    ]
+  },
+  "source_download": {
+    "catalog": {
+      "bytes": 2277736,
+      "sha256": "556f217f54913a9ed5d54377a9b8badf8d03c61fdf6cd453f5b4531742aee946",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/release-catalog/release237.files.installed"
+    },
+    "created_at_utc": "2026-09-28T14:36:09Z",
+    "files": [
+      {
+        "bytes": 178194466,
+        "md5": "104124827b73be6bfd87af42596bf4be",
+        "name": "viral.1.1.genomic.fna.gz",
+        "sha256": "ca078cd39bd1a119b7453fadf141b7ecd640f353e4b8398584c6a5b85d1a6aa2",
+        "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.1.genomic.fna.gz"
+      }
+    ],
+    "plan_file": "plan.json",
+    "plan_sha256": "3e5d5b6c7b54cc02fb0169a486e61c4c0cbd689db4cfd9d7eb4bb48da3549afb",
+    "schema": {
+      "name": "crisprspacer.ncbi-viral-download",
+      "version": "1.0.0"
+    },
+    "source_release": "237",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/"
+  },
+  "source_release": "237",
+  "taxonomy_check_files": {
+    "taxdb.btd": {
+      "bytes": 176914596,
+      "sha256": "eca7658a010edb0eb1fff57a11ec674ad2f1990959a8386f1f22df3adfc99081"
+    },
+    "taxdb.bti": {
+      "bytes": 18486800,
+      "sha256": "5dc7cb4cfcb0e5027c637313ac550548fdd06ab9fd12d3b1f13f6183cf17206c"
+    },
+    "taxdb.tar.gz": {
+      "bytes": 65373022,
+      "sha256": "826a3c96637067dd05b22e24f6fa169840406620850a64a6a0f84a3c8b6ba845"
+    },
+    "taxdb.tar.gz.md5": {
+      "bytes": 47,
+      "sha256": "2003180a730a6bd0de4fe63af85f136ad0b1d0a931b4bcace8ccb35488a88da9"
+    },
+    "taxonomy4blast.sqlite3": {
+      "bytes": 98504704,
+      "sha256": "3f0f94a2b261f6fbff2e0621d5a6c1b9bacab6335784208dea3f5a139b863945"
+    }
+  },
+  "tool_version": "0.3.0",
+  "total_bases": 583708944,
+  "wheel": {
+    "bytes": 56770,
+    "sha256": "81b7075eec675c2301cea670d5018fd08b3688149f79c7c5d709d44b36efc3be"
+  }
+}

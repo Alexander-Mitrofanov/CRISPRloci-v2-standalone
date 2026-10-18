@@ -1,0 +1,15 @@
+{
+  "protein": "2\t80\t0.5\t0.09\t1\t4\t4\t1\t4\t4\t4M\n1\t70\t0.5\t0.01\t1\t4\t4\t1\t4\t4\t4M\n2\t60\t0.1\t0.0001\t1\t4\t4\t1\t4\t4\t4M\n99\t50\t0.1\t0.01\t1\t4\t4\t1\t4\t4\t4M\n4294967298\t40\t0.1\t0.01\t1\t4\t4\t1\t4\t4\t4M\n",
+  "nucleotide": "2\t90\t0.9\t0.0001\t1\t4\t4\t1\t4\t4\t4M\n1\t70\t0.75\t0.04\t1\t4\t4\t1\t4\t4\t4M\n2\t60\t0.25\t0.04\t1\t4\t4\t1\t4\t4\t4M\n",
+  "combined": "2\t80\t2.500E-01\t4.000E-02\t1\t4\t4\t1\t4\t4\t4M\n1\t70\t7.500E-01\t2.000E-02\t1\t4\t4\t1\t4\t4\t4M\n2\t60\t2.500E-01\t2.000E-03\t1\t4\t4\t1\t4\t4\t4M\n99\t50\t0.000E+00\t3.403E+38\t1\t4\t4\t1\t4\t4\t4M\n4294967298\t40\t0.000E+00\t3.403E+38\t1\t4\t4\t1\t4\t4\t4M\n\u0000",
+  "matches": "2\t20.01\t0.875\t0.02\n1\t10.02\t0.75\t-1\n99\t9\t0.5\t-1\n",
+  "alignments": "2\tq1\tgroup\ttarget2\t0.001\t1\t4\t4\t1\t4\tAA-A\tAACA\t0\tTTA\tNGG\n1\tq2\tgroup\ttarget1\t0.002\t4\t1\t4\t5\t8\tTTTT\tTTTT\t0\t-\t-\n2\tq3\tgroup\ttarget2\t0.003\t1\t4\t4\t9\t12\tCCCC\tCCCC\t0\tCC\t-\n",
+  "summaries": {
+    "0-0": "#group\ttarget2\t20.01\t2\n#group\ttarget1\t10.02\t1\n",
+    "0-1": "#group\ttarget2\t20.01\t0.02\t2\n#group\ttarget1\t10.02\t-1\t1\n",
+    "1-0": "#group\ttarget2\t20.01\t2\n>q1\ttarget2\t0.001\t1\t4\t1\t4\tTTA\tNGG\n>q3\ttarget2\t0.003\t1\t4\t9\t12\tCC\t-\n#group\ttarget1\t10.02\t1\n>q2\ttarget1\t0.002\t4\t1\t5\t8\t-\t-\n",
+    "1-1": "#group\ttarget2\t20.01\t0.02\t2\n>q1\ttarget2\t0.001\t1\t4\t1\t4\tTTA\tNGG\n>q3\ttarget2\t0.003\t1\t4\t9\t12\tCC\t-\n#group\ttarget1\t10.02\t-1\t1\n>q2\ttarget1\t0.002\t4\t1\t5\t8\t-\t-\n",
+    "2-0": "#group\ttarget2\t20.01\t2\n>q1\ttarget2\t0.001\t1\t4\t1\t4\tTTA\tNGG\nAA-A\nAACA\n>q3\ttarget2\t0.003\t1\t4\t9\t12\tCC\t-\nCCCC\nCCCC\n#group\ttarget1\t10.02\t1\n>q2\ttarget1\t0.002\t4\t1\t5\t8\t-\t-\nTTTT\nTTTT\n",
+    "2-1": "#group\ttarget2\t20.01\t0.02\t2\n>q1\ttarget2\t0.001\t1\t4\t1\t4\tTTA\tNGG\nAA-A\nAACA\n>q3\ttarget2\t0.003\t1\t4\t9\t12\tCC\t-\nCCCC\nCCCC\n#group\ttarget1\t10.02\t-1\t1\n>q2\ttarget1\t0.002\t4\t1\t5\t8\t-\t-\nTTTT\nTTTT\n"
+  }
+}

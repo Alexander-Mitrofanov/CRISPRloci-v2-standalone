@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  text-wrap: balance;
+}
+strong,
+b {
+  font-weight: 600;
+}
+p,
+li {
+  text-wrap: pretty;
+}
+[id$="-heading"],
+#analysis-form,
+.job-anchor,
+.example-anchor {
+  scroll-margin-top: 88px;
+}
+.site-shell {
+  overflow-x: clip;
+  overflow-y: visible;
+}

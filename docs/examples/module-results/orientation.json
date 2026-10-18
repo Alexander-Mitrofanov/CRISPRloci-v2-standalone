@@ -1,0 +1,63 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "orientation",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "order_semantics": "array-acquisition-order",
+    "history_semantics": "model-estimated",
+    "groups": [
+      {
+        "id": "group_1",
+        "members": [
+          {
+            "leaf": "ndprediction_bf",
+            "source_id": "ndprediction",
+            "array_id": "ndprediction-bf"
+          },
+          {
+            "leaf": "ndprediction_possible",
+            "source_id": "ndprediction",
+            "array_id": "ndprediction-possible"
+          }
+        ],
+        "orientation": {
+          "prediction": "ND",
+          "threshold": 5,
+          "input_ln_likelihood_bdm": -5.0,
+          "reverse_ln_likelihood_bdm": -4.0,
+          "input_minus_reverse_ln_likelihood_bdm": -1.0
+        },
+        "selected_hypothesis": "input",
+        "selection_basis": "unresolved_default",
+        "trees": {
+          "input": "(ndprediction_bf:1,ndprediction_possible:1);",
+          "reverse": "(ndprediction_possible:1,ndprediction_bf:1);"
+        },
+        "reconstruction": {
+          "ln_likelihood_bdm": -5.0,
+          "preferred_deletion_model": "BDM",
+          "reconstructed_insertions": 2,
+          "tree_length": 2.0
+        }
+      }
+    ],
+    "excluded_arrays": [
+      {
+        "source_id": "sample",
+        "array_id": "unknown",
+        "reason": "orientation_not_determined"
+      }
+    ],
+    "tree_policy": "estimated_separately",
+    "bias_policy": {
+      "alpha_requested": true,
+      "rho_requested": true,
+      "rho_failure": "fail",
+      "fallback_scope": "per_group_per_orientation"
+    }
+  }
+}

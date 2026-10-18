@@ -1,0 +1,6113 @@
+[
+  {
+    "label": "Lpn",
+    "default": {
+      "label": "Lpn",
+      "status": "complete",
+      "candidate_count": 10,
+      "detected": true,
+      "best_rank": 5,
+      "coverage": 0.9562043795620438,
+      "bases": 8655,
+      "elapsed_seconds": 3.956965,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 10
+      },
+      "admission_branches": {
+        "standard": 10
+      },
+      "evidence_classes": {
+        "sequence_duplex": 7,
+        "sequence_duplex_cm": 1,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000005",
+        "rank": 5,
+        "coverage": 0.9562043795620438,
+        "iou": 0.7043010752688172,
+        "genomic_start_error": -49,
+        "genomic_end_error": -6,
+        "branch": "standard"
+      },
+      "best_iou": 0.7043010752688172,
+      "candidates_per_mb": 1155.4015020219526
+    },
+    "experimental": {
+      "label": "Lpn",
+      "status": "complete",
+      "candidate_count": 10,
+      "detected": true,
+      "best_rank": 5,
+      "coverage": 0.9562043795620438,
+      "bases": 8655,
+      "elapsed_seconds": 4.165309,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 10
+      },
+      "admission_branches": {
+        "standard": 10
+      },
+      "evidence_classes": {
+        "sequence_duplex": 7,
+        "sequence_duplex_cm": 1,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000005",
+        "rank": 5,
+        "coverage": 0.9562043795620438,
+        "iou": 0.7043010752688172,
+        "genomic_start_error": -49,
+        "genomic_end_error": -6,
+        "branch": "standard"
+      },
+      "best_iou": 0.7043010752688172,
+      "candidates_per_mb": 1155.4015020219526
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Khu",
+    "default": {
+      "label": "Khu",
+      "status": "complete",
+      "candidate_count": 72,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 12480,
+      "elapsed_seconds": 11.119717,
+      "distinct_intervals": 36,
+      "origins": {
+        "anti_repeat": 72
+      },
+      "admission_branches": {
+        "standard": 72
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 14,
+        "sequence_duplex": 45,
+        "sequence_only": 11,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.6162162162162163,
+        "genomic_start_error": -65,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.6162162162162163,
+      "candidates_per_mb": 5769.2307692307695
+    },
+    "experimental": {
+      "label": "Khu",
+      "status": "complete",
+      "candidate_count": 72,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 12480,
+      "elapsed_seconds": 11.32568,
+      "distinct_intervals": 36,
+      "origins": {
+        "anti_repeat": 72
+      },
+      "admission_branches": {
+        "standard": 72
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 14,
+        "sequence_duplex": 45,
+        "sequence_only": 11,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.6162162162162163,
+        "genomic_start_error": -65,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.6162162162162163,
+      "candidates_per_mb": 5769.2307692307695
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ain",
+    "default": {
+      "label": "Ain",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8659,
+      "elapsed_seconds": 4.173444,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5966850828729282,
+        "genomic_start_error": -62,
+        "genomic_end_error": 11,
+        "branch": "standard"
+      },
+      "best_iou": 0.5966850828729282,
+      "candidates_per_mb": 923.8942141124841
+    },
+    "experimental": {
+      "label": "Ain",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8659,
+      "elapsed_seconds": 4.222954,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5966850828729282,
+        "genomic_start_error": -62,
+        "genomic_end_error": 11,
+        "branch": "standard"
+      },
+      "best_iou": 0.5966850828729282,
+      "candidates_per_mb": 923.8942141124841
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cgl",
+    "default": {
+      "label": "Cgl",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8681,
+      "elapsed_seconds": 4.285124,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 9,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6187845303867403,
+        "genomic_start_error": -62,
+        "genomic_end_error": 7,
+        "branch": "standard"
+      },
+      "best_iou": 0.6187845303867403,
+      "candidates_per_mb": 1382.3292247436932
+    },
+    "experimental": {
+      "label": "Cgl",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8681,
+      "elapsed_seconds": 4.329347,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 9,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6187845303867403,
+        "genomic_start_error": -62,
+        "genomic_end_error": 7,
+        "branch": "standard"
+      },
+      "best_iou": 0.6187845303867403,
+      "candidates_per_mb": 1382.3292247436932
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Esp1",
+    "default": {
+      "label": "Esp1",
+      "status": "complete",
+      "candidate_count": 32,
+      "detected": true,
+      "best_rank": 13,
+      "coverage": 1.0,
+      "bases": 15767,
+      "elapsed_seconds": 7.071295,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 32
+      },
+      "admission_branches": {
+        "standard": 32
+      },
+      "evidence_classes": {
+        "sequence_duplex": 26,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000030",
+        "rank": 13,
+        "coverage": 1.0,
+        "iou": 0.5833333333333334,
+        "genomic_start_error": -20,
+        "genomic_end_error": 55,
+        "branch": "standard"
+      },
+      "best_iou": 0.5833333333333334,
+      "candidates_per_mb": 2029.5554005200736
+    },
+    "experimental": {
+      "label": "Esp1",
+      "status": "complete",
+      "candidate_count": 32,
+      "detected": true,
+      "best_rank": 13,
+      "coverage": 1.0,
+      "bases": 15767,
+      "elapsed_seconds": 7.255168,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 32
+      },
+      "admission_branches": {
+        "standard": 32
+      },
+      "evidence_classes": {
+        "sequence_duplex": 26,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 4,
+      "rejections": {
+        "no_independent_regional_support": 4
+      },
+      "highest_ranked_match": {
+        "id": "candidate000030",
+        "rank": 13,
+        "coverage": 1.0,
+        "iou": 0.5833333333333334,
+        "genomic_start_error": -20,
+        "genomic_end_error": 55,
+        "branch": "standard"
+      },
+      "best_iou": 0.5833333333333334,
+      "candidates_per_mb": 2029.5554005200736
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Esp2",
+    "default": {
+      "label": "Esp2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 40301,
+      "elapsed_seconds": 6.162763,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex": 3,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 99.25312026996849
+    },
+    "experimental": {
+      "label": "Esp2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 40301,
+      "elapsed_seconds": 6.252156,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex": 3,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "candidates_per_mb": 99.25312026996849
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Fma",
+    "default": {
+      "label": "Fma",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8634,
+      "elapsed_seconds": 4.355688,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5901639344262295,
+        "genomic_start_error": -70,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5901639344262295,
+      "candidates_per_mb": 926.569376882094
+    },
+    "experimental": {
+      "label": "Fma",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8634,
+      "elapsed_seconds": 4.359455,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5901639344262295,
+        "genomic_start_error": -70,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5901639344262295,
+      "candidates_per_mb": 926.569376882094
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lce",
+    "default": {
+      "label": "Lce",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8622,
+      "elapsed_seconds": 4.962851,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6338797814207651,
+        "genomic_start_error": -63,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6338797814207651,
+      "candidates_per_mb": 1391.7884481558804
+    },
+    "experimental": {
+      "label": "Lce",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8622,
+      "elapsed_seconds": 4.960124,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6338797814207651,
+        "genomic_start_error": -63,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6338797814207651,
+      "candidates_per_mb": 1391.7884481558804
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lrh",
+    "default": {
+      "label": "Lrh",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13070,
+      "elapsed_seconds": 4.455512,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6906077348066298,
+        "genomic_start_error": -2,
+        "genomic_end_error": 54,
+        "branch": "standard"
+      },
+      "best_iou": 0.6906077348066298,
+      "candidates_per_mb": 612.088752869166
+    },
+    "experimental": {
+      "label": "Lrh",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13070,
+      "elapsed_seconds": 4.754628,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6906077348066298,
+        "genomic_start_error": -2,
+        "genomic_end_error": 54,
+        "branch": "standard"
+      },
+      "best_iou": 0.6906077348066298,
+      "candidates_per_mb": 612.088752869166
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lsp1",
+    "default": {
+      "label": "Lsp1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8739,
+      "elapsed_seconds": 3.695105,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6906077348066298,
+        "genomic_start_error": -2,
+        "genomic_end_error": 54,
+        "branch": "standard"
+      },
+      "best_iou": 0.6906077348066298,
+      "candidates_per_mb": 457.7182744021055
+    },
+    "experimental": {
+      "label": "Lsp1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8739,
+      "elapsed_seconds": 3.744723,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6906077348066298,
+        "genomic_start_error": -2,
+        "genomic_end_error": 54,
+        "branch": "standard"
+      },
+      "best_iou": 0.6906077348066298,
+      "candidates_per_mb": 457.7182744021055
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lsp2",
+    "default": {
+      "label": "Lsp2",
+      "status": "complete",
+      "candidate_count": 16,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 41358,
+      "elapsed_seconds": 7.043444,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 16
+      },
+      "admission_branches": {
+        "standard": 16
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 12,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000014",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6502732240437158,
+        "genomic_start_error": -5,
+        "genomic_end_error": 59,
+        "branch": "standard"
+      },
+      "best_iou": 0.6502732240437158,
+      "candidates_per_mb": 386.865902606509
+    },
+    "experimental": {
+      "label": "Lsp2",
+      "status": "complete",
+      "candidate_count": 16,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 41358,
+      "elapsed_seconds": 6.952192,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 16
+      },
+      "admission_branches": {
+        "standard": 16
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 12,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000014",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6502732240437158,
+        "genomic_start_error": -5,
+        "genomic_end_error": 59,
+        "branch": "standard"
+      },
+      "best_iou": 0.6502732240437158,
+      "candidates_per_mb": 386.865902606509
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Pac",
+    "default": {
+      "label": "Pac",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11789,
+      "elapsed_seconds": 4.674492,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6,
+        "sequence_duplex_terminator": 3,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.7315789473684211,
+        "genomic_start_error": -47,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.7315789473684211,
+      "candidates_per_mb": 1017.898040546272
+    },
+    "experimental": {
+      "label": "Pac",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11789,
+      "elapsed_seconds": 4.855547,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6,
+        "sequence_duplex_terminator": 3,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.7315789473684211,
+        "genomic_start_error": -47,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.7315789473684211,
+      "candidates_per_mb": 1017.898040546272
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tba",
+    "default": {
+      "label": "Tba",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8667,
+      "elapsed_seconds": 4.065058,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5274725274725275,
+        "genomic_start_error": -66,
+        "genomic_end_error": 20,
+        "branch": "standard"
+      },
+      "best_iou": 0.5274725274725275,
+      "candidates_per_mb": 923.0414214837891
+    },
+    "experimental": {
+      "label": "Tba",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8667,
+      "elapsed_seconds": 4.183506,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_anchored_interaction": 1,
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5274725274725275,
+        "genomic_start_error": -66,
+        "genomic_end_error": 20,
+        "branch": "standard"
+      },
+      "best_iou": 0.5274725274725275,
+      "candidates_per_mb": 923.0414214837891
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tde",
+    "default": {
+      "label": "Tde",
+      "status": "complete",
+      "candidate_count": 228,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 15633,
+      "elapsed_seconds": 25.117161,
+      "distinct_intervals": 114,
+      "origins": {
+        "anti_repeat": 228
+      },
+      "admission_branches": {
+        "standard": 228
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 120,
+        "sequence_duplex": 70,
+        "sequence_terminator": 38
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6373626373626373,
+        "genomic_start_error": -62,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6373626373626373,
+      "candidates_per_mb": 14584.532719247745
+    },
+    "experimental": {
+      "label": "Tde",
+      "status": "complete",
+      "candidate_count": 228,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 15633,
+      "elapsed_seconds": 25.116196,
+      "distinct_intervals": 114,
+      "origins": {
+        "anti_repeat": 228
+      },
+      "admission_branches": {
+        "standard": 228
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 120,
+        "sequence_duplex": 70,
+        "sequence_terminator": 38
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6373626373626373,
+        "genomic_start_error": -62,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6373626373626373,
+      "candidates_per_mb": 14584.532719247745
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tpu",
+    "default": {
+      "label": "Tpu",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40168,
+      "elapsed_seconds": 6.813587,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 1,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.574585635359116,
+        "genomic_start_error": -62,
+        "genomic_end_error": 15,
+        "branch": "standard"
+      },
+      "best_iou": 0.574585635359116,
+      "candidates_per_mb": 298.7452698665604
+    },
+    "experimental": {
+      "label": "Tpu",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40168,
+      "elapsed_seconds": 6.761692,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 1,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.574585635359116,
+        "genomic_start_error": -62,
+        "genomic_end_error": 15,
+        "branch": "standard"
+      },
+      "best_iou": 0.574585635359116,
+      "candidates_per_mb": 298.7452698665604
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Vpa",
+    "default": {
+      "label": "Vpa",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 29,
+      "coverage": 1.0,
+      "bases": 8626,
+      "elapsed_seconds": 8.537353,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex": 39,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 23
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 29,
+        "coverage": 1.0,
+        "iou": 0.5300546448087432,
+        "genomic_start_error": -65,
+        "genomic_end_error": 21,
+        "branch": "standard"
+      },
+      "best_iou": 0.5300546448087432,
+      "candidates_per_mb": 7419.42963134709
+    },
+    "experimental": {
+      "label": "Vpa",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 29,
+      "coverage": 1.0,
+      "bases": 8626,
+      "elapsed_seconds": 8.537521,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex": 39,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 23
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 29,
+        "coverage": 1.0,
+        "iou": 0.5300546448087432,
+        "genomic_start_error": -65,
+        "genomic_end_error": 21,
+        "branch": "standard"
+      },
+      "best_iou": 0.5300546448087432,
+      "candidates_per_mb": 7419.42963134709
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Efa",
+    "default": {
+      "label": "Efa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11631,
+      "elapsed_seconds": 4.655457,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 3,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5164835164835165,
+        "genomic_start_error": -4,
+        "genomic_end_error": 84,
+        "branch": "standard"
+      },
+      "best_iou": 0.5164835164835165,
+      "candidates_per_mb": 687.8170406671825
+    },
+    "experimental": {
+      "label": "Efa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11631,
+      "elapsed_seconds": 4.804369,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 3,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5164835164835165,
+        "genomic_start_error": -4,
+        "genomic_end_error": 84,
+        "branch": "standard"
+      },
+      "best_iou": 0.5164835164835165,
+      "candidates_per_mb": 687.8170406671825
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Eit",
+    "default": {
+      "label": "Eit",
+      "status": "complete",
+      "candidate_count": 84,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10291,
+      "elapsed_seconds": 10.470495,
+      "distinct_intervals": 42,
+      "origins": {
+        "anti_repeat": 84
+      },
+      "admission_branches": {
+        "standard": 84
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 42,
+        "sequence_only": 14,
+        "sequence_terminator": 10
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000082",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5,
+        "genomic_start_error": -4,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5,
+      "candidates_per_mb": 8162.472062967641
+    },
+    "experimental": {
+      "label": "Eit",
+      "status": "complete",
+      "candidate_count": 85,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10291,
+      "elapsed_seconds": 10.814308,
+      "distinct_intervals": 43,
+      "origins": {
+        "anti_repeat": 85
+      },
+      "admission_branches": {
+        "standard": 84,
+        "short_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_duplex_terminator": 17,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 42,
+        "sequence_only": 14,
+        "sequence_terminator": 10
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "candidate000082",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5,
+        "genomic_start_error": -4,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5,
+      "candidates_per_mb": 8259.644349431543
+    },
+    "added_candidates": 1,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lan",
+    "default": {
+      "label": "Lan",
+      "status": "complete",
+      "candidate_count": 9,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.5858585858585859,
+      "bases": 8670,
+      "elapsed_seconds": 4.297665,
+      "distinct_intervals": 5,
+      "origins": {
+        "covariance_model": 1,
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "genomic_cm_rescue": 1,
+        "standard": 8
+      },
+      "evidence_classes": {
+        "cm_only": 1,
+        "sequence_duplex": 3,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 1,
+        "coverage": 0.5858585858585859,
+        "iou": 0.5858585858585859,
+        "genomic_start_error": 1,
+        "genomic_end_error": -40,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.5858585858585859,
+      "candidates_per_mb": 1038.0622837370242
+    },
+    "experimental": {
+      "label": "Lan",
+      "status": "complete",
+      "candidate_count": 10,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8670,
+      "elapsed_seconds": 4.472224,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 9,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "genomic_cm_rescue": 1,
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm": 1,
+        "cm_only": 1,
+        "sequence_duplex": 3,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5625,
+        "genomic_start_error": -76,
+        "genomic_end_error": 1,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.5858585858585859,
+      "candidates_per_mb": 1153.4025374855826
+    },
+    "added_candidates": 1,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lmo",
+    "default": {
+      "label": "Lmo",
+      "status": "complete",
+      "candidate_count": 16,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8664,
+      "elapsed_seconds": 5.138885,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 16
+      },
+      "admission_branches": {
+        "standard": 16
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5792349726775956,
+        "genomic_start_error": -72,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5792349726775956,
+      "candidates_per_mb": 1846.7220683287164
+    },
+    "experimental": {
+      "label": "Lmo",
+      "status": "complete",
+      "candidate_count": 16,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8664,
+      "elapsed_seconds": 5.172603,
+      "distinct_intervals": 8,
+      "origins": {
+        "anti_repeat": 16
+      },
+      "admission_branches": {
+        "standard": 16
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5792349726775956,
+        "genomic_start_error": -72,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5792349726775956,
+      "candidates_per_mb": 1846.7220683287164
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sag1",
+    "default": {
+      "label": "Sag1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40501,
+      "elapsed_seconds": 5.804001,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5497382198952879,
+        "genomic_start_error": -82,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.5497382198952879,
+      "candidates_per_mb": 98.76299350633317
+    },
+    "experimental": {
+      "label": "Sag1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40501,
+      "elapsed_seconds": 6.095408,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_anchored_interaction": 2,
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5497382198952879,
+        "genomic_start_error": -82,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.5497382198952879,
+      "candidates_per_mb": 98.76299350633317
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sag2",
+    "default": {
+      "label": "Sag2",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8560,
+      "elapsed_seconds": 7.273513,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 38,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5235602094240838,
+        "genomic_start_error": -81,
+        "genomic_end_error": 10,
+        "branch": "standard"
+      },
+      "best_iou": 0.5235602094240838,
+      "candidates_per_mb": 5140.186915887851
+    },
+    "experimental": {
+      "label": "Sag2",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8560,
+      "elapsed_seconds": 7.593798,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 38,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_anchored_interaction": 2,
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5235602094240838,
+        "genomic_start_error": -81,
+        "genomic_end_error": 10,
+        "branch": "standard"
+      },
+      "best_iou": 0.5235602094240838,
+      "candidates_per_mb": 5140.186915887851
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sdy",
+    "default": {
+      "label": "Sdy",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 12097,
+      "elapsed_seconds": 4.962114,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000010",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.489010989010989,
+        "genomic_start_error": -4,
+        "genomic_end_error": 89,
+        "branch": "standard"
+      },
+      "best_iou": 0.489010989010989,
+      "candidates_per_mb": 991.9814830123171
+    },
+    "experimental": {
+      "label": "Sdy",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 12097,
+      "elapsed_seconds": 5.186138,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000010",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.489010989010989,
+        "genomic_start_error": -4,
+        "genomic_end_error": 89,
+        "branch": "standard"
+      },
+      "best_iou": 0.489010989010989,
+      "candidates_per_mb": 991.9814830123171
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Seq1",
+    "default": {
+      "label": "Seq1",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8648,
+      "elapsed_seconds": 4.860083,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 2,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5136612021857924,
+        "genomic_start_error": -84,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5136612021857924,
+      "candidates_per_mb": 1387.604070305273
+    },
+    "experimental": {
+      "label": "Seq1",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8648,
+      "elapsed_seconds": 4.968002,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 2,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5136612021857924,
+        "genomic_start_error": -84,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5136612021857924,
+      "candidates_per_mb": 1387.604070305273
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Seq2",
+    "default": {
+      "label": "Seq2",
+      "status": "complete",
+      "candidate_count": 40,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 9999,
+      "elapsed_seconds": 7.17199,
+      "distinct_intervals": 20,
+      "origins": {
+        "anti_repeat": 40
+      },
+      "admission_branches": {
+        "standard": 40
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 28,
+        "sequence_duplex_terminator": 6,
+        "sequence_only": 2,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5138121546961326,
+        "genomic_start_error": -85,
+        "genomic_end_error": 3,
+        "branch": "standard"
+      },
+      "best_iou": 0.5138121546961326,
+      "candidates_per_mb": 4000.4000400040004
+    },
+    "experimental": {
+      "label": "Seq2",
+      "status": "complete",
+      "candidate_count": 40,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 9999,
+      "elapsed_seconds": 7.12076,
+      "distinct_intervals": 20,
+      "origins": {
+        "anti_repeat": 40
+      },
+      "admission_branches": {
+        "standard": 40
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 28,
+        "sequence_duplex_terminator": 6,
+        "sequence_only": 2,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5138121546961326,
+        "genomic_start_error": -85,
+        "genomic_end_error": 3,
+        "branch": "standard"
+      },
+      "best_iou": 0.5138121546961326,
+      "candidates_per_mb": 4000.4000400040004
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sga",
+    "default": {
+      "label": "Sga",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 18681,
+      "elapsed_seconds": 12.290662,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 3,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000010",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5054945054945055,
+        "genomic_start_error": -7,
+        "genomic_end_error": 83,
+        "branch": "standard"
+      },
+      "best_iou": 0.5054945054945055,
+      "candidates_per_mb": 642.3638991488679
+    },
+    "experimental": {
+      "label": "Sga",
+      "status": "complete",
+      "candidate_count": 13,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 18681,
+      "elapsed_seconds": 12.466995,
+      "distinct_intervals": 7,
+      "origins": {
+        "anti_repeat": 13
+      },
+      "admission_branches": {
+        "standard": 12,
+        "short_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 3,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_cm": 1,
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "candidate000010",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5054945054945055,
+        "genomic_start_error": -7,
+        "genomic_end_error": 83,
+        "branch": "standard"
+      },
+      "best_iou": 0.5054945054945055,
+      "candidates_per_mb": 695.8942240779402
+    },
+    "added_candidates": 1,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Smu",
+    "default": {
+      "label": "Smu",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 12128,
+      "elapsed_seconds": 4.345654,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4972677595628415,
+        "genomic_start_error": -5,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972677595628415,
+      "candidates_per_mb": 329.81530343007915
+    },
+    "experimental": {
+      "label": "Smu",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 12128,
+      "elapsed_seconds": 4.38496,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4972677595628415,
+        "genomic_start_error": -5,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972677595628415,
+      "candidates_per_mb": 329.81530343007915
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sra",
+    "default": {
+      "label": "Sra",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40433,
+      "elapsed_seconds": 6.413426,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5,
+        "genomic_start_error": -4,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5,
+      "candidates_per_mb": 197.85818514579674
+    },
+    "experimental": {
+      "label": "Sra",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40433,
+      "elapsed_seconds": 6.364198,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000006",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5,
+        "genomic_start_error": -4,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5,
+      "candidates_per_mb": 197.85818514579674
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bni",
+    "default": {
+      "label": "Bni",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40830,
+      "elapsed_seconds": 12.549098,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 38,
+        "sequence_only": 6,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000063",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4791666666666667,
+        "genomic_start_error": -96,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4791666666666667,
+      "candidates_per_mb": 1567.4748959098702
+    },
+    "experimental": {
+      "label": "Bni",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40830,
+      "elapsed_seconds": 12.45035,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 38,
+        "sequence_only": 6,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000063",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4791666666666667,
+        "genomic_start_error": -96,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4791666666666667,
+      "candidates_per_mb": 1567.4748959098702
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ece",
+    "default": {
+      "label": "Ece",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 43080,
+      "elapsed_seconds": 8.169367,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.450261780104712,
+        "genomic_start_error": -4,
+        "genomic_end_error": 101,
+        "branch": "standard"
+      },
+      "best_iou": 0.450261780104712,
+      "candidates_per_mb": 278.55153203342616
+    },
+    "experimental": {
+      "label": "Ece",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 43080,
+      "elapsed_seconds": 8.218825,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 8,
+        "sequence_duplex_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.450261780104712,
+        "genomic_start_error": -4,
+        "genomic_end_error": 101,
+        "branch": "standard"
+      },
+      "best_iou": 0.450261780104712,
+      "candidates_per_mb": 278.55153203342616
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Edo",
+    "default": {
+      "label": "Edo",
+      "status": "complete",
+      "candidate_count": 56,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8599,
+      "elapsed_seconds": 9.801675,
+      "distinct_intervals": 28,
+      "origins": {
+        "anti_repeat": 56
+      },
+      "admission_branches": {
+        "standard": 56
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 10,
+        "sequence_duplex": 44
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4479166666666667,
+        "genomic_start_error": -4,
+        "genomic_end_error": 102,
+        "branch": "standard"
+      },
+      "best_iou": 0.4479166666666667,
+      "candidates_per_mb": 6512.38516106524
+    },
+    "experimental": {
+      "label": "Edo",
+      "status": "complete",
+      "candidate_count": 56,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8599,
+      "elapsed_seconds": 9.793601,
+      "distinct_intervals": 28,
+      "origins": {
+        "anti_repeat": 56
+      },
+      "admission_branches": {
+        "standard": 56
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 10,
+        "sequence_duplex": 44
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4479166666666667,
+        "genomic_start_error": -4,
+        "genomic_end_error": 102,
+        "branch": "standard"
+      },
+      "best_iou": 0.4479166666666667,
+      "candidates_per_mb": 6512.38516106524
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Fho",
+    "default": {
+      "label": "Fho",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13701,
+      "elapsed_seconds": 4.554929,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 3,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000007",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4631578947368421,
+        "genomic_start_error": -98,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4631578947368421,
+      "candidates_per_mb": 583.8989854755127
+    },
+    "experimental": {
+      "label": "Fho",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13701,
+      "elapsed_seconds": 4.607405,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 3,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000007",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4631578947368421,
+        "genomic_start_error": -98,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4631578947368421,
+      "candidates_per_mb": 583.8989854755127
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Mga",
+    "default": {
+      "label": "Mga",
+      "status": "complete",
+      "candidate_count": 108,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11600,
+      "elapsed_seconds": 13.679041,
+      "distinct_intervals": 54,
+      "origins": {
+        "anti_repeat": 108
+      },
+      "admission_branches": {
+        "standard": 108
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 4,
+        "sequence_duplex": 83,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 17
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4708994708994709,
+        "genomic_start_error": -7,
+        "genomic_end_error": 93,
+        "branch": "standard"
+      },
+      "best_iou": 0.4708994708994709,
+      "candidates_per_mb": 9310.344827586207
+    },
+    "experimental": {
+      "label": "Mga",
+      "status": "complete",
+      "candidate_count": 108,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11600,
+      "elapsed_seconds": 13.730032,
+      "distinct_intervals": 54,
+      "origins": {
+        "anti_repeat": 108
+      },
+      "admission_branches": {
+        "standard": 108
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 4,
+        "sequence_duplex": 83,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 17
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4708994708994709,
+        "genomic_start_error": -7,
+        "genomic_end_error": 93,
+        "branch": "standard"
+      },
+      "best_iou": 0.4708994708994709,
+      "candidates_per_mb": 9310.344827586207
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Mse",
+    "default": {
+      "label": "Mse",
+      "status": "complete",
+      "candidate_count": 464,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 90129,
+      "elapsed_seconds": 55.271788,
+      "distinct_intervals": 232,
+      "origins": {
+        "anti_repeat": 464
+      },
+      "admission_branches": {
+        "standard": 464
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 8,
+        "sequence_duplex_terminator": 39,
+        "sequence_duplex_cm": 2,
+        "sequence_duplex": 382,
+        "sequence_terminator": 7,
+        "sequence_only": 26
+      },
+      "accepted_arrays": 3,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000103",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5025906735751295,
+        "genomic_start_error": -90,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.5025906735751295,
+      "candidates_per_mb": 5148.176502568541
+    },
+    "experimental": {
+      "label": "Mse",
+      "status": "complete",
+      "candidate_count": 464,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 90129,
+      "elapsed_seconds": 54.81498,
+      "distinct_intervals": 232,
+      "origins": {
+        "anti_repeat": 464
+      },
+      "admission_branches": {
+        "standard": 464
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 8,
+        "sequence_duplex_terminator": 39,
+        "sequence_duplex_cm": 2,
+        "sequence_duplex": 382,
+        "sequence_terminator": 7,
+        "sequence_only": 26
+      },
+      "accepted_arrays": 3,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000103",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5025906735751295,
+        "genomic_start_error": -90,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.5025906735751295,
+      "candidates_per_mb": 5148.176502568541
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sgo",
+    "default": {
+      "label": "Sgo",
+      "status": "complete",
+      "candidate_count": 100,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13239,
+      "elapsed_seconds": 13.658263,
+      "distinct_intervals": 50,
+      "origins": {
+        "anti_repeat": 100
+      },
+      "admission_branches": {
+        "standard": 100
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 22,
+        "sequence_duplex": 76
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000099",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4583333333333333,
+        "genomic_start_error": -100,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4583333333333333,
+      "candidates_per_mb": 7553.440592189742
+    },
+    "experimental": {
+      "label": "Sgo",
+      "status": "complete",
+      "candidate_count": 100,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13239,
+      "elapsed_seconds": 13.758676,
+      "distinct_intervals": 50,
+      "origins": {
+        "anti_repeat": 100
+      },
+      "admission_branches": {
+        "standard": 100
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 22,
+        "sequence_duplex": 76
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000099",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4583333333333333,
+        "genomic_start_error": -100,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.4583333333333333,
+      "candidates_per_mb": 7553.440592189742
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sma2",
+    "default": {
+      "label": "Sma2",
+      "status": "complete",
+      "candidate_count": 145,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10591,
+      "elapsed_seconds": 18.606633,
+      "distinct_intervals": 73,
+      "origins": {
+        "anti_repeat": 144,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "standard": 144,
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_terminator": 23,
+        "sequence_duplex": 99,
+        "cm_only": 1,
+        "sequence_only": 13,
+        "sequence_terminator": 7
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000143",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.46875,
+        "genomic_start_error": -98,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.46875,
+      "candidates_per_mb": 13690.869606269474
+    },
+    "experimental": {
+      "label": "Sma2",
+      "status": "complete",
+      "candidate_count": 145,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10591,
+      "elapsed_seconds": 18.656798,
+      "distinct_intervals": 73,
+      "origins": {
+        "anti_repeat": 144,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "standard": 144,
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex_terminator": 23,
+        "sequence_duplex": 99,
+        "cm_only": 1,
+        "sequence_only": 13,
+        "sequence_terminator": 7
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000143",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.46875,
+        "genomic_start_error": -98,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.46875,
+      "candidates_per_mb": 13690.869606269474
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssa",
+    "default": {
+      "label": "Ssa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10321,
+      "elapsed_seconds": 5.060476,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 3,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4375,
+        "genomic_start_error": -9,
+        "genomic_end_error": 99,
+        "branch": "standard"
+      },
+      "best_iou": 0.4375,
+      "candidates_per_mb": 775.1186900494138
+    },
+    "experimental": {
+      "label": "Ssa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10321,
+      "elapsed_seconds": 5.108083,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 3,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4375,
+        "genomic_start_error": -9,
+        "genomic_end_error": 99,
+        "branch": "standard"
+      },
+      "best_iou": 0.4375,
+      "candidates_per_mb": 775.1186900494138
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssi",
+    "default": {
+      "label": "Ssi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 8621,
+      "elapsed_seconds": 4.908422,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 1,
+        "sequence_duplex": 4,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000007",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.46875,
+        "genomic_start_error": -94,
+        "genomic_end_error": 8,
+        "branch": "standard"
+      },
+      "best_iou": 0.46875,
+      "candidates_per_mb": 927.9665932026447
+    },
+    "experimental": {
+      "label": "Ssi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 8621,
+      "elapsed_seconds": 4.958667,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 1,
+        "sequence_duplex": 4,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000007",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.46875,
+        "genomic_start_error": -94,
+        "genomic_end_error": 8,
+        "branch": "standard"
+      },
+      "best_iou": 0.46875,
+      "candidates_per_mb": 927.9665932026447
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssu",
+    "default": {
+      "label": "Ssu",
+      "status": "complete",
+      "candidate_count": 104,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10969,
+      "elapsed_seconds": 13.0215,
+      "distinct_intervals": 52,
+      "origins": {
+        "anti_repeat": 104
+      },
+      "admission_branches": {
+        "standard": 104
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 5,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 78,
+        "sequence_duplex_terminator": 6,
+        "sequence_only": 14
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000103",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4270833333333333,
+        "genomic_start_error": -101,
+        "genomic_end_error": 9,
+        "branch": "standard"
+      },
+      "best_iou": 0.4270833333333333,
+      "candidates_per_mb": 9481.265384264747
+    },
+    "experimental": {
+      "label": "Ssu",
+      "status": "complete",
+      "candidate_count": 104,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 10969,
+      "elapsed_seconds": 13.468126,
+      "distinct_intervals": 52,
+      "origins": {
+        "anti_repeat": 104
+      },
+      "admission_branches": {
+        "standard": 104
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 5,
+        "sequence_cm_terminator": 1,
+        "sequence_duplex": 78,
+        "sequence_duplex_terminator": 6,
+        "sequence_only": 14
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000103",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4270833333333333,
+        "genomic_start_error": -101,
+        "genomic_end_error": 9,
+        "branch": "standard"
+      },
+      "best_iou": 0.4270833333333333,
+      "candidates_per_mb": 9481.265384264747
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sth1A",
+    "default": {
+      "label": "Sth1A",
+      "status": "complete",
+      "candidate_count": 128,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13252,
+      "elapsed_seconds": 16.918293,
+      "distinct_intervals": 64,
+      "origins": {
+        "anti_repeat": 128
+      },
+      "admission_branches": {
+        "standard": 128
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 110
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4375,
+        "genomic_start_error": -9,
+        "genomic_end_error": 99,
+        "branch": "standard"
+      },
+      "best_iou": 0.4375,
+      "candidates_per_mb": 9658.919408391186
+    },
+    "experimental": {
+      "label": "Sth1A",
+      "status": "complete",
+      "candidate_count": 128,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13252,
+      "elapsed_seconds": 17.066938,
+      "distinct_intervals": 64,
+      "origins": {
+        "anti_repeat": 128
+      },
+      "admission_branches": {
+        "standard": 128
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 110
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4375,
+        "genomic_start_error": -9,
+        "genomic_end_error": 99,
+        "branch": "standard"
+      },
+      "best_iou": 0.4375,
+      "candidates_per_mb": 9658.919408391186
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tsp",
+    "default": {
+      "label": "Tsp",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 9406,
+      "elapsed_seconds": 9.800324,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 43,
+        "sequence_duplex_cm": 2,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.418848167539267,
+        "genomic_start_error": -4,
+        "genomic_end_error": 107,
+        "branch": "standard"
+      },
+      "best_iou": 0.418848167539267,
+      "candidates_per_mb": 6804.167552625983
+    },
+    "experimental": {
+      "label": "Tsp",
+      "status": "complete",
+      "candidate_count": 64,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 9406,
+      "elapsed_seconds": 9.906442,
+      "distinct_intervals": 32,
+      "origins": {
+        "anti_repeat": 64
+      },
+      "admission_branches": {
+        "standard": 64
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 16,
+        "sequence_duplex": 43,
+        "sequence_duplex_cm": 2,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.418848167539267,
+        "genomic_start_error": -4,
+        "genomic_end_error": 107,
+        "branch": "standard"
+      },
+      "best_iou": 0.418848167539267,
+      "candidates_per_mb": 6804.167552625983
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bok",
+    "default": {
+      "label": "Bok",
+      "status": "complete",
+      "candidate_count": 20,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 7131,
+      "elapsed_seconds": 4.66249,
+      "distinct_intervals": 10,
+      "origins": {
+        "anti_repeat": 20
+      },
+      "admission_branches": {
+        "standard": 20
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 5,
+        "sequence_duplex": 7,
+        "sequence_terminator": 5,
+        "sequence_only": 3
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000017",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.8691099476439791,
+        "genomic_start_error": -19,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.8691099476439791,
+      "candidates_per_mb": 2804.6557285093254
+    },
+    "experimental": {
+      "label": "Bok",
+      "status": "complete",
+      "candidate_count": 20,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 7131,
+      "elapsed_seconds": 4.670257,
+      "distinct_intervals": 10,
+      "origins": {
+        "anti_repeat": 20
+      },
+      "admission_branches": {
+        "standard": 20
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 5,
+        "sequence_duplex": 7,
+        "sequence_terminator": 5,
+        "sequence_only": 3
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000017",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.8691099476439791,
+        "genomic_start_error": -19,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.8691099476439791,
+      "candidates_per_mb": 2804.6557285093254
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cco",
+    "default": {
+      "label": "Cco",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 22966,
+      "elapsed_seconds": 5.663373,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.5638297872340425,
+        "genomic_start_error": -16,
+        "genomic_end_error": 66,
+        "branch": "standard"
+      },
+      "best_iou": 0.5638297872340425,
+      "candidates_per_mb": 348.3410258643212
+    },
+    "experimental": {
+      "label": "Cco",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 1.0,
+      "bases": 22966,
+      "elapsed_seconds": 5.661039,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 3,
+        "coverage": 1.0,
+        "iou": 0.5638297872340425,
+        "genomic_start_error": -16,
+        "genomic_end_error": 66,
+        "branch": "standard"
+      },
+      "best_iou": 0.5638297872340425,
+      "candidates_per_mb": 348.3410258643212
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cpe",
+    "default": {
+      "label": "Cpe",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 41493,
+      "elapsed_seconds": 7.170615,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 9,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000009",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4789473684210526,
+        "genomic_start_error": -94,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.4789473684210526,
+      "candidates_per_mb": 289.20540814113224
+    },
+    "experimental": {
+      "label": "Cpe",
+      "status": "complete",
+      "candidate_count": 12,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 41493,
+      "elapsed_seconds": 7.217402,
+      "distinct_intervals": 6,
+      "origins": {
+        "anti_repeat": 12
+      },
+      "admission_branches": {
+        "standard": 12
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 9,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000009",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4789473684210526,
+        "genomic_start_error": -94,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.4789473684210526,
+      "candidates_per_mb": 289.20540814113224
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Dde",
+    "default": {
+      "label": "Dde",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8576,
+      "elapsed_seconds": 4.523411,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.7287234042553191,
+        "genomic_start_error": -2,
+        "genomic_end_error": 49,
+        "branch": "standard"
+      },
+      "best_iou": 0.7287234042553191,
+      "candidates_per_mb": 932.8358208955224
+    },
+    "experimental": {
+      "label": "Dde",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8576,
+      "elapsed_seconds": 4.57074,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.7287234042553191,
+        "genomic_start_error": -2,
+        "genomic_end_error": 49,
+        "branch": "standard"
+      },
+      "best_iou": 0.7287234042553191,
+      "candidates_per_mb": 932.8358208955224
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghc2",
+    "default": {
+      "label": "Ghc2",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": null,
+      "best_rank": null,
+      "coverage": null,
+      "bases": 10399,
+      "elapsed_seconds": 3.699544,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 0.0
+    },
+    "experimental": {
+      "label": "Ghc2",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": null,
+      "best_rank": null,
+      "coverage": null,
+      "bases": 10399,
+      "elapsed_seconds": 3.548437,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "candidates_per_mb": 0.0
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy3",
+    "default": {
+      "label": "Ghy3",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 8659,
+      "elapsed_seconds": 4.630454,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.45789473684210524,
+        "genomic_start_error": -5,
+        "genomic_end_error": 98,
+        "branch": "standard"
+      },
+      "best_iou": 0.45789473684210524,
+      "candidates_per_mb": 923.8942141124841
+    },
+    "experimental": {
+      "label": "Ghy3",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 8659,
+      "elapsed_seconds": 4.672534,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2,
+        "no_anchored_interaction": 1
+      },
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.45789473684210524,
+        "genomic_start_error": -5,
+        "genomic_end_error": 98,
+        "branch": "standard"
+      },
+      "best_iou": 0.45789473684210524,
+      "candidates_per_mb": 923.8942141124841
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy4",
+    "default": {
+      "label": "Ghy4",
+      "status": "complete",
+      "candidate_count": 84,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 7982,
+      "elapsed_seconds": 9.579832,
+      "distinct_intervals": 42,
+      "origins": {
+        "anti_repeat": 84
+      },
+      "admission_branches": {
+        "standard": 84
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 50,
+        "sequence_duplex_terminator": 3,
+        "sequence_terminator": 3,
+        "sequence_only": 26
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5238095238095238,
+        "genomic_start_error": -4,
+        "genomic_end_error": 86,
+        "branch": "standard"
+      },
+      "best_iou": 0.5238095238095238,
+      "candidates_per_mb": 10523.678276121273
+    },
+    "experimental": {
+      "label": "Ghy4",
+      "status": "complete",
+      "candidate_count": 84,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 7982,
+      "elapsed_seconds": 9.694266,
+      "distinct_intervals": 42,
+      "origins": {
+        "anti_repeat": 84
+      },
+      "admission_branches": {
+        "standard": 84
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 50,
+        "sequence_duplex_terminator": 3,
+        "sequence_terminator": 3,
+        "sequence_only": 26
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_anchored_interaction": 1,
+        "no_independent_regional_support": 2
+      },
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5238095238095238,
+        "genomic_start_error": -4,
+        "genomic_end_error": 86,
+        "branch": "standard"
+      },
+      "best_iou": 0.5238095238095238,
+      "candidates_per_mb": 10523.678276121273
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Gsp",
+    "default": {
+      "label": "Gsp",
+      "status": "complete",
+      "candidate_count": 80,
+      "detected": true,
+      "best_rank": 5,
+      "coverage": 1.0,
+      "bases": 8369,
+      "elapsed_seconds": 10.768103,
+      "distinct_intervals": 40,
+      "origins": {
+        "anti_repeat": 80
+      },
+      "admission_branches": {
+        "standard": 80
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 66,
+        "sequence_terminator": 2,
+        "sequence_only": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 5,
+        "coverage": 1.0,
+        "iou": 0.5157894736842106,
+        "genomic_start_error": -5,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5157894736842106,
+      "candidates_per_mb": 9559.087107181263
+    },
+    "experimental": {
+      "label": "Gsp",
+      "status": "complete",
+      "candidate_count": 80,
+      "detected": true,
+      "best_rank": 5,
+      "coverage": 1.0,
+      "bases": 8369,
+      "elapsed_seconds": 10.766729,
+      "distinct_intervals": 40,
+      "origins": {
+        "anti_repeat": 80
+      },
+      "admission_branches": {
+        "standard": 80
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 4,
+        "sequence_duplex": 66,
+        "sequence_terminator": 2,
+        "sequence_only": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000002",
+        "rank": 5,
+        "coverage": 1.0,
+        "iou": 0.5157894736842106,
+        "genomic_start_error": -5,
+        "genomic_end_error": 87,
+        "branch": "standard"
+      },
+      "best_iou": 0.5157894736842106,
+      "candidates_per_mb": 9559.087107181263
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Kki",
+    "default": {
+      "label": "Kki",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40302,
+      "elapsed_seconds": 7.189055,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6947368421052632,
+        "genomic_start_error": -53,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.6947368421052632,
+      "candidates_per_mb": 198.50131507121236
+    },
+    "experimental": {
+      "label": "Kki",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40302,
+      "elapsed_seconds": 7.060383,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 1,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6947368421052632,
+        "genomic_start_error": -53,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.6947368421052632,
+      "candidates_per_mb": 198.50131507121236
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nme2",
+    "default": {
+      "label": "Nme2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 31457,
+      "elapsed_seconds": 5.007158,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5684210526315789,
+        "genomic_start_error": -77,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5684210526315789,
+      "candidates_per_mb": 127.15770734653654
+    },
+    "experimental": {
+      "label": "Nme2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 31457,
+      "elapsed_seconds": 5.147181,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2,
+        "fewer_than_10_anchored_paired_bases": 1,
+        "less_than_half_anchor_paired": 1
+      },
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5684210526315789,
+        "genomic_start_error": -77,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5684210526315789,
+      "candidates_per_mb": 127.15770734653654
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nsp",
+    "default": {
+      "label": "Nsp",
+      "status": "complete",
+      "candidate_count": 168,
+      "detected": true,
+      "best_rank": 83,
+      "coverage": 1.0,
+      "bases": 12471,
+      "elapsed_seconds": 16.725833,
+      "distinct_intervals": 84,
+      "origins": {
+        "anti_repeat": 168
+      },
+      "admission_branches": {
+        "standard": 168
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 65,
+        "sequence_duplex": 68,
+        "sequence_terminator": 29,
+        "sequence_only": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000164",
+        "rank": 83,
+        "coverage": 1.0,
+        "iou": 0.675392670157068,
+        "genomic_start_error": -6,
+        "genomic_end_error": 56,
+        "branch": "standard"
+      },
+      "best_iou": 0.675392670157068,
+      "candidates_per_mb": 13471.253307673804
+    },
+    "experimental": {
+      "label": "Nsp",
+      "status": "complete",
+      "candidate_count": 168,
+      "detected": true,
+      "best_rank": 83,
+      "coverage": 1.0,
+      "bases": 12471,
+      "elapsed_seconds": 16.668999,
+      "distinct_intervals": 84,
+      "origins": {
+        "anti_repeat": 168
+      },
+      "admission_branches": {
+        "standard": 168
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 65,
+        "sequence_duplex": 68,
+        "sequence_terminator": 29,
+        "sequence_only": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000164",
+        "rank": 83,
+        "coverage": 1.0,
+        "iou": 0.675392670157068,
+        "genomic_start_error": -6,
+        "genomic_end_error": 56,
+        "branch": "standard"
+      },
+      "best_iou": 0.675392670157068,
+      "candidates_per_mb": 13471.253307673804
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tmo",
+    "default": {
+      "label": "Tmo",
+      "status": "complete",
+      "candidate_count": 20,
+      "detected": true,
+      "best_rank": 9,
+      "coverage": 0.9632352941176471,
+      "bases": 11947,
+      "elapsed_seconds": 5.281429,
+      "distinct_intervals": 10,
+      "origins": {
+        "anti_repeat": 20
+      },
+      "admission_branches": {
+        "standard": 20
+      },
+      "evidence_classes": {
+        "sequence_duplex": 14,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000016",
+        "rank": 9,
+        "coverage": 0.9632352941176471,
+        "iou": 0.7081081081081081,
+        "genomic_start_error": 5,
+        "genomic_end_error": 49,
+        "branch": "standard"
+      },
+      "best_iou": 0.7081081081081081,
+      "candidates_per_mb": 1674.0604335816522
+    },
+    "experimental": {
+      "label": "Tmo",
+      "status": "complete",
+      "candidate_count": 20,
+      "detected": true,
+      "best_rank": 9,
+      "coverage": 0.9632352941176471,
+      "bases": 11947,
+      "elapsed_seconds": 5.179492,
+      "distinct_intervals": 10,
+      "origins": {
+        "anti_repeat": 20
+      },
+      "admission_branches": {
+        "standard": 20
+      },
+      "evidence_classes": {
+        "sequence_duplex": 14,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000016",
+        "rank": 9,
+        "coverage": 0.9632352941176471,
+        "iou": 0.7081081081081081,
+        "genomic_start_error": 5,
+        "genomic_end_error": 49,
+        "branch": "standard"
+      },
+      "best_iou": 0.7081081081081081,
+      "candidates_per_mb": 1674.0604335816522
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nsa",
+    "default": {
+      "label": "Nsa",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 40699,
+      "elapsed_seconds": 5.953229,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.6492146596858639,
+        "genomic_start_error": -63,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6492146596858639,
+      "candidates_per_mb": 98.28251308385956
+    },
+    "experimental": {
+      "label": "Nsa",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 40699,
+      "elapsed_seconds": 5.95929,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000001",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.6492146596858639,
+        "genomic_start_error": -63,
+        "genomic_end_error": 4,
+        "branch": "standard"
+      },
+      "best_iou": 0.6492146596858639,
+      "candidates_per_mb": 98.28251308385956
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Jpa",
+    "default": {
+      "label": "Jpa",
+      "status": "complete",
+      "candidate_count": 128,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 0.9813084112149533,
+      "bases": 28869,
+      "elapsed_seconds": 23.501749,
+      "distinct_intervals": 64,
+      "origins": {
+        "anti_repeat": 128
+      },
+      "admission_branches": {
+        "standard": 128
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 6,
+        "sequence_duplex": 117,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000124",
+        "rank": 3,
+        "coverage": 0.9813084112149533,
+        "iou": 0.5357142857142857,
+        "genomic_start_error": 2,
+        "genomic_end_error": 89,
+        "branch": "standard"
+      },
+      "best_iou": 0.5357142857142857,
+      "candidates_per_mb": 4433.821746510097
+    },
+    "experimental": {
+      "label": "Jpa",
+      "status": "complete",
+      "candidate_count": 128,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 0.9813084112149533,
+      "bases": 28869,
+      "elapsed_seconds": 23.189521,
+      "distinct_intervals": 64,
+      "origins": {
+        "anti_repeat": 128
+      },
+      "admission_branches": {
+        "standard": 128
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 6,
+        "sequence_duplex": 117,
+        "sequence_duplex_terminator": 4,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000124",
+        "rank": 3,
+        "coverage": 0.9813084112149533,
+        "iou": 0.5357142857142857,
+        "genomic_start_error": 2,
+        "genomic_end_error": 89,
+        "branch": "standard"
+      },
+      "best_iou": 0.5357142857142857,
+      "candidates_per_mb": 4433.821746510097
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Rsp",
+    "default": {
+      "label": "Rsp",
+      "status": "complete",
+      "candidate_count": 9,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 0.6185567010309279,
+      "bases": 40431,
+      "elapsed_seconds": 5.827051,
+      "distinct_intervals": 5,
+      "origins": {
+        "anti_repeat": 8,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "standard": 8,
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex": 5,
+        "cm_only": 1,
+        "sequence_only": 3
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 3,
+        "coverage": 0.6185567010309279,
+        "iou": 0.6185567010309279,
+        "genomic_start_error": 2,
+        "genomic_end_error": -35,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.6185567010309279,
+      "candidates_per_mb": 222.60146916969651
+    },
+    "experimental": {
+      "label": "Rsp",
+      "status": "complete",
+      "candidate_count": 9,
+      "detected": true,
+      "best_rank": 3,
+      "coverage": 0.6185567010309279,
+      "bases": 40431,
+      "elapsed_seconds": 5.958627,
+      "distinct_intervals": 5,
+      "origins": {
+        "anti_repeat": 8,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "standard": 8,
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex": 5,
+        "cm_only": 1,
+        "sequence_only": 3
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 3,
+        "coverage": 0.6185567010309279,
+        "iou": 0.6185567010309279,
+        "genomic_start_error": 2,
+        "genomic_end_error": -35,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.6185567010309279,
+      "candidates_per_mb": 222.60146916969651
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bbo",
+    "default": {
+      "label": "Bbo",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8581,
+      "elapsed_seconds": 7.888179,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 30,
+        "sequence_only": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 5127.607504952803
+    },
+    "experimental": {
+      "label": "Bbo",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8581,
+      "elapsed_seconds": 7.938701,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 6,
+        "sequence_duplex": 30,
+        "sequence_only": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_anchored_interaction": 1,
+        "no_independent_regional_support": 2
+      },
+      "candidates_per_mb": 5127.607504952803
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cca2",
+    "default": {
+      "label": "Cca2",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8632,
+      "elapsed_seconds": 3.79244,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 0.0
+    },
+    "experimental": {
+      "label": "Cca2",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8632,
+      "elapsed_seconds": 4.142476,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2
+      },
+      "candidates_per_mb": 0.0
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme2",
+    "default": {
+      "label": "Cme2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 4983,
+      "elapsed_seconds": 3.432823,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.612565445026178,
+        "genomic_start_error": -4,
+        "genomic_end_error": 70,
+        "branch": "standard"
+      },
+      "best_iou": 0.612565445026178,
+      "candidates_per_mb": 802.7292795504716
+    },
+    "experimental": {
+      "label": "Cme2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 4983,
+      "elapsed_seconds": 3.627079,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2,
+        "no_anchored_interaction": 1
+      },
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.612565445026178,
+        "genomic_start_error": -4,
+        "genomic_end_error": 70,
+        "branch": "standard"
+      },
+      "best_iou": 0.612565445026178,
+      "candidates_per_mb": 802.7292795504716
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme3",
+    "default": {
+      "label": "Cme3",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.6236559139784946,
+      "bases": 6429,
+      "elapsed_seconds": 3.159842,
+      "distinct_intervals": 1,
+      "origins": {
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "cm_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 1,
+        "coverage": 0.6236559139784946,
+        "iou": 0.6236559139784946,
+        "genomic_start_error": 35,
+        "genomic_end_error": 0,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.6236559139784946,
+      "candidates_per_mb": 155.54518587649713
+    },
+    "experimental": {
+      "label": "Cme3",
+      "status": "complete",
+      "candidate_count": 2,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.8924731182795699,
+      "bases": 6429,
+      "elapsed_seconds": 3.693747,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 1,
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "cm_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 4,
+      "rejections": {
+        "no_independent_regional_support": 3,
+        "no_anchored_interaction": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000002",
+        "rank": 1,
+        "coverage": 0.8924731182795699,
+        "iou": 0.4486486486486487,
+        "genomic_start_error": 10,
+        "genomic_end_error": 92,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.6236559139784946,
+      "candidates_per_mb": 311.09037175299426
+    },
+    "added_candidates": 1,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme4",
+    "default": {
+      "label": "Cme4",
+      "status": "complete",
+      "candidate_count": 176,
+      "detected": true,
+      "best_rank": 88,
+      "coverage": 1.0,
+      "bases": 10742,
+      "elapsed_seconds": 22.748213,
+      "distinct_intervals": 88,
+      "origins": {
+        "anti_repeat": 176
+      },
+      "admission_branches": {
+        "standard": 176
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 28,
+        "sequence_duplex": 112,
+        "sequence_only": 34,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000172",
+        "rank": 88,
+        "coverage": 1.0,
+        "iou": 0.7083333333333334,
+        "genomic_start_error": -4,
+        "genomic_end_error": 52,
+        "branch": "standard"
+      },
+      "best_iou": 0.7083333333333334,
+      "candidates_per_mb": 16384.285980264383
+    },
+    "experimental": {
+      "label": "Cme4",
+      "status": "complete",
+      "candidate_count": 176,
+      "detected": true,
+      "best_rank": 88,
+      "coverage": 1.0,
+      "bases": 10742,
+      "elapsed_seconds": 23.094911,
+      "distinct_intervals": 88,
+      "origins": {
+        "anti_repeat": 176
+      },
+      "admission_branches": {
+        "standard": 176
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 28,
+        "sequence_duplex": 112,
+        "sequence_only": 34,
+        "sequence_terminator": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000172",
+        "rank": 88,
+        "coverage": 1.0,
+        "iou": 0.7083333333333334,
+        "genomic_start_error": -4,
+        "genomic_end_error": 52,
+        "branch": "standard"
+      },
+      "best_iou": 0.7083333333333334,
+      "candidates_per_mb": 16384.285980264383
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Csa",
+    "default": {
+      "label": "Csa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13984,
+      "elapsed_seconds": 4.321915,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.533678756476684,
+        "genomic_start_error": -85,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.533678756476684,
+      "candidates_per_mb": 572.0823798627002
+    },
+    "experimental": {
+      "label": "Csa",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 13984,
+      "elapsed_seconds": 4.218367,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 4,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.533678756476684,
+        "genomic_start_error": -85,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.533678756476684,
+      "candidates_per_mb": 572.0823798627002
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghc1",
+    "default": {
+      "label": "Ghc1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 5773,
+      "elapsed_seconds": 3.507526,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.45652173913043476,
+        "genomic_start_error": -2,
+        "genomic_end_error": 98,
+        "branch": "standard"
+      },
+      "best_iou": 0.45652173913043476,
+      "candidates_per_mb": 692.8806513078123
+    },
+    "experimental": {
+      "label": "Ghc1",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 5773,
+      "elapsed_seconds": 3.405305,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.45652173913043476,
+        "genomic_start_error": -2,
+        "genomic_end_error": 98,
+        "branch": "standard"
+      },
+      "best_iou": 0.45652173913043476,
+      "candidates_per_mb": 692.8806513078123
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghe",
+    "default": {
+      "label": "Ghe",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.6354166666666666,
+      "bases": 8609,
+      "elapsed_seconds": 3.83981,
+      "distinct_intervals": 1,
+      "origins": {
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "cm_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 1,
+        "coverage": 0.6354166666666666,
+        "iou": 0.6354166666666666,
+        "genomic_start_error": 35,
+        "genomic_end_error": 0,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.6354166666666666,
+      "candidates_per_mb": 116.15750958299454
+    },
+    "experimental": {
+      "label": "Ghe",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.6354166666666666,
+      "bases": 8609,
+      "elapsed_seconds": 3.88963,
+      "distinct_intervals": 1,
+      "origins": {
+        "covariance_model": 1
+      },
+      "admission_branches": {
+        "genomic_cm_rescue": 1
+      },
+      "evidence_classes": {
+        "cm_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 2,
+        "no_anchored_interaction": 1
+      },
+      "highest_ranked_match": {
+        "id": "model_rescue000000",
+        "rank": 1,
+        "coverage": 0.6354166666666666,
+        "iou": 0.6354166666666666,
+        "genomic_start_error": 35,
+        "genomic_end_error": 0,
+        "branch": "genomic_cm_rescue"
+      },
+      "best_iou": 0.6354166666666666,
+      "candidates_per_mb": 116.15750958299454
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghh1",
+    "default": {
+      "label": "Ghh1",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 8277,
+      "elapsed_seconds": 4.46685,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.5668449197860963,
+        "genomic_start_error": -76,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5668449197860963,
+      "candidates_per_mb": 966.5337682735291
+    },
+    "experimental": {
+      "label": "Ghh1",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 2,
+      "coverage": 1.0,
+      "bases": 8277,
+      "elapsed_seconds": 4.467854,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 4,
+        "sequence_duplex_terminator": 2,
+        "sequence_only": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 2,
+        "coverage": 1.0,
+        "iou": 0.5668449197860963,
+        "genomic_start_error": -76,
+        "genomic_end_error": 5,
+        "branch": "standard"
+      },
+      "best_iou": 0.5668449197860963,
+      "candidates_per_mb": 966.5337682735291
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghh2",
+    "default": {
+      "label": "Ghh2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8851,
+      "elapsed_seconds": 3.962176,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6505376344086021,
+        "genomic_start_error": -2,
+        "genomic_end_error": 63,
+        "branch": "standard"
+      },
+      "best_iou": 0.6505376344086021,
+      "candidates_per_mb": 451.9263360072308
+    },
+    "experimental": {
+      "label": "Ghh2",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8851,
+      "elapsed_seconds": 4.074245,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 2
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.6505376344086021,
+        "genomic_start_error": -2,
+        "genomic_end_error": 63,
+        "branch": "standard"
+      },
+      "best_iou": 0.6505376344086021,
+      "candidates_per_mb": 451.9263360072308
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy1",
+    "default": {
+      "label": "Ghy1",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 6876,
+      "elapsed_seconds": 7.871232,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 37,
+        "sequence_only": 5
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000040",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5618556701030928,
+        "genomic_start_error": -6,
+        "genomic_end_error": 79,
+        "branch": "standard"
+      },
+      "best_iou": 0.5618556701030928,
+      "candidates_per_mb": 6399.069226294358
+    },
+    "experimental": {
+      "label": "Ghy1",
+      "status": "complete",
+      "candidate_count": 44,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 6876,
+      "elapsed_seconds": 7.825942,
+      "distinct_intervals": 22,
+      "origins": {
+        "anti_repeat": 44
+      },
+      "admission_branches": {
+        "standard": 44
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 37,
+        "sequence_only": 5
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000040",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5618556701030928,
+        "genomic_start_error": -6,
+        "genomic_end_error": 79,
+        "branch": "standard"
+      },
+      "best_iou": 0.5618556701030928,
+      "candidates_per_mb": 6399.069226294358
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Msc",
+    "default": {
+      "label": "Msc",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40697,
+      "elapsed_seconds": 6.814348,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5212765957446809,
+        "genomic_start_error": -87,
+        "genomic_end_error": 3,
+        "branch": "standard"
+      },
+      "best_iou": 0.5212765957446809,
+      "candidates_per_mb": 196.57468609479815
+    },
+    "experimental": {
+      "label": "Msc",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40697,
+      "elapsed_seconds": 6.76657,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.5212765957446809,
+        "genomic_start_error": -87,
+        "genomic_end_error": 3,
+        "branch": "standard"
+      },
+      "best_iou": 0.5212765957446809,
+      "candidates_per_mb": 196.57468609479815
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sdo",
+    "default": {
+      "label": "Sdo",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40697,
+      "elapsed_seconds": 6.507143,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4972677595628415,
+        "genomic_start_error": -91,
+        "genomic_end_error": 1,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972677595628415,
+      "candidates_per_mb": 196.57468609479815
+    },
+    "experimental": {
+      "label": "Sdo",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 40697,
+      "elapsed_seconds": 6.508149,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4972677595628415,
+        "genomic_start_error": -91,
+        "genomic_end_error": 1,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972677595628415,
+      "candidates_per_mb": 196.57468609479815
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Spa",
+    "default": {
+      "label": "Spa",
+      "status": "complete",
+      "candidate_count": 232,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.968421052631579,
+      "bases": 44906,
+      "elapsed_seconds": 30.873769,
+      "distinct_intervals": 70,
+      "origins": {
+        "anti_repeat": 232
+      },
+      "admission_branches": {
+        "standard": 232
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 4,
+        "sequence_duplex_terminator": 22,
+        "sequence_duplex": 148,
+        "sequence_only": 52,
+        "sequence_terminator": 6
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000228",
+        "rank": 1,
+        "coverage": 0.968421052631579,
+        "iou": 0.4972972972972973,
+        "genomic_start_error": 3,
+        "genomic_end_error": 90,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972972972972973,
+      "candidates_per_mb": 5166.347481405603
+    },
+    "experimental": {
+      "label": "Spa",
+      "status": "complete",
+      "candidate_count": 232,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.968421052631579,
+      "bases": 44906,
+      "elapsed_seconds": 30.96954,
+      "distinct_intervals": 70,
+      "origins": {
+        "anti_repeat": 232
+      },
+      "admission_branches": {
+        "standard": 232
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 4,
+        "sequence_duplex_terminator": 22,
+        "sequence_duplex": 148,
+        "sequence_only": 52,
+        "sequence_terminator": 6
+      },
+      "accepted_arrays": 2,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000228",
+        "rank": 1,
+        "coverage": 0.968421052631579,
+        "iou": 0.4972972972972973,
+        "genomic_start_error": 3,
+        "genomic_end_error": 90,
+        "branch": "standard"
+      },
+      "best_iou": 0.4972972972972973,
+      "candidates_per_mb": 5166.347481405603
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cca1",
+    "default": {
+      "label": "Cca1",
+      "status": "complete",
+      "candidate_count": 192,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 11602,
+      "elapsed_seconds": 31.748351,
+      "distinct_intervals": 96,
+      "origins": {
+        "anti_repeat": 192
+      },
+      "admission_branches": {
+        "standard": 192
+      },
+      "evidence_classes": {
+        "sequence_duplex": 154,
+        "sequence_duplex_terminator": 34,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 16548.87088433029
+    },
+    "experimental": {
+      "label": "Cca1",
+      "status": "complete",
+      "candidate_count": 193,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 11602,
+      "elapsed_seconds": 31.824882,
+      "distinct_intervals": 97,
+      "origins": {
+        "anti_repeat": 193
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "standard": 192
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_duplex": 154,
+        "sequence_duplex_terminator": 34,
+        "sequence_only": 4
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4235294117647059,
+        "genomic_start_error": -93,
+        "genomic_end_error": 5,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.4235294117647059,
+      "candidates_per_mb": 16635.062920186174
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Cga",
+    "default": {
+      "label": "Cga",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 9336,
+      "elapsed_seconds": 4.957964,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 856.898029134533
+    },
+    "experimental": {
+      "label": "Cga",
+      "status": "complete",
+      "candidate_count": 9,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.8627450980392157,
+      "bases": 9336,
+      "elapsed_seconds": 5.215309,
+      "distinct_intervals": 5,
+      "origins": {
+        "anti_repeat": 9
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 1,
+        "sequence_duplex": 8
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000001",
+        "rank": 1,
+        "coverage": 0.8627450980392157,
+        "iou": 0.4512820512820513,
+        "genomic_start_error": -93,
+        "genomic_end_error": -14,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.4512820512820513,
+      "candidates_per_mb": 964.0102827763496
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Cme1",
+    "default": {
+      "label": "Cme1",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 6370,
+      "elapsed_seconds": 3.455085,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 0.0
+    },
+    "experimental": {
+      "label": "Cme1",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.7592592592592593,
+      "bases": 6370,
+      "elapsed_seconds": 3.628432,
+      "distinct_intervals": 1,
+      "origins": {
+        "anti_repeat": 1
+      },
+      "admission_branches": {
+        "short_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000000",
+        "rank": 1,
+        "coverage": 0.7592592592592593,
+        "iou": 0.41624365482233505,
+        "genomic_start_error": 26,
+        "genomic_end_error": 89,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.41624365482233505,
+      "candidates_per_mb": 156.98587127158555
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Ffr",
+    "default": {
+      "label": "Ffr",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8653,
+      "elapsed_seconds": 3.640838,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 0.0
+    },
+    "experimental": {
+      "label": "Ffr",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8653,
+      "elapsed_seconds": 3.792736,
+      "distinct_intervals": 1,
+      "origins": {
+        "anti_repeat": 1
+      },
+      "admission_branches": {
+        "short_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000001",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4388888888888889,
+        "genomic_start_error": -93,
+        "genomic_end_error": 8,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.4388888888888889,
+      "candidates_per_mb": 115.56685542586386
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Ghy2",
+    "default": {
+      "label": "Ghy2",
+      "status": "complete",
+      "candidate_count": 0,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 7897,
+      "elapsed_seconds": 3.598705,
+      "distinct_intervals": 0,
+      "origins": {},
+      "admission_branches": {},
+      "evidence_classes": {},
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 0.0
+    },
+    "experimental": {
+      "label": "Ghy2",
+      "status": "complete",
+      "candidate_count": 1,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 7897,
+      "elapsed_seconds": 3.791677,
+      "distinct_intervals": 1,
+      "origins": {
+        "anti_repeat": 1
+      },
+      "admission_branches": {
+        "short_rescue": 1
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000000",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4942528735632184,
+        "genomic_start_error": -1,
+        "genomic_end_error": 87,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.4942528735632184,
+      "candidates_per_mb": 126.63036596175763
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Orh",
+    "default": {
+      "label": "Orh",
+      "status": "complete",
+      "candidate_count": 4,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 10923,
+      "elapsed_seconds": 4.408109,
+      "distinct_intervals": 2,
+      "origins": {
+        "anti_repeat": 4
+      },
+      "admission_branches": {
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 1,
+        "sequence_duplex": 2,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 366.1997619701547
+    },
+    "experimental": {
+      "label": "Orh",
+      "status": "complete",
+      "candidate_count": 5,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.8317757009345794,
+      "bases": 10923,
+      "elapsed_seconds": 4.894609,
+      "distinct_intervals": 3,
+      "origins": {
+        "anti_repeat": 5
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "standard": 4
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_duplex_terminator": 1,
+        "sequence_duplex": 2,
+        "sequence_terminator": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 4,
+      "rejections": {
+        "no_independent_regional_support": 3
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000002",
+        "rank": 1,
+        "coverage": 0.8317757009345794,
+        "iou": 0.45408163265306123,
+        "genomic_start_error": 18,
+        "genomic_end_error": 89,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.45408163265306123,
+      "candidates_per_mb": 457.7497024626934
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Phi",
+    "default": {
+      "label": "Phi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8598,
+      "elapsed_seconds": 3.904485,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4864864864864865,
+        "genomic_start_error": -89,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.4864864864864865,
+      "candidates_per_mb": 930.4489416143289
+    },
+    "experimental": {
+      "label": "Phi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 1.0,
+      "bases": 8598,
+      "elapsed_seconds": 4.061247,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 2,
+        "sequence_duplex": 6
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000003",
+        "rank": 1,
+        "coverage": 1.0,
+        "iou": 0.4864864864864865,
+        "genomic_start_error": -89,
+        "genomic_end_error": 6,
+        "branch": "standard"
+      },
+      "best_iou": 0.4864864864864865,
+      "candidates_per_mb": 930.4489416143289
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Psp",
+    "default": {
+      "label": "Psp",
+      "status": "complete",
+      "candidate_count": 40,
+      "detected": false,
+      "best_rank": null,
+      "coverage": 0.0,
+      "bases": 8164,
+      "elapsed_seconds": 11.342832,
+      "distinct_intervals": 20,
+      "origins": {
+        "anti_repeat": 40
+      },
+      "admission_branches": {
+        "standard": 40
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 11,
+        "sequence_duplex": 23,
+        "sequence_terminator": 1,
+        "sequence_only": 5
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "candidates_per_mb": 4899.559039686428
+    },
+    "experimental": {
+      "label": "Psp",
+      "status": "complete",
+      "candidate_count": 41,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.8380952380952381,
+      "bases": 8164,
+      "elapsed_seconds": 11.516739,
+      "distinct_intervals": 21,
+      "origins": {
+        "anti_repeat": 41
+      },
+      "admission_branches": {
+        "short_rescue": 1,
+        "standard": 40
+      },
+      "evidence_classes": {
+        "sequence_duplex_cm_terminator": 1,
+        "sequence_duplex_terminator": 11,
+        "sequence_duplex": 23,
+        "sequence_terminator": 1,
+        "sequence_only": 5
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 2,
+      "rejections": {
+        "no_independent_regional_support": 1
+      },
+      "highest_ranked_match": {
+        "id": "short_candidate000001",
+        "rank": 1,
+        "coverage": 0.8380952380952381,
+        "iou": 0.4512820512820513,
+        "genomic_start_error": -90,
+        "genomic_end_error": -17,
+        "branch": "short_rescue"
+      },
+      "best_iou": 0.4512820512820513,
+      "candidates_per_mb": 5022.048015678589
+    },
+    "added_candidates": 1,
+    "gained": true,
+    "lost": false
+  },
+  {
+    "label": "Wvi",
+    "default": {
+      "label": "Wvi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.956140350877193,
+      "bases": 18942,
+      "elapsed_seconds": 4.628093,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 1,
+        "coverage": 0.956140350877193,
+        "iou": 0.5477386934673367,
+        "genomic_start_error": 5,
+        "genomic_end_error": 85,
+        "branch": "standard"
+      },
+      "best_iou": 0.5477386934673367,
+      "candidates_per_mb": 422.3418857565199
+    },
+    "experimental": {
+      "label": "Wvi",
+      "status": "complete",
+      "candidate_count": 8,
+      "detected": true,
+      "best_rank": 1,
+      "coverage": 0.956140350877193,
+      "bases": 18942,
+      "elapsed_seconds": 4.532553,
+      "distinct_intervals": 4,
+      "origins": {
+        "anti_repeat": 8
+      },
+      "admission_branches": {
+        "standard": 8
+      },
+      "evidence_classes": {
+        "sequence_duplex_terminator": 2,
+        "sequence_duplex": 5,
+        "sequence_only": 1
+      },
+      "accepted_arrays": 1,
+      "short_proposals": 0,
+      "rejections": {},
+      "highest_ranked_match": {
+        "id": "candidate000004",
+        "rank": 1,
+        "coverage": 0.956140350877193,
+        "iou": 0.5477386934673367,
+        "genomic_start_error": 5,
+        "genomic_end_error": 85,
+        "branch": "standard"
+      },
+      "best_iou": 0.5477386934673367,
+      "candidates_per_mb": 422.3418857565199
+    },
+    "added_candidates": 0,
+    "gained": false,
+    "lost": false
+  }
+]

@@ -1,0 +1,33 @@
+name: Verify CRISPRloci source and privacy
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24'
+      - name: Check tracked files for private operations data
+        run: python3 scripts/check_private_data.py index
+      - name: Install test dependencies
+        run: |
+          python -m pip install -e './backend[test]' -e ./Integration build
+          npm --prefix frontend ci --ignore-scripts
+      - name: Test application, compatibility and publication controls
+        env:
+          PYTHON: python
+          VITE_API_BASE_URL: https://analysis.example.org
+        run: bash scripts/check.sh

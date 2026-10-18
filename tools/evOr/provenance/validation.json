@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-27",
+  "version": "1.0.2",
+  "platform": "Linux x86-64",
+  "python": "3.12.13",
+  "regression_tests": {
+    "passed": 98,
+    "failed": 0
+  },
+  "source_preservation": "Runtime, scientific data, examples, fixtures and tests match original SHA-256 hashes",
+  "wheel": {
+    "filename": "crispr_evor-1.0.2-py3-none-linux_x86_64.whl",
+    "sha256": "2685a150927a04e10d662607e3f2779a46be175cb71d12c059b665fc12c991e3",
+    "linux_native_helpers_executable": true
+  },
+  "smoke": {
+    "input": "example_datasets/tomida_datasets/CRISPR1/G1.fa",
+    "source_cli_exit": 0,
+    "installed_wheel_cli_exit": 0,
+    "plotting": false,
+    "prediction": "ND",
+    "source_and_installed_json_equal": true
+  },
+  "scope": "Source extraction, regression suite, wheel build/install, and bundled-example verification; full web-server integration is a later step."
+}

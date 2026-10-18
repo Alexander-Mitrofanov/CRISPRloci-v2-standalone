@@ -1,0 +1,131 @@
+{
+  "job_id": "cccccccccccccccccccccccccccccccc",
+  "status": "completed",
+  "mode": "repeat_type",
+  "options": {},
+  "summary": {
+    "repeat_type": {
+      "schema": {
+        "name": "crisprloci.repeat-typing",
+        "version": "1.0.0"
+      },
+      "execution_completed": true,
+      "model": {
+        "id": "crisprcastyper-1.9.0-repeat-model",
+        "upstream_version": "1.9.0",
+        "upstream_commit": "a2d51831d4802533bb113bac23cf9df2853063b0",
+        "files": {
+          "xgb_repeats.json": "f9170b07805d1bb89fa1c02cfb861836e42498738e458f5e9e6db181dfcbe57a",
+          "type_dict.tab": "b01468938d868e038a14c7a42f3187bd234e2d63d49dfc4c04f92094cb4112c8"
+        },
+        "labels": [
+          "I-A",
+          "I-B",
+          "I-C",
+          "I-D",
+          "I-E",
+          "I-F",
+          "I-F_T",
+          "I-G",
+          "II-A",
+          "II-B",
+          "II-C",
+          "III-A",
+          "III-B",
+          "III-C",
+          "III-D",
+          "III-E",
+          "III-F",
+          "IV-A1",
+          "IV-A2",
+          "IV-A3",
+          "IV-D",
+          "IV-E",
+          "V-A",
+          "V-B1",
+          "V-E",
+          "V-F1",
+          "V-F2",
+          "V-F3",
+          "V-G",
+          "V-I",
+          "V-J",
+          "V-K",
+          "VI-A",
+          "VI-B1",
+          "VI-B2",
+          "VI-C",
+          "VI-D"
+        ],
+        "license": "MIT"
+      },
+      "policy": {
+        "threshold": 0.75,
+        "score_semantics": "closed_set_model_score_not_calibrated_confidence",
+        "orientation": "canonical_kmers_no_strand_inference"
+      },
+      "counts": {
+        "records": 5,
+        "distinct_classified_sequences": 3,
+        "predicted": 3,
+        "uncertain": 1,
+        "unsupported": 1
+      },
+      "results": [
+        {
+          "id": "I-A_1",
+          "sequence": "AACTCCCTAGGAGGGAGTAGAAG",
+          "sequence_sha256": "71b2eeb107c292d72ca093a0190c2d41323cde6223dd0eb5444f4d0ec619fab8",
+          "status": "predicted",
+          "prediction": "I-A",
+          "winner": "I-A",
+          "native_score": 0.9230033755302429,
+          "reason": null
+        },
+        {
+          "id": "I-B_1",
+          "sequence": "AAAAACAAGAGTTGTATTGAAAT",
+          "sequence_sha256": "7087b17b9691f194cdd8da11fe95216817d1c4f0deb77c10af5ba6666a3f7973",
+          "status": "uncertain",
+          "prediction": null,
+          "winner": "V-F1",
+          "native_score": 0.31255319714546204,
+          "reason": "below_threshold"
+        },
+        {
+          "id": "I-C_1",
+          "sequence": "AAATTTCAATCCACACCACCCGTGTGGGTGGTGACA",
+          "sequence_sha256": "ef8bb31415d188e672066ebcff19b40113715105c74a08af09787c3cd6477b76",
+          "status": "predicted",
+          "prediction": "I-C",
+          "winner": "I-C",
+          "native_score": 0.9334849715232849,
+          "reason": null
+        },
+        {
+          "id": "ambiguous",
+          "sequence": "ACGTACGTNNNNACGT",
+          "sequence_sha256": "410d007f9b0da227cf5a5c060665f7e8fb378a83c43bcac4c19d87f1e4acc31b",
+          "status": "unsupported",
+          "prediction": null,
+          "winner": null,
+          "native_score": null,
+          "reason": "ambiguous_iupac"
+        },
+        {
+          "id": "duplicate",
+          "sequence": "AACTCCCTAGGAGGGAGTAGAAG",
+          "sequence_sha256": "71b2eeb107c292d72ca093a0190c2d41323cde6223dd0eb5444f4d0ec619fab8",
+          "status": "predicted",
+          "prediction": "I-A",
+          "winner": "I-A",
+          "native_score": 0.9230033755302429,
+          "reason": null
+        }
+      ],
+      "available": true,
+      "results_truncated": false
+    }
+  },
+  "artifacts": []
+}

@@ -1,0 +1,372 @@
+{
+  "$defs": {
+    "Array": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "source_id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "category": {
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Category",
+          "type": "string"
+        },
+        "model_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Model Score"
+        },
+        "strand": {
+          "anyOf": [
+            {
+              "enum": [
+                "+",
+                "-"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Strand"
+        },
+        "interval": {
+          "$ref": "#/$defs/Interval"
+        },
+        "boundary": {
+          "$ref": "#/$defs/Boundary"
+        },
+        "repeats": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Unit"
+              },
+              "maxItems": 501,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Repeats"
+        },
+        "spacers": {
+          "items": {
+            "$ref": "#/$defs/Unit"
+          },
+          "maxItems": 500,
+          "minItems": 1,
+          "title": "Spacers",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "category",
+        "model_score",
+        "strand",
+        "interval",
+        "boundary",
+        "repeats",
+        "spacers"
+      ],
+      "title": "Array",
+      "type": "object"
+    },
+    "ArraySchema": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "crisprloci.arrays",
+          "title": "Name",
+          "type": "string"
+        },
+        "version": {
+          "const": "1.0.0",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "title": "ArraySchema",
+      "type": "object"
+    },
+    "Boundary": {
+      "additionalProperties": false,
+      "properties": {
+        "exact": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exact"
+        },
+        "occurrence_path": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Occurrence Path"
+        },
+        "repeat_phase": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repeat Phase"
+        }
+      },
+      "title": "Boundary",
+      "type": "object"
+    },
+    "Interval": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "minimum": 1,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 1,
+          "title": "End",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "length": {
+          "maximum": 1000000000,
+          "minimum": 1,
+          "title": "Length",
+          "type": "integer"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "length",
+        "sha256"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Unit": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "maxLength": 240,
+              "minLength": 1,
+              "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Id"
+        },
+        "ordinal": {
+          "maximum": 501,
+          "minimum": 1,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "sequence": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "pattern": "^[ACGTRYSWKMBDHVN]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sequence"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "deletion",
+                "not_reported",
+                "not_source_verified"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "boundary_position": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Boundary Position"
+        }
+      },
+      "required": [
+        "ordinal"
+      ],
+      "title": "Unit",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "$ref": "#/$defs/ArraySchema"
+    },
+    "coordinate_system": {
+      "const": "1-based-inclusive-source-forward",
+      "title": "Coordinate System",
+      "type": "string"
+    },
+    "score_semantics": {
+      "const": "uncalibrated-model-score",
+      "title": "Score Semantics",
+      "type": "string"
+    },
+    "categories": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 10,
+      "minItems": 1,
+      "title": "Categories",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "maxItems": 200,
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "arrays": {
+      "items": {
+        "$ref": "#/$defs/Array"
+      },
+      "maxItems": 200,
+      "minItems": 1,
+      "title": "Arrays",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "coordinate_system",
+    "score_semantics",
+    "categories",
+    "sources",
+    "arrays"
+  ],
+  "title": "ArraySet",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Observed source-forward array exchange; runtime validation also enforces scoped identities, coordinate consistency, deletion policies and bounded total occurrences."
+}

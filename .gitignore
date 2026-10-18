@@ -1,0 +1,51 @@
+# Scientific source snapshots are tracked in this publication repository.
+
+# Local environments, job output and Python caches
+.publication/
+.envs/
+.venv/
+runs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Application dependencies, releases and local configuration
+node_modules/
+build/
+dist/
+*.egg-info/
+.runtime/
+.runtime-data/
+.catalog/
+.env
+.env.local
+.env.*.local
+.env.*
+!.env.example
+!.env.*.example
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+coverage/
+playwright-report/
+test-results/
+
+
+
+# Operator records and evidence must never enter any Git repository.
+.ops-private/
+/output/
+/spacer analisis/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+ssh-config
+known_hosts*
+
+
+
+

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "three-record-subset",
+  "source_url": "https://ftp.ncbi.nlm.nih.gov/pub/wolf/_suppl/spacerome/Supplementary_material_spacers.fna.gz",
+  "source_release": "2017-04-25",
+  "retrieved_at": "2026-09-28",
+  "parent_file_sha256": "f92ae812231acb1b59035456379245bc824e402ef66f448e26f0932c0676d83b",
+  "sample_file_sha256": "be735d869e2c89158aaabcec0cda81cd91c9a97777fa299238285eed6565d374",
+  "records": 3,
+  "selection": "first three source records, original order and IDs; exported on VM",
+  "documentation": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5605939/"
+}

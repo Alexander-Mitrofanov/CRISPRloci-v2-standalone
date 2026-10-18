@@ -1,0 +1,62 @@
+[Unit]
+Description=Delete expired CRISPR workflow jobs
+After=local-fs.target
+RequiresMountsFor=/srv/crispr
+StartLimitIntervalSec=5min
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=crisprsvc
+Group=crisprsvc
+WorkingDirectory=/srv/crisprloci-v2
+EnvironmentFile=/etc/crisprloci.env
+Environment=PATH=/usr/sbin:/usr/bin:/sbin:/bin
+Environment=PYTHONNOUSERSITE=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+UnsetEnvironment=PYTHONPATH PYTHONHOME PYTHONSTARTUP PYTHONINSPECT PYTHONBREAKPOINT PYTHONWARNINGS PYTHONPLATLIBDIR PYTHONUSERBASE PYTHONEXECUTABLE __PYVENV_LAUNCHER__ LD_PRELOAD LD_LIBRARY_PATH LD_AUDIT LD_DEBUG LD_DEBUG_OUTPUT LD_PROFILE GCONV_PATH GLIBC_TUNABLES BASH_ENV ENV SHELLOPTS BASHOPTS CDPATH IFS
+ExecStart=/usr/bin/python3 -B -s /srv/crisprloci-v2/scripts/serve.py --service cleanup
+TimeoutStartSec=20min
+UMask=0077
+LogRateLimitIntervalSec=1min
+LogRateLimitBurst=60
+
+# Retention stays bounded while yielding CPU and storage to foreground services.
+Nice=10
+CPUAccounting=yes
+CPUWeight=10
+IOAccounting=yes
+IOWeight=10
+
+NoNewPrivileges=yes
+PrivateDevices=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectHostname=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectProc=invisible
+ProcSubset=pid
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RestrictRealtime=yes
+# Shared service UID: never remove another unit's live scientific IPC.
+RemoveIPC=no
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_UNIX
+IPAddressDeny=any
+ReadWritePaths=/srv/crispr/jobs/web
+MemoryAccounting=yes
+MemoryMax=512M
+MemorySwapMax=0
+MemoryZSwapMax=0
+TasksMax=64
+LimitCORE=0

@@ -1,0 +1,41 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "cas",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "1-based-inclusive-source-forward",
+    "score_semantics": "uncalibrated-model-evidence",
+    "evaluated_gene_count": 1,
+    "genes": [
+      {
+        "id": "protein-1",
+        "source_id": "contig",
+        "start": 2,
+        "end": 4,
+        "strand": "-",
+        "type": "II",
+        "subtype": null,
+        "profile": null,
+        "score_margin": 0.0
+      }
+    ],
+    "cassettes": [
+      {
+        "id": "cassette-1",
+        "source_id": "contig",
+        "start": 2,
+        "end": 4,
+        "cas_gene_count": 1,
+        "class": null,
+        "type": "II",
+        "subtype": null,
+        "method": null,
+        "confidence": 0.0
+      }
+    ]
+  }
+}

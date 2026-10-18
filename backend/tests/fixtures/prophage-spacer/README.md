@@ -1,0 +1,1 @@
+Synthetic sequence/array fixture with one source-array exclusion and two exact same-record matches on opposite strands. Search report generated using CRISPRspacer 0.3.1 with the fixed context policy; regions are deliberately synthetic join intervals, not predicted biological prophages. Contains no service job or deployment data.

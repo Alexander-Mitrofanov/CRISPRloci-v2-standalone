@@ -1,0 +1,5 @@
+# Preserve checksum-bound runtime, model, and fixture bytes on every platform.
+src/casandra/** -text
+tests/fixtures/** -text
+*.hmm -diff
+*.joblib -diff

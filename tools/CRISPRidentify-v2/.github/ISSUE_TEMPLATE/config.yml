@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support and troubleshooting
+    url: https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/main/SUPPORT.md
+    about: Read the support checklist before filing an issue.
+  - name: Private security reporting
+    url: https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/main/SECURITY.md
+    about: Do not disclose vulnerability details in an ordinary issue.

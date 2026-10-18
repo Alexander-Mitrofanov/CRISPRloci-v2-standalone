@@ -1,0 +1,79 @@
+name: Scientific-result discrepancy
+description: Report an unexpected, missed, or conflicting CRISPR/Cas call.
+title: "[Result] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A differing candidate can be another representation of the same
+        biological region. State whether your target is region existence,
+        exact borders, or a particular candidate representation.
+  - type: input
+    id: version
+    attributes:
+      label: Version and source identity
+      placeholder: "CRISPRidentify 2.3.2; archive SHA-256 ..."
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact CRISPRidentify command
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source sequence
+      description: Public accession or redistributable fixture, sequence SHA-256, topology, and source version.
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Comparison target
+      options:
+        - Region existence
+        - Overlapping candidate
+        - Exact borders
+        - Category
+        - Cas gene or cassette classification
+        - Other documented contract
+    validations:
+      required: true
+  - type: textarea
+    id: coordinates
+    attributes:
+      label: Coordinates and coordinate system
+      description: Give both calls, indexing convention, end convention, and overlap threshold.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Comparison evidence
+      description: Tool/database name, exact version, command, confidence category, and relevant output.
+    validations:
+      required: true
+  - type: textarea
+    id: interpretation
+    attributes:
+      label: Why should this call change?
+      description: Separate source-reconstruction evidence from biological validation.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Evaluation provenance
+      description: State whether this record was used for training, threshold selection, or prior debugging.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data confirmation
+      options:
+        - label: I did not attach confidential, clinical, or controlled-access sequence data.
+          required: true

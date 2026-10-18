@@ -1,0 +1,4623 @@
+{
+  "namespace": "crisprtracrrna-council-controls-v1",
+  "master_seed": 20260927,
+  "created_at": "2026-09-26T23:08:00.787945+00:00",
+  "generator_sha256": "4171485205794e68db6ac0cf8a4945a616c0cd801acc6ccf04cdaa2eccee489f",
+  "protocol_sha256": "e77f6edb949fc1af26cb756f77aaf9fab13d7ef3626158adf3efde870cada15d",
+  "donor_pool": [
+    {
+      "identity": "Ain:CRISPR-6307-8646-p1",
+      "label": "Ain",
+      "array_id": "CRISPR-6307-8646-p1",
+      "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+      "source_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d"
+    },
+    {
+      "identity": "Bbo:CRISPR-5980-6862-p1",
+      "label": "Bbo",
+      "array_id": "CRISPR-5980-6862-p1",
+      "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+      "source_sha256": "fd0840c870424c0384a1da093ed0fc1fbc9f20f34c556f7bd09a7f35f2712043"
+    },
+    {
+      "identity": "Bni:CRISPR-20595-20829-p1",
+      "label": "Bni",
+      "array_id": "CRISPR-20595-20829-p1",
+      "repeat": "GGTTTTCCTATACCAAAAACTGAAAGAGTGCCAAAAC",
+      "source_sha256": "2044466572b2a1e34ab0bf8e7733f16e1dbd789f40bb6be2ce4de48a7c339f13"
+    },
+    {
+      "identity": "Bok:CRISPR-273-441-p1",
+      "label": "Bok",
+      "array_id": "CRISPR-273-441-p1",
+      "repeat": "GTCATATCTCCATCTAATCCGTTGCTGTGATATGATA",
+      "source_sha256": "c27ed9055fd0ec00c156ff56230b6c6a5a737ba28d3edb277d1baaf236822864"
+    },
+    {
+      "identity": "Cca1:CRISPR-6602-7495-bf1",
+      "label": "Cca1",
+      "array_id": "CRISPR-6602-7495-bf1",
+      "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "source_sha256": "a6e23937d61fc7daf01b123a35885ead4ac446d3c42386b729e9af6ce211c5c5"
+    },
+    {
+      "identity": "Cca2:CRISPR-821-2456-p1",
+      "label": "Cca2",
+      "array_id": "CRISPR-821-2456-p1",
+      "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "source_sha256": "603b1ba4bf4243d0d20e6c6d10709749aa229e277961285ee13d674db6f2310b"
+    },
+    {
+      "identity": "Cco:CRISPR-2402-2965-bf1",
+      "label": "Cco",
+      "array_id": "CRISPR-2402-2965-bf1",
+      "repeat": "AGTTTTAGTCTCTTTTTAAATTTCTTTATGGTAAAAT",
+      "source_sha256": "4c5c1950d49f5de8196020dbf02500d7bf288fcd89a44c980cdbd2ac41142081"
+    },
+    {
+      "identity": "Cga:CRISPR-6499-8240-p1",
+      "label": "Cga",
+      "array_id": "CRISPR-6499-8240-p1",
+      "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "source_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9"
+    },
+    {
+      "identity": "Cgl:CRISPR-6944-7504-p1",
+      "label": "Cgl",
+      "array_id": "CRISPR-6944-7504-p1",
+      "repeat": "GTTTTGGAGCAGTGTCGTTCTGACTGGTAATCCAAC",
+      "source_sha256": "31fd754448401fda81149a833948cb89a28cc14b3c049714262fa662fa1338bd"
+    },
+    {
+      "identity": "Cme1:CRISPR-6-203-p1",
+      "label": "Cme1",
+      "array_id": "CRISPR-6-203-p1",
+      "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "source_sha256": "e5430e7257954ed26196ee411ed624c527823dd268adfa377c598d33568b188b"
+    },
+    {
+      "identity": "Cme2:CRISPR-5-171-p1",
+      "label": "Cme2",
+      "array_id": "CRISPR-5-171-p1",
+      "repeat": "GTTGTGGATTCCGGGCAGGCATCGATCAACTACACT",
+      "source_sha256": "f2b754f4ddf258f1525360806a349de08384c0bbcf720b2170667851e05bceb8"
+    },
+    {
+      "identity": "Cme3:CRISPR-5-237-p1",
+      "label": "Cme3",
+      "array_id": "CRISPR-5-237-p1",
+      "repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+      "source_sha256": "49dff5c9e050ea8f3fd9736515c59ab503ac7db548438429714c60b7436360cf"
+    },
+    {
+      "identity": "Cme4:CRISPR-2742-2913-bf1",
+      "label": "Cme4",
+      "array_id": "CRISPR-2742-2913-bf1",
+      "repeat": "GGCTGCGGTTTGCGGCCAATTCCTCGTTTGCTAGACTT",
+      "source_sha256": "3fb4b6709b141ef3dd4d2fc7e31ecdcf11627121baf2850e4bc9118a3d18acc3"
+    },
+    {
+      "identity": "Cpe:CRISPR-19810-21492-p1",
+      "label": "Cpe",
+      "array_id": "CRISPR-19810-21492-p1",
+      "repeat": "GTTATAGTTCCTAGTAAATTCTCGATATGCTATAAT",
+      "source_sha256": "eec6b6169924480a3f69048d2bd048ecfeebcbad45c6ec31b3f60bcc93cf79f7"
+    },
+    {
+      "identity": "Csa:CRISPR-5120-5749-p1",
+      "label": "Csa",
+      "array_id": "CRISPR-5120-5749-p1",
+      "repeat": "GAAGCTAGCACGGTGGAACGGACCGGGCTACAGGAC",
+      "source_sha256": "3fef3be21a084c55776efb028d1047207407aa4b5c837e95411d009b65fc7c05"
+    },
+    {
+      "identity": "Dde:CRISPR-1342-3187-bf1",
+      "label": "Dde",
+      "array_id": "CRISPR-1342-3187-bf1",
+      "repeat": "GTTGTAGCTCCCTCTCTCACCCCGGAAAGCTACAATC",
+      "source_sha256": "b6bff2edd12e9a894e9e111f83dc9c173ff0b61f70dc26402a545fa149ba1e66"
+    },
+    {
+      "identity": "Ece:CRISPR-19804-23077-bf1",
+      "label": "Ece",
+      "array_id": "CRISPR-19804-23077-bf1",
+      "repeat": "GTTTTTGTACTCTTAATGATGTGGTATCAGTAAAAC",
+      "source_sha256": "a72b5c993905bf33b70958a7ebb6a76d9d067c08d9efc49723e0e5fb4e6da88c"
+    },
+    {
+      "identity": "Edo:CRISPR-6591-6759-p1",
+      "label": "Edo",
+      "array_id": "CRISPR-6591-6759-p1",
+      "repeat": "GTTTTGTTACCATATGGATTTTTGCTAGATTAAGACA",
+      "source_sha256": "754d23ca4ee86842ac3e6dd609754b9155d60d76a1b6508d3a5ebb77d5610445"
+    },
+    {
+      "identity": "Efa:CRISPR-3258-3821-bf1",
+      "label": "Efa",
+      "array_id": "CRISPR-3258-3821-bf1",
+      "repeat": "GTTTTGGAAGCATTCAAATCAGCATAGCTCTAAAAC",
+      "source_sha256": "bca32faa9ff6bbb5cdf23baeb7cad61e68ee04f345b366477e3ba9cdb4bc54fc"
+    },
+    {
+      "identity": "Eit:CRISPR-2468-2702-bf1",
+      "label": "Eit",
+      "array_id": "CRISPR-2468-2702-bf1",
+      "repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+      "source_sha256": "89ac0cb20d30632e56983b562c12fec54d5033ca03ff0a19a064f281848d7c17"
+    },
+    {
+      "identity": "Esp1:CRISPR-2884-3709-p1",
+      "label": "Esp1",
+      "array_id": "CRISPR-2884-3709-p1",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2"
+    },
+    {
+      "identity": "Esp1:CRISPR-5397-8258-p2",
+      "label": "Esp1",
+      "array_id": "CRISPR-5397-8258-p2",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2"
+    },
+    {
+      "identity": "Esp2:CRISPR-20002-20300-p1",
+      "label": "Esp2",
+      "array_id": "CRISPR-20002-20300-p1",
+      "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+      "source_sha256": "75e0165e7c96d630702b6d99c7badb70a0ccd9b66adb0ee534440baa4087beae"
+    },
+    {
+      "identity": "Ffr:CRISPR-7647-8299-p1",
+      "label": "Ffr",
+      "array_id": "CRISPR-7647-8299-p1",
+      "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "source_sha256": "2d790370c780a6900ecc164d69e7dceb9b05099ce0af240b534be3150a4d1043"
+    },
+    {
+      "identity": "Fho:CRISPR-3876-4241-bf1",
+      "label": "Fho",
+      "array_id": "CRISPR-3876-4241-bf1",
+      "repeat": "GTTTTACTGATAGAAAATTATCGAGAGTACAAAAAC",
+      "source_sha256": "9972df05d54cc4893be375debe4c6cb6a6e0b29b64670efa7dbff81c22cf9d03"
+    },
+    {
+      "identity": "Fma:CRISPR-6898-7859-p1",
+      "label": "Fma",
+      "array_id": "CRISPR-6898-7859-p1",
+      "repeat": "GTTTGAGAATGATGTAATTTCATATAGGTATTAAAC",
+      "source_sha256": "67c8939ef237e3d3228cb000270e0d4c223d8959a74a708b543281f6c649399c"
+    },
+    {
+      "identity": "Ghc1:CRISPR-1-366-p1",
+      "label": "Ghc1",
+      "array_id": "CRISPR-1-366-p1",
+      "repeat": "GTTCCGGTCAGAGCACAAATCCCAATCTGCTAGACT",
+      "source_sha256": "e93a303dffd8083dd745c92fda35b6edbe73e746f24be8ff58959dba30167ae0"
+    },
+    {
+      "identity": "Ghc2:CRISPR-8872-9676-p1",
+      "label": "Ghc2",
+      "array_id": "CRISPR-8872-9676-p1",
+      "repeat": "CAGTATATCAAAGGGGATTGGTGATTGATTCCCAGC",
+      "source_sha256": "a03683552e13989dc23d164bae8d6104c375e59587e4a78b0f64bd5bbaef2b9b"
+    },
+    {
+      "identity": "Ghe:CRISPR-289-1967-p1",
+      "label": "Ghe",
+      "array_id": "CRISPR-289-1967-p1",
+      "repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+      "source_sha256": "68f3e10489276da48a54aa0edb56a90bbbcb1978b24a9e05fb39b407c29f5b8f"
+    },
+    {
+      "identity": "Ghh1:CRISPR-5114-5940-p1",
+      "label": "Ghh1",
+      "array_id": "CRISPR-5114-5940-p1",
+      "repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+      "source_sha256": "0653368bebd26aa7536087752e3be2ba65e15f74dbdf317b904afaf92bc3c928"
+    },
+    {
+      "identity": "Ghh2:CRISPR-124-1545-p1",
+      "label": "Ghh2",
+      "array_id": "CRISPR-124-1545-p1",
+      "repeat": "GCTGCGGACTGAGGCCGTTTCTCGATTTGCTACCAT",
+      "source_sha256": "72c9169aee69218fc098b5c97cccc2fb65fbc040f94d098fab6059d2eb22d9c9"
+    },
+    {
+      "identity": "Ghy1:CRISPR-1031-1202-bf1",
+      "label": "Ghy1",
+      "array_id": "CRISPR-1031-1202-bf1",
+      "repeat": "CGCTCTGGTTGGCCGGGAGCGGCCTCTTTGATATACTC",
+      "source_sha256": "d2e9cfe2682beb1786d6d2387bc9f0e1d4b820ee76d27715819ec73d0a250538"
+    },
+    {
+      "identity": "Ghy2:CRISPR-35-2206-p1",
+      "label": "Ghy2",
+      "array_id": "CRISPR-35-2206-p1",
+      "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "source_sha256": "c5b0d61585a41b8d446282b624b7efc177a422051801426bf97d13bd2c628a22"
+    },
+    {
+      "identity": "Ghy3:CRISPR-207-3940-p1",
+      "label": "Ghy3",
+      "array_id": "CRISPR-207-3940-p1",
+      "repeat": "GTTTTCGGCATCTCTCGTTTAAAGATGTGATATAAT",
+      "source_sha256": "d6efbba6ff32baf4a572abc7725d7280ab42efa0b2956d57a7acd3342f506c8d"
+    },
+    {
+      "identity": "Ghy4:CRISPR-7294-7527-p1",
+      "label": "Ghy4",
+      "array_id": "CRISPR-7294-7527-p1",
+      "repeat": "ATTATAGCATACCGGAGAATTGAGGGGAACTATAAC",
+      "source_sha256": "51a3dc642f21e69cd3f0552f768f6bd7533d338971ff60ffe06e55bb23c66c78"
+    },
+    {
+      "identity": "Gsp:CRISPR-5876-6110-p1",
+      "label": "Gsp",
+      "array_id": "CRISPR-5876-6110-p1",
+      "repeat": "AATTATACCACAGCGATAATCTCAGGGGAACTATGAC",
+      "source_sha256": "06a9ebad91b7d5a0534772f0d751f684b86a07f9479e87c352022581c684fe87"
+    },
+    {
+      "identity": "Jpa:CRISPR-11170-11368-bf1",
+      "label": "Jpa",
+      "array_id": "CRISPR-11170-11368-bf1",
+      "repeat": "AGTTGTGAATTGCTTTCAGTTCTTTAAATTTATGGAGAATTCACAGG",
+      "source_sha256": "af0de6700140648e45f07d2e44f6c5d086c114f3ddfd0305424632f69d158f09"
+    },
+    {
+      "identity": "Khu:CRISPR-9278-9446-bf1",
+      "label": "Khu",
+      "array_id": "CRISPR-9278-9446-bf1",
+      "repeat": "GTTTTAGACCAATGTAATTTTAGATAGTAGTAAAACA",
+      "source_sha256": "10aac8a4f4d594bf773a601c3f744ac700597065540460de4d0012470efe78f3"
+    },
+    {
+      "identity": "Kki:CRISPR-20002-20367-bf1",
+      "label": "Kki",
+      "array_id": "CRISPR-20002-20367-bf1",
+      "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+      "source_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579"
+    },
+    {
+      "identity": "Lan:CRISPR-7041-7934-bf1",
+      "label": "Lan",
+      "array_id": "CRISPR-7041-7934-bf1",
+      "repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+      "source_sha256": "dbc7cda677df442d8653d9b1e8b1553fa9ec92307461bd5b98649f353d56adae"
+    },
+    {
+      "identity": "Lce:CRISPR-6837-7862-bf1",
+      "label": "Lce",
+      "array_id": "CRISPR-6837-7862-bf1",
+      "repeat": "GTTTGAGAAGTGTGTTGTTCTCGATAGGTCTTAAAC",
+      "source_sha256": "1abfbadd67521407004d5a7f2b5933ebd070ad62c0df1965e009e771d6d38784"
+    },
+    {
+      "identity": "Lmo:CRISPR-7222-7917-bf1",
+      "label": "Lmo",
+      "array_id": "CRISPR-7222-7917-bf1",
+      "repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTAACAAAAC",
+      "source_sha256": "e08c25f7f6426b9aac2c983a0de9bf0ebaa750dfe463947f1fcb3dac06fb5815"
+    },
+    {
+      "identity": "Lpn:CRISPR-6245-8575-p1",
+      "label": "Lpn",
+      "array_id": "CRISPR-6245-8575-p1",
+      "repeat": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+      "source_sha256": "840fc55e69874889fc5a471cc7f0b2296761333d917fac561eeaa81a1674a11c"
+    },
+    {
+      "identity": "Lrh:CRISPR-2106-3926-p1",
+      "label": "Lrh",
+      "array_id": "CRISPR-2106-3926-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "94910231a28670fcb711c44ccf513cb31408e3c9d67e14c096b47d83cc626b43"
+    },
+    {
+      "identity": "Lsp1:CRISPR-34-201-p1",
+      "label": "Lsp1",
+      "array_id": "CRISPR-34-201-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a"
+    },
+    {
+      "identity": "Lsp2:CRISPR-20002-21357-p1",
+      "label": "Lsp2",
+      "array_id": "CRISPR-20002-21357-p1",
+      "repeat": "GTTCTAATCATCATTGATCTAACAACCACCTAAAAC",
+      "source_sha256": "b0048ccc3c5f5a2f8b2f5c96867298b981d3a5fd8057706105132a61429a9544"
+    },
+    {
+      "identity": "Mga:CRISPR-7601-7769-p1",
+      "label": "Mga",
+      "array_id": "CRISPR-7601-7769-p1",
+      "repeat": "GTTTTAGCACTGTACAATACTTGTGTAAGCAATAACT",
+      "source_sha256": "b5bd9b17b19b910c32bdd946b14121c26b064ed532157a40abfb2ce6ae94dcb3"
+    },
+    {
+      "identity": "Msc:CRISPR-20002-20630-p1",
+      "label": "Msc",
+      "array_id": "CRISPR-20002-20630-p1",
+      "repeat": "ATTATAACATATTAAATATTGTGGTCAATACAGAAC",
+      "source_sha256": "a1b297fc4589009a1d8276a37adf8ae4da40c11f1e41b7c88ce8bfeb73e985f3"
+    },
+    {
+      "identity": "Mse:CRISPR-21586-21820-bf1",
+      "label": "Mse",
+      "array_id": "CRISPR-21586-21820-bf1",
+      "repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f"
+    },
+    {
+      "identity": "Mse:CRISPR-58082-58241-p1",
+      "label": "Mse",
+      "array_id": "CRISPR-58082-58241-p1",
+      "repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f"
+    },
+    {
+      "identity": "Mse:CRISPR-69108-69269-p2",
+      "label": "Mse",
+      "array_id": "CRISPR-69108-69269-p2",
+      "repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f"
+    },
+    {
+      "identity": "Nme2:CRISPR-19936-21093-bf1",
+      "label": "Nme2",
+      "array_id": "CRISPR-19936-21093-bf1",
+      "repeat": "ATTGTAGCACTGCGAAATGAGAATGGGAGCTACAAC",
+      "source_sha256": "20774ff29e12b8a80ad5a64a84de54a3bd4a3ee15366fd91c5abd89cb5f16ac1"
+    },
+    {
+      "identity": "Nsa:CRISPR-20002-20698-p1",
+      "label": "Nsa",
+      "array_id": "CRISPR-20002-20698-p1",
+      "repeat": "GTTTTAAGACCCCTCAAAACCCCACCCTGTTACAAT",
+      "source_sha256": "6ba3378910ccc630ac2dd4b8b1103e230ed5a8d5d43a932c8a6de1505a39cc45"
+    },
+    {
+      "identity": "Nsp:CRISPR-3727-4027-bf1",
+      "label": "Nsp",
+      "array_id": "CRISPR-3727-4027-bf1",
+      "repeat": "GTTGTAGCTTCCTCTCTCATCTCGTAGTGCTACAATA",
+      "source_sha256": "3bddc5999ef56702821e33c5ec11723225d8b8bdba3e4fc71427b651279ea4f3"
+    },
+    {
+      "identity": "Orh:CRISPR-927-2124-bf1",
+      "label": "Orh",
+      "array_id": "CRISPR-927-2124-bf1",
+      "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "source_sha256": "0562363af565a4a8eaf4d7f3317064dce6d36cdc2ac22a8357fee9c098df4d65"
+    },
+    {
+      "identity": "Pac:CRISPR-7982-8875-p1",
+      "label": "Pac",
+      "array_id": "CRISPR-7982-8875-p1",
+      "repeat": "GTTTCAGAAGGATGTTAAATCAATAAGGTTAAGATC",
+      "source_sha256": "42717b748848acc3908db468bbf101ab7ac97b966b7f42f77551d654b1abcd64"
+    },
+    {
+      "identity": "Phi:CRISPR-7329-7681-p1",
+      "label": "Phi",
+      "array_id": "CRISPR-7329-7681-p1",
+      "repeat": "GTTGTGTCTGATAATGCAAAGATACTAATTTTAAAGCAAATCACAAC",
+      "source_sha256": "5903bca902156afd73a306051f77510abadd8e068fd50ab43bfd1ad028ee48f1"
+    },
+    {
+      "identity": "Psp:CRISPR-7014-7368-bf1",
+      "label": "Psp",
+      "array_id": "CRISPR-7014-7368-bf1",
+      "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "source_sha256": "30e5a08dd370ceeb057333bb2c42a4ff4a1dbc0ed10960c2ab3973d7f79defb7"
+    },
+    {
+      "identity": "Rsp:CRISPR-20002-20364-p1",
+      "label": "Rsp",
+      "array_id": "CRISPR-20002-20364-p1",
+      "repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+      "source_sha256": "728e181e9ffeec8b43ed650ad9c1116235390ae1249e37d677222bef8649bc03"
+    },
+    {
+      "identity": "Sag1:CRISPR-20002-20566-bf1",
+      "label": "Sag1",
+      "array_id": "CRISPR-20002-20566-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "9d457e530d4fda4ecf0b5a293df6f530024758b5bdf1840c57845572366d02fc"
+    },
+    {
+      "identity": "Sag2:CRISPR-7621-7854-bf1",
+      "label": "Sag2",
+      "array_id": "CRISPR-7621-7854-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "d469035c8a6588eae207ec3f4d14aefc2051b2fa7f4f217db9e86e7128f8e019"
+    },
+    {
+      "identity": "Sdo:CRISPR-20002-20696-p1",
+      "label": "Sdo",
+      "array_id": "CRISPR-20002-20696-p1",
+      "repeat": "AGAATAGCTGTTCAAAATCCGAGGTCCAGCCGCAAC",
+      "source_sha256": "0ac1747f7560a29c79e783a8c490a4756c962555fe03b79ddef1745833cac972"
+    },
+    {
+      "identity": "Sdy:CRISPR-1790-3080-bf1",
+      "label": "Sdy",
+      "array_id": "CRISPR-1790-3080-bf1",
+      "repeat": "GTTTTGGGACCATTCAAAACAACATAGCTCTAAAAC",
+      "source_sha256": "18e924b30476219e63e7f428af420d5a499b1b1c2c6154e5dedc25f6ec6662a9"
+    },
+    {
+      "identity": "Seq1:CRISPR-7935-8432-bf1",
+      "label": "Seq1",
+      "array_id": "CRISPR-7935-8432-bf1",
+      "repeat": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "5a8ab80142682c944d29c09e67c6de51f27bec5484ae89ea7b14de089d291ee3"
+    },
+    {
+      "identity": "Seq2:CRISPR-7231-7597-bf1",
+      "label": "Seq2",
+      "array_id": "CRISPR-7231-7597-bf1",
+      "repeat": "GTTTTAGAGTTATGCTGTATTGAATGGTTCCAAAACA",
+      "source_sha256": "fed7a035435a909a6fab3808f6972ae90662c9003ecc13ee72d5a097f323193e"
+    },
+    {
+      "identity": "Sga:CRISPR-589-1217-bf1",
+      "label": "Sga",
+      "array_id": "CRISPR-589-1217-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e"
+    },
+    {
+      "identity": "Sga:CRISPR-7794-9742-bf2",
+      "label": "Sga",
+      "array_id": "CRISPR-7794-9742-bf2",
+      "repeat": "GTTTTGGAACCATTCGAAACAGCACAGCTCTAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e"
+    },
+    {
+      "identity": "Sgo:CRISPR-4443-4611-bf1",
+      "label": "Sgo",
+      "array_id": "CRISPR-4443-4611-bf1",
+      "repeat": "GTTGTACAGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "833e97c074142f8dbb6f88979a6591760f03e184fdff792175e38fb712a78ae6"
+    },
+    {
+      "identity": "Sma2:CRISPR-3169-3337-bf1",
+      "label": "Sma2",
+      "array_id": "CRISPR-3169-3337-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "20c3cbf8c212e3fad8715d574160c6cc4802bbe84d39bf4450ddcb6ea48515e3"
+    },
+    {
+      "identity": "Smu:CRISPR-1523-2944-bf1",
+      "label": "Smu",
+      "array_id": "CRISPR-1523-2944-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "784779a521c5222760fc594b8f3804697e392d38a2686a1dc2c5db785d5de019"
+    },
+    {
+      "identity": "Spa:CRISPR-21124-21292-p1",
+      "label": "Spa",
+      "array_id": "CRISPR-21124-21292-p1",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAATC",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf"
+    },
+    {
+      "identity": "Spa:CRISPR-24344-24905-p2",
+      "label": "Spa",
+      "array_id": "CRISPR-24344-24905-p2",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAAT",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf"
+    },
+    {
+      "identity": "Sra:CRISPR-19735-20432-bf1",
+      "label": "Sra",
+      "array_id": "CRISPR-19735-20432-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "b8da822f04e88c64561b9a0a7b0de305c6cff6b079f0369e791b415e848bb1c1"
+    },
+    {
+      "identity": "Ssa:CRISPR-6642-8326-bf1",
+      "label": "Ssa",
+      "array_id": "CRISPR-6642-8326-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "cde25d27508ed8ae201920eeaf1331e9e3be1c1474f47c3f257fa44934ce43c4"
+    },
+    {
+      "identity": "Ssi:CRISPR-6239-7725-bf1",
+      "label": "Ssi",
+      "array_id": "CRISPR-6239-7725-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "0a898a50a9ef6c28ce205ece0a984c28c247ac470cf4f1f8c024be7f31c08990"
+    },
+    {
+      "identity": "Ssu:CRISPR-1853-2020-bf1",
+      "label": "Ssu",
+      "array_id": "CRISPR-1853-2020-bf1",
+      "repeat": "GTTTTACTGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "c92dfe115900afc30d06b15b075dfdd0cde0aa07c276abbec3552e31388869cf"
+    },
+    {
+      "identity": "Sth1A:CRISPR-9342-9511-bf1",
+      "label": "Sth1A",
+      "array_id": "CRISPR-9342-9511-bf1",
+      "repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "c3ba8b1a7889ed04bee697098c22e8a6296257cbb55a376759167b8d2a873d35"
+    },
+    {
+      "identity": "Tba:CRISPR-7126-7358-p1",
+      "label": "Tba",
+      "array_id": "CRISPR-7126-7358-p1",
+      "repeat": "GTTTGAGAGTAATGTAATCTACATAGGTACTAAGAC",
+      "source_sha256": "674313c761a7291ec5d08deaf4dbc6440092b5f8fd35388a1cd8ed74798674f7"
+    },
+    {
+      "identity": "Tde:CRISPR-11149-11317-bf1",
+      "label": "Tde",
+      "array_id": "CRISPR-11149-11317-bf1",
+      "repeat": "GTTTGAGAGTTGTGTAATTTAAGATGGATCTCAAACA",
+      "source_sha256": "77ba82a9f3c7836ef6b9b46d863ce79583b09db0b4300c067cce493f71a90600"
+    },
+    {
+      "identity": "Tmo:CRISPR-2355-2523-bf1",
+      "label": "Tmo",
+      "array_id": "CRISPR-2355-2523-bf1",
+      "repeat": "GCCGTGGTTTCCCTACCGATTTGCCAGTGGTAGGTTG",
+      "source_sha256": "04b9d3f4fa42e5990f90f6aba0121e2cb1e51457d15e2f4280b4f28145f9bd1e"
+    },
+    {
+      "identity": "Tpu:CRISPR-20002-20167-p1",
+      "label": "Tpu",
+      "array_id": "CRISPR-20002-20167-p1",
+      "repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+      "source_sha256": "ef554b610a62478b0a1895ef06d1b3d77fcbf675487113db16b2f721c40db6e0"
+    },
+    {
+      "identity": "Tsp:CRISPR-6813-7113-bf1",
+      "label": "Tsp",
+      "array_id": "CRISPR-6813-7113-bf1",
+      "repeat": "GGTTTTAGTACCCTTAAGATTTTAGCTACTGTAAAAC",
+      "source_sha256": "93fca30212f07806c821b616b3fa568d3970f9e04fc46507615de59ad76db0b1"
+    },
+    {
+      "identity": "Vpa:CRISPR-8116-8482-bf1",
+      "label": "Vpa",
+      "array_id": "CRISPR-8116-8482-bf1",
+      "repeat": "GGTTTGAGAGTAGTGTAATTCTGTAAACCTCTAAAAC",
+      "source_sha256": "47efd7e5a7bb5b0480e2eee0ef3b66e9d985f9e60a54dd4ff829005c31d6a94d"
+    },
+    {
+      "identity": "Wvi:CRISPR-6636-8205-p1",
+      "label": "Wvi",
+      "array_id": "CRISPR-6636-8205-p1",
+      "repeat": "GTTGTGAATTCCTTTCAAATTTTTGTAGATTTACTCAGTAGAATTACAAC",
+      "source_sha256": "1a385bbc725f720e083518b481ea7eeee6ba5238a9b5a5171fdab82390a63e04"
+    }
+  ],
+  "donor_pool_sha256": "250f504d712ecd0d7cf917c3b8d43198ecfe3cbb22c0499afb13ef8e6e7ad732",
+  "repeat_controls": [
+    {
+      "identity": "Ain:CRISPR-6307-8646-p1",
+      "label": "Ain",
+      "array_id": "CRISPR-6307-8646-p1",
+      "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+      "source_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "23403225766284565719273921837727647267254396121291407371497939108053062546352",
+      "control_kind": "repeat_dinucleotide:CRISPR-6307-8646-p1",
+      "control_repeat": "GAACATAGATTATTTCAGAATGAAAATAAAGTGGTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ain:CRISPR-6307-8646-p1",
+      "label": "Ain",
+      "array_id": "CRISPR-6307-8646-p1",
+      "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+      "source_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "43221913755913878240660800736101216928149890897096040485085759478952840901623",
+      "control_kind": "repeat_dinucleotide:CRISPR-6307-8646-p1",
+      "control_repeat": "GGAAAGACATCAGTATAATGTTATGAAAAAGATTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ain:CRISPR-6307-8646-p1",
+      "label": "Ain",
+      "array_id": "CRISPR-6307-8646-p1",
+      "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+      "source_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+      "donor": "Bbo:CRISPR-5980-6862-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Bbo:CRISPR-5980-6862-p1",
+      "label": "Bbo",
+      "array_id": "CRISPR-5980-6862-p1",
+      "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+      "source_sha256": "fd0840c870424c0384a1da093ed0fc1fbc9f20f34c556f7bd09a7f35f2712043",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "114055383271505780164065339634598256465823022775713810979939406934188502890700",
+      "control_kind": "repeat_dinucleotide:CRISPR-5980-6862-p1",
+      "control_repeat": "CCAATTATTGTAGGGAAGATTGATTTCTACAGAAGGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bbo:CRISPR-5980-6862-p1",
+      "label": "Bbo",
+      "array_id": "CRISPR-5980-6862-p1",
+      "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+      "source_sha256": "fd0840c870424c0384a1da093ed0fc1fbc9f20f34c556f7bd09a7f35f2712043",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "107915507697060918551546514425372223719786744215999558099879189648086355000046",
+      "control_kind": "repeat_dinucleotide:CRISPR-5980-6862-p1",
+      "control_repeat": "CCAAGTATATTTCCTTAATGAGATTTGCAGGAGGGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bbo:CRISPR-5980-6862-p1",
+      "label": "Bbo",
+      "array_id": "CRISPR-5980-6862-p1",
+      "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+      "source_sha256": "fd0840c870424c0384a1da093ed0fc1fbc9f20f34c556f7bd09a7f35f2712043",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GGTTTTAGTACCCTTAAGATTTTAGCTACTGTAAAAC",
+      "donor": "Tsp:CRISPR-6813-7113-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Bni:CRISPR-20595-20829-p1",
+      "label": "Bni",
+      "array_id": "CRISPR-20595-20829-p1",
+      "repeat": "GGTTTTCCTATACCAAAAACTGAAAGAGTGCCAAAAC",
+      "source_sha256": "2044466572b2a1e34ab0bf8e7733f16e1dbd789f40bb6be2ce4de48a7c339f13",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "93920231227803195054981242071493001263788918184337628652175148610461195060913",
+      "control_kind": "repeat_dinucleotide:CRISPR-20595-20829-p1",
+      "control_repeat": "GCAGTCCAATTACCTTGTAAAAAAACTTGAAGGAACC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bni:CRISPR-20595-20829-p1",
+      "label": "Bni",
+      "array_id": "CRISPR-20595-20829-p1",
+      "repeat": "GGTTTTCCTATACCAAAAACTGAAAGAGTGCCAAAAC",
+      "source_sha256": "2044466572b2a1e34ab0bf8e7733f16e1dbd789f40bb6be2ce4de48a7c339f13",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "82825328068171518117443864279445674704300755795357776857872000826698878143588",
+      "control_kind": "repeat_dinucleotide:CRISPR-20595-20829-p1",
+      "control_repeat": "GTTAAGAAACCAAATTTGGCTCTAAACCAGTGAAACC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bni:CRISPR-20595-20829-p1",
+      "label": "Bni",
+      "array_id": "CRISPR-20595-20829-p1",
+      "repeat": "GGTTTTCCTATACCAAAAACTGAAAGAGTGCCAAAAC",
+      "source_sha256": "2044466572b2a1e34ab0bf8e7733f16e1dbd789f40bb6be2ce4de48a7c339f13",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "donor": "Lrh:CRISPR-2106-3926-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Bok:CRISPR-273-441-p1",
+      "label": "Bok",
+      "array_id": "CRISPR-273-441-p1",
+      "repeat": "GTCATATCTCCATCTAATCCGTTGCTGTGATATGATA",
+      "source_sha256": "c27ed9055fd0ec00c156ff56230b6c6a5a737ba28d3edb277d1baaf236822864",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "97351767619125435089251341016796162170230760317645342466069173307287978022626",
+      "control_kind": "repeat_dinucleotide:CRISPR-273-441-p1",
+      "control_repeat": "GTAATCGTCCCTCTCATGATGCTATGATCATGTATTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bok:CRISPR-273-441-p1",
+      "label": "Bok",
+      "array_id": "CRISPR-273-441-p1",
+      "repeat": "GTCATATCTCCATCTAATCCGTTGCTGTGATATGATA",
+      "source_sha256": "c27ed9055fd0ec00c156ff56230b6c6a5a737ba28d3edb277d1baaf236822864",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "9357036028435730051419499599778081532954097286183029910259093084197149997162",
+      "control_kind": "repeat_dinucleotide:CRISPR-273-441-p1",
+      "control_repeat": "GTCCATCATGATTATAATCTATGATCGTGCTGTCCTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Bok:CRISPR-273-441-p1",
+      "label": "Bok",
+      "array_id": "CRISPR-273-441-p1",
+      "repeat": "GTCATATCTCCATCTAATCCGTTGCTGTGATATGATA",
+      "source_sha256": "c27ed9055fd0ec00c156ff56230b6c6a5a737ba28d3edb277d1baaf236822864",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+      "donor": "Lan:CRISPR-7041-7934-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cca1:CRISPR-6602-7495-bf1",
+      "label": "Cca1",
+      "array_id": "CRISPR-6602-7495-bf1",
+      "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "source_sha256": "a6e23937d61fc7daf01b123a35885ead4ac446d3c42386b729e9af6ce211c5c5",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "77297092158055810109971745891632555950707700548589730135253512062963248960344",
+      "control_kind": "repeat_dinucleotide:CRISPR-6602-7495-bf1",
+      "control_repeat": "GTTGAAATACATGTTACTTTAAAAAAATTAAGTCGACACAAAAGCGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cca1:CRISPR-6602-7495-bf1",
+      "label": "Cca1",
+      "array_id": "CRISPR-6602-7495-bf1",
+      "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "source_sha256": "a6e23937d61fc7daf01b123a35885ead4ac446d3c42386b729e9af6ce211c5c5",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "33607394762686972926479275533093810804964170914865560956472772349211518283441",
+      "control_kind": "repeat_dinucleotide:CRISPR-6602-7495-bf1",
+      "control_repeat": "GTTTGTCACTAATATATTAAACGACAAGCAGCGTTTGAAAAAAAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cca1:CRISPR-6602-7495-bf1",
+      "label": "Cca1",
+      "array_id": "CRISPR-6602-7495-bf1",
+      "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "source_sha256": "a6e23937d61fc7daf01b123a35885ead4ac446d3c42386b729e9af6ce211c5c5",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AGAATAGCTGTTCAAAATCCGAGGTCCAGCCGCAAC",
+      "donor": "Sdo:CRISPR-20002-20696-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cca2:CRISPR-821-2456-p1",
+      "label": "Cca2",
+      "array_id": "CRISPR-821-2456-p1",
+      "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "source_sha256": "603b1ba4bf4243d0d20e6c6d10709749aa229e277961285ee13d674db6f2310b",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "84875165738546034689374891543744595882464721901733596248428073587817550725019",
+      "control_kind": "repeat_dinucleotide:CRISPR-821-2456-p1",
+      "control_repeat": "GGTGTACTTCTTCCTAGCATTGAGGGAAGAACCCTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cca2:CRISPR-821-2456-p1",
+      "label": "Cca2",
+      "array_id": "CRISPR-821-2456-p1",
+      "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "source_sha256": "603b1ba4bf4243d0d20e6c6d10709749aa229e277961285ee13d674db6f2310b",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "72993831417879007534532314314646262479402310609528232491377273749556945348987",
+      "control_kind": "repeat_dinucleotide:CRISPR-821-2456-p1",
+      "control_repeat": "GTTGAGAGCCCTCCTAAGGACACTAATTTCTGGGTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cca2:CRISPR-821-2456-p1",
+      "label": "Cca2",
+      "array_id": "CRISPR-821-2456-p1",
+      "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "source_sha256": "603b1ba4bf4243d0d20e6c6d10709749aa229e277961285ee13d674db6f2310b",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+      "donor": "Lpn:CRISPR-6245-8575-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cco:CRISPR-2402-2965-bf1",
+      "label": "Cco",
+      "array_id": "CRISPR-2402-2965-bf1",
+      "repeat": "AGTTTTAGTCTCTTTTTAAATTTCTTTATGGTAAAAT",
+      "source_sha256": "4c5c1950d49f5de8196020dbf02500d7bf288fcd89a44c980cdbd2ac41142081",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "36498525723080710143593609193773544891058902860289008525358400146179412437243",
+      "control_kind": "repeat_dinucleotide:CRISPR-2402-2965-bf1",
+      "control_repeat": "AATAAGGTTTTTAGTTCTTCTTTTGTATCTAAAATTT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cco:CRISPR-2402-2965-bf1",
+      "label": "Cco",
+      "array_id": "CRISPR-2402-2965-bf1",
+      "repeat": "AGTTTTAGTCTCTTTTTAAATTTCTTTATGGTAAAAT",
+      "source_sha256": "4c5c1950d49f5de8196020dbf02500d7bf288fcd89a44c980cdbd2ac41142081",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "101224241599641017093273366374615470505368890142207740821879879911181853302618",
+      "control_kind": "repeat_dinucleotide:CRISPR-2402-2965-bf1",
+      "control_repeat": "ATAGTTTCTTCTAAAATTTTTAAATTAGTTCTTGGTT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cco:CRISPR-2402-2965-bf1",
+      "label": "Cco",
+      "array_id": "CRISPR-2402-2965-bf1",
+      "repeat": "AGTTTTAGTCTCTTTTTAAATTTCTTTATGGTAAAAT",
+      "source_sha256": "4c5c1950d49f5de8196020dbf02500d7bf288fcd89a44c980cdbd2ac41142081",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "donor": "Sth1A:CRISPR-9342-9511-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cga:CRISPR-6499-8240-p1",
+      "label": "Cga",
+      "array_id": "CRISPR-6499-8240-p1",
+      "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "source_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "23008858445680477648862088166803270454669581518832716425838841673867868476753",
+      "control_kind": "repeat_dinucleotide:CRISPR-6499-8240-p1",
+      "control_repeat": "GCAATTCTGAAGAACGAACTCAGAACATGTAACATATTGCTTTAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cga:CRISPR-6499-8240-p1",
+      "label": "Cga",
+      "array_id": "CRISPR-6499-8240-p1",
+      "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "source_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "39684363601637970227155825843155339586602266717672793131522105692693892220765",
+      "control_kind": "repeat_dinucleotide:CRISPR-6499-8240-p1",
+      "control_repeat": "GAAGAATTAACAATTGTGCGCATCTTTAACTGAGAACAACTACAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cga:CRISPR-6499-8240-p1",
+      "label": "Cga",
+      "array_id": "CRISPR-6499-8240-p1",
+      "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "source_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+      "donor": "Ghh1:CRISPR-5114-5940-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cgl:CRISPR-6944-7504-p1",
+      "label": "Cgl",
+      "array_id": "CRISPR-6944-7504-p1",
+      "repeat": "GTTTTGGAGCAGTGTCGTTCTGACTGGTAATCCAAC",
+      "source_sha256": "31fd754448401fda81149a833948cb89a28cc14b3c049714262fa662fa1338bd",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "69472626100844715505855925311910881540713136194873920245402449211564577783617",
+      "control_kind": "repeat_dinucleotide:CRISPR-6944-7504-p1",
+      "control_repeat": "GATAGTGTTGGTTGCCGAGTTCACTCAAACTTGGTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cgl:CRISPR-6944-7504-p1",
+      "label": "Cgl",
+      "array_id": "CRISPR-6944-7504-p1",
+      "repeat": "GTTTTGGAGCAGTGTCGTTCTGACTGGTAATCCAAC",
+      "source_sha256": "31fd754448401fda81149a833948cb89a28cc14b3c049714262fa662fa1338bd",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "72305137920338547464349383958906198305257690279270024068289422710949652046722",
+      "control_kind": "repeat_dinucleotide:CRISPR-6944-7504-p1",
+      "control_repeat": "GCGTTTTGGTGTAGTTGGAAGATCCTCACTGTCAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cgl:CRISPR-6944-7504-p1",
+      "label": "Cgl",
+      "array_id": "CRISPR-6944-7504-p1",
+      "repeat": "GTTTTGGAGCAGTGTCGTTCTGACTGGTAATCCAAC",
+      "source_sha256": "31fd754448401fda81149a833948cb89a28cc14b3c049714262fa662fa1338bd",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAAGTGTGTTGTTCTCGATAGGTCTTAAAC",
+      "donor": "Lce:CRISPR-6837-7862-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cme1:CRISPR-6-203-p1",
+      "label": "Cme1",
+      "array_id": "CRISPR-6-203-p1",
+      "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "source_sha256": "e5430e7257954ed26196ee411ed624c527823dd268adfa377c598d33568b188b",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "42933845626412008246160066500769062818339653536188321560089566089882243640558",
+      "control_kind": "repeat_dinucleotide:CRISPR-6-203-p1",
+      "control_repeat": "GTCATTGATTTTGCACATGATCTTTTTTCTAATTCTAAGTGTTGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme1:CRISPR-6-203-p1",
+      "label": "Cme1",
+      "array_id": "CRISPR-6-203-p1",
+      "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "source_sha256": "e5430e7257954ed26196ee411ed624c527823dd268adfa377c598d33568b188b",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "79683251321546770374065843896139848323914519575745897154171628937697605837159",
+      "control_kind": "repeat_dinucleotide:CRISPR-6-203-p1",
+      "control_repeat": "GACATGCTTCAGAATGATCTCATTTTTGTCTTAATGTGTTTTTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme1:CRISPR-6-203-p1",
+      "label": "Cme1",
+      "array_id": "CRISPR-6-203-p1",
+      "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "source_sha256": "e5430e7257954ed26196ee411ed624c527823dd268adfa377c598d33568b188b",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "donor": "Smu:CRISPR-1523-2944-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cme2:CRISPR-5-171-p1",
+      "label": "Cme2",
+      "array_id": "CRISPR-5-171-p1",
+      "repeat": "GTTGTGGATTCCGGGCAGGCATCGATCAACTACACT",
+      "source_sha256": "f2b754f4ddf258f1525360806a349de08384c0bbcf720b2170667851e05bceb8",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "51702516167690358843402036110264898741319762309954344671444043624841935549562",
+      "control_kind": "repeat_dinucleotide:CRISPR-5-171-p1",
+      "control_repeat": "GGATCACTGGTTTAGCGTGGACTCATCACCGGCAAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme2:CRISPR-5-171-p1",
+      "label": "Cme2",
+      "array_id": "CRISPR-5-171-p1",
+      "repeat": "GTTGTGGATTCCGGGCAGGCATCGATCAACTACACT",
+      "source_sha256": "f2b754f4ddf258f1525360806a349de08384c0bbcf720b2170667851e05bceb8",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "45165824313407064973022267477481289728264538770240184763180765477667666534456",
+      "control_kind": "repeat_dinucleotide:CRISPR-5-171-p1",
+      "control_repeat": "GGGCAATGGCTCTTTACACCGTCAGATGTCGGACAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme2:CRISPR-5-171-p1",
+      "label": "Cme2",
+      "array_id": "CRISPR-5-171-p1",
+      "repeat": "GTTGTGGATTCCGGGCAGGCATCGATCAACTACACT",
+      "source_sha256": "f2b754f4ddf258f1525360806a349de08384c0bbcf720b2170667851e05bceb8",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGCACTGTACAATACTTGTGTAAGCAATAACT",
+      "donor": "Mga:CRISPR-7601-7769-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cme3:CRISPR-5-237-p1",
+      "label": "Cme3",
+      "array_id": "CRISPR-5-237-p1",
+      "repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+      "source_sha256": "49dff5c9e050ea8f3fd9736515c59ab503ac7db548438429714c60b7436360cf",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "27354058753337827559556690843204474700014304634910415030146923070533665464979",
+      "control_kind": "repeat_dinucleotide:CRISPR-5-237-p1",
+      "control_repeat": "GAAGCTGTGAGGGTTTAATTAATGAGAAATTTAAGT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme3:CRISPR-5-237-p1",
+      "label": "Cme3",
+      "array_id": "CRISPR-5-237-p1",
+      "repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+      "source_sha256": "49dff5c9e050ea8f3fd9736515c59ab503ac7db548438429714c60b7436360cf",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "22013780256101303293576283158649876240028745310685946576670299142790749453863",
+      "control_kind": "repeat_dinucleotide:CRISPR-5-237-p1",
+      "control_repeat": "GTTAAGGGAGTAGCTGAATTGAATTGTAGAAAATTT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme3:CRISPR-5-237-p1",
+      "label": "Cme3",
+      "array_id": "CRISPR-5-237-p1",
+      "repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+      "source_sha256": "49dff5c9e050ea8f3fd9736515c59ab503ac7db548438429714c60b7436360cf",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AGTTTTAGTCTCTTTTTAAATTTCTTTATGGTAAAAT",
+      "donor": "Cco:CRISPR-2402-2965-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cme4:CRISPR-2742-2913-bf1",
+      "label": "Cme4",
+      "array_id": "CRISPR-2742-2913-bf1",
+      "repeat": "GGCTGCGGTTTGCGGCCAATTCCTCGTTTGCTAGACTT",
+      "source_sha256": "3fb4b6709b141ef3dd4d2fc7e31ecdcf11627121baf2850e4bc9118a3d18acc3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "96935371807722236126262642725664441202772289005437334803618007557449678424030",
+      "control_kind": "repeat_dinucleotide:CRISPR-2742-2913-bf1",
+      "control_repeat": "GCCTGGCATGAGCGCCTAACGTTTTTGGTTTCTCGGCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme4:CRISPR-2742-2913-bf1",
+      "label": "Cme4",
+      "array_id": "CRISPR-2742-2913-bf1",
+      "repeat": "GGCTGCGGTTTGCGGCCAATTCCTCGTTTGCTAGACTT",
+      "source_sha256": "3fb4b6709b141ef3dd4d2fc7e31ecdcf11627121baf2850e4bc9118a3d18acc3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "71433613298032602971176782211496457539749503297010392830346211095602635938490",
+      "control_kind": "repeat_dinucleotide:CRISPR-2742-2913-bf1",
+      "control_repeat": "GGGTTTGCTTTCGAATGGCTTTGTCCGCCAGCTACGCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cme4:CRISPR-2742-2913-bf1",
+      "label": "Cme4",
+      "array_id": "CRISPR-2742-2913-bf1",
+      "repeat": "GGCTGCGGTTTGCGGCCAATTCCTCGTTTGCTAGACTT",
+      "source_sha256": "3fb4b6709b141ef3dd4d2fc7e31ecdcf11627121baf2850e4bc9118a3d18acc3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+      "donor": "Cme3:CRISPR-5-237-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Cpe:CRISPR-19810-21492-p1",
+      "label": "Cpe",
+      "array_id": "CRISPR-19810-21492-p1",
+      "repeat": "GTTATAGTTCCTAGTAAATTCTCGATATGCTATAAT",
+      "source_sha256": "eec6b6169924480a3f69048d2bd048ecfeebcbad45c6ec31b3f60bcc93cf79f7",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "67707420569061633910660340090053132648601590413336627280238788071799840476635",
+      "control_kind": "repeat_dinucleotide:CRISPR-19810-21492-p1",
+      "control_repeat": "GTTATATCCTTATTAATAGTCGCTCTAGTATGAAAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cpe:CRISPR-19810-21492-p1",
+      "label": "Cpe",
+      "array_id": "CRISPR-19810-21492-p1",
+      "repeat": "GTTATAGTTCCTAGTAAATTCTCGATATGCTATAAT",
+      "source_sha256": "eec6b6169924480a3f69048d2bd048ecfeebcbad45c6ec31b3f60bcc93cf79f7",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "10670234348358493034915324911168098571245873376518891161176224305361629577553",
+      "control_kind": "repeat_dinucleotide:CRISPR-19810-21492-p1",
+      "control_repeat": "GCTCCTAAGTTCGTATATGAGTATATTATAAATCTT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Cpe:CRISPR-19810-21492-p1",
+      "label": "Cpe",
+      "array_id": "CRISPR-19810-21492-p1",
+      "repeat": "GTTATAGTTCCTAGTAAATTCTCGATATGCTATAAT",
+      "source_sha256": "eec6b6169924480a3f69048d2bd048ecfeebcbad45c6ec31b3f60bcc93cf79f7",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAAGCATTCAAATCAGCATAGCTCTAAAAC",
+      "donor": "Efa:CRISPR-3258-3821-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Csa:CRISPR-5120-5749-p1",
+      "label": "Csa",
+      "array_id": "CRISPR-5120-5749-p1",
+      "repeat": "GAAGCTAGCACGGTGGAACGGACCGGGCTACAGGAC",
+      "source_sha256": "3fef3be21a084c55776efb028d1047207407aa4b5c837e95411d009b65fc7c05",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "38929433449864283039075364519494959631009645591745114041971367041381698061543",
+      "control_kind": "repeat_dinucleotide:CRISPR-5120-5749-p1",
+      "control_repeat": "GACGGGCGGACTGGACGTACAAGGCCACTAGGAAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Csa:CRISPR-5120-5749-p1",
+      "label": "Csa",
+      "array_id": "CRISPR-5120-5749-p1",
+      "repeat": "GAAGCTAGCACGGTGGAACGGACCGGGCTACAGGAC",
+      "source_sha256": "3fef3be21a084c55776efb028d1047207407aa4b5c837e95411d009b65fc7c05",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "47302798457478963408911998219071095073282891608111366803850627234379462668955",
+      "control_kind": "repeat_dinucleotide:CRISPR-5120-5749-p1",
+      "control_repeat": "GAAGCTGGGTACTAGGACGGAGCGCCGGGACACAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Csa:CRISPR-5120-5749-p1",
+      "label": "Csa",
+      "array_id": "CRISPR-5120-5749-p1",
+      "repeat": "GAAGCTAGCACGGTGGAACGGACCGGGCTACAGGAC",
+      "source_sha256": "3fef3be21a084c55776efb028d1047207407aa4b5c837e95411d009b65fc7c05",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ATTATAACATATTAAATATTGTGGTCAATACAGAAC",
+      "donor": "Msc:CRISPR-20002-20630-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Dde:CRISPR-1342-3187-bf1",
+      "label": "Dde",
+      "array_id": "CRISPR-1342-3187-bf1",
+      "repeat": "GTTGTAGCTCCCTCTCTCACCCCGGAAAGCTACAATC",
+      "source_sha256": "b6bff2edd12e9a894e9e111f83dc9c173ff0b61f70dc26402a545fa149ba1e66",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "109170781723887704833985085536066856643886939826482850072513087914585745918129",
+      "control_kind": "repeat_dinucleotide:CRISPR-1342-3187-bf1",
+      "control_repeat": "GCTAACAGTGGACCATCTCTTCTAAAGTCCCGCTCCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Dde:CRISPR-1342-3187-bf1",
+      "label": "Dde",
+      "array_id": "CRISPR-1342-3187-bf1",
+      "repeat": "GTTGTAGCTCCCTCTCTCACCCCGGAAAGCTACAATC",
+      "source_sha256": "b6bff2edd12e9a894e9e111f83dc9c173ff0b61f70dc26402a545fa149ba1e66",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "64736059229103020646232921804173328786687199779729964062860266694927134989586",
+      "control_kind": "repeat_dinucleotide:CRISPR-1342-3187-bf1",
+      "control_repeat": "GGAAGCTGTCCCTCTTCTATCCAACCGTAAGCACTCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Dde:CRISPR-1342-3187-bf1",
+      "label": "Dde",
+      "array_id": "CRISPR-1342-3187-bf1",
+      "repeat": "GTTGTAGCTCCCTCTCTCACCCCGGAAAGCTACAATC",
+      "source_sha256": "b6bff2edd12e9a894e9e111f83dc9c173ff0b61f70dc26402a545fa149ba1e66",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "donor": "Sra:CRISPR-19735-20432-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ece:CRISPR-19804-23077-bf1",
+      "label": "Ece",
+      "array_id": "CRISPR-19804-23077-bf1",
+      "repeat": "GTTTTTGTACTCTTAATGATGTGGTATCAGTAAAAC",
+      "source_sha256": "a72b5c993905bf33b70958a7ebb6a76d9d067c08d9efc49723e0e5fb4e6da88c",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "55308402234877452668176033571290140471064039300113962098129071055767667139630",
+      "control_kind": "repeat_dinucleotide:CRISPR-19804-23077-bf1",
+      "control_repeat": "GTTGGTAATGATTAACTAATTGTGTAACTTCAGTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ece:CRISPR-19804-23077-bf1",
+      "label": "Ece",
+      "array_id": "CRISPR-19804-23077-bf1",
+      "repeat": "GTTTTTGTACTCTTAATGATGTGGTATCAGTAAAAC",
+      "source_sha256": "a72b5c993905bf33b70958a7ebb6a76d9d067c08d9efc49723e0e5fb4e6da88c",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "80909327042118175075314934034023959251768964648022280241218294796381604684693",
+      "control_kind": "repeat_dinucleotide:CRISPR-19804-23077-bf1",
+      "control_repeat": "GTTGAGGTGTCAATAACTAACTAATGTTGTTTATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ece:CRISPR-19804-23077-bf1",
+      "label": "Ece",
+      "array_id": "CRISPR-19804-23077-bf1",
+      "repeat": "GTTTTTGTACTCTTAATGATGTGGTATCAGTAAAAC",
+      "source_sha256": "a72b5c993905bf33b70958a7ebb6a76d9d067c08d9efc49723e0e5fb4e6da88c",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTCCGGTCAGAGCACAAATCCCAATCTGCTAGACT",
+      "donor": "Ghc1:CRISPR-1-366-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Edo:CRISPR-6591-6759-p1",
+      "label": "Edo",
+      "array_id": "CRISPR-6591-6759-p1",
+      "repeat": "GTTTTGTTACCATATGGATTTTTGCTAGATTAAGACA",
+      "source_sha256": "754d23ca4ee86842ac3e6dd609754b9155d60d76a1b6508d3a5ebb77d5610445",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "103347993207686041613039199360480450890303397384212743587680124804843345510063",
+      "control_kind": "repeat_dinucleotide:CRISPR-6591-6759-p1",
+      "control_repeat": "GATGGAACAGTAGCATGATATTACCTTGTTTTTTTTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Edo:CRISPR-6591-6759-p1",
+      "label": "Edo",
+      "array_id": "CRISPR-6591-6759-p1",
+      "repeat": "GTTTTGTTACCATATGGATTTTTGCTAGATTAAGACA",
+      "source_sha256": "754d23ca4ee86842ac3e6dd609754b9155d60d76a1b6508d3a5ebb77d5610445",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "97936359526713834176073222622053631895019804206116782769716550641170163134617",
+      "control_kind": "repeat_dinucleotide:CRISPR-6591-6759-p1",
+      "control_repeat": "GTAATGCTTTTGATTTTGATAGGTATTTTACACCAGA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Edo:CRISPR-6591-6759-p1",
+      "label": "Edo",
+      "array_id": "CRISPR-6591-6759-p1",
+      "repeat": "GTTTTGTTACCATATGGATTTTTGCTAGATTAAGACA",
+      "source_sha256": "754d23ca4ee86842ac3e6dd609754b9155d60d76a1b6508d3a5ebb77d5610445",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAAT",
+      "donor": "Spa:CRISPR-24344-24905-p2",
+      "unchanged": false
+    },
+    {
+      "identity": "Efa:CRISPR-3258-3821-bf1",
+      "label": "Efa",
+      "array_id": "CRISPR-3258-3821-bf1",
+      "repeat": "GTTTTGGAAGCATTCAAATCAGCATAGCTCTAAAAC",
+      "source_sha256": "bca32faa9ff6bbb5cdf23baeb7cad61e68ee04f345b366477e3ba9cdb4bc54fc",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "92068052540930095991061753419329129193339892792801265362153247746120712250335",
+      "control_kind": "repeat_dinucleotide:CRISPR-3258-3821-bf1",
+      "control_repeat": "GTGCATTTCTCAAAACAAATATTCAGGCTTAGAAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Efa:CRISPR-3258-3821-bf1",
+      "label": "Efa",
+      "array_id": "CRISPR-3258-3821-bf1",
+      "repeat": "GTTTTGGAAGCATTCAAATCAGCATAGCTCTAAAAC",
+      "source_sha256": "bca32faa9ff6bbb5cdf23baeb7cad61e68ee04f345b366477e3ba9cdb4bc54fc",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "10561826320692901483556235995857482961078838448921037315109134662303475250134",
+      "control_kind": "repeat_dinucleotide:CRISPR-3258-3821-bf1",
+      "control_repeat": "GTTCAATCTTAAAGGCAAGCATTAAACATTCTGAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Efa:CRISPR-3258-3821-bf1",
+      "label": "Efa",
+      "array_id": "CRISPR-3258-3821-bf1",
+      "repeat": "GTTTTGGAAGCATTCAAATCAGCATAGCTCTAAAAC",
+      "source_sha256": "bca32faa9ff6bbb5cdf23baeb7cad61e68ee04f345b366477e3ba9cdb4bc54fc",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",
+      "donor": "Seq1:CRISPR-7935-8432-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Eit:CRISPR-2468-2702-bf1",
+      "label": "Eit",
+      "array_id": "CRISPR-2468-2702-bf1",
+      "repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+      "source_sha256": "89ac0cb20d30632e56983b562c12fec54d5033ca03ff0a19a064f281848d7c17",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "46907134639614035021437870782442462159933931784275529299068568745740905942037",
+      "control_kind": "repeat_dinucleotide:CRISPR-2468-2702-bf1",
+      "control_repeat": "GACTTGTTTATTAAAACATCAGCAATCAAGCTTCGGA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Eit:CRISPR-2468-2702-bf1",
+      "label": "Eit",
+      "array_id": "CRISPR-2468-2702-bf1",
+      "repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+      "source_sha256": "89ac0cb20d30632e56983b562c12fec54d5033ca03ff0a19a064f281848d7c17",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "83635218004807820592465707454879103085262799138015940967098677740076335733065",
+      "control_kind": "repeat_dinucleotide:CRISPR-2468-2702-bf1",
+      "control_repeat": "GCACTTTCAACGATTCAGGTGCAGATCTATTTAAAAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Eit:CRISPR-2468-2702-bf1",
+      "label": "Eit",
+      "array_id": "CRISPR-2468-2702-bf1",
+      "repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+      "source_sha256": "89ac0cb20d30632e56983b562c12fec54d5033ca03ff0a19a064f281848d7c17",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GGTTTTCCTATACCAAAAACTGAAAGAGTGCCAAAAC",
+      "donor": "Bni:CRISPR-20595-20829-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Esp1:CRISPR-2884-3709-p1",
+      "label": "Esp1",
+      "array_id": "CRISPR-2884-3709-p1",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "105982338374125829775439545806235115322177072641522751969092381990341055132468",
+      "control_kind": "repeat_dinucleotide:CRISPR-2884-3709-p1",
+      "control_repeat": "GAACCAAATGTCAAGACAGTTGCTCCTACACCTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp1:CRISPR-2884-3709-p1",
+      "label": "Esp1",
+      "array_id": "CRISPR-2884-3709-p1",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "52644616498468449439043800459155355397391020024956485884478096410669950749508",
+      "control_kind": "repeat_dinucleotide:CRISPR-2884-3709-p1",
+      "control_repeat": "GACTAGAAACAATCCTTCCCAAGTTGTCACACTTGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp1:CRISPR-2884-3709-p1",
+      "label": "Esp1",
+      "array_id": "CRISPR-2884-3709-p1",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+      "donor": "Mse:CRISPR-58082-58241-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Esp1:CRISPR-5397-8258-p2",
+      "label": "Esp1",
+      "array_id": "CRISPR-5397-8258-p2",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "63884953519652310010597544011130982453358978321352189354206465028205065118240",
+      "control_kind": "repeat_dinucleotide:CRISPR-5397-8258-p2",
+      "control_repeat": "GTTACTTGTCACATCACCTGAACTTCCAGAAAAGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp1:CRISPR-5397-8258-p2",
+      "label": "Esp1",
+      "array_id": "CRISPR-5397-8258-p2",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "110135290890040171617857371661731691652566890645256694394191217772643116881097",
+      "control_kind": "repeat_dinucleotide:CRISPR-5397-8258-p2",
+      "control_repeat": "GACCTCTTTCTGTCCCAAACAGACAAAGCATGTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp1:CRISPR-5397-8258-p2",
+      "label": "Esp1",
+      "array_id": "CRISPR-5397-8258-p2",
+      "repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "source_sha256": "200050ac54fcefcb8770aa2847b4578c42e54926618726d12c593fd2659519b2",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "donor": "Ffr:CRISPR-7647-8299-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Esp2:CRISPR-20002-20300-p1",
+      "label": "Esp2",
+      "array_id": "CRISPR-20002-20300-p1",
+      "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+      "source_sha256": "75e0165e7c96d630702b6d99c7badb70a0ccd9b66adb0ee534440baa4087beae",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "81591952035301574703088758372423069165466285103700440826522668069574348277075",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20300-p1",
+      "control_repeat": "GATACAACACTTCCACTGTAAAGTAACTATCTTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp2:CRISPR-20002-20300-p1",
+      "label": "Esp2",
+      "array_id": "CRISPR-20002-20300-p1",
+      "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+      "source_sha256": "75e0165e7c96d630702b6d99c7badb70a0ccd9b66adb0ee534440baa4087beae",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "67205391234627489593403742040439237642663107404488230652787834550318350844974",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20300-p1",
+      "control_repeat": "GTATAACTTTATCTTCACTGTACAGAACTTCCAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Esp2:CRISPR-20002-20300-p1",
+      "label": "Esp2",
+      "array_id": "CRISPR-20002-20300-p1",
+      "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+      "source_sha256": "75e0165e7c96d630702b6d99c7badb70a0ccd9b66adb0ee534440baa4087beae",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "donor": "Ssi:CRISPR-6239-7725-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ffr:CRISPR-7647-8299-p1",
+      "label": "Ffr",
+      "array_id": "CRISPR-7647-8299-p1",
+      "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "source_sha256": "2d790370c780a6900ecc164d69e7dceb9b05099ce0af240b534be3150a4d1043",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "16447199225029112356870175015998295115268391207217013991812187118290859313064",
+      "control_kind": "repeat_dinucleotide:CRISPR-7647-8299-p1",
+      "control_repeat": "GGGCACATATAAAAAGACAATATTGAATTGTTCAGTTTTAAAAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ffr:CRISPR-7647-8299-p1",
+      "label": "Ffr",
+      "array_id": "CRISPR-7647-8299-p1",
+      "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "source_sha256": "2d790370c780a6900ecc164d69e7dceb9b05099ce0af240b534be3150a4d1043",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "49714449132116455708352928711909977574503950568816658312656516309974159050699",
+      "control_kind": "repeat_dinucleotide:CRISPR-7647-8299-p1",
+      "control_repeat": "GTTCAACATTAATGAGGCAAACAAATTGTAGGAATAAAAATTTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ffr:CRISPR-7647-8299-p1",
+      "label": "Ffr",
+      "array_id": "CRISPR-7647-8299-p1",
+      "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+      "source_sha256": "2d790370c780a6900ecc164d69e7dceb9b05099ce0af240b534be3150a4d1043",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "donor": "Orh:CRISPR-927-2124-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Fho:CRISPR-3876-4241-bf1",
+      "label": "Fho",
+      "array_id": "CRISPR-3876-4241-bf1",
+      "repeat": "GTTTTACTGATAGAAAATTATCGAGAGTACAAAAAC",
+      "source_sha256": "9972df05d54cc4893be375debe4c6cb6a6e0b29b64670efa7dbff81c22cf9d03",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "4882266285868143255897661239040757035996813889158313623764621914360348582539",
+      "control_kind": "repeat_dinucleotide:CRISPR-3876-4241-bf1",
+      "control_repeat": "GATTTAAAAATTAACTCGACAAGTGTATTAGAGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Fho:CRISPR-3876-4241-bf1",
+      "label": "Fho",
+      "array_id": "CRISPR-3876-4241-bf1",
+      "repeat": "GTTTTACTGATAGAAAATTATCGAGAGTACAAAAAC",
+      "source_sha256": "9972df05d54cc4893be375debe4c6cb6a6e0b29b64670efa7dbff81c22cf9d03",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "37320969569493203787964836169184058096255982433602605691688989986442783096961",
+      "control_kind": "repeat_dinucleotide:CRISPR-3876-4241-bf1",
+      "control_repeat": "GAGACAGAACTTACGAATGTTTTATAAAAAGTAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Fho:CRISPR-3876-4241-bf1",
+      "label": "Fho",
+      "array_id": "CRISPR-3876-4241-bf1",
+      "repeat": "GTTTTACTGATAGAAAATTATCGAGAGTACAAAAAC",
+      "source_sha256": "9972df05d54cc4893be375debe4c6cb6a6e0b29b64670efa7dbff81c22cf9d03",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+      "donor": "Mse:CRISPR-69108-69269-p2",
+      "unchanged": false
+    },
+    {
+      "identity": "Fma:CRISPR-6898-7859-p1",
+      "label": "Fma",
+      "array_id": "CRISPR-6898-7859-p1",
+      "repeat": "GTTTGAGAATGATGTAATTTCATATAGGTATTAAAC",
+      "source_sha256": "67c8939ef237e3d3228cb000270e0d4c223d8959a74a708b543281f6c649399c",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "25425390951313545948608735465970392165010527161808600710172603014588448501884",
+      "control_kind": "repeat_dinucleotide:CRISPR-6898-7859-p1",
+      "control_repeat": "GTCAAATTAAATTTGGTTATGATAGTATTGAGATAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Fma:CRISPR-6898-7859-p1",
+      "label": "Fma",
+      "array_id": "CRISPR-6898-7859-p1",
+      "repeat": "GTTTGAGAATGATGTAATTTCATATAGGTATTAAAC",
+      "source_sha256": "67c8939ef237e3d3228cb000270e0d4c223d8959a74a708b543281f6c649399c",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "97044037135514105622293944485822478027851899943349816987195765012360572482356",
+      "control_kind": "repeat_dinucleotide:CRISPR-6898-7859-p1",
+      "control_repeat": "GACATATAGTTTTTAAAGTTAATGATGTGGAATATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Fma:CRISPR-6898-7859-p1",
+      "label": "Fma",
+      "array_id": "CRISPR-6898-7859-p1",
+      "repeat": "GTTTGAGAATGATGTAATTTCATATAGGTATTAAAC",
+      "source_sha256": "67c8939ef237e3d3228cb000270e0d4c223d8959a74a708b543281f6c649399c",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTACTGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "donor": "Ssu:CRISPR-1853-2020-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghc1:CRISPR-1-366-p1",
+      "label": "Ghc1",
+      "array_id": "CRISPR-1-366-p1",
+      "repeat": "GTTCCGGTCAGAGCACAAATCCCAATCTGCTAGACT",
+      "source_sha256": "e93a303dffd8083dd745c92fda35b6edbe73e746f24be8ff58959dba30167ae0",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "1625789368212059511827233115400907347781561811622599846831430546269285765906",
+      "control_kind": "repeat_dinucleotide:CRISPR-1-366-p1",
+      "control_repeat": "GCAACCCAGTCCTTCTGGCGAATCAGATAACAGTCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghc1:CRISPR-1-366-p1",
+      "label": "Ghc1",
+      "array_id": "CRISPR-1-366-p1",
+      "repeat": "GTTCCGGTCAGAGCACAAATCCCAATCTGCTAGACT",
+      "source_sha256": "e93a303dffd8083dd745c92fda35b6edbe73e746f24be8ff58959dba30167ae0",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "104126904828623979683460362409305551790309073471828207576546430062148255474665",
+      "control_kind": "repeat_dinucleotide:CRISPR-1-366-p1",
+      "control_repeat": "GAATAGTTGCCTCCACTCTCAAGGCAGACAATCCGT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghc1:CRISPR-1-366-p1",
+      "label": "Ghc1",
+      "array_id": "CRISPR-1-366-p1",
+      "repeat": "GTTCCGGTCAGAGCACAAATCCCAATCTGCTAGACT",
+      "source_sha256": "e93a303dffd8083dd745c92fda35b6edbe73e746f24be8ff58959dba30167ae0",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+      "donor": "Cca2:CRISPR-821-2456-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghc2:CRISPR-8872-9676-p1",
+      "label": "Ghc2",
+      "array_id": "CRISPR-8872-9676-p1",
+      "repeat": "CAGTATATCAAAGGGGATTGGTGATTGATTCCCAGC",
+      "source_sha256": "a03683552e13989dc23d164bae8d6104c375e59587e4a78b0f64bd5bbaef2b9b",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "76946138924403513609819844253641464657833275529511840583081869589204722111419",
+      "control_kind": "repeat_dinucleotide:CRISPR-8872-9676-p1",
+      "control_repeat": "CCAATTGTATGATGGGATCCAGGGAAGTTCATTAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghc2:CRISPR-8872-9676-p1",
+      "label": "Ghc2",
+      "array_id": "CRISPR-8872-9676-p1",
+      "repeat": "CAGTATATCAAAGGGGATTGGTGATTGATTCCCAGC",
+      "source_sha256": "a03683552e13989dc23d164bae8d6104c375e59587e4a78b0f64bd5bbaef2b9b",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "63854248045485498345677532673898265145941493123376513391586396017640334814198",
+      "control_kind": "repeat_dinucleotide:CRISPR-8872-9676-p1",
+      "control_repeat": "CCATGGCATGGGTCAGATTTGAGTAGGATAAATTCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghc2:CRISPR-8872-9676-p1",
+      "label": "Ghc2",
+      "array_id": "CRISPR-8872-9676-p1",
+      "repeat": "CAGTATATCAAAGGGGATTGGTGATTGATTCCCAGC",
+      "source_sha256": "a03683552e13989dc23d164bae8d6104c375e59587e4a78b0f64bd5bbaef2b9b",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+      "donor": "Mse:CRISPR-21586-21820-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghe:CRISPR-289-1967-p1",
+      "label": "Ghe",
+      "array_id": "CRISPR-289-1967-p1",
+      "repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+      "source_sha256": "68f3e10489276da48a54aa0edb56a90bbbcb1978b24a9e05fb39b407c29f5b8f",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "99917424491981487880276955566277440538484372005752220460904714282825179306672",
+      "control_kind": "repeat_dinucleotide:CRISPR-289-1967-p1",
+      "control_repeat": "GTTTACCTTCACACTTTTTGACATTATCCAAAAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghe:CRISPR-289-1967-p1",
+      "label": "Ghe",
+      "array_id": "CRISPR-289-1967-p1",
+      "repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+      "source_sha256": "68f3e10489276da48a54aa0edb56a90bbbcb1978b24a9e05fb39b407c29f5b8f",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "114811736667617974640665720495466152715638790279878092182386609832136179057925",
+      "control_kind": "repeat_dinucleotide:CRISPR-289-1967-p1",
+      "control_repeat": "GTACACTTTCACACCCTATTTTTCAATGAAAATTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghe:CRISPR-289-1967-p1",
+      "label": "Ghe",
+      "array_id": "CRISPR-289-1967-p1",
+      "repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+      "source_sha256": "68f3e10489276da48a54aa0edb56a90bbbcb1978b24a9e05fb39b407c29f5b8f",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "donor": "Sga:CRISPR-589-1217-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghh1:CRISPR-5114-5940-p1",
+      "label": "Ghh1",
+      "array_id": "CRISPR-5114-5940-p1",
+      "repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+      "source_sha256": "0653368bebd26aa7536087752e3be2ba65e15f74dbdf317b904afaf92bc3c928",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "86297632556157998477211606724286221262878372788325487928960187493304611046167",
+      "control_kind": "repeat_dinucleotide:CRISPR-5114-5940-p1",
+      "control_repeat": "ACCAGGGCACCACGAGAAATATTCTGCCGGCAGGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghh1:CRISPR-5114-5940-p1",
+      "label": "Ghh1",
+      "array_id": "CRISPR-5114-5940-p1",
+      "repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+      "source_sha256": "0653368bebd26aa7536087752e3be2ba65e15f74dbdf317b904afaf92bc3c928",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "74871302473095704423253928851238572449199618083233811726270726653464724799819",
+      "control_kind": "repeat_dinucleotide:CRISPR-5114-5940-p1",
+      "control_repeat": "AACAGGAGGAACATTCCGCCGCCCTGGCACATAGGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghh1:CRISPR-5114-5940-p1",
+      "label": "Ghh1",
+      "array_id": "CRISPR-5114-5940-p1",
+      "repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+      "source_sha256": "0653368bebd26aa7536087752e3be2ba65e15f74dbdf317b904afaf92bc3c928",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGTTATGCTGTATTGAATGGTTCCAAAACA",
+      "donor": "Seq2:CRISPR-7231-7597-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghh2:CRISPR-124-1545-p1",
+      "label": "Ghh2",
+      "array_id": "CRISPR-124-1545-p1",
+      "repeat": "GCTGCGGACTGAGGCCGTTTCTCGATTTGCTACCAT",
+      "source_sha256": "72c9169aee69218fc098b5c97cccc2fb65fbc040f94d098fab6059d2eb22d9c9",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "11051898148765583012563783717813232443918445596295028882119601091834527721692",
+      "control_kind": "repeat_dinucleotide:CRISPR-124-1545-p1",
+      "control_repeat": "GACCACTTCTTTGATCTATTGCGGTGCCGGAGCGCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghh2:CRISPR-124-1545-p1",
+      "label": "Ghh2",
+      "array_id": "CRISPR-124-1545-p1",
+      "repeat": "GCTGCGGACTGAGGCCGTTTCTCGATTTGCTACCAT",
+      "source_sha256": "72c9169aee69218fc098b5c97cccc2fb65fbc040f94d098fab6059d2eb22d9c9",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "10996293223309391427330644076653184495163201203126910333378307719989339086972",
+      "control_kind": "repeat_dinucleotide:CRISPR-124-1545-p1",
+      "control_repeat": "GACTTTTGCCTTCGTAGCTGCCACGGGATCTGCGAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghh2:CRISPR-124-1545-p1",
+      "label": "Ghh2",
+      "array_id": "CRISPR-124-1545-p1",
+      "repeat": "GCTGCGGACTGAGGCCGTTTCTCGATTTGCTACCAT",
+      "source_sha256": "72c9169aee69218fc098b5c97cccc2fb65fbc040f94d098fab6059d2eb22d9c9",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+      "donor": "Esp2:CRISPR-20002-20300-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghy1:CRISPR-1031-1202-bf1",
+      "label": "Ghy1",
+      "array_id": "CRISPR-1031-1202-bf1",
+      "repeat": "CGCTCTGGTTGGCCGGGAGCGGCCTCTTTGATATACTC",
+      "source_sha256": "d2e9cfe2682beb1786d6d2387bc9f0e1d4b820ee76d27715819ec73d0a250538",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "48664855746828533337279956081711196658912940368929814513769053318949672690135",
+      "control_kind": "repeat_dinucleotide:CRISPR-1031-1202-bf1",
+      "control_repeat": "CTTATGCTCCCTATTTCGACGAGCTGGGGGCTCGGTGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy1:CRISPR-1031-1202-bf1",
+      "label": "Ghy1",
+      "array_id": "CRISPR-1031-1202-bf1",
+      "repeat": "CGCTCTGGTTGGCCGGGAGCGGCCTCTTTGATATACTC",
+      "source_sha256": "d2e9cfe2682beb1786d6d2387bc9f0e1d4b820ee76d27715819ec73d0a250538",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "85948978138835434654593226078573134932518053620092387303810944551310911227046",
+      "control_kind": "repeat_dinucleotide:CRISPR-1031-1202-bf1",
+      "control_repeat": "CGGGCTCTCCGGGACGCTATCTGAGTTGCCTTTATGGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy1:CRISPR-1031-1202-bf1",
+      "label": "Ghy1",
+      "array_id": "CRISPR-1031-1202-bf1",
+      "repeat": "CGCTCTGGTTGGCCGGGAGCGGCCTCTTTGATATACTC",
+      "source_sha256": "d2e9cfe2682beb1786d6d2387bc9f0e1d4b820ee76d27715819ec73d0a250538",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTATAGTTCCTAGTAAATTCTCGATATGCTATAAT",
+      "donor": "Cpe:CRISPR-19810-21492-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghy2:CRISPR-35-2206-p1",
+      "label": "Ghy2",
+      "array_id": "CRISPR-35-2206-p1",
+      "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "source_sha256": "c5b0d61585a41b8d446282b624b7efc177a422051801426bf97d13bd2c628a22",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "48275494266354445260069845932018521221577630197820084699659898011836379084628",
+      "control_kind": "repeat_dinucleotide:CRISPR-35-2206-p1",
+      "control_repeat": "GCCTCATGGTTAGTTTTGATGGTCATGAGGTATTGACACTTTTCAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy2:CRISPR-35-2206-p1",
+      "label": "Ghy2",
+      "array_id": "CRISPR-35-2206-p1",
+      "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "source_sha256": "c5b0d61585a41b8d446282b624b7efc177a422051801426bf97d13bd2c628a22",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "61315065744772960268369492666407562065516325713735583663088766345091375820850",
+      "control_kind": "repeat_dinucleotide:CRISPR-35-2206-p1",
+      "control_repeat": "GGCCATTTCAGAGTTTTGGATGTGTATGGATGTCACTTTTCACTAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy2:CRISPR-35-2206-p1",
+      "label": "Ghy2",
+      "array_id": "CRISPR-35-2206-p1",
+      "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "source_sha256": "c5b0d61585a41b8d446282b624b7efc177a422051801426bf97d13bd2c628a22",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTACAGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "donor": "Sgo:CRISPR-4443-4611-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghy3:CRISPR-207-3940-p1",
+      "label": "Ghy3",
+      "array_id": "CRISPR-207-3940-p1",
+      "repeat": "GTTTTCGGCATCTCTCGTTTAAAGATGTGATATAAT",
+      "source_sha256": "d6efbba6ff32baf4a572abc7725d7280ab42efa0b2956d57a7acd3342f506c8d",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "1186449683852225551466661847495390486603166120914835744614610389782391065654",
+      "control_kind": "repeat_dinucleotide:CRISPR-207-3940-p1",
+      "control_repeat": "GGTATTCATTCGCTGTTCGAAATCTGAGTTTAATAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy3:CRISPR-207-3940-p1",
+      "label": "Ghy3",
+      "array_id": "CRISPR-207-3940-p1",
+      "repeat": "GTTTTCGGCATCTCTCGTTTAAAGATGTGATATAAT",
+      "source_sha256": "d6efbba6ff32baf4a572abc7725d7280ab42efa0b2956d57a7acd3342f506c8d",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "69387737030125988201853803132233485831466931286735190529002609704860573527160",
+      "control_kind": "repeat_dinucleotide:CRISPR-207-3940-p1",
+      "control_repeat": "GGCATGATTATATTTCTCGTAGTTTGTCTCGAAAAT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy3:CRISPR-207-3940-p1",
+      "label": "Ghy3",
+      "array_id": "CRISPR-207-3940-p1",
+      "repeat": "GTTTTCGGCATCTCTCGTTTAAAGATGTGATATAAT",
+      "source_sha256": "d6efbba6ff32baf4a572abc7725d7280ab42efa0b2956d57a7acd3342f506c8d",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "donor": "Esp1:CRISPR-5397-8258-p2",
+      "unchanged": false
+    },
+    {
+      "identity": "Ghy4:CRISPR-7294-7527-p1",
+      "label": "Ghy4",
+      "array_id": "CRISPR-7294-7527-p1",
+      "repeat": "ATTATAGCATACCGGAGAATTGAGGGGAACTATAAC",
+      "source_sha256": "51a3dc642f21e69cd3f0552f768f6bd7533d338971ff60ffe06e55bb23c66c78",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "56433879517598476791876454366512532724005651092032208400916069753556405727839",
+      "control_kind": "repeat_dinucleotide:CRISPR-7294-7527-p1",
+      "control_repeat": "AGAATACGGGATTAGATATAACAGAACTTATGGGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy4:CRISPR-7294-7527-p1",
+      "label": "Ghy4",
+      "array_id": "CRISPR-7294-7527-p1",
+      "repeat": "ATTATAGCATACCGGAGAATTGAGGGGAACTATAAC",
+      "source_sha256": "51a3dc642f21e69cd3f0552f768f6bd7533d338971ff60ffe06e55bb23c66c78",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "71864565851169583901022787949194474210410206375666114406488492946045483301093",
+      "control_kind": "repeat_dinucleotide:CRISPR-7294-7527-p1",
+      "control_repeat": "ACCAGATGGGATAGGGCGATTAAATATTACTAAGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ghy4:CRISPR-7294-7527-p1",
+      "label": "Ghy4",
+      "array_id": "CRISPR-7294-7527-p1",
+      "repeat": "ATTATAGCATACCGGAGAATTGAGGGGAACTATAAC",
+      "source_sha256": "51a3dc642f21e69cd3f0552f768f6bd7533d338971ff60ffe06e55bb23c66c78",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAATGATGTAATTTCATATAGGTATTAAAC",
+      "donor": "Fma:CRISPR-6898-7859-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Gsp:CRISPR-5876-6110-p1",
+      "label": "Gsp",
+      "array_id": "CRISPR-5876-6110-p1",
+      "repeat": "AATTATACCACAGCGATAATCTCAGGGGAACTATGAC",
+      "source_sha256": "06a9ebad91b7d5a0534772f0d751f684b86a07f9479e87c352022581c684fe87",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "76280167505837732470482610592026558869773447049206108507440438281113618474929",
+      "control_kind": "repeat_dinucleotide:CRISPR-5876-6110-p1",
+      "control_repeat": "AGGATATCTAACTTAAACATGCGAGGGATCACCATAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Gsp:CRISPR-5876-6110-p1",
+      "label": "Gsp",
+      "array_id": "CRISPR-5876-6110-p1",
+      "repeat": "AATTATACCACAGCGATAATCTCAGGGGAACTATGAC",
+      "source_sha256": "06a9ebad91b7d5a0534772f0d751f684b86a07f9479e87c352022581c684fe87",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "41820665067959531060102705601745990784786481494099285707933236556567290521749",
+      "control_kind": "repeat_dinucleotide:CRISPR-5876-6110-p1",
+      "control_repeat": "ACTACATGGATCGGCCTAATTAACATAGATCAGGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Gsp:CRISPR-5876-6110-p1",
+      "label": "Gsp",
+      "array_id": "CRISPR-5876-6110-p1",
+      "repeat": "AATTATACCACAGCGATAATCTCAGGGGAACTATGAC",
+      "source_sha256": "06a9ebad91b7d5a0534772f0d751f684b86a07f9479e87c352022581c684fe87",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAAGACCCCTCAAAACCCCACCCTGTTACAAT",
+      "donor": "Nsa:CRISPR-20002-20698-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Jpa:CRISPR-11170-11368-bf1",
+      "label": "Jpa",
+      "array_id": "CRISPR-11170-11368-bf1",
+      "repeat": "AGTTGTGAATTGCTTTCAGTTCTTTAAATTTATGGAGAATTCACAGG",
+      "source_sha256": "af0de6700140648e45f07d2e44f6c5d086c114f3ddfd0305424632f69d158f09",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "36971487826871021698156943647457341413165191019482610431818471239689748829408",
+      "control_kind": "repeat_dinucleotide:CRISPR-11170-11368-bf1",
+      "control_repeat": "AATTTTGGCTGAGTTTGGTGATTCAAATTTCTAGTTAGAACATTCAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Jpa:CRISPR-11170-11368-bf1",
+      "label": "Jpa",
+      "array_id": "CRISPR-11170-11368-bf1",
+      "repeat": "AGTTGTGAATTGCTTTCAGTTCTTTAAATTTATGGAGAATTCACAGG",
+      "source_sha256": "af0de6700140648e45f07d2e44f6c5d086c114f3ddfd0305424632f69d158f09",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "113116958345623267283973090111618823344199697829165558061897471001128710586339",
+      "control_kind": "repeat_dinucleotide:CRISPR-11170-11368-bf1",
+      "control_repeat": "AAGGGAGCATATTTCTGTTGAGAATCAATTGTACTTTTTCAAGTTTG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Jpa:CRISPR-11170-11368-bf1",
+      "label": "Jpa",
+      "array_id": "CRISPR-11170-11368-bf1",
+      "repeat": "AGTTGTGAATTGCTTTCAGTTCTTTAAATTTATGGAGAATTCACAGG",
+      "source_sha256": "af0de6700140648e45f07d2e44f6c5d086c114f3ddfd0305424632f69d158f09",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGGATTCCGGGCAGGCATCGATCAACTACACT",
+      "donor": "Cme2:CRISPR-5-171-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Khu:CRISPR-9278-9446-bf1",
+      "label": "Khu",
+      "array_id": "CRISPR-9278-9446-bf1",
+      "repeat": "GTTTTAGACCAATGTAATTTTAGATAGTAGTAAAACA",
+      "source_sha256": "10aac8a4f4d594bf773a601c3f744ac700597065540460de4d0012470efe78f3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "91379372477891628227453665046937521240355825477813346897368247384636494028123",
+      "control_kind": "repeat_dinucleotide:CRISPR-9278-9446-bf1",
+      "control_repeat": "GATTACAAAGTTTTTAGTAGAAGTTAACCATGTATAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Khu:CRISPR-9278-9446-bf1",
+      "label": "Khu",
+      "array_id": "CRISPR-9278-9446-bf1",
+      "repeat": "GTTTTAGACCAATGTAATTTTAGATAGTAGTAAAACA",
+      "source_sha256": "10aac8a4f4d594bf773a601c3f744ac700597065540460de4d0012470efe78f3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "110523924073974431177901314211331619575729039923657925449706478825289557033547",
+      "control_kind": "repeat_dinucleotide:CRISPR-9278-9446-bf1",
+      "control_repeat": "GACATTAGTAATTGAGTAATAAAGTACCAGTTTTTAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Khu:CRISPR-9278-9446-bf1",
+      "label": "Khu",
+      "array_id": "CRISPR-9278-9446-bf1",
+      "repeat": "GTTTTAGACCAATGTAATTTTAGATAGTAGTAAAACA",
+      "source_sha256": "10aac8a4f4d594bf773a601c3f744ac700597065540460de4d0012470efe78f3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAGTTGTGTAATTTAAGATGGATCTCAAACA",
+      "donor": "Tde:CRISPR-11149-11317-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Kki:CRISPR-20002-20367-bf1",
+      "label": "Kki",
+      "array_id": "CRISPR-20002-20367-bf1",
+      "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+      "source_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "47257771729077389715809447772424213199764834314012846460080822709447207260992",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20367-bf1",
+      "control_repeat": "AAGAATGAACGTTGCTGATAACAAACAGATTAGGGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Kki:CRISPR-20002-20367-bf1",
+      "label": "Kki",
+      "array_id": "CRISPR-20002-20367-bf1",
+      "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+      "source_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "32407078112637488604520166595268095424162111109834253695698431260740192726682",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20367-bf1",
+      "control_repeat": "ATGGCAAGGACATGAAAACGCTAGTATTTGAAGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Kki:CRISPR-20002-20367-bf1",
+      "label": "Kki",
+      "array_id": "CRISPR-20002-20367-bf1",
+      "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+      "source_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAGCAGTGTCGTTCTGACTGGTAATCCAAC",
+      "donor": "Cgl:CRISPR-6944-7504-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lan:CRISPR-7041-7934-bf1",
+      "label": "Lan",
+      "array_id": "CRISPR-7041-7934-bf1",
+      "repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+      "source_sha256": "dbc7cda677df442d8653d9b1e8b1553fa9ec92307461bd5b98649f353d56adae",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "113115781910002077728134782435249867623800613902933593264477831703789831723255",
+      "control_kind": "repeat_dinucleotide:CRISPR-7041-7934-bf1",
+      "control_repeat": "GTTTGTCTATACACTTGTAATTGAAGTTTTGAAGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lan:CRISPR-7041-7934-bf1",
+      "label": "Lan",
+      "array_id": "CRISPR-7041-7934-bf1",
+      "repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+      "source_sha256": "dbc7cda677df442d8653d9b1e8b1553fa9ec92307461bd5b98649f353d56adae",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "23093721577101410920324385134263225556963508412325598755789052507003150220013",
+      "control_kind": "repeat_dinucleotide:CRISPR-7041-7934-bf1",
+      "control_repeat": "GCTGTTTTAAACAAGTAGATGATTACCTGTTGTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lan:CRISPR-7041-7934-bf1",
+      "label": "Lan",
+      "array_id": "CRISPR-7041-7934-bf1",
+      "repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+      "source_sha256": "dbc7cda677df442d8653d9b1e8b1553fa9ec92307461bd5b98649f353d56adae",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GCTGCGGACTGAGGCCGTTTCTCGATTTGCTACCAT",
+      "donor": "Ghh2:CRISPR-124-1545-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lce:CRISPR-6837-7862-bf1",
+      "label": "Lce",
+      "array_id": "CRISPR-6837-7862-bf1",
+      "repeat": "GTTTGAGAAGTGTGTTGTTCTCGATAGGTCTTAAAC",
+      "source_sha256": "1abfbadd67521407004d5a7f2b5933ebd070ad62c0df1965e009e771d6d38784",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "64022565934929108421194902123916258046289601699052041812437050219475502302388",
+      "control_kind": "repeat_dinucleotide:CRISPR-6837-7862-bf1",
+      "control_repeat": "GTGTCTCGAGTTTAAGATTGAACTTGGTGTAAGTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lce:CRISPR-6837-7862-bf1",
+      "label": "Lce",
+      "array_id": "CRISPR-6837-7862-bf1",
+      "repeat": "GTTTGAGAAGTGTGTTGTTCTCGATAGGTCTTAAAC",
+      "source_sha256": "1abfbadd67521407004d5a7f2b5933ebd070ad62c0df1965e009e771d6d38784",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "105025819626850606147221206661210674857122867139607016135461145085239547817422",
+      "control_kind": "repeat_dinucleotide:CRISPR-6837-7862-bf1",
+      "control_repeat": "GTTCTAATGTTTGTGAAGGAGTCTAGTCGTTTGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lce:CRISPR-6837-7862-bf1",
+      "label": "Lce",
+      "array_id": "CRISPR-6837-7862-bf1",
+      "repeat": "GTTTGAGAAGTGTGTTGTTCTCGATAGGTCTTAAAC",
+      "source_sha256": "1abfbadd67521407004d5a7f2b5933ebd070ad62c0df1965e009e771d6d38784",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTACTGATAGAAAATTATCGAGAGTACAAAAAC",
+      "donor": "Fho:CRISPR-3876-4241-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lmo:CRISPR-7222-7917-bf1",
+      "label": "Lmo",
+      "array_id": "CRISPR-7222-7917-bf1",
+      "repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTAACAAAAC",
+      "source_sha256": "e08c25f7f6426b9aac2c983a0de9bf0ebaa750dfe463947f1fcb3dac06fb5815",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "2712949797509397389471318036517139425265663648893477921158625188395147797679",
+      "control_kind": "repeat_dinucleotide:CRISPR-7222-7917-bf1",
+      "control_repeat": "GCTTTTAGATTAGTACTTGAATGCATGTTTAAAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lmo:CRISPR-7222-7917-bf1",
+      "label": "Lmo",
+      "array_id": "CRISPR-7222-7917-bf1",
+      "repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTAACAAAAC",
+      "source_sha256": "e08c25f7f6426b9aac2c983a0de9bf0ebaa750dfe463947f1fcb3dac06fb5815",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "88906153780533549320241407535192394168010315863005711817074408812366697213040",
+      "control_kind": "repeat_dinucleotide:CRISPR-7222-7917-bf1",
+      "control_repeat": "GAAATTGTTGTAAAGCATTGCTTAGATACTTTTAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lmo:CRISPR-7222-7917-bf1",
+      "label": "Lmo",
+      "array_id": "CRISPR-7222-7917-bf1",
+      "repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTAACAAAAC",
+      "source_sha256": "e08c25f7f6426b9aac2c983a0de9bf0ebaa750dfe463947f1fcb3dac06fb5815",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTCAGAAGGATGTTAAATCAATAAGGTTAAGATC",
+      "donor": "Pac:CRISPR-7982-8875-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lpn:CRISPR-6245-8575-p1",
+      "label": "Lpn",
+      "array_id": "CRISPR-6245-8575-p1",
+      "repeat": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+      "source_sha256": "840fc55e69874889fc5a471cc7f0b2296761333d917fac561eeaa81a1674a11c",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "62568967879855133689787699877234976062773658407604993937632665130646680154139",
+      "control_kind": "repeat_dinucleotide:CRISPR-6245-8575-p1",
+      "control_repeat": "CTCCCAAACCTGATCAATCTAACAACCCAAATAAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lpn:CRISPR-6245-8575-p1",
+      "label": "Lpn",
+      "array_id": "CRISPR-6245-8575-p1",
+      "repeat": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+      "source_sha256": "840fc55e69874889fc5a471cc7f0b2296761333d917fac561eeaa81a1674a11c",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "87747400293101875653558274184737475414119038455768606393281068339864339949894",
+      "control_kind": "repeat_dinucleotide:CRISPR-6245-8575-p1",
+      "control_repeat": "CCCAAAACTCCCTAAAAACAATGACAATCCTATCATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lpn:CRISPR-6245-8575-p1",
+      "label": "Lpn",
+      "array_id": "CRISPR-6245-8575-p1",
+      "repeat": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+      "source_sha256": "840fc55e69874889fc5a471cc7f0b2296761333d917fac561eeaa81a1674a11c",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "donor": "Sag2:CRISPR-7621-7854-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lrh:CRISPR-2106-3926-p1",
+      "label": "Lrh",
+      "array_id": "CRISPR-2106-3926-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "94910231a28670fcb711c44ccf513cb31408e3c9d67e14c096b47d83cc626b43",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "94959192010831420089364779475395950737419114473660011414645632779095350382765",
+      "control_kind": "repeat_dinucleotide:CRISPR-2106-3926-p1",
+      "control_repeat": "GACCTGATACTGACTCAGTCTGACTTGATGAATTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lrh:CRISPR-2106-3926-p1",
+      "label": "Lrh",
+      "array_id": "CRISPR-2106-3926-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "94910231a28670fcb711c44ccf513cb31408e3c9d67e14c096b47d83cc626b43",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "81330158561967712980566995662194795251823611652958092126235107023589710955646",
+      "control_kind": "repeat_dinucleotide:CRISPR-2106-3926-p1",
+      "control_repeat": "GATTCTTCTGATCCTGAACTGACATGAGTACTTGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lrh:CRISPR-2106-3926-p1",
+      "label": "Lrh",
+      "array_id": "CRISPR-2106-3926-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "94910231a28670fcb711c44ccf513cb31408e3c9d67e14c096b47d83cc626b43",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+      "donor": "Cga:CRISPR-6499-8240-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lsp1:CRISPR-34-201-p1",
+      "label": "Lsp1",
+      "array_id": "CRISPR-34-201-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "4603998282116141865438103439109390025080903219533381864189951831803996002233",
+      "control_kind": "repeat_dinucleotide:CRISPR-34-201-p1",
+      "control_repeat": "GACTCTTGATCTGACCAGATGTTATGAACTGACTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lsp1:CRISPR-34-201-p1",
+      "label": "Lsp1",
+      "array_id": "CRISPR-34-201-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "62593036351261748043554651275922341738640536644110681358340954844275245223751",
+      "control_kind": "repeat_dinucleotide:CRISPR-34-201-p1",
+      "control_repeat": "GAGTTTCATTGACTGATCTACTGACCTCTGATGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lsp1:CRISPR-34-201-p1",
+      "label": "Lsp1",
+      "array_id": "CRISPR-34-201-p1",
+      "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "source_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+      "donor": "Eit:CRISPR-2468-2702-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Lsp2:CRISPR-20002-21357-p1",
+      "label": "Lsp2",
+      "array_id": "CRISPR-20002-21357-p1",
+      "repeat": "GTTCTAATCATCATTGATCTAACAACCACCTAAAAC",
+      "source_sha256": "b0048ccc3c5f5a2f8b2f5c96867298b981d3a5fd8057706105132a61429a9544",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "100665223619061408226027339224658174369590830375745148433611699186642971635966",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-21357-p1",
+      "control_repeat": "GACACTTACTCCAATGTTCTAATCACATAAAAATCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lsp2:CRISPR-20002-21357-p1",
+      "label": "Lsp2",
+      "array_id": "CRISPR-20002-21357-p1",
+      "repeat": "GTTCTAATCATCATTGATCTAACAACCACCTAAAAC",
+      "source_sha256": "b0048ccc3c5f5a2f8b2f5c96867298b981d3a5fd8057706105132a61429a9544",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "77151373385651639507761201887958032483053438766179624782318589786041739682787",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-21357-p1",
+      "control_repeat": "GATACATCTCACTCAATATTGTAAACTTCCAAAACC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Lsp2:CRISPR-20002-21357-p1",
+      "label": "Lsp2",
+      "array_id": "CRISPR-20002-21357-p1",
+      "repeat": "GTTCTAATCATCATTGATCTAACAACCACCTAAAAC",
+      "source_sha256": "b0048ccc3c5f5a2f8b2f5c96867298b981d3a5fd8057706105132a61429a9544",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTCGGCATCTCTCGTTTAAAGATGTGATATAAT",
+      "donor": "Ghy3:CRISPR-207-3940-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Mga:CRISPR-7601-7769-p1",
+      "label": "Mga",
+      "array_id": "CRISPR-7601-7769-p1",
+      "repeat": "GTTTTAGCACTGTACAATACTTGTGTAAGCAATAACT",
+      "source_sha256": "b5bd9b17b19b910c32bdd946b14121c26b064ed532157a40abfb2ce6ae94dcb3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "77082622014313174017353112436724165598596202643743583121214003442495327045858",
+      "control_kind": "repeat_dinucleotide:CRISPR-7601-7769-p1",
+      "control_repeat": "GTAAATGCTTGTAAAGTACACTTACACATTGCTTAGT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mga:CRISPR-7601-7769-p1",
+      "label": "Mga",
+      "array_id": "CRISPR-7601-7769-p1",
+      "repeat": "GTTTTAGCACTGTACAATACTTGTGTAAGCAATAACT",
+      "source_sha256": "b5bd9b17b19b910c32bdd946b14121c26b064ed532157a40abfb2ce6ae94dcb3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "28454837042809216057709404190649022066987645177035347794062230794436383141837",
+      "control_kind": "repeat_dinucleotide:CRISPR-7601-7769-p1",
+      "control_repeat": "GTTTAAAATGTTACACAGTTGCTAGTATACAACTGCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mga:CRISPR-7601-7769-p1",
+      "label": "Mga",
+      "array_id": "CRISPR-7601-7769-p1",
+      "repeat": "GTTTTAGCACTGTACAATACTTGTGTAAGCAATAACT",
+      "source_sha256": "b5bd9b17b19b910c32bdd946b14121c26b064ed532157a40abfb2ce6ae94dcb3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GGTTTGAGAGTAGTGTAATTCTGTAAACCTCTAAAAC",
+      "donor": "Vpa:CRISPR-8116-8482-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Msc:CRISPR-20002-20630-p1",
+      "label": "Msc",
+      "array_id": "CRISPR-20002-20630-p1",
+      "repeat": "ATTATAACATATTAAATATTGTGGTCAATACAGAAC",
+      "source_sha256": "a1b297fc4589009a1d8276a37adf8ae4da40c11f1e41b7c88ce8bfeb73e985f3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "79780363967788305468040218703101596952812022697616948777939141585700025611630",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20630-p1",
+      "control_repeat": "ATGTTAATCAATTATACACATTGAGGTAAATATAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Msc:CRISPR-20002-20630-p1",
+      "label": "Msc",
+      "array_id": "CRISPR-20002-20630-p1",
+      "repeat": "ATTATAACATATTAAATATTGTGGTCAATACAGAAC",
+      "source_sha256": "a1b297fc4589009a1d8276a37adf8ae4da40c11f1e41b7c88ce8bfeb73e985f3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "14246099609369380017265937490630816153065428624499078740515927480973854920633",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20630-p1",
+      "control_repeat": "AAATAACAACATGAGGTCATATTGTTATATAATTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Msc:CRISPR-20002-20630-p1",
+      "label": "Msc",
+      "array_id": "CRISPR-20002-20630-p1",
+      "repeat": "ATTATAACATATTAAATATTGTGGTCAATACAGAAC",
+      "source_sha256": "a1b297fc4589009a1d8276a37adf8ae4da40c11f1e41b7c88ce8bfeb73e985f3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+      "donor": "Ghy2:CRISPR-35-2206-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Mse:CRISPR-21586-21820-bf1",
+      "label": "Mse",
+      "array_id": "CRISPR-21586-21820-bf1",
+      "repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "103392304367941379959032461453992946123763788413566835176895832070007978142655",
+      "control_kind": "repeat_dinucleotide:CRISPR-21586-21820-bf1",
+      "control_repeat": "GTACTAGACACTAGGTCCTATCAAATAAAACAAATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-21586-21820-bf1",
+      "label": "Mse",
+      "array_id": "CRISPR-21586-21820-bf1",
+      "repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "67735620747291354986789769559441851758024469526706636435991168281927415500945",
+      "control_kind": "repeat_dinucleotide:CRISPR-21586-21820-bf1",
+      "control_repeat": "GTCCAAAATATAACTACTCACTCAAAGAAGGTATTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-21586-21820-bf1",
+      "label": "Mse",
+      "array_id": "CRISPR-21586-21820-bf1",
+      "repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+      "donor": "Rsp:CRISPR-20002-20364-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Mse:CRISPR-58082-58241-p1",
+      "label": "Mse",
+      "array_id": "CRISPR-58082-58241-p1",
+      "repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "827096047192792177812256641687409665434262239710761208523176012753223868467",
+      "control_kind": "repeat_dinucleotide:CRISPR-58082-58241-p1",
+      "control_repeat": "GTACAACATCATGTTTAAAATTGGTTTCTTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-58082-58241-p1",
+      "label": "Mse",
+      "array_id": "CRISPR-58082-58241-p1",
+      "repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "4975394580358036528636438138167905312767134715962893787629959645260658359103",
+      "control_kind": "repeat_dinucleotide:CRISPR-58082-58241-p1",
+      "control_repeat": "GTATTGGTTAAAAATTTACATCTTTGTCACA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-58082-58241-p1",
+      "label": "Mse",
+      "array_id": "CRISPR-58082-58241-p1",
+      "repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTAACAAAAC",
+      "donor": "Lmo:CRISPR-7222-7917-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Mse:CRISPR-69108-69269-p2",
+      "label": "Mse",
+      "array_id": "CRISPR-69108-69269-p2",
+      "repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "47176845604311491485952215182805027940958252101835293070452272944431503538570",
+      "control_kind": "repeat_dinucleotide:CRISPR-69108-69269-p2",
+      "control_repeat": "AAACTTATGTCAATTCGGTTAATATTAACAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-69108-69269-p2",
+      "label": "Mse",
+      "array_id": "CRISPR-69108-69269-p2",
+      "repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "75765088826447510511031170357043797468622904012367221946398279779972876050100",
+      "control_kind": "repeat_dinucleotide:CRISPR-69108-69269-p2",
+      "control_repeat": "AACAATTTGGTATAACGTAATCACTAATTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Mse:CRISPR-69108-69269-p2",
+      "label": "Mse",
+      "array_id": "CRISPR-69108-69269-p2",
+      "repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+      "source_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "donor": "Psp:CRISPR-7014-7368-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Nme2:CRISPR-19936-21093-bf1",
+      "label": "Nme2",
+      "array_id": "CRISPR-19936-21093-bf1",
+      "repeat": "ATTGTAGCACTGCGAAATGAGAATGGGAGCTACAAC",
+      "source_sha256": "20774ff29e12b8a80ad5a64a84de54a3bd4a3ee15366fd91c5abd89cb5f16ac1",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "109151612845656890554692913231655130951463715429092094445171662887785542895855",
+      "control_kind": "repeat_dinucleotide:CRISPR-19936-21093-bf1",
+      "control_repeat": "AACAAGCTACTGGATGAGACAGTAATGAATTGCGGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nme2:CRISPR-19936-21093-bf1",
+      "label": "Nme2",
+      "array_id": "CRISPR-19936-21093-bf1",
+      "repeat": "ATTGTAGCACTGCGAAATGAGAATGGGAGCTACAAC",
+      "source_sha256": "20774ff29e12b8a80ad5a64a84de54a3bd4a3ee15366fd91c5abd89cb5f16ac1",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "65882812500668110009118890888132038259983954801315641403471279897808152527070",
+      "control_kind": "repeat_dinucleotide:CRISPR-19936-21093-bf1",
+      "control_repeat": "ACACTGCAAGCGCTGAGGAAGGTATGATGAAATTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nme2:CRISPR-19936-21093-bf1",
+      "label": "Nme2",
+      "array_id": "CRISPR-19936-21093-bf1",
+      "repeat": "ATTGTAGCACTGCGAAATGAGAATGGGAGCTACAAC",
+      "source_sha256": "20774ff29e12b8a80ad5a64a84de54a3bd4a3ee15366fd91c5abd89cb5f16ac1",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGTCTGATAATGCAAAGATACTAATTTTAAAGCAAATCACAAC",
+      "donor": "Phi:CRISPR-7329-7681-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Nsa:CRISPR-20002-20698-p1",
+      "label": "Nsa",
+      "array_id": "CRISPR-20002-20698-p1",
+      "repeat": "GTTTTAAGACCCCTCAAAACCCCACCCTGTTACAAT",
+      "source_sha256": "6ba3378910ccc630ac2dd4b8b1103e230ed5a8d5d43a932c8a6de1505a39cc45",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "25888791804775832178700667818696937239086007008574811381758576786388692885340",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20698-p1",
+      "control_repeat": "GTAATTGACACCCCCCAACCTTTTAAAAGTCCACCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nsa:CRISPR-20002-20698-p1",
+      "label": "Nsa",
+      "array_id": "CRISPR-20002-20698-p1",
+      "repeat": "GTTTTAAGACCCCTCAAAACCCCACCCTGTTACAAT",
+      "source_sha256": "6ba3378910ccc630ac2dd4b8b1103e230ed5a8d5d43a932c8a6de1505a39cc45",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "57341533907897009665189043969788257678000392185239741995590794543377671641281",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20698-p1",
+      "control_repeat": "GATTTAAAGTCCCCCCAACCACCTTTGTACAAACCT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nsa:CRISPR-20002-20698-p1",
+      "label": "Nsa",
+      "array_id": "CRISPR-20002-20698-p1",
+      "repeat": "GTTTTAAGACCCCTCAAAACCCCACCCTGTTACAAT",
+      "source_sha256": "6ba3378910ccc630ac2dd4b8b1103e230ed5a8d5d43a932c8a6de1505a39cc45",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ATTGTAGCACTGCGAAATGAGAATGGGAGCTACAAC",
+      "donor": "Nme2:CRISPR-19936-21093-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Nsp:CRISPR-3727-4027-bf1",
+      "label": "Nsp",
+      "array_id": "CRISPR-3727-4027-bf1",
+      "repeat": "GTTGTAGCTTCCTCTCTCATCTCGTAGTGCTACAATA",
+      "source_sha256": "3bddc5999ef56702821e33c5ec11723225d8b8bdba3e4fc71427b651279ea4f3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "22439429961405392651294158005924467783266666509825805519376156823254952427546",
+      "control_kind": "repeat_dinucleotide:CRISPR-3727-4027-bf1",
+      "control_repeat": "GTAGTGTACAAGCGTCTTGCTCCTTCATATCTCTCTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nsp:CRISPR-3727-4027-bf1",
+      "label": "Nsp",
+      "array_id": "CRISPR-3727-4027-bf1",
+      "repeat": "GTTGTAGCTTCCTCTCTCATCTCGTAGTGCTACAATA",
+      "source_sha256": "3bddc5999ef56702821e33c5ec11723225d8b8bdba3e4fc71427b651279ea4f3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "77716456609066789832524583105496116185989797329403558182341781140900927277985",
+      "control_kind": "repeat_dinucleotide:CRISPR-3727-4027-bf1",
+      "control_repeat": "GTATCGTTATGCAGCTCTACCTAGTGTTCTCTCTCAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Nsp:CRISPR-3727-4027-bf1",
+      "label": "Nsp",
+      "array_id": "CRISPR-3727-4027-bf1",
+      "repeat": "GTTGTAGCTTCCTCTCTCATCTCGTAGTGCTACAATA",
+      "source_sha256": "3bddc5999ef56702821e33c5ec11723225d8b8bdba3e4fc71427b651279ea4f3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "donor": "Sag1:CRISPR-20002-20566-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Orh:CRISPR-927-2124-bf1",
+      "label": "Orh",
+      "array_id": "CRISPR-927-2124-bf1",
+      "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "source_sha256": "0562363af565a4a8eaf4d7f3317064dce6d36cdc2ac22a8357fee9c098df4d65",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "42176484129062210002083663358111931565070910561328265423689923495512044264451",
+      "control_kind": "repeat_dinucleotide:CRISPR-927-2124-bf1",
+      "control_repeat": "GTTGTTTCATTCTGTTGCAGAATGTTTTTAACTTGAAGTGTCATTAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Orh:CRISPR-927-2124-bf1",
+      "label": "Orh",
+      "array_id": "CRISPR-927-2124-bf1",
+      "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "source_sha256": "0562363af565a4a8eaf4d7f3317064dce6d36cdc2ac22a8357fee9c098df4d65",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "78882727708909298862289168670678013826769479265515725943421766674358374386785",
+      "control_kind": "repeat_dinucleotide:CRISPR-927-2124-bf1",
+      "control_repeat": "GAATGTGAGTTGTCTAACAATTTGTTTGCTTCAGTTGTCATTTTTAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Orh:CRISPR-927-2124-bf1",
+      "label": "Orh",
+      "array_id": "CRISPR-927-2124-bf1",
+      "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+      "source_sha256": "0562363af565a4a8eaf4d7f3317064dce6d36cdc2ac22a8357fee9c098df4d65",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "CAGTATATCAAAGGGGATTGGTGATTGATTCCCAGC",
+      "donor": "Ghc2:CRISPR-8872-9676-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Pac:CRISPR-7982-8875-p1",
+      "label": "Pac",
+      "array_id": "CRISPR-7982-8875-p1",
+      "repeat": "GTTTCAGAAGGATGTTAAATCAATAAGGTTAAGATC",
+      "source_sha256": "42717b748848acc3908db468bbf101ab7ac97b966b7f42f77551d654b1abcd64",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "91730957619190386182329010139497064577133017582810780881300902783708053108934",
+      "control_kind": "repeat_dinucleotide:CRISPR-7982-8875-p1",
+      "control_repeat": "GAGTTCAAGAGTTCATTAATAAGAAATTGGGTAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Pac:CRISPR-7982-8875-p1",
+      "label": "Pac",
+      "array_id": "CRISPR-7982-8875-p1",
+      "repeat": "GTTTCAGAAGGATGTTAAATCAATAAGGTTAAGATC",
+      "source_sha256": "42717b748848acc3908db468bbf101ab7ac97b966b7f42f77551d654b1abcd64",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "14068572863977737903870233911377278330104634202610059048491057470287773736572",
+      "control_kind": "repeat_dinucleotide:CRISPR-7982-8875-p1",
+      "control_repeat": "GATTTAGGTGAAAATTCAGTCATTAAAGATAAGGTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Pac:CRISPR-7982-8875-p1",
+      "label": "Pac",
+      "array_id": "CRISPR-7982-8875-p1",
+      "repeat": "GTTTCAGAAGGATGTTAAATCAATAAGGTTAAGATC",
+      "source_sha256": "42717b748848acc3908db468bbf101ab7ac97b966b7f42f77551d654b1abcd64",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTAGACCAATGTAATTTTAGATAGTAGTAAAACA",
+      "donor": "Khu:CRISPR-9278-9446-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Phi:CRISPR-7329-7681-p1",
+      "label": "Phi",
+      "array_id": "CRISPR-7329-7681-p1",
+      "repeat": "GTTGTGTCTGATAATGCAAAGATACTAATTTTAAAGCAAATCACAAC",
+      "source_sha256": "5903bca902156afd73a306051f77510abadd8e068fd50ab43bfd1ad028ee48f1",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "28853975521850163357685154699436733464131216800624529169202185001042667585084",
+      "control_kind": "repeat_dinucleotide:CRISPR-7329-7681-p1",
+      "control_repeat": "GTTATTCTAACACTGAGAATTCAATACAAAAGTTAATGCAAATGTGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Phi:CRISPR-7329-7681-p1",
+      "label": "Phi",
+      "array_id": "CRISPR-7329-7681-p1",
+      "repeat": "GTTGTGTCTGATAATGCAAAGATACTAATTTTAAAGCAAATCACAAC",
+      "source_sha256": "5903bca902156afd73a306051f77510abadd8e068fd50ab43bfd1ad028ee48f1",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "114476798115609815416366897695302805834298659694243588235273547440328473357065",
+      "control_kind": "repeat_dinucleotide:CRISPR-7329-7681-p1",
+      "control_repeat": "GCTGAACATTGTTTGCAAAATCAATTAAAGTCTACAGTGAATATAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Phi:CRISPR-7329-7681-p1",
+      "label": "Phi",
+      "array_id": "CRISPR-7329-7681-p1",
+      "repeat": "GTTGTGTCTGATAATGCAAAGATACTAATTTTAAAGCAAATCACAAC",
+      "source_sha256": "5903bca902156afd73a306051f77510abadd8e068fd50ab43bfd1ad028ee48f1",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGGACCATTCAAAACAACATAGCTCTAAAAC",
+      "donor": "Sdy:CRISPR-1790-3080-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Psp:CRISPR-7014-7368-bf1",
+      "label": "Psp",
+      "array_id": "CRISPR-7014-7368-bf1",
+      "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "source_sha256": "30e5a08dd370ceeb057333bb2c42a4ff4a1dbc0ed10960c2ab3973d7f79defb7",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "94959126826148394559091148441736391956880598669564183216141001905775035070742",
+      "control_kind": "repeat_dinucleotide:CRISPR-7014-7368-bf1",
+      "control_repeat": "AAAGTAAAACCACTATGCAAAAACAAGTCTCATGCATTGGCTTGAATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Psp:CRISPR-7014-7368-bf1",
+      "label": "Psp",
+      "array_id": "CRISPR-7014-7368-bf1",
+      "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "source_sha256": "30e5a08dd370ceeb057333bb2c42a4ff4a1dbc0ed10960c2ab3973d7f79defb7",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "8461486075735735695143999250787444214135727257614251769158228886032790820176",
+      "control_kind": "repeat_dinucleotide:CRISPR-7014-7368-bf1",
+      "control_repeat": "AAAATCAAAAAAGAAAAGCTTGTACACATGTGCTCCATTTCTGGCATAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Psp:CRISPR-7014-7368-bf1",
+      "label": "Psp",
+      "array_id": "CRISPR-7014-7368-bf1",
+      "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+      "source_sha256": "30e5a08dd370ceeb057333bb2c42a4ff4a1dbc0ed10960c2ab3973d7f79defb7",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGACTACCAGTCAGAATTCCACTGCTCCAAAAC",
+      "donor": "Esp1:CRISPR-2884-3709-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Rsp:CRISPR-20002-20364-p1",
+      "label": "Rsp",
+      "array_id": "CRISPR-20002-20364-p1",
+      "repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+      "source_sha256": "728e181e9ffeec8b43ed650ad9c1116235390ae1249e37d677222bef8649bc03",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "105538529802328870082384461538673927783439491533870232952314099274724042264562",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20364-p1",
+      "control_repeat": "GAATGGTGAATGAGTTTGAATTGGTTAAGTGACAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Rsp:CRISPR-20002-20364-p1",
+      "label": "Rsp",
+      "array_id": "CRISPR-20002-20364-p1",
+      "repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+      "source_sha256": "728e181e9ffeec8b43ed650ad9c1116235390ae1249e37d677222bef8649bc03",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "79971474550113922827043222026970541560019461348266083961409233271430443095575",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20364-p1",
+      "control_repeat": "GTGAATAACAGAGTGAAATGGGATTGTTTTGTGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Rsp:CRISPR-20002-20364-p1",
+      "label": "Rsp",
+      "array_id": "CRISPR-20002-20364-p1",
+      "repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+      "source_sha256": "728e181e9ffeec8b43ed650ad9c1116235390ae1249e37d677222bef8649bc03",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAATC",
+      "donor": "Spa:CRISPR-21124-21292-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sag1:CRISPR-20002-20566-bf1",
+      "label": "Sag1",
+      "array_id": "CRISPR-20002-20566-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "9d457e530d4fda4ecf0b5a293df6f530024758b5bdf1840c57845572366d02fc",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "43401376768070483617376965230882191403085899934127328576062159219146438259389",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20566-bf1",
+      "control_repeat": "GTTTGGTTGTTCTGACCTTTCGTAAAGCATGAAAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sag1:CRISPR-20002-20566-bf1",
+      "label": "Sag1",
+      "array_id": "CRISPR-20002-20566-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "9d457e530d4fda4ecf0b5a293df6f530024758b5bdf1840c57845572366d02fc",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "42967421511314790317198606200842485089589535977651815098532104038902164764274",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20566-bf1",
+      "control_repeat": "GTTAAGGCAGATTTGTCCTGAAAACTGTTTTGCGTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sag1:CRISPR-20002-20566-bf1",
+      "label": "Sag1",
+      "array_id": "CRISPR-20002-20566-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "9d457e530d4fda4ecf0b5a293df6f530024758b5bdf1840c57845572366d02fc",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+      "donor": "Cca1:CRISPR-6602-7495-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sag2:CRISPR-7621-7854-bf1",
+      "label": "Sag2",
+      "array_id": "CRISPR-7621-7854-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "d469035c8a6588eae207ec3f4d14aefc2051b2fa7f4f217db9e86e7128f8e019",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "63519681386677374831044811691053558016936396062720038449958098172748048198305",
+      "control_kind": "repeat_dinucleotide:CRISPR-7621-7854-bf1",
+      "control_repeat": "GTGTTGTAAGATCTTGGCGTCACTTTTTGAAAAGCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sag2:CRISPR-7621-7854-bf1",
+      "label": "Sag2",
+      "array_id": "CRISPR-7621-7854-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "d469035c8a6588eae207ec3f4d14aefc2051b2fa7f4f217db9e86e7128f8e019",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "16975567029790122160981792404076199447835884222400728156970517542519729491709",
+      "control_kind": "repeat_dinucleotide:CRISPR-7621-7854-bf1",
+      "control_repeat": "GTTTCCTATGCGAAGTGGTTGTCTTTTGCAAAAGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sag2:CRISPR-7621-7854-bf1",
+      "label": "Sag2",
+      "array_id": "CRISPR-7621-7854-bf1",
+      "repeat": "GTTTTAGAGCTGTGCTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "d469035c8a6588eae207ec3f4d14aefc2051b2fa7f4f217db9e86e7128f8e019",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGAATTCCTTTCAAATTTTTGTAGATTTACTCAGTAGAATTACAAC",
+      "donor": "Wvi:CRISPR-6636-8205-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sdo:CRISPR-20002-20696-p1",
+      "label": "Sdo",
+      "array_id": "CRISPR-20002-20696-p1",
+      "repeat": "AGAATAGCTGTTCAAAATCCGAGGTCCAGCCGCAAC",
+      "source_sha256": "0ac1747f7560a29c79e783a8c490a4756c962555fe03b79ddef1745833cac972",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "94554787911258730394849920849330211969696781154914799429548204072184616636200",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20696-p1",
+      "control_repeat": "AGTCATTCAAGACCGTATGCAAAAAGGCGAGCCCTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sdo:CRISPR-20002-20696-p1",
+      "label": "Sdo",
+      "array_id": "CRISPR-20002-20696-p1",
+      "repeat": "AGAATAGCTGTTCAAAATCCGAGGTCCAGCCGCAAC",
+      "source_sha256": "0ac1747f7560a29c79e783a8c490a4756c962555fe03b79ddef1745833cac972",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "74558316199859355751147975446955652927328863616236423333502908698768850323033",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20696-p1",
+      "control_repeat": "AAAAGACGCGGCAAAGTAGTCCATCAGCTTGATCCC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sdo:CRISPR-20002-20696-p1",
+      "label": "Sdo",
+      "array_id": "CRISPR-20002-20696-p1",
+      "repeat": "AGAATAGCTGTTCAAAATCCGAGGTCCAGCCGCAAC",
+      "source_sha256": "0ac1747f7560a29c79e783a8c490a4756c962555fe03b79ddef1745833cac972",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "donor": "Ssa:CRISPR-6642-8326-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sdy:CRISPR-1790-3080-bf1",
+      "label": "Sdy",
+      "array_id": "CRISPR-1790-3080-bf1",
+      "repeat": "GTTTTGGGACCATTCAAAACAACATAGCTCTAAAAC",
+      "source_sha256": "18e924b30476219e63e7f428af420d5a499b1b1c2c6154e5dedc25f6ec6662a9",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "23986999653880620087807716655894603943650641466987069418683277521517846484576",
+      "control_kind": "repeat_dinucleotide:CRISPR-1790-3080-bf1",
+      "control_repeat": "GTTGAGGGCCAATTTCAACTACAAAACTTACAAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sdy:CRISPR-1790-3080-bf1",
+      "label": "Sdy",
+      "array_id": "CRISPR-1790-3080-bf1",
+      "repeat": "GTTTTGGGACCATTCAAAACAACATAGCTCTAAAAC",
+      "source_sha256": "18e924b30476219e63e7f428af420d5a499b1b1c2c6154e5dedc25f6ec6662a9",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "114373325420649427022498623541966338115874549391775693041880070370740862405911",
+      "control_kind": "repeat_dinucleotide:CRISPR-1790-3080-bf1",
+      "control_repeat": "GCACACCAAATTATCTGGTCTTTTAAACAGGAAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sdy:CRISPR-1790-3080-bf1",
+      "label": "Sdy",
+      "array_id": "CRISPR-1790-3080-bf1",
+      "repeat": "GTTTTGGGACCATTCAAAACAACATAGCTCTAAAAC",
+      "source_sha256": "18e924b30476219e63e7f428af420d5a499b1b1c2c6154e5dedc25f6ec6662a9",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AATTATACCACAGCGATAATCTCAGGGGAACTATGAC",
+      "donor": "Gsp:CRISPR-5876-6110-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Seq1:CRISPR-7935-8432-bf1",
+      "label": "Seq1",
+      "array_id": "CRISPR-7935-8432-bf1",
+      "repeat": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "5a8ab80142682c944d29c09e67c6de51f27bec5484ae89ea7b14de089d291ee3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "86628263755191921703546697751558406583932229580166655438374976450689770952206",
+      "control_kind": "repeat_dinucleotide:CRISPR-7935-8432-bf1",
+      "control_repeat": "GTTGATGTCCGCAAGTCTTGAAAAGTTTTTGGTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Seq1:CRISPR-7935-8432-bf1",
+      "label": "Seq1",
+      "array_id": "CRISPR-7935-8432-bf1",
+      "repeat": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "5a8ab80142682c944d29c09e67c6de51f27bec5484ae89ea7b14de089d291ee3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "102257221524650506288567440180093813852102702339920137277042585117301173704865",
+      "control_kind": "repeat_dinucleotide:CRISPR-7935-8432-bf1",
+      "control_repeat": "GCTTTTGAACGTAGTTGTTGTGTTCCAAGGAAATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Seq1:CRISPR-7935-8432-bf1",
+      "label": "Seq1",
+      "array_id": "CRISPR-7935-8432-bf1",
+      "repeat": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",
+      "source_sha256": "5a8ab80142682c944d29c09e67c6de51f27bec5484ae89ea7b14de089d291ee3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAGTAATGTAATCTACATAGGTACTAAGAC",
+      "donor": "Tba:CRISPR-7126-7358-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Seq2:CRISPR-7231-7597-bf1",
+      "label": "Seq2",
+      "array_id": "CRISPR-7231-7597-bf1",
+      "repeat": "GTTTTAGAGTTATGCTGTATTGAATGGTTCCAAAACA",
+      "source_sha256": "fed7a035435a909a6fab3808f6972ae90662c9003ecc13ee72d5a097f323193e",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "90258577877511600632305917602985900450128353453988727521400490476835461825918",
+      "control_kind": "repeat_dinucleotide:CRISPR-7231-7597-bf1",
+      "control_repeat": "GTGGAACAGTAATAATTTTTGTGCCAAGTGATTTCTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Seq2:CRISPR-7231-7597-bf1",
+      "label": "Seq2",
+      "array_id": "CRISPR-7231-7597-bf1",
+      "repeat": "GTTTTAGAGTTATGCTGTATTGAATGGTTCCAAAACA",
+      "source_sha256": "fed7a035435a909a6fab3808f6972ae90662c9003ecc13ee72d5a097f323193e",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "50064808250818248444049792580615680498500414947885105166539048027613515791839",
+      "control_kind": "repeat_dinucleotide:CRISPR-7231-7597-bf1",
+      "control_repeat": "GGTACAAATGAGCTGATTAGTGTTTCCATTTTGTAAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Seq2:CRISPR-7231-7597-bf1",
+      "label": "Seq2",
+      "array_id": "CRISPR-7231-7597-bf1",
+      "repeat": "GTTTTAGAGTTATGCTGTATTGAATGGTTCCAAAACA",
+      "source_sha256": "fed7a035435a909a6fab3808f6972ae90662c9003ecc13ee72d5a097f323193e",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTCTAATCATCATTGATCTAACAACCACCTAAAAC",
+      "donor": "Lsp2:CRISPR-20002-21357-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sga:CRISPR-589-1217-bf1",
+      "label": "Sga",
+      "array_id": "CRISPR-589-1217-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "75588669570519790995893596020312996359745099600968592031980658848112461226626",
+      "control_kind": "repeat_dinucleotide:CRISPR-589-1217-bf1",
+      "control_repeat": "GTCTGACGACAAAAAGTACTTTTATTTAGGTTAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sga:CRISPR-589-1217-bf1",
+      "label": "Sga",
+      "array_id": "CRISPR-589-1217-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "102700994300027687089884302337465463407104210626402526906469628588497111796538",
+      "control_kind": "repeat_dinucleotide:CRISPR-589-1217-bf1",
+      "control_repeat": "GACTTTAACAAACGTTTTACTATAAAAGTGGAGTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sga:CRISPR-589-1217-bf1",
+      "label": "Sga",
+      "array_id": "CRISPR-589-1217-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GAAGCTAGCACGGTGGAACGGACCGGGCTACAGGAC",
+      "donor": "Csa:CRISPR-5120-5749-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sga:CRISPR-7794-9742-bf2",
+      "label": "Sga",
+      "array_id": "CRISPR-7794-9742-bf2",
+      "repeat": "GTTTTGGAACCATTCGAAACAGCACAGCTCTAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "103325323454544900562893618524740653476506524075778875061813502501261790466618",
+      "control_kind": "repeat_dinucleotide:CRISPR-7794-9742-bf2",
+      "control_repeat": "GCTTTCCATTGTTACAAAAGCAAACAGAACGGACTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sga:CRISPR-7794-9742-bf2",
+      "label": "Sga",
+      "array_id": "CRISPR-7794-9742-bf2",
+      "repeat": "GTTTTGGAACCATTCGAAACAGCACAGCTCTAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "91094232445473125775509200633892039053588198417397644234024607966023252350905",
+      "control_kind": "repeat_dinucleotide:CRISPR-7794-9742-bf2",
+      "control_repeat": "GGTCACAAACCGAACTTAATCACAGCTTTTGAAAGC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sga:CRISPR-7794-9742-bf2",
+      "label": "Sga",
+      "array_id": "CRISPR-7794-9742-bf2",
+      "repeat": "GTTTTGGAACCATTCGAAACAGCACAGCTCTAAAAC",
+      "source_sha256": "89db50a755e01e3c06dd2e6b31e40fd26027ad66c3c53b8a9156058eef4a746e",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTTGTACTCTTAATGATGTGGTATCAGTAAAAC",
+      "donor": "Ece:CRISPR-19804-23077-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sgo:CRISPR-4443-4611-bf1",
+      "label": "Sgo",
+      "array_id": "CRISPR-4443-4611-bf1",
+      "repeat": "GTTGTACAGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "833e97c074142f8dbb6f88979a6591760f03e184fdff792175e38fb712a78ae6",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "91377140481255369564934465815028902898894233910232273069476527752979951626811",
+      "control_kind": "repeat_dinucleotide:CRISPR-4443-4611-bf1",
+      "control_repeat": "GTTGAGTACTAGTTTATGTAAAACAACTTCAAAGACC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sgo:CRISPR-4443-4611-bf1",
+      "label": "Sgo",
+      "array_id": "CRISPR-4443-4611-bf1",
+      "repeat": "GTTGTACAGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "833e97c074142f8dbb6f88979a6591760f03e184fdff792175e38fb712a78ae6",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "106259652520646440219557056592354968857044501042595012476793826699483043448756",
+      "control_kind": "repeat_dinucleotide:CRISPR-4443-4611-bf1",
+      "control_repeat": "GAGTTACCTTGTAGTACAGTTAACACTGAAAAAATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sgo:CRISPR-4443-4611-bf1",
+      "label": "Sgo",
+      "array_id": "CRISPR-4443-4611-bf1",
+      "repeat": "GTTGTACAGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "833e97c074142f8dbb6f88979a6591760f03e184fdff792175e38fb712a78ae6",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+      "donor": "Kki:CRISPR-20002-20367-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sma2:CRISPR-3169-3337-bf1",
+      "label": "Sma2",
+      "array_id": "CRISPR-3169-3337-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "20c3cbf8c212e3fad8715d574160c6cc4802bbe84d39bf4450ddcb6ea48515e3",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "74234301032721503578152604389770182851850843628352324008490651093798064427786",
+      "control_kind": "repeat_dinucleotide:CRISPR-3169-3337-bf1",
+      "control_repeat": "GTCGTAACTAACCACTTAAGTATTTTTTGAAAGGAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sma2:CRISPR-3169-3337-bf1",
+      "label": "Sma2",
+      "array_id": "CRISPR-3169-3337-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "20c3cbf8c212e3fad8715d574160c6cc4802bbe84d39bf4450ddcb6ea48515e3",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "8660361441807121483673882303371074896588184046797806180089660357829422352786",
+      "control_kind": "repeat_dinucleotide:CRISPR-3169-3337-bf1",
+      "control_repeat": "GGTAGACCTACTTTCAACGAAAAAGTATTTTTGTAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sma2:CRISPR-3169-3337-bf1",
+      "label": "Sma2",
+      "array_id": "CRISPR-3169-3337-bf1",
+      "repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "source_sha256": "20c3cbf8c212e3fad8715d574160c6cc4802bbe84d39bf4450ddcb6ea48515e3",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTAGCTTCCTCTCTCATCTCGTAGTGCTACAATA",
+      "donor": "Nsp:CRISPR-3727-4027-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Smu:CRISPR-1523-2944-bf1",
+      "label": "Smu",
+      "array_id": "CRISPR-1523-2944-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "784779a521c5222760fc594b8f3804697e392d38a2686a1dc2c5db785d5de019",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "45140777705079033730502805205681537306804558584468281953377866771602436234643",
+      "control_kind": "repeat_dinucleotide:CRISPR-1523-2944-bf1",
+      "control_repeat": "GAAATGAGGTTCTTTCTTACGCCACAACAACAAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Smu:CRISPR-1523-2944-bf1",
+      "label": "Smu",
+      "array_id": "CRISPR-1523-2944-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "784779a521c5222760fc594b8f3804697e392d38a2686a1dc2c5db785d5de019",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "112276836474465372525630329285472751190747329123641299186413227157213835947295",
+      "control_kind": "repeat_dinucleotide:CRISPR-1523-2944-bf1",
+      "control_repeat": "GAAAAGTTGCGGACACCTTTAACAAACTCAACATTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Smu:CRISPR-1523-2944-bf1",
+      "label": "Smu",
+      "array_id": "CRISPR-1523-2944-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "784779a521c5222760fc594b8f3804697e392d38a2686a1dc2c5db785d5de019",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "AGTTGTGAATTGCTTTCAGTTCTTTAAATTTATGGAGAATTCACAGG",
+      "donor": "Jpa:CRISPR-11170-11368-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Spa:CRISPR-21124-21292-p1",
+      "label": "Spa",
+      "array_id": "CRISPR-21124-21292-p1",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAATC",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "19758056597562445207658157818209467651953716358127963498972013720134048632433",
+      "control_kind": "repeat_dinucleotide:CRISPR-21124-21292-p1",
+      "control_repeat": "GAAATGGAGCATTATCTGAGGTCTTGTGTTTGAAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Spa:CRISPR-21124-21292-p1",
+      "label": "Spa",
+      "array_id": "CRISPR-21124-21292-p1",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAATC",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "15951577230711288393746092981041408295246390213382298458382635367905462494731",
+      "control_kind": "repeat_dinucleotide:CRISPR-21124-21292-p1",
+      "control_repeat": "GAAAAGCTGGTTTGGATTGTCTTGAATGTCATAGATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Spa:CRISPR-21124-21292-p1",
+      "label": "Spa",
+      "array_id": "CRISPR-21124-21292-p1",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAATC",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GGCTGCGGTTTGCGGCCAATTCCTCGTTTGCTAGACTT",
+      "donor": "Cme4:CRISPR-2742-2913-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Spa:CRISPR-24344-24905-p2",
+      "label": "Spa",
+      "array_id": "CRISPR-24344-24905-p2",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAAT",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "48322834250163871288297609509276977960198633822052750356400467454074699168213",
+      "control_kind": "repeat_dinucleotide:CRISPR-24344-24905-p2",
+      "control_repeat": "GTGAAAGAAAGATTTTGTGGCATTCTGATCTATGGT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Spa:CRISPR-24344-24905-p2",
+      "label": "Spa",
+      "array_id": "CRISPR-24344-24905-p2",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAAT",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "34554664329479208679408658313395612084045980906998894268841783444861115496151",
+      "control_kind": "repeat_dinucleotide:CRISPR-24344-24905-p2",
+      "control_repeat": "GATGAATGTCTTGAATGGTTCTAAGATGGCAAGTTT",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Spa:CRISPR-24344-24905-p2",
+      "label": "Spa",
+      "array_id": "CRISPR-24344-24905-p2",
+      "repeat": "GTTGTGGCTTGAATCAGATCTTTGAAATGGTAGAAT",
+      "source_sha256": "e76886723248ad87825680aca5785291c8903769272c2c325ead99fa599bdacf",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "CGCTCTGGTTGGCCGGGAGCGGCCTCTTTGATATACTC",
+      "donor": "Ghy1:CRISPR-1031-1202-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sra:CRISPR-19735-20432-bf1",
+      "label": "Sra",
+      "array_id": "CRISPR-19735-20432-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "b8da822f04e88c64561b9a0a7b0de305c6cff6b079f0369e791b415e848bb1c1",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "11912981444221407391193708364274412646321874273357585138239900793052449231499",
+      "control_kind": "repeat_dinucleotide:CRISPR-19735-20432-bf1",
+      "control_repeat": "GAACACAAATTCTCTTGTTTACAACGGCCAAAAGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sra:CRISPR-19735-20432-bf1",
+      "label": "Sra",
+      "array_id": "CRISPR-19735-20432-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "b8da822f04e88c64561b9a0a7b0de305c6cff6b079f0369e791b415e848bb1c1",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "33365576533204884504869685229869953987528720197320040825398890175686506438906",
+      "control_kind": "repeat_dinucleotide:CRISPR-19735-20432-bf1",
+      "control_repeat": "GCAACAACAGTCGAAACCTTAACTTGGAATTTCAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sra:CRISPR-19735-20432-bf1",
+      "label": "Sra",
+      "array_id": "CRISPR-19735-20432-bf1",
+      "repeat": "GTTTTGGAACCATTCGAAACAACACAGCTCTAAAAC",
+      "source_sha256": "b8da822f04e88c64561b9a0a7b0de305c6cff6b079f0369e791b415e848bb1c1",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTACGGTTACTTAAATCTTGAGAGTACAAAAACC",
+      "donor": "Sma2:CRISPR-3169-3337-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ssa:CRISPR-6642-8326-bf1",
+      "label": "Ssa",
+      "array_id": "CRISPR-6642-8326-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "cde25d27508ed8ae201920eeaf1331e9e3be1c1474f47c3f257fa44934ce43c4",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "3154787940182623307920518879155653459605039575545006552403251098472825620488",
+      "control_kind": "repeat_dinucleotide:CRISPR-6642-8326-bf1",
+      "control_repeat": "GTTCTTTAGTAAACTCTTTAATGACAGTTGTACAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssa:CRISPR-6642-8326-bf1",
+      "label": "Ssa",
+      "array_id": "CRISPR-6642-8326-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "cde25d27508ed8ae201920eeaf1331e9e3be1c1474f47c3f257fa44934ce43c4",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "14925797175888227347275403410274634801119182443552755644585335597856711876034",
+      "control_kind": "repeat_dinucleotide:CRISPR-6642-8326-bf1",
+      "control_repeat": "GATTAACAGTTAGTTACTTCAACTGTCTTTGTAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssa:CRISPR-6642-8326-bf1",
+      "label": "Ssa",
+      "array_id": "CRISPR-6642-8326-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "cde25d27508ed8ae201920eeaf1331e9e3be1c1474f47c3f257fa44934ce43c4",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+      "donor": "Cme1:CRISPR-6-203-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ssi:CRISPR-6239-7725-bf1",
+      "label": "Ssi",
+      "array_id": "CRISPR-6239-7725-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "0a898a50a9ef6c28ce205ece0a984c28c247ac470cf4f1f8c024be7f31c08990",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "61096084597923430914757333023192822532748399714379310122572879577492948556831",
+      "control_kind": "repeat_dinucleotide:CRISPR-6239-7725-bf1",
+      "control_repeat": "GAACTACAGTGTTCTTAAACTTCAGTTGTATTTAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssi:CRISPR-6239-7725-bf1",
+      "label": "Ssi",
+      "array_id": "CRISPR-6239-7725-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "0a898a50a9ef6c28ce205ece0a984c28c247ac470cf4f1f8c024be7f31c08990",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "74358098790821510018616062062753943718671807195983145688676288291037701401015",
+      "control_kind": "repeat_dinucleotide:CRISPR-6239-7725-bf1",
+      "control_repeat": "GTTGTTTCAGACTGTAGTACTTTAAATACAAACTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssi:CRISPR-6239-7725-bf1",
+      "label": "Ssi",
+      "array_id": "CRISPR-6239-7725-bf1",
+      "repeat": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "0a898a50a9ef6c28ce205ece0a984c28c247ac470cf4f1f8c024be7f31c08990",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+      "donor": "Ghe:CRISPR-289-1967-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Ssu:CRISPR-1853-2020-bf1",
+      "label": "Ssu",
+      "array_id": "CRISPR-1853-2020-bf1",
+      "repeat": "GTTTTACTGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "c92dfe115900afc30d06b15b075dfdd0cde0aa07c276abbec3552e31388869cf",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "50953631421583621225554331905509485912593658410395598133817069992131811775334",
+      "control_kind": "repeat_dinucleotide:CRISPR-1853-2020-bf1",
+      "control_repeat": "GAGACACTTGTAGTTTTACTTAAAAACTTGTAAATC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssu:CRISPR-1853-2020-bf1",
+      "label": "Ssu",
+      "array_id": "CRISPR-1853-2020-bf1",
+      "repeat": "GTTTTACTGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "c92dfe115900afc30d06b15b075dfdd0cde0aa07c276abbec3552e31388869cf",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "45473925330104263756595574878064655295469202086031024918385246502787353076283",
+      "control_kind": "repeat_dinucleotide:CRISPR-1853-2020-bf1",
+      "control_repeat": "GTACTCTGTTACTAGAACAGTTTTTAAAAAATTGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Ssu:CRISPR-1853-2020-bf1",
+      "label": "Ssu",
+      "array_id": "CRISPR-1853-2020-bf1",
+      "repeat": "GTTTTACTGTTACTTAAATCTTGAGAGTACAAAAAC",
+      "source_sha256": "c92dfe115900afc30d06b15b075dfdd0cde0aa07c276abbec3552e31388869cf",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+      "donor": "Tpu:CRISPR-20002-20167-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Sth1A:CRISPR-9342-9511-bf1",
+      "label": "Sth1A",
+      "array_id": "CRISPR-9342-9511-bf1",
+      "repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "c3ba8b1a7889ed04bee697098c22e8a6296257cbb55a376759167b8d2a873d35",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "67224562085481975625304806950612858153323602751001853003209098436073686561167",
+      "control_kind": "repeat_dinucleotide:CRISPR-9342-9511-bf1",
+      "control_repeat": "ACACTCACTTAAAGTAAACTATTGTTGTTAGAGGTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sth1A:CRISPR-9342-9511-bf1",
+      "label": "Sth1A",
+      "array_id": "CRISPR-9342-9511-bf1",
+      "repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "c3ba8b1a7889ed04bee697098c22e8a6296257cbb55a376759167b8d2a873d35",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "110205301585188365693425232691929466177193375280937517752589351338238074348128",
+      "control_kind": "repeat_dinucleotide:CRISPR-9342-9511-bf1",
+      "control_repeat": "AGTGTGGTAACAGAACTCTTACTCAGTTTAAATTTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Sth1A:CRISPR-9342-9511-bf1",
+      "label": "Sth1A",
+      "array_id": "CRISPR-9342-9511-bf1",
+      "repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+      "source_sha256": "c3ba8b1a7889ed04bee697098c22e8a6296257cbb55a376759167b8d2a873d35",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "ATTATAGCATACCGGAGAATTGAGGGGAACTATAAC",
+      "donor": "Ghy4:CRISPR-7294-7527-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Tba:CRISPR-7126-7358-p1",
+      "label": "Tba",
+      "array_id": "CRISPR-7126-7358-p1",
+      "repeat": "GTTTGAGAGTAATGTAATCTACATAGGTACTAAGAC",
+      "source_sha256": "674313c761a7291ec5d08deaf4dbc6440092b5f8fd35388a1cd8ed74798674f7",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "80434048451086194203314844061131389781688791434599381034842600631138942871053",
+      "control_kind": "repeat_dinucleotide:CRISPR-7126-7358-p1",
+      "control_repeat": "GATCTTACTAGTAAGTTATAGTGTAGAAATGGACAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tba:CRISPR-7126-7358-p1",
+      "label": "Tba",
+      "array_id": "CRISPR-7126-7358-p1",
+      "repeat": "GTTTGAGAGTAATGTAATCTACATAGGTACTAAGAC",
+      "source_sha256": "674313c761a7291ec5d08deaf4dbc6440092b5f8fd35388a1cd8ed74798674f7",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "62707088895599871016304070201838397442600798150605241933068568696405527653087",
+      "control_kind": "repeat_dinucleotide:CRISPR-7126-7358-p1",
+      "control_repeat": "GACTAAGTGTTGACTAGGATAATCATAGTTAAGTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tba:CRISPR-7126-7358-p1",
+      "label": "Tba",
+      "array_id": "CRISPR-7126-7358-p1",
+      "repeat": "GTTTGAGAGTAATGTAATCTACATAGGTACTAAGAC",
+      "source_sha256": "674313c761a7291ec5d08deaf4dbc6440092b5f8fd35388a1cd8ed74798674f7",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+      "donor": "Lsp1:CRISPR-34-201-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Tde:CRISPR-11149-11317-bf1",
+      "label": "Tde",
+      "array_id": "CRISPR-11149-11317-bf1",
+      "repeat": "GTTTGAGAGTTGTGTAATTTAAGATGGATCTCAAACA",
+      "source_sha256": "77ba82a9f3c7836ef6b9b46d863ce79583b09db0b4300c067cce493f71a90600",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "1130083514639182428596517604495727281671036848809883286452839646326438344534",
+      "control_kind": "repeat_dinucleotide:CRISPR-11149-11317-bf1",
+      "control_repeat": "GTGGTTTTGTATCAACAGATCTTGAGAGTTAATGAAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tde:CRISPR-11149-11317-bf1",
+      "label": "Tde",
+      "array_id": "CRISPR-11149-11317-bf1",
+      "repeat": "GTTTGAGAGTTGTGTAATTTAAGATGGATCTCAAACA",
+      "source_sha256": "77ba82a9f3c7836ef6b9b46d863ce79583b09db0b4300c067cce493f71a90600",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "88843467794542597257170677064687673876513914415024340189708061812593411227084",
+      "control_kind": "repeat_dinucleotide:CRISPR-11149-11317-bf1",
+      "control_repeat": "GAATGTGTTGATTGGTTAGTAGAGAAACAATCTTTCA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tde:CRISPR-11149-11317-bf1",
+      "label": "Tde",
+      "array_id": "CRISPR-11149-11317-bf1",
+      "repeat": "GTTTGAGAGTTGTGTAATTTAAGATGGATCTCAAACA",
+      "source_sha256": "77ba82a9f3c7836ef6b9b46d863ce79583b09db0b4300c067cce493f71a90600",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGGAACCATTCGAAACAGCACAGCTCTAAAAC",
+      "donor": "Sga:CRISPR-7794-9742-bf2",
+      "unchanged": false
+    },
+    {
+      "identity": "Tmo:CRISPR-2355-2523-bf1",
+      "label": "Tmo",
+      "array_id": "CRISPR-2355-2523-bf1",
+      "repeat": "GCCGTGGTTTCCCTACCGATTTGCCAGTGGTAGGTTG",
+      "source_sha256": "04b9d3f4fa42e5990f90f6aba0121e2cb1e51457d15e2f4280b4f28145f9bd1e",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "83918522933834702022846515028229943745332376119242936254663035004564213112893",
+      "control_kind": "repeat_dinucleotide:CRISPR-2355-2523-bf1",
+      "control_repeat": "GCCAGTTACCTAGTGCGTTGGATTCCCCGTTGGGTTG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tmo:CRISPR-2355-2523-bf1",
+      "label": "Tmo",
+      "array_id": "CRISPR-2355-2523-bf1",
+      "repeat": "GCCGTGGTTTCCCTACCGATTTGCCAGTGGTAGGTTG",
+      "source_sha256": "04b9d3f4fa42e5990f90f6aba0121e2cb1e51457d15e2f4280b4f28145f9bd1e",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "83884676836154516611546335600652007999974656278951162819894119512246752413484",
+      "control_kind": "repeat_dinucleotide:CRISPR-2355-2523-bf1",
+      "control_repeat": "GTTGCACTTTAGTGTCGCCCCCCGTATGGGTTTGGAG",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tmo:CRISPR-2355-2523-bf1",
+      "label": "Tmo",
+      "array_id": "CRISPR-2355-2523-bf1",
+      "repeat": "GCCGTGGTTTCCCTACCGATTTGCCAGTGGTAGGTTG",
+      "source_sha256": "04b9d3f4fa42e5990f90f6aba0121e2cb1e51457d15e2f4280b4f28145f9bd1e",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTGTAGCTCCCTCTCTCACCCCGGAAAGCTACAATC",
+      "donor": "Dde:CRISPR-1342-3187-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Tpu:CRISPR-20002-20167-p1",
+      "label": "Tpu",
+      "array_id": "CRISPR-20002-20167-p1",
+      "repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+      "source_sha256": "ef554b610a62478b0a1895ef06d1b3d77fcbf675487113db16b2f721c40db6e0",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "72686110009514577325030886785171921960819640920312810991322565458882699826630",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20167-p1",
+      "control_repeat": "GTATTTAAGTGGATGATCTAGAGTTTCAAGTGAA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tpu:CRISPR-20002-20167-p1",
+      "label": "Tpu",
+      "array_id": "CRISPR-20002-20167-p1",
+      "repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+      "source_sha256": "ef554b610a62478b0a1895ef06d1b3d77fcbf675487113db16b2f721c40db6e0",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "12048757944411778645522910404967485815784576451381876345146216038804957817379",
+      "control_kind": "repeat_dinucleotide:CRISPR-20002-20167-p1",
+      "control_repeat": "GAGGAAAGAGTGATAATCTTTGTTCAGTATTGTA",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tpu:CRISPR-20002-20167-p1",
+      "label": "Tpu",
+      "array_id": "CRISPR-20002-20167-p1",
+      "repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+      "source_sha256": "ef554b610a62478b0a1895ef06d1b3d77fcbf675487113db16b2f721c40db6e0",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GCCGTGGTTTCCCTACCGATTTGCCAGTGGTAGGTTG",
+      "donor": "Tmo:CRISPR-2355-2523-bf1",
+      "unchanged": false
+    },
+    {
+      "identity": "Tsp:CRISPR-6813-7113-bf1",
+      "label": "Tsp",
+      "array_id": "CRISPR-6813-7113-bf1",
+      "repeat": "GGTTTTAGTACCCTTAAGATTTTAGCTACTGTAAAAC",
+      "source_sha256": "93fca30212f07806c821b616b3fa568d3970f9e04fc46507615de59ad76db0b1",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "1937053664833487922964624428842345805670824547033973776803050705573988693008",
+      "control_kind": "repeat_dinucleotide:CRISPR-6813-7113-bf1",
+      "control_repeat": "GTAGCCTAACCTAAACTTTATTGAGTTTTAAGGTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tsp:CRISPR-6813-7113-bf1",
+      "label": "Tsp",
+      "array_id": "CRISPR-6813-7113-bf1",
+      "repeat": "GGTTTTAGTACCCTTAAGATTTTAGCTACTGTAAAAC",
+      "source_sha256": "93fca30212f07806c821b616b3fa568d3970f9e04fc46507615de59ad76db0b1",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "3672555442569713531250165484197751472074213636466365677469989272143303703166",
+      "control_kind": "repeat_dinucleotide:CRISPR-6813-7113-bf1",
+      "control_repeat": "GCCCTTGTAAAACTACTAGGTTAAGAGTTATTTTTAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Tsp:CRISPR-6813-7113-bf1",
+      "label": "Tsp",
+      "array_id": "CRISPR-6813-7113-bf1",
+      "repeat": "GGTTTTAGTACCCTTAAGATTTTAGCTACTGTAAAAC",
+      "source_sha256": "93fca30212f07806c821b616b3fa568d3970f9e04fc46507615de59ad76db0b1",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTTGTTACCATATGGATTTTTGCTAGATTAAGACA",
+      "donor": "Edo:CRISPR-6591-6759-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Vpa:CRISPR-8116-8482-bf1",
+      "label": "Vpa",
+      "array_id": "CRISPR-8116-8482-bf1",
+      "repeat": "GGTTTGAGAGTAGTGTAATTCTGTAAACCTCTAAAAC",
+      "source_sha256": "47efd7e5a7bb5b0480e2eee0ef3b66e9d985f9e60a54dd4ff829005c31d6a94d",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "70332465340542403680236086710437669627994501781266426050622706866913754738750",
+      "control_kind": "repeat_dinucleotide:CRISPR-8116-8482-bf1",
+      "control_repeat": "GTGTAGTTTCTGAAAACTAGTCCTAAGGATGTTAAAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Vpa:CRISPR-8116-8482-bf1",
+      "label": "Vpa",
+      "array_id": "CRISPR-8116-8482-bf1",
+      "repeat": "GGTTTGAGAGTAGTGTAATTCTGTAAACCTCTAAAAC",
+      "source_sha256": "47efd7e5a7bb5b0480e2eee0ef3b66e9d985f9e60a54dd4ff829005c31d6a94d",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "106960328727925918236664622994406536969821912605122098231503500428592470878501",
+      "control_kind": "repeat_dinucleotide:CRISPR-8116-8482-bf1",
+      "control_repeat": "GACTCCTAAAAAGTGTAGTATTGGTAACTGAAGTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Vpa:CRISPR-8116-8482-bf1",
+      "label": "Vpa",
+      "array_id": "CRISPR-8116-8482-bf1",
+      "repeat": "GGTTTGAGAGTAGTGTAATTCTGTAAACCTCTAAAAC",
+      "source_sha256": "47efd7e5a7bb5b0480e2eee0ef3b66e9d985f9e60a54dd4ff829005c31d6a94d",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTCATATCTCCATCTAATCCGTTGCTGTGATATGATA",
+      "donor": "Bok:CRISPR-273-441-p1",
+      "unchanged": false
+    },
+    {
+      "identity": "Wvi:CRISPR-6636-8205-p1",
+      "label": "Wvi",
+      "array_id": "CRISPR-6636-8205-p1",
+      "repeat": "GTTGTGAATTCCTTTCAAATTTTTGTAGATTTACTCAGTAGAATTACAAC",
+      "source_sha256": "1a385bbc725f720e083518b481ea7eeee6ba5238a9b5a5171fdab82390a63e04",
+      "panel": "dinucleotide_1",
+      "replicate": 1,
+      "seed": "5244168913827240506638335248144723316586662571915612539478063283828000002401",
+      "control_kind": "repeat_dinucleotide:CRISPR-6636-8205-p1",
+      "control_repeat": "GTTGTTTTAGACTGACAAAAGTTCATCACCTATTTATGAGTAAATTTTTC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Wvi:CRISPR-6636-8205-p1",
+      "label": "Wvi",
+      "array_id": "CRISPR-6636-8205-p1",
+      "repeat": "GTTGTGAATTCCTTTCAAATTTTTGTAGATTTACTCAGTAGAATTACAAC",
+      "source_sha256": "1a385bbc725f720e083518b481ea7eeee6ba5238a9b5a5171fdab82390a63e04",
+      "panel": "dinucleotide_2",
+      "replicate": 2,
+      "seed": "28743163627641207387710340421828389593431988907093061628721985891657197545373",
+      "control_kind": "repeat_dinucleotide:CRISPR-6636-8205-p1",
+      "control_repeat": "GTAGTTTGAAAATCATTGTTTTTAACTCAGTCCATTGATTACTTTAAGAC",
+      "unchanged": false,
+      "donor": null
+    },
+    {
+      "identity": "Wvi:CRISPR-6636-8205-p1",
+      "label": "Wvi",
+      "array_id": "CRISPR-6636-8205-p1",
+      "repeat": "GTTGTGAATTCCTTTCAAATTTTTGTAGATTTACTCAGTAGAATTACAAC",
+      "source_sha256": "1a385bbc725f720e083518b481ea7eeee6ba5238a9b5a5171fdab82390a63e04",
+      "panel": "derangement",
+      "control_kind": "repeat_derangement",
+      "control_repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+      "donor": "Ain:CRISPR-6307-8646-p1",
+      "unchanged": false
+    }
+  ],
+  "genomic_controls": [
+    {
+      "label": "Ain",
+      "fasta": "benchmarks/council_round2/controls/Ain.fasta",
+      "sha256": "1f150b7460da04c025980921a5cb05f98028cfe83ff543b8b1e6c583a2a5b229",
+      "original_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d",
+      "arrays": [
+        {
+          "id": "CRISPR-6307-8646-p1",
+          "interval": {
+            "start": 6306,
+            "end": 8646
+          },
+          "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.731776061552946
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 6306,
+          "seed": "13413736712537385881059551601261830269643991489176035065567228588295216074141",
+          "unchanged": false
+        },
+        {
+          "start_0": 8646,
+          "end_exclusive": 8659,
+          "seed": "49550578818963107570387029277045446309685929818255448818452700625117148482592",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Esp2",
+      "fasta": "benchmarks/council_round2/controls/Esp2.fasta",
+      "sha256": "a5263192fb60fb7c8d48ee892cfa9b2657124345b96663c692e2f84dc1cd043c",
+      "original_sha256": "75e0165e7c96d630702b6d99c7badb70a0ccd9b66adb0ee534440baa4087beae",
+      "arrays": [
+        {
+          "id": "CRISPR-20002-20300-p1",
+          "interval": {
+            "start": 20001,
+            "end": 20300
+          },
+          "repeat": "GTTTCAGTACCTTATGAAATTACACTACTCTCAAAC",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.731831274564937
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 20001,
+          "seed": "20487108704790090183413309779093231400085662406332006325179759406805273979210",
+          "unchanged": false
+        },
+        {
+          "start_0": 20300,
+          "end_exclusive": 40301,
+          "seed": "16188596772094987659113830571681447476071144335919280803905394036884359740832",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Lsp1",
+      "fasta": "benchmarks/council_round2/controls/Lsp1.fasta",
+      "sha256": "5d9e0528cde13cccc1808f4903503fb0551f020a528c922560b42ebcbc423d4a",
+      "original_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a",
+      "arrays": [
+        {
+          "id": "CRISPR-34-201-p1",
+          "interval": {
+            "start": 33,
+            "end": 201
+          },
+          "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.6693705381654271
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 33,
+          "seed": "15576747358994965288702893354639814294415323479110560529562566716662792228659",
+          "unchanged": false
+        },
+        {
+          "start_0": 201,
+          "end_exclusive": 8739,
+          "seed": "77833292513230458396301387669733612267948138819298933688723217781046593967250",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Lan",
+      "fasta": "benchmarks/council_round2/controls/Lan.fasta",
+      "sha256": "01f5e8390b48912a9d79ff6c16af7532e43017df78d574f1a1446bcfbd0d8ac3",
+      "original_sha256": "dbc7cda677df442d8653d9b1e8b1553fa9ec92307461bd5b98649f353d56adae",
+      "arrays": [
+        {
+          "id": "CRISPR-7041-7934-bf1",
+          "interval": {
+            "start": 7040,
+            "end": 7934
+          },
+          "repeat": "GTTTTAGAGCTATGTTGTTTTGTATGACTCCAAAAC",
+          "strand": "+",
+          "category": "Bona-fide",
+          "score": 0.9139805382025954
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 7040,
+          "seed": "15528206196944069823105682589883432113236601075298844298973247283849233364496",
+          "unchanged": false
+        },
+        {
+          "start_0": 7934,
+          "end_exclusive": 8670,
+          "seed": "103315345950760813351929720512099345289206919300156722708478537499372981098883",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Mse",
+      "fasta": "benchmarks/council_round2/controls/Mse.fasta",
+      "sha256": "6d5da7d503ce0d32688e6e03933f2cc1b6c5936444ac07907b18e3499dbb0d11",
+      "original_sha256": "3801157aed8f308d05f54ee5442814a01e587159f2bf7d33b5ccf4fa3bb2842f",
+      "arrays": [
+        {
+          "id": "CRISPR-21586-21820-bf1",
+          "interval": {
+            "start": 21585,
+            "end": 21820
+          },
+          "repeat": "GGTCTCATTCATACCTAAAATAACAGAGTACTAAAAC",
+          "strand": "-",
+          "category": "Bona-fide",
+          "score": 0.9001849886084669
+        },
+        {
+          "id": "CRISPR-58082-58241-p1",
+          "interval": {
+            "start": 58081,
+            "end": 58241
+          },
+          "repeat": "GTTTAAATACATCTAATGTTTTGGTTCAACA",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.7124646146439608
+        },
+        {
+          "id": "CRISPR-69108-69269-p2",
+          "interval": {
+            "start": 69107,
+            "end": 69269
+          },
+          "repeat": "AATTTAAATACATCTAATGTTACGGTTCAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.7220792468281023
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 21585,
+          "seed": "56281957329780152515338612281672563869345433999891023116122271294846264806462",
+          "unchanged": false
+        },
+        {
+          "start_0": 21820,
+          "end_exclusive": 58081,
+          "seed": "38985892161820057827870572945854738941150514146805725363610814210412448217402",
+          "unchanged": false
+        },
+        {
+          "start_0": 58241,
+          "end_exclusive": 69107,
+          "seed": "62735144137762556020059422765665484109862709863961834280088988099130994955557",
+          "unchanged": false
+        },
+        {
+          "start_0": 69269,
+          "end_exclusive": 90129,
+          "seed": "10327877453209318404334987811722259785850293801296150066848056895534984364057",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Sth1A",
+      "fasta": "benchmarks/council_round2/controls/Sth1A.fasta",
+      "sha256": "67b0a6fff4609b8107e3d9410e67196688fb56f4cf18077d81a4a70267ab0c4c",
+      "original_sha256": "c3ba8b1a7889ed04bee697098c22e8a6296257cbb55a376759167b8d2a873d35",
+      "arrays": [
+        {
+          "id": "CRISPR-9342-9511-bf1",
+          "interval": {
+            "start": 9341,
+            "end": 9511
+          },
+          "repeat": "AGGTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+          "strand": "+",
+          "category": "Bona-fide",
+          "score": 0.7918047501364818
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 9341,
+          "seed": "12970627308072045688325644095933114019917542798378347350955834102499710640802",
+          "unchanged": false
+        },
+        {
+          "start_0": 9511,
+          "end_exclusive": 13252,
+          "seed": "34429535532120685418979059776575906967247219407907895311819791453339138224188",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Kki",
+      "fasta": "benchmarks/council_round2/controls/Kki.fasta",
+      "sha256": "f930a0f7025347b3c6a20ada4b44f051b52bd9fdfd5a8181353e261e6afebc6b",
+      "original_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579",
+      "arrays": [
+        {
+          "id": "CRISPR-20002-20367-bf1",
+          "interval": {
+            "start": 20001,
+            "end": 20367
+          },
+          "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+          "strand": "-",
+          "category": "Bona-fide",
+          "score": 0.9539360146718716
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 20001,
+          "seed": "113295442460037626183785857838907472681081638275032464267015133792297183183907",
+          "unchanged": false
+        },
+        {
+          "start_0": 20367,
+          "end_exclusive": 40302,
+          "seed": "111600003041773434506523874529641194612225505632109597600680909745678178529714",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Rsp",
+      "fasta": "benchmarks/council_round2/controls/Rsp.fasta",
+      "sha256": "9d77f333f21b23a18807c29806211faa46249a694f5a25d88f5c5ee756b7adf0",
+      "original_sha256": "728e181e9ffeec8b43ed650ad9c1116235390ae1249e37d677222bef8649bc03",
+      "arrays": [
+        {
+          "id": "CRISPR-20002-20364-p1",
+          "interval": {
+            "start": 20001,
+            "end": 20364
+          },
+          "repeat": "GTTGTGGTTTGATGTAGAATTGGAATGAGAAACAAC",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.7436063931607191
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 20001,
+          "seed": "80686459480106980362379656744694120084470698276676772568007050488614574271368",
+          "unchanged": false
+        },
+        {
+          "start_0": 20364,
+          "end_exclusive": 40431,
+          "seed": "31812458590618355170987603889017909838484239801654323002896070064901911202604",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Bbo",
+      "fasta": "benchmarks/council_round2/controls/Bbo.fasta",
+      "sha256": "e374099db9e441e5692d813d5ad0300ea081e394350d5bd03d1eef5a479abee4",
+      "original_sha256": "fd0840c870424c0384a1da093ed0fc1fbc9f20f34c556f7bd09a7f35f2712043",
+      "arrays": [
+        {
+          "id": "CRISPR-5980-6862-p1",
+          "interval": {
+            "start": 5979,
+            "end": 6862
+          },
+          "repeat": "CCAGTATATCAGAGGGGCTTTAGATTGAATTTGAAACC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.6878336730856635
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 5979,
+          "seed": "15636863988871599082663561829420773800863597890286555206389724367579739338535",
+          "unchanged": false
+        },
+        {
+          "start_0": 6862,
+          "end_exclusive": 8581,
+          "seed": "110273926758513942057017292190257895421928427795300878358091791044700056748761",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Cca2",
+      "fasta": "benchmarks/council_round2/controls/Cca2.fasta",
+      "sha256": "03f687867469bdd5f0297ffae7020822a6be4e3b888510a767dc1789e83b8b02",
+      "original_sha256": "603b1ba4bf4243d0d20e6c6d10709749aa229e277961285ee13d674db6f2310b",
+      "arrays": [
+        {
+          "id": "CRISPR-821-2456-p1",
+          "interval": {
+            "start": 820,
+            "end": 2456
+          },
+          "repeat": "GCTGGGGTTCAGTTCCTAAAGACCCTGATAGACTTC",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.7088239371121651
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 820,
+          "seed": "76819022712317744428574327557620665065850928413152109008501534045889660431337",
+          "unchanged": false
+        },
+        {
+          "start_0": 2456,
+          "end_exclusive": 8632,
+          "seed": "74040217372116212121297506392715523208780712796350328355341300865950783723012",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Cme3",
+      "fasta": "benchmarks/council_round2/controls/Cme3.fasta",
+      "sha256": "f67123560e493f4ec89a1b0a81ece10ea2e6cb6a91ce4764d22b89256d6a3f9b",
+      "original_sha256": "49dff5c9e050ea8f3fd9736515c59ab503ac7db548438429714c60b7436360cf",
+      "arrays": [
+        {
+          "id": "CRISPR-5-237-p1",
+          "interval": {
+            "start": 4,
+            "end": 237
+          },
+          "repeat": "GTTGTGGATTGATTAGAAAAAGGAATAAGTTAGCTT",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.7264878661124297
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 4,
+          "seed": "106937755921276318329000438105136813526449779746471764519619175187566415185725",
+          "unchanged": false
+        },
+        {
+          "start_0": 237,
+          "end_exclusive": 6429,
+          "seed": "67443902678761122674602094436014822566893949802628248486794945332869546820054",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Ghe",
+      "fasta": "benchmarks/council_round2/controls/Ghe.fasta",
+      "sha256": "c146f0c0ce55508b72e413ed2f59bcb0a09bbff724298af2807944cabfae2ac4",
+      "original_sha256": "68f3e10489276da48a54aa0edb56a90bbbcb1978b24a9e05fb39b407c29f5b8f",
+      "arrays": [
+        {
+          "id": "CRISPR-289-1967-p1",
+          "interval": {
+            "start": 288,
+            "end": 1967
+          },
+          "repeat": "GTTTCTTATCCTTTTGAATTTACATCAAACCACAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.7265665480754263
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 288,
+          "seed": "11246368940863847732126005626321216593470924141190694335515312858758025801922",
+          "unchanged": false
+        },
+        {
+          "start_0": 1967,
+          "end_exclusive": 8609,
+          "seed": "22031064637300999091166717211127970701276312507236584370288183901502046516035",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Cca1",
+      "fasta": "benchmarks/council_round2/controls/Cca1.fasta",
+      "sha256": "6ef3d60abcdf272fdbb431df198ffdb5603917e89016cdde3515fe35fd3dbc25",
+      "original_sha256": "a6e23937d61fc7daf01b123a35885ead4ac446d3c42386b729e9af6ce211c5c5",
+      "arrays": [
+        {
+          "id": "CRISPR-6602-7495-bf1",
+          "interval": {
+            "start": 6601,
+            "end": 7495
+          },
+          "repeat": "GTTGTAACTAATCGCAAAGTTACGAAAAATTGAAAGCAATTTACAAC",
+          "strand": "-",
+          "category": "Bona-fide",
+          "score": 0.7952381864052892
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 6601,
+          "seed": "53013088496447026094296616071376020237757316354999673347159144671141436018390",
+          "unchanged": false
+        },
+        {
+          "start_0": 7495,
+          "end_exclusive": 11602,
+          "seed": "67217275785178172631122771095353335787443436414152607718431452814988454151518",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Cga",
+      "fasta": "benchmarks/council_round2/controls/Cga.fasta",
+      "sha256": "a4aaab36a6166bc86c0f32f8c5021e1f4b4791407df83da0350753c733f4d184",
+      "original_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9",
+      "arrays": [
+        {
+          "id": "CRISPR-6499-8240-p1",
+          "interval": {
+            "start": 6498,
+            "end": 8240
+          },
+          "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.709733350902113
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 6498,
+          "seed": "35019805897861843381158671738669633033435778530812888785207680521557612221218",
+          "unchanged": false
+        },
+        {
+          "start_0": 8240,
+          "end_exclusive": 9336,
+          "seed": "62001099910053925772276064665102143862644576485685748649510257311048402622430",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Cme1",
+      "fasta": "benchmarks/council_round2/controls/Cme1.fasta",
+      "sha256": "8531e12c379ddff18019ae69ad85700c1dea1587a41f36eda8345ef89a7782ba",
+      "original_sha256": "e5430e7257954ed26196ee411ed624c527823dd268adfa377c598d33568b188b",
+      "arrays": [
+        {
+          "id": "CRISPR-6-203-p1",
+          "interval": {
+            "start": 5,
+            "end": 203
+          },
+          "repeat": "GTTGTGAATTGCTTTCATTTCTTTGATATCTTTGATTCAGTACAAC",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.6705478101454587
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 5,
+          "seed": "10109520666879383981578779910340843129478845857417964086938976771342488152084",
+          "unchanged": false
+        },
+        {
+          "start_0": 203,
+          "end_exclusive": 6370,
+          "seed": "40311977549689669794284820973091249362307604632050638753331320990790678691083",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Ffr",
+      "fasta": "benchmarks/council_round2/controls/Ffr.fasta",
+      "sha256": "ca6c81376c9ffe4f477c8b91b1dad172ecb19bd3c4d0b2d038b61e498f47f508",
+      "original_sha256": "2d790370c780a6900ecc164d69e7dceb9b05099ce0af240b534be3150a4d1043",
+      "arrays": [
+        {
+          "id": "CRISPR-7647-8299-p1",
+          "interval": {
+            "start": 7646,
+            "end": 8299
+          },
+          "repeat": "GTTGGGAATTATAAGTAAAAATACAATTTTGAAAGCAATTCACAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.7310131415527826
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 7646,
+          "seed": "57626013065387975955640878267747894432671810403909095641187236379459306779483",
+          "unchanged": false
+        },
+        {
+          "start_0": 8299,
+          "end_exclusive": 8653,
+          "seed": "111355554752774911640827011384674728893737415499696111896507071843879773332854",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Ghy2",
+      "fasta": "benchmarks/council_round2/controls/Ghy2.fasta",
+      "sha256": "fc339facdde6be654362c019f5eec7ebf2830349fea40ce893938fdb8c8b1888",
+      "original_sha256": "c5b0d61585a41b8d446282b624b7efc177a422051801426bf97d13bd2c628a22",
+      "arrays": [
+        {
+          "id": "CRISPR-35-2206-p1",
+          "interval": {
+            "start": 34,
+            "end": 2206
+          },
+          "repeat": "GTTGTGATTTGCTTTCAGGTTGTATCTTTGACATAGGATCCACAGG",
+          "strand": "+",
+          "category": "Possible",
+          "score": 0.7177353248761653
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 34,
+          "seed": "108514635598819975683092590936730429154542115319016377037346951305552204512649",
+          "unchanged": false
+        },
+        {
+          "start_0": 2206,
+          "end_exclusive": 7897,
+          "seed": "108959455266465478437872907256375291938351391920349104524537708955533664678412",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Orh",
+      "fasta": "benchmarks/council_round2/controls/Orh.fasta",
+      "sha256": "c5b972836b03ef2f961ca9f173e9845d823f00232fd6f557b588ccd8e74b79dd",
+      "original_sha256": "0562363af565a4a8eaf4d7f3317064dce6d36cdc2ac22a8357fee9c098df4d65",
+      "arrays": [
+        {
+          "id": "CRISPR-927-2124-bf1",
+          "interval": {
+            "start": 926,
+            "end": 2124
+          },
+          "repeat": "GTTGTGATTTGCTTTCAAGTTCTTATTTTTGTGTGAGTAATCACAAG",
+          "strand": "+",
+          "category": "Bona-fide",
+          "score": 0.859269222112828
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 926,
+          "seed": "65059583442189901573275291307112832296540579629830238012874244785674657464960",
+          "unchanged": false
+        },
+        {
+          "start_0": 2124,
+          "end_exclusive": 10923,
+          "seed": "103482507297616121843049662940861421160804843874146954242472331116460129444974",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "label": "Psp",
+      "fasta": "benchmarks/council_round2/controls/Psp.fasta",
+      "sha256": "c1cdd0483e014a283fc048724a08c560311b8e6db31fb499359df36c8e28e2b4",
+      "original_sha256": "30e5a08dd370ceeb057333bb2c42a4ff4a1dbc0ed10960c2ab3973d7f79defb7",
+      "arrays": [
+        {
+          "id": "CRISPR-7014-7368-bf1",
+          "interval": {
+            "start": 7013,
+            "end": 7368
+          },
+          "repeat": "ATGCTGTTTCCAATGGCTCAAAGTTACTAAAATGAAAGCAAATCACAAC",
+          "strand": "-",
+          "category": "Bona-fide",
+          "score": 0.7672118481696123
+        }
+      ],
+      "segments": [
+        {
+          "start_0": 0,
+          "end_exclusive": 7013,
+          "seed": "88151012961758952694124360799096243323620009645624371282547092368637863435969",
+          "unchanged": false
+        },
+        {
+          "start_0": 7368,
+          "end_exclusive": 8164,
+          "seed": "88703792661271014823520990927286390360964320181209451457145084702621992888244",
+          "unchanged": false
+        }
+      ]
+    }
+  ]
+}

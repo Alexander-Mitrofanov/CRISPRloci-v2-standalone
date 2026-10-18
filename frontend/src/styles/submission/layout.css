@@ -1,0 +1,107 @@
+main {
+  position: relative;
+  padding-bottom: 36px;
+}
+.workflow {
+  position: relative;
+  max-width: 900px;
+  margin: 32px auto 0;
+  padding: 0 0 24px;
+  border: 0;
+  background: var(--paper);
+}
+.section-intro {
+  padding-bottom: 22px;
+}
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.section-intro h2,
+.results-title h2,
+.job-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+.section-title {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.method-picker {
+  margin: 44px auto 56px;
+}
+.method-picker h1,
+.section-intro h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  margin-top: 28px;
+}
+.method-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  min-height: 102px;
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition:
+    background 0.14s ease,
+    border-color 0.14s ease;
+}
+.method-link strong {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.method-link span {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.method-link:hover,
+.method-link:focus-visible {
+  border-left-color: var(--action);
+  color: var(--action-text);
+  background: var(--action-soft);
+}
+.database-entry strong {
+  color: var(--action-text);
+  font-weight: 600;
+}
+.method-description {
+  max-width: 75ch;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.back-to-methods {
+  min-height: 44px;
+  margin: 0 0 16px;
+  padding: 0;
+  border: 0;
+  color: var(--action-text);
+  background: none;
+  font-size: 0.875rem;
+}

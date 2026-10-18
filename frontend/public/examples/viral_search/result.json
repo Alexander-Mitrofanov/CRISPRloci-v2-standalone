@@ -1,0 +1,496 @@
+{
+  "example": {
+    "input": {
+      "base_count": 96,
+      "file_sha256": "b2e0a23a9fbf1fb969a16a4a11837993feedbd0f7d94c441c4ad288085bd1977",
+      "filename": "input.fasta",
+      "normalized_sha256": "b2e0a23a9fbf1fb969a16a4a11837993feedbd0f7d94c441c4ad288085bd1977",
+      "record_count": 3
+    },
+    "source_note": "Pinned tool example with masked identifiers. Reference searches use bundled demonstration references, not the full production databases.",
+    "submission_options": {
+      "bias_corrections": true,
+      "category_policy": "bona_fide_possible",
+      "spacer_distance": 1,
+      "viral_max_mismatches": 2
+    },
+    "verification": {
+      "independent_runs": 2,
+      "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+      "scientific_results_identical": true,
+      "variable_fields": [
+        "execution durations"
+      ]
+    }
+  },
+  "job": {
+    "artifacts": [],
+    "input": {
+      "base_count": 96,
+      "filename": "input.fasta",
+      "record_count": 3,
+      "sha256": "b2e0a23a9fbf1fb969a16a4a11837993feedbd0f7d94c441c4ad288085bd1977",
+      "source_ids": [
+        "example_record_01",
+        "example_record_02",
+        "example_record_03"
+      ]
+    },
+    "mode": "viral_search",
+    "options": {
+      "association_grouping": null,
+      "bias_corrections_effective": true,
+      "bias_corrections_requested": true,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "molecule": "DNA",
+      "spacer_distance": 1,
+      "tool_options": {},
+      "tracr_model_type": "II",
+      "viral_max_mismatches": 2,
+      "warnings": []
+    },
+    "status": "completed",
+    "summary": {
+      "adapter": null,
+      "array_compare": {
+        "arrays": [],
+        "available": false,
+        "edges": []
+      },
+      "casandra": {
+        "cassettes": [],
+        "genes": [],
+        "status": "not_requested"
+      },
+      "crisprleader": {
+        "contexts": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "detection": {
+        "accepted_categories": [
+          "Bona-fide",
+          "Possible"
+        ],
+        "array_count": 0,
+        "arrays": [],
+        "arrays_scope": "selected_for_analysis",
+        "arrays_truncated": false,
+        "category_counts": {},
+        "report_count": 0,
+        "report_schema_versions": {},
+        "score_semantics": {
+          "model_score_is_probability": false,
+          "note": "Raw model scores are not calibrated probabilities.",
+          "primary_interpretation": "category"
+        },
+        "selected_array_count": 0,
+        "selected_category_counts": {},
+        "source_count": 0,
+        "unselected_array_count": 0
+      },
+      "orientation": null,
+      "pipeline": {
+        "stages": {
+          "crisprspacer": {
+            "duration_seconds": 0.314388,
+            "status": "completed"
+          }
+        }
+      },
+      "pipeline_status": "completed",
+      "protospacer": {
+        "available": false,
+        "matches": []
+      },
+      "provenance": {
+        "parameters": {
+          "bias_corrections": true,
+          "category_policy": "bona_fide_possible",
+          "leader_flank_length": 500,
+          "spacer_distance": 1,
+          "tool_options": {},
+          "tracr_model_type": "II"
+        },
+        "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+        "repositories": [
+          {
+            "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+            "display_name": "CasAndra",
+            "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git"
+          },
+          {
+            "commit": "ae7e97b210421224f9e15f84fac8db2f3b7ffd84",
+            "display_name": "CCTK",
+            "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git"
+          },
+          {
+            "commit": "369241d16a724eca487a65fd791340cb13122bde",
+            "display_name": "evOr",
+            "repository": "https://github.com/Alexander-Mitrofanov/evOr.git"
+          },
+          {
+            "commit": "ca225a2a3be38e7dee917b483d2d4e2732be4318",
+            "display_name": "CRISPRtracrRNA-v3",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git"
+          },
+          {
+            "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+            "display_name": "CRISPRidentify-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git"
+          },
+          {
+            "commit": "5051d07ab827356792d6a954308ddc5157bd623e",
+            "display_name": "CRISPRleader-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git"
+          },
+          {
+            "commit": "b1990e3fa08b435d12539419387599d9f08fe375",
+            "display_name": "CRISPRmap-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git"
+          },
+          {
+            "commit": "eb26716becfc6c991039aac0db5a7c16d41d1332",
+            "display_name": "CRISPRrepeat",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git"
+          },
+          {
+            "commit": "0e495166486273c9a130556ee640c713497de5bd",
+            "display_name": "CRISPRspacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git"
+          },
+          {
+            "commit": "29727e2456d3d71ffda96ee27f54d13cf50a3023",
+            "display_name": "RepeatTyper",
+            "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git"
+          },
+          {
+            "commit": "f11ee0d85c706237c3d215bf21703933cd1f8037",
+            "display_name": "SpacePHARER",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git"
+          },
+          {
+            "commit": "87993c9f928fc7893cbc4c9f98df9341e39ffe56",
+            "display_name": "SpacerPlacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git"
+          }
+        ],
+        "tool_versions": {
+          "CCTK": "2.0.2",
+          "CRISPRidentify-v2": "2.3.2",
+          "CRISPRleader-v2": "2.0.0a1",
+          "CRISPRloci integration": "0.13.1",
+          "CRISPRmap-v2": "2.1.0a2",
+          "CRISPRrepeat": "1.0.1",
+          "CRISPRspacer": "0.3.1",
+          "CRISPRtracrRNA-v3": "3.0.0",
+          "CasAndra": "0.3.0.dev2",
+          "RepeatTyper": "2.0.1",
+          "SpacePHARER": "2.1.1",
+          "SpacerPlacer": "1.0.1.post3",
+          "evOr": "1.0.3"
+        }
+      },
+      "reconstruction": null,
+      "repeat_map": {
+        "available": false,
+        "results": []
+      },
+      "repeat_type": {
+        "available": false,
+        "results": []
+      },
+      "repeats": {
+        "instances": [],
+        "status": "not_requested"
+      },
+      "schema_version": "1.0.0",
+      "spacer_association": {
+        "associations": [],
+        "available": false
+      },
+      "tracrrna": {
+        "candidates": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "viral_search": {
+        "available": true,
+        "candidate_viruses": [
+          {
+            "accepted_hsps": 1,
+            "accession": "SYNTHETIC_1.1",
+            "location_count": 1,
+            "min_substitutions": 0,
+            "query_occurrence_count": 1,
+            "subject_sha256": "4078ca4dd9fd6908bbe3887178b35b93eac14038bf2e2ede3e2eda9e971489d7",
+            "taxid": null,
+            "title": "Generated test DNA; not a biological viral genome",
+            "unique_query_sequence_count": 1
+          },
+          {
+            "accepted_hsps": 1,
+            "accession": "SYNTHETIC_2.1",
+            "location_count": 1,
+            "min_substitutions": 0,
+            "query_occurrence_count": 1,
+            "subject_sha256": "419031e371f972c0b5fe8126961a49e1b410c695ada1248c5951397830a6de1e",
+            "taxid": null,
+            "title": "Generated test DNA; not a biological viral genome",
+            "unique_query_sequence_count": 1
+          },
+          {
+            "accepted_hsps": 1,
+            "accession": "SYNTHETIC_3.1",
+            "location_count": 1,
+            "min_substitutions": 0,
+            "query_occurrence_count": 1,
+            "subject_sha256": "6245a7055bc83f0c4b8aa1bf914cf7ede7679e0a35bad49fa62498490e32af61",
+            "taxid": null,
+            "title": "Generated test DNA; not a biological viral genome",
+            "unique_query_sequence_count": 1
+          }
+        ],
+        "candidates_truncated": false,
+        "coordinate_system": "1-based-inclusive",
+        "counts": {
+          "accepted_hsps": 3,
+          "eligible_query_occurrences": 3,
+          "matched_query_occurrences": 3,
+          "matched_subject_accessions": 3,
+          "matched_unique_query_sequences": 3,
+          "query_occurrences": 3,
+          "raw_hsps": 9,
+          "rejected_hsps": 6,
+          "rejection_reasons": {
+            "ambiguous_subject": 0,
+            "gapped": 0,
+            "partial_query": 6,
+            "too_many_substitutions": 0
+          },
+          "unique_eligible_query_sequences": 3
+        },
+        "execution_completed": true,
+        "matches": [
+          {
+            "alignment_length": 32,
+            "array_overlap": "unknown",
+            "bitscore": 63.9,
+            "blast_subject_end": 67,
+            "blast_subject_start": 36,
+            "confidence": null,
+            "evalue": 4.71e-16,
+            "gaps": 0,
+            "id": "h000000001",
+            "identities": 32,
+            "pam_status": "not_evaluated",
+            "query_alignment": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+            "query_coverage": 1.0,
+            "query_end": 32,
+            "query_id": "example_record_01",
+            "query_length": 32,
+            "query_occurrence_id": "q000000001",
+            "query_sequence": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+            "query_sha256": "f5ed32796e7e68f047ca1992f1a833ac7d47f1f3a6501feb31e46a28f74a00d6",
+            "query_start": 1,
+            "raw_hsp_row": 1,
+            "raw_score": 32.0,
+            "relative_strand": "+",
+            "subject_accession": "SYNTHETIC_1.1",
+            "subject_alignment": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+            "subject_end": 67,
+            "subject_id": "v000000001",
+            "subject_length": 112,
+            "subject_sequence_forward": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+            "subject_sequence_query_frame": "CGGAACATCCTTCGTTCTTGCTAGCGAACACT",
+            "subject_sha256": "4078ca4dd9fd6908bbe3887178b35b93eac14038bf2e2ede3e2eda9e971489d7",
+            "subject_start": 36,
+            "subject_title": "Generated test DNA; not a biological viral genome",
+            "substitutions": 0,
+            "taxid": null
+          },
+          {
+            "alignment_length": 32,
+            "array_overlap": "unknown",
+            "bitscore": 63.9,
+            "blast_subject_end": 67,
+            "blast_subject_start": 36,
+            "confidence": null,
+            "evalue": 4.71e-16,
+            "gaps": 0,
+            "id": "h000000002",
+            "identities": 32,
+            "pam_status": "not_evaluated",
+            "query_alignment": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+            "query_coverage": 1.0,
+            "query_end": 32,
+            "query_id": "example_record_02",
+            "query_length": 32,
+            "query_occurrence_id": "q000000002",
+            "query_sequence": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+            "query_sha256": "51b9a62157be892e8dd7cb9082d4840543cb66d8e8bebf5a11b2810280409463",
+            "query_start": 1,
+            "raw_hsp_row": 3,
+            "raw_score": 32.0,
+            "relative_strand": "+",
+            "subject_accession": "SYNTHETIC_2.1",
+            "subject_alignment": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+            "subject_end": 67,
+            "subject_id": "v000000002",
+            "subject_length": 112,
+            "subject_sequence_forward": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+            "subject_sequence_query_frame": "GTTTGAATGCATTTAGTCAAGTCCTGCGCGAG",
+            "subject_sha256": "419031e371f972c0b5fe8126961a49e1b410c695ada1248c5951397830a6de1e",
+            "subject_start": 36,
+            "subject_title": "Generated test DNA; not a biological viral genome",
+            "substitutions": 0,
+            "taxid": null
+          },
+          {
+            "alignment_length": 32,
+            "array_overlap": "unknown",
+            "bitscore": 63.9,
+            "blast_subject_end": 67,
+            "blast_subject_start": 36,
+            "confidence": null,
+            "evalue": 4.71e-16,
+            "gaps": 0,
+            "id": "h000000003",
+            "identities": 32,
+            "pam_status": "not_evaluated",
+            "query_alignment": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+            "query_coverage": 1.0,
+            "query_end": 32,
+            "query_id": "example_record_03",
+            "query_length": 32,
+            "query_occurrence_id": "q000000003",
+            "query_sequence": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+            "query_sha256": "ab8a131dcbfd9d68271cb73be9fc1087ab6690a204d4297310a1ef6e83207111",
+            "query_start": 1,
+            "raw_hsp_row": 7,
+            "raw_score": 32.0,
+            "relative_strand": "+",
+            "subject_accession": "SYNTHETIC_3.1",
+            "subject_alignment": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+            "subject_end": 67,
+            "subject_id": "v000000003",
+            "subject_length": 112,
+            "subject_sequence_forward": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+            "subject_sequence_query_frame": "GGACTCGAGATACTACCGGTATCGCTACTCAC",
+            "subject_sha256": "6245a7055bc83f0c4b8aa1bf914cf7ede7679e0a35bad49fa62498490e32af61",
+            "subject_start": 36,
+            "subject_title": "Generated test DNA; not a biological viral genome",
+            "substitutions": 0,
+            "taxid": null
+          }
+        ],
+        "matches_truncated": false,
+        "outcome": "matches",
+        "policy": {
+          "array_overlap": "unknown",
+          "host_inference": "not_performed",
+          "max_query_length": 80,
+          "max_substitutions": 2,
+          "min_query_length": 18,
+          "pam": "not_evaluated",
+          "profile": "full-query-ungapped-hsp",
+          "query_alphabet": "ACGT",
+          "strands": "both",
+          "topology": "linear"
+        },
+        "queries": [
+          {
+            "accepted_hsps": 1,
+            "eligible": true,
+            "length": 32,
+            "occurrence_id": "q000000001",
+            "original_id": "example_record_01",
+            "outcome": "matches",
+            "raw_hsps": 2,
+            "rejected_hsps": 1,
+            "rejection_reasons": {
+              "ambiguous_subject": 0,
+              "gapped": 0,
+              "partial_query": 1,
+              "too_many_substitutions": 0
+            },
+            "returned_subjects": 1,
+            "sha256": "f5ed32796e7e68f047ca1992f1a833ac7d47f1f3a6501feb31e46a28f74a00d6",
+            "skip_reasons": [],
+            "subject_limit_saturated": false
+          },
+          {
+            "accepted_hsps": 1,
+            "eligible": true,
+            "length": 32,
+            "occurrence_id": "q000000002",
+            "original_id": "example_record_02",
+            "outcome": "matches",
+            "raw_hsps": 4,
+            "rejected_hsps": 3,
+            "rejection_reasons": {
+              "ambiguous_subject": 0,
+              "gapped": 0,
+              "partial_query": 3,
+              "too_many_substitutions": 0
+            },
+            "returned_subjects": 2,
+            "sha256": "51b9a62157be892e8dd7cb9082d4840543cb66d8e8bebf5a11b2810280409463",
+            "skip_reasons": [],
+            "subject_limit_saturated": false
+          },
+          {
+            "accepted_hsps": 1,
+            "eligible": true,
+            "length": 32,
+            "occurrence_id": "q000000003",
+            "original_id": "example_record_03",
+            "outcome": "matches",
+            "raw_hsps": 3,
+            "rejected_hsps": 2,
+            "rejection_reasons": {
+              "ambiguous_subject": 0,
+              "gapped": 0,
+              "partial_query": 2,
+              "too_many_substitutions": 0
+            },
+            "returned_subjects": 2,
+            "sha256": "ab8a131dcbfd9d68271cb73be9fc1087ab6690a204d4297310a1ef6e83207111",
+            "skip_reasons": [],
+            "subject_limit_saturated": false
+          }
+        ],
+        "queries_truncated": false,
+        "reference": {
+          "content_sha256": "17cfd913e0a6ff2939a7af381edde776179dd144856d49c39d9f3d3023867df5",
+          "name": "example-synthetic-viruses",
+          "record_count": 3,
+          "reference_sha256": "9ff6e9867386404a8a0ddb2cdf8420536ad19d60e29b184ab5c372862b222068",
+          "source_release": "example-v1",
+          "source_url": "https://example.org/synthetic",
+          "total_bases": 336
+        },
+        "retrieval_completeness": "heuristic",
+        "schema": {
+          "name": "crisprspacer.viral-search",
+          "version": "1.0.0"
+        },
+        "tool_version": "0.3.1"
+      },
+      "warnings": [
+        "Bundle file omitted because it is empty: logs/crisprspacer.stderr.log",
+        "Worker log omitted because it contained a private path: attempt-001.stdout.log",
+        "Worker log omitted because it was empty: attempt-001.stderr.log"
+      ]
+    }
+  },
+  "schema": {
+    "name": "crisprloci.web-example",
+    "version": "1.0.0"
+  }
+}

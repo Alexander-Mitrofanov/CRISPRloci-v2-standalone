@@ -1,0 +1,117 @@
+{
+  "arrays.json": {
+    "schema": {
+      "name": "crisprloci.arrays",
+      "version": "1.0.0"
+    },
+    "coordinate_system": "1-based-inclusive-source-forward",
+    "score_semantics": "uncalibrated-model-score",
+    "categories": ["Bona-fide", "Possible"],
+    "sources": [
+      {
+        "id": "synthetic",
+        "length": 92,
+        "sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432"
+      }
+    ],
+    "arrays": [
+      {
+        "id": "native_array_1",
+        "source_id": "synthetic",
+        "category": "Bona-fide",
+        "model_score": null,
+        "strand": null,
+        "interval": {
+          "start": 1,
+          "end": 30
+        },
+        "boundary": {
+          "exact": null
+        },
+        "repeats": [
+          {
+            "ordinal": 1,
+            "sequence": "GATTACA",
+            "start": 1,
+            "end": 7,
+            "id": "repeat_2b1adecb3997a47e0ae1805d"
+          },
+          {
+            "ordinal": 2,
+            "sequence": "GATTACA",
+            "start": 24,
+            "end": 30,
+            "id": "repeat_9bdbf89d6eb817bd63b179d3"
+          }
+        ],
+        "spacers": [
+          {
+            "ordinal": 1,
+            "sequence": "ACGTTGCAAGTCGTCA",
+            "start": 8,
+            "end": 23,
+            "id": "spacer_4c9988110c7b3b044c7a956e"
+          }
+        ]
+      }
+    ]
+  },
+  "repeats.json": {
+    "schema": {
+      "name": "crisprloci.sequence-set",
+      "version": "1.0.0"
+    },
+    "kind": "repeat",
+    "molecule": "DNA",
+    "complete": true,
+    "records": [
+      {
+        "id": "repeat_2b1adecb3997a47e0ae1805d",
+        "sequence": "GATTACA",
+        "origin": {
+          "source_id": "synthetic",
+          "source_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+          "array_id": "native_array_1",
+          "ordinal": 1,
+          "start": 1,
+          "end": 7
+        }
+      },
+      {
+        "id": "repeat_9bdbf89d6eb817bd63b179d3",
+        "sequence": "GATTACA",
+        "origin": {
+          "source_id": "synthetic",
+          "source_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+          "array_id": "native_array_1",
+          "ordinal": 2,
+          "start": 24,
+          "end": 30
+        }
+      }
+    ]
+  },
+  "spacers.json": {
+    "schema": {
+      "name": "crisprloci.sequence-set",
+      "version": "1.0.0"
+    },
+    "kind": "spacer",
+    "molecule": "DNA",
+    "complete": true,
+    "records": [
+      {
+        "id": "spacer_4c9988110c7b3b044c7a956e",
+        "sequence": "ACGTTGCAAGTCGTCA",
+        "origin": {
+          "source_id": "synthetic",
+          "source_sha256": "961afbe374d5ad8bdcae5ead4d9f7e810e9a834678201435b060068f8b958432",
+          "array_id": "native_array_1",
+          "ordinal": 1,
+          "start": 8,
+          "end": 23
+        }
+      }
+    ]
+  }
+}

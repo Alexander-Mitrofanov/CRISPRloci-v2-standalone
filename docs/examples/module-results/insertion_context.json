@@ -1,0 +1,92 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "insertion_context",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "tool": {
+      "name": "ISEScan-v2",
+      "version": "2.0.0",
+      "upstream_version": "1.7.3"
+    },
+    "coordinate_system": "1-based-inclusive-source-forward",
+    "input_sha256": "c7dad29361be86cb0fbbe2e251b4392dfaa5825a8d83db9d8aa7be7e16a71135",
+    "sources": [
+      {
+        "id": "gi|228288719|ref|NC_012624.1|",
+        "length": 42245,
+        "sha256": "4f78f697d5f4bbf59d707c4d1bf2bbc0dabc4e5a9a494099f8ef6d0a5105b699"
+      }
+    ],
+    "options": {
+      "threads": 1,
+      "include_partial": true
+    },
+    "models": {
+      "clusters.faa.hmm": "f5de1bf92059e39f66490340f1d4e585df3c4b63c79e92c74cf387d23b0007db",
+      "clusters.single.faa": "da7b2b67f57394cca9c8952c21cfbf5077aaf3aabf38cefd285f0d702e234295"
+    },
+    "elements": [
+      {
+        "id": "is000001",
+        "source_id": "gi|228288719|ref|NC_012624.1|",
+        "start": 30355,
+        "end": 31343,
+        "length": 989,
+        "sequence_sha256": "d9d077f70a2cb2542b7b1f52efa88ba9cdf43fb80615c3a633066783cefa41ca",
+        "family": "IS5",
+        "cluster": "IS5_222",
+        "native_type": "p",
+        "contig_edge": false,
+        "copy_count": 1,
+        "transposase_orf": {
+          "start": 30399,
+          "end": 31298,
+          "strand": "+"
+        },
+        "transposase_missing_reason": null,
+        "evalue_best_copy": 1.7e-37,
+        "evalue_this_copy": 1.7e-37,
+        "terminal_inverted_repeats": {
+          "left": {
+            "start": 30355,
+            "end": 30382
+          },
+          "right": {
+            "start": 31316,
+            "end": 31343
+          },
+          "left_alignment": "AGAATTATACAAAAATTTATAAATAATT",
+          "right_reverse_complement_alignment": "AGAATTTTTCAGTAATTAATATTTATTT",
+          "score": 24.0,
+          "identical_positions": 20,
+          "alignment_length": 28,
+          "gap_positions": 0
+        },
+        "target_site_duplication": null,
+        "target_site_duplication_status": "not_assessed"
+      }
+    ],
+    "interpretation": "Predicted insertion sequences and terminal inverted repeats; overlap does not establish gene disruption or loss of function. Target-site duplications were not assessed.",
+    "cas_context": [
+      {
+        "interval_id": "is000001",
+        "source_id": "gi|228288719|ref|NC_012624.1|",
+        "nearest_cassettes": [],
+        "nearest_cassette_count": 0,
+        "nearest_cassettes_truncated": false,
+        "interpretation": "Coordinate proximity in submitted sequence only; function and disruption not assessed."
+      }
+    ],
+    "counts": {
+      "sources": 1,
+      "elements": 1,
+      "complete": 0,
+      "partial": 1,
+      "with_terminal_inverted_repeats": 1
+    }
+  }
+}

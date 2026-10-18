@@ -1,0 +1,46 @@
+{
+  "scope": "Preliminary independent validation audit; no native runs launched",
+  "protocol_plan_hash_ok": true,
+  "frozen_generator_matches_manifest": true,
+  "frozen_generator_sha256": "4171485205794e68db6ac0cf8a4945a616c0cd801acc6ccf04cdaa2eccee489f",
+  "control_manifest_sha256": "67efd2ede9053e2638de91c2646c08c157c347c13c833a8aa4a66b51725ebb55",
+  "control_regeneration_counts": {
+    "dinucleotide_1": 84,
+    "dinucleotide_2": 84,
+    "derangement": 84,
+    "genomic": 19
+  },
+  "small_panel_independent_metrics_and_default_projection": [
+    {
+      "label": "Ain",
+      "candidates": 8,
+      "best_rank": 1
+    },
+    {
+      "label": "Lsp1",
+      "candidates": 4,
+      "best_rank": 1
+    },
+    {
+      "label": "Mse",
+      "candidates": 464,
+      "best_rank": 1
+    },
+    {
+      "label": "Kki",
+      "candidates": 8,
+      "best_rank": 1
+    },
+    {
+      "label": "Cca1",
+      "candidates": 192,
+      "best_rank": null
+    }
+  ],
+  "default_projection_hides_extra_short_candidate": true,
+  "pending": [
+    "full natural/control panels",
+    "strict provenance binding audit",
+    "default projection gate correction"
+  ]
+}

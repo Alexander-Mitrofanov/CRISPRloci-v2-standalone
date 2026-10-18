@@ -1,0 +1,32 @@
+name: crispridentify-core
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  # Direct runtime dependencies only.  The Linux lock file pins transitive
+  # package builds for byte-for-byte reproducible installs.
+  - python=3.12
+  # The supported Linux toolchain is part of the environment so installation
+  # never depends on a compiler supplied by the host operating system.
+  - c-compiler=1.11.0
+  - gcc_linux-64=14.4.0
+  - numpy=1.26.4
+  - biopython=1.86
+  - joblib=1.5.3
+  - scikit-learn=1.8.0
+  - scipy=1.17.1
+  - regex=2024.11.6
+  - vmatch=2.3.0
+  - clustalo=1.2.4
+  - prodigal=2.6.3
+  - pyrodigal=3.7.1
+  - pyhmmer=0.12.1
+  - pip=26.2
+  - setuptools=83.0.0
+  - wheel=0.47.0
+  - viennarna=2.7.0
+  # The compact classifier was trained against this BLAST release. Its
+  # numeric scores are model features, so a newer BLAST is not a drop-in
+  # runtime upgrade even when its command-line interface is compatible.
+  - blast=2.5.0

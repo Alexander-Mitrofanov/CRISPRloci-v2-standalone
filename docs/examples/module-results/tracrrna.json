@@ -1,0 +1,42 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "tracrrna",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "1-based-inclusive-source-forward",
+    "score_semantics": "uncalibrated-model-evidence",
+    "method": "model",
+    "model_type": "V",
+    "sources": [
+      {
+        "id": "contig",
+        "length": 8,
+        "sha256": "b28b7e7e6b70661dfee15d5290c4bca097ca145f721c4fbc4de73ad1d1660b8b"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "f000001.s000001.p000001",
+        "source_id": "contig",
+        "start": 2,
+        "end": 4,
+        "strand": "-",
+        "sequence": "ACG",
+        "origin": null,
+        "evidence_class": null,
+        "boundary_kind": null,
+        "score": 0.0,
+        "score_kind": "ranking",
+        "evalue": null,
+        "array_id": null,
+        "anti_repeat_identity": null,
+        "anti_repeat_coverage": null,
+        "interaction_energy": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+env_dir="${CRISPRIDENTIFY_ENV:-${project_dir}/.envs/crispridentify-core}"
+
+case "${env_dir}" in
+    /*) ;;
+    *) env_dir="${PWD}/${env_dir}" ;;
+esac
+
+if [[ ! -x "${env_dir}/bin/python" ]]; then
+    echo "Error: CRISPRidentify environment not found at ${env_dir}." >&2
+    echo "Run ./install.sh first." >&2
+    exit 1
+fi
+
+export PYTHONHASHSEED=0
+export PYTHONNOUSERSITE=1
+export LC_ALL=C
+
+exec "${env_dir}/bin/python" \
+    "${project_dir}/scripts/run_crispridentify_batch.py" "$@"

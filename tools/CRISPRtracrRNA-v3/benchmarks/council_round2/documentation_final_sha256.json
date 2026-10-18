@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-09-27T00:06:50.187685+00:00",
+  "scope": "Documentation-only corrections and final council links; no core, harness, tests, native artifacts or scientific outputs changed.",
+  "reference_tested_archive": "benchmarks/council_round2/implementation_final.zip",
+  "reference_archive_sha256": "fb0b61ded6486aadc7dc80e4917e7f1e29622c1435ce8be49254a89b3cb0148f",
+  "reference_hash_manifest": "benchmarks/council_round2/implementation_final_sha256.json",
+  "reference_hash_manifest_sha256": "9ee08958f035e27fbe1fcc2229caeaf10e43654fe1abe97093fb4f119fa900fb",
+  "documentation_deltas": {
+    "README.md": {
+      "tested_snapshot_sha256": "a6c639148c87f894dcad537222ddfa69ba3ad11e5873110b908b78a989114322",
+      "final_sha256": "b4f0b43ea70e920da9493b66413d17ce9e5cf0755d210bd37e54f60911911738"
+    },
+    "docs/IMPROVEMENTS.md": {
+      "tested_snapshot_sha256": "5ec5296ef5b91b0e623076c8f5ddcf984c4ca4b32307926f392cf68ceeece64c",
+      "final_sha256": "642207184b32e658cb9efb27d9e9ba359afc269ca31ac3281a5a951c253e33fc"
+    }
+  },
+  "all_other_tested_files_unchanged": true,
+  "unchanged_tested_file_count": 30,
+  "tests_rerun": false,
+  "reason_no_rerun": "Only prose and Markdown links changed; the immutable tested snapshot and 119-test result remain applicable to unchanged code.",
+  "root_owned_outcome_link": "docs/council/07_council_outcome.md"
+}

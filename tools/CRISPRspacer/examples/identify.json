@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "CRISPRidentify-report",
+    "version": "1.2.0"
+  },
+  "coordinate_system": {
+    "indexing": 1,
+    "end_inclusive": true,
+    "orientation_is_separate": true,
+    "reference": "input_forward_strand"
+  },
+  "source": {
+    "id": "record",
+    "length": 20,
+    "sha256": "069aaf8c309468a1dfcc39b67150f49cd249e186448470e1b9b2e3e9b04a7071",
+    "sha256_scope": "uppercase_sequence"
+  },
+  "arrays": [
+    {
+      "id": "arrayA",
+      "source_interval": {
+        "start": 3,
+        "end": 10,
+        "length": 8
+      },
+      "source_sequence": "ACGATTAC",
+      "category": "Bona-fide",
+      "orientation": {
+        "strand": null
+      },
+      "repeat_count": 2,
+      "spacer_count": 1,
+      "non_deleted_spacer_count": 1,
+      "spacer_deletion_count": 0,
+      "repeats": [
+        {
+          "index": 1,
+          "sequence": "AC",
+          "source_interval": {
+            "start": 3,
+            "end": 4,
+            "length": 2
+          }
+        },
+        {
+          "index": 2,
+          "sequence": "AC",
+          "source_interval": {
+            "start": 9,
+            "end": 10,
+            "length": 2
+          }
+        }
+      ],
+      "spacers": [
+        {
+          "index": 1,
+          "sequence": "GATT",
+          "source_interval": {
+            "start": 5,
+            "end": 8,
+            "length": 4
+          }
+        }
+      ],
+      "spacer_deletions": []
+    }
+  ]
+}

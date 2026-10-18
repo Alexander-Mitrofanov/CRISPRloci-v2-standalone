@@ -1,0 +1,17 @@
+{
+  "protected_metadata_files": 113233,
+  "changed": [],
+  "missing": [],
+  "hash_checked_assets_and_configs": 39,
+  "hash_mismatches": [],
+  "added": [],
+  "current_protected_files": 113233,
+  "removed_generated_cache_files": [
+    "new_version/benchmarks/council_round2/archived_python_detector/.ruff_cache/.gitignore",
+    "new_version/benchmarks/council_round2/archived_python_detector/.ruff_cache/0.15.11/5322189482551898236",
+    "new_version/benchmarks/council_round2/archived_python_detector/.ruff_cache/0.15.11/6489558535474848298",
+    "new_version/benchmarks/council_round2/archived_python_detector/.ruff_cache/0.15.11/9145615203868541781",
+    "new_version/benchmarks/council_round2/archived_python_detector/.ruff_cache/CACHEDIR.TAG"
+  ],
+  "final_recheck": "passed"
+}

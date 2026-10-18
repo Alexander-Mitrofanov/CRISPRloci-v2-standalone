@@ -1,0 +1,32 @@
+{
+  "records": 304447,
+  "unique_sequences": 42712,
+  "by_source": {
+    "chylinski2014": 63,
+    "gasiunas2020": 79,
+    "faure2018_reference": 215,
+    "faure2018_barrangou": 144,
+    "faure2018_predicted": 3353,
+    "alexander2023": 96,
+    "ziemann2025": 112,
+    "dooley2021_predicted": 41741,
+    "atlas2025_predicted": 258031,
+    "cas12f2026_components": 14,
+    "rfam_RF02348_seed": 37,
+    "chyou2019_predicted": 521,
+    "briner2014": 41
+  },
+  "by_evidence": {
+    "published_mixed_prediction_and_validation": 63,
+    "biochemically_supported_system": 79,
+    "published_reference_compilation": 400,
+    "computational_prediction": 303646,
+    "active_system_with_engineered_sgRNA": 96,
+    "computational_prediction_with_selected_expression_validation": 112,
+    "published_tracr_component_of_engineered_sgRNA": 14,
+    "curated_family_seed_region": 37
+  },
+  "rejected_rows": 41,
+  "normalization": "uppercase, remove whitespace, U to T only",
+  "claim": "All extractable sequences in the named retrieved tables, not all tracrRNAs ever published"
+}

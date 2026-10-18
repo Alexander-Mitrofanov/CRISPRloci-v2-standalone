@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/gamcil/clinker",
+  "commit": "a126ee5306982858809981b79d6af3663cd2c56c",
+  "version": "0.0.32",
+  "license": "MIT",
+  "derivative_repository": "https://github.com/Alexander-Mitrofanov/clinker-v2",
+  "derivative_version": "2.0.0",
+  "attribution": "Original clinker implementation by Cameron Gilchrist; upstream history and LICENSE retained."
+}

@@ -1,0 +1,566 @@
+{
+  "stage": "current_default_pinned_native",
+  "auditor_sha256": "ac47bd91aec881528a15285a75ac45cd73f7839049dc7bfb2966ed3ff14cb0dc",
+  "comparison_stage": "archived_detector_pinned_native",
+  "status": "pass",
+  "runs": 79,
+  "totals": {
+    "predictions": 3395,
+    "evidence_files": 4655
+  },
+  "results": [
+    {
+      "label": "Lpn",
+      "predictions": 10,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Khu",
+      "predictions": 72,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ain",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cgl",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Esp1",
+      "predictions": 32,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Esp2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Fma",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lce",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lrh",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lsp1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lsp2",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Pac",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Tba",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Tde",
+      "predictions": 228,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Tpu",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Vpa",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Efa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Eit",
+      "predictions": 84,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lan",
+      "predictions": 9,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lmo",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sag1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sag2",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sdy",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Seq1",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Seq2",
+      "predictions": 40,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sga",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 72,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Smu",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sra",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Bni",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ece",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Edo",
+      "predictions": 56,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Fho",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Mga",
+      "predictions": 108,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Mse",
+      "predictions": 464,
+      "proposals": 0,
+      "evidence_files": 84,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sgo",
+      "predictions": 100,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sma2",
+      "predictions": 145,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ssa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ssi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ssu",
+      "predictions": 104,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sth1A",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Tsp",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Bok",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cco",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cpe",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Dde",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghc2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghy3",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghy4",
+      "predictions": 84,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Gsp",
+      "predictions": 80,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Kki",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Nme2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Nsp",
+      "predictions": 168,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Tmo",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Nsa",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Jpa",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Rsp",
+      "predictions": 9,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Bbo",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cca2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cme2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cme3",
+      "predictions": 1,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cme4",
+      "predictions": 176,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Csa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghc1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghe",
+      "predictions": 1,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghh1",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghh2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghy1",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Msc",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Sdo",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Spa",
+      "predictions": 232,
+      "proposals": 0,
+      "evidence_files": 72,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cca1",
+      "predictions": 192,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cga",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cme1",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ffr",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Ghy2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Orh",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Phi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Psp",
+      "predictions": 40,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Wvi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    }
+  ]
+}

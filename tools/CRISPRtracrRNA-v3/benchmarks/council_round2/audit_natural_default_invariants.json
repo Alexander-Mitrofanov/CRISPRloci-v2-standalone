@@ -1,0 +1,486 @@
+{
+  "stage": "natural_default",
+  "auditor_sha256": "a5567b5eea99cbed442c0d8be66b85194631ad2345593b883e3e7729f5e90a22",
+  "status": "pass",
+  "runs": 79,
+  "totals": {
+    "predictions": 3397,
+    "evidence_files": 4655
+  },
+  "results": [
+    {
+      "label": "Lpn",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Khu",
+      "predictions": 72,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ain",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cgl",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Esp1",
+      "predictions": 32,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Esp2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Fma",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lce",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lrh",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lsp1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lsp2",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Pac",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Tba",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Tde",
+      "predictions": 228,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Tpu",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Vpa",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Efa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Eit",
+      "predictions": 84,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lan",
+      "predictions": 9,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lmo",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sag1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sag2",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sdy",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Seq1",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Seq2",
+      "predictions": 40,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sga",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 72
+    },
+    {
+      "label": "Smu",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sra",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Bni",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ece",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Edo",
+      "predictions": 56,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Fho",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Mga",
+      "predictions": 108,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Mse",
+      "predictions": 464,
+      "proposals": 0,
+      "evidence_files": 84
+    },
+    {
+      "label": "Sgo",
+      "predictions": 100,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sma2",
+      "predictions": 145,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ssa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ssi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ssu",
+      "predictions": 104,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sth1A",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Tsp",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Bok",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cco",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cpe",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Dde",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghc2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ghy3",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghy4",
+      "predictions": 84,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Gsp",
+      "predictions": 80,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Kki",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Nme2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Nsp",
+      "predictions": 168,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Tmo",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Nsa",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Jpa",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Rsp",
+      "predictions": 9,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Bbo",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cca2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Cme2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cme3",
+      "predictions": 1,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Cme4",
+      "predictions": 176,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Csa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghc1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghe",
+      "predictions": 1,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ghh1",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghh2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Ghy1",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Msc",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Sdo",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Spa",
+      "predictions": 232,
+      "proposals": 0,
+      "evidence_files": 72
+    },
+    {
+      "label": "Cca1",
+      "predictions": 192,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cga",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cme1",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ffr",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ghy2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Orh",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Phi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Psp",
+      "predictions": 40,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Wvi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    }
+  ]
+}

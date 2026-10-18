@@ -1,0 +1,247 @@
+{
+  "search_date": "2026-09-26",
+  "sources": [
+    {
+      "pmcid": "PMC10278012",
+      "doi": "10.1089/crispr.2022.0090",
+      "title": "Novel and Engineered Type II CRISPR Systems from Uncultivated Microbes with Broad Genome Editing Capability.",
+      "url": "https://doi.org/10.1089/crispr.2022.0090",
+      "status": "imported",
+      "catalog_sources": [
+        "alexander2023"
+      ],
+      "records": 96,
+      "note": "96 published tracr sequences associated with engineered sgRNA activity; native boundaries not established.",
+      "license_text": "This Open Access article is distributed under the terms of the Creative Commons License [CC-BY] (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "firstPublicationDate": "2023-06-01",
+      "authorString": "Alexander LM, Aliaga Goltsman DS, Liu J, Lin JL, Temoche-Diaz MM, Laperriere SM, Neerincx A, Bednarski C, Knyphausen P, Cohnen A, Albers J, Gonzalez-Osorio L, Fregoso Ocampo R, Oki J, Devoto AE, Castelle CJ, Lamothe RC, Cost GJ, Butterfield CN, Thomas BC, Brown CT."
+    },
+    {
+      "pmcid": "PMC11246509",
+      "doi": "10.1038/s41467-024-50243-x",
+      "title": "TracrRNA reprogramming enables direct PAM-independent detection of RNA with diverse DNA-targeting Cas12 nucleases.",
+      "url": "https://doi.org/10.1038/s41467-024-50243-x",
+      "status": "reviewed_constructs_only",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Supports broader Cas12 tracrRNA scope. Construct and Benchling tables reviewed; reprogrammed guides not mislabeled native RNA.",
+      "license_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+      "firstPublicationDate": "2024-07-13",
+      "authorString": "Jiao C, Peeck NL, Yu J, Ghaem Maghami M, Kono S, Collias D, Martinez Diaz SL, Larose R, Beisel CL."
+    },
+    {
+      "pmcid": "PMC11685505",
+      "doi": "10.1038/s41467-024-54491-9",
+      "title": "Cas12e orthologs evolve variable structural elements to facilitate dsDNA cleavage",
+      "url": "https://doi.org/10.1038/s41467-024-54491-9",
+      "status": "reviewed_constructs_only",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Supplement contains fused sgRNAs and spacers; no confidently separated native tracr sequence imported.",
+      "license_text": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+    },
+    {
+      "pmcid": "PMC12416283",
+      "doi": "10.1093/femsml/uqaf020",
+      "title": "Analysis of tracrRNAs reveals subgroup V2 of type V-K CAST systems.",
+      "url": "https://doi.org/10.1093/femsml/uqaf020",
+      "status": "imported",
+      "catalog_sources": [
+        "ziemann2025"
+      ],
+      "records": 112,
+      "note": "112 non-NA sequences in Dataset3, including21 subgroupV2; selected expression validation only. Training overlap.",
+      "license_text": "https://creativecommons.org/licenses/by-nc/4.0/This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (https://creativecommons.org/licenses/by-nc/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact journals.permissions@oup.com",
+      "firstPublicationDate": "2025-08-21",
+      "authorString": "Ziemann M, Mitrofanov A, St\u00f6ckl R, Alkhnbashi OS, Backofen R, Hess WR."
+    },
+    {
+      "pmcid": "PMC12422970",
+      "doi": "10.1038/s41586-025-09298-z",
+      "title": "Design of highly functional genome editors by modelling CRISPR\u2013Cas sequences",
+      "url": "https://doi.org/10.1038/s41586-025-09298-z",
+      "status": "imported",
+      "catalog_sources": [
+        "atlas2025_predicted"
+      ],
+      "records": 258031,
+      "note": "Public CRISPR-Cas Atlas retained258031 predicted tracr records; data license CC BY-NC4.0.",
+      "license_text": "https://creativecommons.org/licenses/by-nc-nd/4.0/Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+    },
+    {
+      "pmcid": "PMC13186708",
+      "doi": "10.1038/s41594-026-01788-6",
+      "title": "Comparative characterization of Cas12f orthologs reveals mechanistic features underlying enhanced genome editing efficiency",
+      "url": "https://doi.org/10.1038/s41594-026-01788-6",
+      "status": "imported",
+      "catalog_sources": [
+        "cas12f2026_components"
+      ],
+      "records": 14,
+      "note": "Only14 rows with separately labeled tracrRNA and tetraloop/crRNA columns. Later column entries are fused gRNAs or crRNA and excluded.",
+      "license_text": "https://creativecommons.org/licenses/by/4.0/Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/."
+    },
+    {
+      "pmcid": "PMC3737331",
+      "doi": "10.4161/rna.24321",
+      "title": "The tracrRNA and Cas9 families of type II CRISPR-Cas immunity systems.",
+      "url": "https://doi.org/10.4161/rna.24321",
+      "status": "reviewed_not_separately_imported",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Early tracrRNA phylogeny and anti-repeat pairings; subsequent full-sequence collections imported. PDF pairings not guessed into full transcripts.",
+      "license_text": "This is an open-access article licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License. The article may be redistributed, reproduced, and reused for non-commercial purposes, provided the original source is properly cited.",
+      "firstPublicationDate": "2013-04-05",
+      "authorString": "Chylinski K, Le Rhun A, Charpentier E."
+    },
+    {
+      "pmcid": "PMC4041416",
+      "doi": "10.1093/nar/gku241",
+      "title": "Classification and evolution of type II CRISPR-Cas systems",
+      "url": "https://doi.org/10.1093/nar/gku241",
+      "status": "imported",
+      "catalog_sources": [
+        "chylinski2014"
+      ],
+      "records": 63,
+      "note": "63 extractable RNAs from Table S4; predicted and previously validated records mixed.",
+      "license_text": "Consult publisher source"
+    },
+    {
+      "pmcid": "PMC6255809",
+      "doi": "10.1038/s41421-018-0069-3",
+      "title": "Repurposing CRISPR-Cas12b for mammalian genome engineering",
+      "url": "https://doi.org/10.1038/s41421-018-0069-3",
+      "status": "reviewed_constructs_only",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Cas12b supplemental workbook contains tiled primers; no unsupported reconstruction into native tracrRNA.",
+      "license_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+    },
+    {
+      "pmcid": "PMC6546382",
+      "doi": "10.1080/15476286.2018.1493331",
+      "title": "Comparative genomics and evolution of trans-activating RNAs in Class 2 CRISPR-Cas systems.",
+      "url": "https://doi.org/10.1080/15476286.2018.1493331",
+      "status": "imported",
+      "catalog_sources": [
+        "faure2018_reference",
+        "faure2018_barrangou",
+        "faure2018_predicted"
+      ],
+      "records": 3712,
+      "note": "Reference compilations and3353 predictions. SupplementaryData2 contains distal regions, not full RNAs; excluded.",
+      "license_text": "https://creativecommons.org/licenses/by-nc-nd/4.0/This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives License (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited, and is not altered, transformed, or built upon in any way.",
+      "firstPublicationDate": "2018-08-14",
+      "authorString": "Faure G, Shmakov SA, Makarova KS, Wolf YI, Crawley AB, Barrangou R, Koonin EV."
+    },
+    {
+      "pmcid": "PMC7606464",
+      "doi": "10.1038/s41467-020-19344-1",
+      "title": "A catalogue of biochemically diverse CRISPR-Cas9 orthologs",
+      "url": "https://doi.org/10.1038/s41467-020-19344-1",
+      "status": "imported",
+      "catalog_sources": [
+        "gasiunas2020"
+      ],
+      "records": 79,
+      "note": "79 biochemically supported Cas9 systems;78 uniquely mapped to frozen Dooley loci. Original training collection, not held-out.",
+      "license_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+    },
+    {
+      "pmcid": "PMC8548392",
+      "doi": "10.1038/s41467-021-26469-4",
+      "title": "Miniature type V-F CRISPR-Cas nucleases enable targeted DNA modification in cells",
+      "url": "https://doi.org/10.1038/s41467-021-26469-4",
+      "status": "reviewed_constructs_only",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Table3 RNAs include fused guides, transcription prefixes and spacers; no unannotated cleavage into native tracr components.",
+      "license_text": "https://creativecommons.org/licenses/by/4.0/Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+    },
+    {
+      "pmcid": "PMC9486595",
+      "doi": "10.1093/bioinformatics/btac466",
+      "title": "CRISPRtracrRNA: robust approach for CRISPR tracrRNA detection.",
+      "url": "https://doi.org/10.1093/bioinformatics/btac466",
+      "status": "method_and_training_provenance",
+      "catalog_sources": [],
+      "records": 0,
+      "note": "Original CRISPRtracrRNA method; training overlap with Briner2014/Gasiunas2020 and V-K collections.",
+      "license_text": "https://creativecommons.org/licenses/by-nc/4.0/This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (https://creativecommons.org/licenses/by-nc/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact journals.permissions@oup.com",
+      "firstPublicationDate": "2022-09-01",
+      "authorString": "Mitrofanov A, Ziemann M, Alkhnbashi OS, Hess WR, Backofen R."
+    },
+    {
+      "doi": "10.1080/15476286.2018.1498281",
+      "title": "Prediction and diversity of tracrRNAs from type II CRISPR-Cas systems.",
+      "status": "imported_from_official_Figshare",
+      "records": 521,
+      "note": "521 full predicted alternatives. N_PRED=1 marks275 conservative predictions; CHY=1 marks55 previously reported reference systems. Source probabilities and predicted boundaries are not independent experimental truth.",
+      "pmcid": "PMC6546365",
+      "firstPublicationDate": "2018-08-02",
+      "authorString": "Chyou TY, Brown CM.",
+      "url": "https://doi.org/10.1080/15476286.2018.1498281",
+      "catalog_sources": [
+        "chyou2019_predicted"
+      ],
+      "dataset_url": "https://doi.org/10.6084/m9.figshare.6807203.v3",
+      "license": "CC BY 4.0",
+      "retrieval_history": "EuropePMC and initial publisher links unavailable; recovered via official Taylor&Francis Figshare deposit version3."
+    },
+    {
+      "doi": "10.1016/j.molcel.2014.09.019",
+      "title": "Guide RNA functional modules direct Cas9 activity and orthogonality",
+      "status": "imported_from_original_publisher_supplement",
+      "records": 41,
+      "note": "41 TypeII-A comparative RNA sequences in FigureS2B; PDF coordinates used to reconstruct wrapped alignment rows, source-specific gap glyph decoding visually verified. Predicted boundaries, not41 experimentally validated transcripts.",
+      "catalog_sources": [
+        "briner2014"
+      ],
+      "supplement_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1097276514007515-mmc1.pdf",
+      "retrieval_history": "Original links failed; recovered validPDF via official Elsevier content CDN."
+    },
+    {
+      "pmcid": "PMC8336202",
+      "title": "Identification and Evolution of Cas9 tracrRNAs.",
+      "url": "https://doi.org/10.1089/crispr.2020.0093",
+      "status": "imported_from_frozen_author_repository",
+      "catalog_sources": [
+        "dooley2021_predicted"
+      ],
+      "records": 41741,
+      "note": "Publisher supplement inaccessible viaEuropePMC. Public author repository frozen07c5d28d1c1afdc03e81938beaafd1069ce6fe15; also79 reference loci.",
+      "doi": "10.1089/crispr.2020.0093",
+      "firstPublicationDate": "2021-06-01",
+      "authorString": "Dooley SK, Baken EK, Moss WN, Howe A, Young JK."
+    },
+    {
+      "pmcid": "PMC9977741",
+      "doi": "10.1038/s41422-022-00771-2",
+      "status": "retrieval_gap",
+      "records": 0,
+      "note": "Cas12l primary supplement unavailable viaEuropePMC API; native tracr sequence not guessed.",
+      "title": "The compact Cas\u03c0 (Cas12l) 'bracelet' provides a unique structural platform for DNA manipulation.",
+      "firstPublicationDate": "2023-01-17",
+      "authorString": "Sun A, Li CP, Chen Z, Zhang S, Li DY, Yang Y, Li LQ, Zhao Y, Wang K, Li Z, Liu J, Liu S, Wang J, Liu JG.",
+      "url": "https://doi.org/10.1038/s41422-022-00771-2"
+    },
+    {
+      "title": "Rfam RF02348 trans-activating crRNA seed",
+      "url": "https://rfam.org/family/RF02348",
+      "status": "imported",
+      "catalog_sources": [
+        "rfam_RF02348_seed"
+      ],
+      "records": 37,
+      "note": "Curated family regions, not universal full transcripts or all experimentally verified RNAs."
+    }
+  ],
+  "coverage": "Inventory of extractable sequences from selected retrieved sources; not every published or patented tracrRNA. No claim that every indexed search result was fully reviewed.",
+  "search_records": [
+    "raw/broad_search_2026-09-26.json",
+    "raw/literature_search.json",
+    "raw/additional_type_v_search.json"
+  ],
+  "source_license_policy": "Original data licenses apply separately from the software; Atlas CC BY-NC4.0. Source paper licenses retained here."
+}

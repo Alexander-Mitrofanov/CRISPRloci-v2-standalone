@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "SequenceOrigin": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "array_id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Array Id",
+          "type": "string"
+        },
+        "ordinal": {
+          "minimum": 1,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "start": {
+          "minimum": 1,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 1,
+          "title": "End",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_id",
+        "source_sha256",
+        "array_id",
+        "ordinal",
+        "start",
+        "end"
+      ],
+      "title": "SequenceOrigin",
+      "type": "object"
+    },
+    "SequenceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sequence": {
+          "maxLength": 20000000,
+          "minLength": 1,
+          "pattern": "^[ACGTURYSWKMBDHVN]+$",
+          "title": "Sequence",
+          "type": "string"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SequenceOrigin"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "sequence"
+      ],
+      "title": "SequenceRecord",
+      "type": "object"
+    },
+    "SequenceSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "crisprloci.sequence-set",
+          "title": "Name",
+          "type": "string"
+        },
+        "version": {
+          "const": "1.0.0",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "title": "SequenceSchema",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "$ref": "#/$defs/SequenceSchema"
+    },
+    "kind": {
+      "enum": [
+        "target",
+        "repeat",
+        "spacer",
+        "rna"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "molecule": {
+      "enum": [
+        "DNA",
+        "RNA"
+      ],
+      "title": "Molecule",
+      "type": "string"
+    },
+    "complete": {
+      "title": "Complete",
+      "type": "boolean"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/SequenceRecord"
+      },
+      "maxItems": 100000,
+      "title": "Records",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "kind",
+    "molecule",
+    "complete",
+    "records"
+  ],
+  "title": "SequenceSet",
+  "type": "object"
+}

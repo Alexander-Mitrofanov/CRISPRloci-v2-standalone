@@ -1,0 +1,23 @@
+.envs/
+runs/
+Results/
+__pycache__/
+*.py[cod]
+*.so
+*.log
+.DS_Store
+.idea/
+.vscode/
+Identify_Temp*/
+PickleReportFolder/
+JsonReportFolder/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.ruff_cache/
+
+# Keep cohort outputs, analysis and council records outside the tool repository.
+/benchmarks/
+/benchmarking/
+/research-handoff*/

@@ -1,0 +1,161 @@
+{
+  "verified_at": "2026-09-27T16:14:41.307143+00:00",
+  "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat",
+  "repository_visibility": "private",
+  "scientific_commit": "4a98cc465656c4db3ed0faccaafe476707d20ddf",
+  "standalone_version": "1.0.0",
+  "integration_version": "0.5.0",
+  "viennarna_version": "2.7.0",
+  "release_id": "940c298927d5d1019cea39c0b604c2d6a02da9ccdc6a92e27952de7a65d98c22",
+  "toolset_id": "a295f4fe4fb1d102b9ca6165c24a5085fc0bbe6dd8b30941951675239edde2b0",
+  "backend_wheel_sha256": "d27ab414b7a1251c2267b3459f81a16c08d95344778abccac0581226c5ddedc7",
+  "integration_wheel_sha256": "fb3552b03c9c71a61ac8dee2b2e472bb90f63a0fc30119533f62f7d2130ef1da",
+  "scientific_manifest_sha256": "b3ef8ccbd26ee56aaa36df830b8f8afe771e237cfe4fe95a1c1c76d521ea90e7",
+  "standalone_tests": 44,
+  "backend_integration_runtime_tests": 468,
+  "frontend_tests": 145,
+  "source_checks": "passed",
+  "production_frontend_build_and_public_scan": "passed",
+  "github_ci": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat/actions/runs/36331662777",
+  "real_http_cases": [
+    {
+      "fixture_sha256": "45a36a7b7d326b02a5c7361ccb66ded6f5ef568423fb77967a8857d65d820c95",
+      "job_id": "7a6f488791006fd4fb3f90e153455830",
+      "mode": "leader",
+      "model_type": "II",
+      "result_bytes": 111371,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "bd3fadb5dfeab11284c21cc83a180716954187ab6e3a1b8dcd2b21681a546a96",
+      "job_id": "7be318b6cd686d9568e82cabde9a2d6f",
+      "mode": "leader",
+      "model_type": "II",
+      "result_bytes": 10257,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "45a36a7b7d326b02a5c7361ccb66ded6f5ef568423fb77967a8857d65d820c95",
+      "job_id": "c70f9b716cc3984cf9e51570da11951b",
+      "mode": "detection",
+      "model_type": "II",
+      "result_bytes": 100073,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "45a36a7b7d326b02a5c7361ccb66ded6f5ef568423fb77967a8857d65d820c95",
+      "job_id": "602474c93f80a962443ded615202fdd2",
+      "mode": "reconstruction",
+      "model_type": "II",
+      "result_bytes": 122089,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "45a36a7b7d326b02a5c7361ccb66ded6f5ef568423fb77967a8857d65d820c95",
+      "job_id": "f546d1b8aca54a5da113fa9a5c0a9d5e",
+      "mode": "orientation",
+      "model_type": "II",
+      "result_bytes": 143067,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "1c77dd6cb0edc99c5fbf5d106b0594f49cad725197052662075bb8c339ba8334",
+      "job_id": "1ccaad5c317848b6cc70cc9fc7cffaa9",
+      "mode": "cas",
+      "model_type": "II",
+      "result_bytes": 113305,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "47b600d4a4989b3b702fb8a5465b4bfb8133745ad2689b87dd1b7bbcf5d28c78",
+      "job_id": "3b5c45ff0e30074c9ca397ad78857937",
+      "mode": "tracrrna",
+      "model_type": "II",
+      "result_bytes": 142349,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "2a3cecf492d648c4a8fef17d3653145ca22737ce651f59216f65d0afffe46ba7",
+      "job_id": "3c446d645689ef46542adf8c23324bee",
+      "mode": "tracrrna",
+      "model_type": "V",
+      "result_bytes": 25299,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "1c77dd6cb0edc99c5fbf5d106b0594f49cad725197052662075bb8c339ba8334",
+      "job_id": "bff504f2b35708bd2022d36ce2bceb9d",
+      "mode": "loci",
+      "model_type": "II",
+      "result_bytes": 159867,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "d7c2c025c6ad5cb2b9d3e63be07fcb38affb8c5b51d5eb4c45617472f34d4b63",
+      "job_id": "4c22c0af813893854a16fafa7e1bc576",
+      "mode": "repeats",
+      "model_type": "II",
+      "result_bytes": 6559,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "fb7cd52054ed5df9cd08ec0f8381a6bcc73129d79157407e6f0a2367fd1a24dd",
+      "job_id": "012f8e80e0980a2d408553f8ab3957a7",
+      "mode": "repeats",
+      "model_type": "II",
+      "result_bytes": 5613,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "45a36a7b7d326b02a5c7361ccb66ded6f5ef568423fb77967a8857d65d820c95",
+      "job_id": "9cda789b965de57049ede90dcd37f28a",
+      "mode": "repeat_context",
+      "model_type": "II",
+      "result_bytes": 2042042,
+      "status": "completed"
+    },
+    {
+      "fixture_sha256": "bd3fadb5dfeab11284c21cc83a180716954187ab6e3a1b8dcd2b21681a546a96",
+      "job_id": "4112f8f1b3d0f1ac576fffb0457d3443",
+      "mode": "repeat_context",
+      "model_type": "II",
+      "result_bytes": 10406,
+      "status": "completed"
+    }
+  ],
+  "real_http_gate": ".runtime/releases/940c298927d5d1019cea39c0b604c2d6a02da9ccdc6a92e27952de7a65d98c22/gate.json",
+  "browser_acceptance": ".runtime/browser-repeats/1790525462270611017/acceptance.json",
+  "browser_checks": [
+    "real DNA repeat submission",
+    "real transcribed RNA submission",
+    "real CRISPRidentify array-context submission",
+    "explicit missing motif",
+    "both DNA alternatives",
+    "source-bound context",
+    "pinned repository provenance",
+    "authenticated complete downloads",
+    "reload recovery",
+    "390px layout",
+    "compiled CSP",
+    "no JavaScript exceptions"
+  ],
+  "browser_frontend_files": {
+    "assets/index-bgoALDg6.js": "5691f7ebe8caa40fac25d6390476e79fb2484d1bcd2ebd8e1da94b1b3e336bb8",
+    "assets/index-jPieFxZZ.css": "beb0f3027cb4037b92fd87359f537334c10573710b9a89c920a80cab033f1799",
+    "evor-orientation.svg": "e7cc5d7a579f3c30c4c2f5034dbf4208a00047e6c3355eeb00c8275c30716e81",
+    "example-input.fasta": "7657eff497d8ef6b4e5e97dda849f0f60a4488001b52e8201381bba91c6556e5",
+    "example-result.json": "db1eaf6a3f75adbf8f1511858a81b4cf7b23c44edbd35e96d5d2e3175aeb7ff1",
+    "favicon.svg": "13df4c2ff85ea39a60cd1dc9be160ec45922ff503a888da0a0348b05e6767f91",
+    "index.html": "1012cca113c5cd2f9827b3188e5dd6ea464b02fc34dba6b3def7c2d001e96d03",
+    "og.png": "bf50ea1ea9157857da0abdab18e881ae82975fa2aec5bbc50f1f63428b6b5b79"
+  },
+  "screenshots": [
+    ".runtime/browser-repeats/1790525462270611017/repeats-desktop.png",
+    ".runtime/browser-repeats/1790525462270611017/rna-desktop.png",
+    ".runtime/browser-repeats/1790525462270611017/repeat_context-desktop.png",
+    ".runtime/browser-repeats/1790525462270611017/repeat_context-mobile.png"
+  ],
+  "backend_and_integration_source_match_staged_release": true,
+  "production_activated": false,
+  "scientific_scope": "Descriptive thermodynamic support. Selected published substrates demonstrate context effects, window sensitivity and a cleavage counterexample; no population accuracy claim or calibrated strand/subtype/family prediction."
+}

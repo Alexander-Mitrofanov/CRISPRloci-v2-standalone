@@ -1,0 +1,30 @@
+ISEScan-v2 is a derivative of ISEScan v1.7.3 by Zhiqun Xie and Haixu Tang.
+Upstream: https://github.com/xiezhq/ISEScan
+Revision: 83a74eccb0eef89674e1e49fba31cb4cab29018f
+ISEScan source and the two supplied transposase reference files are distributed
+in that upstream release under its Apache-2.0 repository license. The files have
+no separate license notice. No independent ISfinder database is included.
+Cite: Xie and Tang, Bioinformatics 33(21), 3340–3347 (2017),
+https://doi.org/10.1093/bioinformatics/btx433 .
+
+SSW components retain the MIT notices in ssw201507/license.ssw.txt and source
+headers (Boston College; Clement and Adrien Leger wrapper). kseq.h retains
+its MIT notice, copyright Genome Research Ltd. License texts are preserved.
+
+Modified for CRISPRloci on 2026-10-12: source-relative reference/library lookup;
+shell-free native command vectors; native BLAST error propagation; bounded
+FASTA/TSV validation, process containment and source-bound JSON output. The
+scientific thresholds and reference models are unchanged.
+
+Modified on 2026-10-13: shared HMM completion checks; indexed ranked ORF lookup
+and interval overlap discovery; rejected inconsistent BLAST query/source/self
+binding and double-gap TIR columns; ensured temporary subject and export handle
+cleanup; removed unused archived export work. Native distances, thresholds,
+classification, command arguments and model identities remain unchanged.
+
+Native runtime dependencies are separate programs, not included in this source
+repository. Preserve their package licenses in deployed/distributed runtimes:
+FragGeneScan 1.32 (GNU GPL, version unspecified in the exact source README;
+the Bioconda BSD metadata conflicts with the authoritative source notice); HMMER 3.4 (BSD-3-Clause); NCBI BLAST+ (public-domain
+NCBI component plus third-party notices). Python libraries retain their own
+licenses: NumPy/SciPy (BSD), Biopython (Biopython/BSD), fastcluster (BSD).

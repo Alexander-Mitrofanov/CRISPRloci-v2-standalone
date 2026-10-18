@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "name": "CRISPRidentify-v2",
+      "path": "tools/CRISPRidentify-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git",
+      "tree": "b90ef17799a6bf019a4330c83dc8171cedcfabbf",
+      "upstream_tree": "b90ef17799a6bf019a4330c83dc8171cedcfabbf"
+    },
+    {
+      "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+      "name": "CasAndra",
+      "path": "tools/CasAndra",
+      "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git",
+      "tree": "5f79ef429fca1cf14f64f8a185bd621b786a0ff2",
+      "upstream_tree": "5f79ef429fca1cf14f64f8a185bd621b786a0ff2"
+    },
+    {
+      "commit": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "name": "CRISPRtracrRNA-v3",
+      "path": "tools/CRISPRtracrRNA-v3",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git",
+      "tree": "17bc4350e78cf7b534d5d038acf3c163dda55b9a",
+      "upstream_tree": "17bc4350e78cf7b534d5d038acf3c163dda55b9a"
+    },
+    {
+      "commit": "2a91510a8ec98e02507921b56e94df16cf6e0bd5",
+      "name": "SpacerPlacer",
+      "path": "tools/SpacerPlacer",
+      "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git",
+      "tree": "80893ff68c347259f751fc2737d3da7bd12ed2d7",
+      "upstream_tree": "80893ff68c347259f751fc2737d3da7bd12ed2d7"
+    },
+    {
+      "commit": "505dafe5bc1134d935b33dfd1de7d9872a6eeae3",
+      "name": "evOr",
+      "path": "tools/evOr",
+      "repository": "https://github.com/Alexander-Mitrofanov/evOr.git",
+      "tree": "b9f80ef248b6fc45105697cad59f715c2e015b13",
+      "upstream_tree": "b9f80ef248b6fc45105697cad59f715c2e015b13"
+    },
+    {
+      "commit": "b5310163835649cdd89b0e03afb2a90b5421d675",
+      "name": "CRISPRleader-v2",
+      "path": "tools/CRISPRleader-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git",
+      "tree": "0f1598a6e1a84f1fbe500aaac8a571ca5c1ea5bc",
+      "upstream_tree": "0f1598a6e1a84f1fbe500aaac8a571ca5c1ea5bc"
+    },
+    {
+      "commit": "602155c329681944d5aefad843b0b64663dc5c11",
+      "name": "CRISPRrepeat",
+      "path": "tools/CRISPRrepeat",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git",
+      "tree": "2e50ee180bd81eafd18fa5c06848d6e17f999749",
+      "upstream_tree": "2e50ee180bd81eafd18fa5c06848d6e17f999749"
+    },
+    {
+      "commit": "ddea3f5da9d5ff6a33802046bdb0e0a762029d23",
+      "name": "CRISPRspacer",
+      "path": "tools/CRISPRspacer",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git",
+      "tree": "6018ffba3ab871cb04a87a28067c426e43644575",
+      "upstream_tree": "6018ffba3ab871cb04a87a28067c426e43644575"
+    },
+    {
+      "commit": "4b35029a3600a983a7e3d0a63190377d60a31769",
+      "name": "CRISPRmap-v2",
+      "path": "tools/CRISPRmap-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git",
+      "tree": "2e8c8eb3b2c83627546513768094305166c700e8",
+      "upstream_tree": "2e8c8eb3b2c83627546513768094305166c700e8"
+    },
+    {
+      "commit": "d55ebf535f21591d44a0229fd809795ddc330cda",
+      "name": "RepeatTyper",
+      "path": "tools/RepeatTyper",
+      "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git",
+      "tree": "175bb391529e09f086b331f1857924397a48a558",
+      "upstream_tree": "175bb391529e09f086b331f1857924397a48a558"
+    },
+    {
+      "commit": "8dabb0d0f4d7c880854d8cf0190215e09b1b641d",
+      "name": "SpacePHARER",
+      "path": "tools/SpacePHARER",
+      "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git",
+      "tree": "822f2f3e3d7596115f60670ce4e22a341b8676f7",
+      "upstream_tree": "c51b2ccf76f3d007d696a55e02bea524b2480580"
+    },
+    {
+      "commit": "c2f619fb3dde849a7874ca243b487d2e6af062f8",
+      "name": "CCTK",
+      "path": "tools/CCTK",
+      "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git",
+      "tree": "7b4bfb40bee4850c73e53ae194f505dd29a33bdd",
+      "upstream_tree": "7b4bfb40bee4850c73e53ae194f505dd29a33bdd"
+    },
+    {
+      "commit": "1526377ef54bedaae2980c4013c6de91805cf59a",
+      "name": "clinker-v2",
+      "path": "tools/clinker-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/clinker-v2.git",
+      "tree": "6407af8d39d2cbd38fa1576ea0a90b2efd15c13c",
+      "upstream_tree": "6407af8d39d2cbd38fa1576ea0a90b2efd15c13c"
+    },
+    {
+      "commit": "30877d2ca43f042a4789c4185859e97d4d9a1a7a",
+      "name": "ISEScan-v2",
+      "path": "tools/ISEScan-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/ISEScan-v2.git",
+      "tree": "9352be8152b4f01fb3beaca4c7796d0fba5e8d21",
+      "upstream_tree": "9352be8152b4f01fb3beaca4c7796d0fba5e8d21"
+    },
+    {
+      "commit": "f579941ca35fb4bd26fcd4c35fcffc23df9d91a2",
+      "name": "DefenseFinder-v2",
+      "path": "tools/DefenseFinder-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/DefenseFinder-v2.git",
+      "tree": "bd2006d64249a72e6325306fd2d31c2f12adecf4",
+      "upstream_tree": "bd2006d64249a72e6325306fd2d31c2f12adecf4"
+    },
+    {
+      "commit": "0498c888203ba7bd6a8e6c6e35a27229adc61d1e",
+      "name": "RNAalifold-v2",
+      "path": "tools/RNAalifold-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/RNAalifold-v2.git",
+      "tree": "7d4cde78323f5f335be3734cf0f6895d584a404e",
+      "upstream_tree": "7d4cde78323f5f335be3734cf0f6895d584a404e"
+    },
+    {
+      "commit": "0fae62b856a6b76d716a2dca230ced12e4221e9f",
+      "name": "Phigaro-v2",
+      "path": "tools/Phigaro-v2",
+      "repository": "https://github.com/Alexander-Mitrofanov/Phigaro-v2.git",
+      "tree": "eac00794b3d1fd2b22157f0ecab2d9d92a8cd288",
+      "upstream_tree": "eac00794b3d1fd2b22157f0ecab2d9d92a8cd288"
+    }
+  ]
+}

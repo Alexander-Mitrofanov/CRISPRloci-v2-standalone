@@ -1,0 +1,248 @@
+{
+  "scope": "Independent conditional repeat-control admission review; no biological-negative or precision interpretation",
+  "panels": {
+    "dinucleotide_1": {
+      "complete": 79,
+      "proposals": 126,
+      "admitted": 2,
+      "median": 0,
+      "max": 1,
+      "rejections": {
+        "fewer_than_10_anchored_paired_bases": 8,
+        "less_than_half_anchor_paired": 4,
+        "no_independent_regional_support": 124,
+        "no_anchored_interaction": 24
+      },
+      "frozen_burden_gate_pass": true
+    },
+    "dinucleotide_2": {
+      "complete": 79,
+      "proposals": 79,
+      "admitted": 0,
+      "median": 0,
+      "max": 0,
+      "rejections": {
+        "no_independent_regional_support": 79,
+        "no_anchored_interaction": 23,
+        "less_than_half_anchor_paired": 4,
+        "fewer_than_10_anchored_paired_bases": 7
+      },
+      "frozen_burden_gate_pass": true
+    },
+    "derangement": {
+      "complete": 79,
+      "proposals": 100,
+      "admitted": 1,
+      "median": 0,
+      "max": 1,
+      "rejections": {
+        "no_independent_regional_support": 99,
+        "no_anchored_interaction": 26,
+        "fewer_than_10_anchored_paired_bases": 12,
+        "less_than_half_anchor_paired": 3
+      },
+      "frozen_burden_gate_pass": true
+    }
+  },
+  "admissions": [
+    {
+      "panel": "dinucleotide_1",
+      "label": "Eit",
+      "id": "short_candidate000002",
+      "interval": {
+        "start": 10096,
+        "end": 10270,
+        "length": 175
+      },
+      "strand": "-",
+      "native_seed_rows": [
+        [
+          "repeat000000f",
+          "f000001.s000001",
+          "80.00",
+          "20",
+          "4",
+          "0",
+          "10",
+          "29",
+          "10246",
+          "10265",
+          "0.33",
+          "19.9"
+        ]
+      ],
+      "anchored_paired_count": 15,
+      "anchor_length": 20,
+      "energy": -11.72,
+      "supporting_models": [],
+      "supporting_terminators": [
+        {
+          "interval": {
+            "start": 70,
+            "end": 120,
+            "length": 51
+          },
+          "strand": "+",
+          "score": 17.73,
+          "evalue": 0.000122,
+          "model": "rho-indep"
+        }
+      ],
+      "evidence_class": "sequence_duplex_terminator",
+      "same_strand_as_reference": false,
+      "reference_window_overlap": 0,
+      "reference_seed_overlap": 0,
+      "control": {
+        "identity": "Eit:CRISPR-2468-2702-bf1",
+        "label": "Eit",
+        "array_id": "CRISPR-2468-2702-bf1",
+        "repeat": "GTTTTGGAAGCATTCGATTCAACATAGCTCTAAAACA",
+        "source_sha256": "89ac0cb20d30632e56983b562c12fec54d5033ca03ff0a19a064f281848d7c17",
+        "panel": "dinucleotide_1",
+        "replicate": 1,
+        "seed": "46907134639614035021437870782442462159933931784275529299068568745740905942037",
+        "control_kind": "repeat_dinucleotide:CRISPR-2468-2702-bf1",
+        "control_repeat": "GACTTGTTTATTAAAACATCAGCAATCAAGCTTCGGA",
+        "unchanged": false,
+        "donor": null
+      },
+      "result_sha256": "c21cc88b2a25ee725ae0d680053814916b3f9e805d05be700497d12b7441a2fa"
+    },
+    {
+      "panel": "dinucleotide_1",
+      "label": "Tpu",
+      "id": "short_candidate000002",
+      "interval": {
+        "start": 29981,
+        "end": 30151,
+        "length": 171
+      },
+      "strand": "+",
+      "native_seed_rows": [
+        [
+          "repeat000000f",
+          "f000001.s000001",
+          "87.50",
+          "16",
+          "2",
+          "0",
+          "25",
+          "10",
+          "29986",
+          "30001",
+          "0.91",
+          "19.1"
+        ]
+      ],
+      "anchored_paired_count": 14,
+      "anchor_length": 16,
+      "energy": -16.76,
+      "supporting_models": [
+        {
+          "interval": {
+            "start": 69,
+            "end": 137,
+            "length": 69
+          },
+          "strand": "+",
+          "score": 13.0,
+          "evalue": 7.1e-05,
+          "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+        },
+        {
+          "interval": {
+            "start": 69,
+            "end": 94,
+            "length": 26
+          },
+          "strand": "+",
+          "score": 17.0,
+          "evalue": 0.0017,
+          "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81"
+        }
+      ],
+      "supporting_terminators": [],
+      "evidence_class": "sequence_duplex_cm",
+      "same_strand_as_reference": false,
+      "reference_window_overlap": 0,
+      "reference_seed_overlap": 0,
+      "control": {
+        "identity": "Tpu:CRISPR-20002-20167-p1",
+        "label": "Tpu",
+        "array_id": "CRISPR-20002-20167-p1",
+        "repeat": "GTTTGAGAGTAGTGTAATTTAAGATGGATCTCAA",
+        "source_sha256": "ef554b610a62478b0a1895ef06d1b3d77fcbf675487113db16b2f721c40db6e0",
+        "panel": "dinucleotide_1",
+        "replicate": 1,
+        "seed": "72686110009514577325030886785171921960819640920312810991322565458882699826630",
+        "control_kind": "repeat_dinucleotide:CRISPR-20002-20167-p1",
+        "control_repeat": "GTATTTAAGTGGATGATCTAGAGTTTCAAGTGAA",
+        "unchanged": false,
+        "donor": null
+      },
+      "result_sha256": "48f58635b2c6b756259355458cfba746eba96207155a6073d2cb62b9ffbfef70"
+    },
+    {
+      "panel": "derangement",
+      "label": "Cga",
+      "id": "short_candidate000001",
+      "interval": {
+        "start": 833,
+        "end": 1001,
+        "length": 169
+      },
+      "strand": "-",
+      "native_seed_rows": [
+        [
+          "repeat000000r",
+          "f000001.s000001",
+          "85.71",
+          "14",
+          "2",
+          "0",
+          "23",
+          "36",
+          "983",
+          "996",
+          "0.005",
+          "26.0"
+        ]
+      ],
+      "anchored_paired_count": 13,
+      "anchor_length": 14,
+      "energy": -9.03,
+      "supporting_models": [
+        {
+          "interval": {
+            "start": 65,
+            "end": 92,
+            "length": 28
+          },
+          "strand": "+",
+          "score": 14.3,
+          "evalue": 0.0078,
+          "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81"
+        }
+      ],
+      "supporting_terminators": [],
+      "evidence_class": "sequence_duplex_cm",
+      "same_strand_as_reference": true,
+      "reference_window_overlap": 79,
+      "reference_seed_overlap": 0,
+      "control": {
+        "identity": "Cga:CRISPR-6499-8240-p1",
+        "label": "Cga",
+        "array_id": "CRISPR-6499-8240-p1",
+        "repeat": "GCTGTGACTAATCACGAAGATAATAAATTTTGAAAGCACTTCACAAC",
+        "source_sha256": "c270665102f0a83a87991d042eb1e9a52614d03073094157cbd7774a17cdcaa9",
+        "panel": "derangement",
+        "control_kind": "repeat_derangement",
+        "control_repeat": "ACCATAGCCGCTTGGAGATCAGGGGCCAACCGCAAC",
+        "donor": "Ghh1:CRISPR-5114-5940-p1",
+        "unchanged": false
+      },
+      "result_sha256": "f89ff50bd97421c265aae0439d5e75d010f6de1823892af05a580342c1245770"
+    }
+  ],
+  "failures": []
+}

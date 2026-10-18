@@ -1,0 +1,9 @@
+# Minimal bounded HMM adapter runtime; no optional embeddings or updater runtime.
+macsyfinder==2.1.4
+pyrodigal==3.7.1
+archspec==0.2.6
+PyYAML==6.0.3
+packaging==26.3
+networkx==3.7
+colorama==0.4.6
+certifi==2026.7.22

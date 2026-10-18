@@ -1,0 +1,99 @@
+{
+  "coordinate_system": "1-based inclusive, input forward strand",
+  "array_provenance": "Accepted Bona-fide or Possible CRISPRidentify arrays frozen from the 2026-09-26 complete benchmark. These are predicted arrays, not manually validated boundaries.",
+  "records": [
+    {
+      "label": "Ain",
+      "fasta": "REF_Ain.fasta",
+      "file_sha256": "f32b148f07839af2e0a1d064a1e588e64725acebb885565352e93db64ffb3367",
+      "sequence_sha256": "887f7cbd9f6492146e821a21924d1864587b4bbd818a0ee65b6aeaed7fb1a20d",
+      "source_url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Ain.fasta",
+      "reference_doi": "10.1038/s41467-020-19344-1",
+      "reference_table": "Cas9_database, tracrRNA column",
+      "tracr_sequence": "TATCCTTTAATTTACATATCGAGTTCAAATAACGTTTTTACGAAGTCGCCGGTTCGTCCGGCAGCACAGTGTGTGCTATGACCTGCTTAGGCAGGTCTTTTCTTTTTT",
+      "truth": {
+        "contig": "REF_Ain",
+        "start": 174,
+        "end": 281,
+        "strand": "-"
+      },
+      "arrays": [
+        {
+          "id": "CRISPR-6307-8646-p1",
+          "interval": {
+            "start": 6307,
+            "end": 8646,
+            "length": 2340
+          },
+          "repeat": "GTTTGAGAGATATGTAAATTCAAAGGATAATCAAAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.731776061552946
+        }
+      ],
+      "array_report_sha256": "646868e9fba8b31a84a07ffe306984e5e0b43387e9ad50ea161d3fc71e473599"
+    },
+    {
+      "label": "Kki",
+      "fasta": "REF_Kki.fasta",
+      "file_sha256": "337a954ed6fac1b0826e1a49fc56d229fbab882179e4b850fdf2dbec2b7a92d5",
+      "sequence_sha256": "e8a4e1b9c99726d0a7899d2101ad1eea4255aed08e5405b45cc7caad249b5579",
+      "source_url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Kki.fasta",
+      "reference_doi": "10.1038/s41467-020-19344-1",
+      "reference_table": "Cas9_database, tracrRNA column",
+      "tracr_sequence": "ATTGTTGCATTGCGAAATGAGAAACGTTGCTACAATAAGAAGTTCTGAAAAGAAATTCGTAACGCTCTGCCTCCTAAAAATTTCGGTTTTTAGCGGGCATCGTTTTGTGATGAATAGTGCAGGCTGCTTTTT",
+      "truth": {
+        "contig": "REF_Kki",
+        "start": 15065,
+        "end": 15196,
+        "strand": "-"
+      },
+      "arrays": [
+        {
+          "id": "CRISPR-20002-20367-bf1",
+          "interval": {
+            "start": 20002,
+            "end": 20367,
+            "length": 366
+          },
+          "repeat": "ATTGTAGCATTGCGAAATGAGAAAGGGAACTACAAC",
+          "strand": "-",
+          "category": "Bona-fide",
+          "score": 0.9539360146718716
+        }
+      ],
+      "array_report_sha256": "4f15f031ed2042bf70330fd157563a7f5046e2497c4558802709bfe63e88e64c"
+    },
+    {
+      "label": "Lsp1",
+      "fasta": "REF_Lsp1.fasta",
+      "file_sha256": "a1275d7f98693c4b8af3e2a8b000a8f8a35dccf85ff4e6a6e653d8028e67a3e4",
+      "sequence_sha256": "f3ad7853760a46d549f7ed66275b7a2731731004b674f198129ca38fbedea25a",
+      "source_url": "https://raw.githubusercontent.com/skDooley/TRACR_RNA/07c5d28d1c1afdc03e81938beaafd1069ce6fe15/data/assemblies/Corteva/REF_Lsp1.fasta",
+      "reference_doi": "10.1038/s41467-020-19344-1",
+      "reference_table": "Cas9_database, tracrRNA column",
+      "tracr_sequence": "CAACTTGAATTGATTGATCTGACATCTACGAGTTGAGATCAAACAAAGCTTCGGCTGAGTTTCAATTTCTGAGCCCATGTTGGGCCATACATATGCCACCCGAGTGCAAATCGGGTGGTTTTTTT",
+      "truth": {
+        "contig": "REF_Lsp1",
+        "start": 2154,
+        "end": 2278,
+        "strand": "+"
+      },
+      "arrays": [
+        {
+          "id": "CRISPR-34-201-p1",
+          "interval": {
+            "start": 34,
+            "end": 201,
+            "length": 168
+          },
+          "repeat": "GTTCTTGAACTGATTGATCTGACATCTACCTGAGAC",
+          "strand": "-",
+          "category": "Possible",
+          "score": 0.6693705381654271
+        }
+      ],
+      "array_report_sha256": "c73e992350e6b238fdeeefc5baad42ae3f4b67feea73e04e5e1f2868fe8d3756"
+    }
+  ]
+}

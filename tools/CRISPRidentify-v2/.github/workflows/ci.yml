@@ -1,0 +1,185 @@
+name: CRISPRidentify v2
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crispridentify-v2-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  clean-install-and-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - name: Check out the complete release tree
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Verify bundled models are ordinary tracked Git files
+        shell: bash
+        run: |
+          artifacts=(
+            trained_models/compact_model.npz
+            trained_models/strand/crisprstrand_model_r_v1.npz
+            vendor/casandra/src/casandra/models/protein/profiles.hmm
+            vendor/casandra/src/casandra/models/cassette_architecture/model.joblib
+          )
+          for artifact in "${artifacts[@]}"; do
+            git ls-files --error-unmatch "${artifact}" >/dev/null
+            if head -c 200 "${artifact}" | grep -q \
+                '^version https://git-lfs.github.com/spec/v1$'; then
+              echo "Git LFS pointer found instead of model data: ${artifact}" >&2
+              exit 1
+            fi
+            if git check-attr filter -- "${artifact}" | grep -q ': lfs$'; then
+              echo "Model must not require Git LFS: ${artifact}" >&2
+              exit 1
+            fi
+          done
+          (cd vendor/casandra && sha256sum --check --strict SOURCE_MANIFEST.sha256)
+
+      - name: Install Micromamba
+        uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3
+        with:
+          cache-downloads: true
+          post-cleanup: all
+
+      - name: Install the locked runtime with bundled CasAndra
+        run: ./install.sh
+
+      - name: Re-run setup to verify reconciliation is repeatable
+        run: ./install.sh
+
+      - name: Run the environment doctor and package consistency check
+        shell: bash
+        run: |
+          env_dir="${GITHUB_WORKSPACE}/.envs/crispridentify-core"
+          export CONDA_PREFIX="${env_dir}"
+          export PATH="${env_dir}/bin:${PATH}"
+          export PYTHONHASHSEED=0
+          export PYTHONNOUSERSITE=1
+          shopt -s nullglob
+          for hook in "${env_dir}"/etc/conda/activate.d/*.sh; do
+            source "${hook}"
+          done
+          "${env_dir}/bin/python" scripts/check_environment.py --profile core
+          "${env_dir}/bin/python" -m pip check
+
+      - name: Lint first-party Python
+        run: |
+          .envs/crispridentify-core/bin/python -m pip install --disable-pip-version-check --no-deps ruff==0.15.11
+          .envs/crispridentify-core/bin/python -m ruff check --output-format=github .
+
+      - name: Run the complete standalone v2 test suite
+        run: |
+          .envs/crispridentify-core/bin/python -m unittest discover -v
+
+      - name: Check the convenience CLI
+        run: |
+          ./crispridentify --version
+          ./crispridentify --help
+          ./crispridentify --preset region-screen --print-effective-config
+          ./crispridentify-batch --version
+          ./crispridentify-batch --help
+
+      - name: Verify caller-relative paths outside the checkout
+        env:
+          CALLER_DIR: ${{ runner.temp }}/crispridentify-caller
+        run: |
+          mkdir -p "${CALLER_DIR}/inputs"
+          cp examples/NC_017040.1.fasta "${CALLER_DIR}/inputs/genome.fasta"
+          cd "${CALLER_DIR}"
+          "${GITHUB_WORKSPACE}/crispridentify" \
+            --file inputs/genome.fasta \
+            --result_folder output \
+            --fast_run True \
+            --parallel False
+          test "$(find "${CALLER_DIR}/output" -name report.json -type f | wc -l)" -eq 1
+
+      - name: Run and safely resume a real region-screen batch
+        env:
+          BATCH_ROOT: ${{ runner.temp }}/crispridentify-v2-batch-smoke
+        run: |
+          mkdir -p "${BATCH_ROOT}/inputs"
+          cp examples/NC_017040.1.fasta "${BATCH_ROOT}/inputs/genome.fasta"
+          ./crispridentify-batch manifest \
+            --input-root "${BATCH_ROOT}/inputs" \
+            --output "${BATCH_ROOT}/manifest.tsv"
+          batch_command=(
+            ./crispridentify-batch run
+            --manifest "${BATCH_ROOT}/manifest.tsv"
+            --run-dir "${BATCH_ROOT}/run"
+            --scratch-root "${BATCH_ROOT}/scratch"
+            --preset region-screen
+            --workers 1
+            --cpus-per-worker 2
+            --min-free-gib 0
+          )
+          "${batch_command[@]}"
+          BATCH_EXPECTED_STATUS=succeeded \
+            .envs/crispridentify-core/bin/python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          summary = json.loads(
+              (Path(os.environ["BATCH_ROOT"]) / "run" / "summary.json").read_text()
+          )
+          expected = os.environ["BATCH_EXPECTED_STATUS"]
+          if summary["status"] != "complete" or summary["counts"][expected] != 1:
+              raise SystemExit("unexpected batch summary: {}".format(summary))
+          PY
+          "${batch_command[@]}"
+          BATCH_EXPECTED_STATUS=skipped \
+            .envs/crispridentify-core/bin/python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          summary = json.loads(
+              (Path(os.environ["BATCH_ROOT"]) / "run" / "summary.json").read_text()
+          )
+          expected = os.environ["BATCH_EXPECTED_STATUS"]
+          if summary["status"] != "complete" or summary["counts"][expected] != 1:
+              raise SystemExit("unexpected resumed summary: {}".format(summary))
+          if summary["counts"]["succeeded"] != 0:
+              raise SystemExit("resume reran a completed genome")
+          PY
+
+      - name: Run the bundled genome with CasAndra
+        env:
+          RUN_DIR: ${{ runner.temp }}/crispridentify-v2-cas-smoke
+        run: |
+          ./crispridentify \
+            --file examples/NC_017040.1.fasta \
+            --result_folder "${RUN_DIR}" \
+            --fast_run True \
+            --parallel False \
+            --cas True \
+            --html_report True
+          .envs/crispridentify-core/bin/python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          reports = list(Path(os.environ["RUN_DIR"]).rglob("report.json"))
+          if len(reports) != 1:
+              raise SystemExit("expected one report.json, found {}".format(len(reports)))
+          report = json.loads(reports[0].read_text(encoding="utf-8"))
+          cas = report["cas"]
+          if cas["status"] != "computed":
+              raise SystemExit("Cas annotation did not complete")
+          if cas["method"]["provider"] != "CasAndra":
+              raise SystemExit("CasAndra was not the effective provider")
+          if cas["system_count"] < 1:
+              raise SystemExit("bundled smoke genome produced no Cas systems")
+          result = reports[0].parent
+          for name in ("Cas_systems.csv", "Cas_genes.csv", "report.html"):
+              if not (result / name).is_file():
+                  raise SystemExit("missing smoke artifact: " + name)
+          PY

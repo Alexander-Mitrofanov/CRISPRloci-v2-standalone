@@ -1,0 +1,163 @@
+{
+  "schema": {
+    "name": "crisprloci.arrays",
+    "version": "1.0.0"
+  },
+  "coordinate_system": "1-based-inclusive-source-forward",
+  "score_semantics": "uncalibrated-model-score",
+  "categories": ["Possible"],
+  "sources": [
+    {
+      "id": "control-A",
+      "length": 12,
+      "sha256": "680a8445fb26801252347189a4b8b36afed5db34436cddde82b9e662f519a136"
+    },
+    {
+      "id": "control-B",
+      "length": 8,
+      "sha256": "baad849cef1468e26c042fa5429729733b3c0bea01ff975cbb97e2c0dfcb2e8d"
+    },
+    {
+      "id": "control-C",
+      "length": 4,
+      "sha256": "93ccf25b78706fdc6a82f98b6b7a1ca441de9d5522fd27d7ed7913c19b6fb944"
+    },
+    {
+      "id": "control-D",
+      "length": 1,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    }
+  ],
+  "arrays": [
+    {
+      "id": "same-array-name",
+      "source_id": "control-A",
+      "category": "Possible",
+      "model_score": null,
+      "strand": null,
+      "interval": {
+        "start": 1,
+        "end": 12
+      },
+      "boundary": {
+        "exact": false,
+        "occurrence_path": "unassessed",
+        "repeat_phase": "unassessed"
+      },
+      "repeats": null,
+      "spacers": [
+        {
+          "id": "control-A-spacer1",
+          "ordinal": 1,
+          "sequence": "ACGT",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "id": "control-A-spacer2",
+          "ordinal": 2,
+          "sequence": "ACGT",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "ordinal": 3,
+          "sequence": null,
+          "status": "deletion",
+          "boundary_position": 8
+        },
+        {
+          "id": "control-A-spacer4",
+          "ordinal": 4,
+          "sequence": "TTAA",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "same-array-name",
+      "source_id": "control-B",
+      "category": "Possible",
+      "model_score": null,
+      "strand": "-",
+      "interval": {
+        "start": 1,
+        "end": 8
+      },
+      "boundary": {
+        "exact": false,
+        "occurrence_path": "unassessed",
+        "repeat_phase": "unassessed"
+      },
+      "repeats": null,
+      "spacers": [
+        {
+          "id": "control-B-spacer1",
+          "ordinal": 1,
+          "sequence": "ACGT",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "id": "control-B-spacer2",
+          "ordinal": 2,
+          "sequence": "CCCC",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "isolated",
+      "source_id": "control-C",
+      "category": "Possible",
+      "model_score": null,
+      "strand": "+",
+      "interval": {
+        "start": 1,
+        "end": 4
+      },
+      "boundary": {
+        "exact": false,
+        "occurrence_path": "unassessed",
+        "repeat_phase": "unassessed"
+      },
+      "repeats": null,
+      "spacers": [
+        {
+          "id": "control-C-spacer1",
+          "ordinal": 1,
+          "sequence": "GGGG",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "deletion-only",
+      "source_id": "control-D",
+      "category": "Possible",
+      "model_score": null,
+      "strand": null,
+      "interval": {
+        "start": 1,
+        "end": 1
+      },
+      "boundary": {
+        "exact": false,
+        "occurrence_path": "unassessed",
+        "repeat_phase": "unassessed"
+      },
+      "repeats": null,
+      "spacers": [
+        {
+          "ordinal": 1,
+          "sequence": null,
+          "status": "deletion",
+          "boundary_position": 0
+        }
+      ]
+    }
+  ]
+}

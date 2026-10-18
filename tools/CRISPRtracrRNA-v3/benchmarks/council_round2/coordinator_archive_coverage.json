@@ -1,0 +1,30 @@
+{
+  "archives": [
+    "benchmarks/council_round2/implementation_pre_native.zip",
+    "benchmarks/council_round2/natural_default_source.zip"
+  ],
+  "runs": [
+    {
+      "run": "natural_default",
+      "files": 13,
+      "unarchived_files": [],
+      "unarchived_hashes": {}
+    },
+    {
+      "run": "small_default",
+      "files": 13,
+      "unarchived_files": [
+        "src/crisprtracrrna/search.py"
+      ],
+      "unarchived_hashes": {
+        "src/crisprtracrrna/search.py": "4415f7cf802fd2bb10c7fa9e274718f43322312224089b80bcc8facd032af0b1"
+      }
+    },
+    {
+      "run": "small_repeat",
+      "files": 13,
+      "unarchived_files": [],
+      "unarchived_hashes": {}
+    }
+  ]
+}

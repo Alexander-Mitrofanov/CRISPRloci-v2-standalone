@@ -1,0 +1,2040 @@
+{
+  "controls_manifest_sha256": "67efd2ede9053e2638de91c2646c08c157c347c13c833a8aa4a66b51725ebb55",
+  "panels": {
+    "genomic_default": {
+      "status": "complete_verified",
+      "inputs": 19,
+      "proposals": 0,
+      "admitted": 0,
+      "median_admitted": 0,
+      "max_admitted": 0,
+      "evidence_hashes_verified": 993,
+      "rows": [
+        {
+          "label": "Ain",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "1f150b7460da04c025980921a5cb05f98028cfe83ff543b8b1e6c583a2a5b229"
+        },
+        {
+          "label": "Esp2",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "a5263192fb60fb7c8d48ee892cfa9b2657124345b96663c692e2f84dc1cd043c"
+        },
+        {
+          "label": "Lsp1",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "5d9e0528cde13cccc1808f4903503fb0551f020a528c922560b42ebcbc423d4a"
+        },
+        {
+          "label": "Lan",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "01f5e8390b48912a9d79ff6c16af7532e43017df78d574f1a1446bcfbd0d8ac3"
+        },
+        {
+          "label": "Mse",
+          "predictions": 16,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "6d5da7d503ce0d32688e6e03933f2cc1b6c5936444ac07907b18e3499dbb0d11"
+        },
+        {
+          "label": "Sth1A",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "67b0a6fff4609b8107e3d9410e67196688fb56f4cf18077d81a4a70267ab0c4c"
+        },
+        {
+          "label": "Kki",
+          "predictions": 8,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "f930a0f7025347b3c6a20ada4b44f051b52bd9fdfd5a8181353e261e6afebc6b"
+        },
+        {
+          "label": "Rsp",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "9d77f333f21b23a18807c29806211faa46249a694f5a25d88f5c5ee756b7adf0"
+        },
+        {
+          "label": "Bbo",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "e374099db9e441e5692d813d5ad0300ea081e394350d5bd03d1eef5a479abee4"
+        },
+        {
+          "label": "Cca2",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "03f687867469bdd5f0297ffae7020822a6be4e3b888510a767dc1789e83b8b02"
+        },
+        {
+          "label": "Cme3",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "f67123560e493f4ec89a1b0a81ece10ea2e6cb6a91ce4764d22b89256d6a3f9b"
+        },
+        {
+          "label": "Ghe",
+          "predictions": 8,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "c146f0c0ce55508b72e413ed2f59bcb0a09bbff724298af2807944cabfae2ac4"
+        },
+        {
+          "label": "Cca1",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "6ef3d60abcdf272fdbb431df198ffdb5603917e89016cdde3515fe35fd3dbc25"
+        },
+        {
+          "label": "Cga",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "a4aaab36a6166bc86c0f32f8c5021e1f4b4791407df83da0350753c733f4d184"
+        },
+        {
+          "label": "Cme1",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "8531e12c379ddff18019ae69ad85700c1dea1587a41f36eda8345ef89a7782ba"
+        },
+        {
+          "label": "Ffr",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "ca6c81376c9ffe4f477c8b91b1dad172ecb19bd3c4d0b2d038b61e498f47f508"
+        },
+        {
+          "label": "Ghy2",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "fc339facdde6be654362c019f5eec7ebf2830349fea40ce893938fdb8c8b1888"
+        },
+        {
+          "label": "Orh",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "c5b972836b03ef2f961ca9f173e9845d823f00232fd6f557b588ccd8e74b79dd"
+        },
+        {
+          "label": "Psp",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "c1cdd0483e014a283fc048724a08c560311b8e6db31fb499359df36c8e28e2b4"
+        }
+      ],
+      "source_archive": "benchmarks/council_round2/current_default_pinned_native_source.zip",
+      "source_archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+      "predictions": 60
+    },
+    "genomic_experimental": {
+      "status": "complete_verified",
+      "inputs": 19,
+      "proposals": 30,
+      "admitted": 0,
+      "median_admitted": 0,
+      "max_admitted": 0,
+      "evidence_hashes_verified": 1250,
+      "rows": [
+        {
+          "label": "Ain",
+          "predictions": 0,
+          "proposals": 4,
+          "admitted": 0,
+          "input_sha256": "1f150b7460da04c025980921a5cb05f98028cfe83ff543b8b1e6c583a2a5b229"
+        },
+        {
+          "label": "Esp2",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "a5263192fb60fb7c8d48ee892cfa9b2657124345b96663c692e2f84dc1cd043c"
+        },
+        {
+          "label": "Lsp1",
+          "predictions": 4,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "5d9e0528cde13cccc1808f4903503fb0551f020a528c922560b42ebcbc423d4a"
+        },
+        {
+          "label": "Lan",
+          "predictions": 4,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "01f5e8390b48912a9d79ff6c16af7532e43017df78d574f1a1446bcfbd0d8ac3"
+        },
+        {
+          "label": "Mse",
+          "predictions": 16,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "6d5da7d503ce0d32688e6e03933f2cc1b6c5936444ac07907b18e3499dbb0d11"
+        },
+        {
+          "label": "Sth1A",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "67b0a6fff4609b8107e3d9410e67196688fb56f4cf18077d81a4a70267ab0c4c"
+        },
+        {
+          "label": "Kki",
+          "predictions": 8,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "f930a0f7025347b3c6a20ada4b44f051b52bd9fdfd5a8181353e261e6afebc6b"
+        },
+        {
+          "label": "Rsp",
+          "predictions": 4,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "9d77f333f21b23a18807c29806211faa46249a694f5a25d88f5c5ee756b7adf0"
+        },
+        {
+          "label": "Bbo",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "e374099db9e441e5692d813d5ad0300ea081e394350d5bd03d1eef5a479abee4"
+        },
+        {
+          "label": "Cca2",
+          "predictions": 0,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "03f687867469bdd5f0297ffae7020822a6be4e3b888510a767dc1789e83b8b02"
+        },
+        {
+          "label": "Cme3",
+          "predictions": 0,
+          "proposals": 4,
+          "admitted": 0,
+          "input_sha256": "f67123560e493f4ec89a1b0a81ece10ea2e6cb6a91ce4764d22b89256d6a3f9b"
+        },
+        {
+          "label": "Ghe",
+          "predictions": 8,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "c146f0c0ce55508b72e413ed2f59bcb0a09bbff724298af2807944cabfae2ac4"
+        },
+        {
+          "label": "Cca1",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "6ef3d60abcdf272fdbb431df198ffdb5603917e89016cdde3515fe35fd3dbc25"
+        },
+        {
+          "label": "Cga",
+          "predictions": 4,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "a4aaab36a6166bc86c0f32f8c5021e1f4b4791407df83da0350753c733f4d184"
+        },
+        {
+          "label": "Cme1",
+          "predictions": 0,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "8531e12c379ddff18019ae69ad85700c1dea1587a41f36eda8345ef89a7782ba"
+        },
+        {
+          "label": "Ffr",
+          "predictions": 0,
+          "proposals": 0,
+          "admitted": 0,
+          "input_sha256": "ca6c81376c9ffe4f477c8b91b1dad172ecb19bd3c4d0b2d038b61e498f47f508"
+        },
+        {
+          "label": "Ghy2",
+          "predictions": 4,
+          "proposals": 4,
+          "admitted": 0,
+          "input_sha256": "fc339facdde6be654362c019f5eec7ebf2830349fea40ce893938fdb8c8b1888"
+        },
+        {
+          "label": "Orh",
+          "predictions": 0,
+          "proposals": 4,
+          "admitted": 0,
+          "input_sha256": "c5b972836b03ef2f961ca9f173e9845d823f00232fd6f557b588ccd8e74b79dd"
+        },
+        {
+          "label": "Psp",
+          "predictions": 0,
+          "proposals": 2,
+          "admitted": 0,
+          "input_sha256": "c1cdd0483e014a283fc048724a08c560311b8e6db31fb499359df36c8e28e2b4"
+        }
+      ],
+      "source_archive": "benchmarks/council_round2/current_default_pinned_native_source.zip",
+      "source_archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+      "predictions": 60
+    },
+    "conditional_dinucleotide_1": {
+      "status": "complete_verified",
+      "inputs": 79,
+      "proposals": 126,
+      "admitted": 2,
+      "median_admitted": 0,
+      "max_admitted": 1,
+      "evidence_hashes_verified": 1652,
+      "rows": [
+        {
+          "label": "Lpn",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Khu",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ain",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cgl",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp1",
+          "arrays": 2,
+          "proposals": 6,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fma",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lce",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lrh",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Pac",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tba",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tde",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tpu",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 1,
+          "admissions": [
+            {
+              "id": "short_candidate000002",
+              "evidence_class": "sequence_duplex_cm",
+              "interval": {
+                "start": 29981,
+                "end": 30151,
+                "length": 171
+              },
+              "strand": "+"
+            }
+          ]
+        },
+        {
+          "label": "Vpa",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Efa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Eit",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 1,
+          "admissions": [
+            {
+              "id": "short_candidate000002",
+              "evidence_class": "sequence_duplex_terminator",
+              "interval": {
+                "start": 10096,
+                "end": 10270,
+                "length": 175
+              },
+              "strand": "-"
+            }
+          ]
+        },
+        {
+          "label": "Lan",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lmo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag2",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdy",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sga",
+          "arrays": 2,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Smu",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sra",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bni",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ece",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Edo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fho",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mga",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mse",
+          "arrays": 3,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sgo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sma2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sth1A",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tsp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bok",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cco",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cpe",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Dde",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy3",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy4",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Gsp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Kki",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nme2",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tmo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Jpa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Rsp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bbo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme3",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme4",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Csa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghe",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Msc",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Spa",
+          "arrays": 2,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cga",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ffr",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Orh",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Phi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Psp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Wvi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        }
+      ],
+      "source_archive": "benchmarks/council_round2/current_default_pinned_native_source.zip",
+      "source_archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+      "burden_gate_passes": true
+    },
+    "conditional_dinucleotide_2": {
+      "status": "complete_verified",
+      "inputs": 79,
+      "proposals": 79,
+      "admitted": 0,
+      "median_admitted": 0,
+      "max_admitted": 0,
+      "evidence_hashes_verified": 1279,
+      "rows": [
+        {
+          "label": "Lpn",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Khu",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ain",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cgl",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp1",
+          "arrays": 2,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fma",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lce",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lrh",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Pac",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tba",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tde",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tpu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Vpa",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Efa",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Eit",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lan",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lmo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdy",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sga",
+          "arrays": 2,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Smu",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sra",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bni",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ece",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Edo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fho",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mga",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mse",
+          "arrays": 3,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sgo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sma2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssu",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sth1A",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tsp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bok",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cco",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cpe",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Dde",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy3",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy4",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Gsp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Kki",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nme2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsp",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tmo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsa",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Jpa",
+          "arrays": 1,
+          "proposals": 1,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Rsp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bbo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme3",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme4",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Csa",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghe",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Msc",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Spa",
+          "arrays": 2,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cga",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ffr",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Orh",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Phi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Psp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Wvi",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        }
+      ],
+      "source_archive": "benchmarks/council_round2/current_default_pinned_native_source.zip",
+      "source_archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+      "burden_gate_passes": true
+    },
+    "conditional_derangement": {
+      "status": "complete_verified",
+      "inputs": 79,
+      "proposals": 100,
+      "admitted": 1,
+      "median_admitted": 0,
+      "max_admitted": 1,
+      "evidence_hashes_verified": 1440,
+      "rows": [
+        {
+          "label": "Lpn",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Khu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ain",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cgl",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp1",
+          "arrays": 2,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Esp2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fma",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lce",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lrh",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lsp2",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Pac",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tba",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tde",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tpu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Vpa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Efa",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Eit",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lan",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Lmo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sag2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdy",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Seq2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sga",
+          "arrays": 2,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Smu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sra",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bni",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ece",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Edo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Fho",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mga",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Mse",
+          "arrays": 3,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sgo",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sma2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssi",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ssu",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sth1A",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tsp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bok",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cco",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cpe",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Dde",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy3",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy4",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Gsp",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Kki",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nme2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsp",
+          "arrays": 1,
+          "proposals": 4,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Tmo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Nsa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Jpa",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Rsp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Bbo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme2",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme3",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cme4",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Csa",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghc1",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghe",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghh2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Msc",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Sdo",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Spa",
+          "arrays": 2,
+          "proposals": 6,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cca1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Cga",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 1,
+          "admissions": [
+            {
+              "id": "short_candidate000001",
+              "evidence_class": "sequence_duplex_cm",
+              "interval": {
+                "start": 833,
+                "end": 1001,
+                "length": 169
+              },
+              "strand": "-"
+            }
+          ]
+        },
+        {
+          "label": "Cme1",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ffr",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Ghy2",
+          "arrays": 1,
+          "proposals": 0,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Orh",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Phi",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Psp",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        },
+        {
+          "label": "Wvi",
+          "arrays": 1,
+          "proposals": 2,
+          "admitted": 0,
+          "admissions": []
+        }
+      ],
+      "source_archive": "benchmarks/council_round2/current_default_pinned_native_source.zip",
+      "source_archive_sha256": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+      "burden_gate_passes": true
+    }
+  },
+  "paired_genomic": {
+    "identical_inputs": true,
+    "burden_increased_inputs": 0,
+    "default_total": 60,
+    "experimental_total": 60,
+    "new_admissions": 0
+  }
+}

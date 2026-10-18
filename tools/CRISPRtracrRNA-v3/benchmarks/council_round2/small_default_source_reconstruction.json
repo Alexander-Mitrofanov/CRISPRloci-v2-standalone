@@ -1,0 +1,6 @@
+{
+  "path": "benchmarks/council_round2/small_default_source_search.py",
+  "sha256": "4415f7cf802fd2bb10c7fa9e274718f43322312224089b80bcc8facd032af0b1",
+  "recorded_manifest_sha256": "4415f7cf802fd2bb10c7fa9e274718f43322312224089b80bcc8facd032af0b1",
+  "reconstruction": "Reversed the two logged later patches: harmless empty extra-column validation and unique single-wrapper artifact directory. Exact bytes match pre-run recorded source hash."
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-28",
+  "baseline": "WebServer-Identify-SpacerPlacer-evOr",
+  "baseline_contract_sha256": "a729dca292129b0b358a8dc11d5613645e551a9a78dc26041543f8728db31cce",
+  "comparison": {
+    "baseline_modes": 3,
+    "current_modes": 11,
+    "baseline_routes": 8,
+    "current_routes": 17,
+    "removed_contract_entries": 0,
+    "predecessor_application_test_files_missing": []
+  },
+  "verification": {
+    "application_gate": "passed",
+    "privacy_and_deployment_tests": 32,
+    "browser_recovery": "passed: disposable API and fixture worker",
+    "browser_spacer_searches": "passed: intercepted synthetic evidence",
+    "public_frontend_source_scan": "passed",
+    "standalone": {
+      "status": "passed",
+      "scanned_code_files": 221,
+      "checked_symlinks": 22553,
+      "findings": [],
+      "scope": "Runtime code/configuration and runtime/tool symlinks. Historical provenance documents are intentionally excluded."
+    },
+    "python_tests_passed": 577,
+    "python_tests_skipped": 1,
+    "skipped_reason": "Opt-in installed CRISPRspacer lifecycle requires explicit installed tool commands.",
+    "frontend_tests_passed": 192,
+    "lint": "passed",
+    "production_build": "passed",
+    "public_asset_scan": "passed",
+    "final_focused_privacy_tests": 12,
+    "additional_installer_tests_after_full_gate": 2,
+    "workspace_privacy_scan": "passed: 449 file versions, no findings"
+  },
+  "historical_evidence": {
+    "real_science_gate_cases": 17,
+    "source": "local deployment evidence; not rerun in this audit"
+  },
+  "limits": {
+    "real_git_metadata_available": false,
+    "real_checkout_hooks_installed": false,
+    "existing_git_history_audited": false,
+    "production_accessed": false,
+    "new_real_science_release_gate_run": false,
+    "installed_edge_controls_retired": false
+  }
+}

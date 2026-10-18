@@ -1,0 +1,51 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "protospacer",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "1-based-inclusive-target-forward",
+    "outcome": "matches",
+    "search_complete": true,
+    "reference": {
+      "name": "synthetic-spacers",
+      "source_release": "fixture-1",
+      "database_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "policy": {
+      "method": "full-length-exact",
+      "substitutions": 0,
+      "gaps": 0,
+      "strands": "both",
+      "topology": "linear",
+      "array_overlap": "unknown",
+      "pam": "not_evaluated"
+    },
+    "targets": [
+      {
+        "id": "target",
+        "length": 16,
+        "sha256": "e436e52f24cbe7c6d3213a22d9c766c3ba6d86b2d937a76565cdc7ba654e6071"
+      }
+    ],
+    "spacers": [
+      {
+        "id": "spacer-1",
+        "sequence": "AAAACCCCGGGGTTTA",
+        "sha256": "e436e52f24cbe7c6d3213a22d9c766c3ba6d86b2d937a76565cdc7ba654e6071"
+      }
+    ],
+    "matches": [
+      {
+        "spacer_id": "spacer-1",
+        "target_id": "target",
+        "target_start": 1,
+        "target_end": 16,
+        "relative_strand": "+"
+      }
+    ]
+  }
+}

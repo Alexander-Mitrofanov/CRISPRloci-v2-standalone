@@ -1,0 +1,49 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "reconstruction",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "order_semantics": "array-acquisition-order",
+    "history_semantics": "model-estimated",
+    "groups": [
+      {
+        "id": "group_1",
+        "members": [
+          {
+            "leaf": "source_bf",
+            "source_id": "source",
+            "array_id": "source-bf"
+          },
+          {
+            "leaf": "source_possible",
+            "source_id": "source",
+            "array_id": "source-possible"
+          }
+        ],
+        "hypothesis": "input",
+        "tree": "(source_bf:1,source_possible:1);",
+        "reconstruction": {
+          "deletion_rate_bdm": 1,
+          "insertion_rate_bdm": 2,
+          "ln_likelihood_bdm": -10,
+          "preferred_deletion_model": "BDM",
+          "aligned_spacers": 3,
+          "reconstructed_insertions": 2,
+          "reconstructed_deletions": 4,
+          "tree_length": 2.0
+        }
+      }
+    ],
+    "excluded_arrays": [
+      {
+        "source_id": "sample",
+        "array_id": "unknown",
+        "reason": "orientation_not_determined"
+      }
+    ]
+  }
+}

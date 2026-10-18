@@ -1,0 +1,82 @@
+{
+  "job_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "mode": "protospacer",
+  "status": "completed",
+  "stage": "package_results",
+  "summary": {
+    "protospacer": {
+      "available": true,
+      "search_complete": true,
+      "outcome": "matches",
+      "matches_truncated": false,
+      "reference": {
+        "name": "Synthetic test reference",
+        "source_url": "https://example.org/research-spacers.fa",
+        "source_release": "2017-fixture",
+        "source_file_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "database_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "record_count": 3,
+        "eligible_record_count": 2,
+        "skipped_ambiguous": 1,
+        "skipped_length": 0,
+        "seed_length": 16,
+        "min_length": 16,
+        "max_length": 1000
+      },
+      "policy": {
+        "matching": "full-length-exact",
+        "substitutions": 0,
+        "gaps": 0,
+        "strands": "both",
+        "topology": "linear",
+        "array_overlap": "unknown",
+        "pam": "not_evaluated"
+      },
+      "counts": {
+        "matches": 2,
+        "matched_spacers": 1,
+        "targets": 1,
+        "target_bases": 46,
+        "seed_windows": 31,
+        "ambiguous_seed_windows": 0,
+        "candidates_checked": 2
+      },
+      "matches": [
+        {
+          "spacer_id": "synthetic-spacer-1",
+          "spacer_sequence": "ACGTTGCAACGATTCGAGTC",
+          "target_id": "target_A",
+          "target_start": 3,
+          "target_end": 22,
+          "relative_strand": "+",
+          "identities": 20,
+          "query_length": 20,
+          "substitutions": 0,
+          "gaps": 0,
+          "query_coverage": 1.0,
+          "array_overlap": "unknown",
+          "pam_status": "not_evaluated",
+          "confidence": null,
+          "evalue": null
+        },
+        {
+          "spacer_id": "synthetic-spacer-1",
+          "spacer_sequence": "ACGTTGCAACGATTCGAGTC",
+          "target_id": "target_A",
+          "target_start": 25,
+          "target_end": 44,
+          "relative_strand": "-",
+          "identities": 20,
+          "query_length": 20,
+          "substitutions": 0,
+          "gaps": 0,
+          "query_coverage": 1.0,
+          "array_overlap": "unknown",
+          "pam_status": "not_evaluated",
+          "confidence": null,
+          "evalue": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "loci",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "sources": [
+      {
+        "id": "example_record_01",
+        "length": 1121,
+        "sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "topology": "unknown"
+      }
+    ],
+    "detection": {
+      "coordinate_system": "1-based-inclusive-source-forward",
+      "score_semantics": "uncalibrated-model-score",
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "arrays": [
+        {
+          "id": "CRISPR-422-580-bf1",
+          "source_id": "example_record_01",
+          "category": "Bona-fide",
+          "model_score": 0.7508878399378084,
+          "strand": "+",
+          "interval": {
+            "start": 422,
+            "end": 580
+          },
+          "boundary": {
+            "exact": false,
+            "occurrence_path": "unassessed",
+            "repeat_phase": "unassessed"
+          },
+          "repeats": [
+            {
+              "ordinal": 1,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "start": 422,
+              "end": 451,
+              "id": "repeat_3d0dd639d72bf8d943f9591b"
+            },
+            {
+              "ordinal": 2,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "start": 486,
+              "end": 515,
+              "id": "repeat_cc2dc1a1014895ad054d13b6"
+            },
+            {
+              "ordinal": 3,
+              "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+              "start": 551,
+              "end": 580,
+              "id": "repeat_1da09a6c657a27ba02b69dfa"
+            }
+          ],
+          "spacers": [
+            {
+              "ordinal": 1,
+              "sequence": "ACAGATCAAACTCCGGAAGGGTGATTGTAAATGG",
+              "start": 452,
+              "end": 485,
+              "id": "spacer_34e2a73fee6dd626aed63e9d"
+            },
+            {
+              "ordinal": 2,
+              "sequence": "TGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAG",
+              "start": 516,
+              "end": 550,
+              "id": "spacer_1ab1e4e9c89d6295c60f390a"
+            }
+          ]
+        }
+      ]
+    },
+    "cas": {
+      "coordinate_system": "1-based-inclusive-source-forward",
+      "score_semantics": "uncalibrated-model-evidence",
+      "evaluated_gene_count": 5,
+      "genes": [],
+      "cassettes": []
+    },
+    "tracrrna": {
+      "coordinate_system": "1-based-inclusive-source-forward",
+      "score_semantics": "uncalibrated-model-evidence",
+      "method": "complete",
+      "model_type": "II",
+      "candidates": []
+    },
+    "flanks": {
+      "coordinate_system": "zero_based_half_open",
+      "prediction_performed": false,
+      "context_semantics": "analysis-window-not-biological-boundary",
+      "flank_length": 37,
+      "arrays": [
+        {
+          "id": "CRISPR-422-580-bf1",
+          "source_id": "example_record_01",
+          "category": "Bona-fide",
+          "segments": [
+            {
+              "end": 580,
+              "start": 421
+            }
+          ]
+        }
+      ],
+      "contexts": [
+        {
+          "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:left",
+          "source_id": "example_record_01",
+          "array_id": "CRISPR-422-580-bf1",
+          "side": "left",
+          "strand": "+",
+          "segments": [
+            {
+              "end": 421,
+              "start": 384
+            }
+          ],
+          "sequence": "ATGTAGTTTGCGAACGTTTAAAAACATAATTTGAAAA",
+          "truncated_reason": null,
+          "observed_repeat": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+          "repeat_segments": [
+            {
+              "end": 451,
+              "start": 421
+            }
+          ]
+        },
+        {
+          "id": "identify:c1e77d030be6009e992b1fca4dc4e56731d0da972110e2b4846a77a890b87965:right",
+          "source_id": "example_record_01",
+          "array_id": "CRISPR-422-580-bf1",
+          "side": "right",
+          "strand": "-",
+          "segments": [
+            {
+              "end": 617,
+              "start": 580
+            }
+          ],
+          "sequence": "ACTTGTAACCCATCGCTGTCCCTTTGACAAAAATCGC",
+          "truncated_reason": null,
+          "observed_repeat": "ATTTACATTTCACAATAAGTAACTAAAACG",
+          "repeat_segments": [
+            {
+              "end": 580,
+              "start": 550
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

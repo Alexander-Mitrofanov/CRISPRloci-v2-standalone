@@ -1,0 +1,5 @@
+include LICENSE UPSTREAM.json README.md requirements*.lock
+recursive-include docs *.md *.rst
+recursive-include examples *.json
+recursive-include tests *.py *.json *.txt *.nwk *.png
+recursive-include scripts *.py

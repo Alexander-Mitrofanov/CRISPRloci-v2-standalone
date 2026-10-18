@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/raw/v2.3.0/schemas/report-1.2.0.schema.json",
+  "title": "CRISPRidentify report 1.2.0",
+  "description": "Structural contract for canonical CRISPRidentify report.json output. Runtime source-slice and provenance checks are stronger than this schema.",
+  "type": "object",
+  "required": [
+    "schema",
+    "coordinate_system",
+    "source",
+    "run",
+    "summary",
+    "validation",
+    "arrays",
+    "cas"
+  ],
+  "properties": {
+    "schema": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"const": "CRISPRidentify-report"},
+        "version": {"const": "1.2.0"}
+      },
+      "additionalProperties": false
+    },
+    "coordinate_system": {
+      "type": "object",
+      "required": [
+        "indexing",
+        "end_inclusive",
+        "reference",
+        "orientation_is_separate",
+        "zero_width_boundaries"
+      ],
+      "properties": {
+        "indexing": {"const": 1},
+        "end_inclusive": {"const": true},
+        "reference": {"const": "input_forward_strand"},
+        "orientation_is_separate": {"const": true},
+        "zero_width_boundaries": {
+          "type": "object",
+          "required": ["indexing", "representation", "reference"],
+          "properties": {
+            "indexing": {"const": 0},
+            "representation": {"const": "interbase"},
+            "reference": {"const": "input_forward_strand"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {"$ref": "#/$defs/source"},
+    "run": {
+      "type": "object",
+      "required": ["parameters", "analyses"],
+      "properties": {
+        "parameters": {"type": "object"},
+        "configuration": {
+          "type": "object",
+          "required": [
+            "schema_version",
+            "release_version",
+            "preset",
+            "preset_provenance",
+            "effective_config"
+          ],
+          "properties": {
+            "schema_version": {"const": 1},
+            "release_version": {"type": "string", "minLength": 1},
+            "preset": {"enum": ["balanced", "region-screen", "full"]},
+            "preset_provenance": {
+              "type": "object",
+              "required": [
+                "schema_version",
+                "name",
+                "selection",
+                "contract",
+                "explicit_controlled_options",
+                "effective_config_sha256"
+              ],
+              "properties": {
+                "schema_version": {"const": 1},
+                "name": {"enum": ["balanced", "region-screen", "full"]},
+                "selection": {"enum": ["default", "explicit"]},
+                "contract": {"type": "string", "minLength": 1},
+                "explicit_controlled_options": {
+                  "type": "array",
+                  "items": {"type": "string"},
+                  "uniqueItems": true
+                },
+                "effective_config_sha256": {"$ref": "#/$defs/sha256"}
+              },
+              "additionalProperties": false
+            },
+            "effective_config": {"type": "object"}
+          },
+          "additionalProperties": false
+        },
+        "analyses": {
+          "type": "object",
+          "required": ["orientation", "is_element", "cas_prediction"],
+          "properties": {
+            "orientation": {"enum": ["requested", "not_requested"]},
+            "is_element": {"enum": ["requested", "not_requested"]},
+            "cas_prediction": {"enum": ["requested", "not_requested"]}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": ["array_count", "accepted_array_count", "category_counts"],
+      "properties": {
+        "array_count": {"type": "integer", "minimum": 0},
+        "accepted_array_count": {"type": "integer", "minimum": 0},
+        "category_counts": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "Bona-fide",
+              "Alternative",
+              "Possible",
+              "Possible Discarded",
+              "Low score"
+            ]
+          },
+          "additionalProperties": {"type": "integer", "minimum": 0}
+        }
+      },
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "status",
+        "method",
+        "validated_array_count",
+        "invalid_array_count"
+      ],
+      "properties": {
+        "status": {"const": "valid"},
+        "method": {"const": "independent_original_sequence_slicing"},
+        "validated_array_count": {"type": "integer", "minimum": 0},
+        "invalid_array_count": {"const": 0}
+      },
+      "additionalProperties": false
+    },
+    "arrays": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/array"}
+    },
+    "cas": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string"},
+        "systems": {"type": "array", "items": {"type": "object"}},
+        "system_count": {"type": "integer", "minimum": 0},
+        "genes": {"type": "array", "items": {"type": "object"}},
+        "gene_count": {"type": "integer", "minimum": 0},
+        "method": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "interval": {
+      "type": "object",
+      "required": ["start", "end", "length"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 1},
+        "end": {"type": "integer", "minimum": 1},
+        "length": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "header",
+        "file_name",
+        "length",
+        "sha256",
+        "sha256_scope"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "header": {"type": "string", "minLength": 1},
+        "file_name": {"type": "string", "minLength": 1},
+        "length": {"type": "integer", "minimum": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "sha256_scope": {"const": "uppercase_sequence"}
+      },
+      "additionalProperties": false
+    },
+    "sequence_element": {
+      "type": "object",
+      "required": ["index", "sequence"],
+      "properties": {
+        "index": {"type": "integer", "minimum": 1},
+        "sequence": {"type": "string"},
+        "source_interval": {"$ref": "#/$defs/interval"},
+        "source_boundary": {
+          "type": "object",
+          "required": ["coordinate_system", "position", "reference"],
+          "properties": {
+            "coordinate_system": {"const": "0-based interbase"},
+            "position": {"type": "integer", "minimum": 0},
+            "reference": {"const": "input_forward_strand"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "anyOf": [
+        {"required": ["source_interval"]},
+        {"required": ["source_boundary"]}
+      ],
+      "additionalProperties": true
+    },
+    "boundary_family": {
+      "description": "Shared ordered occurrences with coupled uncertain ends; exact array fields describe the named actual member.",
+      "type": "object",
+      "required": [
+        "status", "coordinate_semantics", "coordinate_system", "family_id",
+        "supported_repeat_count", "core_repeat_count", "member_count",
+        "admissible_geometry_ids", "display_geometry_id", "display_representation_id",
+        "display_own_score", "member_score_min", "member_score_max", "union_span",
+        "variable_repeat_indexes", "proof_sha256"
+      ],
+      "properties": {
+        "status": {"const": "boundary_uncertain"},
+        "coordinate_semantics": {"const": "actual_admissible_member_view"},
+        "coordinate_system": {"const": "zero_based_half_open"},
+        "family_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "supported_repeat_count": {"type": "integer", "minimum": 2},
+        "core_repeat_count": {"type": "integer", "minimum": 2},
+        "member_count": {"type": "integer", "minimum": 2},
+        "admissible_geometry_ids": {
+          "type": "array", "minItems": 2, "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "display_geometry_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "display_representation_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "display_own_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "member_score_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "member_score_max": {"type": "number", "minimum": 0, "maximum": 1},
+        "union_span": {
+          "description": "Conservative union interval, zero-based and end-exclusive; not a synthetic exact member.",
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {"type": "integer", "minimum": 0}
+        },
+        "variable_repeat_indexes": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"type": "integer", "minimum": 0}
+        },
+        "proof_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": true
+    },
+    "array": {
+      "type": "object",
+      "required": [
+        "id",
+        "category",
+        "category_key",
+        "category_position",
+        "certainty_score",
+        "source_interval",
+        "consensus_repeat",
+        "repeat_count",
+        "spacer_count",
+        "repeats",
+        "spacers",
+        "orientation",
+        "validation"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "category": {
+          "enum": [
+            "Bona-fide",
+            "Alternative",
+            "Possible",
+            "Possible Discarded",
+            "Low score"
+          ]
+        },
+        "category_key": {"type": "string", "minLength": 1},
+        "category_position": {"type": "integer", "minimum": 0},
+        "certainty_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "source_interval": {"$ref": "#/$defs/interval"},
+        "source_sequence": {"type": "string"},
+        "consensus_repeat": {"type": "string"},
+        "repeat_count": {"type": "integer", "minimum": 2},
+        "spacer_count": {"type": "integer", "minimum": 0},
+        "non_deleted_spacer_count": {"type": "integer", "minimum": 0},
+        "spacer_deletion_count": {"type": "integer", "minimum": 0},
+        "repeats": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/sequence_element"}
+        },
+        "spacers": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/sequence_element"}
+        },
+        "orientation": {"type": "object"},
+        "boundary_family": {"$ref": "#/$defs/boundary_family"},
+        "validation": {
+          "type": "object",
+          "required": ["status", "method", "source_reconstructed", "issues"],
+          "properties": {
+            "status": {"const": "valid"},
+            "method": {"const": "independent_original_sequence_slicing"},
+            "source_reconstructed": {"const": true},
+            "issues": {"type": "array", "maxItems": 0}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

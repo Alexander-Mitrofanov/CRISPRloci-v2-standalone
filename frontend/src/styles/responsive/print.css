@@ -1,0 +1,84 @@
+@media print {
+  .hero {
+    min-height: auto;
+    color: #000;
+    background: #fff;
+  }
+  .brand-copy small {
+    color: #000;
+  }
+  .brand-symbol::before,
+  .brand-symbol span {
+    background: #000;
+  }
+  .hero::before,
+  .hero::after,
+  .hero-visual,
+  .nav-shell nav,
+  .recovery-link,
+  .result-tabs,
+  .submit-bar,
+  .privacy-notice {
+    display: none !important;
+  }
+  .result-tab-panel[hidden] {
+    display: block;
+  }
+  .workflow,
+  .results,
+  .job-panel {
+    margin: 0;
+    border: 1px solid #777;
+    box-shadow: none;
+  }
+  .history-canvas {
+    max-height: none;
+    overflow: visible;
+  }
+  .history-canvas svg {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+.frame-blocked-message[hidden] {
+  display: none;
+}
+.frame-blocked-message {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+.frame-blocked-message section {
+  width: min(620px, 100%);
+  padding: clamp(28px, 6vw, 64px);
+  border: 1px solid #d9b2a8;
+  border-radius: 8px;
+  background: var(--paper);
+}
+.frame-blocked-message h1 {
+  margin: 8px 0 18px;
+  color: var(--ink);
+  font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3.72rem);
+  font-weight: 500;
+  line-height: 1;
+}
+.frame-blocked-message p:not(.eyebrow) {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+.frame-blocked-message a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  color: var(--on-action);
+  background: var(--action);
+  font-weight: 600;
+  text-decoration: none;
+}
+.frame-blocked-message a:hover {
+  background: var(--action-hover);
+}

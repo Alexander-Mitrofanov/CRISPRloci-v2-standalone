@@ -1,0 +1,14 @@
+{
+  "CRISPRtracrRNA-v2": {
+    "url": "https://github.com/BackofenLab/CRISPRtracrRNA.git",
+    "commit": "d4cbbbb2172d4114c28fdb8a93c8abae871140f3"
+  },
+  "CRISPRidentify-v2": {
+    "url": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git",
+    "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc"
+  },
+  "CasAndra": {
+    "url": "https://github.com/Alexander-Mitrofanov/CasAndra.git",
+    "commit": "ba046f90242ac91dc075183ea51dcbedfac28484"
+  }
+}

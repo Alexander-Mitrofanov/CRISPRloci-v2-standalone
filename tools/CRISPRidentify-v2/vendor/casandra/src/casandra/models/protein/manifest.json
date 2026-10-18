@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "build_audit.json": {
+      "sha256": "553fa60c984e73a257d1fb95d28941acd0515b0e4eb4f9023c544312d2704be9",
+      "size": 1398
+    },
+    "model_card.json": {
+      "sha256": "80e528e79f43dc1ecac5f068a8c1ed56831e92a25e0774a268629e5cb96d1656",
+      "size": 11793
+    },
+    "profile_metadata.json": {
+      "sha256": "72e8b0d62d2c369f6a61db62d12cd554940fa61bb9961755efa546d136b211d1",
+      "size": 111138
+    },
+    "profiles.hmm": {
+      "sha256": "034841fc34bc11e2fac675858a530bbe03ac02134cbd8d018947e67c5a5906b7",
+      "size": 57746522
+    }
+  },
+  "model_id": "casandra-production-profile-hmm-type-v-v4-fast",
+  "role": "deployment_refit_not_evaluation_model",
+  "schema_version": 4,
+  "source_manifest_sha256": "f7bc74d0dd2c72a1334b7ba2a3f49d39f953200104c96100b8b1127294b23f57"
+}

@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-09-26T23:34:11.173192+00:00",
+  "protocol_amendment_sha256": "9cb073a515af142d77a9a87e43f4c194ec3b41a04114c3a804db2898f374f0d5",
+  "binary": "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/native/fasta36-seeded-20260927/fasta36-council-seed20260927",
+  "binary_sha256": "e53ea2de4b1584388da0841222b6254fab8f1ebd9e5b0863cd42f341132f348e",
+  "configuration": "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/local.reproducible.toml",
+  "configuration_sha256": "5fa0ccb9f23bfdcf92a41b63fe8be16aad03e499757662478a56fc03887cbf99",
+  "build_manifest_sha256": "8f2c806822d67339a6b23a0a36fd75ed2470ab8e8741d8e5f24a0ddc856d5124",
+  "patch_sha256": "c273f64943434b414b03041e58c39887a5599ff257587f1a4edae6d41dc9f50a",
+  "original_archive_sha256": "fa5318b6f8d6a3cfdef0d29de530eb005bfd3ca05835faa6ad63663f8dce7b2e",
+  "repeatability_sha256": "b7ed58a554ddb9a294a062f44c40d0912d4ea7ed04cd0b37aadb0513c8eb8ed9",
+  "repeatability_passed": true,
+  "master_seed": 20260927,
+  "worker_seed": "20260927 + zero_based_worker_index + 1",
+  "native_threads": 1,
+  "locus_workers": 2,
+  "baseline_python_source": "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/council_round2/archived_python_detector/src",
+  "baseline_source_archive_sha256": "acc7437bf034dfcf818d3abfeb4a141a69b8ac0c3990796c00b6a61a54604918",
+  "baseline_original_files_verified": 40,
+  "baseline_resource_relocation": "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/src/crisprtracrrna/data",
+  "control_manifest_sha256": "67efd2ede9053e2638de91c2646c08c157c347c13c833a8aa4a66b51725ebb55",
+  "scientific_thresholds_unchanged": true
+}

@@ -1,0 +1,54 @@
+{
+  "feature": "CRISPRleader v2 context integration",
+  "date": "2026-09-27",
+  "published_tool_commit": "da7b4d659afaa8b0eb8873ebc2ccec00aad1000f",
+  "tool_version": "2.0.0a1",
+  "leader_prediction_available": false,
+  "release_id": "11060f5a58f3f12dbef18a42ca349672a7b2f236f070087e34a1cccac5b2d774",
+  "activation_status": "staged; not selected over the concurrent seven-tool update",
+  "backend_integration_tests": {
+    "status": "passed",
+    "count": 468,
+    "command": "scripts/check.sh backend"
+  },
+  "frontend_tests": {
+    "status": "passed",
+    "count": 145,
+    "command": "scripts/check.sh frontend"
+  },
+  "scientific_http_gate": {
+    "status": "passed",
+    "case_count": 9,
+    "modes": [
+      "leader",
+      "leader",
+      "detection",
+      "reconstruction",
+      "orientation",
+      "cas",
+      "tracrrna",
+      "tracrrna",
+      "loci"
+    ]
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "real leader submission",
+      "5000-nt clipping",
+      "both context sides",
+      "explicit unavailable prediction",
+      "pinned repository provenance",
+      "authenticated complete download",
+      "reload recovery",
+      "390px layout",
+      "compiled CSP",
+      "no JavaScript exceptions"
+    ],
+    "evidence": ".runtime/browser-leader/leader-final"
+  },
+  "limitations": [
+    "Context extraction only; upstream leader inference, biological references and evaluation are incomplete.",
+    "The staged release records six scientific tools. The project lock now also includes the independently added CRISPRrepeat; use the combined candidate for the next activation."
+  ]
+}

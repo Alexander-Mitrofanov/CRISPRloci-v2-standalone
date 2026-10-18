@@ -1,0 +1,364 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Alexander-Mitrofanov/SpacePHARER/schemas/association-v1.json",
+  "title": "SpacePHARER association evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_version",
+    "input_sha256",
+    "groups_sha256",
+    "requested_fdr",
+    "calibration_status",
+    "calibration",
+    "warnings",
+    "reference",
+    "records",
+    "groups",
+    "associations",
+    "interpretation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "spacepharer.association/1.0.0"
+    },
+    "tool_version": {
+      "const": "2.0.2"
+    },
+    "requested_fdr": {
+      "type": "number",
+      "minimum": 0.001,
+      "maximum": 0.5
+    },
+    "calibration_status": {
+      "enum": [
+        "estimated",
+        "unavailable",
+        "not_run"
+      ]
+    },
+    "interpretation": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "warnings": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "groups_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "maxItems": 1000
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/group"
+      },
+      "maxItems": 100
+    },
+    "associations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/association"
+      },
+      "maxItems": 5000
+    },
+    "reference": {
+      "$ref": "#/$defs/reference"
+    },
+    "calibration": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/calibration"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "sequence": {
+          "type": "string",
+          "pattern": "^[ACGTRYSWKMBDHVN]{1,200}$"
+        }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "members",
+        "supported_occurrence_count",
+        "unique_sequence_count",
+        "unsupported_occurrence_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+          },
+          "maxItems": 1000
+        },
+        "supported_occurrence_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "unique_sequence_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "unsupported_occurrence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+          },
+          "maxItems": 1000
+        }
+      }
+    },
+    "hit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "occurrence_ids",
+        "query_sequence",
+        "p_best_hit",
+        "query_start",
+        "query_end",
+        "target_start",
+        "target_end",
+        "query_alignment",
+        "target_alignment"
+      ],
+      "properties": {
+        "occurrence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+          },
+          "maxItems": 1000
+        },
+        "query_sequence": {
+          "type": "string",
+          "pattern": "^[ACGTRYSWKMBDHVN]{1,200}$"
+        },
+        "p_best_hit": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "query_start": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        },
+        "query_end": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        },
+        "target_start": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5000000
+        },
+        "target_end": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5000000
+        },
+        "query_alignment": {
+          "type": "string",
+          "pattern": "^[ACGTN-]{1,400}$"
+        },
+        "target_alignment": {
+          "type": "string",
+          "pattern": "^[ACGTN-]{1,400}$"
+        }
+      }
+    },
+    "association": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "group_id",
+        "target_id",
+        "status",
+        "combined_score",
+        "native_fdr",
+        "native_hit_count",
+        "hits"
+      ],
+      "properties": {
+        "group_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "target_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "status": {
+          "enum": [
+            "association",
+            "uncalibrated_candidate",
+            "above_cutoff_candidate"
+          ]
+        },
+        "combined_score": {
+          "type": "number",
+          "minimum": 0
+        },
+        "native_fdr": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "native_hit_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "hits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hit"
+          },
+          "maxItems": 10000
+        }
+      }
+    },
+    "genome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "length",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5000000
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "engine_version",
+        "control_method",
+        "manifest_sha256",
+        "genomes"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,160}$"
+        },
+        "engine_version": {
+          "const": "2.0.2"
+        },
+        "control_method": {
+          "const": "reversed_translated_orfs"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "genomes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/genome"
+          },
+          "maxItems": 100
+        }
+      }
+    },
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "status",
+        "target_score_count",
+        "control_score_count"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "spacepharer.calibration/1.0.0"
+        },
+        "status": {
+          "enum": [
+            "estimated",
+            "unavailable"
+          ]
+        },
+        "target_score_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        "control_score_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "type": "object",
+  "required": [
+    "schema",
+    "tool",
+    "execution_completed",
+    "input",
+    "model",
+    "policy",
+    "counts",
+    "results"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": {
+        "name": "repeattyper.classification",
+        "version": "1.0.0"
+      }
+    },
+    "tool": {
+      "const": {
+        "name": "RepeatTyper",
+        "version": "2.0.1"
+      }
+    },
+    "execution_completed": {
+      "const": true
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "sha256",
+        "record_count"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        }
+      }
+    },
+    "model": {
+      "const": {
+        "id": "crisprcastyper-1.9.0-repeat-model",
+        "upstream_repository": "https://github.com/Russel88/CRISPRCasTyper",
+        "upstream_version": "1.9.0",
+        "upstream_commit": "a2d51831d4802533bb113bac23cf9df2853063b0",
+        "upstream_wheel_sha256": "9d1113ef7f6e375253986bc60740942a404b0439e1333da6ed2520ac0224cca7",
+        "files": {
+          "xgb_repeats.json": "f9170b07805d1bb89fa1c02cfb861836e42498738e458f5e9e6db181dfcbe57a",
+          "type_dict.tab": "b01468938d868e038a14c7a42f3187bd234e2d63d49dfc4c04f92094cb4112c8"
+        },
+        "labels": [
+          "I-A",
+          "I-B",
+          "I-C",
+          "I-D",
+          "I-E",
+          "I-F",
+          "I-F_T",
+          "I-G",
+          "II-A",
+          "II-B",
+          "II-C",
+          "III-A",
+          "III-B",
+          "III-C",
+          "III-D",
+          "III-E",
+          "III-F",
+          "IV-A1",
+          "IV-A2",
+          "IV-A3",
+          "IV-D",
+          "IV-E",
+          "V-A",
+          "V-B1",
+          "V-E",
+          "V-F1",
+          "V-F2",
+          "V-F3",
+          "V-G",
+          "V-I",
+          "V-J",
+          "V-K",
+          "VI-A",
+          "VI-B1",
+          "VI-B2",
+          "VI-C",
+          "VI-D"
+        ],
+        "license": "MIT",
+        "feature_contract": "canonical-4mer-counts-GC-fraction-length",
+        "iteration_range": [
+          0,
+          41
+        ]
+      }
+    },
+    "policy": {
+      "type": "object",
+      "required": [
+        "threshold",
+        "kmer",
+        "iteration_range",
+        "score_semantics",
+        "orientation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "kmer": {
+          "const": 4
+        },
+        "iteration_range": {
+          "const": [
+            0,
+            41
+          ]
+        },
+        "score_semantics": {
+          "const": "closed_set_model_score_not_calibrated_confidence"
+        },
+        "orientation": {
+          "const": "canonical_kmers_no_strand_inference"
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "records",
+        "distinct_classified_sequences",
+        "predicted",
+        "uncertain",
+        "unsupported"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "records": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "distinct_classified_sequences": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "predicted": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "uncertain": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "unsupported": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        }
+      }
+    },
+    "results": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "sequence",
+          "sequence_sha256",
+          "status",
+          "winner",
+          "native_score",
+          "prediction",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,200}$"
+          },
+          "sequence": {
+            "type": "string",
+            "pattern": "^[ACGTRYSWKMBDHVN]{1,200}$"
+          },
+          "sequence_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "status": {
+            "enum": [
+              "predicted",
+              "uncertain",
+              "unsupported"
+            ]
+          },
+          "winner": {
+            "enum": [
+              null,
+              "I-A",
+              "I-B",
+              "I-C",
+              "I-D",
+              "I-E",
+              "I-F",
+              "I-F_T",
+              "I-G",
+              "II-A",
+              "II-B",
+              "II-C",
+              "III-A",
+              "III-B",
+              "III-C",
+              "III-D",
+              "III-E",
+              "III-F",
+              "IV-A1",
+              "IV-A2",
+              "IV-A3",
+              "IV-D",
+              "IV-E",
+              "V-A",
+              "V-B1",
+              "V-E",
+              "V-F1",
+              "V-F2",
+              "V-F3",
+              "V-G",
+              "V-I",
+              "V-J",
+              "V-K",
+              "VI-A",
+              "VI-B1",
+              "VI-B2",
+              "VI-C",
+              "VI-D"
+            ]
+          },
+          "native_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "prediction": {
+            "enum": [
+              null,
+              "I-A",
+              "I-B",
+              "I-C",
+              "I-D",
+              "I-E",
+              "I-F",
+              "I-F_T",
+              "I-G",
+              "II-A",
+              "II-B",
+              "II-C",
+              "III-A",
+              "III-B",
+              "III-C",
+              "III-D",
+              "III-E",
+              "III-F",
+              "IV-A1",
+              "IV-A2",
+              "IV-A3",
+              "IV-D",
+              "IV-E",
+              "V-A",
+              "V-B1",
+              "V-E",
+              "V-F1",
+              "V-F2",
+              "V-F3",
+              "V-G",
+              "V-I",
+              "V-J",
+              "V-K",
+              "VI-A",
+              "VI-B1",
+              "VI-B2",
+              "VI-C",
+              "VI-D"
+            ]
+          },
+          "reason": {
+            "enum": [
+              null,
+              "ambiguous_iupac",
+              "below_threshold"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RepeatTyper classification 1.0.0"
+}

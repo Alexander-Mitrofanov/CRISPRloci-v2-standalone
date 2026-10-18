@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "integrated_on": "2026-08-19",
+  "package": {
+    "name": "CasAndra",
+    "upstream_version": "0.1.0.dev0",
+    "integrated_version": "0.1.0.dev0+crispridentify.3",
+    "license": "Apache-2.0"
+  },
+  "source": {
+    "origin_type": "local_source_snapshot",
+    "origin_description": "CasAndra/tool source tree supplied in the development workspace",
+    "vcs_revision": null,
+    "vcs_note": "The supplied source tree contained no VCS metadata, immutable revision, or published artifact locator; no commit or release provenance is asserted.",
+    "included": [
+      "README.md",
+      "CITATION.cff",
+      "pyproject.toml",
+      "src/casandra"
+    ],
+    "excluded": [
+      "tests",
+      "pytest caches",
+      "Python bytecode caches",
+      "build outputs",
+      "egg-info metadata",
+      "benchmark and training workspaces"
+    ]
+  },
+  "downstream_modifications": [
+    "Require Python 3.12 and the exact CRISPRidentify-tested runtime dependency versions.",
+    "Require setuptools 77 or newer for the PEP 639 license expression and include complete Apache-2.0 license material.",
+    "Fail closed by verifying top-level and nested model manifests, sizes, and SHA-256 values before inference.",
+    "Emit deterministic profile_families evidence derived from bundled profile metadata.",
+    "Make the genome evidence gate type-aware for subtype-null Type VII candidates and report their type_vote_fraction confidence with the direct_profile_type_aggregation method, without weakening other type gates.",
+    "Normalize independent protein class/type/subtype head winners into hierarchy-consistent output while preserving raw classifications and explicit conflict evidence.",
+    "Normalize final cassette class/type/subtype claims after both direct-profile aggregation and architecture classification, preserve the raw claims and explicit conflict evidence, apply the genome gate to the normalized claim, and report a per-run masked-conflict count.",
+    "Use the local version suffix +crispridentify.3 to distinguish this downstream integration."
+  ],
+  "model_bundle": {
+    "bundle_id": "casandra-cas-only-cpu-bundle-v4-fast-final",
+    "schema_version": 4,
+    "role": "deployment_refit_not_evaluation_model",
+    "profile_count": 341,
+    "artifacts": {
+      "src/casandra/models/manifest.json": {
+        "size": 1873,
+        "sha256": "8d722e68a720d95b3267ec9c83ff3ec8be8bd61e1e2adee9ce7a670e35a70432"
+      },
+      "src/casandra/models/protein/profiles.hmm": {
+        "size": 57746522,
+        "sha256": "034841fc34bc11e2fac675858a530bbe03ac02134cbd8d018947e67c5a5906b7"
+      },
+      "src/casandra/models/protein/profile_metadata.json": {
+        "size": 111138,
+        "sha256": "72e8b0d62d2c369f6a61db62d12cd554940fa61bb9961755efa546d136b211d1"
+      },
+      "src/casandra/models/cassette_architecture/model.joblib": {
+        "size": 4249840,
+        "sha256": "afaf3cd7014b7221abb2b36c389c8f8e562bd7ebcff5728ac0c0ec5d18f74e9a"
+      }
+    }
+  },
+  "reference_data": {
+    "citation_doi": "10.1038/s41564-025-02180-8",
+    "archive_doi": "10.5281/zenodo.17388109",
+    "archive_license": "CC-BY-4.0",
+    "modification_summary": "CasAndra selected and normalized reference metadata, constructed positive and hard-negative HMM profiles, and produced a frozen deployment refit."
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.sha256",
+    "algorithm": "SHA-256",
+    "format": "sha256sum",
+    "scope": "Every other release file under vendor/casandra."
+  }
+}

@@ -1,0 +1,67 @@
+"""Compatibility imports for summary primitives shared across feature modules."""
+
+from .bias import (
+    _bias_fallback_metadata,
+    _bias_policy,
+    _bias_warning,
+    _bounded_bias_text,
+    _public_bias_warning,
+)
+from .bounded_io import (
+    _checkpoint,
+    _json,
+    _mapping,
+    _read_bounded,
+    _read_reconstruction_bytes,
+    _reconstruction_json,
+    _safe_directory,
+    _safe_file,
+)
+from .contracts import (
+    _BIAS_STAGE_NAMES,
+    _MAX_BIAS_WARNINGS,
+    _MAX_PUBLIC_SUMMARY_BYTES,
+    _MAX_RECONSTRUCTION_EVENT_REFERENCES,
+    _MAX_RECONSTRUCTION_IDENTITY_CHARACTERS,
+    _MAX_RECONSTRUCTION_NAME_CHARACTERS,
+    _MAX_RECONSTRUCTION_NODES,
+    _MAX_RECONSTRUCTION_SPACERS,
+    _MAX_RECONSTRUCTION_STATE_CELLS,
+    _MAX_RECONSTRUCTION_TOTAL_INPUT_BYTES,
+    _MAX_RECONSTRUCTION_WARNINGS,
+    _MAX_SUMMARY_INPUT_BYTES,
+    _PUBLIC_RESULT_FIELDS,
+    _RECONSTRUCTION_EVENT_FIELDS,
+)
+from .sanitize import sanitize_public_summary
+
+__all__ = [
+    "_BIAS_STAGE_NAMES",
+    "_MAX_BIAS_WARNINGS",
+    "_MAX_PUBLIC_SUMMARY_BYTES",
+    "_MAX_RECONSTRUCTION_EVENT_REFERENCES",
+    "_MAX_RECONSTRUCTION_IDENTITY_CHARACTERS",
+    "_MAX_RECONSTRUCTION_NAME_CHARACTERS",
+    "_MAX_RECONSTRUCTION_NODES",
+    "_MAX_RECONSTRUCTION_SPACERS",
+    "_MAX_RECONSTRUCTION_STATE_CELLS",
+    "_MAX_RECONSTRUCTION_TOTAL_INPUT_BYTES",
+    "_MAX_RECONSTRUCTION_WARNINGS",
+    "_MAX_SUMMARY_INPUT_BYTES",
+    "_PUBLIC_RESULT_FIELDS",
+    "_RECONSTRUCTION_EVENT_FIELDS",
+    "_bias_fallback_metadata",
+    "_bias_policy",
+    "_bias_warning",
+    "_bounded_bias_text",
+    "_checkpoint",
+    "_json",
+    "_mapping",
+    "_public_bias_warning",
+    "_read_bounded",
+    "_read_reconstruction_bytes",
+    "_reconstruction_json",
+    "_safe_directory",
+    "_safe_file",
+    "sanitize_public_summary",
+]

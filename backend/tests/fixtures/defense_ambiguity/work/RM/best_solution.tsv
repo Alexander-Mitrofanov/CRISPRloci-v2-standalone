@@ -1,0 +1,4 @@
+replicon	hit_id	gene_name	hit_pos	model_fqn	sys_id	sys_loci	locus_num	sys_wholeness	sys_score	sys_occ	hit_gene_ref	hit_status	hit_seq_len	hit_i_eval	hit_score	hit_profile_cov	hit_seq_cov	hit_begin_match	hit_end_match	counterpart	used_in
+r000001	r000001_000022	RM_Type_II__Type_II_REases	22	defense-finder-models/RM/RM/RM_Type_II	r000001_RM_Type_II_1	1	1	1.000	2.000	1	RM_Type_II__Type_II_REases	mandatory	400	4.6e-46	149.400	0.996	0.935	10	383		
+r000001	r000001_000023	RM_Type_II__Type_II_MTases	23	defense-finder-models/RM/RM/RM_Type_II	r000001_RM_Type_II_1	1	1	1.000	2.000	1	RM_Type_II__Type_II_MTases	mandatory	835	6.7e-56	181.400	0.986	0.463	2	388		
+

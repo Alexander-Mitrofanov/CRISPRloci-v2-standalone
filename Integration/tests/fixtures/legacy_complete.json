@@ -1,0 +1,28 @@
+{
+  "legacy_A": {
+    "Arrays": {
+      "Bona-fide": {
+        "1": {
+          "list_spacers": ["AACCAACCAACCAACCAACC", "TTGGTTGGTTGGTTGGTTGG"],
+          "consensus_repeat": "TTTAAACCCGGGTTTAAACCCGGG",
+          "strand": "Forward"
+        }
+      },
+      "Possible": {},
+      "Low score": {}
+    }
+  },
+  "legacy_B": {
+    "Arrays": {
+      "Bona-fide": {},
+      "Possible": {
+        "1": {
+          "list_spacers": ["", "AACCAACCAACCAACCAACC", "GGTTGGTTGGTTGGTTGGTT"],
+          "consensus_repeat": "TTTAAACCCGGGTTTAAACCCGGG",
+          "strand": "Reversed"
+        }
+      },
+      "Low score": {}
+    }
+  }
+}

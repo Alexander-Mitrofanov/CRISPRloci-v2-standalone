@@ -1,0 +1,184 @@
+.warning-note {
+  color: #754538;
+  background: #f9e9e2;
+}
+.warning-note .icon {
+  color: var(--coral);
+}
+.warning-list {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+.warning-list li {
+  display: flex;
+  gap: 10px;
+  padding: 13px;
+  color: #6e4b37;
+  background: #faf0e1;
+  font-size: 0.78rem;
+}
+.warning-list strong {
+  display: block;
+  margin-bottom: 2px;
+}
+.no-warnings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #416a56;
+  font-size: 0.82rem;
+}
+.provenance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  margin-top: 20px;
+}
+.provenance-grid > div {
+  padding: 18px;
+  border: 1px solid var(--line);
+}
+.provenance-grid dl {
+  margin: 14px 0 0;
+}
+.provenance-grid dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7px 0;
+  border-top: 1px dotted #d2d7d1;
+  font-size: 0.75rem;
+}
+.provenance-grid dt {
+  color: var(--muted);
+  text-transform: capitalize;
+}
+.provenance-grid dd {
+  margin: 0;
+  color: #314c44;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  text-align: right;
+}
+.muted {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.bundle-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 17px;
+  border: 0;
+  color: var(--on-action);
+  background: var(--action);
+  text-align: left;
+  transition:
+    background 0.16s ease,
+    transform 0.16s ease;
+}
+.bundle-button:not(:disabled):hover {
+  background: var(--action-hover);
+  transform: translateY(-1px);
+}
+.download-memory-note {
+  margin: -7px 0 16px;
+  padding: 11px 13px;
+  background: #edf1e9;
+}
+.archive-unavailable {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  color: #754538;
+  background: #f9e9e2;
+}
+.archive-unavailable p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+.bundle-button > span:first-child {
+  width: 51px;
+  height: 51px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: var(--action-text);
+  background: var(--action-soft);
+}
+.bundle-button > span:first-child i {
+  position: absolute;
+  right: -5px;
+  bottom: -4px;
+  padding: 3px;
+  color: var(--on-action);
+  background: var(--action-pressed);
+  font:
+    500 0.7rem ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.bundle-button > span:nth-child(2) > * {
+  display: block;
+}
+.bundle-button strong {
+  font-size: 0.9rem;
+}
+.bundle-button small {
+  margin-top: 4px;
+  color: #dbeafe;
+  font-size: 0.75rem;
+}
+.artifact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+.artifact-grid button {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--action);
+  color: var(--action-text);
+  background: var(--action-soft);
+  text-align: left;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    transform 0.16s ease;
+}
+.artifact-grid button:not(:disabled):hover {
+  border-color: var(--action-hover);
+  background: var(--action-soft-hover);
+  transform: translateY(-1px);
+}
+.artifact-grid button span {
+  min-width: 0;
+}
+.artifact-grid strong,
+.artifact-grid small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.artifact-grid strong {
+  font-size: 0.78rem;
+}
+.artifact-grid small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}

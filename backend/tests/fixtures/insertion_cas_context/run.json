@@ -1,0 +1,34 @@
+{
+  "bundle_id": "casandra-full361-v3-cap15-2026-09-20-v1",
+  "bundle_role": "local_successor_candidate",
+  "cas_cassettes": 0,
+  "cas_proteins": 0,
+  "classified_cassettes": 0,
+  "cpu_threads": 1,
+  "created_at": "2026-10-12T21:22:50.535676+00:00",
+  "crispr_array_prediction": false,
+  "genes": 0,
+  "genome_evidence_gate": {
+    "class_1_minimum_cas_genes": 2,
+    "class_2_minimum_cas_genes_or_single_effector": 2,
+    "class_2_single_effector_minimum_aa": 400,
+    "class_2_single_effector_minimum_positive_profile_score": 50.0,
+    "selection": "pre-expanded validation and whole-genome acceptance; frozen before paper test",
+    "supported_subtype_required": true
+  },
+  "input_mode": "pyrodigal_de_novo",
+  "inputs": [
+    {
+      "kind": "genome_fasta",
+      "name": "insertion.fasta",
+      "sha256": "5e1fa7ee1c50fb2c786fc36b27f925b34be8fd0240ea6990ab588322be5e7b76"
+    }
+  ],
+  "offline_inference": true,
+  "program": "CasAndra",
+  "program_version": "0.3.0.dev2",
+  "raw_cassette_candidates": 0,
+  "rejected_cassette_candidates": 0,
+  "schema_version": 5,
+  "wall_seconds": 0.09836868999991566
+}

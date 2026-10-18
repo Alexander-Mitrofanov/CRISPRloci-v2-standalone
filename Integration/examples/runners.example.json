@@ -1,0 +1,23 @@
+{
+  "crispridentify": [
+    "/absolute/toolset/bin/CRISPRidentify-v2"
+  ],
+  "spacerplacer": [
+    "/absolute/toolset/bin/SpacerPlacer"
+  ],
+  "crispr_evor": [
+    "/absolute/toolset/bin/evOr"
+  ],
+  "casandra": [
+    "/absolute/toolset/bin/CasAndra"
+  ],
+  "crispr_tracrrna": [
+    "/absolute/toolset/bin/CRISPRtracrRNA-v3"
+  ],
+  "crisprmap": [
+    "/opt/crispr-toolsets/current/bin/run-crisprmap"
+  ],
+  "cctk": [
+    "/opt/crispr-suite/envs/CCTK/bin/cctk"
+  ]
+}

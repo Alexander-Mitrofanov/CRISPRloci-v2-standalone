@@ -1,0 +1,35 @@
+name: Private contact request
+description: Request a private channel without disclosing security or conduct details.
+title: "[Private contact] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include vulnerability, incident, identity, credential, or
+        confidential sequence details here. This form only alerts maintainers
+        that a private channel is needed.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Contact topic
+      options:
+        - Security vulnerability
+        - Code of conduct
+        - Sensitive data exposure
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Non-sensitive request
+      description: Ask a maintainer to establish private contact. Do not describe the underlying issue.
+      placeholder: "Please establish a private contact channel with me."
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included sensitive or technical details in this repository-visible form.
+          required: true

@@ -1,0 +1,52 @@
+{
+  "accuracy_claim_source": "separate train-only evaluation bundle",
+  "artifacts": {
+    "cassette_architecture/manifest.json": {
+      "sha256": "e6e51d2303af2ed21d557ef2bbea03fa847edf0e5d1f8bfc0b11559085053145",
+      "size": 1068
+    },
+    "cassette_architecture/model.joblib": {
+      "sha256": "afaf3cd7014b7221abb2b36c389c8f8e562bd7ebcff5728ac0c0ec5d18f74e9a",
+      "size": 4249840
+    },
+    "cassette_architecture/model_card.json": {
+      "sha256": "4cec8eab0fb0547f5c0e015a60fed673e41673a8a14a64ac2e7d7484d9553f15",
+      "size": 1463
+    },
+    "config.json": {
+      "sha256": "6da4ab38bb116e27b6272e3b9bf23b85e31e4bc47d0518744031120d5ddc94e2",
+      "size": 1076
+    },
+    "protein/build_audit.json": {
+      "sha256": "553fa60c984e73a257d1fb95d28941acd0515b0e4eb4f9023c544312d2704be9",
+      "size": 1398
+    },
+    "protein/manifest.json": {
+      "sha256": "c74f9cd1f90288bb73844488b65c22c74ac5ae423dafc09786e2817e63303623",
+      "size": 809
+    },
+    "protein/model_card.json": {
+      "sha256": "80e528e79f43dc1ecac5f068a8c1ed56831e92a25e0774a268629e5cb96d1656",
+      "size": 11793
+    },
+    "protein/profile_metadata.json": {
+      "sha256": "72e8b0d62d2c369f6a61db62d12cd554940fa61bb9961755efa546d136b211d1",
+      "size": 111138
+    },
+    "protein/profiles.hmm": {
+      "sha256": "034841fc34bc11e2fac675858a530bbe03ac02134cbd8d018947e67c5a5906b7",
+      "size": 57746522
+    }
+  },
+  "bundle_id": "casandra-cas-only-cpu-bundle-v4-fast-final",
+  "created_at": "2026-08-01T03:47:30.870751+00:00",
+  "role": "deployment_refit_not_evaluation_model",
+  "schema_version": 4,
+  "selection_metrics_sha256": "61c30a5a5162bf8ef8b07df2099edc02b735530b9498461946a5649892cb860f",
+  "source_bundle_manifest_sha256": "2d473dd94a78a93e072f8bca4a38ebf5aac0b09a1cb9d295ae273b0cc39728a4",
+  "training_splits": [
+    "train",
+    "validation",
+    "test"
+  ]
+}

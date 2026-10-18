@@ -1,0 +1,289 @@
+[
+  {
+    "source": "chylinski2014",
+    "label": "15",
+    "locator": "Table S4 row 17",
+    "value": "TOOSHORTCONTIG",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "23",
+    "locator": "Table S4 row 25",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "25",
+    "locator": "Table S4 row 27",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "26",
+    "locator": "Table S4 row 28",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "28",
+    "locator": "Table S4 row 30",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "42",
+    "locator": "Table S4 row 44",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "44",
+    "locator": "Table S4 row 46",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "50",
+    "locator": "Table S4 row 53",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "51",
+    "locator": "Table S4 row 55",
+    "value": "NOCONTIGINFORMATION",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "52",
+    "locator": "Table S4 row 57",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "54",
+    "locator": "Table S4 row 58",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "55",
+    "locator": "Table S4 row 60",
+    "value": "TOOSHORTCONTIG",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "56",
+    "locator": "Table S4 row 61",
+    "value": "TOOSHORTCONTIG",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "57",
+    "locator": "Table S4 row 62",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "59",
+    "locator": "Table S4 row 63",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "65",
+    "locator": "Table S4 row 70",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "66",
+    "locator": "Table S4 row 71",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "70",
+    "locator": "Table S4 row 73",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "69",
+    "locator": "Table S4 row 74",
+    "value": "TOOSHORTCONTIG",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "72",
+    "locator": "Table S4 row 76",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "73",
+    "locator": "Table S4 row 78",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "78",
+    "locator": "Table S4 row 82",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "79",
+    "locator": "Table S4 row 83",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "82",
+    "locator": "Table S4 row 86",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "chylinski2014",
+    "label": "84",
+    "locator": "Table S4 row 87",
+    "value": "NONE",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "BAY29310.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I17",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "GCL44115.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I30",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_053540473.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I35",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "CDN11863.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I60",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "AFY67257.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I65",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "AFZ13045.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I78",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "ACK66984.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I81",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_015161245.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I91",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_088892326.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I92",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_165390112.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I93",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_088893813.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I94",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_106255089.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I95",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "BAU13962.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I96",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "PSN81036.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I104",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "WP_068819945.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I105",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  },
+  {
+    "source": "ziemann2025",
+    "label": "PSB14763.1",
+    "locator": "Dataset_7(Data_of_CAST_systems)!I106",
+    "value": "NA",
+    "reason": "missing or non-sequence text"
+  }
+]

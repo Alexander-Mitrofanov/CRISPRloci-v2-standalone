@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "synthetic-evaluation-example-v1",
+  "tools": [
+    {
+      "id": "fictional-tool-a",
+      "version": "test-only",
+      "reference_id": null,
+      "predictions": [
+        {
+          "case_id": "case-1",
+          "status": "called",
+          "orientation": "+",
+          "reason": "synthetic test outcome"
+        },
+        {
+          "case_id": "case-2",
+          "status": "abstained",
+          "orientation": null,
+          "reason": "synthetic no-call"
+        },
+        {
+          "case_id": "case-3",
+          "status": "called",
+          "orientation": "-",
+          "reason": "synthetic wrong call"
+        },
+        {
+          "case_id": "unscored-case",
+          "status": "called",
+          "orientation": "+",
+          "reason": "must never be counted as validated correct"
+        }
+      ]
+    },
+    {
+      "id": "fictional-tool-b",
+      "version": "test-only",
+      "reference_id": null,
+      "predictions": [
+        {
+          "case_id": "case-1",
+          "status": "called",
+          "orientation": "-",
+          "reason": "synthetic wrong call"
+        },
+        {
+          "case_id": "case-2",
+          "status": "called",
+          "orientation": "-",
+          "reason": "synthetic test outcome"
+        },
+        {
+          "case_id": "case-3",
+          "status": "called",
+          "orientation": "+",
+          "reason": "synthetic test outcome"
+        },
+        {
+          "case_id": "case-4",
+          "status": "failed",
+          "orientation": null,
+          "reason": "synthetic execution failure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1187 @@
+[
+  {
+    "label": "Lpn",
+    "historical": {
+      "detected": true,
+      "best_rank": 5,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 5,
+      "candidate_count": 10
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Khu",
+    "historical": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 72
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 72
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ain",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cgl",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Esp1",
+    "historical": {
+      "detected": true,
+      "best_rank": 13,
+      "candidate_count": 32
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 13,
+      "candidate_count": 32
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Esp2",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Fma",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lce",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lrh",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lsp1",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lsp2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 14
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 16
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Pac",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tba",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tde",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 228
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 228
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tpu",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Vpa",
+    "historical": {
+      "detected": true,
+      "best_rank": 29,
+      "candidate_count": 64
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 29,
+      "candidate_count": 64
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Efa",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Eit",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 84
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 84
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lan",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 9
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 9
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Lmo",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 16
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 16
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sag1",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sag2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 44
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 44
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sdy",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Seq1",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Seq2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 40
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 40
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sga",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Smu",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sra",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bni",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 64
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 64
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ece",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Edo",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 56
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 56
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Fho",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Mga",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 108
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 108
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Mse",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 464
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 464
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sgo",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 100
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 100
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sma2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 145
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 145
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssa",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssi",
+    "historical": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ssu",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 104
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 104
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sth1A",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 128
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 128
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tsp",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 64
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 64
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bok",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 20
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 20
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cco",
+    "historical": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cpe",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 12
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Dde",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghc2",
+    "historical": {
+      "detected": null,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "archived_pinned": {
+      "detected": null,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy3",
+    "historical": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy4",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 84
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 84
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Gsp",
+    "historical": {
+      "detected": true,
+      "best_rank": 5,
+      "candidate_count": 80
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 5,
+      "candidate_count": 80
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Kki",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nme2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nsp",
+    "historical": {
+      "detected": true,
+      "best_rank": 83,
+      "candidate_count": 168
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 83,
+      "candidate_count": 168
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Tmo",
+    "historical": {
+      "detected": true,
+      "best_rank": 9,
+      "candidate_count": 20
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 9,
+      "candidate_count": 20
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Nsa",
+    "historical": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Jpa",
+    "historical": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 128
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 128
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Rsp",
+    "historical": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 9
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 3,
+      "candidate_count": 9
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Bbo",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 44
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 44
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cca2",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme3",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 1
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 1
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme4",
+    "historical": {
+      "detected": true,
+      "best_rank": 88,
+      "candidate_count": 176
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 88,
+      "candidate_count": 176
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Csa",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghc1",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghe",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 1
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 1
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghh1",
+    "historical": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 2,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghh2",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy1",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 44
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 44
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Msc",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Sdo",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Spa",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 232
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 232
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cca1",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 192
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 192
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cga",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Cme1",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ffr",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Ghy2",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 0
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Orh",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 4
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 4
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Phi",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Psp",
+    "historical": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 40
+    },
+    "archived_pinned": {
+      "detected": false,
+      "best_rank": null,
+      "candidate_count": 40
+    },
+    "gained": false,
+    "lost": false
+  },
+  {
+    "label": "Wvi",
+    "historical": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "archived_pinned": {
+      "detected": true,
+      "best_rank": 1,
+      "candidate_count": 8
+    },
+    "gained": false,
+    "lost": false
+  }
+]

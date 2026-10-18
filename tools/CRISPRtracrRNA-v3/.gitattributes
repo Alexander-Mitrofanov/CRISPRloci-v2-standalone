@@ -1,0 +1,3 @@
+# Model, fixture and provenance hashes require byte-preserving checkouts.
+# Keep the authored line endings instead of inheriting core.autocrlf conversions.
+* -text

@@ -1,0 +1,38 @@
+{
+  "schema": {
+    "name": "CRISPRidentify-report",
+    "version": "1.2.0"
+  },
+  "source": {
+    "id": "future_genome",
+    "header": "future_genome example",
+    "file_name": "future_genome.fa",
+    "length": 12,
+    "sha256": "5c6a650ff081787232ffc2057ac5b923e9337eb04b2653eb4a7d702ea3d20ba7",
+    "sha256_scope": "uppercase_sequence"
+  },
+  "results": {
+    "crispr_arrays": [
+      {
+        "array_id": "future-1",
+        "classification": "high confidence",
+        "repeat": {"consensus": "AACCGGTTAACCGGTTAACCGGTT"},
+        "direction": "new-undocumented-label",
+        "spacer_sequences": [
+          {"oriented_sequence": "AAAACCCCGGGGTTTTAAAA"},
+          {"oriented_sequence": "CCCCGGGGAAAATTTTCCCC"}
+        ]
+      },
+      {
+        "array_id": "future-2",
+        "classification": "Possible",
+        "repeat": {"consensus": "AACCGGTTAACCGGTTAACCGGTT"},
+        "direction": "Forward",
+        "spacer_sequences": [
+          {"oriented_sequence": "AAAACCCCGGGGTTTTAAAA"},
+          {"oriented_sequence": "TTTTGGGGCCCCAAAATTTT"}
+        ]
+      }
+    ]
+  }
+}

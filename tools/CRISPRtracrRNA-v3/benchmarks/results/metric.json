@@ -1,0 +1,8 @@
+{
+  "truth": "Unique exact match of the published oriented sequence in the supplied locus, both strands searched",
+  "localization": "Same contig and strand, >=20 nt overlap and >=50% of the shorter interval",
+  "coverage": "Maximum fraction of reference bases overlapped by a localized prediction",
+  "errors": "Counted as non-detections in the fixed mapped denominator; also reported separately",
+  "precision": "Not estimated: reference loci are not exhaustively annotated for alternative tracrRNAs",
+  "history": "Initial exploratory run counters used a looser overlap rule. This final metric uniformly rescores retained predictions from every stage."
+}

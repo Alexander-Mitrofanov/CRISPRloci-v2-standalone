@@ -1,0 +1,107 @@
+{
+  "benchmark": "synthetic-v1",
+  "tool_version": "0.1.0",
+  "python": "3.12.7",
+  "target_bases": 100000,
+  "query_occurrences": 100,
+  "query_length": 32,
+  "seed": 20260928,
+  "runs": [
+    {
+      "topology": "linear",
+      "substitutions": 0,
+      "seconds": 0.0422,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 9996900,
+        "ambiguous_windows": 0
+      }
+    },
+    {
+      "topology": "linear",
+      "substitutions": 1,
+      "seconds": 0.0652,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 9996900,
+        "ambiguous_windows": 0
+      }
+    },
+    {
+      "topology": "linear",
+      "substitutions": 2,
+      "seconds": 0.0888,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 9996900,
+        "ambiguous_windows": 0
+      }
+    },
+    {
+      "topology": "circular",
+      "substitutions": 0,
+      "seconds": 0.0424,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 10000000,
+        "ambiguous_windows": 0
+      }
+    },
+    {
+      "topology": "circular",
+      "substitutions": 1,
+      "seconds": 0.0657,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 10000000,
+        "ambiguous_windows": 0
+      }
+    },
+    {
+      "topology": "circular",
+      "substitutions": 2,
+      "seconds": 0.0885,
+      "counts": {
+        "query_occurrences": 100,
+        "eligible_queries": 100,
+        "unique_eligible_sequences": 100,
+        "targets": 1,
+        "alignment_occurrences": 100,
+        "candidate_matches": 100,
+        "excluded_array_matches": 0,
+        "assessed_windows": 10000000,
+        "ambiguous_windows": 0
+      }
+    }
+  ]
+}

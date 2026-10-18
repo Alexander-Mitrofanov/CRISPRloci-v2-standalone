@@ -1,0 +1,314 @@
+from __future__ import annotations
+
+from .errors import CCTKError
+#!/usr/bin/env python3
+
+import argparse
+import os
+import sys
+from shutil import which
+from collections import defaultdict
+
+from . import file_handling, sequence_operations
+
+description = """
+usage: cctk minced [-h] -o <path> [-i <path>] [-l <path>] [-r <path>] \
+[-s <int>] [--min-shared <int>] [-m] [-p] [--append]
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Required arguments:
+  -o, --outdir          directory for minced output and processed files
+
+Other inputs:
+  -i, --indir           input directory containing genome fastas.
+  -l, --minced-path     path to minced executable if not in PATH
+  -r, --repeats         CRISPR repeats in FASTA format
+  -s, --snp-thresh      number of SNPs to consider spacers the same. Default: 0
+  --min-shared          minimum spacers shared to draw an edge in network
+
+Specify run type:
+  -m, --run-minced      run minced to find CRISPR arrays
+  -p, --process-minced  run processing steps on minced output
+  --append              add new CRISPR data to a previous run
+"""
+
+
+def mince_it(minced_path: str, genomes_dir: str, outdir: str) -> None:
+    """Run MinCED in stable filename order without shell parsing."""
+    from pathlib import Path
+    from .process import run
+    from .io import read_fasta
+
+    folder = Path(genomes_dir)
+    if folder.is_symlink() or not folder.is_dir():
+        raise CCTKError("genome directory must be a regular directory")
+    outputs = Path(outdir) / "MINCED_OUT"
+    outputs.mkdir(parents=True, exist_ok=True)
+    files = sorted(folder.iterdir())
+    if len(files) > 200:
+        raise CCTKError("too many genome files")
+    for file in files:
+        if file.is_file() and file.suffix.lower() in {".fa", ".fna", ".fasta"}:
+            read_fasta(file)
+            accession = file.stem.replace(" ", "_")
+            run([minced_path, file, outputs / (accession + "_minced_out.txt")])
+
+
+def process_minced_out(CRISPR_types_dict, outdir, snp_thresh=0, append=False, min_shared=0):
+    """Process minced output into human-friendly/useful formats
+
+    Read in minced output files and aggregate the data into a more
+    easily analysed form.
+
+    Args:
+      CRISPR_types_dict (dict):
+        fasta dict of the repeats fasta file as returned by fasta_to_dict
+      outdir (str):
+        Path to the output directory into which minced files were saved
+        in the MINCED/ dir.
+      snp_thresh (int):
+        Maximum number of SNPs 2 spacers can have to be considered the same.
+      append (bool): is this run appending to an existing run?
+      min_shared (int): Minimum number of spacers shared between arrays to
+        draw a network edge
+
+    A dir called PROCESSED will be created and the files generated from
+    processed minced output will be stored there.
+    """
+    Minced_outdir = outdir + "MINCED_OUT/"
+    processed_out = outdir + "PROCESSED/"
+
+    if not os.path.isdir(processed_out):
+        os.mkdir(processed_out)
+
+    all_assemblies = []
+
+    for file in sorted(os.listdir(Minced_outdir)):
+        infile = Minced_outdir + file
+        all_assemblies.append(file_handling.AssemblyCRISPRs(CRISPR_types_dict, infile))
+    if append:
+        # Read in previous CRISPR_spacers.fna and reverse dict
+        prev_spacer_id_dict = {
+            v: k
+            for k, v in file_handling.fasta_to_dict(processed_out + "CRISPR_spacers.fna").items()
+        }
+
+        # Same for Array_IDs.txt if provided
+        if os.path.isfile(processed_out + "Array_seqs.txt"):
+            prev_array_dict = {
+                " ".join(v): k
+                for k, v in file_handling.read_array_file(processed_out + "Array_seqs.txt").items()
+            }
+        else:
+            prev_array_dict = {}
+
+        # Same for Array_repeats.txt if provided
+        if os.path.isfile(processed_out + "Array_repeats.txt"):
+            prev_rep_id_dict = defaultdict(list)
+            for k, v in file_handling.read_array_file(processed_out + "Array_repeats.txt").items():
+                prev_rep_id_dict[" ".join(v)].append(k)
+        else:
+            prev_rep_id_dict = defaultdict(list)
+
+        (
+            non_red_spacer_dict,
+            non_red_spacer_id_dict,
+            non_red_array_dict,
+            non_red_array_id_dict,
+            cluster_reps_dict,
+            rev_cluster_reps_dict,
+            repeat_id_lookup,
+            reps_sp_array_id_lookup,
+        ) = sequence_operations.non_redundant_CR(
+            all_assemblies,
+            snp_thresh,
+            prev_spacer_id_dict,
+            prev_array_dict,
+            prev_rep_id_dict,
+            processed_out,
+        )
+
+    else:
+        (
+            non_red_spacer_dict,
+            non_red_spacer_id_dict,
+            non_red_array_dict,
+            non_red_array_id_dict,
+            cluster_reps_dict,
+            rev_cluster_reps_dict,
+            repeat_id_lookup,
+            reps_sp_array_id_lookup,
+        ) = sequence_operations.non_redundant_CR(all_assemblies, snp_thresh, outdir=processed_out)
+
+    # Fill in spacer and array ID info
+    sequence_operations.add_ids(
+        all_assemblies,
+        non_red_spacer_id_dict,
+        non_red_array_id_dict,
+        reps_sp_array_id_lookup,
+        rev_cluster_reps_dict,
+    )
+
+    # Output summary info
+    sys.stderr.write("Total unique spacers: %i\n" % len(non_red_spacer_id_dict))
+    sys.stderr.write("Total unique arrays: %i\n" % len(non_red_array_id_dict))
+
+    # Save array files
+    file_handling.write_CRISPR_files(
+        all_assemblies,
+        non_red_spacer_id_dict,
+        non_red_array_id_dict,
+        repeat_id_lookup,
+        cluster_reps_dict,
+        processed_out,
+        append,
+        min_shared,
+    )
+
+
+def build_parser(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
+
+    req_options = parser.add_argument_group("Required arguments")
+    req_options.add_argument(
+        "-o",
+        "--outdir",
+        metavar="VALUE",
+        required=True,
+        help="directory for minced output and processed minced files",
+    )
+
+    other_options = parser.add_argument_group("Other inputs")
+    other_options.add_argument(
+        "-i",
+        "--indir",
+        metavar="VALUE",
+        required=False,
+        help="Specify the input directory containing genome fastas.",
+    )
+    other_options.add_argument(
+        "-l",
+        "--minced-path",
+        metavar="VALUE",
+        required=False,
+        default="minced",
+        help="If running minced, specify the path to the minced \
+        executable. Default is to run minced as if it were in your PATH",
+    )
+    other_options.add_argument(
+        "-r",
+        "--repeats",
+        metavar="VALUE",
+        dest="repeats_file",
+        required=False,
+        help="FASTA format file containing the CRISPR repeats you want \
+        to look for. If you don't provide one, this script will look \
+        for type 1F, 1E, and 1C repeats from Pseudomonas aeruginosa. \
+        These are used to classify arrays and orient them consistently \
+        with one another.",
+    )
+    other_options.add_argument(
+        "-s",
+        "--snp-thresh",
+        metavar="VALUE",
+        type=int,
+        default=0,
+        required=False,
+        help="Specify number of SNPs to consider spacers the same. Default: 0",
+    )
+    other_options.add_argument(
+        "--min-shared",
+        metavar="VALUE",
+        default=1,
+        type=int,
+        help="Minimum number of spacers shared to draw an edge",
+    )
+
+    run_options = parser.add_argument_group("Specify run type")
+    run_options.add_argument(
+        "-m",
+        "--run-minced",
+        action="store_true",
+        help="Indicate that you want minced to be run",
+    )
+    run_options.add_argument(
+        "-p",
+        "--process-minced",
+        action="store_true",
+        help="Indicate that you want to run processing steps on minced \
+        output",
+    )
+    run_options.add_argument(
+        "--append",
+        action="store_true",
+        help="Indicate that you want to add new CRISPR data to a previous run",
+    )
+
+    return parser
+
+
+def main(args: argparse.Namespace) -> None:
+    from .policy import validate_command
+
+    validate_command(args, "minced")
+    indir = args.indir
+    outdir = args.outdir
+
+    if indir and indir[-1] != "/":
+        indir += "/"
+    if outdir[-1] != "/":
+        outdir += "/"
+
+    if not os.path.isdir(outdir):
+        os.makedirs(outdir)
+
+    if args.append:
+        file_handling.check_append(outdir + "PROCESSED/")
+
+    if args.repeats_file:
+        crispr_types_dict = file_handling.fasta_to_dict(args.repeats_file)
+    else:
+        # Default repeats to make sure identical repeats are
+        # oriented consistently when processing minced output.
+        crispr_types_dict = {
+            "1A": "GATAATCTACTATAGAATTGAAAG",
+            "1B": "CTTTATATCCCACTACGTTCAGATAAAAC",  # Bacillus cytotoxicus
+            "1C": "GTCGCGCCCCGCACGGGCGCGTGGATTGAAAC",
+            "1D": "CTCCTAACCCCTCATGGGGTGACAGGAC",  # Thioalkalivibrio paradoxus
+            "1E": "GTGTTCCCCACGGGTGTGGGGATGAACCG",
+            "1F": "GTTCACTGCCGTGTAGGCAGCTAAGAAA",
+            "1G": "GCTTCAATGAGGCCGCGGCTAAATGCCGCGGATGAC",  # Thioalkalivibrio sulfidiphilus
+            "2A_St": "GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC",  # Streptococcus thermophilus
+            "2A_Pi": "GTTTTAGAAGAGTGTCGAATCAATATAGTTAAGATC",  # Pediococcus inopinatus. Thanks Wooje Lee, Ph.D., World Kimchi Research Institute, ROK
+            "2B": "CCAATAATCCCTCATCTAAAAATCCAACCACTGAAAC",
+            "2C": "GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC",
+            "3A_St_a": "ACCTAATTACCTCGAGAGGGGACGGAAAC",  # Streptococcus thermophilus
+            "3A_St_b": "GATATAAACCTAATTACCTCGAGAGGGGACGGAAAC",  # Streptococcus thermophilus
+            "3A_Se": "GATCGATAACCACCCCGAAGAAAAGGGGACGAGAAC",  # Staphylococcus epidermidis
+            "3B": "GTCGCACTCTACATGAGTGCGTGGATTGAAAT",  # Bacillus altitudinis
+        }
+
+    if args.run_minced:
+        if which(args.minced_path) is None:
+            raise CCTKError(
+                "ERROR: minced executable not found. \
+                To run minced you must provide the path to the \
+                minced executable."
+            )
+        mince_it(args.minced_path, indir, outdir)
+
+    if args.process_minced:
+        process_minced_out(crispr_types_dict, outdir, args.snp_thresh, args.append, args.min_shared)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Use minced to identify CRISPR arrays.")
+    parser = build_parser(parser)
+
+    if len(sys.argv) == 1:
+        parser.parse_args(["--help"])
+    else:
+        args = parser.parse_args()
+
+    main(args)

@@ -1,0 +1,163 @@
+.history-canvas {
+  max-height: 720px;
+  margin-top: 4px;
+  overflow: auto;
+  border-block: 1px solid var(--line);
+  background: white;
+  scrollbar-color: #81958c #e8ece6;
+}
+.history-canvas svg {
+  width: auto;
+  height: auto;
+  min-width: 930px;
+  display: block;
+}
+.history-tree-line {
+  stroke: #526b62;
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+}
+.history-leaf-row {
+  fill: #f5f7f2;
+  stroke: #dce1da;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.history-node {
+  fill: var(--ink);
+  stroke: white;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+.history-node.leaf {
+  fill: var(--green-bright);
+  stroke: var(--ink);
+}
+.history-node.selected {
+  fill: var(--coral);
+  stroke: var(--ink);
+  stroke-width: 3;
+}
+.history-node-target {
+  cursor: pointer;
+}
+.history-node-target:hover .history-node {
+  stroke: var(--coral);
+  stroke-width: 3;
+}
+.history-node-target:focus-visible {
+  outline: none;
+}
+.history-node-target:focus-visible .history-node {
+  stroke: var(--focus);
+  stroke-width: 4;
+}
+.history-leaf-label {
+  fill: #28483e;
+  font:
+    600 11px ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-axis-label {
+  fill: #405a52;
+  font:
+    700 10px ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.history-column-label {
+  fill: #405a52;
+  font:
+    700 8px ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-spacer {
+  stroke: rgba(24, 49, 44, 0.26);
+  stroke-width: 0.7;
+}
+.history-spacer.absent {
+  fill: #e4e8e2;
+  stroke: #d5dad4;
+}
+.history-color-0 {
+  fill: #3d8b74;
+  background: #3d8b74;
+}
+.history-color-1 {
+  fill: #d97c5f;
+  background: #d97c5f;
+}
+.history-color-2 {
+  fill: #d0a43c;
+  background: #d0a43c;
+}
+.history-color-3 {
+  fill: #6f87ad;
+  background: #6f87ad;
+}
+.history-color-4 {
+  fill: #a06fa8;
+  background: #a06fa8;
+}
+.history-color-5 {
+  fill: #67a6a2;
+  background: #67a6a2;
+}
+.history-color-6 {
+  fill: #b56767;
+  background: #b56767;
+}
+.history-color-7 {
+  fill: #788f4d;
+  background: #788f4d;
+}
+.history-color-8 {
+  fill: #cf8b3c;
+  background: #cf8b3c;
+}
+.history-color-9 {
+  fill: #5f78a1;
+  background: #5f78a1;
+}
+.history-color-10 {
+  fill: #96725d;
+  background: #96725d;
+}
+.history-color-11 {
+  fill: #528e68;
+  background: #528e68;
+}
+.history-event-badge rect {
+  fill: white;
+  stroke: #b8c2ba;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.history-event-badge text {
+  font:
+    700 9px ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-gain-text {
+  fill: #267051;
+}
+.history-loss-text {
+  fill: #a44b3f;
+}
+.root-event rect {
+  fill: #eef6e8;
+  stroke: #7ea477;
+}

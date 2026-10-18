@@ -1,0 +1,9 @@
+# Default review owner
+* @Alexander-Mitrofanov
+
+# Release, security, schema, and vendored-source boundaries
+/.github/ @Alexander-Mitrofanov
+/CITATION.cff @Alexander-Mitrofanov
+/SECURITY.md @Alexander-Mitrofanov
+/schemas/ @Alexander-Mitrofanov
+/vendor/casandra/ @Alexander-Mitrofanov

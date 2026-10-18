@@ -1,0 +1,47 @@
+{
+  "stage": "small_default",
+  "auditor_sha256": "b42f2341c3bb88836d16a9a3b18b597f41b610cd9a3ef6956791bf21cfa72d2a",
+  "status": "pass",
+  "runs": 5,
+  "totals": {
+    "predictions": 676,
+    "evidence_files": 324
+  },
+  "results": [
+    {
+      "label": "Ain",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Lsp1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Mse",
+      "predictions": 464,
+      "proposals": 0,
+      "evidence_files": 84,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Kki",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    },
+    {
+      "label": "Cca1",
+      "predictions": 192,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true
+    }
+  ]
+}

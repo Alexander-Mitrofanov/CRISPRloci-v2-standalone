@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "counts": {
+    "dinucleotide_1": 84,
+    "unchanged_dinucleotide": 0,
+    "dinucleotide_2": 84,
+    "derangement": 84,
+    "genomic": 19
+  },
+  "errors": [],
+  "manifest_sha256": "67efd2ede9053e2638de91c2646c08c157c347c13c833a8aa4a66b51725ebb55",
+  "method": "Independent direct FASTA, pair-count, ambiguity-position, seed formula, interval and donor audit; no benchmark generator imported."
+}

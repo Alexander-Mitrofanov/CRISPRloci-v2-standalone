@@ -1,0 +1,25 @@
+{
+  "auxiliary_Z": 387,
+  "biological_groups": 25,
+  "builder": "amino; seed42; default Builder settings; build_msa for multi-sequence, build for singleton",
+  "completed_at_utc": "2026-09-17T21:02:12.739493+00:00",
+  "fit_anchors": 56,
+  "hmm_sha256": "dc982a66dc835272551d5e8f549474cf1453eed23b19074dec4f5461c7de347b",
+  "input_sha256": {
+    "data/development_negative_candidates_v1.jsonl": "bbd6d1a65fe4b9d3972a67dd7008b0e6289d917fc2512ebedd2054a428ced67b",
+    "data/partition_v1/anchors.tsv": "ae4018fa663c6b6acdfd373b47b30c7472215e0edcd919fd95f42f6b98131546",
+    "data/partition_v1/groups.tsv": "a18d048dcc45c5765f3f7886b21d1a8f03d35a4b6556edae8366aef573f396ff",
+    "protocol/council_fit_lock.json": "ba33c72e5b816089feeddedf98cc2baa676d599ccb234b5f31e23c7d5aa7f8d9",
+    "scripts/build_negative_bank.py": "0f5865d098cec4430384cbc329b7d6f751466de6fa5d77ed4ff0245ce355653b"
+  },
+  "mafft_version": "v7.505 (2022/Apr/10)",
+  "metadata_sha256": "e765a3a36fa777bfd791896152e626d65322b6f043d54d21efe2d397e67c6d04",
+  "multi_sequence_profiles": 10,
+  "old_auxiliary_Z": 370,
+  "profiles": 26,
+  "pyhmmer": "0.12.1",
+  "reserved_or_fresh_outcomes_read": false,
+  "scoring_contract": "Scan only reloaded serialized HMMs at fixed Z361+K; mask families without changing search space.",
+  "single_sequence_profiles": 16,
+  "wall_seconds": 3.576604589005001
+}

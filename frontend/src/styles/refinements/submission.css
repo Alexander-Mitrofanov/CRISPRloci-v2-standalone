@@ -1,0 +1,131 @@
+.workflow {
+  overflow: clip;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.job-panel,
+.results {
+  border-radius: 0;
+}
+.mode-card {
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+.mode-card:hover,
+.mode-card.selected {
+  box-shadow: none;
+}
+.mode-top > small,
+.category-pill,
+.complete-stamp,
+.job-badge,
+.orientation-chip {
+  border-radius: var(--radius-xs);
+}
+.input-panel,
+.readiness,
+.advanced,
+.fixed-policy {
+  border-radius: var(--radius-md);
+}
+.input-panel {
+  box-shadow: none;
+}
+
+.text-button {
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-sm);
+  color: var(--action-text);
+  background: var(--paper);
+  text-decoration: none;
+}
+.text-button:hover {
+  color: var(--action-text);
+  border-color: var(--action);
+  background: var(--action-soft);
+}
+.example-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.upload-strip {
+  border-radius: var(--radius-sm);
+}
+.upload-strip:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.upload-button,
+.recovery-link button,
+.cancel-button,
+.leave-job-button {
+  border-radius: var(--radius-sm);
+}
+textarea {
+  min-height: 180px;
+  border-color: var(--line-dark);
+  border-radius: var(--radius-md);
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 0.86rem;
+}
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.input-heading p,
+.input-foot,
+.section-title small,
+.result-heading > p,
+.muted {
+  color: var(--muted);
+}
+.advanced > summary {
+  min-height: 52px;
+}
+.number-control,
+.segmented {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+.number-control {
+  grid-template-columns: 44px 48px 44px;
+}
+.number-control button,
+.segmented button {
+  min-height: 44px;
+}
+.policy-note,
+.privacy-notice,
+.submit-bar,
+.submit-error,
+.active-job-lock,
+.interpretation-note,
+.threshold-note,
+.warning-note {
+  border-radius: var(--radius-md);
+}
+
+.submit-bar {
+  box-shadow: none;
+}
+.primary-button {
+  min-height: 50px;
+  border-radius: var(--radius-sm);
+  transition: background 0.16s ease;
+}
+.primary-button:not(:disabled):hover {
+  background: var(--action-hover);
+  box-shadow: none;
+}
+.hero-action:active,
+.primary-button:not(:disabled):active,
+.upload-button:not(:disabled):active,
+.bundle-button:not(:disabled):active {
+  background: var(--action-pressed);
+  transform: translateY(0);
+}

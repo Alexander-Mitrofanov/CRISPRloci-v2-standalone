@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "path": "test_real_type_v_models_and_mo0/type-v/report.json",
+      "checks": {
+        "summary": true,
+        "record_0_predictions": true,
+        "record_0_raw_model_hits": true,
+        "record_0_raw_genomic_model_hits": true,
+        "record_0_arrays": true,
+        "record_0_short_rescue_proposals": true,
+        "predictions.fasta": true,
+        "predictions.gff3": true,
+        "summary_csv_normalized_test_root": true,
+        "manifest_hashes": true,
+        "record_json_consistency": true
+      },
+      "summary": {
+        "sequence_count": 1,
+        "prediction_count": 1
+      }
+    },
+    {
+      "path": "test_real_zero_hit_report0/negative/report.json",
+      "checks": {
+        "summary": true,
+        "record_0_predictions": true,
+        "record_0_raw_model_hits": true,
+        "record_0_raw_genomic_model_hits": true,
+        "record_0_arrays": true,
+        "record_0_short_rescue_proposals": true,
+        "predictions.fasta": true,
+        "predictions.gff3": true,
+        "summary_csv_normalized_test_root": true,
+        "manifest_hashes": true,
+        "record_json_consistency": true
+      },
+      "summary": {
+        "sequence_count": 1,
+        "prediction_count": 0
+      }
+    },
+    {
+      "path": "test_real_complete_pipeline0/complete/report.json",
+      "checks": {
+        "summary": true,
+        "record_0_predictions": true,
+        "record_0_raw_model_hits": true,
+        "record_0_raw_genomic_model_hits": true,
+        "record_0_arrays": true,
+        "record_0_short_rescue_proposals": true,
+        "predictions.fasta": true,
+        "predictions.gff3": true,
+        "summary_csv_normalized_test_root": true,
+        "manifest_hashes": true,
+        "record_json_consistency": true
+      },
+      "summary": {
+        "sequence_count": 1,
+        "prediction_count": 97
+      }
+    },
+    {
+      "path": "test_real_models_multifasta_an0/full/report.json",
+      "checks": {
+        "summary": true,
+        "record_0_predictions": true,
+        "record_0_raw_model_hits": true,
+        "record_0_raw_genomic_model_hits": true,
+        "record_0_arrays": true,
+        "record_0_short_rescue_proposals": true,
+        "predictions.fasta": true,
+        "predictions.gff3": true,
+        "summary_csv_normalized_test_root": true,
+        "manifest_hashes": true,
+        "record_json_consistency": true
+      },
+      "summary": {
+        "sequence_count": 1,
+        "prediction_count": 4
+      }
+    },
+    {
+      "path": "test_real_models_multifasta_an0/multi/report.json",
+      "checks": {
+        "summary": true,
+        "record_0_predictions": true,
+        "record_0_raw_model_hits": true,
+        "record_0_raw_genomic_model_hits": true,
+        "record_0_arrays": true,
+        "record_0_short_rescue_proposals": true,
+        "record_1_predictions": true,
+        "record_1_raw_model_hits": true,
+        "record_1_raw_genomic_model_hits": true,
+        "record_1_arrays": true,
+        "record_1_short_rescue_proposals": true,
+        "predictions.fasta": true,
+        "predictions.gff3": true,
+        "summary_csv_normalized_test_root": true,
+        "manifest_hashes": true,
+        "record_json_consistency": true
+      },
+      "summary": {
+        "sequence_count": 2,
+        "prediction_count": 2
+      }
+    }
+  ]
+}

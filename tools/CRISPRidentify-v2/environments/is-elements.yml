@@ -1,0 +1,28 @@
+name: crispridentify-is-elements
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.12
+  - c-compiler=1.11.0
+  - gcc_linux-64=14.4.0
+  - numpy=1.26.4
+  - biopython=1.86
+  - joblib=1.5.3
+  - scikit-learn=1.8.0
+  - scipy=1.17.1
+  - regex=2024.11.6
+  - vmatch=2.3.0
+  - clustalo=1.2.4
+  - prodigal=2.6.3
+  - pyrodigal=3.7.1
+  - pyhmmer=0.12.1
+  - pip=26.2
+  - setuptools=83.0.0
+  - wheel=0.47.0
+  - viennarna=2.7.0
+  - hmmer=3.4
+  - blast=2.5.0
+  # Only IS-element annotation needs the FASTA36 all-vs-all executable.
+  - fasta3=36.3.8i

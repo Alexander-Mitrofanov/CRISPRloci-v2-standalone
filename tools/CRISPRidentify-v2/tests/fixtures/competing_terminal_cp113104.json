@@ -1,0 +1,1734 @@
+{
+  "bindings": [
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/s4-source-trace-evidence.json",
+      "sha256": "b3a2546494a7cb4cce2064e13b21e958652e8b54e40b5e5c8ee0674a745b3282"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/analysis/s3-v2-eleven-v1-comparison-r2/GCF_026626005_1__NZ_CP113104_1.json.gz",
+      "sha256": "aa0f5ea409db10361acefa8fd7bc08f5f687b18bbc1dfa5b97555e5b8165ce52"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/inputs/GCF_026626005_1__NZ_CP113104_1.fna",
+      "sha256": "d57012cdf3bbbe57b7849a40ec7e9f8e5902999a1cc21f32b5d8d84386cb2f5e"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/archives/s3-v2/GCF_026626005_1__NZ_CP113104_1/attempt-6489eff68bd74c0c803d00f01153dc08/receipt.json",
+      "sha256": "91bce846c78d95c0b9a9a9389059135720e918e70007fd84cdb07e5bed9021ff"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/archives/s3-v1/GCF_026626005_1__NZ_CP113104_1/attempt-6aa89b7e3ab6408d930a7e495b029167/receipt.json",
+      "sha256": "11003d77c9a72ef979e3def90600c83c9967662c368c5da01bb3f57c397f8c3f"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/s4-design.json",
+      "sha256": "687b09e10f944beb2ae33f2fe5871f603d5b0e3ee28f46b91050ead644f27746"
+    },
+    {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/build_s4_fixture.py",
+      "sha256": "29b77c66f3cabf16f182de1354c2b69fa60b68167d51344b357e4487dd86cc56"
+    }
+  ],
+  "complete_accepted_five_object": {
+    "architecture": [
+      {
+        "index": 1,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "source_interval": {
+          "end": 92444,
+          "length": 29,
+          "start": 92416
+        },
+        "type": "repeat"
+      },
+      {
+        "index": 1,
+        "sequence": "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "source_interval": {
+          "end": 92476,
+          "length": 32,
+          "start": 92445
+        },
+        "type": "spacer"
+      },
+      {
+        "index": 2,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "source_interval": {
+          "end": 92505,
+          "length": 29,
+          "start": 92477
+        },
+        "type": "repeat"
+      },
+      {
+        "index": 2,
+        "sequence": "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "source_interval": {
+          "end": 92537,
+          "length": 32,
+          "start": 92506
+        },
+        "type": "spacer"
+      },
+      {
+        "index": 3,
+        "sequence": "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "source_interval": {
+          "end": 92566,
+          "length": 29,
+          "start": 92538
+        },
+        "type": "repeat"
+      },
+      {
+        "index": 3,
+        "sequence": "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "source_interval": {
+          "end": 92598,
+          "length": 32,
+          "start": 92567
+        },
+        "type": "spacer"
+      },
+      {
+        "index": 4,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "source_interval": {
+          "end": 92627,
+          "length": 29,
+          "start": 92599
+        },
+        "type": "repeat"
+      },
+      {
+        "index": 4,
+        "sequence": "GGGTCATCCGCGACGGCGGCCGGACTTCGCC",
+        "source_interval": {
+          "end": 92658,
+          "length": 31,
+          "start": 92628
+        },
+        "type": "spacer"
+      },
+      {
+        "index": 5,
+        "sequence": "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+        "source_interval": {
+          "end": 92687,
+          "length": 29,
+          "start": 92659
+        },
+        "type": "repeat"
+      }
+    ],
+    "boundary_assessment": {
+      "alternative_relationships": [],
+      "assessment_id": "boundary-assessment-sha256:54bd8da2b2c240d0c80eb8afd061eadf71fdbf31fd4f0c71174b9a4cb3a2c7ee",
+      "coordinate_system": {
+        "empty_spacers": {
+          "indexing": 0,
+          "name": "zero_based_interbase",
+          "one_based_inclusive_interval": null,
+          "reference": "original_input_forward_strand",
+          "representation": "interbase_boundary"
+        },
+        "internal": {
+          "end_exclusive": true,
+          "indexing": 0,
+          "name": "zero_based_half_open",
+          "reference": "original_input_forward_strand"
+        },
+        "public_nonempty_intervals": {
+          "conversion": "public_start=internal_start+1; public_end=internal_end",
+          "end_inclusive": true,
+          "indexing": 1,
+          "name": "one_based_inclusive",
+          "reference": "original_input_forward_strand"
+        }
+      },
+      "dimensions": {
+        "occurrence_path": {
+          "alternative_geometry_ids": [],
+          "dimension": "occurrence_path",
+          "reason_codes": [],
+          "reported_geometry_role": "representative",
+          "representative_geometry_id": "boundary-geometry-sha256:0dc376873ec249ff385595e884f6b75ec11e0418e1c98d89d09d072bf68e90d0",
+          "selection_policy_id": null,
+          "status": "unassessed"
+        },
+        "repeat_phase": {
+          "alternative_geometry_ids": [],
+          "dimension": "repeat_phase",
+          "reason_codes": [],
+          "reported_geometry_role": "representative",
+          "representative_geometry_id": "boundary-geometry-sha256:0dc376873ec249ff385595e884f6b75ec11e0418e1c98d89d09d072bf68e90d0",
+          "selection_policy_id": null,
+          "status": "unassessed"
+        }
+      },
+      "integration_contract": {
+        "alternative_relationship_semantics": "explicit_labeled_source_valid_geometries_only",
+        "fuzzy_family_semantics": "shared_fuzzy_family_id_is_not_alternative_evidence",
+        "internal_coordinates": "zero_based_half_open",
+        "mutation_semantics": "pure_normalization_no_candidate_category_or_pipeline_mutation",
+        "public_coordinates": "one_based_inclusive_for_nonempty_intervals_and_zero_based_interbase_for_empty_spacers",
+        "reported_geometry_semantics": "representative_never_implicitly_exact",
+        "source_hash_scope": "uppercase_sequence",
+        "source_requirement": "complete_original_input_forward_strand_sequence_is_required",
+        "status_semantics": [
+          "unassessed_means_no_explicit_alternative_was_adjudicated",
+          "policy_selected_means_policy_chose_the_representative_not_exact",
+          "ambiguous_means_one_or_more_explicit_alternatives_remain"
+        ]
+      },
+      "reported_geometry": {
+        "exact_boundary_claim": false,
+        "geometry_id": "boundary-geometry-sha256:0dc376873ec249ff385595e884f6b75ec11e0418e1c98d89d09d072bf68e90d0",
+        "repeat_count": 5,
+        "repeats": [
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92444,
+                "start": 92415
+              },
+              "length": 29,
+              "public_1based_inclusive": {
+                "end": 92444,
+                "start": 92416
+              }
+            },
+            "ordinal": 1,
+            "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+            "sha256": "1ea2043e1fe8ea79b31494a27abc80825a1a6559b8a6100f89065a1f4b18cc6b",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92505,
+                "start": 92476
+              },
+              "length": 29,
+              "public_1based_inclusive": {
+                "end": 92505,
+                "start": 92477
+              }
+            },
+            "ordinal": 2,
+            "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+            "sha256": "1ea2043e1fe8ea79b31494a27abc80825a1a6559b8a6100f89065a1f4b18cc6b",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92566,
+                "start": 92537
+              },
+              "length": 29,
+              "public_1based_inclusive": {
+                "end": 92566,
+                "start": 92538
+              }
+            },
+            "ordinal": 3,
+            "sequence": "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+            "sha256": "f484e1ced601b62e5921df68a2e371be1600240b512d26bb85f4285f93713cfe",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92627,
+                "start": 92598
+              },
+              "length": 29,
+              "public_1based_inclusive": {
+                "end": 92627,
+                "start": 92599
+              }
+            },
+            "ordinal": 4,
+            "sequence": "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+            "sha256": "d0828baee80f58e7d55d34b09b6a0807991a0c76e458a5dcebe2b5aeb518609a",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92687,
+                "start": 92658
+              },
+              "length": 29,
+              "public_1based_inclusive": {
+                "end": 92687,
+                "start": 92659
+              }
+            },
+            "ordinal": 5,
+            "sequence": "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+            "sha256": "adec3a67b63621000293793ad7cecbef86378445cc4d43504b8b8158970040b9",
+            "sha256_scope": "uppercase_source_slice"
+          }
+        ],
+        "role": "representative",
+        "source_interval": {
+          "internal_0based_half_open": {
+            "end": 92687,
+            "start": 92415
+          },
+          "length": 272,
+          "public_1based_inclusive": {
+            "end": 92687,
+            "start": 92416
+          }
+        },
+        "source_sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67",
+        "source_slice_sha256": "965282f70733c9d90c8ede96516cbe7af7ea91cc26702f116274feae368b9742",
+        "source_slice_sha256_scope": "uppercase_source_slice",
+        "spacer_count": 4,
+        "spacers": [
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92476,
+                "start": 92444
+              },
+              "length": 32,
+              "public_1based_inclusive": {
+                "end": 92476,
+                "start": 92445
+              }
+            },
+            "ordinal": 1,
+            "sequence": "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+            "sha256": "d32a69df584fab3856aa7b2dfd7b532f0f0004a7680306b844694a2e4e3a0393",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92537,
+                "start": 92505
+              },
+              "length": 32,
+              "public_1based_inclusive": {
+                "end": 92537,
+                "start": 92506
+              }
+            },
+            "ordinal": 2,
+            "sequence": "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+            "sha256": "965c284f5884f0db01c96a489bf818eef09d89c13e75217fbc72f063f978123d",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92598,
+                "start": 92566
+              },
+              "length": 32,
+              "public_1based_inclusive": {
+                "end": 92598,
+                "start": 92567
+              }
+            },
+            "ordinal": 3,
+            "sequence": "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+            "sha256": "f0540c45d9df35646efd8fa9412da39e93a312bf4cabd09f8ba600792764dcc8",
+            "sha256_scope": "uppercase_source_slice"
+          },
+          {
+            "interval": {
+              "internal_0based_half_open": {
+                "end": 92658,
+                "start": 92627
+              },
+              "length": 31,
+              "public_1based_inclusive": {
+                "end": 92658,
+                "start": 92628
+              }
+            },
+            "ordinal": 4,
+            "sequence": "GGGTCATCCGCGACGGCGGCCGGACTTCGCC",
+            "sha256": "c816ee3d98f9111808fb6bb77c7dcec3f4ff775e22161fb02ff07b6c1e5bb85d",
+            "sha256_scope": "uppercase_source_slice"
+          }
+        ]
+      },
+      "reported_geometry_role": "representative",
+      "schema": {
+        "name": "crispridentify.boundary_assessment",
+        "version": "1.0.0"
+      },
+      "source": {
+        "length": 186131,
+        "reference": "original_input_forward_strand",
+        "sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67",
+        "sha256_scope": "uppercase_sequence"
+      }
+    },
+    "category": "Possible",
+    "category_key": "possible",
+    "category_position": 0,
+    "certainty_score": 0.6155393807820525,
+    "classification_basis": {
+      "coordinate_system": "zero_based_half_open",
+      "final_category_before_source_transactions": "Possible",
+      "legacy_locus_key": [
+        92315,
+        92720
+      ],
+      "method": "model_score_band",
+      "raw_score_band": "score_0.5_to_below_0.75",
+      "structural_filter": {
+        "decision": "passed",
+        "predicate_results": [
+          {
+            "predicate": "minimum_repeat_count",
+            "status": "passed"
+          },
+          {
+            "predicate": "minimum_mean_repeat_length",
+            "status": "passed"
+          },
+          {
+            "predicate": "maximum_mean_repeat_length",
+            "status": "passed"
+          },
+          {
+            "predicate": "maximum_mean_spacer_length",
+            "status": "passed"
+          },
+          {
+            "predicate": "minimum_mean_spacer_length",
+            "status": "passed"
+          },
+          {
+            "predicate": "maximum_long_spacer_burden",
+            "status": "passed"
+          },
+          {
+            "predicate": "identical_spacer_burden",
+            "status": "passed"
+          },
+          {
+            "predicate": "spacer_terminal_dominance",
+            "status": "insufficient_sample"
+          },
+          {
+            "predicate": "repeat_terminal_columns",
+            "status": "passed"
+          },
+          {
+            "predicate": "overall_repeat_consistency",
+            "status": "passed"
+          }
+        ],
+        "structural_valid": true,
+        "terminal_dominance": {
+          "begin_dominance": 0.5,
+          "end_dominance": 0.5,
+          "maximum_allowed_dominance": 0.8,
+          "minimum_sample_size": 5,
+          "nonempty_spacer_count": 4,
+          "reason": "terminal_dominance_not_authorized_at_small_n",
+          "status": "insufficient_sample"
+        }
+      }
+    },
+    "consensus_repeat": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+    "feature_sets": [
+      {
+        "features": [
+          {
+            "name": "repeat_len",
+            "value": 29.0
+          },
+          {
+            "name": "number_repeats",
+            "value": 5.0
+          },
+          {
+            "name": "repeat_similarity",
+            "value": 0.7088437338032529
+          },
+          {
+            "name": "at_richness",
+            "value": 0.1793103448275862
+          },
+          {
+            "name": "avg_spacer_len",
+            "value": 31.75
+          },
+          {
+            "name": "spacer_similarity",
+            "value": 0.3611508827819498
+          },
+          {
+            "name": "number_mismatches",
+            "value": 7.0
+          },
+          {
+            "name": "spacer_evenness",
+            "value": -0.0
+          },
+          {
+            "name": "mfe_score",
+            "value": -13.4
+          },
+          {
+            "name": "blast_score_1",
+            "value": 25.1
+          }
+        ],
+        "model_index": 1
+      }
+    ],
+    "id": "CRISPR-92416-92687-p1",
+    "initial_competition": {
+      "candidate_geometry": [
+        [
+          92415,
+          92444
+        ],
+        [
+          92476,
+          92505
+        ],
+        [
+          92537,
+          92566
+        ],
+        [
+          92598,
+          92627
+        ],
+        [
+          92658,
+          92687
+        ]
+      ],
+      "candidate_score": 0.6155393807820525,
+      "coordinate_system": "zero_based_half_open",
+      "decision": "ranked_scope",
+      "ordinary_components": [],
+      "repair_components": [
+        {
+          "component_id": "b6da70985c0204765ee86830dd37a15373c71fd2bc66fcc76415f2e7a521e75f",
+          "direct_ordinary_component_ids": [],
+          "geometry_count": 2,
+          "source_span": [
+            92415,
+            92748
+          ],
+          "winner_geometry": [
+            [
+              92415,
+              92444
+            ],
+            [
+              92476,
+              92505
+            ],
+            [
+              92537,
+              92566
+            ],
+            [
+              92598,
+              92627
+            ],
+            [
+              92658,
+              92687
+            ]
+          ],
+          "winner_score": 0.6155393807820525
+        }
+      ],
+      "representative_rule": "maximum_score_then_legacy_stable_input_order",
+      "rule": "repair_origin_scope_fence_v1",
+      "scope_kind": "repair_only",
+      "scope_span": [
+        92415,
+        92748
+      ],
+      "tie_tolerance": 1e-12,
+      "tied_candidates": [
+        {
+          "repeat_intervals": [
+            [
+              92415,
+              92444
+            ],
+            [
+              92476,
+              92505
+            ],
+            [
+              92537,
+              92566
+            ],
+            [
+              92598,
+              92627
+            ],
+            [
+              92658,
+              92687
+            ]
+          ],
+          "score": 0.6155393807820525
+        }
+      ],
+      "unique_phase": null
+    },
+    "legacy_interval_key": [
+      92315,
+      92720
+    ],
+    "non_deleted_spacer_count": 4,
+    "orientation": {
+      "label": "Forward",
+      "status": "computed",
+      "strand": "+"
+    },
+    "repeat_count": 5,
+    "repeats": [
+      {
+        "index": 1,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "source_interval": {
+          "end": 92444,
+          "length": 29,
+          "start": 92416
+        }
+      },
+      {
+        "index": 2,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "source_interval": {
+          "end": 92505,
+          "length": 29,
+          "start": 92477
+        }
+      },
+      {
+        "index": 3,
+        "sequence": "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "source_interval": {
+          "end": 92566,
+          "length": 29,
+          "start": 92538
+        }
+      },
+      {
+        "index": 4,
+        "sequence": "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "source_interval": {
+          "end": 92627,
+          "length": 29,
+          "start": 92599
+        }
+      },
+      {
+        "index": 5,
+        "sequence": "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+        "source_interval": {
+          "end": 92687,
+          "length": 29,
+          "start": 92659
+        }
+      }
+    ],
+    "source_interval": {
+      "end": 92687,
+      "length": 272,
+      "start": 92416
+    },
+    "source_sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCGACAACGCCGTCCTCGTCATCAACCGGCGCGAAGTCGGCCCCGCGCCTGCGGGGGTTCTCCGATGTTCGGCTACCTCAACGAGTCGATCGCCACGTCGGCACCGCGCCTGCGGGAGTTCTCCGTCGACGTCGGCGAGGACGGTCTGCCAGGCGAGGTCGGCCCCGCGCCTGCGGGGGCGCTCCGGGGTCATCCGCGACGGCGGCCGGACTTCGCCGTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+    "spacer_count": 4,
+    "spacer_deletion_count": 0,
+    "spacer_deletions": [],
+    "spacers": [
+      {
+        "index": 1,
+        "sequence": "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "source_interval": {
+          "end": 92476,
+          "length": 32,
+          "start": 92445
+        }
+      },
+      {
+        "index": 2,
+        "sequence": "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "source_interval": {
+          "end": 92537,
+          "length": 32,
+          "start": 92506
+        }
+      },
+      {
+        "index": 3,
+        "sequence": "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "source_interval": {
+          "end": 92598,
+          "length": 32,
+          "start": 92567
+        }
+      },
+      {
+        "index": 4,
+        "sequence": "GGGTCATCCGCGACGGCGGCCGGACTTCGCC",
+        "source_interval": {
+          "end": 92658,
+          "length": 31,
+          "start": 92628
+        }
+      }
+    ],
+    "validation": {
+      "issues": [],
+      "method": "independent_original_sequence_slicing",
+      "source_reconstructed": true,
+      "status": "valid"
+    }
+  },
+  "complete_accepted_five_payload_sha256": "5e208d07eed76d897f369ce34e8c4e0a14c32aaae6df59cd78a9e014b176b9bb",
+  "complete_observed_rows": [
+    {
+      "record": {
+        "accepted": true,
+        "alignment_id": "2e04729e4e54dbd15da1ec5d3144cdb50f99ed3d7b69be279669e0a3c85d3b92",
+        "candidate_id": "c9df334fc945f00be72bf78fd9d697d0da31ad694c97788d02ea6430c825bbf7",
+        "candidate_origins": {
+          "current_representation_sha256": "78906a18db652d767211ec7621686f8c669e8315e59ffb489707adadcba0b760",
+          "kind": "repair_only",
+          "ordinary_birth_sha256": null,
+          "repair_births": [
+            {
+              "attestation_sha256": "fc97e6a95fe34093eae6b96b559f1dfc1cd85e4e085e087a585ddb459bc0bd59",
+              "seed_geometry": [
+                [
+                  92415,
+                  92476,
+                  92537,
+                  92598,
+                  92658
+                ],
+                [
+                  92444,
+                  92505,
+                  92566,
+                  92627,
+                  92687
+                ]
+              ],
+              "seed_representation_sha256": "78906a18db652d767211ec7621686f8c669e8315e59ffb489707adadcba0b760",
+              "source_sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67"
+            }
+          ]
+        },
+        "canonical_array_ids": [
+          "CRISPR-92416-92687-p1"
+        ],
+        "category": "Possible",
+        "category_index": 2,
+        "category_position": 0,
+        "classification_basis_method": "model_score_band",
+        "classification_eligible": true,
+        "comparison_scope_id": "c2114f7b5c6b81079c0b26e87b003cce1dc0bfbebc097a09d01ad110b3e02ce3",
+        "eligibility_reason": null,
+        "feature_repeat_count_consistent": true,
+        "feature_sets": [
+          {
+            "features": [
+              {
+                "name": "repeat_len",
+                "value": 29.0
+              },
+              {
+                "name": "number_repeats",
+                "value": 5.0
+              },
+              {
+                "name": "repeat_similarity",
+                "value": 0.7088437338032529
+              },
+              {
+                "name": "at_richness",
+                "value": 0.1793103448275862
+              },
+              {
+                "name": "avg_spacer_len",
+                "value": 31.75
+              },
+              {
+                "name": "spacer_similarity",
+                "value": 0.3611508827819498
+              },
+              {
+                "name": "number_mismatches",
+                "value": 7.0
+              },
+              {
+                "name": "spacer_evenness",
+                "value": -0.0
+              },
+              {
+                "name": "mfe_score",
+                "value": -13.4
+              },
+              {
+                "name": "blast_score_1",
+                "value": 25.1
+              }
+            ],
+            "model_index": 1
+          }
+        ],
+        "feature_values": {
+          "at_richness": 0.1793103448275862,
+          "avg_spacer_len": 31.75,
+          "blast_score_1": 25.1,
+          "mfe_score": -13.4,
+          "number_mismatches": 7.0,
+          "number_repeats": 5.0,
+          "repeat_len": 29.0,
+          "repeat_similarity": 0.7088437338032529,
+          "spacer_evenness": -0.0,
+          "spacer_similarity": 0.3611508827819498
+        },
+        "gapped_repeats": [
+          "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+          "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+          "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+          "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+          "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG"
+        ],
+        "initial_competition": {
+          "candidate_geometry": [
+            [
+              92415,
+              92444
+            ],
+            [
+              92476,
+              92505
+            ],
+            [
+              92537,
+              92566
+            ],
+            [
+              92598,
+              92627
+            ],
+            [
+              92658,
+              92687
+            ]
+          ],
+          "candidate_score": 0.6155393807820525,
+          "coordinate_system": "zero_based_half_open",
+          "decision": "ranked_scope",
+          "ordinary_components": [],
+          "repair_components": [
+            {
+              "component_id": "b6da70985c0204765ee86830dd37a15373c71fd2bc66fcc76415f2e7a521e75f",
+              "direct_ordinary_component_ids": [],
+              "geometry_count": 2,
+              "source_span": [
+                92415,
+                92748
+              ],
+              "winner_geometry": [
+                [
+                  92415,
+                  92444
+                ],
+                [
+                  92476,
+                  92505
+                ],
+                [
+                  92537,
+                  92566
+                ],
+                [
+                  92598,
+                  92627
+                ],
+                [
+                  92658,
+                  92687
+                ]
+              ],
+              "winner_score": 0.6155393807820525
+            }
+          ],
+          "representative_rule": "maximum_score_then_legacy_stable_input_order",
+          "rule": "repair_origin_scope_fence_v1",
+          "scope_kind": "repair_only",
+          "scope_span": [
+            92415,
+            92748
+          ],
+          "tie_tolerance": 1e-12,
+          "tied_candidates": [
+            {
+              "repeat_intervals": [
+                [
+                  92415,
+                  92444
+                ],
+                [
+                  92476,
+                  92505
+                ],
+                [
+                  92537,
+                  92566
+                ],
+                [
+                  92598,
+                  92627
+                ],
+                [
+                  92658,
+                  92687
+                ]
+              ],
+              "score": 0.6155393807820525
+            }
+          ],
+          "unique_phase": null
+        },
+        "legacy_locus_key": [
+          92315,
+          92720
+        ],
+        "negative_evidence": {
+          "accepted_family_tandem_review": null,
+          "accepted_family_tandem_review_status": "not_recorded",
+          "final_classification_method": "model_score_band",
+          "tags": []
+        },
+        "observation_id": "bf4f0d062d874f559da4da54906856e785762b002add5812abbb63b0c1f157d0",
+        "record_type": "candidate",
+        "repeat_count": 5,
+        "repeat_intervals": [
+          [
+            92415,
+            92444
+          ],
+          [
+            92476,
+            92505
+          ],
+          [
+            92537,
+            92566
+          ],
+          [
+            92598,
+            92627
+          ],
+          [
+            92658,
+            92687
+          ]
+        ],
+        "score": 0.6155393807820525,
+        "score_origin": "existing_final_row",
+        "source_geometry_id": "0052e63a45f9bdb56b9309d266d62e748aba6f1baa75b118d35ae2f5c4041d20",
+        "source_path_provenance": {
+          "derivations": {},
+          "record_count": 0
+        },
+        "source_span": [
+          92415,
+          92687
+        ],
+        "source_valid": true,
+        "structural_filter": {
+          "decision": "passed",
+          "predicate_results": [
+            {
+              "predicate": "minimum_repeat_count",
+              "status": "passed"
+            },
+            {
+              "predicate": "minimum_mean_repeat_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_mean_repeat_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_mean_spacer_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "minimum_mean_spacer_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_long_spacer_burden",
+              "status": "passed"
+            },
+            {
+              "predicate": "identical_spacer_burden",
+              "status": "passed"
+            },
+            {
+              "predicate": "spacer_terminal_dominance",
+              "status": "insufficient_sample"
+            },
+            {
+              "predicate": "repeat_terminal_columns",
+              "status": "passed"
+            },
+            {
+              "predicate": "overall_repeat_consistency",
+              "status": "passed"
+            }
+          ],
+          "structural_valid": true,
+          "terminal_dominance": {
+            "begin_dominance": 0.5,
+            "end_dominance": 0.5,
+            "maximum_allowed_dominance": 0.8,
+            "minimum_sample_size": 5,
+            "nonempty_spacer_count": 4,
+            "reason": "terminal_dominance_not_authorized_at_small_n",
+            "status": "insufficient_sample"
+          }
+        }
+      },
+      "record_payload_sha256": "6a7e58f2f3aaf1fd09d74dd43ee04074c8e656188a614e7a0b55fd29a62e0b57",
+      "role": "accepted_five",
+      "source_repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG"
+      ],
+      "source_spacers": [
+        "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "GGGTCATCCGCGACGGCGGCCGGACTTCGCC"
+      ],
+      "source_span_sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCGACAACGCCGTCCTCGTCATCAACCGGCGCGAAGTCGGCCCCGCGCCTGCGGGGGTTCTCCGATGTTCGGCTACCTCAACGAGTCGATCGCCACGTCGGCACCGCGCCTGCGGGAGTTCTCCGTCGACGTCGGCGAGGACGGTCTGCCAGGCGAGGTCGGCCCCGCGCCTGCGGGGGCGCTCCGGGGTCATCCGCGACGGCGGCCGGACTTCGCCGTCGGTCTCGCGCCTGCGGGGGTGCTCCG"
+    },
+    {
+      "record": {
+        "accepted": false,
+        "alignment_id": "c268b529b893a7e40567d63dfa647bf561e71ee00bdae57ba76c95f6bb76d033",
+        "candidate_id": "35508f3e406bc62b7b01ec45cf0e44218c475d15a4dbaed3545d97dd34a96fc1",
+        "candidate_origins": {
+          "current_representation_sha256": "2ca7848c58235dd7c896488aae0a2cf188e6d86717beeecf166d6ad3972b3faf",
+          "kind": "repair_only",
+          "ordinary_birth_sha256": null,
+          "repair_births": [
+            {
+              "attestation_sha256": "fc97e6a95fe34093eae6b96b559f1dfc1cd85e4e085e087a585ddb459bc0bd59",
+              "seed_geometry": [
+                [
+                  92415,
+                  92476,
+                  92537,
+                  92598,
+                  92658
+                ],
+                [
+                  92444,
+                  92505,
+                  92566,
+                  92627,
+                  92687
+                ]
+              ],
+              "seed_representation_sha256": "78906a18db652d767211ec7621686f8c669e8315e59ffb489707adadcba0b760",
+              "source_sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67"
+            }
+          ]
+        },
+        "canonical_array_ids": [],
+        "category": "Possible Discarded",
+        "category_index": 3,
+        "category_position": 229,
+        "classification_basis_method": "model_score_band",
+        "classification_eligible": true,
+        "comparison_scope_id": "c2114f7b5c6b81079c0b26e87b003cce1dc0bfbebc097a09d01ad110b3e02ce3",
+        "eligibility_reason": null,
+        "feature_repeat_count_consistent": true,
+        "feature_sets": [
+          {
+            "features": [
+              {
+                "name": "repeat_len",
+                "value": 29.0
+              },
+              {
+                "name": "number_repeats",
+                "value": 6.0
+              },
+              {
+                "name": "repeat_similarity",
+                "value": 0.6801896261356984
+              },
+              {
+                "name": "at_richness",
+                "value": 0.16666666666666666
+              },
+              {
+                "name": "avg_spacer_len",
+                "value": 31.8
+              },
+              {
+                "name": "spacer_similarity",
+                "value": 0.3524453451325303
+              },
+              {
+                "name": "number_mismatches",
+                "value": 10.0
+              },
+              {
+                "name": "spacer_evenness",
+                "value": -0.0
+              },
+              {
+                "name": "mfe_score",
+                "value": -13.4
+              },
+              {
+                "name": "blast_score_1",
+                "value": 25.1
+              }
+            ],
+            "model_index": 1
+          }
+        ],
+        "feature_values": {
+          "at_richness": 0.16666666666666666,
+          "avg_spacer_len": 31.8,
+          "blast_score_1": 25.1,
+          "mfe_score": -13.4,
+          "number_mismatches": 10.0,
+          "number_repeats": 6.0,
+          "repeat_len": 29.0,
+          "repeat_similarity": 0.6801896261356984,
+          "spacer_evenness": -0.0,
+          "spacer_similarity": 0.3524453451325303
+        },
+        "gapped_repeats": [
+          "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+          "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+          "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+          "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+          "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+          "GTCGGCCCCGCGCCCGCGGGGGTGCTCCC"
+        ],
+        "legacy_locus_key": [
+          92315,
+          92720
+        ],
+        "negative_evidence": {
+          "accepted_family_tandem_review": null,
+          "accepted_family_tandem_review_status": "not_recorded",
+          "final_classification_method": "model_score_band",
+          "tags": []
+        },
+        "observation_id": "8312f1b10f87e6efa5d0d718eb6537882489dafd70e3fe396676c91973c82b2b",
+        "record_type": "candidate",
+        "repeat_count": 6,
+        "repeat_intervals": [
+          [
+            92415,
+            92444
+          ],
+          [
+            92476,
+            92505
+          ],
+          [
+            92537,
+            92566
+          ],
+          [
+            92598,
+            92627
+          ],
+          [
+            92658,
+            92687
+          ],
+          [
+            92719,
+            92748
+          ]
+        ],
+        "score": 0.5540780107828767,
+        "score_origin": "existing_final_row",
+        "source_geometry_id": "1c4cbcce4455d837bda95ed26bf495c61fc64f05b05ad3d9d5c413dddb258d11",
+        "source_path_provenance": {
+          "derivations": {},
+          "record_count": 0
+        },
+        "source_span": [
+          92415,
+          92748
+        ],
+        "source_valid": true,
+        "structural_filter": {
+          "decision": "passed",
+          "predicate_results": [
+            {
+              "predicate": "minimum_repeat_count",
+              "status": "passed"
+            },
+            {
+              "predicate": "minimum_mean_repeat_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_mean_repeat_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_mean_spacer_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "minimum_mean_spacer_length",
+              "status": "passed"
+            },
+            {
+              "predicate": "maximum_long_spacer_burden",
+              "status": "passed"
+            },
+            {
+              "predicate": "identical_spacer_burden",
+              "status": "passed"
+            },
+            {
+              "predicate": "spacer_terminal_dominance",
+              "status": "passed"
+            },
+            {
+              "predicate": "repeat_terminal_columns",
+              "status": "passed"
+            },
+            {
+              "predicate": "overall_repeat_consistency",
+              "status": "passed"
+            }
+          ],
+          "structural_valid": true,
+          "terminal_dominance": {
+            "begin_dominance": 0.4,
+            "end_dominance": 0.4,
+            "maximum_allowed_dominance": 0.8,
+            "minimum_sample_size": 5,
+            "nonempty_spacer_count": 5,
+            "reason": "terminal_base_dominance_within_threshold",
+            "status": "passed"
+          }
+        }
+      },
+      "record_payload_sha256": "bf06ef46d2c15712efa37c2b30fe3f25c2be3fb3194c02e4e023bee98fefb0fd",
+      "role": "unaccepted_six",
+      "source_repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+        "GTCGGCCCCGCGCCCGCGGGGGTGCTCCC"
+      ],
+      "source_spacers": [
+        "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "GGGTCATCCGCGACGGCGGCCGGACTTCGCC",
+        "CGCGCCACGCAGGACCACTTGGCGCACCTGTT"
+      ],
+      "source_span_sequence": "GTCGGCCCCGCGCCTGCGGGGGTTCTCCGACAACGCCGTCCTCGTCATCAACCGGCGCGAAGTCGGCCCCGCGCCTGCGGGGGTTCTCCGATGTTCGGCTACCTCAACGAGTCGATCGCCACGTCGGCACCGCGCCTGCGGGAGTTCTCCGTCGACGTCGGCGAGGACGGTCTGCCAGGCGAGGTCGGCCCCGCGCCTGCGGGGGCGCTCCGGGGTCATCCGCGACGGCGGCCGGACTTCGCCGTCGGTCTCGCGCCTGCGGGGGTGCTCCGCGCGCCACGCAGGACCACTTGGCGCACCTGTTGTCGGCCCCGCGCCCGCGGGGGTGCTCCC"
+    }
+  ],
+  "coordinate_system": "zero_based_half_open",
+  "current_receipt": {
+    "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/archives/s3-v2/GCF_026626005_1__NZ_CP113104_1/attempt-6489eff68bd74c0c803d00f01153dc08/receipt.json",
+    "sha256": "91bce846c78d95c0b9a9a9389059135720e918e70007fd84cdb07e5bed9021ff"
+  },
+  "current_sidecar_equivalence_to_bound_v1": {
+    "all_rows_exact": true,
+    "original_sidecar_member_binding": {
+      "member_sha256_from_sealed_index": "4ae7d0cbe49b1f5b76a03b07ec9afff9d0cee5f63aa1fa8041a67326495b0911",
+      "name": "output/NZ_CP113104/candidate_evidence.jsonl.gz"
+    },
+    "typed_candidate_evidence_digest_equal": true,
+    "whole_retained_rows": 2721
+  },
+  "current_source_manifest_sha256": "feed42a45b4c08e6a5daf41cf33f759e6ed097fdaac0b3714c138727f21811e5",
+  "exact_terminal_relation": {
+    "absolute_search_key": [
+      92315,
+      92720
+    ],
+    "accepted_intervals_exact": true,
+    "accepted_to_competing_indexes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "added_absolute_intervals": [
+      [
+        92719,
+        92748
+      ]
+    ],
+    "diagnostic_identity_to_each_existing_source_copy": [
+      0.896551724137931,
+      0.896551724137931,
+      0.8275862068965517,
+      0.896551724137931,
+      0.8620689655172413
+    ],
+    "identity_is_diagnostic_not_acceptance_cutoff": true,
+    "left_added_indexes": [],
+    "preceding_spacer_length": 32,
+    "right_added_indexes": [
+      5
+    ]
+  },
+  "expected_disclosure_only_observables": {
+    "accepted_count_gain": 0,
+    "accepted_five_count": 5,
+    "accepted_five_score": 0.6155393807820525,
+    "accepted_occurrence_gain": 0,
+    "known_negative_status": "not_recorded, not passed",
+    "new_generator_needed": false,
+    "retained_six_count": 6,
+    "retained_six_score": 0.5540780107828767,
+    "six_remains_unaccepted": true
+  },
+  "limits": [
+    "Own features/scores are stored native observations, not extraction from the cropped source.",
+    "No native/model/validator/predictor run or archive replay in this fixture builder.",
+    "Complete actual rows preserve original absolute origins and source SHA; convenience local views are synthetic coordinate translations.",
+    "Do not infer the exact upstream generator or invent history from final repair seed/provenance summaries.",
+    "Empty recorded tags and not_recorded tandem review provide no comprehensive negative clearance.",
+    "Both-tool correspondence is not biological truth; no mandatory six-copy promotion.",
+    "Separate25-array guard is identified by full-object/proof hashes and exact geometry, not a synthetic local candidate."
+  ],
+  "parent_source_length": 186131,
+  "parent_source_sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67",
+  "purpose": "Source-bound disclosure-only fixture; complete accepted5/unaccepted6 retained observations and source window. No new biological acceptance or negative clearance.",
+  "sample_id": "GCF_026626005_1__NZ_CP113104_1",
+  "schema": "CP113104-S4-observed-terminal-extent-regression-fixture-v1",
+  "separate_25_array_guard": {
+    "absolute_interval": [
+      69279,
+      70772
+    ],
+    "category": "Bona-fide",
+    "complete_accepted_object_sha256": "3bbc6b150e883ec903a37475e9cfe8fe22b527129797e3193deb8dca8212a0bc",
+    "complete_reconstruction_proof_sha256": "dbc0e3fa9b9690f82199b162ba8eb0d32228f11a9e6ddbe50ac68b11bd566794",
+    "expectation": "Separate S3 24-to25 array must retain its accepted geometry/own score/source/proof; new explicit disclosure fields, if any, are separately reviewable.",
+    "id": "CRISPR-69280-70772-bf2",
+    "not_inside_fixture_source_window": true,
+    "own_score": 0.8257233812899251,
+    "parent_source_sha256": "48239247368493f4134357d2f007230e2d646e58c5284e3f02719b2a80f37c67",
+    "repeat_count": 25,
+    "repeat_intervals": [
+      [
+        69279,
+        69307
+      ],
+      [
+        69340,
+        69368
+      ],
+      [
+        69401,
+        69429
+      ],
+      [
+        69463,
+        69491
+      ],
+      [
+        69524,
+        69552
+      ],
+      [
+        69585,
+        69613
+      ],
+      [
+        69646,
+        69674
+      ],
+      [
+        69707,
+        69735
+      ],
+      [
+        69768,
+        69796
+      ],
+      [
+        69829,
+        69857
+      ],
+      [
+        69890,
+        69918
+      ],
+      [
+        69951,
+        69979
+      ],
+      [
+        70012,
+        70040
+      ],
+      [
+        70073,
+        70101
+      ],
+      [
+        70134,
+        70162
+      ],
+      [
+        70195,
+        70223
+      ],
+      [
+        70256,
+        70284
+      ],
+      [
+        70317,
+        70345
+      ],
+      [
+        70378,
+        70406
+      ],
+      [
+        70439,
+        70467
+      ],
+      [
+        70500,
+        70528
+      ],
+      [
+        70561,
+        70589
+      ],
+      [
+        70622,
+        70650
+      ],
+      [
+        70683,
+        70711
+      ],
+      [
+        70744,
+        70772
+      ]
+    ],
+    "repeat_strings_sha256": "521db56b13c5c03819dc1101c7be44469c25566d3254a447e71365531a8fd844",
+    "sample_id": "GCF_026626005_1__NZ_CP113104_1",
+    "source_span_sha256": "fbe84fb76c7a9a69af6d43d7878c08cde01e7504162a78333a47407b78ea09cb"
+  },
+  "source_window": {
+    "absolute_interval": [
+      92300,
+      92850
+    ],
+    "absolute_offset": 92300,
+    "length": 550,
+    "sequence": "CTCCTCACCGGCCTCGGCCCCTCCCGCGCCTACGGCTGCGGCCTGCTCACCCTCGCCCCACTGCCCGGACAGCAGACCTGAACCATGGCCGACATCTGGTGGAAAGCCGACCCGCGTCGGCCCCGCGCCTGCGGGGGTTCTCCGACAACGCCGTCCTCGTCATCAACCGGCGCGAAGTCGGCCCCGCGCCTGCGGGGGTTCTCCGATGTTCGGCTACCTCAACGAGTCGATCGCCACGTCGGCACCGCGCCTGCGGGAGTTCTCCGTCGACGTCGGCGAGGACGGTCTGCCAGGCGAGGTCGGCCCCGCGCCTGCGGGGGCGCTCCGGGGTCATCCGCGACGGCGGCCGGACTTCGCCGTCGGTCTCGCGCCTGCGGGGGTGCTCCGCGCGCCACGCAGGACCACTTGGCGCACCTGTTGTCGGCCCCGCGCCCGCGGGGGTGCTCCCTTTCCCTGGCGTACGGCGTCGGGGAGCCAGCGGTTGGCCCGGCCGACTGGCAGTCGCCCTCCGGGGCGGCCGCAGATCGCAACCGCCCGGCAGGGGAAACCC",
+    "sequence_sha256": "2d5b2600d93fb6582d9a80164af0876f4883bff90f8e0a4a1bcfb9b487456f3a"
+  },
+  "synthetic_local_construction_views": [
+    {
+      "gapped_repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG"
+      ],
+      "local_search_key": [
+        15,
+        420
+      ],
+      "observed_category": "Possible",
+      "observed_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "origin_handling": "Original candidate_origins and initial_competition stay in complete_observed_rows at absolute coordinates/source SHA. Do not copy them as valid local-source attestations. Any synthetic test origin must be independently labelled synthetic.",
+      "original_record_payload_sha256": "6a7e58f2f3aaf1fd09d74dd43ee04074c8e656188a614e7a0b55fd29a62e0b57",
+      "repeat_intervals": [
+        [
+          115,
+          144
+        ],
+        [
+          176,
+          205
+        ],
+        [
+          237,
+          266
+        ],
+        [
+          298,
+          327
+        ],
+        [
+          358,
+          387
+        ]
+      ],
+      "repeat_starts": [
+        115,
+        176,
+        237,
+        298,
+        358
+      ],
+      "repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG"
+      ],
+      "role": "accepted_five",
+      "semantics": "Coordinate-translated convenience data for synthetic local test construction; not an observed native row or historical origin attestation.",
+      "spacers": [
+        "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "GGGTCATCCGCGACGGCGGCCGGACTTCGCC"
+      ],
+      "stored_feature_sets": [
+        {
+          "features": [
+            {
+              "name": "repeat_len",
+              "value": 29.0
+            },
+            {
+              "name": "number_repeats",
+              "value": 5.0
+            },
+            {
+              "name": "repeat_similarity",
+              "value": 0.7088437338032529
+            },
+            {
+              "name": "at_richness",
+              "value": 0.1793103448275862
+            },
+            {
+              "name": "avg_spacer_len",
+              "value": 31.75
+            },
+            {
+              "name": "spacer_similarity",
+              "value": 0.3611508827819498
+            },
+            {
+              "name": "number_mismatches",
+              "value": 7.0
+            },
+            {
+              "name": "spacer_evenness",
+              "value": -0.0
+            },
+            {
+              "name": "mfe_score",
+              "value": -13.4
+            },
+            {
+              "name": "blast_score_1",
+              "value": 25.1
+            }
+          ],
+          "model_index": 1
+        }
+      ],
+      "stored_features": {
+        "at_richness": 0.1793103448275862,
+        "avg_spacer_len": 31.75,
+        "blast_score_1": 25.1,
+        "mfe_score": -13.4,
+        "number_mismatches": 7.0,
+        "number_repeats": 5.0,
+        "repeat_len": 29.0,
+        "repeat_similarity": 0.7088437338032529,
+        "spacer_evenness": -0.0,
+        "spacer_similarity": 0.3611508827819498
+      },
+      "stored_own_score": 0.6155393807820525
+    },
+    {
+      "gapped_repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+        "GTCGGCCCCGCGCCCGCGGGGGTGCTCCC"
+      ],
+      "local_search_key": [
+        15,
+        420
+      ],
+      "observed_category": "Possible Discarded",
+      "observed_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "origin_handling": "Original candidate_origins and initial_competition stay in complete_observed_rows at absolute coordinates/source SHA. Do not copy them as valid local-source attestations. Any synthetic test origin must be independently labelled synthetic.",
+      "original_record_payload_sha256": "bf06ef46d2c15712efa37c2b30fe3f25c2be3fb3194c02e4e023bee98fefb0fd",
+      "repeat_intervals": [
+        [
+          115,
+          144
+        ],
+        [
+          176,
+          205
+        ],
+        [
+          237,
+          266
+        ],
+        [
+          298,
+          327
+        ],
+        [
+          358,
+          387
+        ],
+        [
+          419,
+          448
+        ]
+      ],
+      "repeat_starts": [
+        115,
+        176,
+        237,
+        298,
+        358,
+        419
+      ],
+      "repeats": [
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGTTCTCCG",
+        "GTCGGCACCGCGCCTGCGGGAGTTCTCCG",
+        "GTCGGCCCCGCGCCTGCGGGGGCGCTCCG",
+        "GTCGGTCTCGCGCCTGCGGGGGTGCTCCG",
+        "GTCGGCCCCGCGCCCGCGGGGGTGCTCCC"
+      ],
+      "role": "unaccepted_six",
+      "semantics": "Coordinate-translated convenience data for synthetic local test construction; not an observed native row or historical origin attestation.",
+      "spacers": [
+        "ACAACGCCGTCCTCGTCATCAACCGGCGCGAA",
+        "ATGTTCGGCTACCTCAACGAGTCGATCGCCAC",
+        "TCGACGTCGGCGAGGACGGTCTGCCAGGCGAG",
+        "GGGTCATCCGCGACGGCGGCCGGACTTCGCC",
+        "CGCGCCACGCAGGACCACTTGGCGCACCTGTT"
+      ],
+      "stored_feature_sets": [
+        {
+          "features": [
+            {
+              "name": "repeat_len",
+              "value": 29.0
+            },
+            {
+              "name": "number_repeats",
+              "value": 6.0
+            },
+            {
+              "name": "repeat_similarity",
+              "value": 0.6801896261356984
+            },
+            {
+              "name": "at_richness",
+              "value": 0.16666666666666666
+            },
+            {
+              "name": "avg_spacer_len",
+              "value": 31.8
+            },
+            {
+              "name": "spacer_similarity",
+              "value": 0.3524453451325303
+            },
+            {
+              "name": "number_mismatches",
+              "value": 10.0
+            },
+            {
+              "name": "spacer_evenness",
+              "value": -0.0
+            },
+            {
+              "name": "mfe_score",
+              "value": -13.4
+            },
+            {
+              "name": "blast_score_1",
+              "value": 25.1
+            }
+          ],
+          "model_index": 1
+        }
+      ],
+      "stored_features": {
+        "at_richness": 0.16666666666666666,
+        "avg_spacer_len": 31.8,
+        "blast_score_1": 25.1,
+        "mfe_score": -13.4,
+        "number_mismatches": 10.0,
+        "number_repeats": 6.0,
+        "repeat_len": 29.0,
+        "repeat_similarity": 0.6801896261356984,
+        "spacer_evenness": -0.0,
+        "spacer_similarity": 0.3524453451325303
+      },
+      "stored_own_score": 0.5540780107828767
+    }
+  ]
+}

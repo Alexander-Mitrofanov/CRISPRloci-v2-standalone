@@ -1,0 +1,30 @@
+CasAndra
+Copyright 2026 CasAndra contributors
+
+This vendored copy is licensed under the Apache License, Version 2.0. See
+LICENSE and UPSTREAM_LICENSE_NOTICE in this directory.
+
+CRISPRidentify downstream modifications, 2026:
+
+- fail-closed model bundle, artifact size, and SHA-256 verification;
+- deterministic profile-family evidence in prediction records;
+- hierarchy-consistent protein classifications that preserve independent-head
+  winners as raw evidence and explicitly mark masked conflicts;
+- hierarchy-consistent final cassette classifications after direct-profile or
+  architecture classification, with preserved raw claims, normalized gating,
+  and an explicit per-run masked-conflict count;
+- a type-aware genome evidence gate for subtype-null Type VII candidates, with
+  `type_vote_fraction` confidence and `direct_profile_type_aggregation`;
+- exact Python/runtime constraints for the supported CRISPRidentify v2
+  environment; and
+- downstream version 0.1.0.dev0+crispridentify.3.
+
+These changes are not an official upstream CasAndra release.
+
+The bundled classification/profile data cite Makarova et al., Nature
+Microbiology (2025), DOI 10.1038/s41564-025-02180-8. The associated reference
+release is archived at DOI 10.5281/zenodo.17388109 under CC BY 4.0. CasAndra
+transforms the reference material through profile selection and construction,
+metadata normalization, negative-profile selection, and a deployment refit.
+See VENDORING.json and ../../THIRD_PARTY_NOTICES.md for the full provenance
+and modification statement.

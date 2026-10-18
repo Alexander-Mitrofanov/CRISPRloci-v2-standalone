@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "isescan-v2"
+version = "2.0.0"
+description = "Offline, source-bound ISEScan context reports"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = ["numpy>=1.24,<2", "scipy>=1.10,<2", "biopython>=1.81,<2", "fastcluster==1.2.6"]
+[project.scripts]
+isescan-v2 = "isescan_v2.__main__:main"
+[tool.setuptools]
+packages = ["isescan_v2"]
+[tool.setuptools.package-data]
+isescan_v2 = ["native/*.py", "native/pHMMs/*", "native/ssw201507/*.c", "native/ssw201507/*.h", "native/ssw201507/*.txt"]

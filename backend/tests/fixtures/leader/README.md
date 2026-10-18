@@ -1,0 +1,1 @@
+Context regression fixture captured from CRISPRidentify 9706d9b and CRISPRleader da7b4d6 on the first record of deploy/fixtures/verification-related-isolates.fasta. Window length 37. This checks software contracts and source reconstruction, not biological leader prediction. Tests use these files without any scientific runtime or predecessor directory.

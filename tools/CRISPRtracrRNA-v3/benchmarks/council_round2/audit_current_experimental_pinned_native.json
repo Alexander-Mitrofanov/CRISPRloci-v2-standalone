@@ -1,0 +1,646 @@
+{
+  "stage": "current_experimental_pinned_native",
+  "auditor_sha256": "ac47bd91aec881528a15285a75ac45cd73f7839049dc7bfb2966ed3ff14cb0dc",
+  "comparison_stage": "current_default_pinned_native",
+  "status": "pass",
+  "runs": 79,
+  "totals": {
+    "predictions": 3406,
+    "evidence_files": 5261,
+    "proposals": 66
+  },
+  "results": [
+    {
+      "label": "Lpn",
+      "predictions": 10,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Khu",
+      "predictions": 72,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ain",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cgl",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Esp1",
+      "predictions": 32,
+      "proposals": 4,
+      "evidence_files": 91,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Esp2",
+      "predictions": 4,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Fma",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Lce",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Lrh",
+      "predictions": 8,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Lsp1",
+      "predictions": 4,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Lsp2",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Pac",
+      "predictions": 12,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Tba",
+      "predictions": 8,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Tde",
+      "predictions": 228,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Tpu",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Vpa",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Efa",
+      "predictions": 8,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Eit",
+      "predictions": 85,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 83
+    },
+    {
+      "label": "Lan",
+      "predictions": 10,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 9
+    },
+    {
+      "label": "Lmo",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sag1",
+      "predictions": 4,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sag2",
+      "predictions": 44,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sdy",
+      "predictions": 12,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Seq1",
+      "predictions": 12,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Seq2",
+      "predictions": 40,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sga",
+      "predictions": 13,
+      "proposals": 2,
+      "evidence_files": 91,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 8
+    },
+    {
+      "label": "Smu",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sra",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Bni",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ece",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Edo",
+      "predictions": 56,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Fho",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Mga",
+      "predictions": 108,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Mse",
+      "predictions": 464,
+      "proposals": 0,
+      "evidence_files": 84,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sgo",
+      "predictions": 100,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sma2",
+      "predictions": 145,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ssa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ssi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ssu",
+      "predictions": 104,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sth1A",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Tsp",
+      "predictions": 64,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Bok",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cco",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cpe",
+      "predictions": 12,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Dde",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghc2",
+      "predictions": 0,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghy3",
+      "predictions": 8,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghy4",
+      "predictions": 84,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Gsp",
+      "predictions": 80,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Kki",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Nme2",
+      "predictions": 4,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Nsp",
+      "predictions": 168,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Tmo",
+      "predictions": 20,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Nsa",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Jpa",
+      "predictions": 128,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Rsp",
+      "predictions": 9,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Bbo",
+      "predictions": 44,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cca2",
+      "predictions": 0,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cme2",
+      "predictions": 4,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cme3",
+      "predictions": 2,
+      "proposals": 4,
+      "evidence_files": 72,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 1
+    },
+    {
+      "label": "Cme4",
+      "predictions": 176,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Csa",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghc1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghe",
+      "predictions": 1,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghh1",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghh2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghy1",
+      "predictions": 44,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Msc",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Sdo",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Spa",
+      "predictions": 232,
+      "proposals": 0,
+      "evidence_files": 72,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Cca1",
+      "predictions": 193,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 192
+    },
+    {
+      "label": "Cga",
+      "predictions": 9,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 8
+    },
+    {
+      "label": "Cme1",
+      "predictions": 1,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ffr",
+      "predictions": 1,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Ghy2",
+      "predictions": 1,
+      "proposals": 2,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Orh",
+      "predictions": 5,
+      "proposals": 4,
+      "evidence_files": 91,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 4
+    },
+    {
+      "label": "Phi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    },
+    {
+      "label": "Psp",
+      "predictions": 41,
+      "proposals": 2,
+      "evidence_files": 79,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 40
+    },
+    {
+      "label": "Wvi",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60,
+      "baseline_projection_equal": true,
+      "export_id_shifts": 0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/xiezhq/ISEScan",
+  "tag": "v1.7.3",
+  "revision": "83a74eccb0eef89674e1e49fba31cb4cab29018f",
+  "license": "Apache-2.0",
+  "models": {
+    "clusters.single.faa": "da7b2b67f57394cca9c8952c21cfbf5077aaf3aabf38cefd285f0d702e234295",
+    "clusters.faa.hmm": "f5de1bf92059e39f66490340f1d4e585df3c4b63c79e92c74cf387d23b0007db"
+  },
+  "excluded_from_import": [
+    "publication/",
+    "precompiled binaries",
+    "__pycache__"
+  ]
+}

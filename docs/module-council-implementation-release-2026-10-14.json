@@ -1,0 +1,395 @@
+{
+  "build_environment": [
+    {
+      "name": "hatchling",
+      "version": "1.27.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pathspec",
+      "version": "1.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "24.2"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0"
+    },
+    {
+      "name": "trove-classifiers",
+      "version": "2026.9.21.13"
+    },
+    {
+      "name": "wheel",
+      "version": "0.45.1"
+    }
+  ],
+  "date": "2026-10-14",
+  "frontend": {
+    "production_build": "passed in scripts/check.sh",
+    "public_bundle_scan": "passed in scripts/check.sh",
+    "source_file_count": 299,
+    "source_inventory_sha256": "3d53e0ef49bd4f1da29d1b412baf2556a22d67f314fb5323eb85143f0e50643f",
+    "version": "2.13.0"
+  },
+  "installed_verification": {
+    "application_editable_pth_processing": "disabled using Python -S; only dependency site-packages appended",
+    "application_tests": {
+      "passed": 52,
+      "skip_scope": "optional native opt-in",
+      "skipped": 1
+    },
+    "clinker_tests": {
+      "passed": 12
+    },
+    "defensefinder_controls": {
+      "ambient_score_override": "rejected before execution",
+      "clean_score": 2.0,
+      "empty_gene": {
+        "components": 0,
+        "genes": 0,
+        "hits": 0,
+        "sources": 1,
+        "systems": 0
+      },
+      "multisource": {
+        "components": 4,
+        "genes": 84,
+        "hits": 10,
+        "sources": 2,
+        "systems": 2
+      },
+      "negative": {
+        "components": 0,
+        "genes": 1,
+        "hits": 0,
+        "sources": 1,
+        "systems": 0
+      },
+      "positive": {
+        "components": 2,
+        "genes": 42,
+        "hits": 5,
+        "sources": 1,
+        "systems": 1
+      }
+    },
+    "dependency_policy": "existing isolated dependency contexts reused; no existing environment changed",
+    "evor_control": {
+      "deletion_rate_bdm_corrected": 178.3636532476069,
+      "deletion_rate_bdm_uncorrected": 176.0564278897817,
+      "deletions": 23,
+      "event_exports_without_plotting": true,
+      "insertions": 53,
+      "ln_lh_bdm": -86.05356422673457,
+      "ln_lh_idm": -92.56640631991151,
+      "lrt": 13.025684186353885,
+      "prediction": "ND"
+    },
+    "evor_spacerplacer_isolation": "evOr wheel target and evOr dependency environment only; SpacerPlacer Python package not loaded",
+    "execution_directory": "outside the checkout in a temporary package verification stage",
+    "module_paths": "relative to that package verification stage",
+    "rna_control": {
+      "caller_environment_preserved": true,
+      "counts": {
+        "alignment_columns": 36,
+        "mfe_pairs": 12,
+        "retained_probabilities": 14,
+        "sources": 4,
+        "unique_sequences": 3
+      },
+      "mafft_version": "7.526",
+      "raw_override_marker_positive_control": true,
+      "repaired_run_override_executed": false
+    },
+    "source_pythonpath_absent": true,
+    "worker_entrypoint": "metadata callable loaded; no worker loop started"
+  },
+  "release_prerequisites": {
+    "disk_free_bytes": 7272890368,
+    "disk_total_bytes": 502392610816,
+    "expected_toolset_id": "3079f97d7bc4b4f39147931c52cfe1034e892e4d68bac1a7fe39e8b89df8e896",
+    "expected_toolset_present": false,
+    "release_directory_unchanged": true,
+    "runtime_ready": false,
+    "supported_release_builder": "rejected missing matching toolset before release creation",
+    "tool_count": 17
+  },
+  "repository_gate": {
+    "browser_flows_passed": 9,
+    "browser_scope": "intercepted fixtures; separate from native controls",
+    "command": "scripts/check.sh",
+    "eslint": "passed",
+    "frontend_passed": 404,
+    "frontend_test_files": 43,
+    "prettier": "passed",
+    "production_build": "passed",
+    "public_bundle_scan": "passed",
+    "python_optional_native_skipped": 70,
+    "python_passed": 1480,
+    "ruff": "passed",
+    "source_boundaries": "passed",
+    "status": "passed"
+  },
+  "runtime_ready": false,
+  "schema": "crisprloci.council-package-verification",
+  "source_identity_algorithm": "sha256 of UTF-8 JSON inventory mapping relative paths to file-byte SHA-256; keys sorted, separators comma and colon, no trailing newline",
+  "source_snapshot_method": {
+    "applications": "runtime.common.source_inventory copy, byte verified",
+    "native_tools": "runtime.common.export_repository at exact tools.lock.json commit; Git archive bytes"
+  },
+  "sources": {
+    "DefenseFinder-v2": {
+      "commit": "f579941ca35fb4bd26fcd4c35fcffc23df9d91a2",
+      "file_count": 78,
+      "inventory_sha256": "7a3a47284f6071034ba4e7af57eb143178ba6a288eda8da448e83e737a365d7a",
+      "version": "2.0.1"
+    },
+    "Integration": {
+      "file_count": 51,
+      "inventory_sha256": "6993510a6bb5207690dadc2c70b89aa0a1fa49753af3ebb3f380755bddfb7c7a",
+      "version": "0.15.0"
+    },
+    "RNAalifold-v2": {
+      "commit": "0498c888203ba7bd6a8e6c6e35a27229adc61d1e",
+      "file_count": 17,
+      "inventory_sha256": "b5867e1104a72c6f556d64ab1f8b84e7775d579cbb8a1bc5ec7e1317f36067fb",
+      "version": "1.0.1"
+    },
+    "backend": {
+      "file_count": 864,
+      "inventory_sha256": "12f09cd59ffb802ca5c054565518e880bfb8341896c6f4fedba40b15d3f84608",
+      "version": "2.13.0"
+    },
+    "clinker-v2": {
+      "commit": "249881b31c5a062ef47efd9c061b00a2831f8a63",
+      "file_count": 57,
+      "inventory_sha256": "45f0fe698df1a75c8c04f4b12a62432ab041f8d6b32ab71fb57107db0ce430af",
+      "version": "2.0.1"
+    },
+    "evOr": {
+      "commit": "c46f6f9be2ef80f26168197d25a50b6fd645a24e",
+      "file_count": 154,
+      "inventory_sha256": "8ff549eed894cec334792fa1a42d9bc3e640a3f89c4e27cf2e0335d54a9239e0",
+      "version": "1.0.4"
+    }
+  },
+  "status": "package-verification-only",
+  "tool_lock_sha256": "864ccd99c4cc4fd17e2618ad95f5bb1ca2f198eb068fd2304b2e3266ece98f38",
+  "toolset_id": "3079f97d7bc4b4f39147931c52cfe1034e892e4d68bac1a7fe39e8b89df8e896",
+  "version": "1.0.0",
+  "wheels": [
+    {
+      "bytes": 7102658,
+      "distribution": "crispr-evor",
+      "entry_points": [
+        "[console_scripts]",
+        "crispr-evor = crispr_evor:cli"
+      ],
+      "filename": "crispr_evor-1.0.4-py3-none-linux_x86_64.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": true,
+        "installed": "evOr",
+        "modules": {
+          "crispr_evor": "installed/evOr/crispr_evor.py",
+          "sp_model": "installed/evOr/sp_model/__init__.py"
+        },
+        "pythonpath": [
+          "installed/evOr"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "1.0.4"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/evOr.log",
+      "installed_probe_log_sha256": "ed42c056da9dd3c27e1a05d4b4dbe044468ad720a319993d2fcf30af712e85a5",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 40,
+      "package_payload_sha256": "638bc3ddabc21fb7400f41dfd70b372fafc0cf38ea6091fdee9925d88f4a7b8d",
+      "python_files_verified": 32,
+      "sha256": "6716a7617417ded35cdd4b3e6d2e6d83d217935b008d07a9cd66185741ec93cf",
+      "source": "evOr",
+      "version": "1.0.4"
+    },
+    {
+      "bytes": 102279,
+      "distribution": "crispr-tool-integration",
+      "entry_points": [
+        "[console_scripts]",
+        "crispr-tools = crispr_integration.cli:main"
+      ],
+      "filename": "crispr_tool_integration-0.15.0-py3-none-any.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": true,
+        "installed": "Integration",
+        "modules": {
+          "crispr_integration": "installed/Integration/crispr_integration/__init__.py"
+        },
+        "pythonpath": [
+          "installed/Integration"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "0.15.0"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/Integration.log",
+      "installed_probe_log_sha256": "4bdd3da3623befcb9fdef7b2b423e92ee1159a59c4e1e09e953f29dde6d67b9d",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 31,
+      "package_payload_sha256": "65dfe6aa962a91ae01d46b11a39176da91733a96b72b88fb8c502d5da142e566",
+      "python_files_verified": 30,
+      "sha256": "9248b1bc850d3c341b0e58a50c407b826143a359a32bc2649a2ab7facfe61954",
+      "source": "Integration",
+      "version": "0.15.0"
+    },
+    {
+      "bytes": 255935,
+      "distribution": "crispr-web-backend",
+      "entry_points": [
+        "[console_scripts]",
+        "crispr-web-cleanup = crispr_web.cleanup:main",
+        "crispr-web-worker = crispr_web.worker:main"
+      ],
+      "filename": "crispr_web_backend-2.13.0-py3-none-any.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": false,
+        "installed": "backend",
+        "modules": {
+          "crispr_integration": "installed/Integration/crispr_integration/__init__.py",
+          "crispr_web": "installed/backend/crispr_web/__init__.py"
+        },
+        "pythonpath": [
+          "installed/backend",
+          "installed/Integration"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "2.13.0"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/backend.log",
+      "installed_probe_log_sha256": "9b69beb41af2b979ed565058a0a4701d180ce73533832d241b59860fbc868832",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 141,
+      "package_payload_sha256": "ca06596459682b1713de422e5a51eed884f2b761746c2937bd1c1ac4d89f6b15",
+      "python_files_verified": 137,
+      "sha256": "fefc28e4ae0bb129802b8cdfe712d47a78abc2a19c0388a64e488be6fa36c239",
+      "source": "backend",
+      "version": "2.13.0"
+    },
+    {
+      "bytes": 206710,
+      "distribution": "crisprloci-clinker",
+      "entry_points": [
+        "[console_scripts]",
+        "clinker = clinker.main:main",
+        "clinker-v2 = clinker.bounded:main"
+      ],
+      "filename": "crisprloci_clinker-2.0.1-py3-none-any.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": true,
+        "installed": "clinker-v2",
+        "modules": {
+          "clinker": "installed/clinker-v2/clinker/__init__.py"
+        },
+        "pythonpath": [
+          "installed/clinker-v2"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "2.0.1"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/clinker-v2.log",
+      "installed_probe_log_sha256": "618b506028fc068f0749538a1ec2e4ee630618372008ea47fc6849e1c6c30738",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 13,
+      "package_payload_sha256": "ccf85e47cf53a043efd4f8ad74e34ce928015bea353cd174b6c6bdcac47faa87",
+      "python_files_verified": 7,
+      "sha256": "51851837041d8f778a3e61c4dc88c32143202398df7ba8eca5b8a78e2c7e0fa1",
+      "source": "clinker-v2",
+      "version": "2.0.1"
+    },
+    {
+      "bytes": 73357,
+      "distribution": "crisprloci-defense-context",
+      "entry_points": [
+        "[console_scripts]",
+        "defense-context = defense_context.pipeline:main"
+      ],
+      "filename": "crisprloci_defense_context-2.0.1-py3-none-any.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": true,
+        "installed": "DefenseFinder-v2",
+        "modules": {
+          "defense_context": "installed/DefenseFinder-v2/defense_context/__init__.py"
+        },
+        "pythonpath": [
+          "installed/DefenseFinder-v2"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "2.0.1"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/DefenseFinder-v2.log",
+      "installed_probe_log_sha256": "f45dc5ac082686e9448993059479a489091b5716e6b66a31422af73850ef0764",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 4,
+      "package_payload_sha256": "94783a92f2a20a20c31554d8b81cc6ba5689b6694357a97237d327cb3b255628",
+      "python_files_verified": 3,
+      "sha256": "82c01d79310e9d83bc3cf70e6aeb1d905d62cbcac3cdfd234e38c6dc63761010",
+      "source": "DefenseFinder-v2",
+      "version": "2.0.1"
+    },
+    {
+      "bytes": 14202,
+      "distribution": "rnaalifold-v2",
+      "entry_points": [
+        "[console_scripts]",
+        "rnaalifold-v2 = rna_family_tool.cli:main"
+      ],
+      "filename": "rnaalifold_v2-1.0.1-py3-none-any.whl",
+      "installed_identity": {
+        "cwd_outside_checkout": true,
+        "entrypoint_callable": true,
+        "entrypoint_help": true,
+        "installed": "RNAalifold-v2",
+        "modules": {
+          "rna_family_tool": "installed/RNAalifold-v2/rna_family_tool/__init__.py"
+        },
+        "pythonpath": [
+          "installed/RNAalifold-v2"
+        ],
+        "source_pythonpath_absent": true,
+        "version": "1.0.1"
+      },
+      "installed_probe": "passed",
+      "installed_probe_log": "verification/RNAalifold-v2.log",
+      "installed_probe_log_sha256": "89cf3f9deebf70933a9e9f686f7369fe83250dfafa3a67a97e96cbc21b845bab",
+      "installed_python_files_match": true,
+      "package_payload_files_verified": 3,
+      "package_payload_sha256": "d4fc87df0ff4cb7cf8ef2361512d0927737996f18f15b0d18f19a10a49d4b0fa",
+      "python_files_verified": 3,
+      "sha256": "57e5770d68b55fc9fa8fa45bec7f5740a0467287009417afc60fd970a1fa471d",
+      "source": "RNAalifold-v2",
+      "version": "1.0.1"
+    }
+  ]
+}

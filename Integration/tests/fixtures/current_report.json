@@ -1,0 +1,63 @@
+{
+  "schema": {
+    "name": "CRISPRidentify-report",
+    "version": "1.1.0"
+  },
+  "coordinate_system": {
+    "indexing": 1,
+    "end_inclusive": true,
+    "reference": "input_forward_strand",
+    "orientation_is_separate": true
+  },
+  "source": {
+    "id": "genome_A",
+    "header": "genome_A example",
+    "file_name": "genome_A.fa",
+    "length": 12,
+    "sha256": "5c6a650ff081787232ffc2057ac5b923e9337eb04b2653eb4a7d702ea3d20ba7",
+    "sha256_scope": "uppercase_sequence"
+  },
+  "arrays": [
+    {
+      "id": "CRISPR-10-120-bf1",
+      "category": "Bona-fide",
+      "consensus_repeat": "GTTCACTGCCGTACAGGCAGCTTAGAAA",
+      "orientation": {
+        "status": "computed",
+        "label": "Forward",
+        "strand": "+"
+      },
+      "spacers": [
+        {"index": 1, "sequence": "ACGTACGTACGTACGTACGT"},
+        {"index": 2, "sequence": "TTGCAATGCAATGCAATGCA"}
+      ]
+    },
+    {
+      "id": "CRISPR-300-420-p1",
+      "category": "Possible",
+      "consensus_repeat": "GTTCACTGCCGTACAGGCAGCTTAGAAA",
+      "orientation": {
+        "status": "computed",
+        "label": "Reverse",
+        "strand": "-"
+      },
+      "spacers": [
+        {"index": 1, "sequence": "ACGTACGTACGTACGTACGT"},
+        {"index": 2, "sequence": "GGGGAAAACCCCTTTTGGGG"}
+      ]
+    },
+    {
+      "id": "CRISPR-500-610-ls1",
+      "category": "Low score",
+      "consensus_repeat": "GTTCACTGCCGTACAGGCAGCTTAGAAA",
+      "orientation": {
+        "status": "not_computed",
+        "label": "Orientation was not computed",
+        "strand": null
+      },
+      "spacers": [
+        {"index": 1, "sequence": "ACGTACGTACGTACGTACGT"}
+      ]
+    }
+  ]
+}

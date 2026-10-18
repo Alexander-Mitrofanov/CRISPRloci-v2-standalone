@@ -1,0 +1,20 @@
+{
+  "archive": "compact_model.npz",
+  "archive_sha256": "31bd118515ecfeee7392451ac94267466f8b8f6d8807897d6a4e4b15ade4c544",
+  "feature_schema": [
+    "repeat_len",
+    "number_repeats",
+    "repeat_similarity",
+    "at_richness",
+    "avg_spacer_len",
+    "spacer_similarity",
+    "number_mismatches",
+    "spacer_evenness",
+    "mfe_score",
+    "blast_score_1"
+  ],
+  "format": "CRISPRidentify-portable-hist-gradient-booster",
+  "node_count": 9150,
+  "tree_count": 150,
+  "version": 1
+}

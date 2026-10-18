@@ -1,0 +1,550 @@
+stage	label	reference_id	mapping_status	status	detected	best_rank	reference_coverage	candidate_count	model_rescue_count	error	best_origin
+baseline/complete	Lpn	gasiunas2020_000064	exact_unique	success	True	4	0.9562043795620438	8	0		legacy_candidate
+baseline/complete	Khu	gasiunas2020_000065	exact_unique	success	True	3	1.0	72	0		legacy_candidate
+baseline/complete	Ain	gasiunas2020_000066	exact_unique	success	False		0.0	4	0		
+baseline/complete	Cgl	gasiunas2020_000067	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Esp1	gasiunas2020_000068	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Esp1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Esp1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Esp2	gasiunas2020_000069	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Esp2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Esp2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Fma	gasiunas2020_000070	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Lce	gasiunas2020_000071	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Lrh	gasiunas2020_000072	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Lsp1	gasiunas2020_000073	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Lsp1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Lsp1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Lsp2	gasiunas2020_000074	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Lsp2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Lsp2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Pac	gasiunas2020_000075	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+baseline/complete	Tba	gasiunas2020_000076	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Tde	gasiunas2020_000077	exact_unique	success	True	1	1.0	228	0		legacy_candidate
+baseline/complete	Tpu	gasiunas2020_000078	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+baseline/complete	Vpa	gasiunas2020_000079	exact_unique	success	True	29	1.0	64	0		legacy_candidate
+baseline/complete	Efa	gasiunas2020_000080	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Eit	gasiunas2020_000081	exact_unique	success	True	1	1.0	84	0		legacy_candidate
+baseline/complete	Lan	gasiunas2020_000082	exact_unique	success	False		0.0	8	0		
+baseline/complete	Lmo	gasiunas2020_000083	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+baseline/complete	Sag1	gasiunas2020_000084	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sag1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sag1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Sag2	gasiunas2020_000085	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sag2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sag2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Sdy	gasiunas2020_000086	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Seq1	gasiunas2020_000087	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Seq1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Seq1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Seq2	gasiunas2020_000088	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Seq2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Seq2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Sga	gasiunas2020_000089	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Smu	gasiunas2020_000090	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+baseline/complete	Sra	gasiunas2020_000091	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Bni	gasiunas2020_000092	exact_unique	success	True	1	1.0	70	0		legacy_candidate
+baseline/complete	Ece	gasiunas2020_000093	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Edo	gasiunas2020_000094	exact_unique	success	True	1	1.0	56	0		legacy_candidate
+baseline/complete	Fho	gasiunas2020_000095	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Mga	gasiunas2020_000096	exact_unique	success	True	1	1.0	108	0		legacy_candidate
+baseline/complete	Mse	gasiunas2020_000097	exact_unique	success	True	1	1.0	468	0		legacy_candidate
+baseline/complete	Sgo	gasiunas2020_000098	exact_unique	success	True	1	1.0	100	0		legacy_candidate
+baseline/complete	Sma2	gasiunas2020_000099	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sma2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sma2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ssa	gasiunas2020_000100	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Ssi	gasiunas2020_000101	exact_unique	success	True	3	1.0	4	0		legacy_candidate
+baseline/complete	Ssu	gasiunas2020_000102	exact_unique	success	True	1	1.0	104	0		legacy_candidate
+baseline/complete	Sth1A	gasiunas2020_000103	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sth1A/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Sth1A/work/f000001.s000001/repeats.fastx***
+"	
+baseline/complete	Tsp	gasiunas2020_000104	exact_unique	success	True	1	1.0	64	0		legacy_candidate
+baseline/complete	Bok	gasiunas2020_000105	exact_unique	success	True	1	1.0	20	0		legacy_candidate
+baseline/complete	Cco	gasiunas2020_000106	exact_unique	success	True	3	1.0	8	0		legacy_candidate
+baseline/complete	Cpe	gasiunas2020_000107	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+baseline/complete	Dde	gasiunas2020_000108	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Ghc2	gasiunas2020_000109	unmatched	error			0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghc2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghc2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ghy3	gasiunas2020_000110	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy3/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy3/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ghy4	gasiunas2020_000111	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy4/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy4/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Gsp	gasiunas2020_000112	exact_unique	success	True	5	1.0	82	0		legacy_candidate
+baseline/complete	Kki	gasiunas2020_000113	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Nme2	gasiunas2020_000114	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Nme2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Nme2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Nsp	gasiunas2020_000115	exact_unique	success	True	83	1.0	168	0		legacy_candidate
+baseline/complete	Tmo	gasiunas2020_000116	exact_unique	success	True	9	0.9632352941176471	20	0		legacy_candidate
+baseline/complete	Nsa	gasiunas2020_000117	exact_unique	success	True	2	1.0	4	0		legacy_candidate
+baseline/complete	Jpa	gasiunas2020_000118	exact_unique	success	True	3	0.9813084112149533	128	0		legacy_candidate
+baseline/complete	Rsp	gasiunas2020_000119	exact_unique	success	False		0.0	8	0		
+baseline/complete	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	44	0		
+baseline/complete	Cca2	gasiunas2020_000121	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cca2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cca2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Cme2	gasiunas2020_000122	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Cme3	gasiunas2020_000123	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme3/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme3/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Cme4	gasiunas2020_000124	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme4/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme4/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Csa	gasiunas2020_000125	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Ghc1	gasiunas2020_000126	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghc1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghc1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ghe	gasiunas2020_000127	exact_unique	success	False		0.0	0	0		
+baseline/complete	Ghh1	gasiunas2020_000128	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghh1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghh1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ghh2	gasiunas2020_000129	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghh2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghh2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ghy1	gasiunas2020_000130	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Msc	gasiunas2020_000131	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+baseline/complete	Sdo	gasiunas2020_000132	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+baseline/complete	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.968421052631579	232	0		legacy_candidate
+baseline/complete	Cca1	gasiunas2020_000134	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cca1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cca1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	8	0		
+baseline/complete	Cme1	gasiunas2020_000136	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme1/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Cme1/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	0	0		
+baseline/complete	Ghy2	gasiunas2020_000138	exact_unique	error	False		0.0	0	0	"/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36 exited 1. See /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy2/work/f000001.s000001/logs/0003.stderr.log
+
+***[/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36]  cannot open library /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/baseline/complete/Ghy2/work/f000001.s000001/repeats.fastax***
+"	
+baseline/complete	Orh	gasiunas2020_000139	exact_unique	success	False		0.0	4	0		
+baseline/complete	Phi	gasiunas2020_000140	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+baseline/complete	Psp	gasiunas2020_000141	exact_unique	success	False		0.0	40	0		
+baseline/complete	Wvi	gasiunas2020_000142	exact_unique	success	True	1	0.956140350877193	8	0		legacy_candidate
+baseline/genomic_models	Lpn	gasiunas2020_000064	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Khu	gasiunas2020_000065	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Ain	gasiunas2020_000066	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Cgl	gasiunas2020_000067	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Esp1	gasiunas2020_000068	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Esp2	gasiunas2020_000069	exact_unique	success	False		0.0	12	0		
+baseline/genomic_models	Fma	gasiunas2020_000070	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Lce	gasiunas2020_000071	exact_unique	success	True	1	0.6551724137931034	2	0		legacy_candidate
+baseline/genomic_models	Lrh	gasiunas2020_000072	exact_unique	success	True	1	0.672	1	0		legacy_candidate
+baseline/genomic_models	Lsp1	gasiunas2020_000073	exact_unique	success	True	1	0.656	1	0		legacy_candidate
+baseline/genomic_models	Lsp2	gasiunas2020_000074	exact_unique	success	True	1	0.6722689075630253	10	0		legacy_candidate
+baseline/genomic_models	Pac	gasiunas2020_000075	exact_unique	success	True	1	0.4748201438848921	4	0		legacy_candidate
+baseline/genomic_models	Tba	gasiunas2020_000076	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Tde	gasiunas2020_000077	exact_unique	success	False		0.0	3	0		
+baseline/genomic_models	Tpu	gasiunas2020_000078	exact_unique	success	True	1	0.34615384615384615	10	0		legacy_candidate
+baseline/genomic_models	Vpa	gasiunas2020_000079	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Efa	gasiunas2020_000080	exact_unique	success	True	1	0.5957446808510638	2	0		legacy_candidate
+baseline/genomic_models	Eit	gasiunas2020_000081	exact_unique	success	True	1	0.5494505494505495	3	0		legacy_candidate
+baseline/genomic_models	Lan	gasiunas2020_000082	exact_unique	success	True	1	0.5858585858585859	1	0		legacy_candidate
+baseline/genomic_models	Lmo	gasiunas2020_000083	exact_unique	success	True	1	0.5283018867924528	2	0		legacy_candidate
+baseline/genomic_models	Sag1	gasiunas2020_000084	exact_unique	success	True	1	0.49523809523809526	4	0		legacy_candidate
+baseline/genomic_models	Sag2	gasiunas2020_000085	exact_unique	success	True	1	0.52	2	0		legacy_candidate
+baseline/genomic_models	Sdy	gasiunas2020_000086	exact_unique	success	True	1	0.5730337078651685	5	0		legacy_candidate
+baseline/genomic_models	Seq1	gasiunas2020_000087	exact_unique	success	True	1	0.5851063829787234	3	0		legacy_candidate
+baseline/genomic_models	Seq2	gasiunas2020_000088	exact_unique	success	True	1	0.5913978494623656	3	0		legacy_candidate
+baseline/genomic_models	Sga	gasiunas2020_000089	exact_unique	success	True	1	0.6304347826086957	5	0		legacy_candidate
+baseline/genomic_models	Smu	gasiunas2020_000090	exact_unique	success	True	1	0.5824175824175825	4	0		legacy_candidate
+baseline/genomic_models	Sra	gasiunas2020_000091	exact_unique	success	True	1	0.5824175824175825	5	0		legacy_candidate
+baseline/genomic_models	Bni	gasiunas2020_000092	exact_unique	success	True	1	0.5	8	0		legacy_candidate
+baseline/genomic_models	Ece	gasiunas2020_000093	exact_unique	success	True	1	0.5697674418604651	7	0		legacy_candidate
+baseline/genomic_models	Edo	gasiunas2020_000094	exact_unique	success	True	1	0.5465116279069767	2	0		legacy_candidate
+baseline/genomic_models	Fho	gasiunas2020_000095	exact_unique	success	True	1	0.5681818181818182	2	0		legacy_candidate
+baseline/genomic_models	Mga	gasiunas2020_000096	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Mse	gasiunas2020_000097	exact_unique	success	True	1	0.6185567010309279	7	0		legacy_candidate
+baseline/genomic_models	Sgo	gasiunas2020_000098	exact_unique	success	True	1	0.5681818181818182	4	0		legacy_candidate
+baseline/genomic_models	Sma2	gasiunas2020_000099	exact_unique	success	True	1	0.5777777777777777	4	0		legacy_candidate
+baseline/genomic_models	Ssa	gasiunas2020_000100	exact_unique	success	True	1	0.6071428571428571	4	0		legacy_candidate
+baseline/genomic_models	Ssi	gasiunas2020_000101	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Ssu	gasiunas2020_000102	exact_unique	success	True	1	0.5975609756097561	2	0		legacy_candidate
+baseline/genomic_models	Sth1A	gasiunas2020_000103	exact_unique	success	True	1	0.6071428571428571	1	0		legacy_candidate
+baseline/genomic_models	Tsp	gasiunas2020_000104	exact_unique	success	True	1	0.525	5	0		legacy_candidate
+baseline/genomic_models	Bok	gasiunas2020_000105	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Cco	gasiunas2020_000106	exact_unique	success	False		0.0	5	0		
+baseline/genomic_models	Cpe	gasiunas2020_000107	exact_unique	success	True	1	0.6043956043956044	5	0		legacy_candidate
+baseline/genomic_models	Dde	gasiunas2020_000108	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Ghc2	gasiunas2020_000109	unmatched	success			0.0	0	0		
+baseline/genomic_models	Ghy3	gasiunas2020_000110	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Ghy4	gasiunas2020_000111	exact_unique	success	True	1	0.6262626262626263	1	0		legacy_candidate
+baseline/genomic_models	Gsp	gasiunas2020_000112	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Kki	gasiunas2020_000113	exact_unique	success	False		0.0	4	0		
+baseline/genomic_models	Nme2	gasiunas2020_000114	exact_unique	success	True	1	0.6388888888888888	3	0		legacy_candidate
+baseline/genomic_models	Nsp	gasiunas2020_000115	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Tmo	gasiunas2020_000116	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Nsa	gasiunas2020_000117	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Jpa	gasiunas2020_000118	exact_unique	success	True	1	0.514018691588785	2	0		legacy_candidate
+baseline/genomic_models	Rsp	gasiunas2020_000119	exact_unique	success	True	1	0.6185567010309279	3	0		legacy_candidate
+baseline/genomic_models	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Cca2	gasiunas2020_000121	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Cme2	gasiunas2020_000122	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Cme3	gasiunas2020_000123	exact_unique	success	True	1	0.6236559139784946	1	0		legacy_candidate
+baseline/genomic_models	Cme4	gasiunas2020_000124	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Csa	gasiunas2020_000125	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Ghc1	gasiunas2020_000126	exact_unique	success	False		0.0	1	0		
+baseline/genomic_models	Ghe	gasiunas2020_000127	exact_unique	success	True	1	0.6354166666666666	1	0		legacy_candidate
+baseline/genomic_models	Ghh1	gasiunas2020_000128	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Ghh2	gasiunas2020_000129	exact_unique	success	True	1	0.4380165289256198	1	0		legacy_candidate
+baseline/genomic_models	Ghy1	gasiunas2020_000130	exact_unique	success	True	1	0.6513761467889908	2	0		legacy_candidate
+baseline/genomic_models	Msc	gasiunas2020_000131	exact_unique	success	True	1	0.5510204081632653	9	0		legacy_candidate
+baseline/genomic_models	Sdo	gasiunas2020_000132	exact_unique	success	False		0.0	0	0		
+baseline/genomic_models	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.6105263157894737	5	0		legacy_candidate
+baseline/genomic_models	Cca1	gasiunas2020_000134	exact_unique	success	True	1	0.7916666666666666	2	0		legacy_candidate
+baseline/genomic_models	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Cme1	gasiunas2020_000136	exact_unique	success	True	2	0.5370370370370371	2	0		legacy_candidate
+baseline/genomic_models	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	2	0		
+baseline/genomic_models	Ghy2	gasiunas2020_000138	exact_unique	success	False		0.0	5	0		
+baseline/genomic_models	Orh	gasiunas2020_000139	exact_unique	success	True	1	0.5420560747663551	1	0		legacy_candidate
+baseline/genomic_models	Phi	gasiunas2020_000140	exact_unique	success	True	1	0.6555555555555556	1	0		legacy_candidate
+baseline/genomic_models	Psp	gasiunas2020_000141	exact_unique	success	True	1	0.5523809523809524	2	0		legacy_candidate
+baseline/genomic_models	Wvi	gasiunas2020_000142	exact_unique	success	False		0.0	2	0		
+after_path_fix/complete	Lpn	gasiunas2020_000064	exact_unique	success	True	4	0.9562043795620438	8	0		legacy_candidate
+after_path_fix/complete	Khu	gasiunas2020_000065	exact_unique	success	True	3	1.0	72	0		legacy_candidate
+after_path_fix/complete	Ain	gasiunas2020_000066	exact_unique	success	False		0.0	4	0		
+after_path_fix/complete	Cgl	gasiunas2020_000067	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Esp1	gasiunas2020_000068	exact_unique	success	False		0.0	24	0		
+after_path_fix/complete	Esp2	gasiunas2020_000069	exact_unique	success	False		0.0	6	0		
+after_path_fix/complete	Fma	gasiunas2020_000070	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Lce	gasiunas2020_000071	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Lrh	gasiunas2020_000072	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Lsp1	gasiunas2020_000073	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Lsp2	gasiunas2020_000074	exact_unique	success	True	1	1.0	24	0		legacy_candidate
+after_path_fix/complete	Pac	gasiunas2020_000075	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+after_path_fix/complete	Tba	gasiunas2020_000076	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Tde	gasiunas2020_000077	exact_unique	success	True	1	1.0	228	0		legacy_candidate
+after_path_fix/complete	Tpu	gasiunas2020_000078	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+after_path_fix/complete	Vpa	gasiunas2020_000079	exact_unique	success	True	29	1.0	64	0		legacy_candidate
+after_path_fix/complete	Efa	gasiunas2020_000080	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Eit	gasiunas2020_000081	exact_unique	success	True	1	1.0	84	0		legacy_candidate
+after_path_fix/complete	Lan	gasiunas2020_000082	exact_unique	success	False		0.0	8	0		
+after_path_fix/complete	Lmo	gasiunas2020_000083	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+after_path_fix/complete	Sag1	gasiunas2020_000084	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Sag2	gasiunas2020_000085	exact_unique	success	True	1	1.0	44	0		legacy_candidate
+after_path_fix/complete	Sdy	gasiunas2020_000086	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Seq1	gasiunas2020_000087	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Seq2	gasiunas2020_000088	exact_unique	success	True	1	1.0	40	0		legacy_candidate
+after_path_fix/complete	Sga	gasiunas2020_000089	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Smu	gasiunas2020_000090	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Sra	gasiunas2020_000091	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Bni	gasiunas2020_000092	exact_unique	success	True	1	1.0	70	0		legacy_candidate
+after_path_fix/complete	Ece	gasiunas2020_000093	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Edo	gasiunas2020_000094	exact_unique	success	True	1	1.0	56	0		legacy_candidate
+after_path_fix/complete	Fho	gasiunas2020_000095	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Mga	gasiunas2020_000096	exact_unique	success	True	1	1.0	108	0		legacy_candidate
+after_path_fix/complete	Mse	gasiunas2020_000097	exact_unique	success	True	1	1.0	470	0		legacy_candidate
+after_path_fix/complete	Sgo	gasiunas2020_000098	exact_unique	success	True	1	1.0	100	0		legacy_candidate
+after_path_fix/complete	Sma2	gasiunas2020_000099	exact_unique	success	True	1	1.0	144	0		legacy_candidate
+after_path_fix/complete	Ssa	gasiunas2020_000100	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Ssi	gasiunas2020_000101	exact_unique	success	True	3	1.0	4	0		legacy_candidate
+after_path_fix/complete	Ssu	gasiunas2020_000102	exact_unique	success	True	1	1.0	104	0		legacy_candidate
+after_path_fix/complete	Sth1A	gasiunas2020_000103	exact_unique	success	True	1	1.0	128	0		legacy_candidate
+after_path_fix/complete	Tsp	gasiunas2020_000104	exact_unique	success	True	1	1.0	64	0		legacy_candidate
+after_path_fix/complete	Bok	gasiunas2020_000105	exact_unique	success	True	1	1.0	20	0		legacy_candidate
+after_path_fix/complete	Cco	gasiunas2020_000106	exact_unique	success	True	3	1.0	8	0		legacy_candidate
+after_path_fix/complete	Cpe	gasiunas2020_000107	exact_unique	success	True	1	1.0	16	0		legacy_candidate
+after_path_fix/complete	Dde	gasiunas2020_000108	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Ghc2	gasiunas2020_000109	unmatched	success			0.0	0	0		
+after_path_fix/complete	Ghy3	gasiunas2020_000110	exact_unique	success	True	2	1.0	8	0		legacy_candidate
+after_path_fix/complete	Ghy4	gasiunas2020_000111	exact_unique	success	True	1	1.0	88	0		legacy_candidate
+after_path_fix/complete	Gsp	gasiunas2020_000112	exact_unique	success	True	5	1.0	82	0		legacy_candidate
+after_path_fix/complete	Kki	gasiunas2020_000113	exact_unique	error	False		0.0	0	0	Invalid anti-repeat alignment table /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/after_path_fix/complete/Kki/work/f000001.s000001/anti-repeat-inverted.tsv: Invalid half-open interval [-1, 1)	
+after_path_fix/complete	Nme2	gasiunas2020_000114	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Nsp	gasiunas2020_000115	exact_unique	success	True	83	1.0	168	0		legacy_candidate
+after_path_fix/complete	Tmo	gasiunas2020_000116	exact_unique	success	True	9	0.9632352941176471	20	0		legacy_candidate
+after_path_fix/complete	Nsa	gasiunas2020_000117	exact_unique	success	True	2	1.0	4	0		legacy_candidate
+after_path_fix/complete	Jpa	gasiunas2020_000118	exact_unique	success	True	3	0.9813084112149533	128	0		legacy_candidate
+after_path_fix/complete	Rsp	gasiunas2020_000119	exact_unique	success	False		0.0	8	0		
+after_path_fix/complete	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	44	0		
+after_path_fix/complete	Cca2	gasiunas2020_000121	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Cme2	gasiunas2020_000122	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Cme3	gasiunas2020_000123	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Cme4	gasiunas2020_000124	exact_unique	success	True	88	1.0	176	0		legacy_candidate
+after_path_fix/complete	Csa	gasiunas2020_000125	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Ghc1	gasiunas2020_000126	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Ghe	gasiunas2020_000127	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Ghh1	gasiunas2020_000128	exact_unique	success	True	2	1.0	8	0		legacy_candidate
+after_path_fix/complete	Ghh2	gasiunas2020_000129	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Ghy1	gasiunas2020_000130	exact_unique	success	True	1	1.0	44	0		legacy_candidate
+after_path_fix/complete	Msc	gasiunas2020_000131	exact_unique	success	True	1	1.0	12	0		legacy_candidate
+after_path_fix/complete	Sdo	gasiunas2020_000132	exact_unique	success	True	1	1.0	8	0		legacy_candidate
+after_path_fix/complete	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.968421052631579	232	0		legacy_candidate
+after_path_fix/complete	Cca1	gasiunas2020_000134	exact_unique	success	False		0.0	192	0		
+after_path_fix/complete	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	8	0		
+after_path_fix/complete	Cme1	gasiunas2020_000136	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Ghy2	gasiunas2020_000138	exact_unique	success	False		0.0	0	0		
+after_path_fix/complete	Orh	gasiunas2020_000139	exact_unique	success	False		0.0	4	0		
+after_path_fix/complete	Phi	gasiunas2020_000140	exact_unique	success	True	1	1.0	4	0		legacy_candidate
+after_path_fix/complete	Psp	gasiunas2020_000141	exact_unique	success	False		0.0	40	0		
+after_path_fix/complete	Wvi	gasiunas2020_000142	exact_unique	success	True	1	0.956140350877193	8	0		legacy_candidate
+after_rescue/complete	Lpn	gasiunas2020_000064	exact_unique	success	True	4	0.9562043795620438	8	0		anti_repeat
+after_rescue/complete	Khu	gasiunas2020_000065	exact_unique	success	True	3	1.0	72	0		anti_repeat
+after_rescue/complete	Ain	gasiunas2020_000066	exact_unique	success	False		0.0	4	0		
+after_rescue/complete	Cgl	gasiunas2020_000067	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Esp1	gasiunas2020_000068	exact_unique	success	False		0.0	24	0		
+after_rescue/complete	Esp2	gasiunas2020_000069	exact_unique	success	False		0.0	6	0		
+after_rescue/complete	Fma	gasiunas2020_000070	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Lce	gasiunas2020_000071	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Lrh	gasiunas2020_000072	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Lsp1	gasiunas2020_000073	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Lsp2	gasiunas2020_000074	exact_unique	success	True	1	1.0	24	0		anti_repeat
+after_rescue/complete	Pac	gasiunas2020_000075	exact_unique	success	True	1	1.0	16	0		anti_repeat
+after_rescue/complete	Tba	gasiunas2020_000076	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Tde	gasiunas2020_000077	exact_unique	success	True	1	1.0	228	0		anti_repeat
+after_rescue/complete	Tpu	gasiunas2020_000078	exact_unique	success	True	1	1.0	16	0		anti_repeat
+after_rescue/complete	Vpa	gasiunas2020_000079	exact_unique	success	True	29	1.0	64	0		anti_repeat
+after_rescue/complete	Efa	gasiunas2020_000080	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Eit	gasiunas2020_000081	exact_unique	success	True	1	1.0	84	0		anti_repeat
+after_rescue/complete	Lan	gasiunas2020_000082	exact_unique	success	True	1	0.5858585858585859	9	1		covariance_model
+after_rescue/complete	Lmo	gasiunas2020_000083	exact_unique	success	True	1	1.0	16	0		anti_repeat
+after_rescue/complete	Sag1	gasiunas2020_000084	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Sag2	gasiunas2020_000085	exact_unique	success	True	1	1.0	44	0		anti_repeat
+after_rescue/complete	Sdy	gasiunas2020_000086	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Seq1	gasiunas2020_000087	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Seq2	gasiunas2020_000088	exact_unique	success	True	1	1.0	40	0		anti_repeat
+after_rescue/complete	Sga	gasiunas2020_000089	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Smu	gasiunas2020_000090	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Sra	gasiunas2020_000091	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Bni	gasiunas2020_000092	exact_unique	success	True	1	1.0	70	0		anti_repeat
+after_rescue/complete	Ece	gasiunas2020_000093	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Edo	gasiunas2020_000094	exact_unique	success	True	1	1.0	56	0		anti_repeat
+after_rescue/complete	Fho	gasiunas2020_000095	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Mga	gasiunas2020_000096	exact_unique	success	True	1	1.0	108	0		anti_repeat
+after_rescue/complete	Mse	gasiunas2020_000097	exact_unique	success	True	1	1.0	472	0		anti_repeat
+after_rescue/complete	Sgo	gasiunas2020_000098	exact_unique	success	True	1	1.0	100	0		anti_repeat
+after_rescue/complete	Sma2	gasiunas2020_000099	exact_unique	success	True	1	1.0	145	1		anti_repeat
+after_rescue/complete	Ssa	gasiunas2020_000100	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Ssi	gasiunas2020_000101	exact_unique	success	True	3	1.0	4	0		anti_repeat
+after_rescue/complete	Ssu	gasiunas2020_000102	exact_unique	success	True	1	1.0	104	0		anti_repeat
+after_rescue/complete	Sth1A	gasiunas2020_000103	exact_unique	success	True	1	1.0	128	0		anti_repeat
+after_rescue/complete	Tsp	gasiunas2020_000104	exact_unique	success	True	1	1.0	64	0		anti_repeat
+after_rescue/complete	Bok	gasiunas2020_000105	exact_unique	success	True	1	1.0	20	0		anti_repeat
+after_rescue/complete	Cco	gasiunas2020_000106	exact_unique	success	True	3	1.0	8	0		anti_repeat
+after_rescue/complete	Cpe	gasiunas2020_000107	exact_unique	success	True	1	1.0	16	0		anti_repeat
+after_rescue/complete	Dde	gasiunas2020_000108	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Ghc2	gasiunas2020_000109	unmatched	success			0.0	0	0		
+after_rescue/complete	Ghy3	gasiunas2020_000110	exact_unique	success	True	2	1.0	8	0		anti_repeat
+after_rescue/complete	Ghy4	gasiunas2020_000111	exact_unique	success	True	1	1.0	88	0		anti_repeat
+after_rescue/complete	Gsp	gasiunas2020_000112	exact_unique	success	True	5	1.0	82	0		anti_repeat
+after_rescue/complete	Kki	gasiunas2020_000113	exact_unique	error	False		0.0	0	0	Invalid anti-repeat alignment table /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/after_rescue/complete/Kki/work/f000001.s000001/anti-repeat-inverted.tsv: Invalid half-open interval [-1, 1)	
+after_rescue/complete	Nme2	gasiunas2020_000114	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Nsp	gasiunas2020_000115	exact_unique	success	True	83	1.0	168	0		anti_repeat
+after_rescue/complete	Tmo	gasiunas2020_000116	exact_unique	success	True	9	0.9632352941176471	20	0		anti_repeat
+after_rescue/complete	Nsa	gasiunas2020_000117	exact_unique	success	True	2	1.0	4	0		anti_repeat
+after_rescue/complete	Jpa	gasiunas2020_000118	exact_unique	success	True	3	0.9813084112149533	128	0		anti_repeat
+after_rescue/complete	Rsp	gasiunas2020_000119	exact_unique	success	True	3	0.6185567010309279	9	1		covariance_model
+after_rescue/complete	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	44	0		
+after_rescue/complete	Cca2	gasiunas2020_000121	exact_unique	success	False		0.0	0	0		
+after_rescue/complete	Cme2	gasiunas2020_000122	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Cme3	gasiunas2020_000123	exact_unique	success	True	1	0.6236559139784946	1	1		covariance_model
+after_rescue/complete	Cme4	gasiunas2020_000124	exact_unique	success	True	88	1.0	176	0		anti_repeat
+after_rescue/complete	Csa	gasiunas2020_000125	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Ghc1	gasiunas2020_000126	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Ghe	gasiunas2020_000127	exact_unique	success	True	1	0.6354166666666666	1	1		covariance_model
+after_rescue/complete	Ghh1	gasiunas2020_000128	exact_unique	success	True	2	1.0	8	0		anti_repeat
+after_rescue/complete	Ghh2	gasiunas2020_000129	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Ghy1	gasiunas2020_000130	exact_unique	success	True	1	1.0	44	0		anti_repeat
+after_rescue/complete	Msc	gasiunas2020_000131	exact_unique	success	True	1	1.0	12	0		anti_repeat
+after_rescue/complete	Sdo	gasiunas2020_000132	exact_unique	success	True	1	1.0	8	0		anti_repeat
+after_rescue/complete	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.968421052631579	232	0		anti_repeat
+after_rescue/complete	Cca1	gasiunas2020_000134	exact_unique	success	False		0.0	192	0		
+after_rescue/complete	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	8	0		
+after_rescue/complete	Cme1	gasiunas2020_000136	exact_unique	success	False		0.0	0	0		
+after_rescue/complete	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	0	0		
+after_rescue/complete	Ghy2	gasiunas2020_000138	exact_unique	success	False		0.0	0	0		
+after_rescue/complete	Orh	gasiunas2020_000139	exact_unique	success	False		0.0	4	0		
+after_rescue/complete	Phi	gasiunas2020_000140	exact_unique	success	True	1	1.0	4	0		anti_repeat
+after_rescue/complete	Psp	gasiunas2020_000141	exact_unique	success	False		0.0	40	0		
+after_rescue/complete	Wvi	gasiunas2020_000142	exact_unique	success	True	1	0.956140350877193	8	0		anti_repeat
+final/complete	Lpn	gasiunas2020_000064	exact_unique	success	True	5	0.9562043795620438	12	0		anti_repeat
+final/complete	Khu	gasiunas2020_000065	exact_unique	success	True	3	1.0	72	0		anti_repeat
+final/complete	Ain	gasiunas2020_000066	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Cgl	gasiunas2020_000067	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Esp1	gasiunas2020_000068	exact_unique	success	True	13	1.0	32	0		anti_repeat
+final/complete	Esp2	gasiunas2020_000069	exact_unique	success	False		0.0	6	0		
+final/complete	Fma	gasiunas2020_000070	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Lce	gasiunas2020_000071	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Lrh	gasiunas2020_000072	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Lsp1	gasiunas2020_000073	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Lsp2	gasiunas2020_000074	exact_unique	success	True	1	1.0	24	0		anti_repeat
+final/complete	Pac	gasiunas2020_000075	exact_unique	success	True	1	1.0	16	0		anti_repeat
+final/complete	Tba	gasiunas2020_000076	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Tde	gasiunas2020_000077	exact_unique	success	True	1	1.0	228	0		anti_repeat
+final/complete	Tpu	gasiunas2020_000078	exact_unique	success	True	1	1.0	16	0		anti_repeat
+final/complete	Vpa	gasiunas2020_000079	exact_unique	success	True	29	1.0	64	0		anti_repeat
+final/complete	Efa	gasiunas2020_000080	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Eit	gasiunas2020_000081	exact_unique	success	True	1	1.0	84	0		anti_repeat
+final/complete	Lan	gasiunas2020_000082	exact_unique	success	True	1	0.5858585858585859	13	1		covariance_model
+final/complete	Lmo	gasiunas2020_000083	exact_unique	success	True	1	1.0	16	0		anti_repeat
+final/complete	Sag1	gasiunas2020_000084	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Sag2	gasiunas2020_000085	exact_unique	success	True	1	1.0	44	0		anti_repeat
+final/complete	Sdy	gasiunas2020_000086	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Seq1	gasiunas2020_000087	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Seq2	gasiunas2020_000088	exact_unique	success	True	1	1.0	40	0		anti_repeat
+final/complete	Sga	gasiunas2020_000089	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Smu	gasiunas2020_000090	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Sra	gasiunas2020_000091	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Bni	gasiunas2020_000092	exact_unique	success	True	1	1.0	70	0		anti_repeat
+final/complete	Ece	gasiunas2020_000093	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Edo	gasiunas2020_000094	exact_unique	success	True	1	1.0	56	0		anti_repeat
+final/complete	Fho	gasiunas2020_000095	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Mga	gasiunas2020_000096	exact_unique	success	True	1	1.0	108	0		anti_repeat
+final/complete	Mse	gasiunas2020_000097	exact_unique	success	True	1	1.0	472	0		anti_repeat
+final/complete	Sgo	gasiunas2020_000098	exact_unique	success	True	1	1.0	100	0		anti_repeat
+final/complete	Sma2	gasiunas2020_000099	exact_unique	success	True	1	1.0	145	1		anti_repeat
+final/complete	Ssa	gasiunas2020_000100	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Ssi	gasiunas2020_000101	exact_unique	success	True	3	1.0	8	0		anti_repeat
+final/complete	Ssu	gasiunas2020_000102	exact_unique	success	True	1	1.0	104	0		anti_repeat
+final/complete	Sth1A	gasiunas2020_000103	exact_unique	success	True	1	1.0	128	0		anti_repeat
+final/complete	Tsp	gasiunas2020_000104	exact_unique	success	True	1	1.0	64	0		anti_repeat
+final/complete	Bok	gasiunas2020_000105	exact_unique	success	True	1	1.0	20	0		anti_repeat
+final/complete	Cco	gasiunas2020_000106	exact_unique	success	True	3	1.0	8	0		anti_repeat
+final/complete	Cpe	gasiunas2020_000107	exact_unique	success	True	1	1.0	16	0		anti_repeat
+final/complete	Dde	gasiunas2020_000108	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Ghc2	gasiunas2020_000109	unmatched	success			0.0	0	0		
+final/complete	Ghy3	gasiunas2020_000110	exact_unique	success	True	2	1.0	8	0		anti_repeat
+final/complete	Ghy4	gasiunas2020_000111	exact_unique	success	True	1	1.0	88	0		anti_repeat
+final/complete	Gsp	gasiunas2020_000112	exact_unique	success	True	5	1.0	82	0		anti_repeat
+final/complete	Kki	gasiunas2020_000113	exact_unique	error	False		0.0	0	0	Invalid anti-repeat alignment table /home/alex/CodexProjects/CRISPRtracrRNA/new_version/benchmarks/final/complete/Kki/work/f000001.s000001/anti-repeat-inverted.tsv: Invalid half-open interval [-1, 1)	
+final/complete	Nme2	gasiunas2020_000114	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Nsp	gasiunas2020_000115	exact_unique	success	True	83	1.0	168	0		anti_repeat
+final/complete	Tmo	gasiunas2020_000116	exact_unique	success	True	9	0.9632352941176471	20	0		anti_repeat
+final/complete	Nsa	gasiunas2020_000117	exact_unique	success	True	2	1.0	4	0		anti_repeat
+final/complete	Jpa	gasiunas2020_000118	exact_unique	success	True	3	0.9813084112149533	128	0		anti_repeat
+final/complete	Rsp	gasiunas2020_000119	exact_unique	success	True	3	0.6185567010309279	9	1		covariance_model
+final/complete	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	44	0		
+final/complete	Cca2	gasiunas2020_000121	exact_unique	success	False		0.0	0	0		
+final/complete	Cme2	gasiunas2020_000122	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Cme3	gasiunas2020_000123	exact_unique	success	True	1	0.6236559139784946	1	1		covariance_model
+final/complete	Cme4	gasiunas2020_000124	exact_unique	success	True	88	1.0	176	0		anti_repeat
+final/complete	Csa	gasiunas2020_000125	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Ghc1	gasiunas2020_000126	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Ghe	gasiunas2020_000127	exact_unique	success	True	1	0.6354166666666666	1	1		covariance_model
+final/complete	Ghh1	gasiunas2020_000128	exact_unique	success	True	2	1.0	8	0		anti_repeat
+final/complete	Ghh2	gasiunas2020_000129	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final/complete	Ghy1	gasiunas2020_000130	exact_unique	success	True	1	1.0	44	0		anti_repeat
+final/complete	Msc	gasiunas2020_000131	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final/complete	Sdo	gasiunas2020_000132	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.968421052631579	232	0		anti_repeat
+final/complete	Cca1	gasiunas2020_000134	exact_unique	success	False		0.0	192	0		
+final/complete	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	8	0		
+final/complete	Cme1	gasiunas2020_000136	exact_unique	success	False		0.0	0	0		
+final/complete	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	0	0		
+final/complete	Ghy2	gasiunas2020_000138	exact_unique	success	False		0.0	0	0		
+final/complete	Orh	gasiunas2020_000139	exact_unique	success	False		0.0	4	0		
+final/complete	Phi	gasiunas2020_000140	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final/complete	Psp	gasiunas2020_000141	exact_unique	success	False		0.0	40	0		
+final/complete	Wvi	gasiunas2020_000142	exact_unique	success	True	1	0.956140350877193	8	0		anti_repeat
+final_fixed/complete	Lpn	gasiunas2020_000064	exact_unique	success	True	5	0.9562043795620438	12	0		anti_repeat
+final_fixed/complete	Khu	gasiunas2020_000065	exact_unique	success	True	3	1.0	72	0		anti_repeat
+final_fixed/complete	Ain	gasiunas2020_000066	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Cgl	gasiunas2020_000067	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Esp1	gasiunas2020_000068	exact_unique	success	True	13	1.0	32	0		anti_repeat
+final_fixed/complete	Esp2	gasiunas2020_000069	exact_unique	success	False		0.0	4	0		
+final_fixed/complete	Fma	gasiunas2020_000070	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Lce	gasiunas2020_000071	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Lrh	gasiunas2020_000072	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Lsp1	gasiunas2020_000073	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Lsp2	gasiunas2020_000074	exact_unique	success	True	1	1.0	14	0		anti_repeat
+final_fixed/complete	Pac	gasiunas2020_000075	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Tba	gasiunas2020_000076	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Tde	gasiunas2020_000077	exact_unique	success	True	1	1.0	228	0		anti_repeat
+final_fixed/complete	Tpu	gasiunas2020_000078	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Vpa	gasiunas2020_000079	exact_unique	success	True	29	1.0	64	0		anti_repeat
+final_fixed/complete	Efa	gasiunas2020_000080	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Eit	gasiunas2020_000081	exact_unique	success	True	1	1.0	84	0		anti_repeat
+final_fixed/complete	Lan	gasiunas2020_000082	exact_unique	success	True	1	0.5858585858585859	9	1		covariance_model
+final_fixed/complete	Lmo	gasiunas2020_000083	exact_unique	success	True	1	1.0	16	0		anti_repeat
+final_fixed/complete	Sag1	gasiunas2020_000084	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Sag2	gasiunas2020_000085	exact_unique	success	True	1	1.0	44	0		anti_repeat
+final_fixed/complete	Sdy	gasiunas2020_000086	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Seq1	gasiunas2020_000087	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Seq2	gasiunas2020_000088	exact_unique	success	True	1	1.0	40	0		anti_repeat
+final_fixed/complete	Sga	gasiunas2020_000089	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Smu	gasiunas2020_000090	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Sra	gasiunas2020_000091	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Bni	gasiunas2020_000092	exact_unique	success	True	1	1.0	64	0		anti_repeat
+final_fixed/complete	Ece	gasiunas2020_000093	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Edo	gasiunas2020_000094	exact_unique	success	True	1	1.0	56	0		anti_repeat
+final_fixed/complete	Fho	gasiunas2020_000095	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Mga	gasiunas2020_000096	exact_unique	success	True	1	1.0	108	0		anti_repeat
+final_fixed/complete	Mse	gasiunas2020_000097	exact_unique	success	True	1	1.0	464	0		anti_repeat
+final_fixed/complete	Sgo	gasiunas2020_000098	exact_unique	success	True	1	1.0	100	0		anti_repeat
+final_fixed/complete	Sma2	gasiunas2020_000099	exact_unique	success	True	1	1.0	145	1		anti_repeat
+final_fixed/complete	Ssa	gasiunas2020_000100	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Ssi	gasiunas2020_000101	exact_unique	success	True	3	1.0	8	0		anti_repeat
+final_fixed/complete	Ssu	gasiunas2020_000102	exact_unique	success	True	1	1.0	104	0		anti_repeat
+final_fixed/complete	Sth1A	gasiunas2020_000103	exact_unique	success	True	1	1.0	128	0		anti_repeat
+final_fixed/complete	Tsp	gasiunas2020_000104	exact_unique	success	True	1	1.0	64	0		anti_repeat
+final_fixed/complete	Bok	gasiunas2020_000105	exact_unique	success	True	1	1.0	20	0		anti_repeat
+final_fixed/complete	Cco	gasiunas2020_000106	exact_unique	success	True	3	1.0	8	0		anti_repeat
+final_fixed/complete	Cpe	gasiunas2020_000107	exact_unique	success	True	1	1.0	12	0		anti_repeat
+final_fixed/complete	Dde	gasiunas2020_000108	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Ghc2	gasiunas2020_000109	unmatched	success			0.0	0	0		
+final_fixed/complete	Ghy3	gasiunas2020_000110	exact_unique	success	True	2	1.0	8	0		anti_repeat
+final_fixed/complete	Ghy4	gasiunas2020_000111	exact_unique	success	True	1	1.0	84	0		anti_repeat
+final_fixed/complete	Gsp	gasiunas2020_000112	exact_unique	success	True	5	1.0	80	0		anti_repeat
+final_fixed/complete	Kki	gasiunas2020_000113	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Nme2	gasiunas2020_000114	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Nsp	gasiunas2020_000115	exact_unique	success	True	83	1.0	168	0		anti_repeat
+final_fixed/complete	Tmo	gasiunas2020_000116	exact_unique	success	True	9	0.9632352941176471	20	0		anti_repeat
+final_fixed/complete	Nsa	gasiunas2020_000117	exact_unique	success	True	2	1.0	4	0		anti_repeat
+final_fixed/complete	Jpa	gasiunas2020_000118	exact_unique	success	True	3	0.9813084112149533	128	0		anti_repeat
+final_fixed/complete	Rsp	gasiunas2020_000119	exact_unique	success	True	3	0.6185567010309279	9	1		covariance_model
+final_fixed/complete	Bbo	gasiunas2020_000120	exact_unique	success	False		0.0	44	0		
+final_fixed/complete	Cca2	gasiunas2020_000121	exact_unique	success	False		0.0	0	0		
+final_fixed/complete	Cme2	gasiunas2020_000122	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Cme3	gasiunas2020_000123	exact_unique	success	True	1	0.6236559139784946	1	1		covariance_model
+final_fixed/complete	Cme4	gasiunas2020_000124	exact_unique	success	True	88	1.0	176	0		anti_repeat
+final_fixed/complete	Csa	gasiunas2020_000125	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Ghc1	gasiunas2020_000126	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Ghe	gasiunas2020_000127	exact_unique	success	True	1	0.6354166666666666	1	1		covariance_model
+final_fixed/complete	Ghh1	gasiunas2020_000128	exact_unique	success	True	2	1.0	8	0		anti_repeat
+final_fixed/complete	Ghh2	gasiunas2020_000129	exact_unique	success	True	1	1.0	4	0		anti_repeat
+final_fixed/complete	Ghy1	gasiunas2020_000130	exact_unique	success	True	1	1.0	44	0		anti_repeat
+final_fixed/complete	Msc	gasiunas2020_000131	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Sdo	gasiunas2020_000132	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Spa	gasiunas2020_000133	exact_unique	success	True	1	0.968421052631579	232	0		anti_repeat
+final_fixed/complete	Cca1	gasiunas2020_000134	exact_unique	success	False		0.0	192	0		
+final_fixed/complete	Cga	gasiunas2020_000135	exact_unique	success	False		0.0	8	0		
+final_fixed/complete	Cme1	gasiunas2020_000136	exact_unique	success	False		0.0	0	0		
+final_fixed/complete	Ffr	gasiunas2020_000137	exact_unique	success	False		0.0	0	0		
+final_fixed/complete	Ghy2	gasiunas2020_000138	exact_unique	success	False		0.0	0	0		
+final_fixed/complete	Orh	gasiunas2020_000139	exact_unique	success	False		0.0	4	0		
+final_fixed/complete	Phi	gasiunas2020_000140	exact_unique	success	True	1	1.0	8	0		anti_repeat
+final_fixed/complete	Psp	gasiunas2020_000141	exact_unique	success	False		0.0	40	0		
+final_fixed/complete	Wvi	gasiunas2020_000142	exact_unique	success	True	1	0.956140350877193	8	0		anti_repeat

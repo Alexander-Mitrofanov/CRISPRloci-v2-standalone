@@ -1,0 +1,13 @@
+{
+  "default_projection_fixed": true,
+  "correct_small_provenance_passes": true,
+  "in_memory_rejection_checks": {
+    "changed_profile": "rejected",
+    "missing_input": "rejected",
+    "wrong_protocol": "rejected",
+    "wrong_input_hash": "rejected",
+    "changed_threshold": "rejected",
+    "default_extra_short": "rejected"
+  },
+  "remaining": "conditional repeat-map/count linkage; source-version mapping and full final audits"
+}

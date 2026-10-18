@@ -1,0 +1,119 @@
+.annotation-results {
+  margin: 0;
+  padding: 0;
+  background: var(--surface);
+  border: 0;
+  border-radius: var(--radius-md);
+}
+.annotation-results h3 {
+  margin-top: 0;
+}
+.annotation-lead {
+  max-width: 75ch;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.annotation-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding-block: 1rem;
+}
+.annotation-counts strong {
+  display: block;
+  font-size: 1.8rem;
+  color: #12324d;
+}
+.annotation-counts span {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.annotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.annotation-table th,
+.annotation-table td {
+  text-align: left;
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.annotation-table th {
+  font-weight: 600;
+  color: #12324d;
+  background: #f5f8fc;
+}
+.annotation-scroll {
+  overflow-x: auto;
+  margin-block: 1rem;
+}
+.annotation-empty {
+  padding: 1rem;
+  background: #f5f8fc;
+  border-left: 3px solid #71809d;
+}
+.annotation-notice {
+  color: #785016;
+  line-height: 1.5;
+}
+.locus-strip {
+  margin-block: 1.5rem;
+}
+.locus-strip svg {
+  width: 100%;
+  min-width: 300px;
+  height: 85px;
+  display: block;
+}
+.locus-strip figcaption {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+.locus-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.locus-legend span::before {
+  display: inline-block;
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.4rem;
+  background: var(--feature-color);
+}
+@media (max-width: 650px) {
+  .annotation-results {
+    padding: 0;
+  }
+}
+.feature-array {
+  --feature-color: #0f766e;
+}
+.feature-cas {
+  --feature-color: #3158a5;
+}
+.feature-tracr {
+  --feature-color: #a76716;
+}
+
+.leader-sequence {
+  min-width: 12rem;
+  max-width: 30rem;
+}
+.leader-sequence code {
+  display: block;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.annotation-table td small {
+  display: block;
+  color: var(--text-muted, #52647a);
+}
+
+.publication-notes {
+  overflow-wrap: anywhere;
+}

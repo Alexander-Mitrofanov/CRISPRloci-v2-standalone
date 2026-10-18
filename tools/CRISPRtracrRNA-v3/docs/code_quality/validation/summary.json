@@ -1,0 +1,35 @@
+{
+  "unit_passed": 360,
+  "native_integration_passed": 7,
+  "sdist_unit_passed": 360,
+  "ruff": "passed",
+  "format": "passed",
+  "mypy": "passed (14 modules)",
+  "native_prediction_records_equal": 104,
+  "native_reports_compared": 5,
+  "native_exports_equal": true,
+  "retained_records_and_manifest_hashes_valid": true,
+  "wheel_resources_verified": 27,
+  "wheel_module_bytes_match_final_source": {
+    "crisprtracrrna/__init__.py": true,
+    "crisprtracrrna/reporting.py": true,
+    "crisprtracrrna/cli.py": true,
+    "crisprtracrrna/__main__.py": true,
+    "crisprtracrrna/pipeline.py": true,
+    "crisprtracrrna/evidence.py": true,
+    "crisprtracrrna/adapters.py": true,
+    "crisprtracrrna/search.py": true,
+    "crisprtracrrna/short_rescue_policy.py": true,
+    "crisprtracrrna/errors.py": true,
+    "crisprtracrrna/sequence.py": true,
+    "crisprtracrrna/config.py": true,
+    "crisprtracrrna/models.py": true,
+    "crisprtracrrna/process.py": true
+  },
+  "native_test_package_unchanged_after_tooling_repair": true,
+  "artifacts": {
+    "CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl": "1dfa4cfc4e81f64702bc46c713331b9039f47e17e7ea44cfbc8b23b8ca357f72",
+    "crisprtracrrna-3.0.0.tar.gz": "ad78c3144131285a99812d221125780850e5b293d0ed37707f5f277e8203a877"
+  },
+  "validation_council": "All three independent reviewers explicitly accepted after cleanup-error correction."
+}

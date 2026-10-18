@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "targets": [
+    {
+      "id": "target",
+      "sequence": "AAAACCCCGGGGTTTA",
+      "length": 16,
+      "sha256": "e436e52f24cbe7c6d3213a22d9c766c3ba6d86b2d937a76565cdc7ba654e6071",
+      "assembly_id": null,
+      "topology": "linear"
+    }
+  ],
+  "target_file_sha256": "e430a76fa648b9a1b3ee3d629594280952661a6ace226c67c7245a1ee68c3f55",
+  "reference": {
+    "name": "synthetic-spacers",
+    "source_url": "https://example.org/spacers.fna.gz",
+    "source_release": "fixture-1",
+    "source_file_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "database_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "record_count": 1,
+    "eligible_record_count": 1,
+    "skipped_ambiguous": 0,
+    "skipped_length": 0,
+    "seed_length": 16,
+    "min_length": 16,
+    "max_length": 1000
+  }
+}

@@ -1,0 +1,37 @@
+@media (max-width: 700px) {
+  .catalog-workspace {
+    padding-top: 28px;
+  }
+  .catalog-coverage,
+  .catalog-array-detail {
+    padding: 18px;
+  }
+  .catalog-coverage-heading,
+  .catalog-results-toolbar,
+  .catalog-detail-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .catalog-search {
+    flex-wrap: wrap;
+  }
+  .catalog-search .catalog-search-type,
+  .catalog-search .catalog-search-query {
+    flex-basis: 100%;
+  }
+  .catalog-provenance dl,
+  .catalog-array-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .catalog-pagination {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .catalog-pagination .catalog-button {
+    padding-inline: 10px;
+  }
+  .catalog-tabs {
+    gap: 0;
+  }
+}

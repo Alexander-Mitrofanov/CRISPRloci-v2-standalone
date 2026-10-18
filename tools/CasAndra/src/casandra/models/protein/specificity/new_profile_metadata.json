@@ -1,0 +1,898 @@
+{
+  "NEG3_001": {
+    "accessions": [
+      "A0RXV0",
+      "O27271",
+      "Q5JH24",
+      "Q6LZD5",
+      "Q9V0P0"
+    ],
+    "alignment_sha256": "4eb212d7a0e48ad2f946b439dc462b12adfdd815e0d6f8ebe011e42620df942e",
+    "allowed_positive_family_patterns": [
+      "Cas14"
+    ],
+    "component_id": "PC_30adab09b5a118592ddd78a320b99ac88b640042eb02fcb3bddefafd6f1ae469",
+    "effective_sequences": 0.6103515625,
+    "family_group": "RNA_processing_FttA_aCPSF1",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 642,
+    "input_fasta_sha256": "efb7d369b2da10181875d739bd896df4368b344382c7a707b34ecab741b3024d",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_001.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "0184b40386217263086f1246f4059c76e38eb6d7e5cef3f70354104d5e552d61",
+      "0777c779f7f65e5ba9bfeed670f1fad54b63a9c7ce461daf62006cacb51b21b9",
+      "33944e0831dd30d82e69c049d207b215b89dcfa91f361bac7b81f6a47fdace0c",
+      "42e95c5be227a6047cc5d25fd11ef218c97b48d5a11c6bcfbee9a9bfaeab10ee",
+      "746c6cb903bb9732e53f6c27825a470bad66a2c2a86695e0a7a7240da51a51df"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0096",
+      "DN3_REVIEW0392",
+      "DN3_REVIEW0260",
+      "DN3_REVIEW0107",
+      "DN3_REVIEW0348"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 5
+  },
+  "NEG3_002": {
+    "accessions": [
+      "Q980D0"
+    ],
+    "alignment_sha256": "e9430d5cc0219b6205fa955cb8ba611b7411eabcac2dc3033c366368cee36342",
+    "allowed_positive_family_patterns": [
+      "Cas14"
+    ],
+    "component_id": "PC_30adab09b5a118592ddd78a320b99ac88b640042eb02fcb3bddefafd6f1ae469",
+    "effective_sequences": null,
+    "family_group": "RNA_processing_RNaseJ_aCPSF2",
+    "group_calibration_components": 1,
+    "group_fit_components": 1,
+    "hmm_length": 492,
+    "input_fasta_sha256": "e9430d5cc0219b6205fa955cb8ba611b7411eabcac2dc3033c366368cee36342",
+    "mafft_command": null,
+    "no_within_group_calibration": false,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "6b49da6a53af894ed758b088000103fb04a4f5715860299f79ee7683c75f4b47"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0069"
+    ],
+    "sparse_declared_group": false,
+    "training_sequences": 1
+  },
+  "NEG3_003": {
+    "accessions": [
+      "P0A8V0",
+      "D4GZ88",
+      "P54548",
+      "Q58897",
+      "Q8U182"
+    ],
+    "alignment_sha256": "f91c18ec659e077d4e6e9b95ea5014baf93f901395b94bf57e1d150acc78ff8c",
+    "allowed_positive_family_patterns": [
+      "Cas14"
+    ],
+    "component_id": "PC_0c4db1b83da1697be82427217980dbeeaf532b468aba7bc8525db93fd62b512b",
+    "effective_sequences": 0.8642578125,
+    "family_group": "RNA_processing_RNaseZ_BN",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 305,
+    "input_fasta_sha256": "850f73ea622faaa6949ba59684fa6783eb2e49081c2632543913d6bf7f903ef8",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_003.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "0bf2099158aacff64bb0ad56c5e3d157e6bcd4fb5aa56698bea70b5b9958d95e",
+      "10016367612383a8049a4af5e5b8a226b9e79650fa469e8e6dbbfd6709d56344",
+      "15a1df623dbe891e2455a69cf87066510146d9ce984ac8db4329444e303dcb66",
+      "93a83c4822c13b56b4a883ceb09967c92a1842093f3ae833f7f10ab0c7553136",
+      "e7e5c77de5f393cc0f13ed70a53b18e2bd59f913d20acaffcaf6ed2d8753a7a8"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0375",
+      "DN3_REVIEW0451",
+      "DN3_REVIEW0299",
+      "DN3_REVIEW0248",
+      "DN3_REVIEW0017"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 5
+  },
+  "NEG3_004": {
+    "accessions": [
+      "P23478"
+    ],
+    "alignment_sha256": "430fdcb6a5ac983321043976a2866e23b1dbbd94770dcbe61823647527a7b1c8",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_399b5bc6ea7bc0aebfd2611ca808ea68abe3ede14e72dcbca6ed1f9e62fc50e4",
+    "effective_sequences": null,
+    "family_group": "cellular_AddAB_repair",
+    "group_calibration_components": 1,
+    "group_fit_components": 1,
+    "hmm_length": 1232,
+    "input_fasta_sha256": "430fdcb6a5ac983321043976a2866e23b1dbbd94770dcbe61823647527a7b1c8",
+    "mafft_command": null,
+    "no_within_group_calibration": false,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "55dc24a168727ff3343aee9548b67b84374b6c9f48dba423e6898ac434b91159"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0012"
+    ],
+    "sparse_declared_group": false,
+    "training_sequences": 1
+  },
+  "NEG3_005": {
+    "accessions": [
+      "Q8CWM9"
+    ],
+    "alignment_sha256": "0e84f271d94374dc30608c40cce3d4ed019d1e6836f7988f0d0a8488363e2ce2",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_88f22cb0cb0f7731476c3ce313e76d5d3fbbc45f1dfdc527011faa9c2ecb33a7",
+    "effective_sequences": null,
+    "family_group": "cellular_ComFA_transformation",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 432,
+    "input_fasta_sha256": "0e84f271d94374dc30608c40cce3d4ed019d1e6836f7988f0d0a8488363e2ce2",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "3c43f2559a28eab8396bc38037c41b885b0a301aeb7935e164c4d7066f9494cd"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0111"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_006": {
+    "accessions": [
+      "P54475"
+    ],
+    "alignment_sha256": "740918974a9de6abee786cd1eb7fda41bdccad765b8c7ae2421349272a182aa7",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_bdc38c92c816969833f32852da6fc9f8bd54e856881de3eb93f9f2fcd57e051d",
+    "effective_sequences": null,
+    "family_group": "cellular_CshB_ribosome_assembly",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 438,
+    "input_fasta_sha256": "740918974a9de6abee786cd1eb7fda41bdccad765b8c7ae2421349272a182aa7",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "13af963748441127ebf5d0dbf3078f248e3fca7e45cac5a72617dcab1a4968fc"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0225"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_007": {
+    "accessions": [
+      "Q8Y7M8",
+      "P21693"
+    ],
+    "alignment_sha256": "02aa8013a41e5b2dad54c1d320a0086ce06d441b2ed9ef81d7813a536b511f96",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_bdc38c92c816969833f32852da6fc9f8bd54e856881de3eb93f9f2fcd57e051d",
+    "effective_sequences": 0.58984375,
+    "family_group": "cellular_DbpA_ribosome_assembly",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 481,
+    "input_fasta_sha256": "075ba2fe54df3689370bebec20c6d15470a3211f9ecfdcd203fdcc1c83dc8550",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_007.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "a29231443946473cfb8d6e2fc535cbbb461302132692d863ad85b753b65161fb",
+      "b4b06f3c664c21454d950f853c8bb52820a2d57f55f66df9a675972c0bbcad1b"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0425",
+      "DN3_REVIEW0486"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 2
+  },
+  "NEG3_008": {
+    "accessions": [
+      "Q974S1",
+      "Q4JC00",
+      "F0NDL2",
+      "P0DMI1",
+      "D0KN27",
+      "Q9V0A9",
+      "O26901"
+    ],
+    "alignment_sha256": "22b3675f7cd5ae9802aa9b5f57079d9bbb9f845f701444f800a420d6b9a2304c",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_81531e6fdc5b5dfa249b176eb4651eba04a680864480687ffd734283c344c289",
+    "effective_sequences": 0.83740234375,
+    "family_group": "cellular_Hel308_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 704,
+    "input_fasta_sha256": "879a96c8c982cb9a69e462d3fe191721e10021de5c59dc9858b7c0413dac813f",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_008.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "27f6f81dfac53c5f2b031aace8ed7150e915e5ad2a5b35c97e10925162199b82",
+      "3f0afec6f35936dee3734659eeb3acf226cf990b7849c1ddf6cc198f1fb43c89",
+      "88d5f2318c3fe249748c81b086f91ca99886627464d1c3a5bced97fb16b3440b",
+      "a96ee7d02873acd04be98837d9f0a0d042f80bdec2982b9dc877a1b5833435a9",
+      "e3e925c9d5aa125ec88f763a2effb5c5a006739c4e34c30f2622f0c9405414f6",
+      "e781ded12b748fdb2fb616b2b9dedb8fb66dbe93f031a9a9c8990959926b64e4",
+      "f43c1762a7eeaf425d51a993785022a646ba25aaea48aa8bbf96aba5af0ea2cb"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0321",
+      "DN3_REVIEW0036",
+      "DN3_REVIEW0250",
+      "DN3_REVIEW0427",
+      "DN3_REVIEW0347",
+      "DN3_REVIEW0417",
+      "DN3_REVIEW0482"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 7
+  },
+  "NEG3_009": {
+    "accessions": [
+      "O32215"
+    ],
+    "alignment_sha256": "ccbe49fc3dacd78da5258073c0304ee48f37c08e23d509b344d8a914331fd9b4",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_3a2ce365ef068a0da8fce88415ec928e139a35daef43c2d2568311c682bd6ccd",
+    "effective_sequences": null,
+    "family_group": "cellular_HelD_transcription_recycling",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 774,
+    "input_fasta_sha256": "ccbe49fc3dacd78da5258073c0304ee48f37c08e23d509b344d8a914331fd9b4",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "82a79599fa62491b0973dc4ee94a2d8381498ac093496159062c386aee543d57"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0337"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_010": {
+    "accessions": [
+      "A0QZ38"
+    ],
+    "alignment_sha256": "7e5089122e4083569e636b29a37d97ede64225ac8bfd2c3ba1c37f09fd9880b4",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_3bb3244a6c146e092f40b0e93b936883ec3897541b4f67618beea69040f349dd",
+    "effective_sequences": null,
+    "family_group": "cellular_HelY_RNA_metabolism",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 912,
+    "input_fasta_sha256": "7e5089122e4083569e636b29a37d97ede64225ac8bfd2c3ba1c37f09fd9880b4",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "772d5aa566e2de7f661933ac15948eca34816a6f76813dc7e00550f29e2e0911"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0142"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_011": {
+    "accessions": [
+      "Q96YR7"
+    ],
+    "alignment_sha256": "cb18b3799b07cb77e442d160acf965c050fc3c7968c53a8c97e768bf16873446",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_8bed50345ca3401650bf310d9e9a79113b76aa378a6b3663f5d1158e4a3be868",
+    "effective_sequences": null,
+    "family_group": "cellular_HerA_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 495,
+    "input_fasta_sha256": "cb18b3799b07cb77e442d160acf965c050fc3c7968c53a8c97e768bf16873446",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "093d86cf4bba881b94c29aa485a029f79785881f18424cc7dca446fa4766dbb7"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0267"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_012": {
+    "accessions": [
+      "O51767"
+    ],
+    "alignment_sha256": "0fb38fa082855cd3d84ce2141fe8145c2c9e04daa3c0ff8d70a4c57a1af9e3f6",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_8a8d6a68ead1547394a606d46826d080479c8fa2b7e31537c7d13590958d0037",
+    "effective_sequences": null,
+    "family_group": "cellular_HrpA_RNA_metabolism",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 823,
+    "input_fasta_sha256": "0fb38fa082855cd3d84ce2141fe8145c2c9e04daa3c0ff8d70a4c57a1af9e3f6",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "77cb91db4c6864fb42c692c9ce858da45dc844e23bf622c800c91ed51807eac7"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0298"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_013": {
+    "accessions": [
+      "F0LJX3",
+      "Q4J8R1",
+      "P30015",
+      "A0QT91",
+      "O27830"
+    ],
+    "alignment_sha256": "597391524d23379c2f004ec3eca7be1c9084ee81ebc1645699f91a81637fe3f5",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_62b06cc7b36bbab3de75a236eb58b43c8416c43faa5ffefdca442ca048479ba7",
+    "effective_sequences": 0.8251953125,
+    "family_group": "cellular_Lhr_nucleic_acid_metabolism",
+    "group_calibration_components": 0,
+    "group_fit_components": 2,
+    "hmm_length": 880,
+    "input_fasta_sha256": "7cd15152b5d46444b59a946cc39142c2b5c2eabf95fe4c05918d219fa68cf876",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_013.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "00764b8156d3104779f70678df1c5f4b438b5962ae2a7520a9fa3a809666c296",
+      "599d79310ec23c778d237f1bab50ccc689a4391422729c4b4332423238d84095",
+      "ae243dc6b846f95693293efff931518e4f89e35e9441770190983b90f1ec913e",
+      "df6c8d2369c88ffbb7e9bcde2d7556ef9f3d2afd25392c0bf714c7b7ff56d20b",
+      "f9b1c75834d1e955ff4a6ef58429c30e6bac41dc8ab1f9c2c32e665da6f76ce5"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0149",
+      "DN3_REVIEW0097",
+      "DN3_REVIEW0380",
+      "DN3_REVIEW0504",
+      "DN3_REVIEW0218"
+    ],
+    "sparse_declared_group": false,
+    "training_sequences": 5
+  },
+  "NEG3_014": {
+    "accessions": [
+      "Q88NV1"
+    ],
+    "alignment_sha256": "16059976780d104b8efe749c1c35e60c7c7d30951a7dc07189fba4b7d252f927",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_c45f98f039a8bae6f507e0a1bb820e32c27003c8cf7b2fb035b6fc7b4ba93908",
+    "effective_sequences": null,
+    "family_group": "cellular_Lhr_nucleic_acid_metabolism",
+    "group_calibration_components": 0,
+    "group_fit_components": 2,
+    "hmm_length": 816,
+    "input_fasta_sha256": "16059976780d104b8efe749c1c35e60c7c7d30951a7dc07189fba4b7d252f927",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "04b81b45ba26233790ff428a795f481711ac7e3aac4c98668894f3efbb9df8b6"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0304"
+    ],
+    "sparse_declared_group": false,
+    "training_sequences": 1
+  },
+  "NEG3_015": {
+    "accessions": [
+      "P94461",
+      "P17888",
+      "Q5F6V8"
+    ],
+    "alignment_sha256": "d42bf953300f84db1a08ae788d59054376b7c08626f7f385949bd8e15788edc4",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_2193594d69f2aac3e463638514a1e44a9882aca555a1844ff33bf6a5c46820c7",
+    "effective_sequences": 0.7177734375,
+    "family_group": "cellular_PriA_replication_restart",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 733,
+    "input_fasta_sha256": "3441da1f1c1166365db333ef15001a6c41de4b4629db7c19d57b15c2c019557f",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_015.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "04ccab0a0fa04fdefec53990061302d29d61d0cc9cd172cf7425782abc00f5cf",
+      "ca71245daecc88650ef066672592468a1d11e2da19f502bd99a08aa0162edbcf",
+      "ef6c3ffe7dc37bec3d2529c78a1850288bf6360f53389681bff488df263499ab"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0423",
+      "DN3_REVIEW0300",
+      "DN3_REVIEW0077"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 3
+  },
+  "NEG3_016": {
+    "accessions": [
+      "P60240"
+    ],
+    "alignment_sha256": "9f867cb5adc32b3b9b1bb5a61cf6666ae1d583cde1cb93880f8bd68a8ae722ef",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_972014a38f8ca58b2165cd7d51b88895515d3508f3fdc9e2b2a441be118be332",
+    "effective_sequences": null,
+    "family_group": "cellular_RapA_transcription_recycling",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 968,
+    "input_fasta_sha256": "9f867cb5adc32b3b9b1bb5a61cf6666ae1d583cde1cb93880f8bd68a8ae722ef",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "9e3e5116da563e25f28139307e31177ffe0042f705c0e75bee0fee1831af6699"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0269"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_017": {
+    "accessions": [
+      "P04993"
+    ],
+    "alignment_sha256": "7e566f2136b463982d326e05ca02c33b93adbde9a21ce79109047316269ea4a9",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_7e27ac07228ba852c7e7d161ad53a1b81a7bfc55b69685bb5d42a5c32c6e0205",
+    "effective_sequences": null,
+    "family_group": "cellular_RecBCD_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 608,
+    "input_fasta_sha256": "7e566f2136b463982d326e05ca02c33b93adbde9a21ce79109047316269ea4a9",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "65b81194ac755ca6b2f38042f4ac85211dec1c1a991c9e47b772dd45cf330f4d"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0150"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_018": {
+    "accessions": [
+      "P9WMQ7",
+      "O67837",
+      "P24230",
+      "O34942"
+    ],
+    "alignment_sha256": "b71fd2418b0b058e6fc665219b7d9b9107e141069f74ea2c4ceb0e65507534fa",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_135570e7bd2da51bab8f0327b9b731afc5a892c571a74357b3dbc0e213c78bb3",
+    "effective_sequences": 0.80078125,
+    "family_group": "cellular_RecG_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 697,
+    "input_fasta_sha256": "91b4a91af06cfedba834178d69b51a631dc97ece467e2ca045b19087a225b4be",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_018.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "3b523c7021566fecd2e7fc89db84f606a72f18a6091df7da7846a1029d6efe8a",
+      "a519e0ed82cbd0562bf988f1b7160593eb2c409cf00818a95a6988704ecd295c",
+      "aa7d2a21a21f1a28229c0230cf4a54a17bccacce380882f94868d80701cdc426",
+      "f97ad37b124aae68f2cee73efbfc950f1d7803a8169645fcf60bc25c868606a2"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0124",
+      "DN3_REVIEW0286",
+      "DN3_REVIEW0481",
+      "DN3_REVIEW0192"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 4
+  },
+  "NEG3_019": {
+    "accessions": [
+      "P15043",
+      "O34748"
+    ],
+    "alignment_sha256": "8d5d77dd97be46898bb619fb0c276a256293435e76912f1ae9decf7da7766fed",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_8986b5d84b6689d08219768ff0d9472e625b898de39b5fbbe61eedd20abd07fa",
+    "effective_sequences": 0.55859375,
+    "family_group": "cellular_RecQ_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 611,
+    "input_fasta_sha256": "0d6fef166396c418544f3a958a965fa65e21e51eb2df24c340d1cc1d85307bc5",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_019.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "035e200f30ea6e4e19c9e446ab4d0e296bcd1eb2978dcb31cefd921cdffad34b",
+      "bac334d415221fc5353b15afc2cbf80d8a4cbba97f74d01bbb8ae7de0269d2c6"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0067",
+      "DN3_REVIEW0463"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 2
+  },
+  "NEG3_020": {
+    "accessions": [
+      "Q5SJE9",
+      "Q03222"
+    ],
+    "alignment_sha256": "313a869a34ea59b404d09fcdf4532b906eb0a0b7aa8b097e492170a739ed6c11",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_e33b63566aa4d0bf0741d0179dbe82c836e683140cfe63fbe55169997a72d055",
+    "effective_sequences": 0.51171875,
+    "family_group": "cellular_Rho_transcription_termination",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 438,
+    "input_fasta_sha256": "03656a28f86481cfbda20611cc7c0cd1ad9485febc5df8b0b3fa836781bd17a9",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_020.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "11a235fd47a541249d4a6abe6f31480df81f176558bb2cc43a09d5be3f2a95f0",
+      "fd513c45ef0dba24f05ef587996eb019f18e2146a60be6e0229afefe3e168a39"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0384",
+      "DN3_REVIEW0078"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 2
+  },
+  "NEG3_021": {
+    "accessions": [
+      "B9XXL6"
+    ],
+    "alignment_sha256": "2c431ee40a208ce2e6fa1f843ee2c389c3949cd133fe6106c9af692412514453",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_bdc38c92c816969833f32852da6fc9f8bd54e856881de3eb93f9f2fcd57e051d",
+    "effective_sequences": null,
+    "family_group": "cellular_RhpA_RNA_metabolism",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 492,
+    "input_fasta_sha256": "2c431ee40a208ce2e6fa1f843ee2c389c3949cd133fe6106c9af692412514453",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "65989cc261d4574b3da174dd7cc7289e564bdb019d2e9617d10f94eb80d42f14"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0251"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_022": {
+    "accessions": [
+      "P21458"
+    ],
+    "alignment_sha256": "41b632dd05587efbe916bafaf21f00ffe2d1588841d1ad539af558a201f79193",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_9ec75fc88d461ed00281d1237d2f2aba89359258f2bcb4d11ce3b6e9de25206c",
+    "effective_sequences": null,
+    "family_group": "cellular_SpoIIIE_DNA_transport",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 787,
+    "input_fasta_sha256": "41b632dd05587efbe916bafaf21f00ffe2d1588841d1ad539af558a201f79193",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "ec6bac7b214a680679cc4ec60f36e02ca8e598915dba279900ac5892603fd2ef"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0204"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_023": {
+    "accessions": [
+      "P21507"
+    ],
+    "alignment_sha256": "7a85fd1d14f7d7fa58770b77fe68347f9bea2ad65b73ebb64573e48346e91d2c",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_bdc38c92c816969833f32852da6fc9f8bd54e856881de3eb93f9f2fcd57e051d",
+    "effective_sequences": null,
+    "family_group": "cellular_SrmB_ribosome_assembly",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 444,
+    "input_fasta_sha256": "7a85fd1d14f7d7fa58770b77fe68347f9bea2ad65b73ebb64573e48346e91d2c",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "6c38e55ddb8bbfd376b416599db8e6464bf942dfe02015d522702a7377b82d39"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0319"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_024": {
+    "accessions": [
+      "Q970I2",
+      "A6WE36",
+      "Q971U1",
+      "O29889",
+      "O53873"
+    ],
+    "alignment_sha256": "64deac64709ac9d3e43052d619bb3b7b970d204454a339b466f996921403b8c6",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_e43e960538f794b51f4452a72108d4ac9a8024fe4dcd177ad7ffd5e7c749cf57",
+    "effective_sequences": 0.9228515625,
+    "family_group": "cellular_XPB_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 513,
+    "input_fasta_sha256": "7d6dff19d510de7ca9eac6f736f906b4ee8fea504dc15289fb3f6845adbb8826",
+    "mafft_command": [
+      "mafft",
+      "--thread",
+      "2",
+      "--auto",
+      "/home/alex/CodexProjects/CasAndraProject/NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/alignments/NEG3_024.input.faa"
+    ],
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "078459073122559564e2e929b6651431dcf18526045ec6c0f1e8c205f36111ec",
+      "2145e270a724eb7d3036dcd748a9f46a12149aebf7850d17982a06ac954352d8",
+      "2f3075a3e5ff8a11fa64540c515c4e3b872aafdfd77c9736e58db8ca8b2e2e31",
+      "a3dc9bf4c34505c476f58767ea9fb3a7be98191e2fe98b7d7b01296d8811f69f",
+      "af7e8c17ae38588c664c3b250e75dbf2bc91086ec2133428efe49932ce293cbb"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0429",
+      "DN3_REVIEW0494",
+      "DN3_REVIEW0186",
+      "DN3_REVIEW0400",
+      "DN3_REVIEW0245"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 5
+  },
+  "NEG3_025": {
+    "accessions": [
+      "Q9HM14"
+    ],
+    "alignment_sha256": "ee10717f9bcb361f8dfaaab94f49959a630f976c1d44aa60cb96588c418ca511",
+    "allowed_positive_family_patterns": [
+      "Cas3",
+      "Cas3C",
+      "Cas3HD"
+    ],
+    "component_id": "PC_f3a2ec2c48c2697a8680bcd66a2bb43e8c1906f3b1192b9a73f296c441a64bda",
+    "effective_sequences": null,
+    "family_group": "cellular_XPD_repair",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 602,
+    "input_fasta_sha256": "ee10717f9bcb361f8dfaaab94f49959a630f976c1d44aa60cb96588c418ca511",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "0b3a2ad75cc7ccc68ff89c4cd4d7dee52260c4b4fae0c81b80b66cc0bada735c"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0103"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  },
+  "NEG3_026": {
+    "accessions": [
+      "Q7DF80"
+    ],
+    "alignment_sha256": "08f353615a11f7c368855aac404c563a1ce87340d2eb95abdb212d4e7b295267",
+    "allowed_positive_family_patterns": [
+      "Cas12*"
+    ],
+    "component_id": "PC_c8b7bfe1581f254b86e1523197c51441b32de3a540d739a9c6b2775db126b63d",
+    "effective_sequences": null,
+    "family_group": "transposon_TnpB_experimental",
+    "group_calibration_components": 0,
+    "group_fit_components": 1,
+    "hmm_length": 408,
+    "input_fasta_sha256": "08f353615a11f7c368855aac404c563a1ce87340d2eb95abdb212d4e7b295267",
+    "mafft_command": null,
+    "no_within_group_calibration": true,
+    "scope": "alternative-function development competitor; not exclusive negative truth",
+    "sequence_sha256": [
+      "664a76d6a9477d502e8c1314fd7611b592af1468e8864e3e40678d58690d98b6"
+    ],
+    "source_ids": [
+      "DN3_REVIEW0153"
+    ],
+    "sparse_declared_group": true,
+    "training_sequences": 1
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "scope": "Independent detection-council retained-evidence audit only; no new native workload or biological-recovery claim",
+  "checks": {
+    "inputs": 79,
+    "standard_candidates": 3390,
+    "short_proposals": 66,
+    "native_baseline_interactions": 2933,
+    "paired_residues": 76865
+  },
+  "failures": [],
+  "rows": [
+    {
+      "label": "Ain",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Bbo",
+      "standard_candidates": 44,
+      "short_proposals": 2
+    },
+    {
+      "label": "Bni",
+      "standard_candidates": 64,
+      "short_proposals": 0
+    },
+    {
+      "label": "Bok",
+      "standard_candidates": 20,
+      "short_proposals": 0
+    },
+    {
+      "label": "Cca1",
+      "standard_candidates": 192,
+      "short_proposals": 2
+    },
+    {
+      "label": "Cca2",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Cco",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Cga",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Cgl",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Cme1",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Cme2",
+      "standard_candidates": 4,
+      "short_proposals": 2
+    },
+    {
+      "label": "Cme3",
+      "standard_candidates": 0,
+      "short_proposals": 4
+    },
+    {
+      "label": "Cme4",
+      "standard_candidates": 176,
+      "short_proposals": 0
+    },
+    {
+      "label": "Cpe",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Csa",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Dde",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ece",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Edo",
+      "standard_candidates": 56,
+      "short_proposals": 0
+    },
+    {
+      "label": "Efa",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Eit",
+      "standard_candidates": 84,
+      "short_proposals": 2
+    },
+    {
+      "label": "Esp1",
+      "standard_candidates": 32,
+      "short_proposals": 4
+    },
+    {
+      "label": "Esp2",
+      "standard_candidates": 4,
+      "short_proposals": 2
+    },
+    {
+      "label": "Ffr",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Fho",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Fma",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ghc1",
+      "standard_candidates": 4,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ghc2",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Ghe",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Ghh1",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ghh2",
+      "standard_candidates": 4,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ghy1",
+      "standard_candidates": 44,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ghy2",
+      "standard_candidates": 0,
+      "short_proposals": 2
+    },
+    {
+      "label": "Ghy3",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Ghy4",
+      "standard_candidates": 84,
+      "short_proposals": 2
+    },
+    {
+      "label": "Gsp",
+      "standard_candidates": 80,
+      "short_proposals": 0
+    },
+    {
+      "label": "Jpa",
+      "standard_candidates": 128,
+      "short_proposals": 0
+    },
+    {
+      "label": "Khu",
+      "standard_candidates": 72,
+      "short_proposals": 0
+    },
+    {
+      "label": "Kki",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Lan",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Lce",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Lmo",
+      "standard_candidates": 16,
+      "short_proposals": 0
+    },
+    {
+      "label": "Lpn",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Lrh",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Lsp1",
+      "standard_candidates": 4,
+      "short_proposals": 2
+    },
+    {
+      "label": "Lsp2",
+      "standard_candidates": 14,
+      "short_proposals": 0
+    },
+    {
+      "label": "Mga",
+      "standard_candidates": 108,
+      "short_proposals": 0
+    },
+    {
+      "label": "Msc",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Mse",
+      "standard_candidates": 464,
+      "short_proposals": 0
+    },
+    {
+      "label": "Nme2",
+      "standard_candidates": 4,
+      "short_proposals": 2
+    },
+    {
+      "label": "Nsa",
+      "standard_candidates": 4,
+      "short_proposals": 0
+    },
+    {
+      "label": "Nsp",
+      "standard_candidates": 168,
+      "short_proposals": 0
+    },
+    {
+      "label": "Orh",
+      "standard_candidates": 4,
+      "short_proposals": 4
+    },
+    {
+      "label": "Pac",
+      "standard_candidates": 12,
+      "short_proposals": 2
+    },
+    {
+      "label": "Phi",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Psp",
+      "standard_candidates": 40,
+      "short_proposals": 2
+    },
+    {
+      "label": "Rsp",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sag1",
+      "standard_candidates": 4,
+      "short_proposals": 2
+    },
+    {
+      "label": "Sag2",
+      "standard_candidates": 44,
+      "short_proposals": 2
+    },
+    {
+      "label": "Sdo",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sdy",
+      "standard_candidates": 12,
+      "short_proposals": 2
+    },
+    {
+      "label": "Seq1",
+      "standard_candidates": 12,
+      "short_proposals": 2
+    },
+    {
+      "label": "Seq2",
+      "standard_candidates": 40,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sga",
+      "standard_candidates": 12,
+      "short_proposals": 2
+    },
+    {
+      "label": "Sgo",
+      "standard_candidates": 100,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sma2",
+      "standard_candidates": 144,
+      "short_proposals": 0
+    },
+    {
+      "label": "Smu",
+      "standard_candidates": 4,
+      "short_proposals": 0
+    },
+    {
+      "label": "Spa",
+      "standard_candidates": 232,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sra",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ssa",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ssi",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    },
+    {
+      "label": "Ssu",
+      "standard_candidates": 104,
+      "short_proposals": 0
+    },
+    {
+      "label": "Sth1A",
+      "standard_candidates": 128,
+      "short_proposals": 0
+    },
+    {
+      "label": "Tba",
+      "standard_candidates": 8,
+      "short_proposals": 2
+    },
+    {
+      "label": "Tde",
+      "standard_candidates": 228,
+      "short_proposals": 0
+    },
+    {
+      "label": "Tmo",
+      "standard_candidates": 20,
+      "short_proposals": 0
+    },
+    {
+      "label": "Tpu",
+      "standard_candidates": 12,
+      "short_proposals": 0
+    },
+    {
+      "label": "Tsp",
+      "standard_candidates": 64,
+      "short_proposals": 0
+    },
+    {
+      "label": "Vpa",
+      "standard_candidates": 64,
+      "short_proposals": 0
+    },
+    {
+      "label": "Wvi",
+      "standard_candidates": 8,
+      "short_proposals": 0
+    }
+  ],
+  "reviewed_sha256": {
+    "src/crisprtracrrna/config.py": "af9eceb2af57a02b83e4a2df3b8922e22d650f076197178835d4841509e4c48d",
+    "src/crisprtracrrna/search.py": "83ba84b6f50e60c0397dc483613489edebebeca93c0ff86f96b5e18d5b3eeafd",
+    "src/crisprtracrrna/evidence.py": "d7d3f5c321753a4bd9865c2f4a811de5549455f84d8789dbcc857c43a04ee8ec",
+    "src/crisprtracrrna/pipeline.py": "6d3608a7ca94216b2fbd6375566ea324cf5118ceee70683a36c8c46e0537f583",
+    "src/crisprtracrrna/cli.py": "35befc0806315d7745955e47093450ff982fe9230cb262e4ec7fc957fbb8ef15",
+    "tests/test_council_round2.py": "3e20b05f98f6952e636153618b0b2f8b9fd8d5febfb5de6e02330858d4d024a7",
+    "docs/COUNCIL_IMPROVEMENT_PLAN.md": "4928592891d03d70ab06faae313c6b39f3248afa34774aa97a43c4b3d2e86a0d",
+    "benchmarks/council_round2/protocol.json": "e77f6edb949fc1af26cb756f77aaf9fab13d7ef3626158adf3efde870cada15d"
+  },
+  "fresh_small_default_equivalence": [
+    {
+      "label": "Ain",
+      "count": 8,
+      "identical_original_predictions_and_order": true,
+      "report_sha256": "5f3092dbb86852e7bb983db2cc98e7b219da12866a76fedbfc97347701032be2"
+    },
+    {
+      "label": "Cca1",
+      "count": 192,
+      "identical_original_predictions_and_order": true,
+      "report_sha256": "36dcf197d3b70826b2fc2459911f549d4c3d58a7013d9b766aa8fcc0c596541c"
+    },
+    {
+      "label": "Kki",
+      "count": 8,
+      "identical_original_predictions_and_order": true,
+      "report_sha256": "c4a2a25fc312273415dbcf71a45a68d8a241ea6b2e5a8730891a471badc3a3fb"
+    },
+    {
+      "label": "Lsp1",
+      "count": 4,
+      "identical_original_predictions_and_order": true,
+      "report_sha256": "7af24ec6b44c61b112b885cf61b9c8b155ba2373d931dd4a3787c514c7a4b187"
+    },
+    {
+      "label": "Mse",
+      "count": 464,
+      "identical_original_predictions_and_order": true,
+      "report_sha256": "2f670e36f7bc1cb56ce74d7ca723a04cc8de84a5b658b5a62afba412324ed841"
+    }
+  ],
+  "independent_focused_tests": "python -m pytest tests/test_council_round2.py tests/test_scientific_parsers.py -q:42 passed",
+  "conditional_annotation_fix_sha256": "0deb3412cfddcac35fd78a6f5914e2b6dbb3196827247a35debc6a2d676a263e"
+}

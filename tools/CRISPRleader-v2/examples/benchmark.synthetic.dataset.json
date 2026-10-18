@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "synthetic-evaluation-example-v1",
+  "data_kind": "synthetic",
+  "orientation_semantics": "transcription_orientation",
+  "cases": [
+    {
+      "id": "case-1",
+      "group_id": "group-a",
+      "stratum": "synthetic-group",
+      "truth": "+",
+      "label_kind": "experimental",
+      "label_source": "invented software fixture; not an experiment"
+    },
+    {
+      "id": "case-2",
+      "group_id": "group-a",
+      "stratum": "synthetic-group",
+      "truth": "-",
+      "label_kind": "reviewed_comparative",
+      "label_source": "invented software fixture; not biological evidence"
+    },
+    {
+      "id": "case-3",
+      "group_id": "group-b",
+      "stratum": "synthetic-group",
+      "truth": "+",
+      "label_kind": "experimental",
+      "label_source": "invented software fixture; not an experiment"
+    },
+    {
+      "id": "case-4",
+      "group_id": "group-b",
+      "stratum": "synthetic-group",
+      "truth": "-",
+      "label_kind": "experimental",
+      "label_source": "invented software fixture; not an experiment"
+    },
+    {
+      "id": "unscored-case",
+      "group_id": "group-c",
+      "stratum": "synthetic-group",
+      "truth": "+",
+      "label_kind": "computational",
+      "label_source": "invented computational label excluded from accuracy"
+    }
+  ]
+}

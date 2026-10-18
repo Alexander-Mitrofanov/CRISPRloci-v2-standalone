@@ -1,0 +1,11 @@
+{
+  "files": {
+    "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/external/CRISPRidentify-v2/crispridentify": "4be3322b0060f32dee50f70cc6ebbd1173ebc9c85580891d10c02f7a8211e70a",
+    "/home/alex/CodexProjects/CRISPRidentify-v2/tool/.envs/crispridentify-core/bin/python3.12": "aceb1cbacd3242457a220653af5bb15fc8f903faeee188ae4fc4e6a8e3cfd8a2",
+    "/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/fasta36": "9a6e368d4d955a169d3749b5f752a8e87816d26fcfb4c7ec8e577adc36744d55",
+    "/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/cmscan": "980f6d130bc7c4f5ae2eabe41b5586a022c5666dcd784c3cce4fad0bd0bb7463",
+    "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/src/crisprtracrrna/data/erpin/erpin": "2a94361c4786c5f0f7646730ff038fecb7f10770719eeb49179232ae6a129d63",
+    "/home/alex/miniconda3/envs/crispr_tracr_rna_env/bin/IntaRNA": "4605114ecd777c34d9f2b35f7b1e834f0c135afcb7fa5de25102b832147820b6"
+  },
+  "matches_all_historical_command_hashes": true
+}

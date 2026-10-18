@@ -1,0 +1,62 @@
+{
+  "implementation_archive_members_exact": 30,
+  "documentation_changes_after_archive": [
+    "README.md",
+    "docs/IMPROVEMENTS.md"
+  ],
+  "final_result_audit_log_hashes_verified": 19,
+  "current_stages_identical_live_source_files": {
+    "stages": 7,
+    "files": 13
+  },
+  "paired_native": {
+    "loci_exact": 79,
+    "predictions_exact": 3395,
+    "experimental_preserved_loci": 79,
+    "added_short": 11
+  },
+  "fixed_native_replay": {
+    "loci_exact": 79,
+    "interactions_exact": 3390,
+    "logged_calls": 152
+  },
+  "seeded_byte_repeats": {
+    "Lsp2": 6,
+    "Ain": 2,
+    "Kki": 2,
+    "Mse": 2
+  },
+  "controls_report_counts": {
+    "genomic_default": {
+      "reports": 19,
+      "predictions": 60,
+      "short": 0
+    },
+    "genomic_experimental": {
+      "reports": 19,
+      "predictions": 60,
+      "short": 0
+    }
+  },
+  "conditional_results": {
+    "conditional_dinucleotide_1": {
+      "complete": 79,
+      "proposals": 126,
+      "admissions": 2
+    },
+    "conditional_dinucleotide_2": {
+      "complete": 79,
+      "proposals": 79,
+      "admissions": 0
+    },
+    "conditional_derangement": {
+      "complete": 79,
+      "proposals": 100,
+      "admissions": 1
+    }
+  },
+  "documentation_deltas_verified": [
+    "README.md",
+    "docs/IMPROVEMENTS.md"
+  ]
+}

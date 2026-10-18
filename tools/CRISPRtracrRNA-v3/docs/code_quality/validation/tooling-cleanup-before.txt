@@ -1,0 +1,21 @@
+Cloning into '/tmp/tracrrna-tooling-review-swh7idu2/project/external/.CasAndra-8c0c4z1j/checkout'...
+warning: --filter is ignored in local clones; use file:// instead.
+done.
+HEAD is now at 93799e3 v1
+HEAD is now at 93799e3 v1
+warning: filtering not recognized by server, ignoring
+From /tmp/tracrrna-tooling-review-swh7idu2/upstream
+ * branch            main       -> FETCH_HEAD
+   93799e3..1dfb9c8  main       -> origin/main
+Previous HEAD position was 93799e3 v1
+HEAD is now at 1dfb9c8 v2
+Previous HEAD position was 1dfb9c8 v2
+HEAD is now at 93799e3 v1
+HEAD is now at 93799e3 v1
+From /tmp/tracrrna-tooling-review-swh7idu2/upstream
+ * branch            main       -> FETCH_HEAD
+Previous HEAD position was 93799e3 v1
+HEAD is now at 1dfb9c8 v2
+CasAndra: 93799e34bc62e640833de8d9650d66209fe89efb
+{"context_message": "PRIMARY: lock publication failed", "context_type": "OSError", "head_is_candidate": false, "head_is_original": true, "mapping_unchanged": true, "primary_lock_unchanged": true, "rollback_fails": false, "staged_lock_count": 1, "surfaced_message": "CLEANUP: cannot remove staged lock", "surfaced_type": "PermissionError"}
+{"context_message": "Dependency update failed: PRIMARY: lock publication failed; restoration also failed: RESTORATION: original HEAD cannot be restored. The lock was not published. Restore /tmp/tracrrna-tooling-review-swh7idu2/project/external/CasAndra to 93799e34bc62e640833de8d9650d66209fe89efb (detached HEAD) before retrying.", "context_type": "RuntimeError", "head_is_candidate": true, "head_is_original": false, "mapping_unchanged": true, "primary_lock_unchanged": true, "rollback_fails": true, "staged_lock_count": 1, "surfaced_message": "CLEANUP: cannot remove staged lock", "surfaced_type": "PermissionError"}

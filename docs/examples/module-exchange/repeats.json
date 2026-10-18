@@ -1,0 +1,47 @@
+{
+  "schema": {
+    "name": "crisprloci.sequence-set",
+    "version": "1.0.0"
+  },
+  "kind": "repeat",
+  "molecule": "DNA",
+  "complete": true,
+  "records": [
+    {
+      "id": "repeat_1da09a6c657a27ba02b69dfa",
+      "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "origin": {
+        "source_id": "example_record_01",
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "array_id": "CRISPR-422-580-bf1",
+        "ordinal": 3,
+        "start": 551,
+        "end": 580
+      }
+    },
+    {
+      "id": "repeat_3d0dd639d72bf8d943f9591b",
+      "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "origin": {
+        "source_id": "example_record_01",
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "array_id": "CRISPR-422-580-bf1",
+        "ordinal": 1,
+        "start": 422,
+        "end": 451
+      }
+    },
+    {
+      "id": "repeat_cc2dc1a1014895ad054d13b6",
+      "sequence": "CGTTTTAGTTACTTATTGTGAAATGTAAAT",
+      "origin": {
+        "source_id": "example_record_01",
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "array_id": "CRISPR-422-580-bf1",
+        "ordinal": 2,
+        "start": 486,
+        "end": 515
+      }
+    }
+  ]
+}

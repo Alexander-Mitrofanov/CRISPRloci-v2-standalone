@@ -1,0 +1,21 @@
+Cloning into '/tmp/tracrrna-tooling-review-vk3qwnmo/project/external/.CasAndra-ed08jbvt/checkout'...
+warning: --filter is ignored in local clones; use file:// instead.
+done.
+HEAD is now at 050322d v1
+HEAD is now at 050322d v1
+warning: filtering not recognized by server, ignoring
+From /tmp/tracrrna-tooling-review-vk3qwnmo/upstream
+ * branch            main       -> FETCH_HEAD
+   050322d..83c90d5  main       -> origin/main
+Previous HEAD position was 050322d v1
+HEAD is now at 83c90d5 v2
+Previous HEAD position was 83c90d5 v2
+HEAD is now at 050322d v1
+HEAD is now at 050322d v1
+From /tmp/tracrrna-tooling-review-vk3qwnmo/upstream
+ * branch            main       -> FETCH_HEAD
+Previous HEAD position was 050322d v1
+HEAD is now at 83c90d5 v2
+CasAndra: 050322dc9d1be21f19700162645c052b95414957
+{"context_message": "None", "context_type": "NoneType", "head_is_candidate": false, "head_is_original": true, "mapping_unchanged": true, "notes": ["Could not remove staged lock /tmp/tracrrna-tooling-review-vk3qwnmo/project/.upstream-lock-7io_8dp8.json: CLEANUP: cannot remove staged lock"], "primary_lock_unchanged": true, "rollback_fails": false, "staged_lock_count": 1, "surfaced_message": "PRIMARY: lock publication failed", "surfaced_type": "OSError"}
+{"context_message": "RESTORATION: original HEAD cannot be restored", "context_type": "OSError", "head_is_candidate": true, "head_is_original": false, "mapping_unchanged": true, "notes": ["Could not remove staged lock /tmp/tracrrna-tooling-review-vk3qwnmo/project/.upstream-lock-595w9p98.json: CLEANUP: cannot remove staged lock"], "primary_lock_unchanged": true, "rollback_fails": true, "staged_lock_count": 1, "surfaced_message": "Dependency update failed: PRIMARY: lock publication failed; restoration also failed: RESTORATION: original HEAD cannot be restored. The lock was not published. Restore /tmp/tracrrna-tooling-review-vk3qwnmo/project/external/CasAndra to 050322dc9d1be21f19700162645c052b95414957 (detached HEAD) before retrying.", "surfaced_type": "RuntimeError"}

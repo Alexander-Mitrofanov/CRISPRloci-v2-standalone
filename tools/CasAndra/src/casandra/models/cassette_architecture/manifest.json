@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "model.joblib": {
+      "sha256": "181aa68154bcf8b08e3e74dbf9b1cc6602927d95127752716f120fcc1bcf2b1e",
+      "size": 4270649
+    },
+    "model_card.json": {
+      "sha256": "e14ad5cadca89e08e0d35edc300687ac59063f2faecd8dfb6955a6fa7a26931c",
+      "size": 895
+    }
+  },
+  "model_id": "casandra-kira-2026-09-15-full-v1-architecture",
+  "role": "deployment_refit_not_evaluation_model",
+  "schema_version": 2
+}

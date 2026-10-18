@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "spacepharer"
+version = "2.1.1"
+description = "Offline versioned SpacePHARER association engine"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+license-files = ["LICENCE.md", "THIRD_PARTY.md"]
+dependencies = []
+[project.scripts]
+spacepharer = "spacepharer.cli:main"
+[tool.setuptools.packages.find]
+where = ["python"]
+[tool.setuptools.package-data]
+spacepharer = ["py.typed"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 110
+exclude = ["lib"]
+[tool.mypy]
+files = ["python"]
+check_untyped_defs = true

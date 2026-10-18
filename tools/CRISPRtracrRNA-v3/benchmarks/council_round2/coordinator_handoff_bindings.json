@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-27T00:08:03.022275+00:00",
+  "tested_archive_sha256": "fb0b61ded6486aadc7dc80e4917e7f1e29622c1435ce8be49254a89b3cb0148f",
+  "archived_members_verified": 32,
+  "live_tested_files_unchanged": 30,
+  "documentation_only_deltas": {
+    "README.md": {
+      "tested_snapshot_sha256": "a6c639148c87f894dcad537222ddfa69ba3ad11e5873110b908b78a989114322",
+      "final_sha256": "b4f0b43ea70e920da9493b66413d17ce9e5cf0755d210bd37e54f60911911738"
+    },
+    "docs/IMPROVEMENTS.md": {
+      "tested_snapshot_sha256": "5ec5296ef5b91b0e623076c8f5ddcf984c4ca4b32307926f392cf68ceeece64c",
+      "final_sha256": "642207184b32e658cb9efb27d9e9ba359afc269ca31ac3281a5a951c253e33fc"
+    }
+  },
+  "frozen_dependency_files": 390,
+  "stock_executables": 6,
+  "amendment_files": 3,
+  "no_source_harness_or_test_changes_after_119_test_run": true,
+  "errors": [],
+  "passed": true
+}

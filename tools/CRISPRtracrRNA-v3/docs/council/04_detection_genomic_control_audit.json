@@ -1,0 +1,176 @@
+{
+  "inputs": 19,
+  "default_candidates": 60,
+  "experimental_candidates": 60,
+  "proposals": 30,
+  "admissions": 0,
+  "rejection_reasons": {
+    "no_independent_regional_support": 30,
+    "fewer_than_10_anchored_paired_bases": 4,
+    "no_anchored_interaction": 7
+  },
+  "all_default_predictions_identical": true,
+  "rows": [
+    {
+      "label": "Ain",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 4,
+      "reasons": {
+        "no_independent_regional_support": 4,
+        "fewer_than_10_anchored_paired_bases": 2
+      }
+    },
+    {
+      "label": "Bbo",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Cca1",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Cca2",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 2,
+      "reasons": {
+        "no_anchored_interaction": 2,
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Cga",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Cme1",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 2,
+      "reasons": {
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Cme3",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 4,
+      "reasons": {
+        "no_independent_regional_support": 4
+      }
+    },
+    {
+      "label": "Esp2",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Ffr",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Ghe",
+      "default_candidates": 8,
+      "experimental_candidates": 8,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Ghy2",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 4,
+      "reasons": {
+        "no_independent_regional_support": 4,
+        "no_anchored_interaction": 2
+      }
+    },
+    {
+      "label": "Kki",
+      "default_candidates": 8,
+      "experimental_candidates": 8,
+      "proposals": 0,
+      "reasons": {}
+    },
+    {
+      "label": "Lan",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 2,
+      "reasons": {
+        "no_anchored_interaction": 2,
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Lsp1",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 2,
+      "reasons": {
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Mse",
+      "default_candidates": 16,
+      "experimental_candidates": 16,
+      "proposals": 2,
+      "reasons": {
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Orh",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 4,
+      "reasons": {
+        "fewer_than_10_anchored_paired_bases": 2,
+        "no_independent_regional_support": 4
+      }
+    },
+    {
+      "label": "Psp",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 2,
+      "reasons": {
+        "no_independent_regional_support": 2,
+        "no_anchored_interaction": 1
+      }
+    },
+    {
+      "label": "Rsp",
+      "default_candidates": 4,
+      "experimental_candidates": 4,
+      "proposals": 2,
+      "reasons": {
+        "no_independent_regional_support": 2
+      }
+    },
+    {
+      "label": "Sth1A",
+      "default_candidates": 0,
+      "experimental_candidates": 0,
+      "proposals": 0,
+      "reasons": {}
+    }
+  ]
+}

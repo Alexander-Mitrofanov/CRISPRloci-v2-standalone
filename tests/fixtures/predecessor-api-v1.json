@@ -1,0 +1,399 @@
+{
+  "schema": "crispr-evolution-public-api-contract",
+  "schema_version": 1,
+  "api_version": "v1",
+  "routes": {
+    "health": { "method": "GET", "path": "/api/v1/health" },
+    "config": { "method": "GET", "path": "/api/v1/config" },
+    "version": { "method": "GET", "path": "/api/v1/version" },
+    "submit_job": { "method": "POST", "path": "/api/v1/jobs" },
+    "job_status": { "method": "GET", "path": "/api/v1/jobs/{job_id}" },
+    "cancel_job": { "method": "DELETE", "path": "/api/v1/jobs/{job_id}" },
+    "result_bundle": {
+      "method": "GET",
+      "path": "/api/v1/jobs/{job_id}/result"
+    },
+    "artifact": {
+      "method": "GET",
+      "path": "/api/v1/jobs/{job_id}/artifacts/{artifact_id}"
+    }
+  },
+  "openapi": {
+    "security_scheme": "JobAccessToken",
+    "operations": {
+      "health": {
+        "success_status": 200,
+        "response_media_types": ["application/json"],
+        "response_schema": "HealthResponse",
+        "protected": false
+      },
+      "config": {
+        "success_status": 200,
+        "response_media_types": ["application/json"],
+        "response_schema": "PublicConfig",
+        "protected": false
+      },
+      "version": {
+        "success_status": 200,
+        "response_media_types": ["application/json"],
+        "response_schema": "VersionResponse",
+        "protected": false
+      },
+      "submit_job": {
+        "success_status": 202,
+        "request_media_type": "application/json",
+        "request_schema": "JobSubmission",
+        "response_media_types": ["application/json"],
+        "response_schema": "JobCreated",
+        "protected": false
+      },
+      "job_status": {
+        "success_status": 200,
+        "response_media_types": ["application/json"],
+        "response_schema": "JobView",
+        "protected": true
+      },
+      "cancel_job": {
+        "success_status": 200,
+        "response_media_types": ["application/json"],
+        "response_schema": "CancelResponse",
+        "protected": true
+      },
+      "result_bundle": {
+        "success_status": 200,
+        "response_media_types": ["application/zip"],
+        "response_schema": null,
+        "protected": true
+      },
+      "artifact": {
+        "success_status": 200,
+        "response_media_types": ["application/octet-stream"],
+        "response_schema": null,
+        "protected": true
+      }
+    },
+    "models": {
+      "JobSubmission": {
+        "properties": [
+          "sequence",
+          "filename",
+          "mode",
+          "category_policy",
+          "spacer_distance",
+          "bias_corrections"
+        ],
+        "types": {
+          "sequence": "string",
+          "filename": "null|string",
+          "mode": "ref:ScientificMode",
+          "category_policy": "ref:CategoryPolicy",
+          "spacer_distance": "integer",
+          "bias_corrections": "boolean"
+        },
+        "required": ["sequence", "mode"],
+        "nullable": ["filename"],
+        "additional_properties": false
+      },
+      "JobCreated": {
+        "properties": ["access_token", "token_type", "job"],
+        "types": {
+          "access_token": "string",
+          "token_type": "string",
+          "job": "ref:JobView"
+        },
+        "required": ["access_token", "job"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "JobView": {
+        "properties": [
+          "job_id",
+          "status",
+          "mode",
+          "created_at",
+          "updated_at",
+          "started_at",
+          "finished_at",
+          "expires_at",
+          "queue_position",
+          "cancel_requested",
+          "input",
+          "options",
+          "summary",
+          "artifacts",
+          "error"
+        ],
+        "types": {
+          "job_id": "string",
+          "status": "ref:JobStatus",
+          "mode": "ref:ScientificMode",
+          "created_at": "string",
+          "updated_at": "string",
+          "started_at": "null|string",
+          "finished_at": "null|string",
+          "expires_at": "null|string",
+          "queue_position": "integer|null",
+          "cancel_requested": "boolean",
+          "input": "ref:InputSummary",
+          "options": "ref:JobOptions",
+          "summary": "null|object",
+          "artifacts": "array:ref:ArtifactView",
+          "error": "null|ref:ErrorView"
+        },
+        "required": ["job_id", "status", "mode", "created_at", "updated_at", "input", "options"],
+        "nullable": [
+          "started_at",
+          "finished_at",
+          "expires_at",
+          "queue_position",
+          "summary",
+          "error"
+        ],
+        "additional_properties": null
+      },
+      "ArtifactView": {
+        "properties": ["artifact_id", "name", "size_bytes", "sha256", "media_type", "download_url"],
+        "types": {
+          "artifact_id": "string",
+          "name": "string",
+          "size_bytes": "integer",
+          "sha256": "string",
+          "media_type": "string",
+          "download_url": "string"
+        },
+        "required": ["artifact_id", "name", "size_bytes", "sha256", "media_type", "download_url"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "CancelResponse": {
+        "properties": ["job"],
+        "types": {
+          "job": "ref:JobView"
+        },
+        "required": ["job"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "ErrorView": {
+        "properties": ["code", "message"],
+        "types": {
+          "code": "string",
+          "message": "string"
+        },
+        "required": ["code", "message"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "HealthResponse": {
+        "properties": [
+          "status",
+          "database",
+          "worker",
+          "storage",
+          "scientific_release",
+          "service",
+          "version",
+          "release_id",
+          "backend_wheel_sha256",
+          "scientific_release_manifest_sha256",
+          "scientific_artifacts"
+        ],
+        "types": {
+          "status": "string",
+          "database": "string",
+          "worker": "string",
+          "storage": "string",
+          "scientific_release": "string",
+          "service": "string",
+          "version": "string",
+          "release_id": "string",
+          "backend_wheel_sha256": "string",
+          "scientific_release_manifest_sha256": "string",
+          "scientific_artifacts": "map:ref:ScientificToolIdentity"
+        },
+        "required": [
+          "status",
+          "database",
+          "worker",
+          "storage",
+          "scientific_release",
+          "service",
+          "version",
+          "release_id",
+          "backend_wheel_sha256",
+          "scientific_release_manifest_sha256",
+          "scientific_artifacts"
+        ],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "InputSummary": {
+        "properties": ["filename", "record_count", "base_count", "sha256", "source_ids"],
+        "types": {
+          "filename": "string",
+          "record_count": "integer",
+          "base_count": "integer",
+          "sha256": "string",
+          "source_ids": "array:string"
+        },
+        "required": ["filename", "record_count", "base_count", "sha256", "source_ids"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "JobOptions": {
+        "properties": [
+          "category_policy",
+          "categories",
+          "spacer_distance",
+          "bias_corrections_requested",
+          "bias_corrections_effective",
+          "warnings"
+        ],
+        "types": {
+          "category_policy": "ref:CategoryPolicy",
+          "categories": "array:string",
+          "spacer_distance": "integer",
+          "bias_corrections_requested": "boolean",
+          "bias_corrections_effective": "boolean",
+          "warnings": "array:string"
+        },
+        "required": [
+          "category_policy",
+          "categories",
+          "spacer_distance",
+          "bias_corrections_requested",
+          "bias_corrections_effective"
+        ],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "PublicConfig": {
+        "properties": [
+          "service",
+          "api_version",
+          "modes",
+          "category_policies",
+          "max_request_bytes",
+          "max_archive_bytes",
+          "max_total_bases",
+          "max_record_bases",
+          "max_records",
+          "max_header_characters",
+          "max_queued_jobs",
+          "max_active_jobs",
+          "max_active_jobs_per_client",
+          "identify_folder_jobs",
+          "retention_seconds",
+          "accepted_categories",
+          "model_score_is_probability"
+        ],
+        "types": {
+          "service": "string",
+          "api_version": "string",
+          "modes": "array:ref:ScientificMode",
+          "category_policies": "array:ref:CategoryPolicy",
+          "max_request_bytes": "integer",
+          "max_archive_bytes": "integer",
+          "max_total_bases": "integer",
+          "max_record_bases": "integer",
+          "max_records": "integer",
+          "max_header_characters": "integer",
+          "max_queued_jobs": "integer",
+          "max_active_jobs": "integer",
+          "max_active_jobs_per_client": "integer",
+          "identify_folder_jobs": "integer",
+          "retention_seconds": "integer",
+          "accepted_categories": "array:string",
+          "model_score_is_probability": "boolean"
+        },
+        "required": [
+          "service",
+          "api_version",
+          "modes",
+          "category_policies",
+          "max_request_bytes",
+          "max_archive_bytes",
+          "max_total_bases",
+          "max_record_bases",
+          "max_records",
+          "max_header_characters",
+          "max_queued_jobs",
+          "max_active_jobs",
+          "max_active_jobs_per_client",
+          "identify_folder_jobs",
+          "retention_seconds",
+          "accepted_categories"
+        ],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "ScientificToolIdentity": {
+        "properties": ["name", "display_name", "version", "kind", "sha256", "sha256_scope"],
+        "types": {
+          "name": "string",
+          "display_name": "string",
+          "version": "string",
+          "kind": "string",
+          "sha256": "string",
+          "sha256_scope": "string"
+        },
+        "required": ["name", "display_name", "version", "kind", "sha256", "sha256_scope"],
+        "nullable": [],
+        "additional_properties": null
+      },
+      "VersionResponse": {
+        "properties": [
+          "service",
+          "version",
+          "api_version",
+          "integration_contract",
+          "release_id",
+          "backend_wheel_sha256",
+          "scientific_release_manifest_sha256",
+          "scientific_artifacts"
+        ],
+        "types": {
+          "service": "string",
+          "version": "string",
+          "api_version": "string",
+          "integration_contract": "string",
+          "release_id": "string",
+          "backend_wheel_sha256": "string",
+          "scientific_release_manifest_sha256": "string",
+          "scientific_artifacts": "map:ref:ScientificToolIdentity"
+        },
+        "required": [
+          "service",
+          "version",
+          "api_version",
+          "integration_contract",
+          "release_id",
+          "backend_wheel_sha256",
+          "scientific_release_manifest_sha256",
+          "scientific_artifacts"
+        ],
+        "nullable": [],
+        "additional_properties": null
+      }
+    }
+  },
+  "enums": {
+    "analysis_modes": ["detection", "reconstruction", "orientation"],
+    "category_policies": ["bona_fide_possible", "bona_fide_only"],
+    "job_statuses": [
+      "queued",
+      "running",
+      "completed",
+      "completed_no_eligible_groups",
+      "failed",
+      "cancelled"
+    ],
+    "terminal_statuses": [
+      "completed",
+      "completed_no_eligible_groups",
+      "failed",
+      "cancelled",
+      "expired"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+include CITATION.cff requirements-tested.txt pytest.ini conftest.py
+recursive-include provenance *.md *.json
+recursive-include scripts *.py
+recursive-include tests *.py *.faa *.json *.jsonl

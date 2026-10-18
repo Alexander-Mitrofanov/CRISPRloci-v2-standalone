@@ -1,0 +1,2231 @@
+{
+  "candidates": [
+    {
+      "gapped_repeats": [
+        "ACCACCCCCACGGGCGTGGGGAGCAC",
+        "ACCACCCCCACGGGCGTGGGGAGCAC",
+        "ACCACCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "label": "original_core",
+      "origin_kind": "ordinary",
+      "recorded_reconstruction_negative_summary": {
+        "coding_tandem": {
+          "reason": "equal_in_frame_period_run_not_found",
+          "scope": "existing_source_cds_tandem_rule_on_proposed_geometry",
+          "source_cds_assessed": false,
+          "status": "inapplicable"
+        },
+        "known_negative_annotations": {
+          "reason": "none_recorded",
+          "scope": "recorded_failures_only; not blanket negative clearance",
+          "status": "passed"
+        },
+        "likely_tandem": {
+          "reason": "at_least_one_spacer_pair_below_identity_threshold",
+          "status": "passed"
+        }
+      },
+      "repeat_intervals": [
+        [
+          5666962,
+          5666988
+        ],
+        [
+          5667023,
+          5667049
+        ],
+        [
+          5667084,
+          5667110
+        ]
+      ],
+      "repeat_sequences": [
+        "ACCACCCCCACGGGCGTGGGGAGCAC",
+        "ACCACCCCCACGGGCGTGGGGAGCAC",
+        "ACCACCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "retained_candidate_id": "f0ba9841c8131ec08ccea0ff5a6612a3c485652dc2661286ebb74030848e7486",
+      "score_is_recorded_not_recomputed_in_fixture": true,
+      "selector_geometry_id": "096d4a7898b0734d5ea8e73c6df7ff5c5a460913b9601d2c9677df7795b247ab",
+      "spacer_sequences": [
+        "GCCGATCACATCGACATCTACCCCGTTTACTACGG",
+        "GGGCACTTCCGGTGGGCGGCGACGGTCATGGGCGG"
+      ],
+      "stored_category": "Alternative",
+      "stored_eligibility": true,
+      "stored_own_score": 0.7981199142541504,
+      "stored_sidecar_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "stored_structural_decision": "passed"
+    },
+    {
+      "gapped_repeats": [
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "AG GACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CACCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCCCACGGGCGT -GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGT GGGGAGCAT",
+        "CG GACCA CCCCCACGGGCGT GTGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGGAGCAC",
+        "CG GACCA CCCCCATGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCCCACGAGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCG CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCTCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCTACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGT -GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "C- AACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGC GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGAAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA TCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CGCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCAT GGGGAGCAC",
+        "CGCAACCA TCCCCACGGGCAT GGGGAGCAC",
+        "CG GACCACCCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA TCCCCACGGGCGT GGGGAGCAC"
+      ],
+      "label": "published59",
+      "origin_kind": "ordinary",
+      "recorded_reconstruction_negative_summary": {
+        "coding_tandem": {
+          "reason": "equal_in_frame_period_run_not_found",
+          "scope": "existing_source_cds_tandem_rule_on_proposed_geometry",
+          "source_cds_assessed": false,
+          "status": "inapplicable"
+        },
+        "known_negative_annotations": {
+          "reason": "none_recorded",
+          "scope": "recorded_failures_only; not blanket negative clearance",
+          "status": "passed"
+        },
+        "likely_tandem": {
+          "reason": "spacer_count_above_policy_maximum",
+          "status": "inapplicable"
+        }
+      },
+      "repeat_intervals": [
+        [
+          5666959,
+          5666988
+        ],
+        [
+          5667020,
+          5667049
+        ],
+        [
+          5667081,
+          5667110
+        ],
+        [
+          5667142,
+          5667171
+        ],
+        [
+          5667203,
+          5667232
+        ],
+        [
+          5667264,
+          5667293
+        ],
+        [
+          5667325,
+          5667354
+        ],
+        [
+          5667386,
+          5667415
+        ],
+        [
+          5667447,
+          5667475
+        ],
+        [
+          5667507,
+          5667536
+        ],
+        [
+          5667558,
+          5667586
+        ],
+        [
+          5667618,
+          5667647
+        ],
+        [
+          5667679,
+          5667708
+        ],
+        [
+          5667740,
+          5667769
+        ],
+        [
+          5667801,
+          5667831
+        ],
+        [
+          5667863,
+          5667892
+        ],
+        [
+          5667924,
+          5667953
+        ],
+        [
+          5667985,
+          5668014
+        ],
+        [
+          5668047,
+          5668076
+        ],
+        [
+          5668108,
+          5668137
+        ],
+        [
+          5668169,
+          5668198
+        ],
+        [
+          5668230,
+          5668259
+        ],
+        [
+          5668291,
+          5668320
+        ],
+        [
+          5668352,
+          5668381
+        ],
+        [
+          5668413,
+          5668442
+        ],
+        [
+          5668474,
+          5668503
+        ],
+        [
+          5668535,
+          5668564
+        ],
+        [
+          5668596,
+          5668625
+        ],
+        [
+          5668657,
+          5668686
+        ],
+        [
+          5668718,
+          5668747
+        ],
+        [
+          5668779,
+          5668808
+        ],
+        [
+          5668840,
+          5668869
+        ],
+        [
+          5668901,
+          5668928
+        ],
+        [
+          5668960,
+          5668989
+        ],
+        [
+          5669021,
+          5669050
+        ],
+        [
+          5669082,
+          5669111
+        ],
+        [
+          5669142,
+          5669170
+        ],
+        [
+          5669202,
+          5669231
+        ],
+        [
+          5669263,
+          5669292
+        ],
+        [
+          5669324,
+          5669353
+        ],
+        [
+          5669385,
+          5669414
+        ],
+        [
+          5669446,
+          5669475
+        ],
+        [
+          5669507,
+          5669536
+        ],
+        [
+          5669568,
+          5669597
+        ],
+        [
+          5669629,
+          5669657
+        ],
+        [
+          5669690,
+          5669719
+        ],
+        [
+          5669812,
+          5669841
+        ],
+        [
+          5669934,
+          5669963
+        ],
+        [
+          5670056,
+          5670085
+        ],
+        [
+          5670179,
+          5670208
+        ],
+        [
+          5670240,
+          5670269
+        ],
+        [
+          5670361,
+          5670390
+        ],
+        [
+          5670422,
+          5670451
+        ],
+        [
+          5670483,
+          5670512
+        ],
+        [
+          5670600,
+          5670629
+        ],
+        [
+          5670661,
+          5670690
+        ],
+        [
+          5670714,
+          5670744
+        ],
+        [
+          5670837,
+          5670867
+        ],
+        [
+          5670958,
+          5670987
+        ]
+      ],
+      "repeat_sequences": [
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACACCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGGAGCAT",
+        "CGGACCACCCCCACGGGCGTGTGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGGAGCAC",
+        "CGGACCACCCCCATGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGAGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCGCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCTCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCTACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CAACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGCGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGAAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACGCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCATGGGGAGCAC",
+        "CGCAACCATCCCCACGGGCATGGGGAGCAC",
+        "CGGACCACCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "retained_candidate_id": "e7e2895b36d8739f34a1520908a0b20e87a5c89ac86b8844fb7ad9253e93ccf1",
+      "score_is_recorded_not_recomputed_in_fixture": true,
+      "selector_geometry_id": "c1a0ee0297f70fb4c499cffa0a2cc3ff16ea781e3bab9ff959c4b854ab8f71d0",
+      "spacer_sequences": [
+        "GCCGATCACATCGACATCTACCCCGTTTACTA",
+        "GGGCACTTCCGGTGGGCGGCGACGGTCATGGG",
+        "TTCAGCCTCCGTCACGCCGGCCGGGTCTACAC",
+        "GTGCCATCACGTCGGAATGGGGGCGTGATGGG",
+        "GCACAAAGTCACGGCGACGCCGTGATGGTCGA",
+        "GGTGGGGGCCTGGAGCATCCGCAGGGGCACCG",
+        "GCCCGACCGGACCCGGAGAACGTGCGCGCGAT",
+        "GCGAGCAGGCCCCGGGTCTTCCGGGCGGTCGT",
+        "GGCGGAAAGCCACGATGGCGGTTATCGAGCGA",
+        "GCCCGAATAGCGTCCATGTCGC",
+        "GACCTCTTCCCGTCCGGGTTGAGCAGGATCCG",
+        "TCCTTGCACTCGGCCTCCCCACGTGATGTGGC",
+        "CCGTTCGCGCTGGCTGCGCGGGAGCCGTTCGA",
+        "GTCGGCCTGGCTCTCGCCGCCGTCGCGATCAG",
+        "CAGAGCGTCGGTGCTGGTTCCTCGGTAGCCAG",
+        "GCGGGCGTATTCGCCCTGCCGTTCAACAGGGA",
+        "GTGTTCGACTCGCGGAGGATGCGGCGCCTTGA",
+        "TTCGGGGGGAGCCACGTTGCGAAAGCCGACATA",
+        "ACGAACGGGACCTGGACGACCGACCCGGCCGA",
+        "CCGTTCATAGTCTGGTCCGCCGACCAGCTGTT",
+        "AGCCAGTCGAGGTGCTCGGTGACGATCTCCCG",
+        "CAACAGACCCCCGCCGCCGACTTCGCCGCCAT",
+        "GCGGCATCTGCTCGAACTCACCACACCCACCA",
+        "GCGAGCACCTGTTGCGCCGGTTCCCGGGCCGA",
+        "TTCGCGTCCGTTCGGACCTCGCGCCACAGGTC",
+        "AGCACGGCCTCGGACCCGCAAACCGTCGACGA",
+        "TCGCGCAGCAGCGGCATGACCGTCGCGCCCGT",
+        "AGCGTCCACAGCGAGTACGCCGCCCGCGTGAG",
+        "ATGTGCGCCGCCGTGAGCGGGCTCTTGCCCTT",
+        "CGGCCGGTAGACCGCTGGCCGGCTGCCGGGCG",
+        "TGCGCGATCTCCGTCGCGACCGGGCCGGACGC",
+        "GACAGACTGGGGACAACCTAGCTGTCGGAGGG",
+        "CAGAGGGGGTAACCATCAACCCATCCGGGGTG",
+        "AACGGGACGCCGCCCGCGCTGACGTCACCCGC",
+        "GTCAACCGGAAGGATGCGAACCCGCACGTTCT",
+        "ACGACGAAGCCCCGGTGCTCGGCGTCGTCGA",
+        "GTTGTCAGGTGATGCAAATGCAACACCTAGTG",
+        "CGCCACTGTGGACGTGCCCAGTGGTCACCGAA",
+        "ACCGTACGGGGCACGGCCACCTGCACCGCCGA",
+        "GGTGCCGGCGGCGGGGGCCACTGCCGCGTCAC",
+        "GCCTCGGGCCTCGACGTGTCACTCAACCAAGT",
+        "GTGATCGCACCCATCTCGCGGATGTCGTTCGC",
+        "ATCGCGACGAGGCTGTTACGCGGGCGCTCCGA",
+        "GGCAGAGCTACCTCAGCCGTTGCGTGCAACTC",
+        "AAGATGCGGTCAAGGCTGGTCGATCGCGTCGGA",
+        "TGCGGATGATGTCGGGCCAGCCCATCCCCGGGAGGACCACCCCCACGGGCGTGGGGAGCACCGCGCGTCCCGCGCGGCTCTCTCGGCGGCGCG",
+        "ACGCCAGCAGCCACACCGCCGGCTGGTGAGGACGGACCACCCCCACGGGTGTGGGGAGCACTCGGCCGACTGGATGATCCCTCGCATCCGGAC",
+        "CGCGACGTGGGCGGGGTCCAGGGCGGGGAGGAGGGACCACCCCCACGGGCGTGGGGAGCACGCGGTGACCATGTCGTCGGTCAGATACCGCTG",
+        "TACGCATCACCCAGTGGCTGGCAACCCAACAAATGGACCACCCCCACGGGCGTGGGGAGCACGCTCGATCACCCGCGACGGCACCTGACCTCGA",
+        "ATCAGGTTAGGGAACGGGTTGCGCCGTAGGAC",
+        "TCGAAGAACACGCCCTCGGTCAGCGGCTTCATGGACCACCTCCACAGGCGTGGGGAGCACGAGCGCGAGTCGGCCGTGTACGGCAAGAACAT",
+        "GCCTTGAACAGGATCGCCTCGCGGCCGTTCGC",
+        "GCCAAAGCGAACGACGTCCCGGACCTGGACGA",
+        "ATATAGTCCCGCCCCTTTAAATGGTCGGACTAGGGACCACCCCCACGGGCGAGCACGCCCAAGCGCGTGAGCGGCAGTCGTTCGTCTC",
+        "GACACCGGTCACGGCGGCCGCCGTCTGTGCCC",
+        "CACTGCACCGCGATCGACTCGGCC",
+        "TGGGAAAGCGCCCGTCCGTACGCTCCGTGGAACGGACCACCCCCACGGGCGTAGGGATCACGCGGTCTCCGCCGCGTTCGTGCTGCGCGCGAG",
+        "CCGGACGCCGGTGACGCGCAGCCGATGGCCACCGGACCACCCCCACGCGTGAGGAGCACTCATGAATGAGGTACTCGAAGTCGTCGACTCA"
+      ],
+      "stored_category": "Bona-fide",
+      "stored_eligibility": true,
+      "stored_own_score": 0.665183346503237,
+      "stored_sidecar_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "source_backed_candidate_reconstruction",
+        "tags": []
+      },
+      "stored_structural_decision": "passed"
+    },
+    {
+      "gapped_repeats": [
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "AGGACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CACCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GGGACCA CCCCCACGGGCGT -GGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA -CCCCACGGGCGT GGGGAGCAT",
+        "CGGACCA CCCCCACGGGCGT GTGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGTGGGGGAGCAC",
+        "CGGACCA CCCCCATGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GGGACCA CCCCCACGAGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCG CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GGGACCA CCCTCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCTACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA -CCCCACGGGCGT -GGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "C-AACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGC GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGAAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA TCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA -CGCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "AGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGTGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "TGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "TGGACCA CCTCCACAGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCAT GGGGAGCAC",
+        "CGGACCA CCCCCACGGGCGT AGGGATCAC",
+        "CGGACCACCCCCCACGGGCGT GGGGAGCAC",
+        "CGGACCA CCCCCAC--GCGT GAGGAGCAC",
+        "CGGACCA TCCCCACGGGCGT GGGGAGCAC"
+      ],
+      "label": "retained65",
+      "origin_kind": "repair_only",
+      "recorded_reconstruction_negative_summary": {
+        "reason": "existing donor failed geometry admission before candidate-specific reconstruction validation; no fresh tests executed for fixture",
+        "status": "not_recorded"
+      },
+      "repeat_intervals": [
+        [
+          5666959,
+          5666988
+        ],
+        [
+          5667020,
+          5667049
+        ],
+        [
+          5667081,
+          5667110
+        ],
+        [
+          5667142,
+          5667171
+        ],
+        [
+          5667203,
+          5667232
+        ],
+        [
+          5667264,
+          5667293
+        ],
+        [
+          5667325,
+          5667354
+        ],
+        [
+          5667386,
+          5667415
+        ],
+        [
+          5667447,
+          5667475
+        ],
+        [
+          5667507,
+          5667536
+        ],
+        [
+          5667558,
+          5667586
+        ],
+        [
+          5667618,
+          5667647
+        ],
+        [
+          5667679,
+          5667708
+        ],
+        [
+          5667740,
+          5667769
+        ],
+        [
+          5667801,
+          5667831
+        ],
+        [
+          5667863,
+          5667892
+        ],
+        [
+          5667924,
+          5667953
+        ],
+        [
+          5667985,
+          5668014
+        ],
+        [
+          5668047,
+          5668076
+        ],
+        [
+          5668108,
+          5668137
+        ],
+        [
+          5668169,
+          5668198
+        ],
+        [
+          5668230,
+          5668259
+        ],
+        [
+          5668291,
+          5668320
+        ],
+        [
+          5668352,
+          5668381
+        ],
+        [
+          5668413,
+          5668442
+        ],
+        [
+          5668474,
+          5668503
+        ],
+        [
+          5668535,
+          5668564
+        ],
+        [
+          5668596,
+          5668625
+        ],
+        [
+          5668657,
+          5668686
+        ],
+        [
+          5668718,
+          5668747
+        ],
+        [
+          5668779,
+          5668808
+        ],
+        [
+          5668840,
+          5668869
+        ],
+        [
+          5668901,
+          5668928
+        ],
+        [
+          5668960,
+          5668989
+        ],
+        [
+          5669021,
+          5669050
+        ],
+        [
+          5669082,
+          5669111
+        ],
+        [
+          5669142,
+          5669170
+        ],
+        [
+          5669202,
+          5669231
+        ],
+        [
+          5669263,
+          5669292
+        ],
+        [
+          5669324,
+          5669353
+        ],
+        [
+          5669385,
+          5669414
+        ],
+        [
+          5669446,
+          5669475
+        ],
+        [
+          5669507,
+          5669536
+        ],
+        [
+          5669568,
+          5669597
+        ],
+        [
+          5669629,
+          5669657
+        ],
+        [
+          5669690,
+          5669719
+        ],
+        [
+          5669751,
+          5669780
+        ],
+        [
+          5669812,
+          5669841
+        ],
+        [
+          5669873,
+          5669902
+        ],
+        [
+          5669934,
+          5669963
+        ],
+        [
+          5669995,
+          5670024
+        ],
+        [
+          5670056,
+          5670085
+        ],
+        [
+          5670118,
+          5670147
+        ],
+        [
+          5670179,
+          5670208
+        ],
+        [
+          5670240,
+          5670269
+        ],
+        [
+          5670300,
+          5670329
+        ],
+        [
+          5670361,
+          5670390
+        ],
+        [
+          5670422,
+          5670451
+        ],
+        [
+          5670483,
+          5670512
+        ],
+        [
+          5670600,
+          5670629
+        ],
+        [
+          5670661,
+          5670690
+        ],
+        [
+          5670776,
+          5670805
+        ],
+        [
+          5670837,
+          5670867
+        ],
+        [
+          5670899,
+          5670926
+        ],
+        [
+          5670958,
+          5670987
+        ]
+      ],
+      "repeat_sequences": [
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACACCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGGAGCAT",
+        "CGGACCACCCCCACGGGCGTGTGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGGAGCAC",
+        "CGGACCACCCCCATGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGAGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCGCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCTCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCTACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CAACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGCGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGAAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACGCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGTGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "TGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "TGGACCACCTCCACAGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCATGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTAGGGATCAC",
+        "CGGACCACCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGCGTGAGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "retained_candidate_id": "120d26efdcdf4b3789022a6720256f291aaff5c542e0f59eb13fa76dd24373fc",
+      "score_is_recorded_not_recomputed_in_fixture": true,
+      "selector_geometry_id": "94a1f84ce0251e74d1da16ea718204c7b9b39836015bdeb38ed39373130cd97a",
+      "spacer_sequences": [
+        "GCCGATCACATCGACATCTACCCCGTTTACTA",
+        "GGGCACTTCCGGTGGGCGGCGACGGTCATGGG",
+        "TTCAGCCTCCGTCACGCCGGCCGGGTCTACAC",
+        "GTGCCATCACGTCGGAATGGGGGCGTGATGGG",
+        "GCACAAAGTCACGGCGACGCCGTGATGGTCGA",
+        "GGTGGGGGCCTGGAGCATCCGCAGGGGCACCG",
+        "GCCCGACCGGACCCGGAGAACGTGCGCGCGAT",
+        "GCGAGCAGGCCCCGGGTCTTCCGGGCGGTCGT",
+        "GGCGGAAAGCCACGATGGCGGTTATCGAGCGA",
+        "GCCCGAATAGCGTCCATGTCGC",
+        "GACCTCTTCCCGTCCGGGTTGAGCAGGATCCG",
+        "TCCTTGCACTCGGCCTCCCCACGTGATGTGGC",
+        "CCGTTCGCGCTGGCTGCGCGGGAGCCGTTCGA",
+        "GTCGGCCTGGCTCTCGCCGCCGTCGCGATCAG",
+        "CAGAGCGTCGGTGCTGGTTCCTCGGTAGCCAG",
+        "GCGGGCGTATTCGCCCTGCCGTTCAACAGGGA",
+        "GTGTTCGACTCGCGGAGGATGCGGCGCCTTGA",
+        "TTCGGGGGGAGCCACGTTGCGAAAGCCGACATA",
+        "ACGAACGGGACCTGGACGACCGACCCGGCCGA",
+        "CCGTTCATAGTCTGGTCCGCCGACCAGCTGTT",
+        "AGCCAGTCGAGGTGCTCGGTGACGATCTCCCG",
+        "CAACAGACCCCCGCCGCCGACTTCGCCGCCAT",
+        "GCGGCATCTGCTCGAACTCACCACACCCACCA",
+        "GCGAGCACCTGTTGCGCCGGTTCCCGGGCCGA",
+        "TTCGCGTCCGTTCGGACCTCGCGCCACAGGTC",
+        "AGCACGGCCTCGGACCCGCAAACCGTCGACGA",
+        "TCGCGCAGCAGCGGCATGACCGTCGCGCCCGT",
+        "AGCGTCCACAGCGAGTACGCCGCCCGCGTGAG",
+        "ATGTGCGCCGCCGTGAGCGGGCTCTTGCCCTT",
+        "CGGCCGGTAGACCGCTGGCCGGCTGCCGGGCG",
+        "TGCGCGATCTCCGTCGCGACCGGGCCGGACGC",
+        "GACAGACTGGGGACAACCTAGCTGTCGGAGGG",
+        "CAGAGGGGGTAACCATCAACCCATCCGGGGTG",
+        "AACGGGACGCCGCCCGCGCTGACGTCACCCGC",
+        "GTCAACCGGAAGGATGCGAACCCGCACGTTCT",
+        "ACGACGAAGCCCCGGTGCTCGGCGTCGTCGA",
+        "GTTGTCAGGTGATGCAAATGCAACACCTAGTG",
+        "CGCCACTGTGGACGTGCCCAGTGGTCACCGAA",
+        "ACCGTACGGGGCACGGCCACCTGCACCGCCGA",
+        "GGTGCCGGCGGCGGGGGCCACTGCCGCGTCAC",
+        "GCCTCGGGCCTCGACGTGTCACTCAACCAAGT",
+        "GTGATCGCACCCATCTCGCGGATGTCGTTCGC",
+        "ATCGCGACGAGGCTGTTACGCGGGCGCTCCGA",
+        "GGCAGAGCTACCTCAGCCGTTGCGTGCAACTC",
+        "AAGATGCGGTCAAGGCTGGTCGATCGCGTCGGA",
+        "TGCGGATGATGTCGGGCCAGCCCATCCCCGGG",
+        "CGCGCGTCCCGCGCGGCTCTCTCGGCGGCGCG",
+        "ACGCCAGCAGCCACACCGCCGGCTGGTGAGGA",
+        "TCGGCCGACTGGATGATCCCTCGCATCCGGAC",
+        "CGCGACGTGGGCGGGGTCCAGGGCGGGGAGGA",
+        "GCGGTGACCATGTCGTCGGTCAGATACCGCTG",
+        "TACGCATCACCCAGTGGCTGGCAACCCAACAAA",
+        "GCTCGATCACCCGCGACGGCACCTGACCTCGA",
+        "ATCAGGTTAGGGAACGGGTTGCGCCGTAGGAC",
+        "TCGAAGAACACGCCCTCGGTCAGCGGCTTCA",
+        "GAGCGCGAGTCGGCCGTGTACGGCAAGAACAT",
+        "GCCTTGAACAGGATCGCCTCGCGGCCGTTCGC",
+        "GCCAAAGCGAACGACGTCCCGGACCTGGACGA",
+        "ATATAGTCCCGCCCCTTTAAATGGTCGGACTAGGGACCACCCCCACGGGCGAGCACGCCCAAGCGCGTGAGCGGCAGTCGTTCGTCTC",
+        "GACACCGGTCACGGCGGCCGCCGTCTGTGCCC",
+        "CACTGCACCGCGATCGACTCGGCCCGCAACCATCCCCACGGGCATGGGGAGCACTGGGAAAGCGCCCGTCCGTACGCTCCGTGGAA",
+        "GCGGTCTCCGCCGCGTTCGTGCTGCGCGCGAG",
+        "CCGGACGCCGGTGACGCGCAGCCGATGGCCAC",
+        "TCATGAATGAGGTACTCGAAGTCGTCGACTCA"
+      ],
+      "stored_category": "Alternative",
+      "stored_eligibility": true,
+      "stored_own_score": 0.649354212239861,
+      "stored_sidecar_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "stored_structural_decision": "passed"
+    },
+    {
+      "gapped_repeats": [
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCAAGGGCGTGGGGAGCAC",
+        "AG GACCA CCCCCAAGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CACCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "GG GACCA CCCCCACGGGCGT-GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGTGGGGAGCAT",
+        "CG GACCA CCCCCACGGGCGTGTGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGG-GAGC",
+        "CG GACCA CCCCCATGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCGCGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "GG GACCA CCCCCACGAGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCG CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "GG GACCA CCCTCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCTACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGT-GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "C- AACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGCGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGAAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA TCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA -CGCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "AG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGTGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "GG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "TG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "TG GACCA CCTCCACAGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCGCGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCATGGGGAGCAC",
+        "CGCAACCA TCCCCACGGGCATGGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTAGGGATCAC",
+        "CG GACCACCCCCCACGGGCGTGGGGAGCAC",
+        "CG GACCA CCCCCAC--GCGTGAGGAGCAC",
+        "CG GACCA TCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "label": "retained66",
+      "origin_kind": "repair_only",
+      "recorded_reconstruction_negative_summary": {
+        "reason": "existing donor failed geometry admission before candidate-specific reconstruction validation; no fresh tests executed for fixture",
+        "status": "not_recorded"
+      },
+      "repeat_intervals": [
+        [
+          5666959,
+          5666988
+        ],
+        [
+          5667020,
+          5667049
+        ],
+        [
+          5667081,
+          5667110
+        ],
+        [
+          5667142,
+          5667171
+        ],
+        [
+          5667203,
+          5667232
+        ],
+        [
+          5667264,
+          5667293
+        ],
+        [
+          5667325,
+          5667354
+        ],
+        [
+          5667386,
+          5667415
+        ],
+        [
+          5667447,
+          5667475
+        ],
+        [
+          5667507,
+          5667536
+        ],
+        [
+          5667558,
+          5667586
+        ],
+        [
+          5667618,
+          5667647
+        ],
+        [
+          5667679,
+          5667708
+        ],
+        [
+          5667740,
+          5667769
+        ],
+        [
+          5667801,
+          5667829
+        ],
+        [
+          5667863,
+          5667892
+        ],
+        [
+          5667924,
+          5667953
+        ],
+        [
+          5667985,
+          5668014
+        ],
+        [
+          5668047,
+          5668076
+        ],
+        [
+          5668108,
+          5668137
+        ],
+        [
+          5668169,
+          5668198
+        ],
+        [
+          5668230,
+          5668259
+        ],
+        [
+          5668291,
+          5668320
+        ],
+        [
+          5668352,
+          5668381
+        ],
+        [
+          5668413,
+          5668442
+        ],
+        [
+          5668474,
+          5668503
+        ],
+        [
+          5668535,
+          5668564
+        ],
+        [
+          5668596,
+          5668625
+        ],
+        [
+          5668657,
+          5668686
+        ],
+        [
+          5668718,
+          5668747
+        ],
+        [
+          5668779,
+          5668808
+        ],
+        [
+          5668840,
+          5668869
+        ],
+        [
+          5668901,
+          5668928
+        ],
+        [
+          5668960,
+          5668989
+        ],
+        [
+          5669021,
+          5669050
+        ],
+        [
+          5669082,
+          5669111
+        ],
+        [
+          5669142,
+          5669170
+        ],
+        [
+          5669202,
+          5669231
+        ],
+        [
+          5669263,
+          5669292
+        ],
+        [
+          5669324,
+          5669353
+        ],
+        [
+          5669385,
+          5669414
+        ],
+        [
+          5669446,
+          5669475
+        ],
+        [
+          5669507,
+          5669536
+        ],
+        [
+          5669568,
+          5669597
+        ],
+        [
+          5669629,
+          5669657
+        ],
+        [
+          5669690,
+          5669719
+        ],
+        [
+          5669751,
+          5669780
+        ],
+        [
+          5669812,
+          5669841
+        ],
+        [
+          5669873,
+          5669902
+        ],
+        [
+          5669934,
+          5669963
+        ],
+        [
+          5669995,
+          5670024
+        ],
+        [
+          5670056,
+          5670085
+        ],
+        [
+          5670118,
+          5670147
+        ],
+        [
+          5670179,
+          5670208
+        ],
+        [
+          5670240,
+          5670269
+        ],
+        [
+          5670300,
+          5670329
+        ],
+        [
+          5670361,
+          5670390
+        ],
+        [
+          5670422,
+          5670451
+        ],
+        [
+          5670483,
+          5670512
+        ],
+        [
+          5670600,
+          5670629
+        ],
+        [
+          5670661,
+          5670690
+        ],
+        [
+          5670714,
+          5670744
+        ],
+        [
+          5670776,
+          5670805
+        ],
+        [
+          5670837,
+          5670867
+        ],
+        [
+          5670899,
+          5670926
+        ],
+        [
+          5670958,
+          5670987
+        ]
+      ],
+      "repeat_sequences": [
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACACCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGGAGCAT",
+        "CGGACCACCCCCACGGGCGTGTGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGGAGC",
+        "CGGACCACCCCCATGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGAGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCGCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCTCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCTACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CAACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGCGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGAAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACGCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGTGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "TGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "TGGACCACCTCCACAGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCATGGGGAGCAC",
+        "CGCAACCATCCCCACGGGCATGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTAGGGATCAC",
+        "CGGACCACCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGCGTGAGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "retained_candidate_id": "9b0bde2e3b7d2e0c41986470194596c542178098465a29e60ecba24d28a5afa2",
+      "score_is_recorded_not_recomputed_in_fixture": true,
+      "selector_geometry_id": "8cc6b4c07e55d536a5561a32b5c857d2aadc9e5025e804164f4c61e2a2a4238b",
+      "spacer_sequences": [
+        "GCCGATCACATCGACATCTACCCCGTTTACTA",
+        "GGGCACTTCCGGTGGGCGGCGACGGTCATGGG",
+        "TTCAGCCTCCGTCACGCCGGCCGGGTCTACAC",
+        "GTGCCATCACGTCGGAATGGGGGCGTGATGGG",
+        "GCACAAAGTCACGGCGACGCCGTGATGGTCGA",
+        "GGTGGGGGCCTGGAGCATCCGCAGGGGCACCG",
+        "GCCCGACCGGACCCGGAGAACGTGCGCGCGAT",
+        "GCGAGCAGGCCCCGGGTCTTCCGGGCGGTCGT",
+        "GGCGGAAAGCCACGATGGCGGTTATCGAGCGA",
+        "GCCCGAATAGCGTCCATGTCGC",
+        "GACCTCTTCCCGTCCGGGTTGAGCAGGATCCG",
+        "TCCTTGCACTCGGCCTCCCCACGTGATGTGGC",
+        "CCGTTCGCGCTGGCTGCGCGGGAGCCGTTCGA",
+        "GTCGGCCTGGCTCTCGCCGCCGTCGCGATCAG",
+        "ACCAGAGCGTCGGTGCTGGTTCCTCGGTAGCCAG",
+        "GCGGGCGTATTCGCCCTGCCGTTCAACAGGGA",
+        "GTGTTCGACTCGCGGAGGATGCGGCGCCTTGA",
+        "TTCGGGGGGAGCCACGTTGCGAAAGCCGACATA",
+        "ACGAACGGGACCTGGACGACCGACCCGGCCGA",
+        "CCGTTCATAGTCTGGTCCGCCGACCAGCTGTT",
+        "AGCCAGTCGAGGTGCTCGGTGACGATCTCCCG",
+        "CAACAGACCCCCGCCGCCGACTTCGCCGCCAT",
+        "GCGGCATCTGCTCGAACTCACCACACCCACCA",
+        "GCGAGCACCTGTTGCGCCGGTTCCCGGGCCGA",
+        "TTCGCGTCCGTTCGGACCTCGCGCCACAGGTC",
+        "AGCACGGCCTCGGACCCGCAAACCGTCGACGA",
+        "TCGCGCAGCAGCGGCATGACCGTCGCGCCCGT",
+        "AGCGTCCACAGCGAGTACGCCGCCCGCGTGAG",
+        "ATGTGCGCCGCCGTGAGCGGGCTCTTGCCCTT",
+        "CGGCCGGTAGACCGCTGGCCGGCTGCCGGGCG",
+        "TGCGCGATCTCCGTCGCGACCGGGCCGGACGC",
+        "GACAGACTGGGGACAACCTAGCTGTCGGAGGG",
+        "CAGAGGGGGTAACCATCAACCCATCCGGGGTG",
+        "AACGGGACGCCGCCCGCGCTGACGTCACCCGC",
+        "GTCAACCGGAAGGATGCGAACCCGCACGTTCT",
+        "ACGACGAAGCCCCGGTGCTCGGCGTCGTCGA",
+        "GTTGTCAGGTGATGCAAATGCAACACCTAGTG",
+        "CGCCACTGTGGACGTGCCCAGTGGTCACCGAA",
+        "ACCGTACGGGGCACGGCCACCTGCACCGCCGA",
+        "GGTGCCGGCGGCGGGGGCCACTGCCGCGTCAC",
+        "GCCTCGGGCCTCGACGTGTCACTCAACCAAGT",
+        "GTGATCGCACCCATCTCGCGGATGTCGTTCGC",
+        "ATCGCGACGAGGCTGTTACGCGGGCGCTCCGA",
+        "GGCAGAGCTACCTCAGCCGTTGCGTGCAACTC",
+        "AAGATGCGGTCAAGGCTGGTCGATCGCGTCGGA",
+        "TGCGGATGATGTCGGGCCAGCCCATCCCCGGG",
+        "CGCGCGTCCCGCGCGGCTCTCTCGGCGGCGCG",
+        "ACGCCAGCAGCCACACCGCCGGCTGGTGAGGA",
+        "TCGGCCGACTGGATGATCCCTCGCATCCGGAC",
+        "CGCGACGTGGGCGGGGTCCAGGGCGGGGAGGA",
+        "GCGGTGACCATGTCGTCGGTCAGATACCGCTG",
+        "TACGCATCACCCAGTGGCTGGCAACCCAACAAA",
+        "GCTCGATCACCCGCGACGGCACCTGACCTCGA",
+        "ATCAGGTTAGGGAACGGGTTGCGCCGTAGGAC",
+        "TCGAAGAACACGCCCTCGGTCAGCGGCTTCA",
+        "GAGCGCGAGTCGGCCGTGTACGGCAAGAACAT",
+        "GCCTTGAACAGGATCGCCTCGCGGCCGTTCGC",
+        "GCCAAAGCGAACGACGTCCCGGACCTGGACGA",
+        "ATATAGTCCCGCCCCTTTAAATGGTCGGACTAGGGACCACCCCCACGGGCGAGCACGCCCAAGCGCGTGAGCGGCAGTCGTTCGTCTC",
+        "GACACCGGTCACGGCGGCCGCCGTCTGTGCCC",
+        "CACTGCACCGCGATCGACTCGGCC",
+        "TGGGAAAGCGCCCGTCCGTACGCTCCGTGGAA",
+        "GCGGTCTCCGCCGCGTTCGTGCTGCGCGCGAG",
+        "CCGGACGCCGGTGACGCGCAGCCGATGGCCAC",
+        "TCATGAATGAGGTACTCGAAGTCGTCGACTCA"
+      ],
+      "stored_category": "Alternative",
+      "stored_eligibility": true,
+      "stored_own_score": 0.6059059882497133,
+      "stored_sidecar_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "stored_structural_decision": "passed"
+    },
+    {
+      "gapped_repeats": [
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "AG GACCA CCCCCAAGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CACCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCCCACGGGCGT -GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGT GGGGAGCAT",
+        "CG GACCA CCCCCACGGGCGT GTGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGTGGGGGAGCAC",
+        "CG GACCA CCCCCATGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCCCACGAGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCG CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCTCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCTACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CCCCACGGGCGT -GGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "C- AACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGC GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGAAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA TCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA -CGCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "AG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGTGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "GG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "TG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "-G GACCA CCTCCACAGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT GGGGAGCAC",
+        "-G GACCA CCCCCACGGGCG- AGCACGC-C",
+        "CG GACCA CCCCCGCGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCAT GGGGAGCAC",
+        "CGCAACCA TCCCCACGGGCAT GGGGAGCAC",
+        "CG GACCA CCCCCACGGGCGT AGGGATCAC",
+        "CG GACCACCCCCCACGGGCGT GGGGAGCAC",
+        "CG GACCA CCCCCAC--GCGT GAGGAGCAC",
+        "CG GACCA TCCCCACGGGCGT GGGGAGCAC"
+      ],
+      "label": "retained67",
+      "origin_kind": "ordinary",
+      "recorded_reconstruction_negative_summary": {
+        "reason": "existing donor failed geometry admission before candidate-specific reconstruction validation; no fresh tests executed for fixture",
+        "status": "not_recorded"
+      },
+      "repeat_intervals": [
+        [
+          5666959,
+          5666988
+        ],
+        [
+          5667020,
+          5667049
+        ],
+        [
+          5667081,
+          5667110
+        ],
+        [
+          5667142,
+          5667171
+        ],
+        [
+          5667203,
+          5667232
+        ],
+        [
+          5667264,
+          5667293
+        ],
+        [
+          5667325,
+          5667354
+        ],
+        [
+          5667386,
+          5667415
+        ],
+        [
+          5667447,
+          5667475
+        ],
+        [
+          5667507,
+          5667536
+        ],
+        [
+          5667558,
+          5667586
+        ],
+        [
+          5667618,
+          5667647
+        ],
+        [
+          5667679,
+          5667708
+        ],
+        [
+          5667740,
+          5667769
+        ],
+        [
+          5667801,
+          5667831
+        ],
+        [
+          5667863,
+          5667892
+        ],
+        [
+          5667924,
+          5667953
+        ],
+        [
+          5667985,
+          5668014
+        ],
+        [
+          5668047,
+          5668076
+        ],
+        [
+          5668108,
+          5668137
+        ],
+        [
+          5668169,
+          5668198
+        ],
+        [
+          5668230,
+          5668259
+        ],
+        [
+          5668291,
+          5668320
+        ],
+        [
+          5668352,
+          5668381
+        ],
+        [
+          5668413,
+          5668442
+        ],
+        [
+          5668474,
+          5668503
+        ],
+        [
+          5668535,
+          5668564
+        ],
+        [
+          5668596,
+          5668625
+        ],
+        [
+          5668657,
+          5668686
+        ],
+        [
+          5668718,
+          5668747
+        ],
+        [
+          5668779,
+          5668808
+        ],
+        [
+          5668840,
+          5668869
+        ],
+        [
+          5668901,
+          5668928
+        ],
+        [
+          5668960,
+          5668989
+        ],
+        [
+          5669021,
+          5669050
+        ],
+        [
+          5669082,
+          5669111
+        ],
+        [
+          5669142,
+          5669170
+        ],
+        [
+          5669202,
+          5669231
+        ],
+        [
+          5669263,
+          5669292
+        ],
+        [
+          5669324,
+          5669353
+        ],
+        [
+          5669385,
+          5669414
+        ],
+        [
+          5669446,
+          5669475
+        ],
+        [
+          5669507,
+          5669536
+        ],
+        [
+          5669568,
+          5669597
+        ],
+        [
+          5669629,
+          5669657
+        ],
+        [
+          5669690,
+          5669719
+        ],
+        [
+          5669751,
+          5669780
+        ],
+        [
+          5669812,
+          5669841
+        ],
+        [
+          5669873,
+          5669902
+        ],
+        [
+          5669934,
+          5669963
+        ],
+        [
+          5669995,
+          5670024
+        ],
+        [
+          5670056,
+          5670085
+        ],
+        [
+          5670118,
+          5670147
+        ],
+        [
+          5670179,
+          5670208
+        ],
+        [
+          5670240,
+          5670269
+        ],
+        [
+          5670301,
+          5670329
+        ],
+        [
+          5670361,
+          5670390
+        ],
+        [
+          5670422,
+          5670451
+        ],
+        [
+          5670483,
+          5670512
+        ],
+        [
+          5670545,
+          5670571
+        ],
+        [
+          5670600,
+          5670629
+        ],
+        [
+          5670661,
+          5670690
+        ],
+        [
+          5670714,
+          5670744
+        ],
+        [
+          5670776,
+          5670805
+        ],
+        [
+          5670837,
+          5670867
+        ],
+        [
+          5670899,
+          5670926
+        ],
+        [
+          5670958,
+          5670987
+        ]
+      ],
+      "repeat_sequences": [
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCAAGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACACCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGGAGCAT",
+        "CGGACCACCCCCACGGGCGTGTGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGGAGCAC",
+        "CGGACCACCCCCATGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGAGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCGCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCTCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCTACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCACGGGCGTGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CAACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGCGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGAAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACGCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "AGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGTGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "TGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGACCACCTCCACAGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+        "GGACCACCCCCACGGGCGAGCACGCC",
+        "CGGACCACCCCCGCGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGGGCATGGGGAGCAC",
+        "CGCAACCATCCCCACGGGCATGGGGAGCAC",
+        "CGGACCACCCCCACGGGCGTAGGGATCAC",
+        "CGGACCACCCCCCACGGGCGTGGGGAGCAC",
+        "CGGACCACCCCCACGCGTGAGGAGCAC",
+        "CGGACCATCCCCACGGGCGTGGGGAGCAC"
+      ],
+      "retained_candidate_id": "32c9b7fac3d50f56fa5bf50aaebfea9fc0930854ce1fbb97d94b43d2d6846661",
+      "score_is_recorded_not_recomputed_in_fixture": true,
+      "selector_geometry_id": "03c826d0f3a0095262e191047d5336f5dadba29022751f8294e582ed57a21013",
+      "spacer_sequences": [
+        "GCCGATCACATCGACATCTACCCCGTTTACTA",
+        "GGGCACTTCCGGTGGGCGGCGACGGTCATGGG",
+        "TTCAGCCTCCGTCACGCCGGCCGGGTCTACAC",
+        "GTGCCATCACGTCGGAATGGGGGCGTGATGGG",
+        "GCACAAAGTCACGGCGACGCCGTGATGGTCGA",
+        "GGTGGGGGCCTGGAGCATCCGCAGGGGCACCG",
+        "GCCCGACCGGACCCGGAGAACGTGCGCGCGAT",
+        "GCGAGCAGGCCCCGGGTCTTCCGGGCGGTCGT",
+        "GGCGGAAAGCCACGATGGCGGTTATCGAGCGA",
+        "GCCCGAATAGCGTCCATGTCGC",
+        "GACCTCTTCCCGTCCGGGTTGAGCAGGATCCG",
+        "TCCTTGCACTCGGCCTCCCCACGTGATGTGGC",
+        "CCGTTCGCGCTGGCTGCGCGGGAGCCGTTCGA",
+        "GTCGGCCTGGCTCTCGCCGCCGTCGCGATCAG",
+        "CAGAGCGTCGGTGCTGGTTCCTCGGTAGCCAG",
+        "GCGGGCGTATTCGCCCTGCCGTTCAACAGGGA",
+        "GTGTTCGACTCGCGGAGGATGCGGCGCCTTGA",
+        "TTCGGGGGGAGCCACGTTGCGAAAGCCGACATA",
+        "ACGAACGGGACCTGGACGACCGACCCGGCCGA",
+        "CCGTTCATAGTCTGGTCCGCCGACCAGCTGTT",
+        "AGCCAGTCGAGGTGCTCGGTGACGATCTCCCG",
+        "CAACAGACCCCCGCCGCCGACTTCGCCGCCAT",
+        "GCGGCATCTGCTCGAACTCACCACACCCACCA",
+        "GCGAGCACCTGTTGCGCCGGTTCCCGGGCCGA",
+        "TTCGCGTCCGTTCGGACCTCGCGCCACAGGTC",
+        "AGCACGGCCTCGGACCCGCAAACCGTCGACGA",
+        "TCGCGCAGCAGCGGCATGACCGTCGCGCCCGT",
+        "AGCGTCCACAGCGAGTACGCCGCCCGCGTGAG",
+        "ATGTGCGCCGCCGTGAGCGGGCTCTTGCCCTT",
+        "CGGCCGGTAGACCGCTGGCCGGCTGCCGGGCG",
+        "TGCGCGATCTCCGTCGCGACCGGGCCGGACGC",
+        "GACAGACTGGGGACAACCTAGCTGTCGGAGGG",
+        "CAGAGGGGGTAACCATCAACCCATCCGGGGTG",
+        "AACGGGACGCCGCCCGCGCTGACGTCACCCGC",
+        "GTCAACCGGAAGGATGCGAACCCGCACGTTCT",
+        "ACGACGAAGCCCCGGTGCTCGGCGTCGTCGA",
+        "GTTGTCAGGTGATGCAAATGCAACACCTAGTG",
+        "CGCCACTGTGGACGTGCCCAGTGGTCACCGAA",
+        "ACCGTACGGGGCACGGCCACCTGCACCGCCGA",
+        "GGTGCCGGCGGCGGGGGCCACTGCCGCGTCAC",
+        "GCCTCGGGCCTCGACGTGTCACTCAACCAAGT",
+        "GTGATCGCACCCATCTCGCGGATGTCGTTCGC",
+        "ATCGCGACGAGGCTGTTACGCGGGCGCTCCGA",
+        "GGCAGAGCTACCTCAGCCGTTGCGTGCAACTC",
+        "AAGATGCGGTCAAGGCTGGTCGATCGCGTCGGA",
+        "TGCGGATGATGTCGGGCCAGCCCATCCCCGGG",
+        "CGCGCGTCCCGCGCGGCTCTCTCGGCGGCGCG",
+        "ACGCCAGCAGCCACACCGCCGGCTGGTGAGGA",
+        "TCGGCCGACTGGATGATCCCTCGCATCCGGAC",
+        "CGCGACGTGGGCGGGGTCCAGGGCGGGGAGGA",
+        "GCGGTGACCATGTCGTCGGTCAGATACCGCTG",
+        "TACGCATCACCCAGTGGCTGGCAACCCAACAAA",
+        "GCTCGATCACCCGCGACGGCACCTGACCTCGA",
+        "ATCAGGTTAGGGAACGGGTTGCGCCGTAGGAC",
+        "TCGAAGAACACGCCCTCGGTCAGCGGCTTCAT",
+        "GAGCGCGAGTCGGCCGTGTACGGCAAGAACAT",
+        "GCCTTGAACAGGATCGCCTCGCGGCCGTTCGC",
+        "GCCAAAGCGAACGACGTCCCGGACCTGGACGA",
+        "ATATAGTCCCGCCCCTTTAAATGGTCGGACTAG",
+        "CAAGCGCGTGAGCGGCAGTCGTTCGTCTC",
+        "GACACCGGTCACGGCGGCCGCCGTCTGTGCCC",
+        "CACTGCACCGCGATCGACTCGGCC",
+        "TGGGAAAGCGCCCGTCCGTACGCTCCGTGGAA",
+        "GCGGTCTCCGCCGCGTTCGTGCTGCGCGCGAG",
+        "CCGGACGCCGGTGACGCGCAGCCGATGGCCAC",
+        "TCATGAATGAGGTACTCGAAGTCGTCGACTCA"
+      ],
+      "stored_category": "Alternative",
+      "stored_eligibility": true,
+      "stored_own_score": 0.6084199443442412,
+      "stored_sidecar_negative_evidence": {
+        "accepted_family_tandem_review": null,
+        "accepted_family_tandem_review_status": "not_recorded",
+        "final_classification_method": "model_score_band",
+        "tags": []
+      },
+      "stored_structural_decision": "passed"
+    }
+  ],
+  "coordinate_system": "original_input_zero_based_half_open",
+  "expected_source_geometry_observables": {
+    "all_larger_core_map": [
+      0,
+      1,
+      2
+    ],
+    "identity_floor_unchanged": 0.8,
+    "mapped_original_core_only_reference": "CGGACCACCCCCACGGGCGTGGGGAGCAC",
+    "no_added_copy_authority": true,
+    "original_core_reference": "ACCACCCCCACGGGCGTGGGGAGCAC",
+    "retained65": {
+      "all_seven_exact": true,
+      "minimum_phase_reference_identity": 0.896551724137931,
+      "published59_exact_preserved": 58,
+      "published59_unmapped": [
+        [
+          5670714,
+          5670744
+        ]
+      ]
+    },
+    "retained66": {
+      "all_seven_exact": true,
+      "changed_existing_occurrence": {
+        "after": [
+          5667801,
+          5667829
+        ],
+        "before": [
+          5667801,
+          5667831
+        ]
+      },
+      "minimum_phase_reference_identity": 0.8666666666666667,
+      "published59_all_strictly_compatible": true,
+      "published59_exact_preserved": 58
+    },
+    "retained67": {
+      "published59_exact_preserved": 59,
+      "seven_motifs_six_exact_one_compatible": true,
+      "still_below_unchanged_identity_floor": true,
+      "weak_additional_interval": [
+        5670545,
+        5670571
+      ],
+      "weak_identity_core_only29": 0.7586206896551724,
+      "weak_identity_original26": 0.6923076923076923
+    },
+    "uniform_core_offsets": [
+      -3,
+      0
+    ]
+  },
+  "not_expected": [
+    "A specific final accepted count or candidate.",
+    "Comparator66 as truth.",
+    "Whole-donor negative, score or source qualification inferred solely from these identities.",
+    "Reusing current59 negative clearance for longer candidates.",
+    "A model prediction reproduced from this fixture."
+  ],
+  "provenance": {
+    "candidate_source_manifest_sha256": "16494d68eca75b25e06d283d427cabaa802025356511faa784bacb83af222181",
+    "case_facts": {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/s3-case-facts.json",
+      "sha256": "33df09268607110d878bfaec516bb3f62b195822f9fbc2f4852c62d5ac2b601a"
+    },
+    "fixture_builder": {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/build_s3_fixture.py",
+      "sha256": "1d67c83fb4eda68665e8d66d2dc78167856d848221c819ef94eb1339a1f27fc9"
+    },
+    "named_member": {
+      "index_sha256": "2e9e828a6a2294ad2ebbbdd0d30b183ff5a0b177a93be8961312c4b044ab0678",
+      "name": "output/NZ_CP109078/candidate_evidence.jsonl.gz"
+    },
+    "projection": {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/council/biology/s3-cp109078-source-projection.json",
+      "sha256": "f392cb9bb86e303eb5a94385cafa8292c1746e24a9ed2476ca6d03b0664c4de6"
+    },
+    "sealed_archive_sha256": "dbc83ec9d62cdc6d42b574f21f8f38b8cf8f0e51e3efbbf000df6461542be0fe",
+    "sealed_receipt": {
+      "path": "/home/alex/CodexProjects/CRISPRidentify-v2/benchmarking/identify-improvements-2026-10-05/archives/s2-v1/GCF_035917455_1__NZ_CP109078_1/attempt-b3990512bc65439cbfd09e35ac509ec5/receipt.json",
+      "sha256": "fbe1c44fa647a970cf646f9a0dafce7cc2e0fdd05c2a72b12c6e6ad0e80a5d4b"
+    }
+  },
+  "purpose": "Compact immutable source-real geometry fixture for S3; no independent biological truth label, no fresh model or negative assessment.",
+  "schema": "source-bound-cp109078-phase-reference-fixture-v1",
+  "seven_embedded_source_occurrences": [
+    {
+      "core_only29_identity": 0.9655172413793104,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 32,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 45,
+          "spacer_interval": [
+            5669719,
+            5669812
+          ]
+        }
+      ],
+      "interval": [
+        5669751,
+        5669780
+      ],
+      "original26_identity": 0.896551724137931,
+      "sequence": "AGGACCACCCCCACGGGCGTGGGGAGCAC"
+    },
+    {
+      "core_only29_identity": 0.9655172413793104,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 32,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 46,
+          "spacer_interval": [
+            5669841,
+            5669934
+          ]
+        }
+      ],
+      "interval": [
+        5669873,
+        5669902
+      ],
+      "original26_identity": 0.8620689655172413,
+      "sequence": "CGGACCACCCCCACGGGTGTGGGGAGCAC"
+    },
+    {
+      "core_only29_identity": 0.9655172413793104,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 32,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 47,
+          "spacer_interval": [
+            5669963,
+            5670056
+          ]
+        }
+      ],
+      "interval": [
+        5669995,
+        5670024
+      ],
+      "original26_identity": 0.896551724137931,
+      "sequence": "GGGACCACCCCCACGGGCGTGGGGAGCAC"
+    },
+    {
+      "core_only29_identity": 0.9655172413793104,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 33,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 48,
+          "spacer_interval": [
+            5670085,
+            5670179
+          ]
+        }
+      ],
+      "interval": [
+        5670118,
+        5670147
+      ],
+      "original26_identity": 0.896551724137931,
+      "sequence": "TGGACCACCCCCACGGGCGTGGGGAGCAC"
+    },
+    {
+      "core_only29_identity": 0.896551724137931,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 31,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 50,
+          "spacer_interval": [
+            5670269,
+            5670361
+          ]
+        }
+      ],
+      "interval": [
+        5670300,
+        5670329
+      ],
+      "original26_identity": 0.8275862068965517,
+      "sequence": "TGGACCACCTCCACAGGCGTGGGGAGCAC"
+    },
+    {
+      "core_only29_identity": 0.9310344827586207,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 32,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 56,
+          "spacer_interval": [
+            5670744,
+            5670837
+          ]
+        }
+      ],
+      "interval": [
+        5670776,
+        5670805
+      ],
+      "original26_identity": 0.8275862068965517,
+      "sequence": "CGGACCACCCCCACGGGCGTAGGGATCAC"
+    },
+    {
+      "core_only29_identity": 0.896551724137931,
+      "current59_spacer_context": [
+        {
+          "left_gap_if_inserted_alone": 32,
+          "right_gap_if_inserted_alone": 32,
+          "spacer_index": 57,
+          "spacer_interval": [
+            5670867,
+            5670958
+          ]
+        }
+      ],
+      "interval": [
+        5670899,
+        5670926
+      ],
+      "original26_identity": 0.7777777777777778,
+      "sequence": "CGGACCACCCCCACGCGTGAGGAGCAC"
+    }
+  ],
+  "source": {
+    "complete_sequence_hash_scope": "parent frozen input; not recomputable from this slice alone",
+    "complete_sequence_sha256": "2ace50a2489b1006254f82b7aef1308c4e02845d2c58ca9946e4093dcde7c90d",
+    "sample_id": "GCF_035917455_1__NZ_CP109078_1",
+    "slice_interval": [
+      5666959,
+      5670987
+    ],
+    "slice_length": 4028,
+    "slice_sequence": "CGGACCACCCCCACGGGCGTGGGGAGCACGCCGATCACATCGACATCTACCCCGTTTACTACGGACCACCCCCACGGGCGTGGGGAGCACGGGCACTTCCGGTGGGCGGCGACGGTCATGGGCGGACCACCCCCACGGGCGTGGGGAGCACTTCAGCCTCCGTCACGCCGGCCGGGTCTACACCGGACCACCCCCAAGGGCGTGGGGAGCACGTGCCATCACGTCGGAATGGGGGCGTGATGGGAGGACCACCCCCAAGGGCGTGGGGAGCACGCACAAAGTCACGGCGACGCCGTGATGGTCGACGGACCACCCCCACGGGCGTGGGGAGCACGGTGGGGGCCTGGAGCATCCGCAGGGGCACCGCGGACCACACCCACGGGCGTGGGGAGCACGCCCGACCGGACCCGGAGAACGTGCGCGCGATCGGACCACCCCCACGGGCGTGGGGAGCACGCGAGCAGGCCCCGGGTCTTCCGGGCGGTCGTGGGACCACCCCCACGGGCGTGGGAGCACGGCGGAAAGCCACGATGGCGGTTATCGAGCGACGGACCACCCCCACGGGCGTGGGGAGCACGCCCGAATAGCGTCCATGTCGCCGGACCACCCCACGGGCGTGGGGAGCATGACCTCTTCCCGTCCGGGTTGAGCAGGATCCGCGGACCACCCCCACGGGCGTGTGGAGCACTCCTTGCACTCGGCCTCCCCACGTGATGTGGCCGGACCACCCCCACGGGCGTGGGGAGCACCCGTTCGCGCTGGCTGCGCGGGAGCCGTTCGACGGACCACCCCCACGGGCGTGGGGAGCACGTCGGCCTGGCTCTCGCCGCCGTCGCGATCAGCGGACCACCCCCACGGGCGTGGGGGAGCACCAGAGCGTCGGTGCTGGTTCCTCGGTAGCCAGCGGACCACCCCCATGGGCGTGGGGAGCACGCGGGCGTATTCGCCCTGCCGTTCAACAGGGACGGACCACCCCCGCGGGCGTGGGGAGCACGTGTTCGACTCGCGGAGGATGCGGCGCCTTGACGGACCACCCCCACGGGCGTGGGGAGCACTTCGGGGGGAGCCACGTTGCGAAAGCCGACATAGGGACCACCCCCACGAGCGTGGGGAGCACACGAACGGGACCTGGACGACCGACCCGGCCGACGGACCACCCCCACGGGCGTGGGGAGCACCCGTTCATAGTCTGGTCCGCCGACCAGCTGTTCGGACCACCCCCACGGGCGTGGGGAGCACAGCCAGTCGAGGTGCTCGGTGACGATCTCCCGCGGACCACCCCCACGGGCGTGGGGAGCACCAACAGACCCCCGCCGCCGACTTCGCCGCCATCGGACCGCCCCCACGGGCGTGGGGAGCACGCGGCATCTGCTCGAACTCACCACACCCACCACGGACCACCCCCACGGGCGTGGGGAGCACGCGAGCACCTGTTGCGCCGGTTCCCGGGCCGACGGACCACCCCCACGGGCGTGGGGAGCACTTCGCGTCCGTTCGGACCTCGCGCCACAGGTCGGGACCACCCTCACGGGCGTGGGGAGCACAGCACGGCCTCGGACCCGCAAACCGTCGACGACGGACCACCCCCACGGGCGTGGGGAGCACTCGCGCAGCAGCGGCATGACCGTCGCGCCCGTCGGACCACCCCCACGGGCGTGGGGAGCACAGCGTCCACAGCGAGTACGCCGCCCGCGTGAGCGGACCACCCCCACGGGCGTGGGGAGCACATGTGCGCCGCCGTGAGCGGGCTCTTGCCCTTCGGACCACCCCTACGGGCGTGGGGAGCACCGGCCGGTAGACCGCTGGCCGGCTGCCGGGCGCGGACCACCCCCACGGGCGTGGGGAGCACTGCGCGATCTCCGTCGCGACCGGGCCGGACGCCGGACCACCCCCACGGGCGTGGGGAGCACGACAGACTGGGGACAACCTAGCTGTCGGAGGGCGGACCACCCCACGGGCGTGGGAGCACCAGAGGGGGTAACCATCAACCCATCCGGGGTGCGGACCACCCCCACGGGCGTGGGGAGCACAACGGGACGCCGCCCGCGCTGACGTCACCCGCCGGACCACCCCCACGGGCGTGGGGAGCACGTCAACCGGAAGGATGCGAACCCGCACGTTCTCGGACCACCCCCACGGGCGTGGGGAGCACACGACGAAGCCCCGGTGCTCGGCGTCGTCGACAACCACCCCCACGGGCGTGGGGAGCACGTTGTCAGGTGATGCAAATGCAACACCTAGTGCGGACCACCCCCACGGGCGTGGGGAGCACCGCCACTGTGGACGTGCCCAGTGGTCACCGAACGGACCACCCCCACGGGCGCGGGGAGCACACCGTACGGGGCACGGCCACCTGCACCGCCGACGGACCACCCCCACGGGCGTGGGGAGCACGGTGCCGGCGGCGGGGGCCACTGCCGCGTCACCGGACCACCCCCACGGGCGTGGGGAGCACGCCTCGGGCCTCGACGTGTCACTCAACCAAGTCGGACCACCCCCACGGGCGTGGGAAGCACGTGATCGCACCCATCTCGCGGATGTCGTTCGCCGGACCACCCCCACGGGCGTGGGGAGCACATCGCGACGAGGCTGTTACGCGGGCGCTCCGACGGACCATCCCCACGGGCGTGGGGAGCACGGCAGAGCTACCTCAGCCGTTGCGTGCAACTCCGGACCACGCCACGGGCGTGGGGAGCACAAGATGCGGTCAAGGCTGGTCGATCGCGTCGGACGGACCACCCCCACGGGCGTGGGGAGCACTGCGGATGATGTCGGGCCAGCCCATCCCCGGGAGGACCACCCCCACGGGCGTGGGGAGCACCGCGCGTCCCGCGCGGCTCTCTCGGCGGCGCGCGGACCACCCCCACGGGCGTGGGGAGCACACGCCAGCAGCCACACCGCCGGCTGGTGAGGACGGACCACCCCCACGGGTGTGGGGAGCACTCGGCCGACTGGATGATCCCTCGCATCCGGACCGGACCACCCCCACGGGCGTGGGGAGCACCGCGACGTGGGCGGGGTCCAGGGCGGGGAGGAGGGACCACCCCCACGGGCGTGGGGAGCACGCGGTGACCATGTCGTCGGTCAGATACCGCTGCGGACCACCCCCACGGGCGTGGGGAGCACTACGCATCACCCAGTGGCTGGCAACCCAACAAATGGACCACCCCCACGGGCGTGGGGAGCACGCTCGATCACCCGCGACGGCACCTGACCTCGACGGACCACCCCCACGGGCGTGGGGAGCACATCAGGTTAGGGAACGGGTTGCGCCGTAGGACCGGACCACCCCCACGGGCGTGGGGAGCACTCGAAGAACACGCCCTCGGTCAGCGGCTTCATGGACCACCTCCACAGGCGTGGGGAGCACGAGCGCGAGTCGGCCGTGTACGGCAAGAACATCGGACCACCCCCACGGGCGTGGGGAGCACGCCTTGAACAGGATCGCCTCGCGGCCGTTCGCCGGACCACCCCCACGGGCGTGGGGAGCACGCCAAAGCGAACGACGTCCCGGACCTGGACGACGGACCACCCCCACGGGCGTGGGGAGCACATATAGTCCCGCCCCTTTAAATGGTCGGACTAGGGACCACCCCCACGGGCGAGCACGCCCAAGCGCGTGAGCGGCAGTCGTTCGTCTCCGGACCACCCCCGCGGGCGTGGGGAGCACGACACCGGTCACGGCGGCCGCCGTCTGTGCCCCGGACCACCCCCACGGGCATGGGGAGCACCACTGCACCGCGATCGACTCGGCCCGCAACCATCCCCACGGGCATGGGGAGCACTGGGAAAGCGCCCGTCCGTACGCTCCGTGGAACGGACCACCCCCACGGGCGTAGGGATCACGCGGTCTCCGCCGCGTTCGTGCTGCGCGCGAGCGGACCACCCCCCACGGGCGTGGGGAGCACCCGGACGCCGGTGACGCGCAGCCGATGGCCACCGGACCACCCCCACGCGTGAGGAGCACTCATGAATGAGGTACTCGAAGTCGTCGACTCACGGACCATCCCCACGGGCGTGGGGAGCAC",
+    "slice_sha256": "cef595e0b9378a30b01a0d404a2fd6bcced9dfbc3fddda313368ad77eb53ad2e"
+  }
+}

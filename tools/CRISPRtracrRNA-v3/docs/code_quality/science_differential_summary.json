@@ -1,0 +1,21 @@
+{
+  "byte_identical": true,
+  "baseline_source": "/tmp/tracrrna-quality-baseline/src",
+  "current_source": "/home/alex/CodexProjects/CRISPRtracrRNA/new_version/src",
+  "sha256": "d4ab4b54b629e53cfdeea4ca1aceb4dc65df584304eea8574d9c2729d1654d0d",
+  "bytes": 1511671,
+  "groups": {
+    "identify": 3,
+    "casandra": 4,
+    "alignment": 4,
+    "standard": 16,
+    "experimental": 1156,
+    "model_rescue": 4
+  },
+  "alignment_hits": [
+    60,
+    18,
+    8,
+    30
+  ]
+}

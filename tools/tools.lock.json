@@ -1,0 +1,178 @@
+{
+  "checkout_strategy": "Independent Git repositories pinned by commit; managed by scripts/sync_tools.py",
+  "locked_at": "2026-10-18",
+  "runtime_profile": "crisprloci-council-hardening-v1",
+  "schema_version": 1,
+  "tools": [
+    {
+      "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "entrypoint": "./crispridentify",
+      "name": "CRISPRidentify-v2",
+      "path": "tools/CRISPRidentify-v2",
+      "purpose": "CRISPR array detection",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git",
+      "runtime": "Linux x86-64; use its locked Conda/Mamba environment",
+      "version": "2.3.2"
+    },
+    {
+      "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+      "entrypoint": "casandra",
+      "name": "CasAndra",
+      "path": "tools/CasAndra",
+      "purpose": "Cas protein detection and cassette classification",
+      "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git",
+      "runtime": "Python >=3.11; bundled cap15 model",
+      "version": "0.3.0.dev2"
+    },
+    {
+      "commit": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "entrypoint": "crisprtracrrna",
+      "name": "CRISPRtracrRNA-v3",
+      "path": "tools/CRISPRtracrRNA-v3",
+      "purpose": "tracrRNA candidate prediction",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git",
+      "runtime": "Linux x86-64; Python >=3.11 plus external scientific tools",
+      "version": "3.0.0"
+    },
+    {
+      "commit": "2a91510a8ec98e02507921b56e94df16cf6e0bd5",
+      "entrypoint": "spacerplacer",
+      "name": "SpacerPlacer",
+      "path": "tools/SpacerPlacer",
+      "purpose": "Ancestral CRISPR spacer array reconstruction",
+      "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git",
+      "runtime": "Python >=3.10,<3.13; MAFFT; dedicated sp_model environment",
+      "version": "1.0.1.post3"
+    },
+    {
+      "commit": "505dafe5bc1134d935b33dfd1de7d9872a6eeae3",
+      "entrypoint": "crispr-evor",
+      "name": "evOr",
+      "path": "tools/evOr",
+      "purpose": "Evolutionary CRISPR array orientation prediction",
+      "repository": "https://github.com/Alexander-Mitrofanov/evOr.git",
+      "runtime": "Python >=3.10,<3.13; MAFFT; dedicated sp_model environment",
+      "version": "1.0.4"
+    },
+    {
+      "commit": "b5310163835649cdd89b0e03afb2a90b5421d675",
+      "entrypoint": "crisprleader",
+      "name": "CRISPRleader-v2",
+      "path": "tools/CRISPRleader-v2",
+      "purpose": "Source-verified CRISPR flank context extraction; leader prediction unavailable",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git",
+      "runtime": "Linux; Python >=3.11; dedicated environment; no biological reference bundle",
+      "version": "2.0.0a1"
+    },
+    {
+      "commit": "602155c329681944d5aefad843b0b64663dc5c11",
+      "entrypoint": "crisprrepeat",
+      "name": "CRISPRrepeat",
+      "path": "tools/CRISPRrepeat",
+      "purpose": "Source-bound repeat structure and local array-context evidence; descriptive support only",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git",
+      "runtime": "Linux; Python >=3.10; isolated ViennaRNA==2.7.0 Python binding",
+      "version": "1.0.1"
+    },
+    {
+      "commit": "ddea3f5da9d5ff6a33802046bdb0e0a762029d23",
+      "entrypoint": "crisprspacer",
+      "name": "CRISPRspacer",
+      "path": "tools/CRISPRspacer",
+      "purpose": "Offline target-to-spacer exact search and spacer-to-viral-reference BLAST search",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git",
+      "runtime": "Python >=3.10; pinned BLAST+ from the tracrRNA runtime; immutable operator-provisioned references",
+      "version": "0.3.1"
+    },
+    {
+      "commit": "4b35029a3600a983a7e3d0a63190377d60a31769",
+      "entrypoint": "crisprmap",
+      "name": "CRISPRmap-v2",
+      "path": "tools/CRISPRmap-v2",
+      "purpose": "Offline prokaryotic repeat reference mapping with historical annotation evidence; standalone CLI",
+      "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git",
+      "runtime": "Python >=3.10; isolated standard-library-only runtime; explicit operator-provisioned references",
+      "version": "2.1.0a2"
+    },
+    {
+      "commit": "d55ebf535f21591d44a0229fd809795ddc330cda",
+      "entrypoint": "repeattyper",
+      "name": "RepeatTyper",
+      "path": "tools/RepeatTyper",
+      "purpose": "Offline repeat subtype inference with preserved closed-set model evidence",
+      "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git",
+      "runtime": "Python >=3.11; isolated CPU-only XGBoost environment; immutable bundled 37-label model",
+      "version": "2.0.1"
+    },
+    {
+      "commit": "8dabb0d0f4d7c880854d8cf0190215e09b1b641d",
+      "entrypoint": "spacepharer",
+      "name": "SpacePHARER",
+      "path": "tools/SpacePHARER",
+      "purpose": "Offline explicit spacer-group associations with combined native protein/nucleotide evidence and empirical target/control calibration",
+      "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git",
+      "runtime": "Python >=3.11; isolated C++17 native engine and vendored MMseqs; operator-provisioned immutable broad phage reference",
+      "version": "2.1.1"
+    },
+    {
+      "commit": "c2f619fb3dde849a7874ca243b487d2e6af062f8",
+      "entrypoint": "cctk",
+      "name": "CCTK",
+      "path": "tools/CCTK",
+      "purpose": "Observed ordered spacer comparisons and sharing networks with explicit sequence identity and retained occurrence provenance",
+      "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git",
+      "runtime": "Linux; Python >=3.11; isolated locked CPU environment; offline comparison without external databases",
+      "version": "2.0.2"
+    },
+    {
+      "commit": "1526377ef54bedaae2980c4013c6de91805cf59a",
+      "entrypoint": "clinker-v2",
+      "name": "clinker-v2",
+      "path": "tools/clinker-v2",
+      "purpose": "Protein-neighborhood comparison from source-verified CDS features",
+      "repository": "https://github.com/Alexander-Mitrofanov/clinker-v2.git",
+      "runtime": "Python3.12; isolated pinned scientific Python runtime",
+      "version": "2.0.1"
+    },
+    {
+      "commit": "30877d2ca43f042a4789c4185859e97d4d9a1a7a",
+      "entrypoint": "isescan-v2",
+      "name": "ISEScan-v2",
+      "path": "tools/ISEScan-v2",
+      "purpose": "Source-bound insertion-sequence and terminal-inverted-repeat context",
+      "repository": "https://github.com/Alexander-Mitrofanov/ISEScan-v2.git",
+      "runtime": "Linux x86-64; Python3.11; FGS1.32,HMMER3.4,BLAST2.16.0; exact bundled models",
+      "version": "2.0.0"
+    },
+    {
+      "commit": "f579941ca35fb4bd26fcd4c35fcffc23df9d91a2",
+      "entrypoint": "defense-context",
+      "name": "DefenseFinder-v2",
+      "path": "tools/DefenseFinder-v2",
+      "purpose": "Offline HMM/system-rule defense repertoire with source-bound CDS evidence",
+      "repository": "https://github.com/Alexander-Mitrofanov/DefenseFinder-v2.git",
+      "runtime": "Python3.12; MacSyFinder2.1.4,Pyrodigal3.7.1,HMMER3.4; pinned GPL models1.2.3",
+      "version": "2.0.1"
+    },
+    {
+      "commit": "0498c888203ba7bd6a8e6c6e35a27229adc61d1e",
+      "entrypoint": "rnaalifold-v2",
+      "name": "RNAalifold-v2",
+      "path": "tools/RNAalifold-v2",
+      "purpose": "Homologous RNA-family alignment and comparative consensus folding with explicit source and diversity limits",
+      "repository": "https://github.com/Alexander-Mitrofanov/RNAalifold-v2.git",
+      "runtime": "Python3.12; isolated ViennaRNA2.7.0 Python binding and MAFFT core7.526",
+      "version": "1.0.1"
+    },
+    {
+      "commit": "0fae62b856a6b76d716a2dca230ced12e4221e9f",
+      "entrypoint": "phigaro-v2",
+      "name": "Phigaro-v2",
+      "path": "tools/Phigaro-v2",
+      "purpose": "Offline source-bound prophage regions and exact same-record spacer context",
+      "repository": "https://github.com/Alexander-Mitrofanov/Phigaro-v2.git",
+      "runtime": "Python3.12; isolated Prodigal2.6.3,HMMER3.4 and exact offline pVOG profiles",
+      "version": "2.4.1"
+    }
+  ]
+}

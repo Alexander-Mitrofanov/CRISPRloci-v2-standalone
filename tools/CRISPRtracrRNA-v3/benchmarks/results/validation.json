@@ -1,0 +1,110 @@
+{
+  "verified_at_utc": "2026-09-26T21:54:41.548709+00:00",
+  "python": "3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 16:05:46) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "tests": {
+    "command": "PYTHONPATH=src CRISPRTRACRRNA_TEST_CONFIG=\"$PWD/local.toml\" python -m pytest -q --junitxml=benchmarks/results/pytest.xml",
+    "passed": 78,
+    "unit_or_contract": 71,
+    "real_tool_integration": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 20.849,
+    "log": "benchmarks/results/pytest.log",
+    "junit": "benchmarks/results/pytest.xml",
+    "verified_at_utc": "2026-09-26T22:04:27.737041+00:00",
+    "benchmark_method_cases": 9,
+    "scope_note": "The full suite was rerun once after adding nine scientific benchmark method cases. No scientific benchmark or distribution build rerun was performed in this verification phase; build metadata above describes the earlier build."
+  },
+  "lint": {
+    "ruff_check_tests": "passed",
+    "ruff_format_check_tests": "passed",
+    "scope": "tests only; source/scripts checked separately by coordinating agent",
+    "verified_at_utc": "2026-09-26T22:04:27.737257+00:00"
+  },
+  "typing": {
+    "command": "python -m mypy src/crisprtracrrna",
+    "result": "passed; 12 source files",
+    "log": "benchmarks/results/mypy.log"
+  },
+  "build": {
+    "command": "python -m build --no-isolation --outdir benchmarks/results/distributions",
+    "result": "passed",
+    "log": "benchmarks/results/final_build.log",
+    "artifact_sha256": {
+      "benchmarks/results/distributions/CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl": "87f1ef0f8a6843b0c4c05e2b18daf03b8437484ff810b0e703221e20223400f3",
+      "benchmarks/results/distributions/crisprtracrrna-3.0.0.tar.gz": "f37b47e0d9469de5d59c6c47b7d498e690a616974ba1c26af6dac2fa0b3ee248"
+    },
+    "source_distribution_contains_three_natural_loci_and_provenance": true,
+    "large_benchmark_and_external_directories_excluded": true,
+    "final_rebuild_after_documentation_and_source_extraction": "passed"
+  },
+  "protected_repositories": {
+    "../old_version": {
+      "returncode": 0,
+      "status": "",
+      "stderr": ""
+    },
+    "external/CRISPRidentify-v2": {
+      "returncode": 0,
+      "status": "",
+      "stderr": ""
+    },
+    "external/CasAndra": {
+      "returncode": 0,
+      "status": "",
+      "stderr": ""
+    }
+  },
+  "source_and_test_sha256": {
+    "MANIFEST.in": "fc73c2d68d4062a6a70cdb2c3e50211e61d07e73b710c3ea776614fef30148a5",
+    "pyproject.toml": "80e069db2c066ee37706fa3f8989605b80faea6e79856f61794a50e543925c27",
+    "src/crisprtracrrna/__init__.py": "69e191e72bbf9759d73098fc996af2e9ffe1921075f84f7c58c476c2e3423425",
+    "src/crisprtracrrna/__main__.py": "4de67d7ed6e2d383a67ae6876fc57cde3c20004cd99167534d83cf7a127f1040",
+    "src/crisprtracrrna/adapters.py": "76dfd2c71f4216a8043ceddb77a82885880357b2410f76c89d9209f9b876ecd9",
+    "src/crisprtracrrna/cli.py": "df10e7cf3ed98db582e7f9e48767a78786af425910d7f04e3efc1dadcf636371",
+    "src/crisprtracrrna/config.py": "3b25452a0e52bc1fb1976e80cba5db37f5e7c80acfd4bd903df342644296ff9a",
+    "src/crisprtracrrna/errors.py": "e0be535d6fb708aa067dde95b7735347b80b004d52ead438661690f39d778b58",
+    "src/crisprtracrrna/evidence.py": "05ba057eb16ce007095b44cc5e258baec17f697ff3d53c966fce14ddf398cc82",
+    "src/crisprtracrrna/models.py": "ceaa7c38d8d8cb92e2d28cd9511095cd5cc53bfdd3b274329f3b7ed1d6a2bdf4",
+    "src/crisprtracrrna/pipeline.py": "96a3897b9e1279407149113e1066dbb670380a2ef927ab28ef1a8cbc3ef355fe",
+    "src/crisprtracrrna/process.py": "c3eb0f9e1cad0dadfe081d97b262dd46bed84b31728380dbcbb75892a8561ec6",
+    "src/crisprtracrrna/search.py": "3e35831cc9445dfe13c0b18ae5b551afee0235e081a328689c6589425e716843",
+    "src/crisprtracrrna/sequence.py": "8eceb7b221d29dca35c7882e4c583b8cfa45eafd3ae0172c573cbe34d954952a",
+    "tests/test_dependency_updates.py": "8d2d3ffb1cbaec2bae3fa47ebf98af0f7487be632e80270c09f11463ba0c6432",
+    "tests/test_literature_regressions.py": "431bbf904e060ffe16ecdb1946f8415fe90bdfaadb70f6818690bf154876665b",
+    "tests/test_process_and_reports.py": "c7e8f19d8998948a4fce1152b79e8845c1eda70d8bd9f614bdd61fdc6ccc7907",
+    "tests/test_real_literature.py": "f160fc35ec9f0a2113e8d54e218330159685e36fdcdebdaaab1b3acb86746551",
+    "tests/test_real_tools.py": "4d77063d91a6fe9069f084307e21dab0e091eaf70e29a3f1128a392a9510f20a",
+    "tests/test_scientific_parsers.py": "e6c5f1ab8646fe1db64c49b6c1eab14dc42f52de025900801f786223b5943cc0",
+    "tests/test_sequences.py": "07d626ae776d164122affca9654cd2a17c593ad79ef2694e3ee3ea614490b676",
+    "tests/test_upstream_contracts.py": "a6512b7cd589570dc5ac54b2163e166d3e8ce7052b160cd1913af55ba29d9a60",
+    "tests/test_benchmark_methods.py": "0f1149c7e153b5fd5002057e472d97b67cc9770e541499bb5dd823b2a4f12206"
+  },
+  "limitations": [
+    "Natural-locus tests freeze accepted CRISPRidentify arrays and isolate FASTA36; full end-to-end biological sensitivity is measured in the separate 79-locus benchmark.",
+    "The fixtures establish correct-strand overlap and sequence reconstruction, not exact native transcript boundaries or genome-wide precision.",
+    "The first combined run exposed a test-only FASTA wrapping assumption; that assertion now uses the FASTA parser, and the complete suite was rerun successfully.",
+    "Build and verification reflect the file hashes recorded here; subsequent coordinating-agent edits require appropriate final checks."
+  ],
+  "final_coordinator_checks": {
+    "at_utc": "2026-09-26T22:20:04.802152+00:00",
+    "ruff_check_src_tests_scripts": "passed",
+    "ruff_format_check_src_tests_scripts": "passed",
+    "strict_mypy": "passed; 12 source files",
+    "frozen_downloads_verified": 123,
+    "catalog_input_hashes_verified": 13,
+    "catalog_detection_join_records": 304447,
+    "final_locus_manifests_verified": 79,
+    "final_evidence_export_checksums_verified": 13913,
+    "final_build_log": "benchmarks/results/final_build.log",
+    "final_source_snapshot": "benchmarks/results/final_source_sha256.json",
+    "final_source_archive": "benchmarks/results/final_source.zip",
+    "protected_repositories": "old_version, CRISPRidentify-v2 and CasAndra clean"
+  },
+  "benchmark_methods_under_test_sha256": {
+    "scripts/summarize_sequence_benchmark.py": "49abc7fa8671e42a6584584ab65e5483151335d6e33771f7765459d1ea07e3ff",
+    "scripts/summarize_literature_benchmark.py": "4493c40f94109c97ed853fdbc5002a5d0727be35fbe415ad9783d8d664bc928e"
+  }
+}

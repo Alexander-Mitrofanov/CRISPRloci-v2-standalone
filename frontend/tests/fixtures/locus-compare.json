@@ -1,0 +1,127 @@
+{
+  "job_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "status": "completed",
+  "mode": "locus_compare",
+  "summary": {
+    "locus_compare": {
+      "schema": {
+        "name": "clinker.comparison",
+        "version": "1.0.0"
+      },
+      "tool": {
+        "name": "clinker-v2",
+        "version": "2.0.0",
+        "biopython": "1.85"
+      },
+      "coordinate_system": "1-based-inclusive-source-forward",
+      "input_sha256": "42d195642d5de7abe4f01be6a5aafa44ed1a8f62c6c5f8fac2f2a7c77b3becc5",
+      "features_sha256": "8dde903b9612dd2120382b733937ca5a0f546f444b41f4bdea8c6fb418a4ba1b",
+      "options": {
+        "identity": 0.3,
+        "jobs": 1,
+        "aligner": {
+          "mode": "global",
+          "substitution_matrix": "BLOSUM62",
+          "open_gap_score": -10.0,
+          "extend_gap_score": -0.5
+        }
+      },
+      "limits": {
+        "loci": 8,
+        "window_nt": 50000,
+        "genes": 120,
+        "protein_aa": 3000,
+        "protein_pairs": 6000,
+        "alignment_cells": 250000000
+      },
+      "sources": [
+        {
+          "id": "one",
+          "length": 81,
+          "sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612"
+        },
+        {
+          "id": "two",
+          "length": 81,
+          "sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612"
+        }
+      ],
+      "loci": [
+        {
+          "end": 81,
+          "genes": [
+            {
+              "end": 81,
+              "id": "casandra|contig=one|cds=000001|loc=1-81|strand=+",
+              "partial_3prime": false,
+              "partial_5prime": false,
+              "phase": 0,
+              "start": 1,
+              "strand": "+",
+              "translation_table": 11,
+              "nucleotide_sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612",
+              "protein_sha256": "b35f26f92482f6bc0a26eaa2bffb5da8e0940b3f6fb48734849047c372ce9619",
+              "protein_length": 26
+            }
+          ],
+          "id": "locus001",
+          "source_id": "one",
+          "start": 1,
+          "sequence_sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612",
+          "source_length": 81,
+          "at_source_start": true,
+          "at_source_end": true
+        },
+        {
+          "end": 81,
+          "genes": [
+            {
+              "end": 81,
+              "id": "casandra|contig=two|cds=000001|loc=1-81|strand=+",
+              "partial_3prime": false,
+              "partial_5prime": false,
+              "phase": 0,
+              "start": 1,
+              "strand": "+",
+              "translation_table": 11,
+              "nucleotide_sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612",
+              "protein_sha256": "b35f26f92482f6bc0a26eaa2bffb5da8e0940b3f6fb48734849047c372ce9619",
+              "protein_length": 26
+            }
+          ],
+          "id": "locus002",
+          "source_id": "two",
+          "start": 1,
+          "sequence_sha256": "9775874a057d7494a15007f7ea72ce4b1f5ed450f335a5fbe28f9599ac74a612",
+          "source_length": 81,
+          "at_source_start": true,
+          "at_source_end": true
+        }
+      ],
+      "links": [
+        {
+          "query_locus": "locus001",
+          "query_gene": "casandra|contig=one|cds=000001|loc=1-81|strand=+",
+          "target_locus": "locus002",
+          "target_gene": "casandra|contig=two|cds=000001|loc=1-81|strand=+",
+          "identity": 1.0,
+          "similarity": 1.0,
+          "score": 105.0,
+          "aligned_query": "MAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "aligned_target": "MAAAAAAAAAAAAAAAAAAAAAAAAA"
+        }
+      ],
+      "evaluated_protein_pairs": 1,
+      "alignment_cells": 676,
+      "interpretation": "Protein similarity and observed gene order; not orthology, function, or a phylogeny.",
+      "available": true,
+      "execution_completed": true,
+      "counts": {
+        "loci": 2,
+        "genes": 2,
+        "links": 1,
+        "evaluated_protein_pairs": 1
+      }
+    }
+  }
+}

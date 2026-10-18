@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-27",
+  "release_id": "e54e11421cf705f0c2c733274a0dcbcfa38443c71df3a3db8e111cb96a8e0b08",
+  "python_tests": 357,
+  "frontend_tests": 88,
+  "lint": "passed",
+  "production_build": "passed",
+  "gate_cases": [
+    {
+      "mode": "detection",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": null,
+      "tracr_candidates": null,
+      "archive_bytes": 99839
+    },
+    {
+      "mode": "reconstruction",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": null,
+      "tracr_candidates": null,
+      "archive_bytes": 121860
+    },
+    {
+      "mode": "orientation",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": null,
+      "tracr_candidates": null,
+      "archive_bytes": 142818
+    },
+    {
+      "mode": "cas",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": 5,
+      "tracr_candidates": null,
+      "archive_bytes": 113074
+    },
+    {
+      "mode": "tracrrna",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": null,
+      "tracr_candidates": 4,
+      "archive_bytes": 142113
+    },
+    {
+      "mode": "tracrrna",
+      "model_type": "V",
+      "status": "completed",
+      "cas_protein_calls": null,
+      "tracr_candidates": 1,
+      "archive_bytes": 25067
+    },
+    {
+      "mode": "loci",
+      "model_type": "II",
+      "status": "completed",
+      "cas_protein_calls": 5,
+      "tracr_candidates": 97,
+      "archive_bytes": 155773
+    }
+  ],
+  "browser_acceptance": {
+    "status": "passed",
+    "job_id": "296802558004677d4968fc90e3d8a3f0",
+    "checks": [
+      "real locus submission",
+      "5 Cas calls",
+      "97 RNA candidates",
+      "repository provenance links",
+      "authenticated browser download",
+      "reload recovery",
+      "390px overflow",
+      "no JavaScript exceptions"
+    ]
+  },
+  "compiled_browser_csp": {
+    "status": "passed",
+    "api_transport": "Test-only Playwright forwarding from the configured HTTPS origin to the local API",
+    "checks": [
+      "production CSP",
+      "cached evolutionary results",
+      "real locus submission and results",
+      "no CSP violations",
+      "no JavaScript exceptions"
+    ]
+  },
+  "standalone_audit": {
+    "status": "passed",
+    "retired_roots": [
+      "/home/alex/CursorProjects/web_server_identify_placer_evor",
+      "/home/alex/CodexProjects/WebServer-Identify-SpacerPlacer-evOr"
+    ],
+    "scanned_code_files": 160,
+    "checked_symlinks": 7514,
+    "findings": [],
+    "scope": "Runtime code/configuration and runtime/tool symlinks. Historical provenance documents are intentionally excluded."
+  },
+  "workspace_executable_sources_match_release": true,
+  "production_services_changed": false
+}

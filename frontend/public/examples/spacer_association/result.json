@@ -1,0 +1,532 @@
+{
+  "example": {
+    "input": {
+      "base_count": 2486,
+      "file_sha256": "9e1cdea51c380d598cbac0d04730ad227757bbd9677291d1622b2156c8a2e94a",
+      "filename": "input.json",
+      "normalized_sha256": "971a10823bcb40d0a3873eb5b25a2c0ce7836ac6462e51aedcfc97ae51ed6cec",
+      "record_count": 69
+    },
+    "source_note": "Pinned tool example with masked identifiers. Reference searches use bundled demonstration references, not the full production databases.",
+    "submission_options": {
+      "association_grouping": "per_source",
+      "bias_corrections": true,
+      "category_policy": "bona_fide_possible",
+      "spacer_distance": 1
+    },
+    "verification": {
+      "independent_runs": 2,
+      "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+      "scientific_results_identical": true,
+      "variable_fields": [
+        "execution durations"
+      ]
+    }
+  },
+  "job": {
+    "artifacts": [],
+    "input": {
+      "base_count": 2486,
+      "filename": "input.fasta",
+      "record_count": 69,
+      "sha256": "971a10823bcb40d0a3873eb5b25a2c0ce7836ac6462e51aedcfc97ae51ed6cec",
+      "source_ids": [
+        "example_record_01",
+        "example_record_02",
+        "example_record_03",
+        "example_record_04",
+        "example_record_05",
+        "example_record_06",
+        "example_record_07",
+        "example_record_08",
+        "example_record_09",
+        "example_record_10",
+        "example_record_11",
+        "example_record_12",
+        "example_record_13",
+        "example_record_14",
+        "example_record_15",
+        "example_record_16",
+        "example_record_17",
+        "example_record_18",
+        "example_record_19",
+        "example_record_20",
+        "example_record_21",
+        "example_record_22",
+        "example_record_23",
+        "example_record_24",
+        "example_record_25",
+        "example_record_26",
+        "example_record_27",
+        "example_record_28",
+        "example_record_29",
+        "example_record_30",
+        "example_record_31",
+        "example_record_32",
+        "example_record_33",
+        "example_record_34",
+        "example_record_35",
+        "example_record_36",
+        "example_record_37",
+        "example_record_38",
+        "example_record_39",
+        "example_record_40",
+        "example_record_41",
+        "example_record_42",
+        "example_record_43",
+        "example_record_44",
+        "example_record_45",
+        "example_record_46",
+        "example_record_47",
+        "example_record_48",
+        "example_record_49",
+        "example_record_50",
+        "example_record_51",
+        "example_record_52",
+        "example_record_53",
+        "example_record_54",
+        "example_record_55",
+        "example_record_56",
+        "example_record_57",
+        "example_record_58",
+        "example_record_59",
+        "example_record_60",
+        "example_record_61",
+        "example_record_62",
+        "example_record_63",
+        "example_record_64",
+        "example_record_65",
+        "example_record_66",
+        "example_record_67",
+        "example_record_68",
+        "example_record_69"
+      ]
+    },
+    "mode": "spacer_association",
+    "options": {
+      "association_grouping": "per_source",
+      "bias_corrections_effective": true,
+      "bias_corrections_requested": true,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "molecule": "DNA",
+      "spacer_distance": 1,
+      "tool_options": {},
+      "tracr_model_type": "II",
+      "viral_max_mismatches": 2,
+      "warnings": []
+    },
+    "status": "completed",
+    "summary": {
+      "adapter": null,
+      "array_compare": {
+        "arrays": [],
+        "available": false,
+        "edges": []
+      },
+      "casandra": {
+        "cassettes": [],
+        "genes": [],
+        "status": "not_requested"
+      },
+      "crisprleader": {
+        "contexts": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "detection": {
+        "accepted_categories": [
+          "Bona-fide",
+          "Possible"
+        ],
+        "array_count": 0,
+        "arrays": [],
+        "arrays_scope": "selected_for_analysis",
+        "arrays_truncated": false,
+        "category_counts": {},
+        "report_count": 0,
+        "report_schema_versions": {},
+        "score_semantics": {
+          "model_score_is_probability": false,
+          "note": "Raw model scores are not calibrated probabilities.",
+          "primary_interpretation": "category"
+        },
+        "selected_array_count": 0,
+        "selected_category_counts": {},
+        "source_count": 0,
+        "unselected_array_count": 0
+      },
+      "orientation": null,
+      "pipeline": {
+        "stages": {
+          "spacepharer": {
+            "duration_seconds": 2.869141,
+            "status": "completed"
+          }
+        }
+      },
+      "pipeline_status": "completed",
+      "protospacer": {
+        "available": false,
+        "matches": []
+      },
+      "provenance": {
+        "parameters": {
+          "bias_corrections": true,
+          "category_policy": "bona_fide_possible",
+          "leader_flank_length": 500,
+          "spacer_distance": 1,
+          "tool_options": {},
+          "tracr_model_type": "II"
+        },
+        "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+        "repositories": [
+          {
+            "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+            "display_name": "CasAndra",
+            "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git"
+          },
+          {
+            "commit": "ae7e97b210421224f9e15f84fac8db2f3b7ffd84",
+            "display_name": "CCTK",
+            "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git"
+          },
+          {
+            "commit": "369241d16a724eca487a65fd791340cb13122bde",
+            "display_name": "evOr",
+            "repository": "https://github.com/Alexander-Mitrofanov/evOr.git"
+          },
+          {
+            "commit": "ca225a2a3be38e7dee917b483d2d4e2732be4318",
+            "display_name": "CRISPRtracrRNA-v3",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git"
+          },
+          {
+            "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+            "display_name": "CRISPRidentify-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git"
+          },
+          {
+            "commit": "5051d07ab827356792d6a954308ddc5157bd623e",
+            "display_name": "CRISPRleader-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git"
+          },
+          {
+            "commit": "b1990e3fa08b435d12539419387599d9f08fe375",
+            "display_name": "CRISPRmap-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git"
+          },
+          {
+            "commit": "eb26716becfc6c991039aac0db5a7c16d41d1332",
+            "display_name": "CRISPRrepeat",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git"
+          },
+          {
+            "commit": "0e495166486273c9a130556ee640c713497de5bd",
+            "display_name": "CRISPRspacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git"
+          },
+          {
+            "commit": "29727e2456d3d71ffda96ee27f54d13cf50a3023",
+            "display_name": "RepeatTyper",
+            "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git"
+          },
+          {
+            "commit": "f11ee0d85c706237c3d215bf21703933cd1f8037",
+            "display_name": "SpacePHARER",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git"
+          },
+          {
+            "commit": "87993c9f928fc7893cbc4c9f98df9341e39ffe56",
+            "display_name": "SpacerPlacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git"
+          }
+        ],
+        "tool_versions": {
+          "CCTK": "2.0.2",
+          "CRISPRidentify-v2": "2.3.2",
+          "CRISPRleader-v2": "2.0.0a1",
+          "CRISPRloci integration": "0.13.1",
+          "CRISPRmap-v2": "2.1.0a2",
+          "CRISPRrepeat": "1.0.1",
+          "CRISPRspacer": "0.3.1",
+          "CRISPRtracrRNA-v3": "3.0.0",
+          "CasAndra": "0.3.0.dev2",
+          "RepeatTyper": "2.0.1",
+          "SpacePHARER": "2.1.1",
+          "SpacerPlacer": "1.0.1.post3",
+          "evOr": "1.0.3"
+        }
+      },
+      "reconstruction": null,
+      "repeat_map": {
+        "available": false,
+        "results": []
+      },
+      "repeat_type": {
+        "available": false,
+        "results": []
+      },
+      "repeats": {
+        "instances": [],
+        "status": "not_requested"
+      },
+      "schema_version": "1.0.0",
+      "spacer_association": {
+        "associations": [
+          {
+            "combined_score": 12.24,
+            "group_id": "source1",
+            "hits": [
+              {
+                "occurrence_ids": [
+                  "example_record_11"
+                ],
+                "p_best_hit": 4.833e-06,
+                "query_alignment": "ACAGATTTCGGCCCTTACACGCTGCGCCTCGAC",
+                "query_end": 33,
+                "query_sequence": "ACAGATTTCGGCCCTTACACGCTGCGCCTCGACG",
+                "query_start": 1,
+                "target_alignment": "ACGGACTTCGGCCCGTACCGCCTGCGGCTCGAC",
+                "target_end": 42305,
+                "target_start": 42273
+              }
+            ],
+            "hits_truncated": false,
+            "native_fdr": null,
+            "native_hit_count": 1,
+            "status": "uncalibrated_candidate",
+            "target_id": "example_phage_02"
+          },
+          {
+            "combined_score": 74.56,
+            "group_id": "source2",
+            "hits": [
+              {
+                "occurrence_ids": [
+                  "example_record_42"
+                ],
+                "p_best_hit": 3.466e-05,
+                "query_alignment": "AAACTAGCGAATCAATACGGAATTAAGAATTAC",
+                "query_end": 34,
+                "query_sequence": "AAAACTAGCGAATCAATACGGAATTAAGAATTACAC",
+                "query_start": 2,
+                "target_alignment": "AAACTAGCGACAAGTTACGGAATTAAAAATTAC",
+                "target_end": 20606,
+                "target_start": 20574
+              },
+              {
+                "occurrence_ids": [
+                  "example_record_46"
+                ],
+                "p_best_hit": 7.088e-11,
+                "query_alignment": "TACATGTCGTTTAACCCGCCTCGAAATCCTTATGAG",
+                "query_end": 36,
+                "query_sequence": "TACATGTCGTTTAACCCGCCTCGAAATCCTTATGAG",
+                "query_start": 1,
+                "target_alignment": "TACATGTCATTTAACCCGCCTCGCAATCCATATGAA",
+                "target_end": 1086,
+                "target_start": 1051
+              },
+              {
+                "occurrence_ids": [
+                  "example_record_47"
+                ],
+                "p_best_hit": 6.476e-07,
+                "query_alignment": "ATAAAATATTGCCCAATGTGCGGAAGGAGTTTG",
+                "query_end": 3,
+                "query_sequence": "TCCAAACTCCTTCCGCACATTGGGCAATATTTTATA",
+                "query_start": 35,
+                "target_alignment": "ATACTATATTGCCCGCTCTGCGGAAGGAGTTTG",
+                "target_end": 36891,
+                "target_start": 36859
+              },
+              {
+                "occurrence_ids": [
+                  "example_record_52"
+                ],
+                "p_best_hit": 6.95e-15,
+                "query_alignment": "GGTTACTCAACTGGCGACAGTAATACACCTCAA",
+                "query_end": 2,
+                "query_sequence": "ATTGAGGTGTATTACTGTCGCCAGTTGAGTAACCAG",
+                "query_start": 34,
+                "target_alignment": "GGTTACTCAACTGGCGACAGTAATACACCTCAA",
+                "target_end": 18597,
+                "target_start": 18565
+              },
+              {
+                "occurrence_ids": [
+                  "example_record_31"
+                ],
+                "p_best_hit": 1.321e-07,
+                "query_alignment": "AAATATGGGAAGCTGGACCAGAAAACTTGG",
+                "query_end": 5,
+                "query_sequence": "CTTGCCAAGTTTTCTGGTCCAGCTTCCCATATTTCT",
+                "query_start": 34,
+                "target_alignment": "AAATATGGGAAGTTAGACCAGAGAACTTGG",
+                "target_end": 34809,
+                "target_start": 34780
+              }
+            ],
+            "hits_truncated": false,
+            "native_fdr": null,
+            "native_hit_count": 5,
+            "status": "uncalibrated_candidate",
+            "target_id": "example_phage_03"
+          }
+        ],
+        "associations_truncated": false,
+        "available": true,
+        "calibration": {
+          "control_score_count": 4,
+          "schema_version": "spacepharer.calibration/1.0.0",
+          "status": "unavailable",
+          "target_score_count": 5
+        },
+        "calibration_status": "unavailable",
+        "counts": {
+          "associations": 0,
+          "candidates": 2,
+          "groups": 2,
+          "records": 69,
+          "support_hits": 6,
+          "unsupported": 0
+        },
+        "execution_completed": true,
+        "groups": [
+          {
+            "id": "source1",
+            "members": [
+              "example_record_01",
+              "example_record_02",
+              "example_record_03",
+              "example_record_04",
+              "example_record_05",
+              "example_record_06",
+              "example_record_07",
+              "example_record_08",
+              "example_record_09",
+              "example_record_10",
+              "example_record_11",
+              "example_record_12",
+              "example_record_13",
+              "example_record_14",
+              "example_record_15"
+            ],
+            "supported_occurrence_count": 15,
+            "unique_sequence_count": 15,
+            "unsupported_occurrence_ids": []
+          },
+          {
+            "id": "source2",
+            "members": [
+              "example_record_16",
+              "example_record_17",
+              "example_record_18",
+              "example_record_19",
+              "example_record_20",
+              "example_record_21",
+              "example_record_22",
+              "example_record_23",
+              "example_record_24",
+              "example_record_25",
+              "example_record_26",
+              "example_record_27",
+              "example_record_28",
+              "example_record_29",
+              "example_record_30",
+              "example_record_31",
+              "example_record_32",
+              "example_record_33",
+              "example_record_34",
+              "example_record_35",
+              "example_record_36",
+              "example_record_37",
+              "example_record_38",
+              "example_record_39",
+              "example_record_40",
+              "example_record_41",
+              "example_record_42",
+              "example_record_43",
+              "example_record_44",
+              "example_record_45",
+              "example_record_46",
+              "example_record_47",
+              "example_record_48",
+              "example_record_49",
+              "example_record_50",
+              "example_record_51",
+              "example_record_52",
+              "example_record_53",
+              "example_record_54",
+              "example_record_55",
+              "example_record_56",
+              "example_record_57",
+              "example_record_58",
+              "example_record_59",
+              "example_record_60",
+              "example_record_61",
+              "example_record_62",
+              "example_record_63",
+              "example_record_64",
+              "example_record_65",
+              "example_record_66",
+              "example_record_67",
+              "example_record_68",
+              "example_record_69"
+            ],
+            "supported_occurrence_count": 54,
+            "unique_sequence_count": 54,
+            "unsupported_occurrence_ids": []
+          }
+        ],
+        "interpretation": "Spacer similarity supports a group\u2013target association hypothesis, not active infection, cleavage or a PAM prediction.",
+        "reference": {
+          "control_method": "reversed_translated_orfs",
+          "engine_version": "2.1.1",
+          "genome_count": 3,
+          "manifest_sha256": "e9199798cc9ff2d3f0e1ac322a8156eb2f31ce2619c31ad1d2e0617efedbee70",
+          "name": "example-three-masked-phages",
+          "scope": "targeted_panel",
+          "source": {
+            "collection": "Operator-provided FASTAs",
+            "release": "unspecified",
+            "retrieved_at": "unspecified",
+            "selection_policy": "All explicitly supplied single-genome DNA FASTAs; no automatic selection."
+          },
+          "total_bases": 122604
+        },
+        "requested_fdr": 0.05,
+        "schema": {
+          "name": "crisprloci.spacer-association",
+          "version": "2.0.0"
+        }
+      },
+      "tracrrna": {
+        "candidates": [],
+        "sources": [],
+        "status": "not_requested"
+      },
+      "viral_search": {
+        "available": false,
+        "candidate_viruses": [],
+        "matches": [],
+        "queries": []
+      },
+      "warnings": [
+        "Bundle file omitted because it is empty: logs/spacepharer.stderr.log",
+        "Bundle file omitted because it is empty: logs/spacepharer.stdout.log",
+        "Worker log omitted because it contained a private path: attempt-001.stdout.log",
+        "Worker log omitted because it was empty: attempt-001.stderr.log"
+      ]
+    }
+  },
+  "schema": {
+    "name": "crisprloci.web-example",
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,2 @@
+# Preserve source bytes unless a module supplies its own attributes.
+* -text

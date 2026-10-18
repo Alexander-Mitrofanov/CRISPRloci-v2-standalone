@@ -1,0 +1,14 @@
+{
+  "stage": "benchmarks/council_round2/current_experimental_pinned_native",
+  "baseline_stage": "benchmarks/council_round2/current_default_pinned_native",
+  "experimental": true,
+  "counts": {
+    "reports": 79,
+    "predictions": 3406,
+    "baseline_predictions": 3395,
+    "evidence_hashes": 5261
+  },
+  "biological_projection_differences": [],
+  "invariant_errors": [],
+  "passed": true
+}

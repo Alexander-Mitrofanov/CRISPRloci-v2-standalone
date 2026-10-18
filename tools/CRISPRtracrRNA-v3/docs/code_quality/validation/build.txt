@@ -1,0 +1,357 @@
+* Getting build dependencies for sdist...
+running egg_info
+writing src/CRISPRtracrRNA.egg-info/PKG-INFO
+writing dependency_links to src/CRISPRtracrRNA.egg-info/dependency_links.txt
+writing entry points to src/CRISPRtracrRNA.egg-info/entry_points.txt
+writing requirements to src/CRISPRtracrRNA.egg-info/requires.txt
+writing top-level names to src/CRISPRtracrRNA.egg-info/top_level.txt
+reading manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'external'
+no previously-included directories found matching 'runs'
+no previously-included directories found matching '.envs'
+no previously-included directories found matching '.venv'
+adding license file 'LICENSE'
+writing manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing src/CRISPRtracrRNA.egg-info/PKG-INFO
+writing dependency_links to src/CRISPRtracrRNA.egg-info/dependency_links.txt
+writing entry points to src/CRISPRtracrRNA.egg-info/entry_points.txt
+writing requirements to src/CRISPRtracrRNA.egg-info/requires.txt
+writing top-level names to src/CRISPRtracrRNA.egg-info/top_level.txt
+reading manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'external'
+no previously-included directories found matching 'runs'
+no previously-included directories found matching '.envs'
+no previously-included directories found matching '.venv'
+adding license file 'LICENSE'
+writing manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+running check
+creating crisprtracrrna-3.0.0
+creating crisprtracrrna-3.0.0/docs
+creating crisprtracrrna-3.0.0/docs/code_quality
+creating crisprtracrrna-3.0.0/docs/council
+creating crisprtracrrna-3.0.0/examples
+creating crisprtracrrna-3.0.0/scripts
+creating crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+creating crisprtracrrna-3.0.0/src/crisprtracrrna
+creating crisprtracrrna-3.0.0/src/crisprtracrrna/data
+creating crisprtracrrna-3.0.0/src/crisprtracrrna/data/erpin
+creating crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+creating crisprtracrrna-3.0.0/tests
+creating crisprtracrrna-3.0.0/tests/data/literature
+copying files to crisprtracrrna-3.0.0...
+copying CRISPRtracrRNA.py -> crisprtracrrna-3.0.0
+copying LICENSE -> crisprtracrrna-3.0.0
+copying MANIFEST.in -> crisprtracrrna-3.0.0
+copying README.md -> crisprtracrrna-3.0.0
+copying THIRD_PARTY.md -> crisprtracrrna-3.0.0
+copying config.example.toml -> crisprtracrrna-3.0.0
+copying environment.yml -> crisprtracrrna-3.0.0
+copying pyproject.toml -> crisprtracrrna-3.0.0
+copying setup.cfg -> crisprtracrrna-3.0.0
+copying upstream-lock.json -> crisprtracrrna-3.0.0
+copying docs/COUNCIL_IMPROVEMENT_PLAN.md -> crisprtracrrna-3.0.0/docs
+copying docs/COUNCIL_REPRODUCIBILITY_AMENDMENT.md -> crisprtracrrna-3.0.0/docs
+copying docs/DEPENDENCIES.md -> crisprtracrrna-3.0.0/docs
+copying docs/IMPROVEMENTS.md -> crisprtracrrna-3.0.0/docs
+copying docs/LITERATURE_BENCHMARK.md -> crisprtracrrna-3.0.0/docs
+copying docs/MIGRATION.md -> crisprtracrrna-3.0.0/docs
+copying docs/VALIDATION.md -> crisprtracrrna-3.0.0/docs
+copying docs/code_quality/01_runtime_implementation.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/01_runtime_plan.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/02_science_implementation.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/02_science_plan.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/03_pipeline_plan.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/04_tooling_plan.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/code_quality/README.md -> crisprtracrrna-3.0.0/docs/code_quality
+copying docs/council/01_detection_review.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/02_engineering_review.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/03_validation_review.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/04_detection_evaluation.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/05_engineering_evaluation.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/06_validation_evaluation.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/06_validation_evaluation_history.md -> crisprtracrrna-3.0.0/docs/council
+copying docs/council/07_council_outcome.md -> crisprtracrrna-3.0.0/docs/council
+copying examples/complete.fasta -> crisprtracrrna-3.0.0/examples
+copying examples/model-II.fasta -> crisprtracrrna-3.0.0/examples
+copying examples/model-V.fasta -> crisprtracrrna-3.0.0/examples
+copying scripts/benchmark_literature.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/build_literature_catalog.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/build_literature_loci.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/check_wheel.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/council_archived_panel.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/council_audit.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/council_benchmark.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/council_results.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/dependencies.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/diagnose_literature_failures.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/extract_briner_figure.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/fetch_literature_sources.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/fetch_tracr_atlas.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/summarize_literature_benchmark.py -> crisprtracrrna-3.0.0/scripts
+copying scripts/summarize_sequence_benchmark.py -> crisprtracrrna-3.0.0/scripts
+copying src/CRISPRtracrRNA.egg-info/PKG-INFO -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/CRISPRtracrRNA.egg-info/SOURCES.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/CRISPRtracrRNA.egg-info/dependency_links.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/CRISPRtracrRNA.egg-info/entry_points.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/CRISPRtracrRNA.egg-info/requires.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/CRISPRtracrRNA.egg-info/top_level.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+copying src/crisprtracrrna/__init__.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/__main__.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/adapters.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/cli.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/config.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/errors.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/evidence.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/models.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/pipeline.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/process.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/py.typed -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/reporting.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/search.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/sequence.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/short_rescue_policy.py -> crisprtracrrna-3.0.0/src/crisprtracrrna
+copying src/crisprtracrrna/data/manifest.json -> crisprtracrrna-3.0.0/src/crisprtracrrna/data
+copying src/crisprtracrrna/data/erpin/erpin -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/erpin
+copying src/crisprtracrrna/data/erpin/rho-indep.epn -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/erpin
+copying src/crisprtracrrna/data/models/II.cm -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1f -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1i -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1m -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1p -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1f -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1i -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1m -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1p -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1f -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1i -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1m -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1p -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1f -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1i -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1m -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1p -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1f -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1i -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1m -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1p -> crisprtracrrna-3.0.0/src/crisprtracrrna/data/models
+copying tests/test_benchmark_methods.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_council_controls.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_council_round2.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_dependency_updates.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_literature_regressions.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_process_and_reports.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_publication.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_real_literature.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_real_tools.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_runtime_contracts.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_science_contracts.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_scientific_parsers.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_sequences.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_upstream_contracts.py -> crisprtracrrna-3.0.0/tests
+copying tests/test_wheel_check.py -> crisprtracrrna-3.0.0/tests
+copying tests/data/literature/README.md -> crisprtracrrna-3.0.0/tests/data/literature
+copying tests/data/literature/REF_Ain.fasta -> crisprtracrrna-3.0.0/tests/data/literature
+copying tests/data/literature/REF_Kki.fasta -> crisprtracrrna-3.0.0/tests/data/literature
+copying tests/data/literature/REF_Lsp1.fasta -> crisprtracrrna-3.0.0/tests/data/literature
+copying tests/data/literature/fixtures.json -> crisprtracrrna-3.0.0/tests/data/literature
+copying src/CRISPRtracrRNA.egg-info/SOURCES.txt -> crisprtracrrna-3.0.0/src/CRISPRtracrRNA.egg-info
+Writing crisprtracrrna-3.0.0/setup.cfg
+Creating tar archive
+removing 'crisprtracrrna-3.0.0' (and everything under it)
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+running egg_info
+writing src/CRISPRtracrRNA.egg-info/PKG-INFO
+writing dependency_links to src/CRISPRtracrRNA.egg-info/dependency_links.txt
+writing entry points to src/CRISPRtracrRNA.egg-info/entry_points.txt
+writing requirements to src/CRISPRtracrRNA.egg-info/requires.txt
+writing top-level names to src/CRISPRtracrRNA.egg-info/top_level.txt
+reading manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'external'
+no previously-included directories found matching 'runs'
+no previously-included directories found matching '.envs'
+no previously-included directories found matching '.venv'
+adding license file 'LICENSE'
+writing manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/crisprtracrrna
+copying src/crisprtracrrna/__init__.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/reporting.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/cli.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/__main__.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/pipeline.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/evidence.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/adapters.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/search.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/short_rescue_policy.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/errors.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/sequence.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/config.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/models.py -> build/lib/crisprtracrrna
+copying src/crisprtracrrna/process.py -> build/lib/crisprtracrrna
+running egg_info
+writing src/CRISPRtracrRNA.egg-info/PKG-INFO
+writing dependency_links to src/CRISPRtracrRNA.egg-info/dependency_links.txt
+writing entry points to src/CRISPRtracrRNA.egg-info/entry_points.txt
+writing requirements to src/CRISPRtracrRNA.egg-info/requires.txt
+writing top-level names to src/CRISPRtracrRNA.egg-info/top_level.txt
+reading manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'external'
+no previously-included directories found matching 'runs'
+no previously-included directories found matching '.envs'
+no previously-included directories found matching '.venv'
+adding license file 'LICENSE'
+writing manifest file 'src/CRISPRtracrRNA.egg-info/SOURCES.txt'
+copying src/crisprtracrrna/py.typed -> build/lib/crisprtracrrna
+creating build/lib/crisprtracrrna/data
+copying src/crisprtracrrna/data/manifest.json -> build/lib/crisprtracrrna/data
+creating build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1m -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1p -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1i -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1p -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1p -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1f -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1i -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1p -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1m -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1f -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm.i1i -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1f -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-1.cm -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1m -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm.i1f -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1i -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm.i1p -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/II.cm -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1m -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-2.cm.i1i -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-3.cm -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1m -> build/lib/crisprtracrrna/data/models
+copying src/crisprtracrrna/data/models/V-4.cm.i1f -> build/lib/crisprtracrrna/data/models
+creating build/lib/crisprtracrrna/data/erpin
+copying src/crisprtracrrna/data/erpin/rho-indep.epn -> build/lib/crisprtracrrna/data/erpin
+copying src/crisprtracrrna/data/erpin/erpin -> build/lib/crisprtracrrna/data/erpin
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/crisprtracrrna
+copying build/lib/crisprtracrrna/__init__.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/reporting.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/cli.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/py.typed -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/__main__.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/pipeline.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/evidence.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/adapters.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+creating build/bdist.linux-x86_64/wheel/crisprtracrrna/data
+creating build/bdist.linux-x86_64/wheel/crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-1.cm.i1m -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-2.cm.i1p -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-3.cm.i1i -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-1.cm.i1p -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-4.cm.i1p -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-1.cm.i1f -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/II.cm.i1i -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-3.cm.i1p -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-4.cm -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/II.cm.i1m -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-2.cm.i1f -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-1.cm.i1i -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/II.cm.i1f -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-1.cm -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-3.cm.i1m -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-3.cm.i1f -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-4.cm.i1i -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/II.cm.i1p -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-2.cm -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/II.cm -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-2.cm.i1m -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-2.cm.i1i -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-3.cm -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-4.cm.i1m -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/models/V-4.cm.i1f -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/models
+copying build/lib/crisprtracrrna/data/manifest.json -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data
+creating build/bdist.linux-x86_64/wheel/crisprtracrrna/data/erpin
+copying build/lib/crisprtracrrna/data/erpin/rho-indep.epn -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/erpin
+copying build/lib/crisprtracrrna/data/erpin/erpin -> build/bdist.linux-x86_64/wheel/./crisprtracrrna/data/erpin
+copying build/lib/crisprtracrrna/search.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/short_rescue_policy.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/errors.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/sequence.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/config.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/models.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+copying build/lib/crisprtracrrna/process.py -> build/bdist.linux-x86_64/wheel/./crisprtracrrna
+running install_egg_info
+Copying src/CRISPRtracrRNA.egg-info to build/bdist.linux-x86_64/wheel/./CRISPRtracrRNA-3.0.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/CRISPRtracrRNA-3.0.0.dist-info/WHEEL
+creating '/tmp/tracrrna-quality-final/dist/.tmp-gzjoer_z/CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'crisprtracrrna/__init__.py'
+adding 'crisprtracrrna/__main__.py'
+adding 'crisprtracrrna/adapters.py'
+adding 'crisprtracrrna/cli.py'
+adding 'crisprtracrrna/config.py'
+adding 'crisprtracrrna/errors.py'
+adding 'crisprtracrrna/evidence.py'
+adding 'crisprtracrrna/models.py'
+adding 'crisprtracrrna/pipeline.py'
+adding 'crisprtracrrna/process.py'
+adding 'crisprtracrrna/py.typed'
+adding 'crisprtracrrna/reporting.py'
+adding 'crisprtracrrna/search.py'
+adding 'crisprtracrrna/sequence.py'
+adding 'crisprtracrrna/short_rescue_policy.py'
+adding 'crisprtracrrna/data/manifest.json'
+adding 'crisprtracrrna/data/erpin/erpin'
+adding 'crisprtracrrna/data/erpin/rho-indep.epn'
+adding 'crisprtracrrna/data/models/II.cm'
+adding 'crisprtracrrna/data/models/II.cm.i1f'
+adding 'crisprtracrrna/data/models/II.cm.i1i'
+adding 'crisprtracrrna/data/models/II.cm.i1m'
+adding 'crisprtracrrna/data/models/II.cm.i1p'
+adding 'crisprtracrrna/data/models/V-1.cm'
+adding 'crisprtracrrna/data/models/V-1.cm.i1f'
+adding 'crisprtracrrna/data/models/V-1.cm.i1i'
+adding 'crisprtracrrna/data/models/V-1.cm.i1m'
+adding 'crisprtracrrna/data/models/V-1.cm.i1p'
+adding 'crisprtracrrna/data/models/V-2.cm'
+adding 'crisprtracrrna/data/models/V-2.cm.i1f'
+adding 'crisprtracrrna/data/models/V-2.cm.i1i'
+adding 'crisprtracrrna/data/models/V-2.cm.i1m'
+adding 'crisprtracrrna/data/models/V-2.cm.i1p'
+adding 'crisprtracrrna/data/models/V-3.cm'
+adding 'crisprtracrrna/data/models/V-3.cm.i1f'
+adding 'crisprtracrrna/data/models/V-3.cm.i1i'
+adding 'crisprtracrrna/data/models/V-3.cm.i1m'
+adding 'crisprtracrrna/data/models/V-3.cm.i1p'
+adding 'crisprtracrrna/data/models/V-4.cm'
+adding 'crisprtracrrna/data/models/V-4.cm.i1f'
+adding 'crisprtracrrna/data/models/V-4.cm.i1i'
+adding 'crisprtracrrna/data/models/V-4.cm.i1m'
+adding 'crisprtracrrna/data/models/V-4.cm.i1p'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/LICENSE'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/METADATA'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/WHEEL'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/entry_points.txt'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/top_level.txt'
+adding 'CRISPRtracrRNA-3.0.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built crisprtracrrna-3.0.0.tar.gz and CRISPRtracrRNA-3.0.0-py3-none-linux_x86_64.whl

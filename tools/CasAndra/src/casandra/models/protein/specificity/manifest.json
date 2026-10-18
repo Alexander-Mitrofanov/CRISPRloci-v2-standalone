@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "floor_cap_provenance.json": {
+      "sha256": "270907a772e8d4ceaaf5803446e8bed214c8083cf403f86ba2959266ddcb9764",
+      "size": 213574
+    },
+    "inherited_competition.json": {
+      "sha256": "d5ddf6ca8477e3a3c6bb1e302eab1cb73fbc1a4912834534a165f6f29df884ef",
+      "size": 681
+    },
+    "inherited_floor.json": {
+      "sha256": "cc0fd0576e643023df192f6e972946d9e54e5042aae02237f3ad6aa4eef086e0",
+      "size": 62214
+    },
+    "inherited_profiles.hmm": {
+      "sha256": "d72000016cab9df16973a0b8902670063a56831790efd75e23dced8986efd242",
+      "size": 2251931
+    },
+    "new_bank_source_manifest.json": {
+      "sha256": "68e2cb7d9535ec0de627b835da75a8c36b32185c26b43db47de8eeb8d20d27d6",
+      "size": 1357
+    },
+    "new_profile_metadata.json": {
+      "sha256": "e765a3a36fa777bfd791896152e626d65322b6f043d54d21efe2d397e67c6d04",
+      "size": 31220
+    },
+    "new_profiles.hmm": {
+      "sha256": "dc982a66dc835272551d5e8f549474cf1453eed23b19074dec4f5461c7de347b",
+      "size": 7806231
+    },
+    "repair_policy.json": {
+      "sha256": "075b2fd88e484cfba5064998917b7d8a611f8f827b58395953b6b0703c794b40",
+      "size": 336318
+    },
+    "source_provenance.json": {
+      "sha256": "053e3896f42adda5a2eb6649e67361ae7593eec08c93268f8515afb898d159d5",
+      "size": 1840
+    }
+  },
+  "core_files_sha256": {
+    "profile_metadata.json": "8e340f92724e4941e1eb22cbef7ba920f3f280f5284a714f2a8fa9a318531436",
+    "profiles.hmm": "7e1495ff2378435736fcc2f2325a1bfed8fdbdd97a12f19839e836ceaa61e369"
+  },
+  "core_original_model_id": "casandra-kira-2026-09-15-full-v1-protein",
+  "core_source_bundle_manifest_sha256": "4e527cf17c56b9967a6e1c7664238196df9a0c0da76b9d7f7f99c55cc9a9ec41",
+  "id": "casandra-full361-v3-cap15-2026-09-20-v1-specificity",
+  "minimum_runtime_version": "0.3.0.dev2",
+  "mode": "v3",
+  "parent_specificity_manifest_sha256": "5384e27a65703fb5887f1083e25028a15a5f2e43391260006512ca523cbd090c",
+  "schema_version": 1,
+  "scientific_status": "V9_fixed_two_cap_opened_development_not_selected_or_deployed",
+  "search_spaces": {
+    "core": 361,
+    "inherited": 370,
+    "new": 387
+  }
+}

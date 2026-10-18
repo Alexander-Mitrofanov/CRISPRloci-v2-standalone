@@ -1,0 +1,46 @@
+.array-sequences h4 {
+  margin: 20px 0 10px;
+}
+.sequence-search-panel {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--action);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  min-width: 0;
+}
+.sequence-search-heading,
+.sequence-search-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.sequence-search-heading h4 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.sequence-search-query {
+  display: block;
+  margin-top: 16px;
+  overflow-wrap: anywhere;
+}
+.sequence-search-note {
+  max-width: 78ch;
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.sequence-search-candidate {
+  display: block;
+  min-width: 16ch;
+  max-width: 50ch;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.sequence-search-pagination {
+  margin-top: 16px;
+  font-size: 0.875rem;
+}

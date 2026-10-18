@@ -1,0 +1,232 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "repeats",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "zero_based_half_open",
+    "support_semantics": "descriptive-thermodynamic-model-evidence",
+    "molecule": "DNA",
+    "orientation_policy": "both",
+    "model": {
+      "engine": "ViennaRNA",
+      "parameters": "RNA_Turner2004",
+      "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+      "temperature": 37.0,
+      "dangles": 2,
+      "salt_molar": 1.021,
+      "minimum_loop_size": 3,
+      "allow_GU": true,
+      "pseudoknots": false,
+      "no_lonely_pairs": false,
+      "window": 150,
+      "span": 80
+    },
+    "sources": [
+      {
+        "id": "hairpin",
+        "length": 9,
+        "sha256": "95af3789373a8a55e99978252e81b7b024dc109431f8cb930e12d5587b87469b"
+      },
+      {
+        "id": "empty",
+        "length": 8,
+        "sha256": "c34ab6abb7b2bb595bc25c3b388c872fd1d575819a8f55cc689510285e212385"
+      },
+      {
+        "id": "ambiguous",
+        "length": 9,
+        "sha256": "cd0e47b5d7901fdb3dbf9775be4a07293ef445436a02cad0efad5a2d4fae93bc"
+      }
+    ],
+    "classification": {
+      "strand": {
+        "status": "unsupported",
+        "reason": "no_calibrated_strand_model"
+      },
+      "subtype": {
+        "status": "unsupported",
+        "reason": "no_validated_subtype_model"
+      },
+      "family": {
+        "status": "unsupported",
+        "reason": "no_validated_family_model"
+      }
+    },
+    "instances": [
+      {
+        "id": "repeat_000001",
+        "source_id": "hairpin",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "forward",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_5e6d24c49fe7622ec30f54ad",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "context_not_supplied",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": 0.526075724661739,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000002",
+        "source_id": "hairpin",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "reverse",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_6373df8e4a00703c99a5ae9e",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "context_not_supplied",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": 0.7607199599514427,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000003",
+        "source_id": "empty",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "forward",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_aa4a01910c2f6ad28ae28e97",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "no_reference_pairs",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000004",
+        "source_id": "empty",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "reverse",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_64716f36d410ad6b951f5f21",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "no_reference_pairs",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000005",
+        "source_id": "ambiguous",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "forward",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_16510122ad525a10dcdd510c",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "ambiguous_bases",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000006",
+        "source_id": "ambiguous",
+        "array_id": null,
+        "repeat_index": null,
+        "start": null,
+        "end": null,
+        "terminal": false,
+        "orientation": "reverse",
+        "context_id": null,
+        "context_start": null,
+        "fold_id": "fold_16510122ad525a10dcdd510c",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "ambiguous_bases",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      }
+    ],
+    "folds": [
+      {
+        "id": "fold_5e6d24c49fe7622ec30f54ad",
+        "rna_sequence": "GGGAAACCC",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "(((...)))",
+        "mfe_kcal_mol": -1.2000000476837158,
+        "ensemble_kcal_mol": -1.6191964149475098
+      },
+      {
+        "id": "fold_6373df8e4a00703c99a5ae9e",
+        "rna_sequence": "GGGUUUCCC",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "(((...)))",
+        "mfe_kcal_mol": -1.2000000476837158,
+        "ensemble_kcal_mol": -1.3918100595474243
+      },
+      {
+        "id": "fold_aa4a01910c2f6ad28ae28e97",
+        "rna_sequence": "AAAAAAAA",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "........",
+        "mfe_kcal_mol": 0.0,
+        "ensemble_kcal_mol": -0.0
+      },
+      {
+        "id": "fold_64716f36d410ad6b951f5f21",
+        "rna_sequence": "UUUUUUUU",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "........",
+        "mfe_kcal_mol": 0.0,
+        "ensemble_kcal_mol": -0.0
+      },
+      {
+        "id": "fold_16510122ad525a10dcdd510c",
+        "rna_sequence": "ACGNNNCGU",
+        "status": "unsupported",
+        "reason": "ambiguous_bases"
+      }
+    ]
+  }
+}

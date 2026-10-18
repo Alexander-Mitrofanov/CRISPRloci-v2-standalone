@@ -1,0 +1,42 @@
+{
+  "cassette_parameters": {
+    "max_cas_gap_nt": 5000,
+    "max_non_cas_genes": 5,
+    "min_subtype_vote_fraction": 0.5
+  },
+  "compute": {
+    "peak_rss_mib": 371.91015625,
+    "wall_seconds": 1.145358916000987
+  },
+  "cpu_only": true,
+  "evaluation_evidence": {
+    "architecture_manifest_sha256": "7bffd7a223b81837549ff2d1c98f4d01ae6f4ace6689ec8222b1990a2b6bec66",
+    "hybrid_manifest_sha256": "81e7c8448b04e82b4d96ead52be96c3f5a17c5316a255d8ae13d433e6cd87621",
+    "rule_metrics_sha256": "c93a44744e21e2781e90e4bb6f913b3878216978e510041c5e760138ea6a9f87"
+  },
+  "hyperparameters": {
+    "class_weight": "balanced",
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "n_estimators": 500,
+    "n_jobs": 6
+  },
+  "missing_feature_cassettes": [
+    "JAISVX010000005.1|42197..42497|JAISVX010000005.1_42197_42497|JAISVX010000005.1:36914-50814",
+    "JBJTUB010000049.1|3236..5407|MFM7389249.1|JBJTUB010000049.1:1-5946",
+    "NZ_CM003139.1.1319041-1320859|CRISPR|NZ_CM003139.1:1313708-1338547",
+    "NZ_CP019791.1.3437957-3438107|CRISPR|NZ_CP019791.1:3424601-3453820"
+  ],
+  "model_id": "casandra-cassette-architecture-extratrees-v2-production-refit",
+  "random_seed": 20250731,
+  "refit_timing": "after evaluation models and locked results were frozen",
+  "role": "deployment_refit_not_evaluation_model",
+  "schema_version": 2,
+  "source_cassettes": 721,
+  "training_cassettes": 717,
+  "training_splits": [
+    "test",
+    "train",
+    "validation"
+  ]
+}

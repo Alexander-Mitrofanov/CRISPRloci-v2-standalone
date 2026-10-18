@@ -1,0 +1,48 @@
+{
+  "schema": {"name": "CRISPRrepeat-published-fixture", "version": "1.0.0"},
+  "source": {
+    "citation": "Reimann et al. (2017), Structural constraints and enzymatic promiscuity in the Cas6-dependent generation of crRNAs, Nucleic Acids Research 45:915–925",
+    "doi": "10.1093/nar/gkw786",
+    "url": "https://doi.org/10.1093/nar/gkw786",
+    "supplement_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5741207/supplementaryFiles",
+    "supplement_file": "gkw786_supp.docx",
+    "supplement_sha256": "707a800dbfd82c357dce3208ab9ff61ef54e0896daae108cf896a63bfc15ca7e",
+    "retrieved_date": "2026-09-27",
+    "sequence_table": "Supplemental Table S2",
+    "experimental_labels_table": "Supplemental Table S3",
+    "organism": "Synechocystis sp. PCC 6803",
+    "experimental_scope": "Published in vitro cleavage observations; related fragments from one study, not independent validation across CRISPR systems.",
+    "extraction": "RNA letters copied from Table S2; whitespace and cleavage slashes removed. Initial synthetic GG retained. Repeat intervals located by exact match to the 37-nt repeat.",
+    "published_score_label": "Accuracy of structural repeats",
+    "published_score_scope": "Author-reported model scores, distinct from experimental cleavage labels and from the current implementation's inferred-MFE support."
+  },
+  "molecule": "RNA",
+  "orientation": "transcribed_5prime_to_3prime",
+  "coordinate_system": "zero-based half-open within the complete experimental transcript",
+  "repeat_sequence": "GUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAAC",
+  "cases": [
+    {
+      "id": "CRISPR2_VIII_190nt",
+      "purpose": "Identical repeats in one transcript with different context support and cleavage outcomes.",
+      "length": 190,
+      "rna_sequence": "GGUGAUAACGGGAUGCCAGCCCUAAAGGUGAUGAGCGGGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACCGUUAUCCGGCAAAGAAACCACACUACUAAGCUCGACAAGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACUGGGCCGGGCGCGAGUUGUCCUCCUGUCCGAGGCCCCAC",
+      "rna_sha256": "d4c04d2d394b2186949a6f0476877daac3e87a9a92ec0237e1b34c938aa4b8a3",
+      "synthetic_5prime_prefix": "GG",
+      "repeats": [
+        {"id": "R6", "start": 38, "end": 75, "experimental_cleavage": {"Cas6-1": false, "Cas6-2a": false}, "published_model_score": 0.004},
+        {"id": "R7", "start": 114, "end": 151, "experimental_cleavage": {"Cas6-1": true, "Cas6-2a": true}, "published_model_score": 0.9773}
+      ]
+    },
+    {
+      "id": "CRISPR2_I_121nt",
+      "purpose": "Challenge case: experimentally cleaved despite low published structural support.",
+      "length": 121,
+      "rna_sequence": "GGCGGGGCUUGGGGGGUUGGAGUCCCCGCCCCCGUGGUGGGAGUUCAACACCCUCUUUUCCCCGUCAGGGGACUGAAACUGUGAGUUGCAUAAUGCCUCCUAAUGGCUGUUGGACUCAUAA",
+      "rna_sha256": "e2834559fdcb0201dc5ce6f588649bf791e1706cc0f122bc6c896982e4c6658d",
+      "synthetic_5prime_prefix": "GG",
+      "repeats": [
+        {"id": "R3", "start": 42, "end": 79, "experimental_cleavage": {"Cas6-1": true, "Cas6-2a": true}, "published_model_score": 0.0001}
+      ]
+    }
+  ]
+}

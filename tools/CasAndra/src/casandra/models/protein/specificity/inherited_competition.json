@@ -1,0 +1,23 @@
+{
+  "Z": 370,
+  "allowed_references": [
+    "Q72JJ7",
+    "B9XZG7",
+    "A0QVT2",
+    "Q2FZG9",
+    "Q2FZ19",
+    "M4MR97",
+    "Q9V076",
+    "Q58271",
+    "WP_047817673.1"
+  ],
+  "baseline_manifest_sha256": "4e527cf17c56b9967a6e1c7664238196df9a0c0da76b9d7f7f99c55cc9a9ec41",
+  "hmm_sha256": "d72000016cab9df16973a0b8902670063a56831790efd75e23dced8986efd242",
+  "id": "targeted_exploratory",
+  "kind": "reference_competition",
+  "maximum_evalue": 1e-05,
+  "minimum_score_advantage": 10.0,
+  "production_approved": false,
+  "reference_manifest_sha256": "4f04c72efc145b9ca99a2cd21e4e57ef203de783354fe36927f0afb9231b9db3",
+  "scope": "exploratory_reference_competition_development"
+}

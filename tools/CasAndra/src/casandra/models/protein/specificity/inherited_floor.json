@@ -1,0 +1,2037 @@
+{
+  "baseline_model_manifest_sha256": "4e527cf17c56b9967a6e1c7664238196df9a0c0da76b9d7f7f99c55cc9a9ec41",
+  "calibration": {
+    "baseline_positive_calls": 42323,
+    "components": 3091,
+    "fitted_on_pilot_or_shuffles": false,
+    "fitted_using_negative_labels": false,
+    "observed_additional_losses": 0,
+    "positive_n": 42324,
+    "profile_loss_fraction_budget": 0.0,
+    "scope": "calibration-side empirical constraints, not a future-population guarantee",
+    "selection": "initial per-profile capped order-statistic floor, then conservative lowering for type/subtype constraints; not a global optimizer"
+  },
+  "calibration_source_sha256": "29f61d6d072ed6248a19ed25796ddfd425be985905940840fe83a144db3b9271",
+  "component_mapping_sha256": "24a2b9bd18355cf2d50dfc474cbee812a073b479e91eb936c9816d82b14b1584",
+  "construction_source_hashes": {
+    "NAR web server publication/false_positive_remediation/models/adaptive_zero_loss.json": "d71785776ba45ae6bb395c83e4a274ebd63e2c038fa2195dcd048e38717d5075",
+    "NAR web server publication/false_positive_remediation/scans/current_reference/features.jsonl": "2f00c629648e2280cd7331195f1aee7fa2c8fc926650dc121dd58356d026cb9d",
+    "NAR web server publication/false_positive_remediation/scans/evaluation_reference/features.jsonl": "fa0002ebb1cc26072c6a28cccfc7efaf881e863b8a4882753cb4f41a2c6dd5b1",
+    "NAR web server publication/false_positive_remediation/scripts/build_development_guard_v2.py": "c377cede693deaa268b08f61e8b11826f73b72cbd19e37136747a183408bcd2c",
+    "NAR web server publication/false_positive_remediation/scripts/evaluate_challenges.py": "58b2d8f0e5829a87b55c85fa62bd6fb194cf2207e6ecef3134cf0c8b5da225fe",
+    "NAR web server publication/false_positive_remediation/scripts/policy.py": "fad398ce551cbfc853ae59099372a2aaa74ab3afa7d98b7228967ed00b6c565e",
+    "research/data/processed/casandra_benchmark/makarova-2025-proteins-split-cross-task-v6/sequences.jsonl": "29f61d6d072ed6248a19ed25796ddfd425be985905940840fe83a144db3b9271"
+  },
+  "deployment_status": "development_construction_not_approved",
+  "development_guard": {
+    "archive_splits_consumed_as_calibration": [
+      "validation",
+      "test"
+    ],
+    "heldout_performance_claim": false,
+    "initial_calibration_metadata": "Inherited calibration field describes parent fit only; this v2 uses the additional data declared here",
+    "known_source_window_guard": "All721 previously inspected windows checked; lower fitted floors only to restore lost baseline source agreement",
+    "parent_policy_sha256": "d71785776ba45ae6bb395c83e4a274ebd63e2c038fa2195dcd048e38717d5075",
+    "positive_guard_scope": "Retain previously detected source positives; cannot rescue baseline misses",
+    "profile_floor_changes": [
+      {
+        "guarded_floor": 15.536527633666992,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas10d_6",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 19.47001075744629,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas11_III_3",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 6.9899582862854,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas12_M_1",
+        "reason": "development_known_window_regression_guard"
+      },
+      {
+        "guarded_floor": 12.06422233581543,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas2_4",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 17.34445571899414,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas5_6",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 18.331762313842773,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas5_7",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 10.59465503692627,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas5_csm4_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 10.25304889678955,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas6_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 11.117783546447754,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas6_2",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 13.247776985168457,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas6e_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 12.754412651062012,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas7_3",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 11.843975067138672,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas7_4",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 16.563791275024414,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas7_csm3_3",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 17.7965030670166,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas8_IVB_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 18.684619903564453,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas8b_2",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 10.925379753112793,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas8b_4",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 12.359029769897461,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas8f1_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 15.823901176452637,
+        "parent_floor": 20.0,
+        "profile": "C25_Cas8g_2",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 12.320358276367188,
+        "parent_floor": 20.0,
+        "profile": "C25_Csx19_1",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 15.523161888122559,
+        "parent_floor": 20.0,
+        "profile": "C25_Csx19_2",
+        "reason": "development_archive_positive_retention_guard"
+      },
+      {
+        "guarded_floor": 12.003968238830566,
+        "parent_floor": 20.0,
+        "profile": "C25_Csx19_3",
+        "reason": "development_archive_positive_retention_guard"
+      }
+    ],
+    "profile_identity_mapping": "Exact shared profile IDs only; no alias transfer used",
+    "score_scale_limitation": "Archived327 and active361 HMMs have different fitted parameters. Minimum-score transfer is a conservative heuristic, not model parity or independent calibration.",
+    "source_positive_archive_rows": 16924,
+    "source_window_truth_status": "reused source labels; weak restored protein hits remain unadjudicated",
+    "sparse_fallback_preserved": true
+  },
+  "id": "casandra-full361-v3-cap15-floor-2026-09-20-v1",
+  "kind": "profile_floor",
+  "profiles": {
+    "C25_Cas10_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 46,
+      "calibration_positive_n": 372,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas10_10": {
+      "calibration_components": 2,
+      "calibration_positive_n": 11,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 47,
+      "calibration_positive_n": 362,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas10_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 28,
+      "calibration_positive_n": 349,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas10_4": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 39,
+      "calibration_positive_n": 128,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas10_5": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 14,
+      "calibration_positive_n": 57,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas10_6": {
+      "calibration_components": 3,
+      "calibration_positive_n": 52,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10_7": {
+      "calibration_components": 8,
+      "calibration_positive_n": 27,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10_8": {
+      "calibration_components": 4,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10_9": {
+      "calibration_components": 6,
+      "calibration_positive_n": 15,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 20,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_2": {
+      "calibration_components": 4,
+      "calibration_positive_n": 14,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_3": {
+      "calibration_components": 3,
+      "calibration_positive_n": 10,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_5": {
+      "calibration_components": 2,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas10d_6": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 27,
+      "calibration_positive_n": 162,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas10i_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 104,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 51,
+      "calibration_positive_n": 401,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11_III_10": {
+      "calibration_components": 4,
+      "calibration_positive_n": 13,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_11": {
+      "calibration_components": 3,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_12": {
+      "calibration_components": 2,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_13": {
+      "calibration_components": 1,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 53,
+      "calibration_positive_n": 324,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11_III_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 24,
+      "calibration_positive_n": 207,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas11_III_4": {
+      "calibration_components": 3,
+      "calibration_positive_n": 95,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_5": {
+      "calibration_components": 2,
+      "calibration_positive_n": 89,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_6": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 13,
+      "calibration_positive_n": 63,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11_III_7": {
+      "calibration_components": 8,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_8": {
+      "calibration_components": 5,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_III_9": {
+      "calibration_components": 3,
+      "calibration_positive_n": 14,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_IVC_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_IV_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 44,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_IV_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_IV_3": {
+      "calibration_components": 4,
+      "calibration_positive_n": 9,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11_IV_4": {
+      "calibration_components": 3,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11a_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 16,
+      "calibration_positive_n": 71,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11a_2": {
+      "calibration_components": 6,
+      "calibration_positive_n": 41,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11a_3": {
+      "calibration_components": 3,
+      "calibration_positive_n": 12,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11b_1": {
+      "calibration_components": 8,
+      "calibration_positive_n": 44,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11b_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 26,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11b_3": {
+      "calibration_components": 2,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11b_3__kira20260915": {
+      "calibration_components": 1,
+      "calibration_positive_n": 11,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11b_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11d_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11d_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas11e_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 66,
+      "calibration_positive_n": 530,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11e_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 14,
+      "calibration_positive_n": 426,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas11e_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 119,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_A1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 10,
+      "calibration_positive_n": 249,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_A2_1": {
+      "calibration_components": 14,
+      "calibration_positive_n": 39,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_A2_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 10,
+      "calibration_positive_n": 52,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_B1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 21,
+      "calibration_positive_n": 181,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_B2_1": {
+      "calibration_components": 6,
+      "calibration_positive_n": 15,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_B2_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_C_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 14,
+      "calibration_positive_n": 50,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_D_1": {
+      "calibration_components": 7,
+      "calibration_positive_n": 30,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_E1_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_E1_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_E2_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_E2_2": {
+      "calibration_components": 7,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F01_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 18,
+      "calibration_positive_n": 114,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F02_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F02_3": {
+      "calibration_components": 4,
+      "calibration_positive_n": 12,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F03_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F04_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 10,
+      "calibration_positive_n": 132,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F04_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F05_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 74,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F06_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F07_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 75,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F08_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 5,
+      "calibration_positive_n": 193,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F08_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 20,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F09_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 11,
+      "calibration_positive_n": 455,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F09_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F10_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 7,
+      "calibration_positive_n": 88,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F11_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 64,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F11_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F12_1": {
+      "calibration_components": 3,
+      "calibration_positive_n": 51,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F12_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 10,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_F13_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 10,
+      "calibration_positive_n": 822,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_F13_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 3,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_G_1": {
+      "calibration_components": 3,
+      "calibration_positive_n": 14,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_H1_1": {
+      "calibration_components": 13,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_H2_1": {
+      "calibration_components": 3,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_H2_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_I_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_J_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 22,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_J_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_J_3": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_K_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 84,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas12_L_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_M_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 85,
+      "calibration_positive_n": 458,
+      "floor": 6.9899582862854,
+      "reason": "development_known_window_regression_guard"
+    },
+    "C25_Cas12_M_2": {
+      "calibration_components": 6,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_N_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_O_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 81,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_P_1": {
+      "calibration_components": 3,
+      "calibration_positive_n": 47,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas12_Q_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 6,
+      "calibration_positive_n": 61,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas13_A_1": {
+      "calibration_components": 5,
+      "calibration_positive_n": 18,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_A_2": {
+      "calibration_components": 6,
+      "calibration_positive_n": 18,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_1": {
+      "calibration_components": 5,
+      "calibration_positive_n": 38,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 41,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_3": {
+      "calibration_components": 6,
+      "calibration_positive_n": 27,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_6": {
+      "calibration_components": 6,
+      "calibration_positive_n": 26,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_7": {
+      "calibration_components": 3,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_B_8": {
+      "calibration_components": 1,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_C_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 11,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_C_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 9,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_D_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 27,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_D_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 27,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_E_1": {
+      "calibration_components": 5,
+      "calibration_positive_n": 9,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_E_2": {
+      "calibration_components": 5,
+      "calibration_positive_n": 9,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_F_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas13_F_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 3,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas14_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 13,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 107,
+      "calibration_positive_n": 3378,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas1_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 26,
+      "calibration_positive_n": 253,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas1_3": {
+      "calibration_components": 13,
+      "calibration_positive_n": 43,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas2_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 59,
+      "calibration_positive_n": 2922,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas2_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 14,
+      "calibration_positive_n": 638,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas2_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 5,
+      "calibration_positive_n": 78,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas2_4": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 51,
+      "floor": 12.06422233581543,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas3HD_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 15,
+      "calibration_positive_n": 454,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3HD_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 25,
+      "calibration_positive_n": 87,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3HD_3": {
+      "calibration_components": 12,
+      "calibration_positive_n": 32,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas3_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 95,
+      "calibration_positive_n": 1729,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 45,
+      "calibration_positive_n": 925,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 18,
+      "calibration_positive_n": 253,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_cterm_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 15,
+      "calibration_positive_n": 330,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_cterm_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 100,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_cterm_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 9,
+      "calibration_positive_n": 63,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas3_cterm_4": {
+      "calibration_components": 6,
+      "calibration_positive_n": 10,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas3_cterm_5": {
+      "calibration_components": 2,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas4_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 18,
+      "calibration_positive_n": 956,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas4_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 654,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas4_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 124,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas4_4": {
+      "calibration_components": 4,
+      "calibration_positive_n": 75,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas4_5": {
+      "calibration_components": 11,
+      "calibration_positive_n": 42,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas4_6": {
+      "calibration_components": 5,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_1": {
+      "calibration_components": 12,
+      "calibration_positive_n": 23,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 9,
+      "calibration_positive_n": 907,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_2": {
+      "calibration_components": 1,
+      "calibration_positive_n": 65,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_3": {
+      "calibration_components": 3,
+      "calibration_positive_n": 12,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_4__kira20260915": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_5": {
+      "calibration_components": 1,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_5__kira20260915": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_6": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 18,
+      "calibration_positive_n": 184,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas5_7": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 24,
+      "calibration_positive_n": 129,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas5_8__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 33,
+      "calibration_positive_n": 798,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_III_HF_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 26,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_III_HF_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_IV_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 33,
+      "calibration_positive_n": 128,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_VII_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 15,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_cmr3_1": {
+      "calibration_components": 8,
+      "calibration_positive_n": 12,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_cmr3_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 49,
+      "calibration_positive_n": 441,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_csb5_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 24,
+      "calibration_positive_n": 250,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_csm4_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 49,
+      "calibration_positive_n": 496,
+      "floor": 10.59465503692627,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas5_csm4_2": {
+      "calibration_components": 4,
+      "calibration_positive_n": 13,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_csm5_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 85,
+      "calibration_positive_n": 370,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_csm5_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 35,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_csx10_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 9,
+      "calibration_positive_n": 89,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_csx10_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 35,
+      "calibration_positive_n": 175,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5_csx10_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 38,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5_csx10_3": {
+      "calibration_components": 3,
+      "calibration_positive_n": 9,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5f1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 23,
+      "calibration_positive_n": 387,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas5f1_2": {
+      "calibration_components": 4,
+      "calibration_positive_n": 89,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5f2_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 42,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas5f2_2": {
+      "calibration_components": 5,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 110,
+      "calibration_positive_n": 872,
+      "floor": 10.25304889678955,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas6_10": {
+      "calibration_components": 6,
+      "calibration_positive_n": 12,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_11": {
+      "calibration_components": 4,
+      "calibration_positive_n": 14,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_12": {
+      "calibration_components": 2,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 37,
+      "calibration_positive_n": 841,
+      "floor": 11.117783546447754,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas6_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 6,
+      "calibration_positive_n": 146,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas6_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 71,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_5": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 20,
+      "calibration_positive_n": 68,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas6_6": {
+      "calibration_components": 6,
+      "calibration_positive_n": 41,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_7": {
+      "calibration_components": 1,
+      "calibration_positive_n": 19,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_8": {
+      "calibration_components": 3,
+      "calibration_positive_n": 11,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6_9": {
+      "calibration_components": 4,
+      "calibration_positive_n": 10,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas6e_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 44,
+      "calibration_positive_n": 1042,
+      "floor": 13.247776985168457,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas6f_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 31,
+      "calibration_positive_n": 485,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 12,
+      "calibration_positive_n": 1038,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_11e_1": {
+      "calibration_components": 6,
+      "calibration_positive_n": 23,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_11i_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 97,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 7,
+      "calibration_positive_n": 973,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 17,
+      "calibration_positive_n": 462,
+      "floor": 12.754412651062012,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas7_4": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 15,
+      "calibration_positive_n": 162,
+      "floor": 11.843975067138672,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas7_IV_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_IV_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 26,
+      "calibration_positive_n": 143,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 72,
+      "calibration_positive_n": 379,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr1_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 8,
+      "calibration_positive_n": 59,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr1_3": {
+      "calibration_components": 7,
+      "calibration_positive_n": 23,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_cmr1_4": {
+      "calibration_components": 8,
+      "calibration_positive_n": 24,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_cmr4_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 9,
+      "calibration_positive_n": 194,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr4_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 21,
+      "calibration_positive_n": 370,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr6_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 17,
+      "calibration_positive_n": 392,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr6_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 11,
+      "calibration_positive_n": 53,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_cmr6_2__kira20260915": {
+      "calibration_components": 2,
+      "calibration_positive_n": 96,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_cmr8_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csb1_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 60,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csb1_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csb1_3": {
+      "calibration_components": 3,
+      "calibration_positive_n": 152,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 11,
+      "calibration_positive_n": 387,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_10": {
+      "calibration_components": 6,
+      "calibration_positive_n": 30,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_11": {
+      "calibration_components": 1,
+      "calibration_positive_n": 14,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_12": {
+      "calibration_components": 2,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_13": {
+      "calibration_components": 3,
+      "calibration_positive_n": 3,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 24,
+      "calibration_positive_n": 301,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_2": {
+      "calibration_components": 4,
+      "calibration_positive_n": 117,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_2__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 59,
+      "calibration_positive_n": 348,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 15,
+      "calibration_positive_n": 228,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas7_csm3_4": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 27,
+      "calibration_positive_n": 125,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_4__kira20260915": {
+      "calibration_components": 21,
+      "calibration_positive_n": 28,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_5": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 18,
+      "calibration_positive_n": 72,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_6": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 12,
+      "calibration_positive_n": 74,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_7": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 10,
+      "calibration_positive_n": 73,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7_csm3_8": {
+      "calibration_components": 3,
+      "calibration_positive_n": 29,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7_csm3_9": {
+      "calibration_components": 1,
+      "calibration_positive_n": 21,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas7f1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 13,
+      "calibration_positive_n": 393,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas7f2_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 29,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 9,
+      "calibration_positive_n": 70,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8_IVA_2": {
+      "calibration_components": 5,
+      "calibration_positive_n": 29,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_3": {
+      "calibration_components": 11,
+      "calibration_positive_n": 30,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 3,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_5": {
+      "calibration_components": 1,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_6": {
+      "calibration_components": 1,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_7": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVA_8": {
+      "calibration_components": 1,
+      "calibration_positive_n": 1,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8_IVB_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 13,
+      "calibration_positive_n": 73,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas8_IVC_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_10": {
+      "calibration_components": 1,
+      "calibration_positive_n": 3,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_1__kira20260915": {
+      "calibration_components": 1,
+      "calibration_positive_n": 22,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_2__kira20260915": {
+      "calibration_components": 5,
+      "calibration_positive_n": 32,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_3": {
+      "calibration_components": 9,
+      "calibration_positive_n": 32,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_4": {
+      "calibration_components": 3,
+      "calibration_positive_n": 28,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_5": {
+      "calibration_components": 4,
+      "calibration_positive_n": 22,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_6": {
+      "calibration_components": 3,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_6__kira20260915": {
+      "calibration_components": 4,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_7": {
+      "calibration_components": 3,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_7__kira20260915": {
+      "calibration_components": 4,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_8": {
+      "calibration_components": 2,
+      "calibration_positive_n": 13,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_8__kira20260915": {
+      "calibration_components": 11,
+      "calibration_positive_n": 32,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8a_9": {
+      "calibration_components": 2,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 24,
+      "calibration_positive_n": 69,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8b_10": {
+      "calibration_components": 1,
+      "calibration_positive_n": 10,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_11": {
+      "calibration_components": 3,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_12": {
+      "calibration_components": 3,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_13": {
+      "calibration_components": 1,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_14": {
+      "calibration_components": 3,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_15": {
+      "calibration_components": 4,
+      "calibration_positive_n": 4,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_1__kira20260915": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 37,
+      "calibration_positive_n": 220,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8b_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 33,
+      "calibration_positive_n": 174,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas8b_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 20,
+      "calibration_positive_n": 175,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8b_4": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 22,
+      "calibration_positive_n": 160,
+      "floor": 10.925379753112793,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas8b_5": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 13,
+      "calibration_positive_n": 93,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8b_6": {
+      "calibration_components": 3,
+      "calibration_positive_n": 66,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_7": {
+      "calibration_components": 8,
+      "calibration_positive_n": 46,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_8": {
+      "calibration_components": 3,
+      "calibration_positive_n": 32,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8b_9": {
+      "calibration_components": 5,
+      "calibration_positive_n": 20,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8c_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 33,
+      "calibration_positive_n": 786,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8e_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 29,
+      "calibration_positive_n": 525,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8e_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 14,
+      "calibration_positive_n": 486,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas8f1_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 23,
+      "calibration_positive_n": 492,
+      "floor": 12.359029769897461,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas8f1_2": {
+      "calibration_components": 2,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8g_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 65,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8g_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 5,
+      "calibration_positive_n": 60,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Cas8g_3": {
+      "calibration_components": 6,
+      "calibration_positive_n": 29,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8g_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 17,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas8g_5": {
+      "calibration_components": 1,
+      "calibration_positive_n": 16,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas9_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 31,
+      "calibration_positive_n": 605,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas9_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 5,
+      "calibration_positive_n": 269,
+      "floor": 15,
+      "reason": "positive_retention_constrained_floor"
+    },
+    "C25_Cas9_3": {
+      "calibration_components": 1,
+      "calibration_positive_n": 7,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas9_4": {
+      "calibration_components": 1,
+      "calibration_positive_n": 45,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas9b_1": {
+      "calibration_components": 5,
+      "calibration_positive_n": 21,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cas9d_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 25,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Cmr7_1": {
+      "calibration_components": 5,
+      "calibration_positive_n": 24,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csb3_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 53,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx19_1": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 35,
+      "calibration_positive_n": 140,
+      "floor": 12.320358276367188,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Csx19_2": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 11,
+      "calibration_positive_n": 66,
+      "floor": 15,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Csx19_3": {
+      "allowed_profile_positive_losses": 0,
+      "calibration_components": 6,
+      "calibration_positive_n": 56,
+      "floor": 12.003968238830566,
+      "reason": "development_archive_positive_retention_guard"
+    },
+    "C25_Csx19_4": {
+      "calibration_components": 6,
+      "calibration_positive_n": 39,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx19_5": {
+      "calibration_components": 3,
+      "calibration_positive_n": 6,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx22_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx24_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 2,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx25_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 17,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx26_1": {
+      "calibration_components": 4,
+      "calibration_positive_n": 13,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx27_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 20,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx27_2": {
+      "calibration_components": 5,
+      "calibration_positive_n": 8,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx28_1": {
+      "calibration_components": 2,
+      "calibration_positive_n": 39,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx28_2": {
+      "calibration_components": 3,
+      "calibration_positive_n": 17,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    },
+    "C25_Csx32_1": {
+      "calibration_components": 1,
+      "calibration_positive_n": 5,
+      "floor": null,
+      "reason": "sparse_baseline_fallback"
+    }
+  },
+  "score_cap": 20.0,
+  "sparse_fallback": "unchanged_baseline_when_n_less_than_50_or_components_less_than_5",
+  "unknown_profile_fallback": "unchanged_baseline",
+  "v9_revision": {
+    "candidate_selected": false,
+    "cap": 15,
+    "historical_guard_fields_are_not_new_validation": true,
+    "intervention": "min(existing_finite_floor, cap) at both inherited and later support stages",
+    "new_calibration_or_fitting": false,
+    "null_and_absent_rules_preserved": true,
+    "parent": "frozen_V3_intersection",
+    "parent_policy_sha256": "f3c9d5000ab74596e9b38efb987f837239ed45d04246df5b4e2f295304d3a77c",
+    "protocol_sha256": "341b35549327507dbcbe6513bcf29a648d57ca3898f69c8afea9668a7239a4b9",
+    "replacement_approved": false,
+    "schema_version": 1
+  }
+}

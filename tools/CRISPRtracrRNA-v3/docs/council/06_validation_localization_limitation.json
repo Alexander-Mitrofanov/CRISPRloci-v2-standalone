@@ -1,0 +1,140 @@
+{
+  "Cca1": [
+    {
+      "seed": {
+        "start": 846,
+        "end": 860,
+        "length": 15
+      },
+      "reference": {
+        "contig": "REF_Cca1",
+        "start": 789,
+        "end": 860,
+        "strand": "-"
+      },
+      "seed_reference_overlap_nt": 15
+    }
+  ],
+  "Cga": [
+    {
+      "seed": {
+        "start": 867,
+        "end": 892,
+        "length": 26
+      },
+      "reference": {
+        "contig": "REF_Cga",
+        "start": 810,
+        "end": 911,
+        "strand": "-"
+      },
+      "seed_reference_overlap_nt": 26
+    }
+  ],
+  "Cme1": [
+    {
+      "seed": {
+        "start": 5807,
+        "end": 5822,
+        "length": 16
+      },
+      "reference": {
+        "contig": "REF_Cme1",
+        "start": 5776,
+        "end": 5883,
+        "strand": "+"
+      },
+      "seed_reference_overlap_nt": 16
+    }
+  ],
+  "Ffr": [
+    {
+      "seed": {
+        "start": 1134,
+        "end": 1158,
+        "length": 25
+      },
+      "reference": {
+        "contig": "REF_Ffr",
+        "start": 1077,
+        "end": 1155,
+        "strand": "-"
+      },
+      "seed_reference_overlap_nt": 22
+    }
+  ],
+  "Ghy2": [
+    {
+      "seed": {
+        "start": 7655,
+        "end": 7673,
+        "length": 19
+      },
+      "reference": {
+        "contig": "REF_Ghy2",
+        "start": 7651,
+        "end": 7736,
+        "strand": "+"
+      },
+      "seed_reference_overlap_nt": 19
+    }
+  ],
+  "Orh": [
+    {
+      "seed": {
+        "start": 8193,
+        "end": 8215,
+        "length": 23
+      },
+      "reference": {
+        "contig": "REF_Orh",
+        "start": 8170,
+        "end": 8276,
+        "strand": "+"
+      },
+      "seed_reference_overlap_nt": 23
+    }
+  ],
+  "Psp": [
+    {
+      "seed": {
+        "start": 687,
+        "end": 709,
+        "length": 23
+      },
+      "reference": {
+        "contig": "REF_Psp",
+        "start": 627,
+        "end": 731,
+        "strand": "-"
+      },
+      "seed_reference_overlap_nt": 23
+    }
+  ],
+  "conditional_derangement_Cga": {
+    "candidate_interval": {
+      "start": 833,
+      "end": 1001,
+      "length": 169
+    },
+    "reference": {
+      "contig": "REF_Cga",
+      "start": 810,
+      "end": 911,
+      "strand": "-"
+    },
+    "window_reference_overlap_nt": 79,
+    "seed_interval": {
+      "start": 983,
+      "end": 996,
+      "length": 14
+    },
+    "seed_reference_overlap_nt": 0,
+    "cm_interval": {
+      "start": 910,
+      "end": 937,
+      "length": 28
+    },
+    "cm_reference_overlap_nt": 2
+  }
+}

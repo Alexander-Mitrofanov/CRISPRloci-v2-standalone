@@ -1,0 +1,4557 @@
+{
+  "dinucleotide_1": {
+    "complete": 79,
+    "proposals": 126,
+    "admitted": 2,
+    "median": 0,
+    "max": 1,
+    "rows": [
+      {
+        "label": "Lpn",
+        "arrays": 1,
+        "bases": 8655,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6245-8575-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Khu",
+        "arrays": 1,
+        "bases": 12480,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9278-9446-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ain",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6307-8646-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cgl",
+        "arrays": 1,
+        "bases": 8681,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6944-7504-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Esp1",
+        "arrays": 2,
+        "bases": 15767,
+        "proposals": 6,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2884-3709-p1": 0,
+          "CRISPR-5397-8258-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 6
+        },
+        "admissions": []
+      },
+      {
+        "label": "Esp2",
+        "arrays": 1,
+        "bases": 40301,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20300-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Fma",
+        "arrays": 1,
+        "bases": 8634,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6898-7859-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lce",
+        "arrays": 1,
+        "bases": 8622,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6837-7862-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lrh",
+        "arrays": 1,
+        "bases": 13070,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2106-3926-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lsp1",
+        "arrays": 1,
+        "bases": 8739,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-34-201-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lsp2",
+        "arrays": 1,
+        "bases": 41358,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-21357-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Pac",
+        "arrays": 1,
+        "bases": 11789,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7982-8875-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tba",
+        "arrays": 1,
+        "bases": 8667,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7126-7358-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tde",
+        "arrays": 1,
+        "bases": 15633,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11149-11317-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tpu",
+        "arrays": 1,
+        "bases": 40168,
+        "proposals": 4,
+        "admitted": 1,
+        "admitted_per_mb": 24.895439155546704,
+        "admitted_per_array": {
+          "CRISPR-20002-20167-p1": 1
+        },
+        "rejections": {
+          "no_independent_regional_support": 3
+        },
+        "admissions": [
+          {
+            "id": "short_candidate000002",
+            "candidate_origin": "anti_repeat",
+            "admission_branch": "short_rescue",
+            "evidence_class": "sequence_duplex_cm",
+            "boundary_kind": "anti_repeat_search_window",
+            "interval": {
+              "start": 29981,
+              "end": 30151,
+              "length": 171
+            },
+            "strand": "+",
+            "sequence": "ATGTTAACTCTTTATCATCCAAAAATTTGTTTTGAATAAATTTATAATTTTCAAAGTCAAGGCCTGCAAAGGTTTCATCCATAATTATATTTTTATATGAACCTGCGAAAATTCTAGCTAAAGCGGCGCGTTCTTTTTCTCCTCCGGATATTTGTACTCCGTCAGTATCTA",
+            "array": {
+              "id": "CRISPR-20002-20167-p1",
+              "interval": {
+                "start": 20002,
+                "end": 20167,
+                "length": 166
+              },
+              "category": "Possible",
+              "score": 0.7335410055645339,
+              "predicted_strand": "-",
+              "repeat": "GTATTTAAGTGGATGATCTAGAGTTTCAAGTGAA",
+              "tested_repeat_strand": "+"
+            },
+            "anti_repeat": {
+              "interval": {
+                "start": 29986,
+                "end": 30001,
+                "length": 16
+              },
+              "local_interval": {
+                "start": 6,
+                "end": 21,
+                "length": 16
+              },
+              "sequence": "AACTCTTTATCATCCA",
+              "identity": 0.875,
+              "coverage": 0.47058823529411764,
+              "complementary_hypothesis": true,
+              "array_distance_bases": 9818
+            },
+            "interaction": {
+              "target_interval": {
+                "start": 2,
+                "end": 21,
+                "length": 20
+              },
+              "repeat_interval": {
+                "start": 10,
+                "end": 28,
+                "length": 19
+              },
+              "energy_kcal_mol": -16.76,
+              "hybrid_dot_bracket": "((..((((((..((((((((&))))))))..)))))).))",
+              "target_paired_positions": [
+                2,
+                3,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "repeat_paired_positions": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                27,
+                28
+              ]
+            },
+            "model_hit": {
+              "interval": {
+                "start": 69,
+                "end": 94,
+                "length": 26
+              },
+              "strand": "+",
+              "score": 17.0,
+              "evalue": 0.0017,
+              "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81",
+              "genomic_interval": {
+                "start": 30049,
+                "end": 30074,
+                "length": 26
+              },
+              "genomic_strand": "+"
+            },
+            "terminator": {
+              "interval": {
+                "start": 99,
+                "end": 146,
+                "length": 48
+              },
+              "strand": "+",
+              "score": 7.54,
+              "evalue": 0.279,
+              "model": "rho-indep",
+              "genomic_interval": {
+                "start": 30079,
+                "end": 30126,
+                "length": 48
+              },
+              "genomic_strand": "+"
+            },
+            "model_hits": [
+              {
+                "interval": {
+                  "start": 69,
+                  "end": 137,
+                  "length": 69
+                },
+                "strand": "+",
+                "score": 13.0,
+                "evalue": 7.1e-05,
+                "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524",
+                "genomic_interval": {
+                  "start": 30049,
+                  "end": 30117,
+                  "length": 69
+                },
+                "genomic_strand": "+"
+              },
+              {
+                "interval": {
+                  "start": 69,
+                  "end": 94,
+                  "length": 26
+                },
+                "strand": "+",
+                "score": 17.0,
+                "evalue": 0.0017,
+                "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81",
+                "genomic_interval": {
+                  "start": 30049,
+                  "end": 30074,
+                  "length": 26
+                },
+                "genomic_strand": "+"
+              }
+            ],
+            "terminator_hits": [
+              {
+                "interval": {
+                  "start": 99,
+                  "end": 146,
+                  "length": 48
+                },
+                "strand": "+",
+                "score": 7.54,
+                "evalue": 0.279,
+                "model": "rho-indep",
+                "genomic_interval": {
+                  "start": 30079,
+                  "end": 30126,
+                  "length": 48
+                },
+                "genomic_strand": "+"
+              }
+            ],
+            "poly_t_signals": [
+              {
+                "start": 30,
+                "end": 33,
+                "length": 4
+              },
+              {
+                "start": 48,
+                "end": 51,
+                "length": 4
+              },
+              {
+                "start": 90,
+                "end": 94,
+                "length": 5
+              },
+              {
+                "start": 134,
+                "end": 138,
+                "length": 5
+              }
+            ],
+            "cas_context": null,
+            "ranking": {
+              "score": 4.480003190424265,
+              "features": {
+                "array": 0.7335410055645339,
+                "identity": 0.875,
+                "coverage": 0.47058823529411764,
+                "identity_coverage": 0.4117647058823529,
+                "interaction": 1.6760000000000002,
+                "model": 1.7,
+                "terminator": 0.5543957967264024,
+                "orientation": 0.0,
+                "anti_tail": 1.0,
+                "tail_terminator": 1.0
+              },
+              "contributions": {
+                "array": 0.36677050278226697,
+                "identity": 0.4375,
+                "coverage": 0.23529411764705882,
+                "identity_coverage": 0.20588235294117646,
+                "interaction": 1.0056,
+                "model": 1.53,
+                "terminator": 0.49895621705376214,
+                "orientation": 0.0,
+                "anti_tail": 0.1,
+                "tail_terminator": 0.1
+              },
+              "calibrated_probability": false
+            },
+            "type_v_motifs": null,
+            "short_rescue_admission": {
+              "accepted": true,
+              "rejection_reasons": [],
+              "anchored_paired_positions": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "anchored_paired_count": 14,
+              "anchored_paired_fraction": 0.875,
+              "antiparallel_pairs": [
+                {
+                  "target": 2,
+                  "repeat": 28,
+                  "bases": "UA"
+                },
+                {
+                  "target": 3,
+                  "repeat": 27,
+                  "bases": "GC"
+                },
+                {
+                  "target": 6,
+                  "repeat": 25,
+                  "bases": "AU"
+                },
+                {
+                  "target": 7,
+                  "repeat": 24,
+                  "bases": "AU"
+                },
+                {
+                  "target": 8,
+                  "repeat": 23,
+                  "bases": "CG"
+                },
+                {
+                  "target": 9,
+                  "repeat": 22,
+                  "bases": "UA"
+                },
+                {
+                  "target": 10,
+                  "repeat": 21,
+                  "bases": "CG"
+                },
+                {
+                  "target": 11,
+                  "repeat": 20,
+                  "bases": "UA"
+                },
+                {
+                  "target": 14,
+                  "repeat": 17,
+                  "bases": "AU"
+                },
+                {
+                  "target": 15,
+                  "repeat": 16,
+                  "bases": "UA"
+                },
+                {
+                  "target": 16,
+                  "repeat": 15,
+                  "bases": "CG"
+                },
+                {
+                  "target": 17,
+                  "repeat": 14,
+                  "bases": "AU"
+                },
+                {
+                  "target": 18,
+                  "repeat": 13,
+                  "bases": "UA"
+                },
+                {
+                  "target": 19,
+                  "repeat": 12,
+                  "bases": "CG"
+                },
+                {
+                  "target": 20,
+                  "repeat": 11,
+                  "bases": "CG"
+                },
+                {
+                  "target": 21,
+                  "repeat": 10,
+                  "bases": "AU"
+                }
+              ],
+              "supporting_model_hits": [
+                {
+                  "interval": {
+                    "start": 69,
+                    "end": 137,
+                    "length": 69
+                  },
+                  "strand": "+",
+                  "score": 13.0,
+                  "evalue": 7.1e-05,
+                  "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524"
+                },
+                {
+                  "interval": {
+                    "start": 69,
+                    "end": 94,
+                    "length": 26
+                  },
+                  "strand": "+",
+                  "score": 17.0,
+                  "evalue": 0.0017,
+                  "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81"
+                }
+              ],
+              "supporting_terminator_hits": [],
+              "support_search_context": "separate short-proposal candidate windows; oriented transcript",
+              "model_family_responsibility": "bundled II",
+              "seed_target_range": {
+                "start": 6,
+                "end": 21,
+                "length": 16
+              },
+              "thresholds": {
+                "min_query_span": 12,
+                "min_identity": 0.8,
+                "min_anchored_paired_bases": 10,
+                "min_anchored_paired_fraction": 0.5,
+                "energy_strictly_below": 0,
+                "cm_evalue_max": 0.01,
+                "cm_duplex_overlap_strictly_below": 10,
+                "terminator_evalue_max": 0.001
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Vpa",
+        "arrays": 1,
+        "bases": 8626,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8116-8482-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Efa",
+        "arrays": 1,
+        "bases": 11631,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3258-3821-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Eit",
+        "arrays": 1,
+        "bases": 10291,
+        "proposals": 4,
+        "admitted": 1,
+        "admitted_per_mb": 97.17228646390049,
+        "admitted_per_array": {
+          "CRISPR-2468-2702-bf1": 1
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 3
+        },
+        "admissions": [
+          {
+            "id": "short_candidate000002",
+            "candidate_origin": "anti_repeat",
+            "admission_branch": "short_rescue",
+            "evidence_class": "sequence_duplex_terminator",
+            "boundary_kind": "anti_repeat_search_window",
+            "interval": {
+              "start": 10096,
+              "end": 10270,
+              "length": 175
+            },
+            "strand": "-",
+            "sequence": "ATAAATTGATTGTTTTTGTTTTTATCTGGATAGGCATTGCGATTTTTACCATTGGCAGTATTCACAGCTACCGACAAGCTATTTTTTATAAAAAATAGTTTGTCGGTTTTTTTATGAGCATGCTATTGTAGAAATAAAAAGGAGGGAAGGCTGATGGGAAAACGAGTCTACGTTT",
+            "array": {
+              "id": "CRISPR-2468-2702-bf1",
+              "interval": {
+                "start": 2468,
+                "end": 2702,
+                "length": 235
+              },
+              "category": "Bona-fide",
+              "score": 0.9273339767404493,
+              "predicted_strand": "-",
+              "repeat": "GACTTGTTTATTAAAACATCAGCAATCAAGCTTCGGA",
+              "tested_repeat_strand": "+"
+            },
+            "anti_repeat": {
+              "interval": {
+                "start": 10246,
+                "end": 10265,
+                "length": 20
+              },
+              "local_interval": {
+                "start": 6,
+                "end": 25,
+                "length": 20
+              },
+              "sequence": "TTGATTGTTTTTGTTTTTAT",
+              "identity": 0.8,
+              "coverage": 0.5405405405405406,
+              "complementary_hypothesis": true,
+              "array_distance_bases": 7543
+            },
+            "interaction": {
+              "target_interval": {
+                "start": 6,
+                "end": 34,
+                "length": 29
+              },
+              "repeat_interval": {
+                "start": 3,
+                "end": 29,
+                "length": 27
+              },
+              "energy_kcal_mol": -11.72,
+              "hybrid_dot_bracket": "(((((((((..((((((....((((((((&))))))))..))))))..)))))))))",
+              "target_paired_positions": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34
+              ],
+              "repeat_paired_positions": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+              ]
+            },
+            "model_hit": null,
+            "terminator": {
+              "interval": {
+                "start": 70,
+                "end": 120,
+                "length": 51
+              },
+              "strand": "+",
+              "score": 17.73,
+              "evalue": 0.000122,
+              "model": "rho-indep",
+              "genomic_interval": {
+                "start": 10151,
+                "end": 10201,
+                "length": 51
+              },
+              "genomic_strand": "-"
+            },
+            "model_hits": [],
+            "terminator_hits": [
+              {
+                "interval": {
+                  "start": 70,
+                  "end": 120,
+                  "length": 51
+                },
+                "strand": "+",
+                "score": 17.73,
+                "evalue": 0.000122,
+                "model": "rho-indep",
+                "genomic_interval": {
+                  "start": 10151,
+                  "end": 10201,
+                  "length": 51
+                },
+                "genomic_strand": "-"
+              }
+            ],
+            "poly_t_signals": [
+              {
+                "start": 13,
+                "end": 17,
+                "length": 5
+              },
+              {
+                "start": 19,
+                "end": 23,
+                "length": 5
+              },
+              {
+                "start": 43,
+                "end": 47,
+                "length": 5
+              },
+              {
+                "start": 82,
+                "end": 87,
+                "length": 6
+              },
+              {
+                "start": 107,
+                "end": 113,
+                "length": 7
+              }
+            ],
+            "cas_context": null,
+            "ranking": {
+              "score": 5.5756296272494374,
+              "features": {
+                "array": 0.9273339767404493,
+                "identity": 0.8,
+                "coverage": 0.5405405405405406,
+                "identity_coverage": 0.43243243243243246,
+                "interaction": 1.1720000000000002,
+                "model": 0.0,
+                "terminator": 3.9136401693252516,
+                "orientation": 0.0,
+                "anti_tail": 0.0,
+                "tail_terminator": 0.0
+              },
+              "contributions": {
+                "array": 0.46366698837022463,
+                "identity": 0.4,
+                "coverage": 0.2702702702702703,
+                "identity_coverage": 0.21621621621621623,
+                "interaction": 0.7032,
+                "model": 0.0,
+                "terminator": 3.5222761523927266,
+                "orientation": 0.0,
+                "anti_tail": 0.0,
+                "tail_terminator": 0.0
+              },
+              "calibrated_probability": false
+            },
+            "type_v_motifs": null,
+            "short_rescue_admission": {
+              "accepted": true,
+              "rejection_reasons": [],
+              "anchored_paired_positions": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "anchored_paired_count": 15,
+              "anchored_paired_fraction": 0.75,
+              "antiparallel_pairs": [
+                {
+                  "target": 6,
+                  "repeat": 29,
+                  "bases": "UA"
+                },
+                {
+                  "target": 7,
+                  "repeat": 28,
+                  "bases": "UA"
+                },
+                {
+                  "target": 8,
+                  "repeat": 27,
+                  "bases": "GC"
+                },
+                {
+                  "target": 9,
+                  "repeat": 26,
+                  "bases": "AU"
+                },
+                {
+                  "target": 10,
+                  "repeat": 25,
+                  "bases": "UA"
+                },
+                {
+                  "target": 11,
+                  "repeat": 24,
+                  "bases": "UA"
+                },
+                {
+                  "target": 12,
+                  "repeat": 23,
+                  "bases": "GC"
+                },
+                {
+                  "target": 13,
+                  "repeat": 22,
+                  "bases": "UG"
+                },
+                {
+                  "target": 14,
+                  "repeat": 21,
+                  "bases": "UA"
+                },
+                {
+                  "target": 17,
+                  "repeat": 18,
+                  "bases": "UA"
+                },
+                {
+                  "target": 18,
+                  "repeat": 17,
+                  "bases": "GC"
+                },
+                {
+                  "target": 19,
+                  "repeat": 16,
+                  "bases": "UA"
+                },
+                {
+                  "target": 20,
+                  "repeat": 15,
+                  "bases": "UA"
+                },
+                {
+                  "target": 21,
+                  "repeat": 14,
+                  "bases": "UA"
+                },
+                {
+                  "target": 22,
+                  "repeat": 13,
+                  "bases": "UA"
+                },
+                {
+                  "target": 27,
+                  "repeat": 10,
+                  "bases": "UA"
+                },
+                {
+                  "target": 28,
+                  "repeat": 9,
+                  "bases": "GU"
+                },
+                {
+                  "target": 29,
+                  "repeat": 8,
+                  "bases": "GU"
+                },
+                {
+                  "target": 30,
+                  "repeat": 7,
+                  "bases": "AU"
+                },
+                {
+                  "target": 31,
+                  "repeat": 6,
+                  "bases": "UG"
+                },
+                {
+                  "target": 32,
+                  "repeat": 5,
+                  "bases": "AU"
+                },
+                {
+                  "target": 33,
+                  "repeat": 4,
+                  "bases": "GU"
+                },
+                {
+                  "target": 34,
+                  "repeat": 3,
+                  "bases": "GC"
+                }
+              ],
+              "supporting_model_hits": [],
+              "supporting_terminator_hits": [
+                {
+                  "interval": {
+                    "start": 70,
+                    "end": 120,
+                    "length": 51
+                  },
+                  "strand": "+",
+                  "score": 17.73,
+                  "evalue": 0.000122,
+                  "model": "rho-indep"
+                }
+              ],
+              "support_search_context": "separate short-proposal candidate windows; oriented transcript",
+              "model_family_responsibility": "bundled II",
+              "seed_target_range": {
+                "start": 6,
+                "end": 25,
+                "length": 20
+              },
+              "thresholds": {
+                "min_query_span": 12,
+                "min_identity": 0.8,
+                "min_anchored_paired_bases": 10,
+                "min_anchored_paired_fraction": 0.5,
+                "energy_strictly_below": 0,
+                "cm_evalue_max": 0.01,
+                "cm_duplex_overlap_strictly_below": 10,
+                "terminator_evalue_max": 0.001
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Lan",
+        "arrays": 1,
+        "bases": 8670,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7041-7934-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lmo",
+        "arrays": 1,
+        "bases": 8664,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7222-7917-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sag1",
+        "arrays": 1,
+        "bases": 40501,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20566-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sag2",
+        "arrays": 1,
+        "bases": 8560,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7621-7854-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 1,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sdy",
+        "arrays": 1,
+        "bases": 12097,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1790-3080-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Seq1",
+        "arrays": 1,
+        "bases": 8648,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7935-8432-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Seq2",
+        "arrays": 1,
+        "bases": 9999,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7231-7597-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sga",
+        "arrays": 2,
+        "bases": 18681,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-589-1217-bf1": 0,
+          "CRISPR-7794-9742-bf2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Smu",
+        "arrays": 1,
+        "bases": 12128,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1523-2944-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sra",
+        "arrays": 1,
+        "bases": 40433,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19735-20432-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Bni",
+        "arrays": 1,
+        "bases": 40830,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20595-20829-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ece",
+        "arrays": 1,
+        "bases": 43080,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19804-23077-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Edo",
+        "arrays": 1,
+        "bases": 8599,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6591-6759-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Fho",
+        "arrays": 1,
+        "bases": 13701,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3876-4241-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Mga",
+        "arrays": 1,
+        "bases": 11600,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7601-7769-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Mse",
+        "arrays": 3,
+        "bases": 90129,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21586-21820-bf1": 0,
+          "CRISPR-58082-58241-p1": 0,
+          "CRISPR-69108-69269-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sgo",
+        "arrays": 1,
+        "bases": 13239,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-4443-4611-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "less_than_half_anchor_paired": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sma2",
+        "arrays": 1,
+        "bases": 10591,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3169-3337-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssa",
+        "arrays": 1,
+        "bases": 10321,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6642-8326-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssi",
+        "arrays": 1,
+        "bases": 8621,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6239-7725-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ssu",
+        "arrays": 1,
+        "bases": 10969,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1853-2020-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sth1A",
+        "arrays": 1,
+        "bases": 13252,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9342-9511-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tsp",
+        "arrays": 1,
+        "bases": 9406,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6813-7113-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bok",
+        "arrays": 1,
+        "bases": 7131,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-273-441-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cco",
+        "arrays": 1,
+        "bases": 22966,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2402-2965-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cpe",
+        "arrays": 1,
+        "bases": 41493,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19810-21492-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Dde",
+        "arrays": 1,
+        "bases": 8576,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1342-3187-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghc2",
+        "arrays": 1,
+        "bases": 10399,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8872-9676-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy3",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-207-3940-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy4",
+        "arrays": 1,
+        "bases": 7982,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7294-7527-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Gsp",
+        "arrays": 1,
+        "bases": 8369,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5876-6110-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Kki",
+        "arrays": 1,
+        "bases": 40302,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20367-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nme2",
+        "arrays": 1,
+        "bases": 31457,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19936-21093-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Nsp",
+        "arrays": 1,
+        "bases": 12471,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3727-4027-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tmo",
+        "arrays": 1,
+        "bases": 11947,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2355-2523-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Nsa",
+        "arrays": 1,
+        "bases": 40699,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20698-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Jpa",
+        "arrays": 1,
+        "bases": 28869,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11170-11368-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Rsp",
+        "arrays": 1,
+        "bases": 40431,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20364-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bbo",
+        "arrays": 1,
+        "bases": 8581,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5980-6862-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cca2",
+        "arrays": 1,
+        "bases": 8632,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-821-2456-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme2",
+        "arrays": 1,
+        "bases": 4983,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-171-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cme3",
+        "arrays": 1,
+        "bases": 6429,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-237-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme4",
+        "arrays": 1,
+        "bases": 10742,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2742-2913-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Csa",
+        "arrays": 1,
+        "bases": 13984,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5120-5749-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghc1",
+        "arrays": 1,
+        "bases": 5773,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1-366-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghe",
+        "arrays": 1,
+        "bases": 8609,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-289-1967-p1": 0
+        },
+        "rejections": {
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghh1",
+        "arrays": 1,
+        "bases": 8277,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5114-5940-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghh2",
+        "arrays": 1,
+        "bases": 8851,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-124-1545-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy1",
+        "arrays": 1,
+        "bases": 6876,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1031-1202-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Msc",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20630-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sdo",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20696-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Spa",
+        "arrays": 2,
+        "bases": 44906,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21124-21292-p1": 0,
+          "CRISPR-24344-24905-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cca1",
+        "arrays": 1,
+        "bases": 11602,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6602-7495-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cga",
+        "arrays": 1,
+        "bases": 9336,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6499-8240-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme1",
+        "arrays": 1,
+        "bases": 6370,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6-203-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ffr",
+        "arrays": 1,
+        "bases": 8653,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7647-8299-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy2",
+        "arrays": 1,
+        "bases": 7897,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-35-2206-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Orh",
+        "arrays": 1,
+        "bases": 10923,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-927-2124-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Phi",
+        "arrays": 1,
+        "bases": 8598,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7329-7681-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Psp",
+        "arrays": 1,
+        "bases": 8164,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7014-7368-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Wvi",
+        "arrays": 1,
+        "bases": 18942,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6636-8205-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      }
+    ],
+    "batch_wall_seconds": 53.867497655999614
+  },
+  "dinucleotide_2": {
+    "complete": 79,
+    "proposals": 79,
+    "admitted": 0,
+    "median": 0,
+    "max": 0,
+    "rows": [
+      {
+        "label": "Lpn",
+        "arrays": 1,
+        "bases": 8655,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6245-8575-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Khu",
+        "arrays": 1,
+        "bases": 12480,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9278-9446-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ain",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6307-8646-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cgl",
+        "arrays": 1,
+        "bases": 8681,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6944-7504-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Esp1",
+        "arrays": 2,
+        "bases": 15767,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2884-3709-p1": 0,
+          "CRISPR-5397-8258-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Esp2",
+        "arrays": 1,
+        "bases": 40301,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20300-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Fma",
+        "arrays": 1,
+        "bases": 8634,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6898-7859-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lce",
+        "arrays": 1,
+        "bases": 8622,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6837-7862-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lrh",
+        "arrays": 1,
+        "bases": 13070,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2106-3926-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lsp1",
+        "arrays": 1,
+        "bases": 8739,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-34-201-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lsp2",
+        "arrays": 1,
+        "bases": 41358,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-21357-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Pac",
+        "arrays": 1,
+        "bases": 11789,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7982-8875-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Tba",
+        "arrays": 1,
+        "bases": 8667,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7126-7358-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Tde",
+        "arrays": 1,
+        "bases": 15633,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11149-11317-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tpu",
+        "arrays": 1,
+        "bases": 40168,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20167-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Vpa",
+        "arrays": 1,
+        "bases": 8626,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8116-8482-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Efa",
+        "arrays": 1,
+        "bases": 11631,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3258-3821-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Eit",
+        "arrays": 1,
+        "bases": 10291,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2468-2702-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lan",
+        "arrays": 1,
+        "bases": 8670,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7041-7934-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lmo",
+        "arrays": 1,
+        "bases": 8664,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7222-7917-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sag1",
+        "arrays": 1,
+        "bases": 40501,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20566-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sag2",
+        "arrays": 1,
+        "bases": 8560,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7621-7854-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sdy",
+        "arrays": 1,
+        "bases": 12097,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1790-3080-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 3
+        },
+        "admissions": []
+      },
+      {
+        "label": "Seq1",
+        "arrays": 1,
+        "bases": 8648,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7935-8432-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Seq2",
+        "arrays": 1,
+        "bases": 9999,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7231-7597-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sga",
+        "arrays": 2,
+        "bases": 18681,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-589-1217-bf1": 0,
+          "CRISPR-7794-9742-bf2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Smu",
+        "arrays": 1,
+        "bases": 12128,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1523-2944-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sra",
+        "arrays": 1,
+        "bases": 40433,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19735-20432-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bni",
+        "arrays": 1,
+        "bases": 40830,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20595-20829-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ece",
+        "arrays": 1,
+        "bases": 43080,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19804-23077-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Edo",
+        "arrays": 1,
+        "bases": 8599,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6591-6759-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Fho",
+        "arrays": 1,
+        "bases": 13701,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3876-4241-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Mga",
+        "arrays": 1,
+        "bases": 11600,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7601-7769-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Mse",
+        "arrays": 3,
+        "bases": 90129,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21586-21820-bf1": 0,
+          "CRISPR-58082-58241-p1": 0,
+          "CRISPR-69108-69269-p2": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sgo",
+        "arrays": 1,
+        "bases": 13239,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-4443-4611-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sma2",
+        "arrays": 1,
+        "bases": 10591,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3169-3337-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssa",
+        "arrays": 1,
+        "bases": 10321,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6642-8326-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssi",
+        "arrays": 1,
+        "bases": 8621,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6239-7725-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ssu",
+        "arrays": 1,
+        "bases": 10969,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1853-2020-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sth1A",
+        "arrays": 1,
+        "bases": 13252,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9342-9511-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tsp",
+        "arrays": 1,
+        "bases": 9406,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6813-7113-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Bok",
+        "arrays": 1,
+        "bases": 7131,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-273-441-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cco",
+        "arrays": 1,
+        "bases": 22966,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2402-2965-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cpe",
+        "arrays": 1,
+        "bases": 41493,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19810-21492-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Dde",
+        "arrays": 1,
+        "bases": 8576,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1342-3187-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghc2",
+        "arrays": 1,
+        "bases": 10399,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8872-9676-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy3",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-207-3940-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy4",
+        "arrays": 1,
+        "bases": 7982,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7294-7527-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Gsp",
+        "arrays": 1,
+        "bases": 8369,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5876-6110-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Kki",
+        "arrays": 1,
+        "bases": 40302,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20367-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nme2",
+        "arrays": 1,
+        "bases": 31457,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19936-21093-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nsp",
+        "arrays": 1,
+        "bases": 12471,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3727-4027-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tmo",
+        "arrays": 1,
+        "bases": 11947,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2355-2523-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nsa",
+        "arrays": 1,
+        "bases": 40699,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20698-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 3,
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Jpa",
+        "arrays": 1,
+        "bases": 28869,
+        "proposals": 1,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11170-11368-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Rsp",
+        "arrays": 1,
+        "bases": 40431,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20364-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bbo",
+        "arrays": 1,
+        "bases": 8581,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5980-6862-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cca2",
+        "arrays": 1,
+        "bases": 8632,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-821-2456-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme2",
+        "arrays": 1,
+        "bases": 4983,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-171-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cme3",
+        "arrays": 1,
+        "bases": 6429,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-237-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cme4",
+        "arrays": 1,
+        "bases": 10742,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2742-2913-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Csa",
+        "arrays": 1,
+        "bases": 13984,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5120-5749-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghc1",
+        "arrays": 1,
+        "bases": 5773,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1-366-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghe",
+        "arrays": 1,
+        "bases": 8609,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-289-1967-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghh1",
+        "arrays": 1,
+        "bases": 8277,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5114-5940-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghh2",
+        "arrays": 1,
+        "bases": 8851,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-124-1545-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy1",
+        "arrays": 1,
+        "bases": 6876,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1031-1202-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Msc",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20630-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sdo",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20696-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Spa",
+        "arrays": 2,
+        "bases": 44906,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21124-21292-p1": 0,
+          "CRISPR-24344-24905-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cca1",
+        "arrays": 1,
+        "bases": 11602,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6602-7495-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cga",
+        "arrays": 1,
+        "bases": 9336,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6499-8240-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme1",
+        "arrays": 1,
+        "bases": 6370,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6-203-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "less_than_half_anchor_paired": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ffr",
+        "arrays": 1,
+        "bases": 8653,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7647-8299-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy2",
+        "arrays": 1,
+        "bases": 7897,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-35-2206-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Orh",
+        "arrays": 1,
+        "bases": 10923,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-927-2124-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Phi",
+        "arrays": 1,
+        "bases": 8598,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7329-7681-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Psp",
+        "arrays": 1,
+        "bases": 8164,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7014-7368-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Wvi",
+        "arrays": 1,
+        "bases": 18942,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6636-8205-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      }
+    ],
+    "batch_wall_seconds": 52.60579988500103
+  },
+  "derangement": {
+    "complete": 79,
+    "proposals": 100,
+    "admitted": 1,
+    "median": 0,
+    "max": 1,
+    "rows": [
+      {
+        "label": "Lpn",
+        "arrays": 1,
+        "bases": 8655,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6245-8575-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Khu",
+        "arrays": 1,
+        "bases": 12480,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9278-9446-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ain",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6307-8646-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cgl",
+        "arrays": 1,
+        "bases": 8681,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6944-7504-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Esp1",
+        "arrays": 2,
+        "bases": 15767,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2884-3709-p1": 0,
+          "CRISPR-5397-8258-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Esp2",
+        "arrays": 1,
+        "bases": 40301,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20300-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Fma",
+        "arrays": 1,
+        "bases": 8634,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6898-7859-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lce",
+        "arrays": 1,
+        "bases": 8622,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6837-7862-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lrh",
+        "arrays": 1,
+        "bases": 13070,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2106-3926-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lsp1",
+        "arrays": 1,
+        "bases": 8739,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-34-201-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Lsp2",
+        "arrays": 1,
+        "bases": 41358,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-21357-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Pac",
+        "arrays": 1,
+        "bases": 11789,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7982-8875-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Tba",
+        "arrays": 1,
+        "bases": 8667,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7126-7358-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Tde",
+        "arrays": 1,
+        "bases": 15633,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11149-11317-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tpu",
+        "arrays": 1,
+        "bases": 40168,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20167-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Vpa",
+        "arrays": 1,
+        "bases": 8626,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8116-8482-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Efa",
+        "arrays": 1,
+        "bases": 11631,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3258-3821-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Eit",
+        "arrays": 1,
+        "bases": 10291,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2468-2702-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lan",
+        "arrays": 1,
+        "bases": 8670,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7041-7934-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Lmo",
+        "arrays": 1,
+        "bases": 8664,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7222-7917-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sag1",
+        "arrays": 1,
+        "bases": 40501,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20566-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sag2",
+        "arrays": 1,
+        "bases": 8560,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7621-7854-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sdy",
+        "arrays": 1,
+        "bases": 12097,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1790-3080-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Seq1",
+        "arrays": 1,
+        "bases": 8648,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7935-8432-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Seq2",
+        "arrays": 1,
+        "bases": 9999,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7231-7597-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sga",
+        "arrays": 2,
+        "bases": 18681,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-589-1217-bf1": 0,
+          "CRISPR-7794-9742-bf2": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Smu",
+        "arrays": 1,
+        "bases": 12128,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1523-2944-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sra",
+        "arrays": 1,
+        "bases": 40433,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19735-20432-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bni",
+        "arrays": 1,
+        "bases": 40830,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20595-20829-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ece",
+        "arrays": 1,
+        "bases": 43080,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19804-23077-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Edo",
+        "arrays": 1,
+        "bases": 8599,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6591-6759-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Fho",
+        "arrays": 1,
+        "bases": 13701,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3876-4241-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Mga",
+        "arrays": 1,
+        "bases": 11600,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7601-7769-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Mse",
+        "arrays": 3,
+        "bases": 90129,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21586-21820-bf1": 0,
+          "CRISPR-58082-58241-p1": 0,
+          "CRISPR-69108-69269-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Sgo",
+        "arrays": 1,
+        "bases": 13239,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-4443-4611-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sma2",
+        "arrays": 1,
+        "bases": 10591,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3169-3337-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ssa",
+        "arrays": 1,
+        "bases": 10321,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6642-8326-bf1": 0
+        },
+        "rejections": {
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssi",
+        "arrays": 1,
+        "bases": 8621,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6239-7725-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ssu",
+        "arrays": 1,
+        "bases": 10969,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1853-2020-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sth1A",
+        "arrays": 1,
+        "bases": 13252,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-9342-9511-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Tsp",
+        "arrays": 1,
+        "bases": 9406,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6813-7113-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bok",
+        "arrays": 1,
+        "bases": 7131,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-273-441-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cco",
+        "arrays": 1,
+        "bases": 22966,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2402-2965-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cpe",
+        "arrays": 1,
+        "bases": 41493,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19810-21492-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Dde",
+        "arrays": 1,
+        "bases": 8576,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1342-3187-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghc2",
+        "arrays": 1,
+        "bases": 10399,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-8872-9676-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy3",
+        "arrays": 1,
+        "bases": 8659,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-207-3940-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy4",
+        "arrays": 1,
+        "bases": 7982,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7294-7527-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Gsp",
+        "arrays": 1,
+        "bases": 8369,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5876-6110-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 4
+        },
+        "admissions": []
+      },
+      {
+        "label": "Kki",
+        "arrays": 1,
+        "bases": 40302,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20367-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nme2",
+        "arrays": 1,
+        "bases": 31457,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-19936-21093-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Nsp",
+        "arrays": 1,
+        "bases": 12471,
+        "proposals": 4,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-3727-4027-bf1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "less_than_half_anchor_paired": 1,
+          "no_independent_regional_support": 4,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Tmo",
+        "arrays": 1,
+        "bases": 11947,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2355-2523-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Nsa",
+        "arrays": 1,
+        "bases": 40699,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20698-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "no_anchored_interaction": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Jpa",
+        "arrays": 1,
+        "bases": 28869,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-11170-11368-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Rsp",
+        "arrays": 1,
+        "bases": 40431,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20364-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Bbo",
+        "arrays": 1,
+        "bases": 8581,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5980-6862-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cca2",
+        "arrays": 1,
+        "bases": 8632,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-821-2456-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Cme2",
+        "arrays": 1,
+        "bases": 4983,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-171-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme3",
+        "arrays": 1,
+        "bases": 6429,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5-237-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cme4",
+        "arrays": 1,
+        "bases": 10742,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-2742-2913-bf1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Csa",
+        "arrays": 1,
+        "bases": 13984,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5120-5749-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghc1",
+        "arrays": 1,
+        "bases": 5773,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1-366-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghe",
+        "arrays": 1,
+        "bases": 8609,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-289-1967-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghh1",
+        "arrays": 1,
+        "bases": 8277,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-5114-5940-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghh2",
+        "arrays": 1,
+        "bases": 8851,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-124-1545-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Ghy1",
+        "arrays": 1,
+        "bases": 6876,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-1031-1202-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Msc",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20630-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Sdo",
+        "arrays": 1,
+        "bases": 40697,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-20002-20696-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Spa",
+        "arrays": 2,
+        "bases": 44906,
+        "proposals": 6,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-21124-21292-p1": 0,
+          "CRISPR-24344-24905-p2": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 6,
+          "no_anchored_interaction": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cca1",
+        "arrays": 1,
+        "bases": 11602,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6602-7495-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Cga",
+        "arrays": 1,
+        "bases": 9336,
+        "proposals": 2,
+        "admitted": 1,
+        "admitted_per_mb": 107.11225364181662,
+        "admitted_per_array": {
+          "CRISPR-6499-8240-p1": 1
+        },
+        "rejections": {
+          "no_independent_regional_support": 1
+        },
+        "admissions": [
+          {
+            "id": "short_candidate000001",
+            "candidate_origin": "anti_repeat",
+            "admission_branch": "short_rescue",
+            "evidence_class": "sequence_duplex_cm",
+            "boundary_kind": "anti_repeat_search_window",
+            "interval": {
+              "start": 833,
+              "end": 1001,
+              "length": 169
+            },
+            "strand": "-",
+            "sequence": "TTTCCACCATAGCAGTTTGTTATTAGTATTTCATAAATGTAAGAAGAAAAAAAGAAAACCATTTACGGTTTCCCGTATTGTATTTTGATTTTGATTTTATATCTTTGATTGATAAATTTTGAAAGCACTTCACAATAAGGATTATTCCGTTGTGAAAACATTCAAGGCG",
+            "array": {
+              "id": "CRISPR-6499-8240-p1",
+              "interval": {
+                "start": 6499,
+                "end": 8240,
+                "length": 1742
+              },
+              "category": "Possible",
+              "score": 0.709733350902113,
+              "predicted_strand": "-",
+              "repeat": "GTTGCGGTTGGCCCCTGATCTCCAAGCGGCTATGGT",
+              "tested_repeat_strand": "-"
+            },
+            "anti_repeat": {
+              "interval": {
+                "start": 983,
+                "end": 996,
+                "length": 14
+              },
+              "local_interval": {
+                "start": 6,
+                "end": 19,
+                "length": 14
+              },
+              "sequence": "ACCATAGCAGTTTG",
+              "identity": 0.8571,
+              "coverage": 0.3888888888888889,
+              "complementary_hypothesis": true,
+              "array_distance_bases": 5502
+            },
+            "interaction": {
+              "target_interval": {
+                "start": 6,
+                "end": 19,
+                "length": 14
+              },
+              "repeat_interval": {
+                "start": 23,
+                "end": 36,
+                "length": 14
+              },
+              "energy_kcal_mol": -9.03,
+              "hybrid_dot_bracket": "((((((((.(((((&))))).))))))))",
+              "target_paired_positions": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "repeat_paired_positions": [
+                23,
+                24,
+                25,
+                26,
+                27,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36
+              ]
+            },
+            "model_hit": {
+              "interval": {
+                "start": 65,
+                "end": 92,
+                "length": 28
+              },
+              "strand": "+",
+              "score": 14.3,
+              "evalue": 0.0078,
+              "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81",
+              "genomic_interval": {
+                "start": 910,
+                "end": 937,
+                "length": 28
+              },
+              "genomic_strand": "-"
+            },
+            "terminator": null,
+            "model_hits": [
+              {
+                "interval": {
+                  "start": 65,
+                  "end": 92,
+                  "length": 28
+                },
+                "strand": "+",
+                "score": 14.3,
+                "evalue": 0.0078,
+                "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81",
+                "genomic_interval": {
+                  "start": 910,
+                  "end": 937,
+                  "length": 28
+                },
+                "genomic_strand": "-"
+              },
+              {
+                "interval": {
+                  "start": 164,
+                  "end": 168,
+                  "length": 5
+                },
+                "strand": "+",
+                "score": 3.6,
+                "evalue": 0.43,
+                "model": "II.cm:dataset_333e67ed-a601-4a5a-8a59-7a9162a80524",
+                "genomic_interval": {
+                  "start": 834,
+                  "end": 838,
+                  "length": 5
+                },
+                "genomic_strand": "-"
+              }
+            ],
+            "terminator_hits": [
+              {
+                "interval": {
+                  "start": 40,
+                  "end": 74,
+                  "length": 35
+                },
+                "strand": "-",
+                "score": 10.79,
+                "evalue": 0.0199,
+                "model": "rho-indep",
+                "genomic_interval": {
+                  "start": 928,
+                  "end": 962,
+                  "length": 35
+                },
+                "genomic_strand": "+"
+              }
+            ],
+            "poly_t_signals": [
+              {
+                "start": 83,
+                "end": 86,
+                "length": 4
+              },
+              {
+                "start": 89,
+                "end": 92,
+                "length": 4
+              },
+              {
+                "start": 95,
+                "end": 98,
+                "length": 4
+              },
+              {
+                "start": 117,
+                "end": 120,
+                "length": 4
+              }
+            ],
+            "cas_context": null,
+            "ranking": {
+              "score": 3.073319453228834,
+              "features": {
+                "array": 0.709733350902113,
+                "identity": 0.8571,
+                "coverage": 0.3888888888888889,
+                "identity_coverage": 0.33331666666666665,
+                "interaction": 0.9029999999999999,
+                "model": 1.4300000000000002,
+                "terminator": 0.0,
+                "orientation": 0.0,
+                "anti_tail": 1.0,
+                "tail_terminator": 0.0
+              },
+              "contributions": {
+                "array": 0.3548666754510565,
+                "identity": 0.42855,
+                "coverage": 0.19444444444444445,
+                "identity_coverage": 0.16665833333333332,
+                "interaction": 0.5418,
+                "model": 1.2870000000000001,
+                "terminator": 0.0,
+                "orientation": 0.0,
+                "anti_tail": 0.1,
+                "tail_terminator": 0.0
+              },
+              "calibrated_probability": false
+            },
+            "type_v_motifs": null,
+            "short_rescue_admission": {
+              "accepted": true,
+              "rejection_reasons": [],
+              "anchored_paired_positions": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "anchored_paired_count": 13,
+              "anchored_paired_fraction": 0.9285714285714286,
+              "antiparallel_pairs": [
+                {
+                  "target": 6,
+                  "repeat": 36,
+                  "bases": "AU"
+                },
+                {
+                  "target": 7,
+                  "repeat": 35,
+                  "bases": "CG"
+                },
+                {
+                  "target": 8,
+                  "repeat": 34,
+                  "bases": "CG"
+                },
+                {
+                  "target": 9,
+                  "repeat": 33,
+                  "bases": "AU"
+                },
+                {
+                  "target": 10,
+                  "repeat": 32,
+                  "bases": "UA"
+                },
+                {
+                  "target": 11,
+                  "repeat": 31,
+                  "bases": "AU"
+                },
+                {
+                  "target": 12,
+                  "repeat": 30,
+                  "bases": "GC"
+                },
+                {
+                  "target": 13,
+                  "repeat": 29,
+                  "bases": "CG"
+                },
+                {
+                  "target": 15,
+                  "repeat": 27,
+                  "bases": "GC"
+                },
+                {
+                  "target": 16,
+                  "repeat": 26,
+                  "bases": "UG"
+                },
+                {
+                  "target": 17,
+                  "repeat": 25,
+                  "bases": "UA"
+                },
+                {
+                  "target": 18,
+                  "repeat": 24,
+                  "bases": "UA"
+                },
+                {
+                  "target": 19,
+                  "repeat": 23,
+                  "bases": "GC"
+                }
+              ],
+              "supporting_model_hits": [
+                {
+                  "interval": {
+                    "start": 65,
+                    "end": 92,
+                    "length": 28
+                  },
+                  "strand": "+",
+                  "score": 14.3,
+                  "evalue": 0.0078,
+                  "model": "II.cm:dataset_2b2f4e52-1885-40fe-beb0-7cdf00d50b81"
+                }
+              ],
+              "supporting_terminator_hits": [],
+              "support_search_context": "separate short-proposal candidate windows; oriented transcript",
+              "model_family_responsibility": "bundled II",
+              "seed_target_range": {
+                "start": 6,
+                "end": 19,
+                "length": 14
+              },
+              "thresholds": {
+                "min_query_span": 12,
+                "min_identity": 0.8,
+                "min_anchored_paired_bases": 10,
+                "min_anchored_paired_fraction": 0.5,
+                "energy_strictly_below": 0,
+                "cm_evalue_max": 0.01,
+                "cm_duplex_overlap_strictly_below": 10,
+                "terminator_evalue_max": 0.001
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Cme1",
+        "arrays": 1,
+        "bases": 6370,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6-203-p1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 1,
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ffr",
+        "arrays": 1,
+        "bases": 8653,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7647-8299-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Ghy2",
+        "arrays": 1,
+        "bases": 7897,
+        "proposals": 0,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-35-2206-p1": 0
+        },
+        "rejections": {},
+        "admissions": []
+      },
+      {
+        "label": "Orh",
+        "arrays": 1,
+        "bases": 10923,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-927-2124-bf1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2,
+          "fewer_than_10_anchored_paired_bases": 1
+        },
+        "admissions": []
+      },
+      {
+        "label": "Phi",
+        "arrays": 1,
+        "bases": 8598,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7329-7681-p1": 0
+        },
+        "rejections": {
+          "fewer_than_10_anchored_paired_bases": 1,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Psp",
+        "arrays": 1,
+        "bases": 8164,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-7014-7368-bf1": 0
+        },
+        "rejections": {
+          "no_anchored_interaction": 2,
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      },
+      {
+        "label": "Wvi",
+        "arrays": 1,
+        "bases": 18942,
+        "proposals": 2,
+        "admitted": 0,
+        "admitted_per_mb": 0.0,
+        "admitted_per_array": {
+          "CRISPR-6636-8205-p1": 0
+        },
+        "rejections": {
+          "no_independent_regional_support": 2
+        },
+        "admissions": []
+      }
+    ],
+    "batch_wall_seconds": 53.753254928997194
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "candidates": [
+    {
+      "features": {
+        "at_richness": 0.25,
+        "avg_spacer_len": 47.5,
+        "blast_score_1": 23.3,
+        "mfe_score": -5.6,
+        "number_mismatches": 0.0,
+        "number_repeats": 3.0,
+        "repeat_len": 24.0,
+        "repeat_similarity": 1.0,
+        "spacer_evenness": -0.0,
+        "spacer_similarity": 0.3937840373775612
+      },
+      "gapped_repeats": [
+        "TTGCGCCGTTCCCCGCGCCCCTGA",
+        "TTGCGCCGTTCCCCGCGCCCCTGA",
+        "TTGCGCCGTTCCCCGCGCCCCTGA"
+      ],
+      "name": "original_core",
+      "repeat_intervals": [
+        [
+          0,
+          24
+        ],
+        [
+          70,
+          94
+        ],
+        [
+          143,
+          167
+        ]
+      ],
+      "score": 0.8872259244265881,
+      "source_path_provenance_summary": null
+    },
+    {
+      "features": {
+        "at_richness": 0.21739130434782608,
+        "avg_spacer_len": 23.0,
+        "blast_score_1": 23.3,
+        "mfe_score": -5.6,
+        "number_mismatches": 4.0,
+        "number_repeats": 5.0,
+        "repeat_len": 23.0,
+        "repeat_similarity": 0.8797516470559332,
+        "spacer_evenness": 0.580279,
+        "spacer_similarity": 0.3252928210829191
+      },
+      "gapped_repeats": [
+        "TGCGCCGTTCCCCGCG CCCCTGA",
+        "TGCGCCGTTCCCCGCG CCCCTGA",
+        "TGCGCCGTTCCCCGCG CCCCTGA",
+        "TGCGCCGTTCCCCGCG CCCCTGA",
+        "TGCGCCGTTCCCCGTGTCCCCGG-"
+      ],
+      "name": "gapped_alias",
+      "repeat_intervals": [
+        [
+          1,
+          24
+        ],
+        [
+          36,
+          59
+        ],
+        [
+          71,
+          94
+        ],
+        [
+          144,
+          167
+        ],
+        [
+          185,
+          208
+        ]
+      ],
+      "score": 0.7420351112150484,
+      "source_path_provenance_summary": {
+        "derivations": {
+          "complete_fuzzy_search": 1
+        },
+        "record_count": 1
+      }
+    },
+    {
+      "features": {
+        "at_richness": 0.21739130434782608,
+        "avg_spacer_len": 23.0,
+        "blast_score_1": 23.3,
+        "mfe_score": -5.6,
+        "number_mismatches": 4.0,
+        "number_repeats": 5.0,
+        "repeat_len": 23.0,
+        "repeat_similarity": 0.8797516470559332,
+        "spacer_evenness": 0.580279,
+        "spacer_similarity": 0.3252928210829191
+      },
+      "gapped_repeats": [
+        "TGCGCCGTTCCCCGCGCCCCTGA",
+        "TGCGCCGTTCCCCGCGCCCCTGA",
+        "TGCGCCGTTCCCCGCGCCCCTGA",
+        "TGCGCCGTTCCCCGCGCCCCTGA",
+        "TGCGCCGTTCCCCGTGTCCCCGG"
+      ],
+      "name": "normalized_alias",
+      "repeat_intervals": [
+        [
+          1,
+          24
+        ],
+        [
+          36,
+          59
+        ],
+        [
+          71,
+          94
+        ],
+        [
+          144,
+          167
+        ],
+        [
+          185,
+          208
+        ]
+      ],
+      "score": 0.7420351112150484,
+      "source_path_provenance_summary": {
+        "derivations": {},
+        "record_count": 0
+      }
+    }
+  ],
+  "evidence_ledger_sha256": "b5f111fad15ed69b9fccc1772afc40432786ac2eebb1e48ea0daa08e292fb6f2",
+  "limits": [
+    "Source interval is reconstructed from published array source_sequence plus the first original-core base from its sealed source-validated snapshot.",
+    "Feature vectors/scores are retained observations, not new extraction.",
+    "Source-path provenance is available as the final compact summary, not full original recursive records."
+  ],
+  "parent_source_sha256": "388d73cb47d3909c8d60406fcb58d7efde0d26d0d10227d5aeec23deddaa9ec2",
+  "sample_id": "GCF_036204065_1__NZ_CP108133_1",
+  "schema": "CP108133-observed-alignment-regression-fixture-v1",
+  "source_interval": [
+    6948613,
+    6948821
+  ],
+  "source_sequence": "TTGCGCCGTTCCCCGCGCCCCTGAGCGGTGAAGGACTGCGCCGTTCCCCGCGCCCCTGACGGCGAAAAGATTGCGCCGTTCCCCGCGCCCCTGAAGGGGCGAAGGGTTGCCTCGTTGTCCGCGGCTCTGAGGGGGTGAAAGGGTTGCGCCGTTCCCCGCGCCCCTGAGGGCGAAAGGCGAAACACTGCGCCGTTCCCCGTGTCCCCGG",
+  "source_sha256": "276d690a7142bebd0b4f3c8507e5342ed6c92406f58c35900ff768dec52c6b28"
+}

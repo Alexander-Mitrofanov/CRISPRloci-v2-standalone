@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "freeze_id": "leader-independent-panel-2026-09-27-v1",
+  "frozen_before_predictions": true,
+  "curator": "W3 independent runtime/evaluation worker",
+  "records": [
+    {
+      "accession": "NC_000913.3",
+      "organism": "Escherichia coli K-12 MG1655",
+      "partition": "training",
+      "group": "ecoli-k12",
+      "scope": "I-E candidate family; locus must be verified"
+    },
+    {
+      "accession": "NC_012971.2",
+      "organism": "Escherichia coli BL21(DE3)",
+      "partition": "final",
+      "group": "ecoli-b",
+      "scope": "I-E candidate known-family holdout; exact strain and locus evidence remain unverified"
+    },
+    {
+      "accession": "NC_002695.2",
+      "organism": "Escherichia coli O157:H7 Sakai",
+      "partition": "calibration",
+      "group": "ecoli-o157",
+      "scope": "I-E candidate family; locus must be verified"
+    },
+    {
+      "accession": "NC_011745.1",
+      "organism": "Escherichia coli ED1a",
+      "partition": "final_novel_family",
+      "group": "ecoli-ed1a",
+      "scope": "I-F-like candidate challenge; strain-level mention did not establish an I-E label"
+    },
+    {
+      "accession": "NC_008463.1",
+      "organism": "Pseudomonas aeruginosa UCBPP-PA14",
+      "partition": "final_novel_family",
+      "group": "pseudomonas-pa14",
+      "scope": "I-F; family-held-out abstention challenge"
+    },
+    {
+      "accession": "CP025216.1",
+      "organism": "Streptococcus thermophilus DGCC 7710",
+      "partition": "reserved_final",
+      "group": "sthermophilus-dgcc7710",
+      "scope": "II-A; candidate final if separate training family is approved"
+    }
+  ],
+  "exclusions": [
+    {
+      "group": "ecoli-k12",
+      "description": "BW25113, W3110 and other K-12 derivatives may be regression fixtures only, never independent final genomes"
+    }
+  ],
+  "change_policy": "Append amendments with reason and timing before observing affected final predictions; never silently reassign a failing final record to development.",
+  "status": "biological_curation_and_evaluation_incomplete_research_halted",
+  "amendments": [
+    {
+      "amendment_id": "source-audit-before-models-v2",
+      "recorded_at_utc": "2026-09-27T14:54:30.598891+00:00",
+      "approved_by": "coordinator before model fitting or biological predictions",
+      "reason": "Initial ED1a I-E label nomination was not supported by inspected source annotations; reserve BL21 as candidate known-family final instead. This correction uses source audit, not prediction outcomes.",
+      "previous_records": [
+        {
+          "accession": "NC_000913.3",
+          "organism": "Escherichia coli K-12 MG1655",
+          "partition": "training",
+          "group": "ecoli-k12",
+          "scope": "I-E candidate family; locus must be verified"
+        },
+        {
+          "accession": "NC_012971.2",
+          "organism": "Escherichia coli BL21(DE3)",
+          "partition": "training",
+          "group": "ecoli-b",
+          "scope": "I-E candidate family; locus must be verified"
+        },
+        {
+          "accession": "NC_002695.2",
+          "organism": "Escherichia coli O157:H7 Sakai",
+          "partition": "calibration",
+          "group": "ecoli-o157",
+          "scope": "I-E candidate family; locus must be verified"
+        },
+        {
+          "accession": "NC_011745.1",
+          "organism": "Escherichia coli ED1a",
+          "partition": "final",
+          "group": "ecoli-ed1a",
+          "scope": "candidate independent orientation label; must distinguish I-E and I-F loci"
+        },
+        {
+          "accession": "NC_008463.1",
+          "organism": "Pseudomonas aeruginosa UCBPP-PA14",
+          "partition": "final_novel_family",
+          "group": "pseudomonas-pa14",
+          "scope": "I-F; family-held-out abstention challenge"
+        },
+        {
+          "accession": "CP025216.1",
+          "organism": "Streptococcus thermophilus DGCC 7710",
+          "partition": "reserved_final",
+          "group": "sthermophilus-dgcc7710",
+          "scope": "II-A; candidate final if separate training family is approved"
+        }
+      ],
+      "fitting_or_final_outputs_inspected": false,
+      "remaining_label_limit": "BL21(DE3) source identity is not automatically identical to BL21-AI experimental material; direct locus correspondence and evidence remain to be verified."
+    }
+  ]
+}

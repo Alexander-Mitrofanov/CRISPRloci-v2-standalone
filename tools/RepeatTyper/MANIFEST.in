@@ -1,0 +1,4 @@
+include schemas/*.json
+include requirements.lock
+include CHANGELOG.md
+recursive-include tests *.py *.fasta

@@ -1,0 +1,45 @@
+external/
+.venv/
+.envs/
+runs/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+# Workstation configuration and credentials stay local.
+local*.toml
+config.toml
+.env
+.env.*
+
+# Keep compact evidence, not downloaded corpora or generated native run trees.
+benchmarks/**
+!benchmarks/README.md
+!benchmarks/requirements.txt
+!benchmarks/results/
+!benchmarks/results/*.json
+!benchmarks/results/*.md
+!benchmarks/results/genome_results.tsv
+!benchmarks/results/*.zip
+!benchmarks/council_round2/
+!benchmarks/council_round2/*.json
+!benchmarks/council_round2/*.md
+!benchmarks/council_round2/*.zip
+benchmarks/council_round2/implementation_final.zip
+benchmarks/council_round2/pinned_native_python_source.zip
+!benchmarks/council_round2/controls/
+!benchmarks/council_round2/controls/manifest.json
+!benchmarks/literature/
+!benchmarks/literature/*.json
+!benchmarks/literature/reference_sequences.tsv
+!benchmarks/literature/reference_sequences.fasta
+
+# Exact native archive, patch, executable and build records are retained;
+# the expanded upstream tree and its build products can be recreated.
+native/fasta36-seeded-20260927/fasta36-fasta-v36.3.8g/

@@ -1,0 +1,6 @@
+.reference-grid a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}

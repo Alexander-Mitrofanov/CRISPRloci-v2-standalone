@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CRISPRtracrRNA"
+version = "3.0.0"
+description = "Reproducible tracrRNA candidate detection with independent CRISPRidentify and CasAndra adapters"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "CRISPRtracrRNA contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.11", "build>=1.2"]
+
+[project.scripts]
+crisprtracrrna = "crisprtracrrna.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+crisprtracrrna = ["py.typed", "data/manifest.json", "data/models/*", "data/erpin/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["integration: requires external scientific tools and upstream runtimes"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["external", "runs", ".venv", "build"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src/crisprtracrrna"]
+strict = true

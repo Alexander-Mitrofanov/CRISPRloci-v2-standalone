@@ -1,0 +1,26 @@
+* text=auto eol=lf
+
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.cff text eol=lf
+*.fasta text eol=lf
+*.fa text eol=lf
+*.fna text eol=lf
+*.hmm text eol=lf
+
+*.npz binary
+*.joblib binary
+*.nhr binary
+*.nin binary
+*.nog binary
+*.nsd binary
+*.nsi binary
+*.nsq binary
+
+vendor/** linguist-vendored

@@ -1,0 +1,47 @@
+{
+  "coordinate_system": "1-based-inclusive-source-forward",
+  "loci": [
+    {
+      "end": 81,
+      "genes": [
+        {
+          "end": 81,
+          "id": "casandra|contig=one|cds=000001|loc=1-81|strand=+",
+          "partial_3prime": false,
+          "partial_5prime": false,
+          "phase": 0,
+          "start": 1,
+          "strand": "+",
+          "translation": "MAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "translation_table": 11
+        }
+      ],
+      "id": "locus001",
+      "source_id": "one",
+      "start": 1
+    },
+    {
+      "end": 81,
+      "genes": [
+        {
+          "end": 81,
+          "id": "casandra|contig=two|cds=000001|loc=1-81|strand=+",
+          "partial_3prime": false,
+          "partial_5prime": false,
+          "phase": 0,
+          "start": 1,
+          "strand": "+",
+          "translation": "MAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "translation_table": 11
+        }
+      ],
+      "id": "locus002",
+      "source_id": "two",
+      "start": 1
+    }
+  ],
+  "schema": {
+    "name": "clinker.features",
+    "version": "1.0.0"
+  }
+}

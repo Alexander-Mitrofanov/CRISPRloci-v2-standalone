@@ -1,0 +1,17 @@
+/0_result_folder/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local environments and analysis output
+.venv/
+.envs/
+runs/
+.mypy_cache/
+.DS_Store

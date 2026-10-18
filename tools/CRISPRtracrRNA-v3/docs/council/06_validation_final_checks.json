@@ -1,0 +1,28 @@
+{
+  "fixed_candidate_replay_loci": 79,
+  "fixed_candidate_interactions": 3390,
+  "calls": 152,
+  "exact_old_interaction_maps": true,
+  "repeatability": {
+    "Lsp2": {
+      "repetitions": 6,
+      "distinct_output_hashes": 1
+    },
+    "Ain": {
+      "repetitions": 2,
+      "distinct_output_hashes": 1
+    },
+    "Kki": {
+      "repetitions": 2,
+      "distinct_output_hashes": 1
+    },
+    "Mse": {
+      "repetitions": 2,
+      "distinct_output_hashes": 1
+    }
+  },
+  "original_repositories_git_status": "old_version, external/CRISPRidentify-v2 and external/CasAndra each empty status output with exit code0",
+  "final_tests": "119passed incl7native; tests-final.log",
+  "lint": "ruff-final.log passed",
+  "typing": "mypy-final.log passed12source modules"
+}

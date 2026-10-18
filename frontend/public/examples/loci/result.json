@@ -1,0 +1,911 @@
+{
+  "example": {
+    "input": {
+      "base_count": 315251,
+      "file_sha256": "df8f7d26c361d692314a2ed911e5eb4510ee99669120a2fbda6861e90a3e77e1",
+      "filename": "input.fasta",
+      "normalized_sha256": "7d2a6438f45b1cad34031cd02696f922f09fa2f4ad5c782d63d21991d3d958c8",
+      "record_count": 1
+    },
+    "source_note": "Pinned tool example with masked identifiers. Reference searches use bundled demonstration references, not the full production databases.",
+    "submission_options": {
+      "bias_corrections": true,
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "spacer_distance": 1,
+      "tracr_model_type": "II"
+    },
+    "verification": {
+      "independent_runs": 2,
+      "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+      "scientific_results_identical": true,
+      "variable_fields": [
+        "execution durations"
+      ]
+    }
+  },
+  "job": {
+    "artifacts": [],
+    "input": {
+      "base_count": 315251,
+      "filename": "input.fasta",
+      "record_count": 1,
+      "sha256": "7d2a6438f45b1cad34031cd02696f922f09fa2f4ad5c782d63d21991d3d958c8",
+      "source_ids": [
+        "example_record_01"
+      ]
+    },
+    "mode": "loci",
+    "options": {
+      "association_grouping": null,
+      "bias_corrections_effective": true,
+      "bias_corrections_requested": true,
+      "categories": [
+        "Bona-fide",
+        "Possible"
+      ],
+      "category_policy": "bona_fide_possible",
+      "leader_flank_length": 500,
+      "molecule": "DNA",
+      "spacer_distance": 1,
+      "tool_options": {},
+      "tracr_model_type": "II",
+      "viral_max_mismatches": 2,
+      "warnings": []
+    },
+    "status": "completed",
+    "summary": {
+      "adapter": null,
+      "array_compare": {
+        "arrays": [],
+        "available": false,
+        "edges": []
+      },
+      "casandra": {
+        "cas_gene_count": 5,
+        "cassette_count": 1,
+        "cassettes": [
+          {
+            "cas_gene_count": 3,
+            "class": "2",
+            "confidence": 0.5683053288141052,
+            "end": 13356,
+            "id": "casandra|contig=f000001.s000001|cassette=0001|loc=8147-13356",
+            "method": "type_ii_ordered_profile_architecture_extratrees",
+            "source_id": "example_record_01",
+            "start": 8147,
+            "subtype": "II-A",
+            "type": "II"
+          }
+        ],
+        "gene_count": 308,
+        "genes": [
+          {
+            "end": 8488,
+            "id": "casandra|contig=f000001.s000001|cds=000007|loc=8147-8488|strand=-",
+            "profile": "C25_Cas2_1",
+            "score_margin": 261.24516677856445,
+            "source_id": "example_record_01",
+            "start": 8147,
+            "strand": "-",
+            "subtype": null,
+            "type": null
+          },
+          {
+            "end": 9351,
+            "id": "casandra|contig=f000001.s000001|cds=000008|loc=8485-9351|strand=-",
+            "profile": "C25_Cas1_1",
+            "score_margin": 391.1277313232422,
+            "source_id": "example_record_01",
+            "start": 8485,
+            "strand": "-",
+            "subtype": null,
+            "type": null
+          },
+          {
+            "end": 13356,
+            "id": "casandra|contig=f000001.s000001|cds=000009|loc=9352-13356|strand=-",
+            "profile": "C25_Cas9_2",
+            "score_margin": 1742.2742919921875,
+            "source_id": "example_record_01",
+            "start": 9352,
+            "strand": "-",
+            "subtype": "II-C",
+            "type": "II"
+          },
+          {
+            "end": 109900,
+            "id": "casandra|contig=f000001.s000001|cds=000120|loc=108161-109900|strand=-",
+            "profile": "C25_Cas3_1",
+            "score_margin": 216.0024814605713,
+            "source_id": "example_record_01",
+            "start": 108161,
+            "strand": "-",
+            "subtype": null,
+            "type": "I"
+          },
+          {
+            "end": 267493,
+            "id": "casandra|contig=f000001.s000001|cds=000264|loc=267032-267493|strand=-",
+            "profile": "C25_Cas5_4",
+            "score_margin": 217.05782508850098,
+            "source_id": "example_record_01",
+            "start": 267032,
+            "strand": "-",
+            "subtype": "I-B",
+            "type": "I"
+          }
+        ],
+        "model": "casandra-full361-v3-cap15-2026-09-20-v1",
+        "status": "completed",
+        "truncated": false
+      },
+      "crisprleader": {
+        "analysis_mode": "context_extraction",
+        "array_count": 1,
+        "context_count": 2,
+        "contexts": [
+          {
+            "array_id": "CRISPR-5481-7366-bf1",
+            "array_segments": [
+              {
+                "end": 7366,
+                "start": 5480
+              }
+            ],
+            "available_length": 500,
+            "category": "Bona-fide",
+            "id": "identify:b72f08416943e8e17f4501a03e745404f5a9b36c71f1a61f98a70050031d00f7:left",
+            "observed_repeat": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+            "repeat_segments": [
+              {
+                "end": 5516,
+                "start": 5480
+              }
+            ],
+            "requested_length": 500,
+            "segments": [
+              {
+                "end": 5480,
+                "start": 4980
+              }
+            ],
+            "sequence": "TTCTGGTTTGTGCGTTAACGGTAAATCTTTCTCGCTGTCCAAACAGTATATAGTTCAAGCGTGTCACCATTTTTACTCGCATTTAGAATATAATCATATAAAATTTTTAAACTTTTGGTCTCGTAACAATTATTTTGCTCCTCCACTTTCAACGGTATATCCCCTTTGCTTGTAGCAACTTGAAATTTGCAAGTTGAGTTGAAACGAATTGAATAGGGAAACAATTTATTTATATCTTTATCTTGGTCAACATTCATTTCAAAATTCGGATTTAAGAAGTCTAAGCCACTCTAGTATATATAGAGATGAGGAAACTTTTCTCCGTCCTTTTCTAAGAGCGACTTCGAAGCAAGATAGTGATACTGTGTCATGTAGATAGTTTAACTCCTTTTTAAATTTAACCATGGTTTGGTAATTGCGATGCATTTTGTCTCTATGTGTTGGTATTCAGAATAATGTATCTCTAAAACCAAGTTAAAGATATCAACTACATTCAGACA",
+            "side": "left",
+            "source_id": "example_record_01",
+            "strand": "+",
+            "truncated_reason": null
+          },
+          {
+            "array_id": "CRISPR-5481-7366-bf1",
+            "array_segments": [
+              {
+                "end": 7366,
+                "start": 5480
+              }
+            ],
+            "available_length": 500,
+            "category": "Bona-fide",
+            "id": "identify:b72f08416943e8e17f4501a03e745404f5a9b36c71f1a61f98a70050031d00f7:right",
+            "observed_repeat": "GTTTTAGAGCTATGTTATTTTGAATGCTACCAAAAC",
+            "repeat_segments": [
+              {
+                "end": 7366,
+                "start": 7330
+              }
+            ],
+            "requested_length": 500,
+            "segments": [
+              {
+                "end": 7866,
+                "start": 7366
+              }
+            ],
+            "sequence": "GACAAATTAACCGCGACGATTAGCGAGTTGATAGGTTACGAATTATTGGAGCATGAGCTGGATTTAGAAGAAGATGAAATAACGGTCATTGAATTATTCAAAGCTTTAGGAATAAAAATAGAAACAAAAAGCGATACCGTATTTGAGAAGTTAATTGAAATAGTACAAGTCTATAAATATCTATCTAAAAAGAAATTGTTAGTACTTATTAACGTGTGTTCCTATCTTACAGAGGAAGAACTGCTAGAGTTGAGACGGTATATCTCTTTATATCAAGTCAAAGTACTATTTATTGAACCTAGAAAAATAAAAGGATCTCCGCAAGTTACTTTAGATTCTGATTATTTTTTACATGTGGAAAATAGTGTATAAGGTAACCGCTGTTCTTTGAAAACAAAATAAATTTTATGTAAACCATAAAATAGCATTCAAAATTGAAATCTTGCTATGGATGAATGGCGCGATTACGGAATCTTGGAGGAAAGAAAAAATTCTGCGAG",
+            "side": "right",
+            "source_id": "example_record_01",
+            "strand": "-",
+            "truncated_reason": null
+          }
+        ],
+        "coordinate_system": "zero_based_half_open",
+        "flank_length": 500,
+        "limitation": "Context extraction only. Leader prediction is unavailable; neither side is selected and window length is not a biological boundary.",
+        "prediction_performed": false,
+        "sources": [
+          {
+            "id": "example_record_01",
+            "length": 315251,
+            "sha256": "1fc63b0f86a191dfa50e042faa8acbf6ed1e5cbe5df660f36aad319b4e9ab93d",
+            "topology": "unknown"
+          }
+        ],
+        "status": "completed",
+        "truncated": false
+      },
+      "detection": {
+        "accepted_categories": [
+          "Bona-fide",
+          "Possible"
+        ],
+        "array_count": 8,
+        "arrays": [
+          {
+            "array_id": "CRISPR-5481-7366-bf1",
+            "category": "Bona-fide",
+            "end": 7366,
+            "model_score": 0.9442497305982686,
+            "model_score_is_probability": false,
+            "repeat_count": 29,
+            "repeats": [
+              {
+                "end": 5516,
+                "ordinal": 1,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5481
+              },
+              {
+                "end": 5582,
+                "ordinal": 2,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5547
+              },
+              {
+                "end": 5648,
+                "ordinal": 3,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5613
+              },
+              {
+                "end": 5714,
+                "ordinal": 4,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5679
+              },
+              {
+                "end": 5780,
+                "ordinal": 5,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5745
+              },
+              {
+                "end": 5846,
+                "ordinal": 6,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5811
+              },
+              {
+                "end": 5912,
+                "ordinal": 7,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5877
+              },
+              {
+                "end": 5979,
+                "ordinal": 8,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 5944
+              },
+              {
+                "end": 6045,
+                "ordinal": 9,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6010
+              },
+              {
+                "end": 6111,
+                "ordinal": 10,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6076
+              },
+              {
+                "end": 6177,
+                "ordinal": 11,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6142
+              },
+              {
+                "end": 6243,
+                "ordinal": 12,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6208
+              },
+              {
+                "end": 6309,
+                "ordinal": 13,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6274
+              },
+              {
+                "end": 6375,
+                "ordinal": 14,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6340
+              },
+              {
+                "end": 6441,
+                "ordinal": 15,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6406
+              },
+              {
+                "end": 6507,
+                "ordinal": 16,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6472
+              },
+              {
+                "end": 6573,
+                "ordinal": 17,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6538
+              },
+              {
+                "end": 6639,
+                "ordinal": 18,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6604
+              },
+              {
+                "end": 6705,
+                "ordinal": 19,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6670
+              },
+              {
+                "end": 6771,
+                "ordinal": 20,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6736
+              },
+              {
+                "end": 6837,
+                "ordinal": 21,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6802
+              },
+              {
+                "end": 6903,
+                "ordinal": 22,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6868
+              },
+              {
+                "end": 6969,
+                "ordinal": 23,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 6934
+              },
+              {
+                "end": 7035,
+                "ordinal": 24,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7000
+              },
+              {
+                "end": 7102,
+                "ordinal": 25,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7067
+              },
+              {
+                "end": 7168,
+                "ordinal": 26,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7133
+              },
+              {
+                "end": 7234,
+                "ordinal": 27,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7199
+              },
+              {
+                "end": 7300,
+                "ordinal": 28,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7265
+              },
+              {
+                "end": 7366,
+                "ordinal": 29,
+                "sequence": "GTTTTGGTAGCATTCAAAATAACATAGCTCTAAAAC",
+                "sequence_status": "reported",
+                "start": 7331
+              }
+            ],
+            "selected_for_analysis": true,
+            "sequences_truncated": false,
+            "source_id": "example_record_01",
+            "spacer_count": 28,
+            "spacers": [
+              {
+                "end": 5546,
+                "ordinal": 1,
+                "sequence": "AGCTTGCGTTTAGAGGACGAAGAAAAACTA",
+                "sequence_status": "reported",
+                "start": 5517
+              },
+              {
+                "end": 5612,
+                "ordinal": 2,
+                "sequence": "CCTTTGTTTAGTTTGTTTATCTATCTAACT",
+                "sequence_status": "reported",
+                "start": 5583
+              },
+              {
+                "end": 5678,
+                "ordinal": 3,
+                "sequence": "AACAAGAAAAAAGATCCAGACAATATTGCA",
+                "sequence_status": "reported",
+                "start": 5649
+              },
+              {
+                "end": 5744,
+                "ordinal": 4,
+                "sequence": "GCTGTTGCAACATGATCAAAAAAATTATTT",
+                "sequence_status": "reported",
+                "start": 5715
+              },
+              {
+                "end": 5810,
+                "ordinal": 5,
+                "sequence": "AGTAATCTCCTTTTCCAAGGACCATCACGT",
+                "sequence_status": "reported",
+                "start": 5781
+              },
+              {
+                "end": 5876,
+                "ordinal": 6,
+                "sequence": "TTGATAGATAGTGTTAGAAGGGAAATTTAA",
+                "sequence_status": "reported",
+                "start": 5847
+              },
+              {
+                "end": 5943,
+                "ordinal": 7,
+                "sequence": "TTCAGACTATGTTTTCAACAAAGGGATGCTA",
+                "sequence_status": "reported",
+                "start": 5913
+              },
+              {
+                "end": 6009,
+                "ordinal": 8,
+                "sequence": "TCGCCTGTTTGGGCTGTGAACCGAGCTGTT",
+                "sequence_status": "reported",
+                "start": 5980
+              },
+              {
+                "end": 6075,
+                "ordinal": 9,
+                "sequence": "TCATAGTCTGTTGGAACATCTGCATGAACT",
+                "sequence_status": "reported",
+                "start": 6046
+              },
+              {
+                "end": 6141,
+                "ordinal": 10,
+                "sequence": "TTCCCAGCCGTAATAGATACTAAATTACCA",
+                "sequence_status": "reported",
+                "start": 6112
+              },
+              {
+                "end": 6207,
+                "ordinal": 11,
+                "sequence": "GTGTTTCTTTCCCACCTTCTGGTTCAACGC",
+                "sequence_status": "reported",
+                "start": 6178
+              },
+              {
+                "end": 6273,
+                "ordinal": 12,
+                "sequence": "GCTGCCTCGCTTTACTCTTCGTTATCTCCA",
+                "sequence_status": "reported",
+                "start": 6244
+              },
+              {
+                "end": 6339,
+                "ordinal": 13,
+                "sequence": "AACACACCGAGCAATAGAAATACACTGTTA",
+                "sequence_status": "reported",
+                "start": 6310
+              },
+              {
+                "end": 6405,
+                "ordinal": 14,
+                "sequence": "GAATAATCCGTACAGCCTTATCATTATCAA",
+                "sequence_status": "reported",
+                "start": 6376
+              },
+              {
+                "end": 6471,
+                "ordinal": 15,
+                "sequence": "GAAAAAGTTGTCGATCTTACAAAAAAATTC",
+                "sequence_status": "reported",
+                "start": 6442
+              },
+              {
+                "end": 6537,
+                "ordinal": 16,
+                "sequence": "ACCAACGGCGCGCAAAAGAAAATCATTAAA",
+                "sequence_status": "reported",
+                "start": 6508
+              },
+              {
+                "end": 6603,
+                "ordinal": 17,
+                "sequence": "TGCGCACGCCAGTCTACACTTAGACTTGGT",
+                "sequence_status": "reported",
+                "start": 6574
+              },
+              {
+                "end": 6669,
+                "ordinal": 18,
+                "sequence": "GCTATAGAGATCCATTTAACCGTTTCATAC",
+                "sequence_status": "reported",
+                "start": 6640
+              },
+              {
+                "end": 6735,
+                "ordinal": 19,
+                "sequence": "AGCGTCAGAGCCCTCTTCTTCCACACGTGT",
+                "sequence_status": "reported",
+                "start": 6706
+              },
+              {
+                "end": 6801,
+                "ordinal": 20,
+                "sequence": "GCGCTTCCCATCGATTTAAACGCATTTACA",
+                "sequence_status": "reported",
+                "start": 6772
+              },
+              {
+                "end": 6867,
+                "ordinal": 21,
+                "sequence": "CCTTTGGAGGAACTGAATTTACTGGCACTA",
+                "sequence_status": "reported",
+                "start": 6838
+              },
+              {
+                "end": 6933,
+                "ordinal": 22,
+                "sequence": "GCCTTGCTTGACCCAACTAGTGACTTCTTC",
+                "sequence_status": "reported",
+                "start": 6904
+              },
+              {
+                "end": 6999,
+                "ordinal": 23,
+                "sequence": "TTGTTGTCGTCGGGTAGTTCGCCCATATCT",
+                "sequence_status": "reported",
+                "start": 6970
+              },
+              {
+                "end": 7066,
+                "ordinal": 24,
+                "sequence": "ATTCGTGAATGCCGACAATCGTTCATTTCCA",
+                "sequence_status": "reported",
+                "start": 7036
+              },
+              {
+                "end": 7132,
+                "ordinal": 25,
+                "sequence": "GGTGAGGTAAATCAATATAAAGATGCATTA",
+                "sequence_status": "reported",
+                "start": 7103
+              },
+              {
+                "end": 7198,
+                "ordinal": 26,
+                "sequence": "TCGTCCACTCTAGTAGCATCTAGGTCTAGG",
+                "sequence_status": "reported",
+                "start": 7169
+              },
+              {
+                "end": 7264,
+                "ordinal": 27,
+                "sequence": "GTCATTTTTAATAGTTTCAATTGCTGATAA",
+                "sequence_status": "reported",
+                "start": 7235
+              },
+              {
+                "end": 7330,
+                "ordinal": 28,
+                "sequence": "TCAAAAGCGCGCATGAGGAAGAAATCACGA",
+                "sequence_status": "reported",
+                "start": 7301
+              }
+            ],
+            "start": 5481,
+            "strand": "-"
+          }
+        ],
+        "arrays_truncated": false,
+        "category_counts": {
+          "Bona-fide": 1,
+          "Low score": 7
+        },
+        "model_score_is_probability": false,
+        "report_count": 1,
+        "report_schema_versions": {
+          "1.2.0": 1
+        },
+        "selected_array_count": 1,
+        "selected_category_counts": {
+          "Bona-fide": 1
+        },
+        "source_count": 1,
+        "unselected_array_count": 7
+      },
+      "orientation": null,
+      "pipeline": {
+        "stages": {
+          "casandra": {
+            "status": "completed"
+          },
+          "crispridentify": {
+            "status": "completed"
+          },
+          "crisprleader": {
+            "status": "completed"
+          },
+          "tracrrna": {
+            "duration_seconds": 6.779056,
+            "status": "completed"
+          }
+        }
+      },
+      "pipeline_status": "completed",
+      "protospacer": {
+        "available": false,
+        "matches": []
+      },
+      "provenance": {
+        "parameters": {
+          "bias_corrections": true,
+          "category_policy": "bona_fide_possible",
+          "leader_flank_length": 500,
+          "spacer_distance": 1,
+          "tool_options": {},
+          "tracr_model_type": "II"
+        },
+        "release_id": "cffc2de6e3c2682c0990308eae7bb11cc4df67303456181c14897f0b404e1dee",
+        "repositories": [
+          {
+            "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
+            "display_name": "CasAndra",
+            "repository": "https://github.com/Alexander-Mitrofanov/CasAndra.git"
+          },
+          {
+            "commit": "ae7e97b210421224f9e15f84fac8db2f3b7ffd84",
+            "display_name": "CCTK",
+            "repository": "https://github.com/Alexander-Mitrofanov/CCTK.git"
+          },
+          {
+            "commit": "369241d16a724eca487a65fd791340cb13122bde",
+            "display_name": "evOr",
+            "repository": "https://github.com/Alexander-Mitrofanov/evOr.git"
+          },
+          {
+            "commit": "ca225a2a3be38e7dee917b483d2d4e2732be4318",
+            "display_name": "CRISPRtracrRNA-v3",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git"
+          },
+          {
+            "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+            "display_name": "CRISPRidentify-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git"
+          },
+          {
+            "commit": "5051d07ab827356792d6a954308ddc5157bd623e",
+            "display_name": "CRISPRleader-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRleader-v2.git"
+          },
+          {
+            "commit": "b1990e3fa08b435d12539419387599d9f08fe375",
+            "display_name": "CRISPRmap-v2",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2.git"
+          },
+          {
+            "commit": "eb26716becfc6c991039aac0db5a7c16d41d1332",
+            "display_name": "CRISPRrepeat",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRrepeat.git"
+          },
+          {
+            "commit": "0e495166486273c9a130556ee640c713497de5bd",
+            "display_name": "CRISPRspacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/CRISPRspacer.git"
+          },
+          {
+            "commit": "29727e2456d3d71ffda96ee27f54d13cf50a3023",
+            "display_name": "RepeatTyper",
+            "repository": "https://github.com/Alexander-Mitrofanov/RepeatTyper.git"
+          },
+          {
+            "commit": "f11ee0d85c706237c3d215bf21703933cd1f8037",
+            "display_name": "SpacePHARER",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git"
+          },
+          {
+            "commit": "87993c9f928fc7893cbc4c9f98df9341e39ffe56",
+            "display_name": "SpacerPlacer",
+            "repository": "https://github.com/Alexander-Mitrofanov/SpacerPlacer.git"
+          }
+        ],
+        "tool_versions": {
+          "CCTK": "2.0.2",
+          "CRISPRidentify-v2": "2.3.2",
+          "CRISPRleader-v2": "2.0.0a1",
+          "CRISPRloci integration": "0.13.1",
+          "CRISPRmap-v2": "2.1.0a2",
+          "CRISPRrepeat": "1.0.1",
+          "CRISPRspacer": "0.3.1",
+          "CRISPRtracrRNA-v3": "3.0.0",
+          "CasAndra": "0.3.0.dev2",
+          "RepeatTyper": "2.0.1",
+          "SpacePHARER": "2.1.1",
+          "SpacerPlacer": "1.0.1.post3",
+          "evOr": "1.0.3"
+        }
+      },
+      "reconstruction": null,
+      "repeat_map": {
+        "available": false,
+        "results": []
+      },
+      "repeat_type": {
+        "available": false,
+        "results": []
+      },
+      "repeats": {
+        "instances": [],
+        "status": "not_requested"
+      },
+      "schema_version": "1.0.0",
+      "spacer_association": {
+        "associations": [],
+        "available": false
+      },
+      "tracrrna": {
+        "candidates": [
+          {
+            "anti_repeat_coverage": 0.75,
+            "anti_repeat_identity": 0.8889,
+            "array_id": "CRISPR-5481-7366-bf1",
+            "boundary_kind": "anti_repeat_search_window",
+            "end": 13594,
+            "evalue": 6.7e-27,
+            "evidence_class": "sequence_duplex_cm_terminator",
+            "id": "f000001.s000001.p000001",
+            "interaction_energy": null,
+            "origin": "anti_repeat",
+            "score": 12.968628517152574,
+            "score_kind": "ranking",
+            "sequence": "GTATATATTGTTAGTATTCAAAATAACATAGCAAGTTAAAATAAGGCTTTGTCCGTTATCAACTTTTAATTAAGTAGCGCTGTTTCGGCGCTTTTTTTGTGCATTTTTTTATAGAACTTAAAATTGTGACAATGCCATTTTTCTATGTATATTAAGATATACTATTTATACTAATATCCATT",
+            "source_id": "example_record_01",
+            "start": 13413,
+            "strand": "+"
+          },
+          {
+            "anti_repeat_coverage": 0.75,
+            "anti_repeat_identity": 0.8889,
+            "array_id": "CRISPR-5481-7366-bf1",
+            "boundary_kind": "anti_repeat_search_window",
+            "end": 13594,
+            "evalue": 6.7e-27,
+            "evidence_class": "sequence_cm_terminator",
+            "id": "f000001.s000001.p000002",
+            "interaction_energy": null,
+            "origin": "anti_repeat",
+            "score": 11.257228517152575,
+            "score_kind": "ranking",
+            "sequence": "GTATATATTGTTAGTATTCAAAATAACATAGCAAGTTAAAATAAGGCTTTGTCCGTTATCAACTTTTAATTAAGTAGCGCTGTTTCGGCGCTTTTTTTGTGCATTTTTTTATAGAACTTAAAATTGTGACAATGCCATTTTTCTATGTATATTAAGATATACTATTTATACTAATATCCATT",
+            "source_id": "example_record_01",
+            "start": 13413,
+            "strand": "+"
+          },
+          {
+            "anti_repeat_coverage": 0.75,
+            "anti_repeat_identity": 0.8889,
+            "array_id": "CRISPR-5481-7366-bf1",
+            "boundary_kind": "anti_repeat_search_window",
+            "end": 13449,
+            "evalue": null,
+            "evidence_class": "sequence_duplex",
+            "id": "f000001.s000001.p000003",
+            "interaction_energy": null,
+            "origin": "anti_repeat",
+            "score": 2.5747123652991344,
+            "score_kind": "ranking",
+            "sequence": "AACTTGCTATGTTATTTTGAATACTAACAATATATACATTGTACCAAATTATAAAAAGAATGCAACTAAAAACAGGTTGAAGGGATGAAGAATATGAAAAATCCGTACACAATTGGCTTAGACATCGGAACTAATTCAGTGGGATGGGCAGTTTTAACAAATCAATATGATTTAGTGAAGAG",
+            "source_id": "example_record_01",
+            "start": 13268,
+            "strand": "-"
+          },
+          {
+            "anti_repeat_coverage": 0.75,
+            "anti_repeat_identity": 0.8889,
+            "array_id": "CRISPR-5481-7366-bf1",
+            "boundary_kind": "anti_repeat_search_window",
+            "end": 13449,
+            "evalue": null,
+            "evidence_class": "sequence_duplex",
+            "id": "f000001.s000001.p000004",
+            "interaction_energy": null,
+            "origin": "anti_repeat",
+            "score": 1.6993123652991342,
+            "score_kind": "ranking",
+            "sequence": "AACTTGCTATGTTATTTTGAATACTAACAATATATACATTGTACCAAATTATAAAAAGAATGCAACTAAAAACAGGTTGAAGGGATGAAGAATATGAAAAATCCGTACACAATTGGCTTAGACATCGGAACTAATTCAGTGGGATGGGCAGTTTTAACAAATCAATATGATTTAGTGAAGAG",
+            "source_id": "example_record_01",
+            "start": 13268,
+            "strand": "-"
+          }
+        ],
+        "mode": "complete",
+        "model_type": "II",
+        "prediction_count": 4,
+        "score_is_probability": false,
+        "sequence_count": 1,
+        "sources": [
+          {
+            "id": "example_record_01",
+            "length": 315251,
+            "sha256": "1fc63b0f86a191dfa50e042faa8acbf6ed1e5cbe5df660f36aad319b4e9ab93d"
+          }
+        ],
+        "status": "completed",
+        "truncated": false
+      },
+      "viral_search": {
+        "available": false,
+        "candidate_viruses": [],
+        "matches": [],
+        "queries": []
+      },
+      "warnings": [
+        "Bundle file omitted because it is empty: logs/leader-record-000001-extract.stderr.log",
+        "Bundle file omitted because it is empty: logs/leader-record-000001-adapt.stderr.log",
+        "Bundle file omitted because it is empty: logs/leader-record-000001-validate.stderr.log",
+        "Public artifact omitted because it was invalid or contained a private path: logs/leader-record-000001-extract.stdout.log",
+        "Public artifact omitted because it was invalid or contained a private path: logs/tracrrna.stdout.log",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/configuration.json",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/report.json",
+        "Public artifact omitted because it was invalid or contained a private path: tracrrna/summary.csv",
+        "Worker log omitted because it contained a private path: attempt-001.stdout.log",
+        "Worker log omitted because it was empty: attempt-001.stderr.log"
+      ]
+    }
+  },
+  "schema": {
+    "name": "crisprloci.web-example",
+    "version": "1.0.0"
+  }
+}

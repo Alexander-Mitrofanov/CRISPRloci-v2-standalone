@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CasAndra"
+version = "0.1.0.dev0+crispridentify.3"
+description = "Offline CPU-only Cas gene detection and CRISPR-Cas cassette classification"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "UPSTREAM_LICENSE_NOTICE"]
+authors = [{name = "CasAndra contributors"}]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "biopython==1.86",
+  "joblib==1.5.3",
+  "numpy==1.26.4",
+  "pyhmmer==0.12.1",
+  "pyrodigal==3.7.1",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+casandra = "casandra.cli_v5:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+casandra = [
+  "models/*.json",
+  "models/protein/*",
+  "models/cassette_architecture/*",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

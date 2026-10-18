@@ -1,0 +1,242 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "array_compare",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "tool": {
+      "name": "CCTK",
+      "version": "2.0.1"
+    },
+    "options": {
+      "identity": "exact",
+      "min_shared": 1,
+      "order": "supplied"
+    },
+    "submitted_sha256": "c0174206f1d6654392c540f83913f8a2aa045f17fd7831b2916de4c2182c85ab",
+    "sources": [
+      {
+        "id": "control-A",
+        "length": 12,
+        "sha256": "680a8445fb26801252347189a4b8b36afed5db34436cddde82b9e662f519a136"
+      },
+      {
+        "id": "control-B",
+        "length": 8,
+        "sha256": "baad849cef1468e26c042fa5429729733b3c0bea01ff975cbb97e2c0dfcb2e8d"
+      },
+      {
+        "id": "control-C",
+        "length": 4,
+        "sha256": "93ccf25b78706fdc6a82f98b6b7a1ca441de9d5522fd27d7ed7913c19b6fb944"
+      },
+      {
+        "id": "control-D",
+        "length": 1,
+        "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+      }
+    ],
+    "arrays": [
+      {
+        "id": "array000000",
+        "source_id": "control-A",
+        "array_id": "same-array-name",
+        "strand": null,
+        "spacers": [
+          {
+            "id": "control-A-spacer1",
+            "ordinal": 1,
+            "sequence": "ACGT",
+            "status": "observed",
+            "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0",
+            "start": 1,
+            "end": 4
+          },
+          {
+            "id": "control-A-spacer2",
+            "ordinal": 2,
+            "sequence": "ACGT",
+            "status": "observed",
+            "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0",
+            "start": 5,
+            "end": 8
+          },
+          {
+            "id": "gap000003",
+            "ordinal": 3,
+            "sequence": null,
+            "status": "deletion",
+            "symbol": null,
+            "boundary_position": 8
+          },
+          {
+            "id": "control-A-spacer4",
+            "ordinal": 4,
+            "sequence": "TTAA",
+            "status": "observed",
+            "symbol": "s_cb2e529279de84aecfdb787e88817cb78bc9c94ae728c2dc8c82fd270d65c4b6",
+            "start": 9,
+            "end": 12
+          }
+        ],
+        "observed_spacer_count": 3,
+        "evidence_status": "observed",
+        "category": "Possible",
+        "model_score": null,
+        "interval": {
+          "end": 12,
+          "start": 1
+        },
+        "boundary": {
+          "exact": false,
+          "occurrence_path": "unassessed",
+          "repeat_phase": "unassessed"
+        },
+        "spacers_truncated": false
+      },
+      {
+        "id": "array000001",
+        "source_id": "control-B",
+        "array_id": "same-array-name",
+        "strand": "-",
+        "spacers": [
+          {
+            "id": "control-B-spacer1",
+            "ordinal": 1,
+            "sequence": "ACGT",
+            "status": "observed",
+            "symbol": "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0",
+            "start": 1,
+            "end": 4
+          },
+          {
+            "id": "control-B-spacer2",
+            "ordinal": 2,
+            "sequence": "CCCC",
+            "status": "observed",
+            "symbol": "s_90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+            "start": 5,
+            "end": 8
+          }
+        ],
+        "observed_spacer_count": 2,
+        "evidence_status": "observed",
+        "category": "Possible",
+        "model_score": null,
+        "interval": {
+          "end": 8,
+          "start": 1
+        },
+        "boundary": {
+          "exact": false,
+          "occurrence_path": "unassessed",
+          "repeat_phase": "unassessed"
+        },
+        "spacers_truncated": false
+      },
+      {
+        "id": "array000002",
+        "source_id": "control-C",
+        "array_id": "isolated",
+        "strand": "+",
+        "spacers": [
+          {
+            "id": "control-C-spacer1",
+            "ordinal": 1,
+            "sequence": "GGGG",
+            "status": "observed",
+            "symbol": "s_93ccf25b78706fdc6a82f98b6b7a1ca441de9d5522fd27d7ed7913c19b6fb944",
+            "start": 1,
+            "end": 4
+          }
+        ],
+        "observed_spacer_count": 1,
+        "evidence_status": "observed",
+        "category": "Possible",
+        "model_score": null,
+        "interval": {
+          "end": 4,
+          "start": 1
+        },
+        "boundary": {
+          "exact": false,
+          "occurrence_path": "unassessed",
+          "repeat_phase": "unassessed"
+        },
+        "spacers_truncated": false
+      },
+      {
+        "id": "array000003",
+        "source_id": "control-D",
+        "array_id": "deletion-only",
+        "strand": null,
+        "spacers": [
+          {
+            "id": "gap000001",
+            "ordinal": 1,
+            "sequence": null,
+            "status": "deletion",
+            "symbol": null,
+            "boundary_position": 0
+          }
+        ],
+        "observed_spacer_count": 0,
+        "evidence_status": "no_observed_spacers",
+        "category": "Possible",
+        "model_score": null,
+        "interval": {
+          "end": 1,
+          "start": 1
+        },
+        "boundary": {
+          "exact": false,
+          "occurrence_path": "unassessed",
+          "repeat_phase": "unassessed"
+        },
+        "spacers_truncated": false
+      }
+    ],
+    "edges": [
+      {
+        "a": "array000000",
+        "b": "array000001",
+        "nshared": 1,
+        "jaccard": 0.3333333333333333,
+        "shared_symbols": [
+          "s_1dff3e84fe7877e0673b69bbddcf40124e396e3f9943dd890c91b6a09adb9af0"
+        ]
+      }
+    ],
+    "components": [
+      [
+        "array000000",
+        "array000001"
+      ],
+      [
+        "array000002"
+      ],
+      [
+        "array000003"
+      ]
+    ],
+    "isolates": [
+      "array000002",
+      "array000003"
+    ],
+    "counts": {
+      "arrays": 4,
+      "spacer_occurrences": 6,
+      "deletions": 2,
+      "edges": 1,
+      "components": 3,
+      "isolates": 2
+    },
+    "interpretation": "Observed sharing only; source-forward order is not inferred acquisition order or a phylogeny.",
+    "origin_semantics": "Uploaded source descriptors, origin coordinates, categories, model scores and boundary annotations are client-supplied metadata; source genomes and claimed producers were not independently verified in this comparison.",
+    "coordinate_system": "1-based-inclusive-source-forward",
+    "score_semantics": "uncalibrated-model-score"
+  }
+}

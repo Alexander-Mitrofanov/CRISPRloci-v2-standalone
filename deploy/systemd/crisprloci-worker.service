@@ -1,0 +1,80 @@
+[Unit]
+Description=CRISPRloci v2 worker
+Documentation=file:/srv/crisprloci-v2/README.md
+After=local-fs.target
+RequiresMountsFor=/srv/crispr
+StartLimitIntervalSec=5min
+StartLimitBurst=3
+
+[Service]
+Type=exec
+User=crisprsvc
+Group=crisprsvc
+WorkingDirectory=/srv/crisprloci-v2
+EnvironmentFile=/etc/crisprloci.env
+Environment=PATH=/usr/sbin:/usr/bin:/sbin:/bin
+Environment=PYTHONNOUSERSITE=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+UnsetEnvironment=PYTHONPATH PYTHONHOME PYTHONSTARTUP PYTHONINSPECT PYTHONBREAKPOINT PYTHONWARNINGS PYTHONPLATLIBDIR PYTHONUSERBASE PYTHONEXECUTABLE __PYVENV_LAUNCHER__ LD_PRELOAD LD_LIBRARY_PATH LD_AUDIT LD_DEBUG LD_DEBUG_OUTPUT LD_PROFILE GCONV_PATH GLIBC_TUNABLES BASH_ENV ENV SHELLOPTS BASHOPTS CDPATH IFS
+ExecStart=/usr/bin/python3 -B -s /srv/crisprloci-v2/scripts/serve.py --service worker
+Restart=on-failure
+RestartSec=10s
+TimeoutStopSec=120s
+KillMode=control-group
+UMask=0077
+LogRateLimitIntervalSec=1min
+LogRateLimitBurst=60
+
+Nice=5
+CPUAccounting=yes
+CPUQuota=1400%
+MemoryAccounting=yes
+MemoryHigh=26G
+MemoryMax=28G
+MemorySwapMax=0
+MemoryZSwapMax=0
+IOAccounting=yes
+IOWeight=25
+# Bound both bulk throughput and small-file pressure from scientific jobs.
+# Bandwidth suffixes are decimal SI units as defined by systemd.
+# The 2000/1000 read/write IOPS ceilings limit burst pressure on shared storage.
+IOReadBandwidthMax=/srv/crispr 128M
+IOWriteBandwidthMax=/srv/crispr 64M
+IOReadIOPSMax=/srv/crispr 2000
+IOWriteIOPSMax=/srv/crispr 1000
+TasksMax=1024
+LimitNOFILE=8192
+LimitCORE=0
+LimitFSIZE=536870912
+
+NoNewPrivileges=yes
+PrivateDevices=yes
+PrivateTmp=no
+TemporaryFileSystem=/tmp:rw,nosuid,nodev,mode=1777,size=1G,nr_inodes=131072
+TemporaryFileSystem=/var/tmp:rw,nosuid,nodev,mode=1777,size=256M,nr_inodes=32768
+ProtectSystem=strict
+ProtectHome=yes
+ProtectHostname=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectProc=invisible
+ProcSubset=pid
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+RestrictRealtime=yes
+# Shared service UID: never remove another unit's live scientific IPC.
+RemoveIPC=no
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_UNIX
+IPAddressDeny=any
+ReadWritePaths=/srv/crispr/jobs/web
+OOMPolicy=stop
+
+[Install]
+WantedBy=multi-user.target

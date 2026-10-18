@@ -1,0 +1,53 @@
+@media (max-width: 480px) {
+  .nav-shell,
+  .hero-grid,
+  main {
+    width: min(100% - 24px, 1240px);
+  }
+  .brand {
+    gap: 9px;
+  }
+  .brand-symbol {
+    width: 38px;
+    transform: scale(0.86);
+    transform-origin: left center;
+  }
+  .brand-copy strong {
+    font-size: 1.375rem;
+  }
+  .brand-copy small {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+  }
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  .hero-lead {
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+  .workflow,
+  .job-panel,
+  .results {
+    margin-inline: 0;
+  }
+  .category-grid,
+  .metric-grid,
+  .inventory-counts,
+  .model-likelihoods {
+    grid-template-columns: 1fr;
+  }
+  .model-likelihoods span:nth-child(even) {
+    text-align: left;
+  }
+  .metric-grid > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .metric-grid > div:last-child {
+    border-bottom: 0;
+  }
+  .result-tabs button {
+    min-height: 44px;
+  }
+}

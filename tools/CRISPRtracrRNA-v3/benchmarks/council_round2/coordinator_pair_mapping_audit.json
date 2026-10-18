@@ -1,0 +1,7 @@
+{
+  "source": "benchmarks/council_round2/baseline/reports",
+  "interactions_checked": 2933,
+  "all_pairs_allowed": 2933,
+  "method": "For each baseline interaction, hybridDP target ( positions ascend and query ) positions descend. Offsets use one-based full oriented input positions. array.repeat is already the tested oriented repeat, not the original genomic repeat. T converted to U; allowed pairs AU UA GC CG GU UG.",
+  "scope": "Read-only preimplementation structural encoding check; not experimental recovery evidence."
+}

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: >-
+  If you use CRISPRidentify, cite the article below and report the exact
+  software release version and archive SHA-256 used.
+title: CRISPRidentify v2
+type: software
+version: 2.3.2
+date-released: 2026-08-27
+license: MIT
+repository-code: "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2"
+authors:
+  - family-names: Mitrofanov
+    given-names: Alexander
+  - family-names: Alkhnbashi
+    given-names: Omer S.
+    orcid: "https://orcid.org/0000-0001-8088-590X"
+  - family-names: Shmakov
+    given-names: Sergey A.
+  - family-names: Makarova
+    given-names: Kira S.
+    orcid: "https://orcid.org/0000-0002-8174-2844"
+  - family-names: Koonin
+    given-names: Eugene V.
+    orcid: "https://orcid.org/0000-0003-3943-8299"
+  - family-names: Backofen
+    given-names: Rolf
+    orcid: "https://orcid.org/0000-0001-8231-3323"
+preferred-citation:
+  type: article
+  title: "CRISPRidentify: identification of CRISPR arrays using machine learning approach"
+  authors:
+    - family-names: Mitrofanov
+      given-names: Alexander
+    - family-names: Alkhnbashi
+      given-names: Omer S.
+    - family-names: Shmakov
+      given-names: Sergey A.
+    - family-names: Makarova
+      given-names: Kira S.
+    - family-names: Koonin
+      given-names: Eugene V.
+    - family-names: Backofen
+      given-names: Rolf
+  journal: Nucleic Acids Research
+  year: 2021
+  volume: 49
+  issue: 4
+  start: e20
+  doi: 10.1093/nar/gkaa1158
+  url: "https://doi.org/10.1093/nar/gkaa1158"

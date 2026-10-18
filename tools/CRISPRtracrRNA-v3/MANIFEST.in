@@ -1,0 +1,11 @@
+include README.md BUGFIX_LOG.md BENCHMARK_LOG.md LICENSE THIRD_PARTY.md pyproject.toml setup.cfg environment.yml config.example.toml upstream-lock.json CRISPRtracrRNA.py
+recursive-include src *.py *.typed *.json *.cm *.i1f *.i1i *.i1m *.i1p erpin *.epn
+recursive-include docs *.md
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include tests/data *.fasta *.json *.md
+recursive-include examples *.fasta
+prune external
+prune runs
+prune .envs
+prune .venv

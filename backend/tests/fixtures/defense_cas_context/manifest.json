@@ -1,0 +1,66 @@
+{
+  "bundle_manifest_sha256": "966c4522d38585db6c3dbca14566aa25d520b7c165f487abe5f35845441eb1b3",
+  "files": {
+    "cas_proteins.tsv": {
+      "sha256": "2d23eaf17af28e34eaff131db49e5b9fec702e58d45d19d6fec1e2789e183c8c",
+      "size": 64
+    },
+    "casandra.gff3": {
+      "sha256": "897007ceaf55680e4fa9d1d9e6ebac641ede633c0a9f2426db36ecbc66177df9",
+      "size": 16
+    },
+    "cassettes.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "cassettes.tsv": {
+      "sha256": "e0a4cfdfebea7a56da9a61e1f1b57b8d8f66b746f120afd56d9c088709d15371",
+      "size": 77
+    },
+    "extraction/audit.json": {
+      "sha256": "19ab2b26d05aa6648dcd03c35bcdaf5cf75b3d67cc65f097331530d2ce2c8c85",
+      "size": 516
+    },
+    "extraction/contigs.jsonl": {
+      "sha256": "b3a1ed9bbeae7cd985aea9d20c9d37bbb6ecdfa21e3d9c1cc8c8e9bda86555e4",
+      "size": 40197
+    },
+    "extraction/genes.gff3": {
+      "sha256": "ccd359ae6650bc2d8cc5e77629a1147aa60bd5d514b5c8462261c4781dee849c",
+      "size": 7035
+    },
+    "extraction/genes.jsonl": {
+      "sha256": "081a2ca61ef87cb5cd91fdad6a2626273cec9d80c9226e6df43a238a28e8eb56",
+      "size": 92536
+    },
+    "extraction/manifest.json": {
+      "sha256": "47c588c30afe8453098ead551b430d6bdfa9c5939d7f3653ff8df099f86d0355",
+      "size": 1364
+    },
+    "extraction/proteins.faa": {
+      "sha256": "d029d1ff04246c7cb60de61ab36b59cfc21feee990449ade817070613e304541",
+      "size": 22131
+    },
+    "protein_predictions.jsonl": {
+      "sha256": "2001a525e55dd4d5089ef41996c56b2c7a9155e0ae4e54076459cc2283dacd0a",
+      "size": 171215
+    },
+    "proteins.jsonl": {
+      "sha256": "4e2b77fc562b9779620aa209c47199f732e681459305560131f5de6ca2121eba",
+      "size": 261357
+    },
+    "rejected_cassette_candidates.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "report.html": {
+      "sha256": "034c09eb7dfa913452f217d4bf7eb08c4b11db1ebde19b1ef3b60b8f8e0374cd",
+      "size": 436
+    },
+    "run.json": {
+      "sha256": "8f4c1fb57857f9881676e8a9968ffd5aaa61d8f74253b7121b31c7174a75d4d0",
+      "size": 1108
+    }
+  },
+  "schema_version": 5
+}

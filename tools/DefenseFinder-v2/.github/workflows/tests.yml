@@ -1,0 +1,15 @@
+name: offline context tests
+on: [push, pull_request]
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-context.lock pytest==8.4.2 pandas==2.3.3 .
+      - run: python -m pip check
+      - run: python -m pytest -q tests/test_context.py
+      - run: defense-context --help
+      - run: python scripts/check_private_data.py workspace

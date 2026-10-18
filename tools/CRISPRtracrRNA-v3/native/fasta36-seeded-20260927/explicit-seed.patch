@@ -1,0 +1,62 @@
+--- a/src/comp_lib9.c
++++ b/src/comp_lib9.c
+@@ -85,7 +85,7 @@
+ 
+ int closelib(struct lmf_str *m_fptr, int force);
+ 
+-void *my_srand();
++#include "council_seed.h"
+ unsigned int my_nrand(int, void *);
+ 
+ struct seqr_chain *
+@@ -567,7 +567,7 @@
+ 
+   f_str[5] = f_str[4] = f_str[3] = f_str[2] = f_str[1] = f_str[0] = NULL;
+   aa0[0] = NULL;
+-  rand_state = my_srand();
++  rand_state = my_srand(FASTA_COUNCIL_MASTER_SEED);
+ 
+   /* initialize values in comp_lib9 that are thread/serial specific */
+   fset_vars(&m_msg, &pst);
+--- a/src/work_thr2.c
++++ b/src/work_thr2.c
+@@ -74,7 +74,7 @@
+ /* dropxx.c functions */
+ #include "drop_func.h"
+ 
+-extern void *my_srand();
++#include "council_seed.h"
+ extern unsigned int my_nrand(int, void *);
+ extern void qshuffle(unsigned char *aa0, int n0, int nm0, void *);
+ extern void free_pam2p(int **);
+@@ -145,10 +145,14 @@
+   unsigned char *aa0[6], *aa0s;
+   void *f_str[6], *qf_str;
+ 
+-  my_rand_state=my_srand();
+ 
+ #ifndef PCOMPLIB
+   my_worker = work_info->worker;
++  if (my_worker < 0 || my_worker > 2147483645 - FASTA_COUNCIL_MASTER_SEED) {
++    fprintf(stderr, "Council FASTA worker seed exceeds RNG range\n");
++    exit(1);
++  }
++  my_rand_state = my_srand(FASTA_COUNCIL_MASTER_SEED + my_worker + 1);
+   max_work_buf = work_info->max_work_buf;
+   wait_thr();	/* wait for start_thread predicate to drop to  0 */
+ 
+--- /dev/null
++++ b/src/council_seed.h
+@@ -0,0 +1,12 @@
++/* CRISPRtracrRNA council amendment, 2026-09-27.
++ * Explicit, untuned RNG seeds for the tested Linux pthread, -T1 profile.
++ * The RNG recurrence, shuffling and statistical thresholds are unchanged.
++ */
++#ifndef CRISPRTRACRRNA_COUNCIL_SEED_H
++#define CRISPRTRACRRNA_COUNCIL_SEED_H
++#ifdef PCOMPLIB
++#error "Council seed profile does not support MPI builds"
++#endif
++#define FASTA_COUNCIL_MASTER_SEED 20260927
++void *my_srand(int set);
++#endif

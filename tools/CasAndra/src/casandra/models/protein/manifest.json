@@ -1,0 +1,63 @@
+{
+  "artifacts": {
+    "build_audit.json": {
+      "sha256": "09391b96bbe8f9576287ab54b188b3957f0e74b2fbe22ecf94660d68b6a38c51",
+      "size": 1321
+    },
+    "model_card.json": {
+      "sha256": "5baffdc7ab0d04336a53b4e230cc8091772591a13f89052a01e069200aac5c2d",
+      "size": 649
+    },
+    "profile_metadata.json": {
+      "sha256": "8e340f92724e4941e1eb22cbef7ba920f3f280f5284a714f2a8fa9a318531436",
+      "size": 178880
+    },
+    "profiles.hmm": {
+      "sha256": "7e1495ff2378435736fcc2f2325a1bfed8fdbdd97a12f19839e836ceaa61e369",
+      "size": 60767826
+    },
+    "specificity/floor_cap_provenance.json": {
+      "sha256": "270907a772e8d4ceaaf5803446e8bed214c8083cf403f86ba2959266ddcb9764",
+      "size": 213574
+    },
+    "specificity/inherited_competition.json": {
+      "sha256": "d5ddf6ca8477e3a3c6bb1e302eab1cb73fbc1a4912834534a165f6f29df884ef",
+      "size": 681
+    },
+    "specificity/inherited_floor.json": {
+      "sha256": "cc0fd0576e643023df192f6e972946d9e54e5042aae02237f3ad6aa4eef086e0",
+      "size": 62214
+    },
+    "specificity/inherited_profiles.hmm": {
+      "sha256": "d72000016cab9df16973a0b8902670063a56831790efd75e23dced8986efd242",
+      "size": 2251931
+    },
+    "specificity/manifest.json": {
+      "sha256": "c2f5a60f4390c15965f4eae5864f12865fadef886503fb60a9a8f0db4e702c5c",
+      "size": 2132
+    },
+    "specificity/new_bank_source_manifest.json": {
+      "sha256": "68e2cb7d9535ec0de627b835da75a8c36b32185c26b43db47de8eeb8d20d27d6",
+      "size": 1357
+    },
+    "specificity/new_profile_metadata.json": {
+      "sha256": "e765a3a36fa777bfd791896152e626d65322b6f043d54d21efe2d397e67c6d04",
+      "size": 31220
+    },
+    "specificity/new_profiles.hmm": {
+      "sha256": "dc982a66dc835272551d5e8f549474cf1453eed23b19074dec4f5461c7de347b",
+      "size": 7806231
+    },
+    "specificity/repair_policy.json": {
+      "sha256": "075b2fd88e484cfba5064998917b7d8a611f8f827b58395953b6b0703c794b40",
+      "size": 336318
+    },
+    "specificity/source_provenance.json": {
+      "sha256": "053e3896f42adda5a2eb6649e67361ae7593eec08c93268f8515afb898d159d5",
+      "size": 1840
+    }
+  },
+  "model_id": "casandra-full361-v3-cap15-2026-09-20-v1-protein",
+  "role": "local_successor_candidate",
+  "schema_version": 4
+}

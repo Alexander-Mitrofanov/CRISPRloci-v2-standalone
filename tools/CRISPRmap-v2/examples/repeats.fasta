@@ -1,0 +1,10 @@
+>exact synthetic known repeat
+ACGTCGATGCTAGCTAGTCGATCG
+>reverse synthetic reverse complement
+CGATCGACTAGCTAGCATCGACGT
+>near synthetic substitution
+ACGTCGATGCTAGCTAGTCGATCA
+>unmatched synthetic low complexity
+AAAAAAAAAAAAAAAAAAAAAAAA
+>ambiguous synthetic uncertainty
+ACGTCGATNCTAGCTAGTCGATCG

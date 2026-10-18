@@ -1,0 +1,805 @@
+{
+  "method": "Reparse retained native genome-wide FASTA36 alignments; retain span >=12, identity >=0.8, coverage <0.6, outside accepted arrays; complementary transcript only; deduplicate exact array/interval/repeat-orientation/transcript-strand keys; no downstream rescue evaluation or truth-assisted discovery. Standard branch span gates remain0.7/0.6.",
+  "rows": [
+    {
+      "locus": "Ain",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ain/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "ca189fe92be599051bb84a765398910c8dc78867508d35ac84b083378d9f73e2"
+    },
+    {
+      "locus": "Bbo",
+      "standard_raw_hypotheses": 44,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 24,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Bbo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "441c9c887be4ecfd1448f6e50bcf047c4be834f8d8b8c614f9044f4d0db9dc9f"
+    },
+    {
+      "locus": "Bni",
+      "standard_raw_hypotheses": 64,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 32,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Bni/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "3661ea1544124c241f382d5fa146772d84c3390a448721eaa16cbb5680b1e8b9"
+    },
+    {
+      "locus": "Bok",
+      "standard_raw_hypotheses": 20,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 12,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Bok/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "d6cf2aacbe0bfceeae44f2517a11f8ba49659764e0223cf99971e64eb2a8853e"
+    },
+    {
+      "locus": "Cca1",
+      "standard_raw_hypotheses": 192,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 98,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cca1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "08b73554ea4b3097cb3b4293e3f4103d7c67f6e4d726e59ce29ddb5b0ae87528"
+    },
+    {
+      "locus": "Cca2",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cca2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "87979374b760be76ac431c7a41df5610d7369395c0f9d03483246a2afbb1a66c"
+    },
+    {
+      "locus": "Cco",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cco/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "de564ef9c7d403599eb31af8129eab5bb79fc03e7ed2f03eceb3b0d14c472a8e"
+    },
+    {
+      "locus": "Cga",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cga/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "a1a89982cc84826cd8d735f838f0fc058be654a8188c7599c45abebc25b3d612"
+    },
+    {
+      "locus": "Cgl",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cgl/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "caf4c1df4179ac061d2249854746f16c7e4da26b5cd280683c6b2e58bcea4604"
+    },
+    {
+      "locus": "Cme1",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cme1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "6eb4d9a0b500cedfdbab5bbbbee4ecf4cf708a62a83b2a344e3d8e3bb794e94b"
+    },
+    {
+      "locus": "Cme2",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cme2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "248d9fe5723ddd47eaff17567dd2694ab71552be0064e822fb883408b1f7287e"
+    },
+    {
+      "locus": "Cme3",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 4,
+      "short_unique_coordinate_strand": 4,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cme3/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "d2c126ec9e5031207c0c4875a588ba893ae93b7afed7a411180c582f20567343"
+    },
+    {
+      "locus": "Cme4",
+      "standard_raw_hypotheses": 176,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 88,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cme4/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "5dfed14f1cb0869db583fcd0ae45c842291d6fb262d7d63e83dbc9c14febc945"
+    },
+    {
+      "locus": "Cpe",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Cpe/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "2e9c4dadda52f2cfac32531a897f84b8bf5248029e36374c5e3c18bf377444e2"
+    },
+    {
+      "locus": "Csa",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Csa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "213507e312889321e99ab6a17f7fccd229e6152bdebbb8c2982d0c982b639858"
+    },
+    {
+      "locus": "Dde",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Dde/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "6254a4520cbb2030ed1a9b8842d08b6d804864c3ff061cfa79a2188058986c8b"
+    },
+    {
+      "locus": "Ece",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ece/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "2890830e7d778775e1b072ec0add58d4df3263dc28d8826e9670b24366d14895"
+    },
+    {
+      "locus": "Edo",
+      "standard_raw_hypotheses": 56,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 28,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Edo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "309edb1a08192e949d2021c28e3756c45ff3c513af4905d263bae3c3c4d762d6"
+    },
+    {
+      "locus": "Efa",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Efa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "8c0305773c5858f574a3a44aa57d168a4d9b95356f5fab6137b26cfebd2ddc31"
+    },
+    {
+      "locus": "Eit",
+      "standard_raw_hypotheses": 84,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 44,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Eit/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "f23b154105369300fa6a911905bb8dadb91bc1293ddbb211f4b8ac3e0c898626"
+    },
+    {
+      "locus": "Esp1",
+      "standard_raw_hypotheses": 32,
+      "short_complementary_hypotheses": 4,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 20,
+      "accepted_arrays": 2,
+      "alignment_file": "benchmarks/final_fixed/complete/Esp1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "24d4265e524ec9822e4ecea356219ba2875f2b0d0677298b19e83ab36f006709"
+    },
+    {
+      "locus": "Esp2",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Esp2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "f0415b8e0cbb53dcb1cb480eee4ddc16e9b577332b89f2cab1c8cb6f88d36a19"
+    },
+    {
+      "locus": "Ffr",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ffr/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "cc9501a06fd9c07eba4b3e5e38d5fe82d3d233fe0f03e9c5341f803d8e7f88e1"
+    },
+    {
+      "locus": "Fho",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Fho/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "7ef56fe5a00e49f8b721a53074ead72056d7f217373c95711dddac287c1de306"
+    },
+    {
+      "locus": "Fma",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Fma/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "eb0f28fab1b6a18e8c85b29ab0dd2a00c8da31ecb5b5901eb06d002487c37a1b"
+    },
+    {
+      "locus": "Ghc1",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghc1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "04affb6bbb69c5191af717ae7809313cfe3e3f7c28af937f99bc7f834234584b"
+    },
+    {
+      "locus": "Ghc2",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghc2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "d2d3151bd89b4bf824506310a747c26b13f80a22d321a19d95f284b6a179faf6"
+    },
+    {
+      "locus": "Ghe",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghe/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "390b83aef0eafff66576bc4668006dc1544e35c56bb6f8936339346769b1e6e0"
+    },
+    {
+      "locus": "Ghh1",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghh1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "c7129ac1240e162f438a185ad85811d6efdbef7f2f6f85d17de6e50f36a1c25c"
+    },
+    {
+      "locus": "Ghh2",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghh2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "80a81edff953d79da8e6b5d465bbaf08d8dcae9243bdf13af2435351d2742dd2"
+    },
+    {
+      "locus": "Ghy1",
+      "standard_raw_hypotheses": 44,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 22,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghy1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "9a77e2e34338599f6a40b199cc4d7e1b969e509600825e2a1005edc511c65058"
+    },
+    {
+      "locus": "Ghy2",
+      "standard_raw_hypotheses": 0,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghy2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "904d5507de8f2614ee187343e346c95c472eab805d36d4d3453d6c79b10bd03c"
+    },
+    {
+      "locus": "Ghy3",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghy3/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "99db525886e40188c072a58340f97b0822624110503f09549422f8af124874e7"
+    },
+    {
+      "locus": "Ghy4",
+      "standard_raw_hypotheses": 84,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 44,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ghy4/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "ffdf476559b34a519fa697175255c14e75bd92a0ec3f6a73d2553e0055b32280"
+    },
+    {
+      "locus": "Gsp",
+      "standard_raw_hypotheses": 80,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 40,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Gsp/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "f176b18d41b9bad5dbf77b8a96267deb379f78e7f5a9472444a6e197d5446b08"
+    },
+    {
+      "locus": "Jpa",
+      "standard_raw_hypotheses": 128,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 64,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Jpa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "33079e6219d95a2f771873f3d0512a7cd78fc898191ac7747c533e757ee42d7c"
+    },
+    {
+      "locus": "Khu",
+      "standard_raw_hypotheses": 72,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 38,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Khu/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "682831511159ecb8d936a9e4e81448afa253f95b680e0c514a13f012d3d7dcc3"
+    },
+    {
+      "locus": "Kki",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Kki/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "6fc24fb4cfd914fb56922df3141260e745e86b2c05619b6ffcc843e27b0cdd8b"
+    },
+    {
+      "locus": "Lan",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lan/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "dcfe001f807535fdd5afa8894a02b874284f29f95f227257a1dbd0f6065c49cc"
+    },
+    {
+      "locus": "Lce",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lce/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "1be0b898240abaecedbebc5d978610f0358dec3e3533edaa741e3d89b624b102"
+    },
+    {
+      "locus": "Lmo",
+      "standard_raw_hypotheses": 16,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 10,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lmo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "f1dd6953b9ff2804b457b0e13bd52e67d133a53d4cd305dcfcbb7749e427b1e9"
+    },
+    {
+      "locus": "Lpn",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lpn/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "acc85f56d4ce29abef1702013b583869c37f37d28e04b7991911164357bcb4ec"
+    },
+    {
+      "locus": "Lrh",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lrh/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "e7f710e5efc3cf83755f0d02d038809449411cc7f169c2a282d680d5f2e891f1"
+    },
+    {
+      "locus": "Lsp1",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lsp1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "bd34a98f6a92a67f0b177f3a640db909df44253428d45ae67ff88e9ea0873866"
+    },
+    {
+      "locus": "Lsp2",
+      "standard_raw_hypotheses": 14,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 7,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Lsp2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "c5ed6e31de92c9dc94b6cd02ee6878dfe59127deb10e5de35d8d9e7d3f8baaa7"
+    },
+    {
+      "locus": "Mga",
+      "standard_raw_hypotheses": 108,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 54,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Mga/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "3aff965ea6d3f2e4c89919d74afd40e48e3f56e2b3c5579ed96164314aa2baff"
+    },
+    {
+      "locus": "Msc",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Msc/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "90745778045d764eb3cbd76e2d9dc2267dbeade22c50cc5216d29092f9daf093"
+    },
+    {
+      "locus": "Mse",
+      "standard_raw_hypotheses": 464,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 232,
+      "accepted_arrays": 3,
+      "alignment_file": "benchmarks/final_fixed/complete/Mse/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "1e33772dc957f83531a0e831dc7e240664ca7201ae447d8d77eead674d3668f3"
+    },
+    {
+      "locus": "Nme2",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Nme2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "9f1cfebfc1c52f5b3fbbb3291caa984661f062db73690cf1f8cf127cab5200a6"
+    },
+    {
+      "locus": "Nsa",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Nsa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "ff12ca8b9c691abf8a1594992817494ce9d4aad34152dc0aee8f964628924fb7"
+    },
+    {
+      "locus": "Nsp",
+      "standard_raw_hypotheses": 168,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 84,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Nsp/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "a9fe041d6af161d74e8f23389264d9983c65644166c54245047152365181bca6"
+    },
+    {
+      "locus": "Orh",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 4,
+      "short_unique_coordinate_strand": 4,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Orh/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "668a40743ae69721edbc5b6853a912908d66f4de459c332be918fcbddbb0dce1"
+    },
+    {
+      "locus": "Pac",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 8,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Pac/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "2fa8f495159354fca8ed6d8db6bd696545abae740efc0202bc889ac1235e731f"
+    },
+    {
+      "locus": "Phi",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Phi/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "42938ea07fcf42ff7baca731c54f871b0d222b838963e92fb46c9c8e07ed8231"
+    },
+    {
+      "locus": "Psp",
+      "standard_raw_hypotheses": 40,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 22,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Psp/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "0ff971915580b8d5864914dbc07c1df0f5f2a3e79eb256717c73c11d109c42a9"
+    },
+    {
+      "locus": "Rsp",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Rsp/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "d3c77f62955231563fd9a8f680e3952114b2d4a29e53a72d11f107dea6596eaa"
+    },
+    {
+      "locus": "Sag1",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sag1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "df32b12546eab8df236a522c248ddc241a57424e5119d77287d0a865999dbdd4"
+    },
+    {
+      "locus": "Sag2",
+      "standard_raw_hypotheses": 44,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 24,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sag2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "2c068c405acdec025dd67dc32cdebd3d3b229f2059514fc1980109ab0983cc8b"
+    },
+    {
+      "locus": "Sdo",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sdo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "a1749a4663ecd6eb1894d2ddf0e2f7b353b9f8ea726763d73bfaaa8a92f5654c"
+    },
+    {
+      "locus": "Sdy",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 8,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sdy/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "381057b46d27a94ce4659c5b85cfb213c9925d9c5dda18d648632715dfb0b06d"
+    },
+    {
+      "locus": "Seq1",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 8,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Seq1/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "1a3c0acda193ac6303891eefad2c8fbb44ae0312b58e09b1730ff867a5e75135"
+    },
+    {
+      "locus": "Seq2",
+      "standard_raw_hypotheses": 40,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 22,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Seq2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "b4e41d3bad61ad893ea3a66b3c7046ebb8a9914293e465ce6ef89003995ccfb0"
+    },
+    {
+      "locus": "Sga",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 8,
+      "accepted_arrays": 2,
+      "alignment_file": "benchmarks/final_fixed/complete/Sga/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "3cbe9eceec9b837d9c4808e2338a9c7536bd7d8a3e0d16f5a947111286f27c5f"
+    },
+    {
+      "locus": "Sgo",
+      "standard_raw_hypotheses": 100,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 50,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sgo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "7d86a96706636c63b626aaea0086a7bd803298f8466b104771084a2bd304364d"
+    },
+    {
+      "locus": "Sma2",
+      "standard_raw_hypotheses": 144,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 72,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sma2/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "7a44112f095282f7f4155bf31a90d8173ea20d05b2b640770b9c80def3496ab1"
+    },
+    {
+      "locus": "Smu",
+      "standard_raw_hypotheses": 4,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Smu/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "f64c7100df71a0c0ec18c03f1ed1f90b50662e68d68d5a03313afecf8f2d6fc1"
+    },
+    {
+      "locus": "Spa",
+      "standard_raw_hypotheses": 232,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 116,
+      "accepted_arrays": 2,
+      "alignment_file": "benchmarks/final_fixed/complete/Spa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "4180caf43287056d553998cf3edea2f06b268a92acf16e3af585cda10e181f98"
+    },
+    {
+      "locus": "Sra",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sra/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "61c32011ee280b5db6fba3efd5bdb8fcaf2a1cc9dcdf8c3ba4283dac5be6904b"
+    },
+    {
+      "locus": "Ssa",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ssa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "3b0bfa2501e7a59433376778ac290b7b1faf6a598c4fa09f995a627a49d7c65e"
+    },
+    {
+      "locus": "Ssi",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ssi/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "beea66e078be6631a260a06c9b838211f34aee96533f58c4276cd4fcf7ed51c7"
+    },
+    {
+      "locus": "Ssu",
+      "standard_raw_hypotheses": 104,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 52,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Ssu/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "5800dffb4917d8ceb8c8d96649d9a0e23a097a1ef41cbd6ec24bfd47d1720793"
+    },
+    {
+      "locus": "Sth1A",
+      "standard_raw_hypotheses": 128,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 64,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Sth1A/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "b397f2875e4a309a00c2446be6993c12c586ada193b5094dfd1cf9ac6a651f21"
+    },
+    {
+      "locus": "Tba",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 2,
+      "short_unique_coordinate_strand": 2,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Tba/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "fe298fcfd95857219ac7935848a24a92e33021758f501571220b2300568f89e3"
+    },
+    {
+      "locus": "Tde",
+      "standard_raw_hypotheses": 228,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 114,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Tde/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "73f867ee8ffe54ae45172dddf671a2e50fd12e3db9216f53d88cdf052b3a851b"
+    },
+    {
+      "locus": "Tmo",
+      "standard_raw_hypotheses": 20,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 10,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Tmo/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "bd180ddbb814a7364172ae9cae57a7c82c4172399e500d701d7005ec24e54569"
+    },
+    {
+      "locus": "Tpu",
+      "standard_raw_hypotheses": 12,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 6,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Tpu/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "850162b7b3fe13990e6136be7a0c7bed7a49169b0cf09ea8eba48222d9345662"
+    },
+    {
+      "locus": "Tsp",
+      "standard_raw_hypotheses": 64,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 32,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Tsp/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "850812e72afd9c1e61b356692017b68d5c54615c4c17134477b4afaf47007555"
+    },
+    {
+      "locus": "Vpa",
+      "standard_raw_hypotheses": 64,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 32,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Vpa/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "4a959103490fe2310d26b0fda2bd6d41196f328e567f0c818019844c094d886a"
+    },
+    {
+      "locus": "Wvi",
+      "standard_raw_hypotheses": 8,
+      "short_complementary_hypotheses": 0,
+      "short_unique_coordinate_strand": 0,
+      "raw_alignment_rows": 4,
+      "accepted_arrays": 1,
+      "alignment_file": "benchmarks/final_fixed/complete/Wvi/work/f000001.s000001/anti-repeat.tsv",
+      "alignment_sha256": "8b187951324b4b9a6bc5efbf65917adbd8f8983fb7b527c28619d99c2cf97cc2"
+    }
+  ],
+  "summary": {
+    "inputs": 79,
+    "standard_raw_hypotheses": 3390,
+    "short_complementary_hypotheses": 66,
+    "short_unique_coordinate_strand": 64,
+    "short_median": 0,
+    "short_p95": 2,
+    "short_max": 4,
+    "inputs_with_short_proposals": 30
+  }
+}

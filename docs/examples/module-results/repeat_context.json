@@ -1,0 +1,240 @@
+{
+  "schema": {
+    "name": "crisprloci.module-result",
+    "version": "1.0.0"
+  },
+  "module": "repeat_context",
+  "status": "completed",
+  "complete": true,
+  "data": {
+    "coordinate_system": "zero_based_half_open",
+    "support_semantics": "descriptive-thermodynamic-model-evidence",
+    "molecule": "DNA",
+    "orientation_policy": "both",
+    "model": {
+      "engine": "ViennaRNA",
+      "parameters": "RNA_Turner2004",
+      "parameter_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+      "temperature": 37.0,
+      "dangles": 2,
+      "salt_molar": 1.021,
+      "minimum_loop_size": 3,
+      "allow_GU": true,
+      "pseudoknots": false,
+      "no_lonely_pairs": false,
+      "window": 150,
+      "span": 80
+    },
+    "sources": [
+      {
+        "id": "example_record_01",
+        "length": 1121,
+        "sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157"
+      }
+    ],
+    "classification": {
+      "strand": {
+        "status": "unsupported",
+        "reason": "no_calibrated_strand_model"
+      },
+      "subtype": {
+        "status": "unsupported",
+        "reason": "no_validated_subtype_model"
+      },
+      "family": {
+        "status": "unsupported",
+        "reason": "no_validated_family_model"
+      }
+    },
+    "instances": [
+      {
+        "id": "repeat_000001",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 1,
+        "start": 421,
+        "end": 451,
+        "terminal": true,
+        "orientation": "forward",
+        "context_id": "context_000001",
+        "context_start": 0,
+        "fold_id": "fold_b296e0b6cf446b830ac54a26",
+        "comparison": {
+          "status": "completed",
+          "reason": null,
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": 0.6075768167321527,
+          "context_pair_support": 0.004088574977731357,
+          "support_change": -0.6034882417544213
+        }
+      },
+      {
+        "id": "repeat_000002",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 2,
+        "start": 485,
+        "end": 515,
+        "terminal": false,
+        "orientation": "forward",
+        "context_id": "context_000001",
+        "context_start": 64,
+        "fold_id": "fold_b296e0b6cf446b830ac54a26",
+        "comparison": {
+          "status": "completed",
+          "reason": null,
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": 0.6075768167321527,
+          "context_pair_support": 0.008619895674245667,
+          "support_change": -0.598956921057907
+        }
+      },
+      {
+        "id": "repeat_000003",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 3,
+        "start": 550,
+        "end": 580,
+        "terminal": true,
+        "orientation": "forward",
+        "context_id": "context_000001",
+        "context_start": 129,
+        "fold_id": "fold_b296e0b6cf446b830ac54a26",
+        "comparison": {
+          "status": "completed",
+          "reason": null,
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": 0.6075768167321527,
+          "context_pair_support": 0.02379156210392624,
+          "support_change": -0.5837852546282265
+        }
+      },
+      {
+        "id": "repeat_000004",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 1,
+        "start": 421,
+        "end": 451,
+        "terminal": true,
+        "orientation": "reverse",
+        "context_id": "context_000002",
+        "context_start": 129,
+        "fold_id": "fold_f045cbb71f9adf1cff43c7da",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "no_reference_pairs",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000005",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 2,
+        "start": 485,
+        "end": 515,
+        "terminal": false,
+        "orientation": "reverse",
+        "context_id": "context_000002",
+        "context_start": 65,
+        "fold_id": "fold_f045cbb71f9adf1cff43c7da",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "no_reference_pairs",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      },
+      {
+        "id": "repeat_000006",
+        "source_id": "example_record_01",
+        "array_id": "array_000001",
+        "repeat_index": 3,
+        "start": 550,
+        "end": 580,
+        "terminal": true,
+        "orientation": "reverse",
+        "context_id": "context_000002",
+        "context_start": 0,
+        "fold_id": "fold_f045cbb71f9adf1cff43c7da",
+        "comparison": {
+          "status": "unsupported",
+          "reason": "no_reference_pairs",
+          "motif_origin": "isolated_mfe_hypothesis",
+          "isolated_pair_support": null,
+          "context_pair_support": null,
+          "support_change": null
+        }
+      }
+    ],
+    "context_semantics": "analysis-window-not-biological-boundary",
+    "arrays": [
+      {
+        "id": "array_000001",
+        "native_id": "CRISPR-422-580-bf1",
+        "source_id": "example_record_01",
+        "start": 421,
+        "end": 580,
+        "category": "Bona-fide",
+        "detector_strand": "+"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "context_000001",
+        "array_id": "array_000001",
+        "orientation": "forward",
+        "status": "completed",
+        "window": 150,
+        "span": 80
+      },
+      {
+        "id": "context_000002",
+        "array_id": "array_000001",
+        "orientation": "reverse",
+        "status": "completed",
+        "window": 150,
+        "span": 80
+      }
+    ],
+    "consensus_folds": [
+      {
+        "array_id": "array_000001",
+        "orientation": "forward",
+        "fold_id": "fold_b296e0b6cf446b830ac54a26"
+      },
+      {
+        "array_id": "array_000001",
+        "orientation": "reverse",
+        "fold_id": "fold_f045cbb71f9adf1cff43c7da"
+      }
+    ],
+    "folds": [
+      {
+        "id": "fold_b296e0b6cf446b830ac54a26",
+        "rna_sequence": "CGUUUUAGUUACUUAUUGUGAAAUGUAAAU",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "(((((((...........))))))).....",
+        "mfe_kcal_mol": -2.0,
+        "ensemble_kcal_mol": -2.6197686195373535
+      },
+      {
+        "id": "fold_f045cbb71f9adf1cff43c7da",
+        "rna_sequence": "AUUUACAUUUCACAAUAAGUAACUAAAACG",
+        "status": "completed",
+        "method": "global_partition_function",
+        "structure": "..............................",
+        "mfe_kcal_mol": 0.0,
+        "ensemble_kcal_mol": -0.5462823510169983
+      }
+    ]
+  }
+}

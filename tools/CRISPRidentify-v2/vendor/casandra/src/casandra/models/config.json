@@ -1,0 +1,27 @@
+{
+  "bundle_id": "casandra-cas-only-cpu-bundle-v4-fast-final",
+  "bundle_role": "deployment_refit",
+  "cassette_architecture_directory": "cassette_architecture",
+  "cassette_parameters": {
+    "max_cas_gap_nt": 5000,
+    "max_non_cas_genes": 5,
+    "min_subtype_vote_fraction": 0.5
+  },
+  "cpu_only": true,
+  "crispr_array_prediction": false,
+  "evaluation_model_separate_from_deployment_refit": true,
+  "genome_evidence_gate": {
+    "class_1_minimum_cas_genes": 2,
+    "class_2_minimum_cas_genes_or_single_effector": 2,
+    "class_2_single_effector_minimum_aa": 400,
+    "class_2_single_effector_minimum_positive_profile_score": 50.0,
+    "selection": "pre-expanded validation and whole-genome acceptance; frozen before paper test",
+    "supported_label_policy": "subtype_required_except_type_vii"
+  },
+  "hybrid_routing": "Type III architecture ExtraTrees; direct profiles otherwise",
+  "offline_inference": true,
+  "protein_model_directory": "protein",
+  "runtime_cli": "python -m casandra.cli_v5",
+  "schema_version": 4,
+  "scope": "Cas proteins and Cas cassettes only"
+}

@@ -1,0 +1,42 @@
+{
+  "completed_at": "2026-09-27T00:11:01.265608+00:00",
+  "goal_scope": "Council design, delegated execution, and same-council evaluation of bounded detection and engineering improvements",
+  "council": {
+    "04_detection_evaluation.md": {
+      "verdict": "accept_under_documented_amendment",
+      "sha256": "5982612bf64cb3f3ca8acfacbca3e99f47b5d722bf3ae1ee30f9fa7be6c5916a"
+    },
+    "05_engineering_evaluation.md": {
+      "verdict": "accept_under_documented_amendment",
+      "sha256": "a9197747ce181e2ba573b393a962a3f6e5b1a084a03fb36d295932ff3a69ff86"
+    },
+    "06_validation_evaluation.md": {
+      "verdict": "accept_under_documented_amendment",
+      "sha256": "3cd80ef188a5ab707704514d391a62ab8ae37160c0c1e11eae3be6832d5e269f"
+    }
+  },
+  "coordinator_decision": "accepted",
+  "unresolved_blockers": [],
+  "experimental_default_enabled": false,
+  "original_stock_native_historical_equivalence": "failed_preserved",
+  "amended_pinned_native_paired_equivalence": "passed",
+  "tests_passed": 119,
+  "native_tests_passed": 7,
+  "lint_passed": true,
+  "typing_passed": true,
+  "outcome_report": {
+    "path": "docs/council/07_council_outcome.md",
+    "sha256": "bad87a19e705daf15e73bf5d3d8897b9a0b6199082678323d510dc01a321ab98"
+  },
+  "remaining_mapped_misses": [
+    "Esp2",
+    "Bbo",
+    "Cca2"
+  ],
+  "unmapped_reference": "Ghc2",
+  "coordinator_binding_evidence": {
+    "coordinator_final_bindings.json": "5269ccb9a56f699c8baa8241b81131d05adbe705cd8f937ed0e844d6b79d0a3a",
+    "coordinator_handoff_bindings.json": "2bbfad58ae29cc2463493ba0f825735aa0253d64ab0dd02d29a253fc0741878f",
+    "protection_verification_20260927T000259.json": "74688183d4c7da1dc52bc37088a51cc37e3ad9113741a2cd8568a12ff6289963"
+  }
+}

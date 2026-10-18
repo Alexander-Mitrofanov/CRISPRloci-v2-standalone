@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CRISPR Evolution Workbench">
+  <rect width="64" height="64" rx="14" fill="#102822"/>
+  <g transform="translate(13 11) skewX(-8)">
+    <rect width="8" height="31" rx="3" y="7" fill="#b5f080"/>
+    <rect width="8" height="39" rx="3" x="11" fill="#79d6b3"/>
+    <rect width="8" height="34" rx="3" x="22" y="5" fill="#f4bf5f"/>
+    <rect width="8" height="42" rx="3" x="33" y="1" fill="#f07862"/>
+  </g>
+</svg>

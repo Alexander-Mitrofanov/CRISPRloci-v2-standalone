@@ -1,0 +1,58 @@
+{
+  "schema": "crisprloci.module-council-report.v1",
+  "phase": "completed_before_implementation",
+  "frozen_at_utc": "2026-10-14T18:48:43.062973+00:00",
+  "scope_excludes": [
+    "CasAndra",
+    "CRISPRidentify-v2"
+  ],
+  "reports": {
+    "docs/module-council-2026-10-14.md": "1ff9ab1edb6052aa479b845c98b2de44ac6d5119dc76bd130b50f1be064b0224",
+    "docs/module-council-2026-10-14/01-crisprtracrrna.md": "9a2dff650c0c530f9c6db2591c8b58bf1bfb448e58c708740d21a0904e4f5424",
+    "docs/module-council-2026-10-14/02-spacerplacer.md": "fd2a51352710e22394ff8122227953ab8fb709590887884511b9ac15efa701d3",
+    "docs/module-council-2026-10-14/03-evor.md": "8099de63e69954fcf1661d52ff32f31a69613e968ab0a930b7216a5645b1c562",
+    "docs/module-council-2026-10-14/04-crisprleader.md": "1a9a3f1919c48b52e7ee1c5764044d2bca7cd5355202ae82d8f7bf0e2cabdd24",
+    "docs/module-council-2026-10-14/05-crisprrepeat.md": "78d7f49b7249d5d0c9690fad6a4bd5347fea7c26e8a8f926e24e7f95dd7c1148",
+    "docs/module-council-2026-10-14/06-crisprspacer.md": "40b5423dbdaf5ae293953b0730ff2555ef3d78ab56d4eca62af90383f424a859",
+    "docs/module-council-2026-10-14/07-crisprmap.md": "e4898f3ece0ac457d401575a9bf810e5decffdcfff1a6bef1e6c4db47db4b839",
+    "docs/module-council-2026-10-14/08-repeattyper.md": "af5ac87ed82d801186866450412ae8c9115364a533fe23438309680765878168",
+    "docs/module-council-2026-10-14/09-spacepharer.md": "379cd27ac3b61a9b04acfcf12f48c0c51861b4114afc9c8286d4ac4fe296a9bb",
+    "docs/module-council-2026-10-14/10-cctk.md": "2365b6065e56125de5599611eeed3e6a79c7faf6474ce2559772c74d1d0d133c",
+    "docs/module-council-2026-10-14/11-clinker.md": "59cfd50c81d8d3b8e6e55869981d3fe787095bc5c6070900a88fffd704be362d",
+    "docs/module-council-2026-10-14/12-isescan.md": "594eff9eedbaaa067751924ef49230b027e6d78cf69b677941455eaf7d57e0e2",
+    "docs/module-council-2026-10-14/13-defensefinder.md": "2ca502543859d9fd50541cbeda10e70303ab6909198fa4e67bb05c9ac5cd9db7",
+    "docs/module-council-2026-10-14/14-rnaalifold.md": "90011cb56587b5608020f34234201a489b8a204f3dbb40cd30f2ca2ff23111e8",
+    "docs/module-council-2026-10-14/15-phigaro.md": "fde1e64d69ec32f1fcdb58084771b4026cd76e66a4941dc688c6536d4286c8e6"
+  },
+  "initial_tool_pins": {
+    "CRISPRtracrRNA-v3": "9811f27d202582345bf54e5c34c911c269135992",
+    "SpacerPlacer": "0e4c22494829f8c3a3a7bf6b78203314651826c9",
+    "evOr": "5120465837e37acb0dc39baae7a71c5ad94d3843",
+    "CRISPRleader-v2": "b5310163835649cdd89b0e03afb2a90b5421d675",
+    "CRISPRrepeat": "602155c329681944d5aefad843b0b64663dc5c11",
+    "CRISPRspacer": "15298183a59b3027957a247d00323df759477f4e",
+    "CRISPRmap-v2": "4b35029a3600a983a7e3d0a63190377d60a31769",
+    "RepeatTyper": "d55ebf535f21591d44a0229fd809795ddc330cda",
+    "SpacePHARER": "4f264252846acef7e0d291209e3e5e3f6faf306c",
+    "CCTK": "c2f619fb3dde849a7874ca243b487d2e6af062f8",
+    "clinker-v2": "87dd54db5787725054fa2ea0f645e207a7374d07",
+    "ISEScan-v2": "74d7969e3eb7d3958a326cbf5ad65a03b6bbfa71",
+    "DefenseFinder-v2": "ff7c62f12051eaaa47e71d4829bd7a86ffbb7846",
+    "RNAalifold-v2": "d5bc9ffdc117896515db3c6cd73de2444d16b35a",
+    "Phigaro-v2": "b4f32844b83167afa3ee1b1d6dea994d487bd7ec"
+  },
+  "excluded_tool_pins": {
+    "CRISPRidentify-v2": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+    "CasAndra": "ba046f90242ac91dc075183ea51dcbedfac28484"
+  },
+  "initial_tool_lock_sha256": "e3d2720a68d7477fd5f0d0b40471c9e93612a76f847122ae9209bf58e28fb284",
+  "preexisting_files_checked": 1331,
+  "source_inventory_sha256": "49ec90194897927c3e04dd786433cd3827f53f86c79cf8044487f2b64696719b",
+  "baseline": {
+    "python_passed": 1414,
+    "python_skipped": 70,
+    "frontend_passed": 396,
+    "privacy_findings": 0,
+    "browser": "intercepted fixture API JSON handoff passed"
+  }
+}

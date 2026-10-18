@@ -1,0 +1,15 @@
+{
+  "protection_manifest.json": {
+    "files": 14902,
+    "bytes": 1394741877,
+    "mismatches": [],
+    "passed": true
+  },
+  "dependency_freeze_sha256.json": {
+    "files": 390,
+    "bytes": 10625851,
+    "mismatches": [],
+    "passed": true
+  },
+  "elapsed_seconds": 1.1291655430031824
+}

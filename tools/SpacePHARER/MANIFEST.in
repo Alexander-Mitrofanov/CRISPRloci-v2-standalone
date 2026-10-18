@@ -1,0 +1,14 @@
+include LICENCE.md THIRD_PARTY.md AGENTS.md
+recursive-include schemas *.json
+recursive-include docs *.md *.json
+include CMakeLists.txt requirements.lock requirements-test.lock
+include .dockerignore .gitignore .gitmodules Dockerfile
+include .github/ISSUE_TEMPLATE.md .github/SpacePHARER.png
+recursive-include src *
+recursive-include data *
+recursive-include lib *
+recursive-include tests *
+recursive-include examples *
+recursive-include util *.sh
+recursive-include scripts *.py
+global-exclude __pycache__ *.pyc

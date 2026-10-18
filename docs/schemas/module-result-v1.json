@@ -1,0 +1,1756 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CRISPRloci compact module result v1",
+  "description": "Common envelope and per-module data collections. Individual scientific records are deliberately open; independent scientific validation remains authoritative.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "module",
+    "status",
+    "complete"
+  ],
+  "properties": {
+    "schema": {
+      "const": {
+        "name": "crisprloci.module-result",
+        "version": "1.0.0"
+      }
+    },
+    "module": {
+      "enum": [
+        "array_compare",
+        "cas",
+        "defense_context",
+        "detection",
+        "insertion_context",
+        "leader",
+        "loci",
+        "locus_compare",
+        "orientation",
+        "prophage_context",
+        "protospacer",
+        "reconstruction",
+        "repeat_context",
+        "repeat_map",
+        "repeat_type",
+        "repeats",
+        "rna_family",
+        "spacer_association",
+        "tracrrna",
+        "viral_search"
+      ]
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "completed_no_eligible_groups"
+      ]
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object"
+    },
+    "reason": {
+      "const": "compact_export_unavailable"
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "complete": {
+          "const": true
+        }
+      },
+      "required": [
+        "data"
+      ],
+      "not": {
+        "required": [
+          "reason"
+        ]
+      }
+    },
+    {
+      "properties": {
+        "complete": {
+          "const": false
+        }
+      },
+      "required": [
+        "reason"
+      ],
+      "not": {
+        "required": [
+          "data"
+        ]
+      }
+    }
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "detection"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/detection"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "cas"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/cas"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "tracrrna"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/tracrrna"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "loci"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/loci"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "leader"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/leader"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "repeats"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/repeats"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "repeat_context"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/repeat_context"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "protospacer"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/protospacer"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "viral_search"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/viral_search"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "repeat_map"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/repeat_map"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "reconstruction"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/reconstruction"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "orientation"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/orientation"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "completed_no_eligible_groups"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "module": {
+            "enum": [
+              "orientation",
+              "reconstruction"
+            ]
+          },
+          "data": {
+            "properties": {
+              "groups": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "spacer_association"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/spacer_association"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "array_compare"
+          },
+          "complete": {
+            "const": true
+          }
+        },
+        "required": [
+          "module",
+          "complete"
+        ]
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/array_compare"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "locus_compare"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/locus_compare"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "prophage_context"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/prophage_context"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "insertion_context"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/insertion_context"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "defense_context"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/defense_context"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module": {
+            "const": "rna_family"
+          },
+          "complete": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "#/$defs/rna_family"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "detection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "score_semantics",
+        "categories",
+        "sources",
+        "arrays"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "score_semantics": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "arrays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "cas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "score_semantics",
+        "evaluated_gene_count",
+        "genes",
+        "cassettes"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "score_semantics": {
+          "type": "string"
+        },
+        "evaluated_gene_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "genes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cassettes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "tracrrna": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "score_semantics",
+        "method",
+        "model_type",
+        "sources",
+        "candidates"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "score_semantics": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "model_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "loci": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sources",
+        "detection",
+        "cas",
+        "tracrrna",
+        "flanks"
+      ],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "detection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coordinate_system",
+            "score_semantics",
+            "categories",
+            "arrays"
+          ],
+          "properties": {
+            "coordinate_system": {
+              "type": "string"
+            },
+            "score_semantics": {
+              "type": "string"
+            },
+            "categories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "arrays": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "cas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coordinate_system",
+            "score_semantics",
+            "evaluated_gene_count",
+            "genes",
+            "cassettes"
+          ],
+          "properties": {
+            "coordinate_system": {
+              "type": "string"
+            },
+            "score_semantics": {
+              "type": "string"
+            },
+            "evaluated_gene_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "genes": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "cassettes": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "tracrrna": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coordinate_system",
+            "score_semantics",
+            "method",
+            "model_type",
+            "candidates"
+          ],
+          "properties": {
+            "coordinate_system": {
+              "type": "string"
+            },
+            "score_semantics": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            },
+            "model_type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "candidates": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "flanks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coordinate_system",
+            "prediction_performed",
+            "context_semantics",
+            "flank_length",
+            "arrays",
+            "contexts"
+          ],
+          "properties": {
+            "coordinate_system": {
+              "type": "string"
+            },
+            "prediction_performed": {
+              "const": false
+            },
+            "context_semantics": {
+              "type": "string"
+            },
+            "flank_length": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "arrays": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "contexts": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "leader": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "prediction_performed",
+        "context_semantics",
+        "flank_length",
+        "sources",
+        "arrays",
+        "contexts"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "prediction_performed": {
+          "const": false
+        },
+        "context_semantics": {
+          "type": "string"
+        },
+        "flank_length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "arrays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "contexts": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "repeats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "support_semantics",
+        "molecule",
+        "orientation_policy",
+        "model",
+        "sources",
+        "classification",
+        "instances",
+        "folds"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "support_semantics": {
+          "type": "string"
+        },
+        "molecule": {
+          "type": "string"
+        },
+        "orientation_policy": {
+          "type": "string"
+        },
+        "model": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "classification": {
+          "type": "object"
+        },
+        "instances": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "folds": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "repeat_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "support_semantics",
+        "molecule",
+        "orientation_policy",
+        "model",
+        "sources",
+        "classification",
+        "instances",
+        "folds",
+        "context_semantics",
+        "arrays",
+        "contexts",
+        "consensus_folds"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "support_semantics": {
+          "type": "string"
+        },
+        "molecule": {
+          "type": "string"
+        },
+        "orientation_policy": {
+          "type": "string"
+        },
+        "model": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "classification": {
+          "type": "object"
+        },
+        "instances": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "folds": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "context_semantics": {
+          "type": "string"
+        },
+        "arrays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "contexts": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "consensus_folds": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "protospacer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "outcome",
+        "search_complete",
+        "reference",
+        "policy",
+        "targets",
+        "spacers",
+        "matches"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "search_complete": {
+          "type": "boolean"
+        },
+        "reference": {
+          "type": "object"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "spacers": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "matches": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "viral_search": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinate_system",
+        "retrieval_completeness",
+        "outcome",
+        "reference",
+        "policy",
+        "queries",
+        "subjects",
+        "matches"
+      ],
+      "properties": {
+        "coordinate_system": {
+          "type": "string"
+        },
+        "retrieval_completeness": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "object"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "queries": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "subjects": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "matches": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "repeat_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference",
+        "policy",
+        "references",
+        "results"
+      ],
+      "properties": {
+        "reference": {
+          "type": "object"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "reconstruction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "order_semantics",
+        "history_semantics",
+        "groups",
+        "excluded_arrays"
+      ],
+      "properties": {
+        "order_semantics": {
+          "type": "string"
+        },
+        "history_semantics": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "excluded_arrays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "orientation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "order_semantics",
+        "history_semantics",
+        "groups",
+        "excluded_arrays"
+      ],
+      "properties": {
+        "order_semantics": {
+          "type": "string"
+        },
+        "history_semantics": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "excluded_arrays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "tree_policy": {
+          "type": "string"
+        },
+        "bias_policy": {
+          "type": "object"
+        }
+      }
+    },
+    "spacer_association": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference",
+        "requested_fdr",
+        "calibration_status",
+        "calibration",
+        "groups",
+        "associations",
+        "counts",
+        "interpretation",
+        "occurrences",
+        "origin_semantics"
+      ],
+      "properties": {
+        "reference": {
+          "description": "Immutable reference identity. New runs expose bounded reference counts and source metadata; completed legacy runs retain their original small-panel inventory.",
+          "oneOf": [
+            {
+              "$ref": "#/$defs/association_reference_v1"
+            },
+            {
+              "$ref": "#/$defs/association_reference_v2"
+            }
+          ]
+        },
+        "requested_fdr": {
+          "type": "number"
+        },
+        "calibration_status": {
+          "enum": [
+            "estimated",
+            "unavailable",
+            "not_run"
+          ]
+        },
+        "calibration": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "associations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "counts": {
+          "type": "object"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "origin_semantics": {
+          "type": "string"
+        }
+      }
+    },
+    "array_compare": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool",
+        "options",
+        "submitted_sha256",
+        "sources",
+        "arrays",
+        "edges",
+        "components",
+        "isolates",
+        "counts",
+        "interpretation",
+        "origin_semantics",
+        "coordinate_system",
+        "score_semantics"
+      ],
+      "properties": {
+        "tool": {
+          "type": "object"
+        },
+        "options": {
+          "type": "object"
+        },
+        "submitted_sha256": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "arrays": {
+          "type": "array"
+        },
+        "edges": {
+          "type": "array"
+        },
+        "components": {
+          "type": "array"
+        },
+        "isolates": {
+          "type": "array"
+        },
+        "counts": {
+          "type": "object"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "origin_semantics": {
+          "type": "string"
+        },
+        "coordinate_system": {
+          "const": "1-based-inclusive-source-forward"
+        },
+        "score_semantics": {
+          "const": "uncalibrated-model-score"
+        }
+      }
+    },
+    "association_reference_v1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "engine_version",
+        "control_method",
+        "manifest_sha256",
+        "genomes"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "control_method": {
+          "const": "reversed_translated_orfs"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "genomes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "length",
+              "sha256"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 160
+              },
+              "length": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5000000
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "association_reference_v2": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "engine_version",
+        "control_method",
+        "manifest_sha256",
+        "genome_count",
+        "total_bases",
+        "scope",
+        "source"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "control_method": {
+          "const": "reversed_translated_orfs"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "genome_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "total_bases": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000000
+        },
+        "scope": {
+          "enum": [
+            "targeted_panel",
+            "broad_phage_reference"
+          ]
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "collection",
+            "release",
+            "retrieved_at",
+            "selection_policy"
+          ],
+          "properties": {
+            "collection": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "release": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "retrieved_at": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "selection_policy": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          }
+        }
+      }
+    },
+    "locus_compare": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cas_context",
+        "tool",
+        "coordinate_system",
+        "input_sha256",
+        "features_sha256",
+        "options",
+        "limits",
+        "sources",
+        "loci",
+        "links",
+        "evaluated_protein_pairs",
+        "alignment_cells",
+        "interpretation",
+        "counts"
+      ],
+      "properties": {
+        "cas_context": {
+          "type": "array"
+        },
+        "tool": {
+          "type": "object"
+        },
+        "coordinate_system": {
+          "type": "string"
+        },
+        "input_sha256": {
+          "type": "string"
+        },
+        "features_sha256": {
+          "type": "string"
+        },
+        "options": {
+          "type": "object"
+        },
+        "limits": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "loci": {
+          "type": "array"
+        },
+        "links": {
+          "type": "array"
+        },
+        "evaluated_protein_pairs": {
+          "type": "integer"
+        },
+        "alignment_cells": {
+          "type": "integer"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "counts": {
+          "type": "object"
+        }
+      }
+    },
+    "prophage_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool",
+        "coordinate_system",
+        "input_sha256",
+        "reference",
+        "parameters",
+        "sources",
+        "genes",
+        "regions",
+        "interpretation",
+        "source_inventory_complete",
+        "source_arrays",
+        "source_spacers",
+        "spacer_matches",
+        "search_counts",
+        "counts",
+        "search_policy"
+      ],
+      "properties": {
+        "tool": {
+          "type": "object"
+        },
+        "coordinate_system": {
+          "type": "string"
+        },
+        "input_sha256": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "object"
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "genes": {
+          "type": "array"
+        },
+        "regions": {
+          "type": "array"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "source_inventory_complete": {
+          "type": "boolean"
+        },
+        "source_arrays": {
+          "type": "array"
+        },
+        "source_spacers": {
+          "type": "array"
+        },
+        "spacer_matches": {
+          "type": "array"
+        },
+        "search_counts": {
+          "type": "object"
+        },
+        "counts": {
+          "type": "object"
+        },
+        "search_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scope",
+            "query_categories",
+            "query_alphabet",
+            "min_query_length",
+            "max_query_length",
+            "method",
+            "substitutions",
+            "gaps",
+            "strands",
+            "palindromic_strand",
+            "array_exclusion",
+            "array_padding",
+            "search_complete",
+            "results_truncated",
+            "pam",
+            "targeting_activity",
+            "short_source_matching"
+          ],
+          "properties": {
+            "scope": {
+              "const": "same-record"
+            },
+            "query_categories": {
+              "const": [
+                "Bona-fide",
+                "Possible"
+              ]
+            },
+            "query_alphabet": {
+              "const": "ACGT"
+            },
+            "min_query_length": {
+              "const": 16
+            },
+            "max_query_length": {
+              "const": 1000
+            },
+            "method": {
+              "const": "exhaustive_full_length_exact"
+            },
+            "substitutions": {
+              "const": 0
+            },
+            "gaps": {
+              "const": 0
+            },
+            "strands": {
+              "const": "both"
+            },
+            "palindromic_strand": {
+              "const": "both"
+            },
+            "array_exclusion": {
+              "const": "overlap_with_all_reported_arrays"
+            },
+            "array_padding": {
+              "const": 0
+            },
+            "search_complete": {
+              "const": true
+            },
+            "results_truncated": {
+              "const": false
+            },
+            "pam": {
+              "const": "not_evaluated"
+            },
+            "targeting_activity": {
+              "const": "not_assessed"
+            },
+            "short_source_matching": {
+              "const": "included_independently_of_prophage_eligibility"
+            }
+          }
+        }
+      }
+    },
+    "insertion_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool",
+        "coordinate_system",
+        "input_sha256",
+        "sources",
+        "options",
+        "models",
+        "elements",
+        "interpretation",
+        "cas_context",
+        "counts"
+      ],
+      "properties": {
+        "tool": {
+          "type": "object"
+        },
+        "coordinate_system": {
+          "type": "string"
+        },
+        "input_sha256": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "options": {
+          "type": "object"
+        },
+        "models": {
+          "type": "object"
+        },
+        "elements": {
+          "type": "array"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "cas_context": {
+          "type": "array"
+        },
+        "counts": {
+          "type": "object"
+        }
+      }
+    },
+    "defense_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cas_context",
+        "model",
+        "policy",
+        "counts",
+        "sources",
+        "genes",
+        "systems",
+        "components",
+        "hits"
+      ],
+      "properties": {
+        "cas_context": {
+          "type": "array"
+        },
+        "model": {
+          "type": "object"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "counts": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "genes": {
+          "type": "array"
+        },
+        "systems": {
+          "type": "array"
+        },
+        "components": {
+          "type": "array"
+        },
+        "hits": {
+          "type": "array"
+        }
+      }
+    },
+    "rna_family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "molecule",
+        "policy",
+        "engine",
+        "aligner",
+        "counts",
+        "sources",
+        "alignment",
+        "columns",
+        "fold",
+        "pairs",
+        "probabilities",
+        "warnings"
+      ],
+      "properties": {
+        "molecule": {
+          "type": "string"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "engine": {
+          "type": "object"
+        },
+        "aligner": {
+          "type": "object"
+        },
+        "counts": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array"
+        },
+        "alignment": {
+          "type": "array"
+        },
+        "columns": {
+          "type": "array"
+        },
+        "fold": {
+          "type": "object"
+        },
+        "pairs": {
+          "type": "array"
+        },
+        "probabilities": {
+          "type": "array"
+        },
+        "warnings": {
+          "type": "array"
+        }
+      }
+    }
+  }
+}

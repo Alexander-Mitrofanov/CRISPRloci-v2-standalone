@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this implementation and the original CRISPRmap publications when using their historical reference."
+title: "CRISPRmap-v2: offline prokaryotic repeat reference mapping (2026 implementation)"
+version: 2.1.0a1
+type: software
+authors:
+  - family-names: Mitrofanov
+    given-names: Alexander
+repository-code: "https://github.com/Alexander-Mitrofanov/CRISPRmap-v2"
+license: MIT

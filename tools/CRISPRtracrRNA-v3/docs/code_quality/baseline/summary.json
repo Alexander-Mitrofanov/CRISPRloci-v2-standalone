@@ -1,0 +1,23 @@
+{
+  "python": "3.12.7",
+  "unit": {
+    "passed": 112,
+    "deselected": 7
+  },
+  "native_integration": {
+    "passed": 7,
+    "deselected": 112,
+    "configuration": "local.reproducible.toml"
+  },
+  "ruff": "passed",
+  "format": "passed",
+  "mypy": "passed",
+  "build": "sdist and wheel built without isolation",
+  "sdist_unit": {
+    "passed": 112,
+    "deselected": 7
+  },
+  "snapshot": "/tmp/tracrrna-quality-baseline",
+  "protected_metadata_count": 113233,
+  "wheel_smoke": "Installed into isolated /tmp target without dependencies; module --version returned 3.0.0 outside checkout"
+}

@@ -1,0 +1,87 @@
+{
+  "archives": {
+    "baseline/source.zip": "acc7437bf034dfcf818d3abfeb4a141a69b8ac0c3990796c00b6a61a54604918",
+    "pinned_native_python_source.zip": "431d5a7ba69eec4f83d75c206c0af4e79b2090d5b17ee3cd3eec90d18eda3b43",
+    "current_default_pinned_native_source.zip": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe",
+    "current_experimental_pinned_native_source.zip": "126cfe22a36523e87d2ef217febd38fbb35626630f3a8cdf1a11ebf88ce422fe"
+  },
+  "stages": {
+    "archived_detector_pinned_native": {
+      "run_manifest_sha256": "20fa8388219d3d9d74d85b06c4b86d25e83d943c123e3f9db0fc49dc77d89aea",
+      "source_count": 12,
+      "matching_complete_source_archives": [
+        "baseline/source.zip"
+      ],
+      "live_source_matches": null
+    },
+    "current_default_pinned_native": {
+      "run_manifest_sha256": "1c52e87079f00b7475d8a106fc386f85a84202eb5045a1fe6a41065331d9c7aa",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "current_experimental_pinned_native": {
+      "run_manifest_sha256": "640b2d2d87739c0e93aa5bbe09584ff084003b78701b62e7bd0745905c01efb0",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "genomic_default": {
+      "run_manifest_sha256": "67ed9fb041acdabe1a3c433b45e9baa1dad61fb08ba9eb83d956609a74ac6937",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "genomic_experimental": {
+      "run_manifest_sha256": "f4456be998c2f9a64b7caaf757f16f95f0b542f1d26452461048658892abcfb2",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "conditional_dinucleotide_1": {
+      "run_manifest_sha256": "f5e3f8c313e9284d38b2d64117ad44fb916724a44674df0a272c720803500fbf",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "conditional_dinucleotide_2": {
+      "run_manifest_sha256": "1dc23b5cf0eceb9304e65f4e797ec473054fbbed6d81cf64f544bc54f18346da",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    },
+    "conditional_derangement": {
+      "run_manifest_sha256": "4ae03dfc131be6970bc7186d0483ea1d5989ea6e61d2d9171d8b279d1d3ff0b0",
+      "source_count": 13,
+      "matching_complete_source_archives": [
+        "current_default_pinned_native_source.zip",
+        "current_experimental_pinned_native_source.zip"
+      ],
+      "live_source_matches": true
+    }
+  },
+  "archived_harness": {
+    "file": "scripts/council_archived_panel.py",
+    "sha256": "57dbcc07e4e6cc32e9265262195b3f5adba500ea8ca7942bf3cc0b4b4d1cae70",
+    "matching_pre_run_archive": "pinned_native_python_source.zip"
+  },
+  "note": "Archive bindings verify retained exact versions for all recorded run source hashes. Archived Python uses the original baseline archive; current stages match current retained source."
+}

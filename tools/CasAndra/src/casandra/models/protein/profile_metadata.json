@@ -1,0 +1,8043 @@
+{
+  "C25_CRISPR_T_1": {
+    "alignment_sha256": "b0e8f83a33ca95517bc6ff6f58238760bc124f76244c99dfd10e271ad3636e1f",
+    "families": [
+      "CRISPR-T",
+      "CRISPR-T"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_CRISPR_T_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-B",
+    "training_sequences": 6
+  },
+  "C25_CRISPR_T_2": {
+    "alignment_sha256": "c53e34e3820d0f47ff3b9c9d13ebb04c227e450ee02f5c3787a4c69f1e5e21d6",
+    "families": [
+      "CRISPR-T",
+      "CRISPR-T"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_CRISPR_T_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-B",
+    "training_sequences": 3
+  },
+  "C25_Calpl_1": {
+    "alignment_sha256": "755472e6fda2ef95c74dd014af96257e31190ee5427c0fdb67331920fa6b1dd1",
+    "families": [
+      "CalpI/Crn5",
+      "SAVED"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Calpl_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Cam1_1": {
+    "alignment_sha256": "bde5ea69972bd7ec2d87d3c05a5d3032c0104ce663b7d81f49a242f77e16bc13",
+    "families": [
+      "Cam2",
+      "Cam2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cam1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 7
+  },
+  "C25_Cam2_1": {
+    "alignment_sha256": "780c16d753053dc6c0e749bb4f1485ba260b64bd56f17f0e19c51b15d102bfe0",
+    "families": [
+      "Cam1",
+      "CARF8"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cam2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 9
+  },
+  "C25_Cam3_1": {
+    "alignment_sha256": "ad9651f0e58eeb2f5b82d08ea960800a4f466384f1888d73988731e51f8be368",
+    "families": [
+      "Cam3",
+      "Cam3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cam3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 11
+  },
+  "C25_Cami_1": {
+    "alignment_sha256": "aed99ef46185ebb42dd1efac1870ac00172668a54b8ec61fe762ef1828e6d379",
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cami_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Cami_2": {
+    "alignment_sha256": "ddf2ea3135ba03e7fbabc4c782ceb0353312a8332af71ae08ee34b466c30aeb5",
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cami_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 53
+  },
+  "C25_Cami_3": {
+    "alignment_sha256": "2e4cf922f721b140b2df03cc7c89ebfeca5dce4c82a684f9ac88aeca0b0ef0af",
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cami_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 56
+  },
+  "C25_Cami_4": {
+    "alignment_sha256": "cd41aee397aed085e14bcca528ad3c0fb985d498884c07720c0fa3234124dff4",
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cami_4",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Cas10_1": {
+    "alignment_sha256": "c570a37717142fe3cfdb434578c8471c67d3f2f06fd6b1400b4bb1c6577600f0",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 371
+  },
+  "C25_Cas10_10": {
+    "alignment_sha256": "2d4a70830483ca2d236650fbb1ba4fc70d83431f28928eda0f77d5f6e611e4b0",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 11
+  },
+  "C25_Cas10_2": {
+    "alignment_sha256": "4b4795fde19ef6d14d30ea56b4a7933f0c3ff500e0af38a5045614b881c9c758",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 363
+  },
+  "C25_Cas10_3": {
+    "alignment_sha256": "3a53b91b368507718c4bb32e0c611005d9a57df6031b0bc00bbbcf88779ce057",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 349
+  },
+  "C25_Cas10_4": {
+    "alignment_sha256": "82a6cbe867b9b4ceb9113b3bce69626d67480a9a3f9517d6231017e8faa42769",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 128
+  },
+  "C25_Cas10_5": {
+    "alignment_sha256": "41406847e147fb16a4ec32276b406d1b4cb4fbf2f23071776300ed39506b07dd",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-C",
+    "training_sequences": 57
+  },
+  "C25_Cas10_6": {
+    "alignment_sha256": "e95655c807cbd82f8139321f2328b4ebe02030a26e8f4f55fc8b911f580da60a",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 52
+  },
+  "C25_Cas10_7": {
+    "alignment_sha256": "b315647acecd033dcf8c6bb7900b199f0d86b982276df22a935e3c11ab44df55",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 27
+  },
+  "C25_Cas10_8": {
+    "alignment_sha256": "edf360680e29fd3e1f818732a3c6853e20a56c21b419f19afb2aa6ad5518e95c",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-F,CAS-III-H",
+    "training_sequences": 16
+  },
+  "C25_Cas10_9": {
+    "alignment_sha256": "7e268dfe4938bad7518ae3892468d625c0623d48e9a8846a29387ea89cf9a7bc",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 15
+  },
+  "C25_Cas10d_1": {
+    "alignment_sha256": "3ce16392b575c710e44fe59b7d79e1eadbc29f48eb5885b999dfe1b2704bd3ea",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 20
+  },
+  "C25_Cas10d_2": {
+    "alignment_sha256": "f4b8fcc938d1645bab979c85cf19bab3195a32901d97eae2ae12fc7f14564018",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 14
+  },
+  "C25_Cas10d_3": {
+    "alignment_sha256": "e4e189f9ea031982ce67a47e25345f50a01ad0519144f47ad7b85b3d829fdc75",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 10
+  },
+  "C25_Cas10d_4": {
+    "alignment_sha256": "168763d95dc3e8d3c8439aabce402c3b88fe9ae08c1b6fa2eca713a0cc91212a",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 5
+  },
+  "C25_Cas10d_5": {
+    "alignment_sha256": "2e0f672466e082a6b6d9d30bea398e232d770236e70d8efb7251aa0cd5d2a007",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 4
+  },
+  "C25_Cas10d_6": {
+    "alignment_sha256": "93ed62cfc0b60d7d78079c481927a4bec608bfa9c0ebf1cb1a5e098c41c5793d",
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas10d_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 162
+  },
+  "C25_Cas10i_1": {
+    "alignment_sha256": "905bccefb4b556cc61783f5bbf5f050d68e5fd00ed92932f1e0b082c77af58aa",
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-I"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas10i_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-I",
+    "training_sequences": 104
+  },
+  "C25_Cas11_III_1": {
+    "alignment_sha256": "7a6ebbe8e73fcdd7599ab2968e040a1bf206ae63dd47ee5bd61afc4b29a07b0f",
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 401
+  },
+  "C25_Cas11_III_10": {
+    "alignment_sha256": "e0c4ab36ec8a4037ad4bd0a65700a1c96c3118df9533060c38552d529729cb33",
+    "families": [
+      "cas11_IIIAD",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 8
+  },
+  "C25_Cas11_III_11": {
+    "alignment_sha256": "bdd066eefa0499ce77c60e4e5c24c49aca07cdd7c6878cc3cbd5b0bacccdf0c8",
+    "families": [
+      "cas11_IIIA",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_11",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 7
+  },
+  "C25_Cas11_III_12": {
+    "alignment_sha256": "a4167d80fe5179bb48c57ded0ae0dc372f1d66c084d6c1ca211448ca69afa3aa",
+    "families": [
+      "cas11_IIIF",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_12",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-F",
+    "training_sequences": 7
+  },
+  "C25_Cas11_III_13": {
+    "alignment_sha256": "8c52d7e7b42143192575e98a7ba8b123bb8fa79664605ca4d619fce7ff5bf16a",
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_13",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 4
+  },
+  "C25_Cas11_III_2": {
+    "alignment_sha256": "5092d282d6393fc24bcbc67ba09b05928ba9aedb7cacef8b61e8649e18aac13d",
+    "families": [
+      "cas11_IIIAD",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 329
+  },
+  "C25_Cas11_III_3": {
+    "alignment_sha256": "bef0694eb20b5d343724e9c47de2156884052e8954117371804792a5e5e40d89",
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 207
+  },
+  "C25_Cas11_III_4": {
+    "alignment_sha256": "5690cbd38ed4d90f10c4bbf201d91ccf71ad9b1dbd9d45a7bc7e786802b51fbf",
+    "families": [
+      "cas11_IIIC",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-C",
+    "training_sequences": 95
+  },
+  "C25_Cas11_III_5": {
+    "alignment_sha256": "c692a9e42f65ecc5cb4f44f6b857267494efa917234a3369c9e60f87f7b083ff",
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 89
+  },
+  "C25_Cas11_III_6": {
+    "alignment_sha256": "9eb776a5b3f0023c4cabc8c3615946e521a622a56bbfb4ca17a7ca2a7ecff0e6",
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 63
+  },
+  "C25_Cas11_III_7": {
+    "alignment_sha256": "626f08cb9b77f82e9a47836f4fde324d8d99299bc54f16e1e3499b9557c1a6d5",
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 16
+  },
+  "C25_Cas11_III_8": {
+    "alignment_sha256": "275505f10d064d810a58cf3eaec5b0bf6f776f967b833e5be225daadae045893",
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 16
+  },
+  "C25_Cas11_III_9": {
+    "alignment_sha256": "1880d8fdf00221a4a832e9918b4f48c26b9eb5f9ab1721772cc8765fa8c13cdb",
+    "families": [
+      "cas11_IIIF",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_III_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-F",
+    "training_sequences": 14
+  },
+  "C25_Cas11_IVC_1": {
+    "alignment_sha256": "030fb8b0d50b1a82b52071559ae02d7d1655d96ad29676a6f736428108e98c20",
+    "families": [
+      "cas11_IVC",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-C"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_IVC_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-C",
+    "training_sequences": 4
+  },
+  "C25_Cas11_IV_1": {
+    "alignment_sha256": "7560779c41d52554494cfdb367beb63535f9239049717f43f2287ad5c7127902",
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_IV_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 44
+  },
+  "C25_Cas11_IV_2": {
+    "alignment_sha256": "24a6f0d455a887b8a42d7abd8b5471f1ddb74bf92814023dd2eb41197e8d4639",
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_IV_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 8
+  },
+  "C25_Cas11_IV_3": {
+    "alignment_sha256": "cc65355a3a27a42f69a0ecd053e71120a84cdbe45580c7cd433b88c7d54d3602",
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_IV_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 9
+  },
+  "C25_Cas11_IV_4": {
+    "alignment_sha256": "6a2bc8be38573a439f6db6fc7549cf92b20300573a7d32f47ac3c4c1942eac95",
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas11_IV_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 4
+  },
+  "C25_Cas11a_1": {
+    "alignment_sha256": "7c22779937ca1d9bd3018a2a882ddada744a128b70066f71882778d98fca9553",
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11a_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 71
+  },
+  "C25_Cas11a_2": {
+    "alignment_sha256": "5b16c96edf2fc1c4d4e70be73aa332ab920370f53a4a6300988154d7e72747ef",
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11a_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 41
+  },
+  "C25_Cas11a_3": {
+    "alignment_sha256": "59c7835824f0e23dc5d56ce96a77f67d0f72283ec5bce29cf708b03972980aab",
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11a_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 12
+  },
+  "C25_Cas11b_1": {
+    "alignment_sha256": "3e19c217a1b1353543d79f2ee8b327f75842820a94af7d9e06d5878dced803d7",
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11b_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 44
+  },
+  "C25_Cas11b_2": {
+    "alignment_sha256": "d321be2715629c1a21259ef5fbb12a195f0fda061d3c8b16eb251285f7de8426",
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11b_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 17
+  },
+  "C25_Cas11b_3": {
+    "alignment_sha256": "85678e785bc58bf01e6721805947aff5762c40d06e751f13d3dd3d8f13e80591",
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11b_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 9
+  },
+  "C25_Cas11b_3__kira20260915": {
+    "alignment_sha256": "34279190a45de2d38ba03cbef7a88c4ff27ab6bfc20db33764c77868d9e98b82",
+    "families": [
+      "cas11"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas11b_3",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 17
+  },
+  "C25_Cas11b_4": {
+    "alignment_sha256": "b611f00cc5a0a0daf173a55b2169dce3937acf4a96159b48c7cb9ff41c531930",
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11b_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas11d_1": {
+    "alignment_sha256": "acb80c761023046bcecc8f4fa2382b139a32c0ed270df0ddfbf4ad197aa983cc",
+    "families": [
+      "cas11d",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11d_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 4
+  },
+  "C25_Cas11d_2": {
+    "alignment_sha256": "eae2c53980ee9c28b18ede050f254929402c24ea66c73c7071b1afec06c161b7",
+    "families": [
+      "cas11d",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11d_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 6
+  },
+  "C25_Cas11e_1": {
+    "alignment_sha256": "50c13f2e5b051b91bb9914a376909272581cc30b55fe1a86c1b00fee2951f43c",
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11e_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 531
+  },
+  "C25_Cas11e_2": {
+    "alignment_sha256": "fb959abafddb0ddb8533e9d0794940b1061bf94178594b4d83ad910ee9b17b4e",
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11e_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 426
+  },
+  "C25_Cas11e_3": {
+    "alignment_sha256": "f814a30c2914835cb5528a05dd920f60e1701a292c943e314ba64b90d56869b2",
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas11e_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 118
+  },
+  "C25_Cas12_A1_1": {
+    "alignment_sha256": "c8ecc11fb6eb13ec2354e928e92d4aa74d1ffc508c49d55ec5756adfa18d653a",
+    "families": [
+      "cas12a1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_A1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-A1",
+    "training_sequences": 188
+  },
+  "C25_Cas12_A1_2": {
+    "alignment_sha256": "2df8cb2dff0858b1034b29d4907b4896639450c8bd00b939209a909211aace5c",
+    "families": [
+      "cas12a1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_A1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-A1",
+    "training_sequences": 61
+  },
+  "C25_Cas12_A2_1": {
+    "alignment_sha256": "b23f87e2f17bc28e42c38cd4bf63e55d051dd36eaada9d84428abef0ea472337",
+    "families": [
+      "cas12a2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_A2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-A2",
+    "training_sequences": 71
+  },
+  "C25_Cas12_A2_2": {
+    "alignment_sha256": "c1ea7736d71306c838a6b4726aacaf1fe9517c0f1e588aafd92b0f99dd087b0d",
+    "families": [
+      "cas12a2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_A2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-A2",
+    "training_sequences": 20
+  },
+  "C25_Cas12_B1_1": {
+    "alignment_sha256": "31e7dd4c58cde61f91029791b7b0616560417640c4120e86d8798e1bb3447d67",
+    "families": [
+      "cas12b1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_B1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-B1",
+    "training_sequences": 91
+  },
+  "C25_Cas12_B1_2": {
+    "alignment_sha256": "30c40edddb430f6a0ec86ff62e4aa77e25dcafa4772079251aa27f7f0a078461",
+    "families": [
+      "cas12b1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_B1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-B1",
+    "training_sequences": 90
+  },
+  "C25_Cas12_B2_1": {
+    "alignment_sha256": "17233eeccf22a117d9e225a513297251b0803e284dc6c1ffb11045f9d3db7e38",
+    "families": [
+      "cas12b2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_B2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-B2",
+    "training_sequences": 10
+  },
+  "C25_Cas12_B2_2": {
+    "alignment_sha256": "af32d2532a4994dc5a53f0adfd96d55abb2d57d317e92202ccb9625f085e6f65",
+    "families": [
+      "cas12b2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_B2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-B2",
+    "training_sequences": 10
+  },
+  "C25_Cas12_C_1": {
+    "alignment_sha256": "a4a86bec16e20b5914a4ad73cf3bd69e1cc1688d8afacffdc877c42d525a5d48",
+    "families": [
+      "cas12c",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-C"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_C_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-C",
+    "training_sequences": 25
+  },
+  "C25_Cas12_C_2": {
+    "alignment_sha256": "1d7566992daa11f60a13bfb0d53c8c5d4289bc2c6eea8d96d4448326f4284b66",
+    "families": [
+      "cas12c",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-C"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_C_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-C",
+    "training_sequences": 25
+  },
+  "C25_Cas12_D_1": {
+    "alignment_sha256": "bd0566449b7eedbc83c9140c8354a392fd7b4ab91408e2d0d44f9413e179322e",
+    "families": [
+      "cas12d",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-D"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_D_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-D",
+    "training_sequences": 15
+  },
+  "C25_Cas12_D_2": {
+    "alignment_sha256": "c958b06a42c43cf8601d103ee1c55975a5df90f017833697570c3af39ea71bb0",
+    "families": [
+      "cas12d",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-D"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_D_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-D",
+    "training_sequences": 15
+  },
+  "C25_Cas12_E1_1": {
+    "alignment_sha256": "57fe17bb12bdc9c5e8170353d11ba89373a7d577cd136dd8ec0fab5d0aa7f5ff",
+    "families": [
+      "cas12e",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_E1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-E1",
+    "training_sequences": 2
+  },
+  "C25_Cas12_E1_2": {
+    "alignment_sha256": "1fb20007ea9255979f4ffa47c4d9b46e502f728ce44973265855b41b57891122",
+    "families": [
+      "cas12e1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_E1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-E1",
+    "training_sequences": 3
+  },
+  "C25_Cas12_E2_1": {
+    "alignment_sha256": "ac31d5a69b09457e5c86209dea42a37d53090b7ebfe06fea2b768c868f33aa3a",
+    "families": [
+      "cas12e2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_E2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-E2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_E2_2": {
+    "alignment_sha256": "055bef1e794fa3edcf7a1b96ed76f001d7d8f458536a8362975af1e86d4f14cf",
+    "families": [
+      "cas12e2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_E2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-E2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_F01_1": {
+    "alignment_sha256": "5ec2958beeb3c0cbf44e5fe04bc74b8938c8fc799f9983a9c0b85fa6b4bf1a10",
+    "families": [
+      "cas12f01",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F01_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F01",
+    "training_sequences": 57
+  },
+  "C25_Cas12_F01_2": {
+    "alignment_sha256": "4be9c6c449d5c7dd71a0d073db2a4e0092944c5274e99563e15e36574b9ad568",
+    "families": [
+      "cas12f01",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F01_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F01",
+    "training_sequences": 57
+  },
+  "C25_Cas12_F02_1": {
+    "alignment_sha256": "0bc75ec73c51761d909445f89e367ac4505485efc5f1f34868574f8b68fb1aba",
+    "families": [
+      "cas12f02",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F02_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 14
+  },
+  "C25_Cas12_F02_2": {
+    "alignment_sha256": "fb95d1014ef6b1499a0caf9dcd86b9c79a86845657c70a939d1ff2ac9e783cf1",
+    "families": [
+      "cas12f02-1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F02_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 8
+  },
+  "C25_Cas12_F02_3": {
+    "alignment_sha256": "05563b90ab4528e58b8994c7a4505522f71895689c388822638ee304c2a43893",
+    "families": [
+      "cas12f02-2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F02_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 6
+  },
+  "C25_Cas12_F03_1": {
+    "alignment_sha256": "cc386fab9b68164432326285025bed2f5481a48259bbebddc7a491c44c96d690",
+    "families": [
+      "cas12f03",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F03_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F03",
+    "training_sequences": 2
+  },
+  "C25_Cas12_F03_2": {
+    "alignment_sha256": "75b6dcf5c589cc01364512ff72ffcd5ce02fb42d876fb89b9d866e1917df319a",
+    "families": [
+      "cas12f03",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F03_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F03",
+    "training_sequences": 2
+  },
+  "C25_Cas12_F04_1": {
+    "alignment_sha256": "a1d39cf3935a24f051019eddeed6e587a06ff585961063cddf41b8d908433107",
+    "families": [
+      "cas12f04",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F04_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F04",
+    "training_sequences": 67
+  },
+  "C25_Cas12_F04_2": {
+    "alignment_sha256": "21a0ddd1c9123fa32de7d7f35d6efb11e5f9459ff349e39d6832e7ef8f158c70",
+    "families": [
+      "cas12f04",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F04_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F04",
+    "training_sequences": 67
+  },
+  "C25_Cas12_F05_1": {
+    "alignment_sha256": "c9746b2e8ac375958a90fd95b44ca72a6ffed1eac475ab25a2bde6c6afceea9a",
+    "families": [
+      "cas12f05",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F05_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F05",
+    "training_sequences": 36
+  },
+  "C25_Cas12_F05_2": {
+    "alignment_sha256": "3a93354f7746f4887f8496054466fb5c45ce4ea503d9cfecade68ba16e755e97",
+    "families": [
+      "cas12f05",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F05_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F05",
+    "training_sequences": 35
+  },
+  "C25_Cas12_F06_1": {
+    "alignment_sha256": "e999686fb9cd92ca64a0157cd546133ce5e5014482fdf3e14ad00f1622717bd1",
+    "families": [
+      "cas12f06",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F06_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F06",
+    "training_sequences": 6
+  },
+  "C25_Cas12_F07_1": {
+    "alignment_sha256": "d4b3e8115e80188604bc2f36c8af35f50153903f80794e193d179effbc06dfed",
+    "families": [
+      "cas12f07",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F07_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F07",
+    "training_sequences": 46
+  },
+  "C25_Cas12_F07_2": {
+    "alignment_sha256": "c891a9792484b011d0be567a6ea1307a4ac934de9b0a9520f2783306fe114c43",
+    "families": [
+      "cas12f07",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F07_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F07",
+    "training_sequences": 29
+  },
+  "C25_Cas12_F08_1": {
+    "alignment_sha256": "a79b6352fd0cf755d16cd221e8f7a0951a80e3fbd788a63f3a4c45dc3a9bc953",
+    "families": [
+      "cas12f08",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F08_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F08",
+    "training_sequences": 177
+  },
+  "C25_Cas12_F08_2": {
+    "alignment_sha256": "a31953ea6a04eae0f6808f75b3538b881cf0f5c34b111a9d7f47cd2ebcfa2e8a",
+    "families": [
+      "cas12f08",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F08_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F08",
+    "training_sequences": 8
+  },
+  "C25_Cas12_F09_1": {
+    "alignment_sha256": "a101f7dfed797df819f83b26c5a1c4af60dec50e82f28967c0f7a11261ccb050",
+    "families": [
+      "cas12f09",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F09_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F09",
+    "training_sequences": 303
+  },
+  "C25_Cas12_F09_2": {
+    "alignment_sha256": "9cefb864442d588e00784cba20c80f8fae329378e032b1c36647690d5f72e52f",
+    "families": [
+      "cas12f09",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F09_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F09",
+    "training_sequences": 181
+  },
+  "C25_Cas12_F10_1": {
+    "alignment_sha256": "7366341e1ddd30b5dcb2887dbf639bd419709ecf7b11782a71324a162b033b14",
+    "families": [
+      "cas12f10",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F10_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F10",
+    "training_sequences": 52
+  },
+  "C25_Cas12_F10_2": {
+    "alignment_sha256": "30037187e4ffa89a766be24978863c0b66c8b8b01379c44a6047c541c78b2ee8",
+    "families": [
+      "cas12f10",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F10_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F10",
+    "training_sequences": 39
+  },
+  "C25_Cas12_F11_1": {
+    "alignment_sha256": "356e2f1d52ccb378d777df56d08defb98b525f5c87e92874f5a90f58f1c93e71",
+    "families": [
+      "cas12f11",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F11_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F11",
+    "training_sequences": 38
+  },
+  "C25_Cas12_F11_2": {
+    "alignment_sha256": "2c260cf91f5e16a5c807b4b520ad68ad42ab158d4b67716c075baeb099f9a7fc",
+    "families": [
+      "cas12f11",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F11_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F11",
+    "training_sequences": 27
+  },
+  "C25_Cas12_F12_1": {
+    "alignment_sha256": "301f7d65f2e65b069d6c2ade2ab9532bae594b607678e8ac7653e22017ecdf76",
+    "families": [
+      "cas12f12",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F12_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F12",
+    "training_sequences": 35
+  },
+  "C25_Cas12_F12_2": {
+    "alignment_sha256": "971d21232f3fbbc200714a631aad9e8c78b5a8c48130508e6c237eb1f143f3fe",
+    "families": [
+      "cas12f12",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F12_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F12",
+    "training_sequences": 24
+  },
+  "C25_Cas12_F13_1": {
+    "alignment_sha256": "22ad64f7addcd83cd63c3bdb9c7df945cea0d2fdb7be8dc6dce60d1358418b1d",
+    "families": [
+      "cas12f13",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F13_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F13",
+    "training_sequences": 535
+  },
+  "C25_Cas12_F13_2": {
+    "alignment_sha256": "825c3f9d46a7157d7c08016fb03d66d9029b312333ad61a41b52878923b879e8",
+    "families": [
+      "cas12f13",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_F13_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-F13",
+    "training_sequences": 292
+  },
+  "C25_Cas12_G_1": {
+    "alignment_sha256": "9fcb8607669b8593b40a6253ff2827010d16a3a6c26b7b44692ef47e638d185d",
+    "families": [
+      "cas12g",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-G"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_G_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-G",
+    "training_sequences": 7
+  },
+  "C25_Cas12_G_2": {
+    "alignment_sha256": "1cb0c06ead0c741e3bcf6c1661c2861a33cb7db2c2490cab0015aec0ec145d12",
+    "families": [
+      "cas12g",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-G"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_G_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-G",
+    "training_sequences": 7
+  },
+  "C25_Cas12_H1_1": {
+    "alignment_sha256": "063172c0fef2896d338c7611cd0840074135a2c9a1d87d8e90f36cd1ac09ed33",
+    "families": [
+      "cas12h1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_H1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-H1",
+    "training_sequences": 8
+  },
+  "C25_Cas12_H1_2": {
+    "alignment_sha256": "94f9481f0b3c6db2179ed0bbbb05a06f21d5c9f9093c53c0d0409916c6d7d290",
+    "families": [
+      "cas12h1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_H1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-H1",
+    "training_sequences": 8
+  },
+  "C25_Cas12_H2_1": {
+    "alignment_sha256": "a141984d8304181cd6debb215e2bf3180fa8e69582e109242f1ecaa819aaa70f",
+    "families": [
+      "cas12h2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_H2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-H2",
+    "training_sequences": 5
+  },
+  "C25_Cas12_H2_2": {
+    "alignment_sha256": "9fdbb8aa25a67f230be79195bc47ecd82b619c68bf224b21a4647240c7f6d945",
+    "families": [
+      "cas12h2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_H2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-H2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_I_1": {
+    "alignment_sha256": "a02b0e1775f59d2d8ee7e533487ef0ff979f243d7f15c0e95233df1506b6a44e",
+    "families": [
+      "cas12i",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-I"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_I_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-I",
+    "training_sequences": 2
+  },
+  "C25_Cas12_I_2": {
+    "alignment_sha256": "decace0ba9866ec668e504b0adafcaabc83c23d3c73cafc903ba5d9fab56741f",
+    "families": [
+      "cas12i",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-I"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_I_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-I",
+    "training_sequences": 2
+  },
+  "C25_Cas12_J_1": {
+    "alignment_sha256": "98623a7908f0795d39f0056512fa63918b1a50153aad064a0ead86f69feab460",
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_J_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 29
+  },
+  "C25_Cas12_J_2": {
+    "alignment_sha256": "364c63f849b1e0abbc858eec2e5d274130f83d3eed739815008304053866bdcf",
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_J_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 5
+  },
+  "C25_Cas12_J_3": {
+    "alignment_sha256": "94a82b2cd6c1cef338f3097262b625357e131e93ba6d6cb00877e47aacde701b",
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_J_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 5
+  },
+  "C25_Cas12_K_1": {
+    "alignment_sha256": "d8872a9592fe87a779347e8943eccac04c1478aacdbc1ebc35e2420f0acf2da2",
+    "families": [
+      "cas12k",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-K"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_K_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-K",
+    "training_sequences": 42
+  },
+  "C25_Cas12_K_2": {
+    "alignment_sha256": "f7b4c811426358b32b77c4fe9c1f9f2aacf9b9ef7f3bf3a914b147fb3678e3de",
+    "families": [
+      "cas12k",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-K"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_K_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-K",
+    "training_sequences": 42
+  },
+  "C25_Cas12_L_1": {
+    "alignment_sha256": "f14955988eda3308210fd818e785a58368b032eae2e78ebcd2b684f6f96ca1ee",
+    "families": [
+      "cas12l",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-L"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_L_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-L",
+    "training_sequences": 4
+  },
+  "C25_Cas12_L_2": {
+    "alignment_sha256": "0b18d85034c38c32a73767d2e71d5b42cc110bb524a4d021328bcecdc1e429a1",
+    "families": [
+      "cas12l",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-L"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_L_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-L",
+    "training_sequences": 4
+  },
+  "C25_Cas12_M_1": {
+    "alignment_sha256": "ce3540e106ad007d52db3c1d41faceceeff6a06d8f417f9dac7db30d835903fa",
+    "families": [
+      "cas12m",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-M"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_M_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-M",
+    "training_sequences": 233
+  },
+  "C25_Cas12_M_2": {
+    "alignment_sha256": "fdcb73e3d5ba2d2a84f90e4b09106298538fe1a840519fff93cb91a2f6b10934",
+    "families": [
+      "cas12m",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-M"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_M_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-M",
+    "training_sequences": 232
+  },
+  "C25_Cas12_N_1": {
+    "alignment_sha256": "f0b6c6cb9e01d81a0488e15a0ee180f9b10dd11fc947bdba021ddfb5defe39b1",
+    "families": [
+      "cas12n",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-N"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_N_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-N",
+    "training_sequences": 2
+  },
+  "C25_Cas12_N_2": {
+    "alignment_sha256": "7e26c3cb16dafe7b05fa74bc9c5a25df6371e92c53eac26bdb506cdecec418e7",
+    "families": [
+      "cas12n",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-N"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_N_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-N",
+    "training_sequences": 2
+  },
+  "C25_Cas12_O_1": {
+    "alignment_sha256": "c5e5e8b179f045eb615164ae6d66f65efcfb24f12bf2523660122905b13056c0",
+    "families": [
+      "cas12o",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-O"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_O_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-O",
+    "training_sequences": 45
+  },
+  "C25_Cas12_O_2": {
+    "alignment_sha256": "6424fee6ab0e8f4d7a3ed4e2d503bfedc30e1dadc8211bbb8ac58f386ec55d8a",
+    "families": [
+      "cas12o",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-O"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_O_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-O",
+    "training_sequences": 36
+  },
+  "C25_Cas12_P_1": {
+    "alignment_sha256": "43e7d8ae82dc81ed5bab0107ae3f2410592e97f6bbed11b02cf60d8dd70e3bb7",
+    "families": [
+      "cas12p",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-P"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_P_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-P",
+    "training_sequences": 32
+  },
+  "C25_Cas12_P_2": {
+    "alignment_sha256": "f793a2a263ff80c47cd8ccaa2c96b9f60e9fa2575c00aa133a3fab6911a807d3",
+    "families": [
+      "cas12p",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-P"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_P_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-P",
+    "training_sequences": 15
+  },
+  "C25_Cas12_Q_1": {
+    "alignment_sha256": "16782cc36668b93249bd1b078fbe6f964ecaf1f0b71596c832292d71e2b24a39",
+    "families": [
+      "cas12q",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-Q"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_Q_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-Q",
+    "training_sequences": 35
+  },
+  "C25_Cas12_Q_2": {
+    "alignment_sha256": "f8911d245a9878b6976ff1d3d8e79617fe4ad9b97969ef9470cad99cbd176eb6",
+    "families": [
+      "cas12q",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-Q"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "original_profile_id": "C25_Cas12_Q_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-V-Q",
+    "training_sequences": 26
+  },
+  "C25_Cas13_A_1": {
+    "alignment_sha256": "b9d3a66f77f7fd65e979699727a8b2147c594bc5fcd19f05dab5f6f1e472ff77",
+    "families": [
+      "cas13a",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-A"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_A_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-A",
+    "training_sequences": 18
+  },
+  "C25_Cas13_A_2": {
+    "alignment_sha256": "af62a8a9d3a41d13bdc220b12338cf781f8d01efa48258761c37223ee18aa062",
+    "families": [
+      "cas13a",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-A"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_A_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-A",
+    "training_sequences": 18
+  },
+  "C25_Cas13_B_1": {
+    "alignment_sha256": "ce3bf009df20f3a994fc93e6d540f48a9b20d791ea598e81b5481363143556a3",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 38
+  },
+  "C25_Cas13_B_2": {
+    "alignment_sha256": "64f1c55b2da9e3d52eeefd8c58230eeda06d3186e494e3ea79c47da3a714a63e",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 41
+  },
+  "C25_Cas13_B_3": {
+    "alignment_sha256": "1481e6f2f455baf72d05cdaf40f271785395f69c4a164181a64af47160e4df6d",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 27
+  },
+  "C25_Cas13_B_6": {
+    "alignment_sha256": "d7b0efba0322fb4b5334bedab8e7c3a727bd40005a9606dbead1e097e723f5c0",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 26
+  },
+  "C25_Cas13_B_7": {
+    "alignment_sha256": "7a575da8ec3fa596608ffe5aa7173da054e73e75357bd0e6141f1ecaa0adfb69",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 8
+  },
+  "C25_Cas13_B_8": {
+    "alignment_sha256": "a54fa9fe82d990ada8db94955f26feb5864a6739a81ae5d554d9c1f06b742c04",
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_B_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 7
+  },
+  "C25_Cas13_C_1": {
+    "alignment_sha256": "a461ee635b7db24c2d63cc729760798718cf66c860abe617cf0c093108ebbca7",
+    "families": [
+      "cas13c",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-C"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_C_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-C",
+    "training_sequences": 11
+  },
+  "C25_Cas13_C_2": {
+    "alignment_sha256": "6196fd2c1b552e497bcb5c2f6e5a78d95aec747260b59f264a7abeb0a48a8dcb",
+    "families": [
+      "cas13c",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-C"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_C_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-C",
+    "training_sequences": 9
+  },
+  "C25_Cas13_D_1": {
+    "alignment_sha256": "f3a4c91415ce2a0ece40391deaeba9c2e8d4ef0db80cf6a1e071fbe6abe611dd",
+    "families": [
+      "cas13d",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-D"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_D_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-D",
+    "training_sequences": 27
+  },
+  "C25_Cas13_D_2": {
+    "alignment_sha256": "735f206ea5ebeba242c79636a6bdeea93d0861f89d0fa0ea595d75d36c1667a1",
+    "families": [
+      "cas13d",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-D"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_D_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-D",
+    "training_sequences": 27
+  },
+  "C25_Cas13_E_1": {
+    "alignment_sha256": "a9ba8a25eaa51e33201bcc6efd40520ae99d20cf7163069de86995ebdd3b434c",
+    "families": [
+      "cas13e",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-E"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_E_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-E",
+    "training_sequences": 9
+  },
+  "C25_Cas13_E_2": {
+    "alignment_sha256": "c48c049aa217ecf71a09a8ba087d4b6c59e82f466af4ae7982cb94dd13cf1c38",
+    "families": [
+      "cas13e",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-E"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_E_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-E",
+    "training_sequences": 9
+  },
+  "C25_Cas13_F_1": {
+    "alignment_sha256": "e451faaf46718d2cc6bc19169be4d19bb307604e05c9cbea0d2de52287d0e97e",
+    "families": [
+      "cas13f",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-F"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_F_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-F",
+    "training_sequences": 4
+  },
+  "C25_Cas13_F_2": {
+    "alignment_sha256": "59ab8fff8f24ba5497cd76fe7babcea4967fe4587f31706a4f23b02312530f5d",
+    "families": [
+      "cas13f",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-F"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Cas13_F_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-F",
+    "training_sequences": 3
+  },
+  "C25_Cas14_1": {
+    "alignment_sha256": "e0c51b12e56b24697b5421a051732c42464e66e815cb3c65811c1db361da231a",
+    "families": [
+      "cas14",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas14_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VII",
+    "training_sequences": 13
+  },
+  "C25_Cas1_1": {
+    "alignment_sha256": "6ea9c2173a4dbaca398a866f3f33be356c054f7a1ef5d87adf814b29a76538bd",
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 3387
+  },
+  "C25_Cas1_2": {
+    "alignment_sha256": "36fd2cbefe260dc4e1cac978b731fe332ac4375283cd0587b45e397c6383c451",
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 245
+  },
+  "C25_Cas1_3": {
+    "alignment_sha256": "23e6bebc61173e6e053cb297e84c00fb01feaa28aadecddf980fd799c689c893",
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas1_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 43
+  },
+  "C25_Cas2_1": {
+    "alignment_sha256": "a8a2a2a41230e1db1adae8dc7cc67fb12eba278c44847a2aa73e56ba732934a2",
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 2922
+  },
+  "C25_Cas2_2": {
+    "alignment_sha256": "6f424915b7b4e5f6373522a17191577ad374bef3fbbf955befacc9a160ed0e5d",
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 637
+  },
+  "C25_Cas2_3": {
+    "alignment_sha256": "020b0b468f8a87e1959e6437c90e1595771b94d2281427850541f69db14518c0",
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas2_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 79
+  },
+  "C25_Cas2_4": {
+    "alignment_sha256": "6027dc231f8c449d5f691b4f0c7666bce77123eda2ef21d4aee4312567fba759",
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas2_4",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 51
+  },
+  "C25_Cas3HD_1": {
+    "alignment_sha256": "b55bee7a1201b19837ce866f7b72856a056032ce8a90933400eaac014da16182",
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3HD_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 454
+  },
+  "C25_Cas3HD_2": {
+    "alignment_sha256": "d37bbafaa351d7fe9a163731fda5e064beb42804da8c48eca2e54c155644947b",
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3HD_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 88
+  },
+  "C25_Cas3HD_3": {
+    "alignment_sha256": "adcf9dc074e592c0fe7d9ac926c1bfbf8be9e4f7475007e64899692b163fb96a",
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3HD_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 32
+  },
+  "C25_Cas3_1": {
+    "alignment_sha256": "61a795cbeae0c258fe754f0a75509ccaa284bf496ad4406d191aa71293ce3e65",
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 1687
+  },
+  "C25_Cas3_2": {
+    "alignment_sha256": "7f13882c4bd9f29fb676bc79f0249a5442dc90a0a7fbaeace709ab3229977bbe",
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 967
+  },
+  "C25_Cas3_3": {
+    "alignment_sha256": "b948ef0f2af3dc200f525f2f522bd81a0564e8167bd83c583fe68584dc3389a0",
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 253
+  },
+  "C25_Cas3_cterm_1": {
+    "alignment_sha256": "6347ca10ffddc88ddf12ef26b77ce1ea045fd1aa3a558960bfd08ed091f260b5",
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_cterm_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 330
+  },
+  "C25_Cas3_cterm_2": {
+    "alignment_sha256": "7d923bf48895602abf7ad427a37dfe828205a0d41b864fd2a977fef7cca58dfe",
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_cterm_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 100
+  },
+  "C25_Cas3_cterm_3": {
+    "alignment_sha256": "d603196610f55dbd5f99637e60c61f95b5e6b4920f0ebc23c056769f3b520dff",
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_cterm_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 63
+  },
+  "C25_Cas3_cterm_4": {
+    "alignment_sha256": "9e211f93898ced076c21746d522d51a121381cc6b5dfb45a64a04c8200bc9106",
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_cterm_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 10
+  },
+  "C25_Cas3_cterm_5": {
+    "alignment_sha256": "5cc279515ccebb3fcd8fefd06330431880cba45272dcdce68e9a08f3334d4c74",
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas3_cterm_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 5
+  },
+  "C25_Cas4_1": {
+    "alignment_sha256": "ce24e63f13cb0dfc3d50b7b6699e7601896301eb204f388f984598652fb01103",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 956
+  },
+  "C25_Cas4_2": {
+    "alignment_sha256": "fb7b92d7149675f284411a86b5a76e47a720e27fecc3f4af2b64e60e4550082a",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 665
+  },
+  "C25_Cas4_3": {
+    "alignment_sha256": "b9be52900dbaa09d07d0183fc61a13f5dda5de340d0981ae0700f0aa3321e352",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 124
+  },
+  "C25_Cas4_4": {
+    "alignment_sha256": "193d7bfa90d66cf2054be8246d053ea93b4a000659a2a89fef2aeb86635d6a65",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_4",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 75
+  },
+  "C25_Cas4_5": {
+    "alignment_sha256": "ae0fb6f7151ccf9f7a64aaebc7eb10c1497fe6b14308199ba99fc851a7dd74ed",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_5",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 32
+  },
+  "C25_Cas4_6": {
+    "alignment_sha256": "5ee81d7c5744b43d13e56bf9a286d9db101859b414514b452e5c849032c3ed12",
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas4_6",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_Cas5_1": {
+    "alignment_sha256": "8d77f92669a954745daed525b8b4d0467a761d661632e90f7a774e2300cc17d8",
+    "families": [
+      "cas5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 1731
+  },
+  "C25_Cas5_1__kira20260915": {
+    "alignment_sha256": "b0df588661cb22ea4975327be683835dd93c8284f131a2378d2a75fe5b037648",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 908
+  },
+  "C25_Cas5_2": {
+    "alignment_sha256": "418d1df7bd5bf8719995cda7b85bf28b592f24f14b94e2e0092f14e8d5a60a4f",
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 65
+  },
+  "C25_Cas5_3": {
+    "alignment_sha256": "cb65621dedf2abf5f2cb19dd2f1560597103582868527402ead57064e01267fe",
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 12
+  },
+  "C25_Cas5_4": {
+    "alignment_sha256": "b898dbecb0d1d770ba2b60a6370675f568187674d2fc5f05a61792bddab877d2",
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 8
+  },
+  "C25_Cas5_4__kira20260915": {
+    "alignment_sha256": "8132af0573719f1017b5d1c11e464436f532270c536eb1fd112cea85d0a605bc",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_4",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 9
+  },
+  "C25_Cas5_5": {
+    "alignment_sha256": "d9dc8df00d4517cb858f933112916420e15d0fbdf80691a871b1930a655c43b4",
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas5_5__kira20260915": {
+    "alignment_sha256": "14a6a0b232078970cf548c326b88e5dab7d5a60b24d4980ad9c9a1266919af4c",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_5",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 8
+  },
+  "C25_Cas5_6": {
+    "alignment_sha256": "93f9cb8f83d3e004ef4a8ad067b3f7990bfca7655bce694ef874367a1efa63c9",
+    "families": [
+      "cas5d",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 184
+  },
+  "C25_Cas5_7": {
+    "alignment_sha256": "99daeebfa73b5b8d1627511446838d207828b2861d1c75a1b2efa741d056bdfa",
+    "families": [
+      "cas5a",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 129
+  },
+  "C25_Cas5_8__kira20260915": {
+    "alignment_sha256": "aa548d2a3c811560f239d1fb18e41ef2ecd5b11a74c6a02720a488af0d72d760",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_8",
+    "profile_origin": "added",
+    "raw_classification": "",
+    "training_sequences": 821
+  },
+  "C25_Cas5_HRAMP_1": {
+    "alignment_sha256": "140ba54af75d40d6ad57f785f63e509f4f1736512a5a6e618d411febd0bad2e7",
+    "families": [
+      "cas5_HRAMP",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_HRAMP_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Cas5_III_HF_1": {
+    "alignment_sha256": "24fa4447a444908f19b4c18ef680698ae1316c6fa0e5644a16d6b0709693cc4d",
+    "families": [
+      "cas5_IIIHF",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_III_HF_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-H,CAS-III-F",
+    "training_sequences": 25
+  },
+  "C25_Cas5_III_HF_2": {
+    "alignment_sha256": "485b2ad4a0cf8f61357409dc5b71e1c9553971904b0059fa907dd87188ae9eb7",
+    "families": [
+      "cas5_IIIFH",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_III_HF_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-F,CAS-III-H",
+    "training_sequences": 6
+  },
+  "C25_Cas5_IV_1": {
+    "alignment_sha256": "9f311a17d2b90187e926d3c7ab551fb0bad8202dffe70d04487bbe2dccd29aa9",
+    "families": [
+      "cas5_IV",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_IV_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV",
+    "training_sequences": 128
+  },
+  "C25_Cas5_VII_1": {
+    "alignment_sha256": "1dc4e7a33e78d6503db55ed5e0a4128e91789b88da19d76d6f705cd19c5a9d63",
+    "families": [
+      "cas5_VII",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_VII_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VII",
+    "training_sequences": 15
+  },
+  "C25_Cas5_cmr3_1": {
+    "alignment_sha256": "bf2e9b30b593535bb7502e394cdace0fd23cbde3004c1cf183c6a9658b51d116",
+    "families": [
+      "cmr3gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_cmr3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 626
+  },
+  "C25_Cas5_cmr3_1__kira20260915": {
+    "alignment_sha256": "41748c68056b29c49d2a39867377d0bb99118efc374ccc3ba06819b7f4c57c90",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_cmr3_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 453
+  },
+  "C25_Cas5_csb5_1": {
+    "alignment_sha256": "883d7bada17a581ac6689d0661f925550102b56c3713b17fc325771c9399d77f",
+    "families": [
+      "csb5gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csb5_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 250
+  },
+  "C25_Cas5_csm4_1": {
+    "alignment_sha256": "bcc9090d214c36bcec6d5a604d2784eb307ffdf7d1240a3b22388d8dcabc7559",
+    "families": [
+      "csm4gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csm4_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-C",
+    "training_sequences": 498
+  },
+  "C25_Cas5_csm4_2": {
+    "alignment_sha256": "f9c74589a2dec5d2fbbbefc8bf7d8bdf17bdda75afcd665e92db9ca75a4fafcb",
+    "families": [
+      "csm4gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csm4_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-G",
+    "training_sequences": 13
+  },
+  "C25_Cas5_csm5_1": {
+    "alignment_sha256": "8455cd6f66ecccb19ed3999262988fb62c1061b113be2d7a052b3e7586092c0e",
+    "families": [
+      "csm5gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csm5_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 370
+  },
+  "C25_Cas5_csm5_2": {
+    "alignment_sha256": "2684423ad4e9aa0d964e197669b9357c2f87c88c4d257e9b9fae752c3e315764",
+    "families": [
+      "csm5gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csm5_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 35
+  },
+  "C25_Cas5_csx10_1": {
+    "alignment_sha256": "9b81216cdff0b6502a465507eb6fbf512edf5ee4268978ed7c5c885735b3065d",
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csx10_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 89
+  },
+  "C25_Cas5_csx10_1__kira20260915": {
+    "alignment_sha256": "1ffcb9d763463daddc638de6d86e25cf55e6c2933519e024edb859bffb0c4848",
+    "families": [
+      "cas5"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas5_csx10_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 262
+  },
+  "C25_Cas5_csx10_2": {
+    "alignment_sha256": "34e243462245798e622569b49a90244374580f5f4e0c90368487c96d015a7adc",
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csx10_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 38
+  },
+  "C25_Cas5_csx10_3": {
+    "alignment_sha256": "9fed352960c3d803f12d3560c4294fd72378f616447ee91401169d9187620253",
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas5_csx10_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 9
+  },
+  "C25_Cas5f1_1": {
+    "alignment_sha256": "3f22e702b1a2886479ac3006bc8c0b5f2298842c14096c6a0733e6213d60f1ad",
+    "families": [
+      "cas5f1",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5f1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 387
+  },
+  "C25_Cas5f1_2": {
+    "alignment_sha256": "d9867a4ad3c959fbddef3bd80705d42b06d20209788bed35eece86670d64aedb",
+    "families": [
+      "cas5f1",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5f1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 89
+  },
+  "C25_Cas5f2_1": {
+    "alignment_sha256": "38e6171cc383ac3567ec8c18111823c70d015118c5c32d823b135d32f11a3789",
+    "families": [
+      "cas5f2",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5f2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 42
+  },
+  "C25_Cas5f2_2": {
+    "alignment_sha256": "006daa5288fb4ea1f0c93d6cef8a8387a32f40d17332bbdb1e4ec44244c6c21d",
+    "families": [
+      "cas5f2",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas5f2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 7
+  },
+  "C25_Cas6_1": {
+    "alignment_sha256": "6bca597c252552cbd478f20f85ffd16988fa9331342b1d478e10a88bb8acc0c1",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 880
+  },
+  "C25_Cas6_10": {
+    "alignment_sha256": "bfb4d67b82f3c3ee481c7c8a1293b5ce40bc9c06799b0bef2cd45a26a7262921",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 9
+  },
+  "C25_Cas6_11": {
+    "alignment_sha256": "ab6ea6f1be4f582b868746d5067eda60849efed0490d0252b132246e203d9491",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_11",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 9
+  },
+  "C25_Cas6_12": {
+    "alignment_sha256": "27fc66a21a55d90e1f09171ede403a57e7f2888f626522c2aa36ad9e3197a1d3",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_12",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 4
+  },
+  "C25_Cas6_2": {
+    "alignment_sha256": "fe5c0df0c0895abc7a31a7de5ba0af1b1dd8f0a46c727f839f7af3570bd7e542",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 843
+  },
+  "C25_Cas6_3": {
+    "alignment_sha256": "a108c84d9d0b11409e1afdb52f21408858bee2c95492bbf8ae70a6d77f8a5c7d",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 146
+  },
+  "C25_Cas6_4": {
+    "alignment_sha256": "771eeb1ec0e701263dce2f6221a3541fe1f3fee74beb832385e60130dc1fb20e",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 71
+  },
+  "C25_Cas6_5": {
+    "alignment_sha256": "e48adf592650d3d4fbdd8acdc5d26cf48c622e906279cfade86ad255211c70e7",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 68
+  },
+  "C25_Cas6_6": {
+    "alignment_sha256": "1750a71a6cfddbae12dfac5d21511db3afa178a894e77351acb968df5271a303",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 41
+  },
+  "C25_Cas6_7": {
+    "alignment_sha256": "1036b6e8394db3063cc7dafc8b432da85a91bcb3cb95c861eebd4e68f46e671b",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 19
+  },
+  "C25_Cas6_8": {
+    "alignment_sha256": "6536b9e09ddd864e20ddc540fd1edd2963066187d1593a1b968d4e692c6a7a06",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 11
+  },
+  "C25_Cas6_9": {
+    "alignment_sha256": "a29b7a3b5b242be9121cc1682bb1839ffa9d8c8135d0f952027b99bab6c02b72",
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas6_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 10
+  },
+  "C25_Cas6e_1": {
+    "alignment_sha256": "105b4ce626481cc9b08fcb0afcf50a05fb6c6b8ffcac3edf26375f8e013e09da",
+    "families": [
+      "cas6e",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas6e_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 1042
+  },
+  "C25_Cas6f_1": {
+    "alignment_sha256": "b14091425d4ab6d8e96db9b976bdf5272f058757dd6b4c88c347ac4fd531b257",
+    "families": [
+      "cas6f",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1",
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas6f_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1,CAS-I-F2",
+    "training_sequences": 485
+  },
+  "C25_Cas7_1": {
+    "alignment_sha256": "bb1403998938c9bf857f5a4a826b89648935c12b6eb167cc4ec9d04cfeff6647",
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 1038
+  },
+  "C25_Cas7_11e_1": {
+    "alignment_sha256": "fdc9fae380853dbb7bb96d30fe22cc638b797dae0e84cbfe1c3b7b241cdd0140",
+    "families": [
+      "cas7-11e",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_11e_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-E",
+    "training_sequences": 23
+  },
+  "C25_Cas7_11i_1": {
+    "alignment_sha256": "6331b5e711c5efafc548440c70f258da9bab5a5c9faa4c8e554646c400c958fc",
+    "families": [
+      "cas7-11i",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-I"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_11i_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-I",
+    "training_sequences": 96
+  },
+  "C25_Cas7_2": {
+    "alignment_sha256": "dcb595f952943c59528613812150cef8b02a83f71bd3336d1e81f41a23723d2f",
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 972
+  },
+  "C25_Cas7_3": {
+    "alignment_sha256": "7d8af5e6d9e90340842c09665d8634a367b946edf2f059ef7028b003eeb325d4",
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I",
+    "training_sequences": 462
+  },
+  "C25_Cas7_4": {
+    "alignment_sha256": "23d31bfdb506dcb88da91984610610a837e7eb89795452b3bd334e8127c5012d",
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B",
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-D,CAS-I-B",
+    "training_sequences": 162
+  },
+  "C25_Cas7_IV_1": {
+    "alignment_sha256": "edeccc6e34a6c5b144c558ffa176a5e79bab46dea8705c384d8c71c9c7d2e8dd",
+    "families": [
+      "cas7_IV",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_IV_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV",
+    "training_sequences": 242
+  },
+  "C25_Cas7_IV_1__kira20260915": {
+    "alignment_sha256": "85c27f4396810d45bd91ba0a58c733dff20466ade9201d502b526a351c3a0267",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_IV_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 145
+  },
+  "C25_Cas7_cmr1_1": {
+    "alignment_sha256": "deb25066abc5bafb2081702b2582bd7327a16027408a2b8888a5dc5aaa876388",
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 379
+  },
+  "C25_Cas7_cmr1_2": {
+    "alignment_sha256": "c183e396ba2c7ce68933a032334ed5ef592a9356779e30216a9ac63e031518fa",
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 59
+  },
+  "C25_Cas7_cmr1_3": {
+    "alignment_sha256": "e1209ec5eb093467abf4571f75a6546d15bd268dac8b62e39291ce6fddc6e7ec",
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr1_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 23
+  },
+  "C25_Cas7_cmr1_4": {
+    "alignment_sha256": "51998b86b6f500f1c025fd587a1676a4f10746c88305bb23c9c8efdebd67c205",
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr1_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 24
+  },
+  "C25_Cas7_cmr4_1": {
+    "alignment_sha256": "330e28c2bd54c78c26e785848f8d42554c107d70e1b935a573bb340b9bfe8b15",
+    "families": [
+      "cmr4gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr4_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 588
+  },
+  "C25_Cas7_cmr4_1__kira20260915": {
+    "alignment_sha256": "75bdb7f435242c2662daca0610397c78b5672a46997ef98d20f563ef05a1e313",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_cmr4_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 565
+  },
+  "C25_Cas7_cmr6_1": {
+    "alignment_sha256": "83e2dba2ffc812a61d1ef79ba14546f3248b14243dd097a821b758cb67a4678e",
+    "families": [
+      "cmr6gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr6_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 438
+  },
+  "C25_Cas7_cmr6_1__kira20260915": {
+    "alignment_sha256": "66868d2868020137b49dd3ef314e34baf312472f9103d9f2e12a8a1001737e9d",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_cmr6_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 560
+  },
+  "C25_Cas7_cmr6_2__kira20260915": {
+    "alignment_sha256": "6da15186cdc3bc4f902022d0911af6b9b6f21265c4916c353107e3a7691b159c",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_cmr6_2",
+    "profile_origin": "added",
+    "raw_classification": "",
+    "training_sequences": 96
+  },
+  "C25_Cas7_cmr8_1": {
+    "alignment_sha256": "6e93bd00634d0c9743384ab56059ae0b082936316ec48fb735ce50ce0a81dbcb",
+    "families": [
+      "cmr8gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_cmr8_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 1
+  },
+  "C25_Cas7_csb1_1": {
+    "alignment_sha256": "57cc5f64adbc09eba0e6ce49f4b865efa72b5525f156a5439665c5774a0b8e6e",
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csb1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 60
+  },
+  "C25_Cas7_csb1_2": {
+    "alignment_sha256": "6e32b1da17bab4895a2c5923dfd23148f0fba014958b864a64ebd25f0172a01c",
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csb1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 8
+  },
+  "C25_Cas7_csb1_3": {
+    "alignment_sha256": "b03414dbfe1111e991162c247e23a7c4f493af9ce8608eeef82bb3ebb74b2e17",
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csb1_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 152
+  },
+  "C25_Cas7_csm3_1": {
+    "alignment_sha256": "3fa109e6319d51c9db5d57a9d78bbd2f90f0c5273ff677ebfb1374f0d0213123",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-G",
+    "training_sequences": 680
+  },
+  "C25_Cas7_csm3_10": {
+    "alignment_sha256": "f194ef43a6a4ceafe4d38d947a1fb0bdfafa92d09fdb0d343b73f11adf66f3f7",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D,CAS-III-E",
+    "training_sequences": 18
+  },
+  "C25_Cas7_csm3_11": {
+    "alignment_sha256": "e0bb331b45e60015a4c5be7c58aef4a8fb920f9b50cec9be17ca4e824f12889b",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_11",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VII",
+    "training_sequences": 14
+  },
+  "C25_Cas7_csm3_12": {
+    "alignment_sha256": "2980e1d0b6186fe5b246eb6796f51af932b4d7f8afc706c97ebc3ffe94b533b8",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_12",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 8
+  },
+  "C25_Cas7_csm3_13": {
+    "alignment_sha256": "5ef02300b5ff5d1e3ad2cec1fbc4658fe26e2f90fff07b9299b772f66c833a6e",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_13",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 3
+  },
+  "C25_Cas7_csm3_1__kira20260915": {
+    "alignment_sha256": "52da10c1abd13b95947d9557f94adddca454dedd23f05ee646e4a718729ca10f",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_csm3_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 690
+  },
+  "C25_Cas7_csm3_2": {
+    "alignment_sha256": "2ad419c608abacf40240ef5d7ad5e2bdf77ad87a2ca334d574c1e2bb09260ce3",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 480
+  },
+  "C25_Cas7_csm3_2__kira20260915": {
+    "alignment_sha256": "191b02587eb5bc0bbdf19d37940d2c7524118dafbf6da69cd1aadb54ad88b263",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_csm3_2",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 372
+  },
+  "C25_Cas7_csm3_3": {
+    "alignment_sha256": "3526f66bc899158cc2c6644db32878b8031aded3a4abe2e19ae0088809567329",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 225
+  },
+  "C25_Cas7_csm3_4": {
+    "alignment_sha256": "9262a90074341505e930da80fea54421c9c6bfd6212d1db9fc4b5a7dedeab422",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D,CAS-III-E",
+    "training_sequences": 118
+  },
+  "C25_Cas7_csm3_4__kira20260915": {
+    "alignment_sha256": "533e2fae7186e12757ea96d1c65bc17630add7eef1401b8f45b60393f0e33a6d",
+    "families": [
+      "cas7"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas7_csm3_4",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 118
+  },
+  "C25_Cas7_csm3_5": {
+    "alignment_sha256": "61dd9e7d42a9c701372bd31e46d391836c2fb02a71d87e143155df8ebe4f5c64",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 93
+  },
+  "C25_Cas7_csm3_6": {
+    "alignment_sha256": "84b738c510a4b6d9704d0e80c52e32c9f297fee2e72749bdd51e042d226967e2",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 80
+  },
+  "C25_Cas7_csm3_7": {
+    "alignment_sha256": "e94d4ede8a3e6e88a040ecfcd1dd758423a066f6d1872057e920246b5f8a04ab",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 71
+  },
+  "C25_Cas7_csm3_8": {
+    "alignment_sha256": "32f71be254546b710313b30ff0b56ed6f6bf5dae639771178963c491caf3f6e1",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-G",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-H,CAS-III-F,CAS-III-G",
+    "training_sequences": 30
+  },
+  "C25_Cas7_csm3_9": {
+    "alignment_sha256": "1302a8f0625ec589c607b11a05eeb189888195c9ff136fcc3cb2be1f79c12589",
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cas7_csm3_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 21
+  },
+  "C25_Cas7f1_1": {
+    "alignment_sha256": "73e1f71d283ea3cff378ae9b4bf5b9c5bad102b3bf2e0b58c7652af0c1a4aa44",
+    "families": [
+      "cas7f1",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7f1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 393
+  },
+  "C25_Cas7f2_1": {
+    "alignment_sha256": "bd3246a2b0973801291c848c494d427f8d7acb1b163ce49dab32c6cd7e769a93",
+    "families": [
+      "cas7f2",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas7f2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 29
+  },
+  "C25_Cas8_IVA_1": {
+    "alignment_sha256": "111afe8dc852b90a101565886f791a89ebd2cf69a97cac831d3ae4ff5c7fcb6e",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 70
+  },
+  "C25_Cas8_IVA_2": {
+    "alignment_sha256": "f8b74aee9ac4d9e5984f8d125720a45b051b4c781cfb6e9894d897811f43e3f8",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 29
+  },
+  "C25_Cas8_IVA_3": {
+    "alignment_sha256": "9949e85f6ca09c12d3cbd4bdaeea90cef1083dda0a4bae5b87cb8e23446868e4",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 30
+  },
+  "C25_Cas8_IVA_4": {
+    "alignment_sha256": "00173bf6e9f953ce2691c233c71fd846fd0c8bf7bd5e6ae77aadfcc3f221fb30",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 3
+  },
+  "C25_Cas8_IVA_5": {
+    "alignment_sha256": "fcf8a64085e8d9438d89c1a9816161b7790dc9d1321c9f57978d247138f60c05",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 2
+  },
+  "C25_Cas8_IVA_6": {
+    "alignment_sha256": "ec7b1e6c0a6259d97b927955fdaef4e4f8c4fbe1ea3b74fb5d042854e71877dd",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 2
+  },
+  "C25_Cas8_IVA_7": {
+    "alignment_sha256": "8f1d799df570764b23f5e5faad95ff6c37538108702f231c184a034f85882d69",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 1
+  },
+  "C25_Cas8_IVA_8": {
+    "alignment_sha256": "845e4e6196f98ad81431cc678a219b0f95b4bd0f5d53470c5bba82e39bc9cb7e",
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVA_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 1
+  },
+  "C25_Cas8_IVB_1": {
+    "alignment_sha256": "cb3996f6a0f1a27205f8acc818b0f92a9ce67c3e4c593991fde218126bf24390",
+    "families": [
+      "cas8_IVB",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVB_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 73
+  },
+  "C25_Cas8_IVC_1": {
+    "alignment_sha256": "9bc624be981fd9c195b299210feca49cf2accf3aa464bad0f411c73e6fba2b4a",
+    "families": [
+      "cas8_IVC",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-C"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "original_profile_id": "C25_Cas8_IVC_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-IV-C",
+    "training_sequences": 5
+  },
+  "C25_Cas8a_1": {
+    "alignment_sha256": "579d0efa19a31933abae39b1204afa1ef82257d24042070bebe1a291270d0c9d",
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 52
+  },
+  "C25_Cas8a_10": {
+    "alignment_sha256": "b2c1fa4d966b8567dbebc17562e5f606816061127a59b9d44fefff5b38b6a27d",
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 3
+  },
+  "C25_Cas8a_1__kira20260915": {
+    "alignment_sha256": "8ddafd97a70a0e40f24010cf671a819d6837a4cb11aed298978e0eac5e9e3150",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8a_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Cas8a_2": {
+    "alignment_sha256": "6f8e9f19f560971be09fae1737beba72008f42a78cfa29a3bf84fc6ac7a0f830",
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 49
+  },
+  "C25_Cas8a_2__kira20260915": {
+    "alignment_sha256": "6876168e351ddf9c3f28f408fa39ebd63e1af32b2f60bbffc5753c67350ac277",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8a_2",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 22
+  },
+  "C25_Cas8a_3": {
+    "alignment_sha256": "6f49cd562dbf710f0bcf0b7010cee68e69bd9e62b009c39888ee93540def0bd3",
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 32
+  },
+  "C25_Cas8a_4": {
+    "alignment_sha256": "e0b70f42a8fb791995beded717c431fe8aad75a9be4026a89169af08cd1750b2",
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 28
+  },
+  "C25_Cas8a_5": {
+    "alignment_sha256": "8b42ca3ec34af27618eb69869599e873538b646cc82c41355d969641a26b714b",
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 22
+  },
+  "C25_Cas8a_6": {
+    "alignment_sha256": "e4966057f2f258e27ab4ee1b0520a22d319ff5728728185fe7ed007332449b95",
+    "families": [
+      "cas8a3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 12
+  },
+  "C25_Cas8a_6__kira20260915": {
+    "alignment_sha256": "3a7a786b5021554001510557b01c21475315ddbd9a5f9af64eb2897722c831f8",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8a_6",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 9
+  },
+  "C25_Cas8a_7": {
+    "alignment_sha256": "dcc1de9d985f44d700bd8c90d4628c84ea7861da9fb277b6789a4bcff8495b22",
+    "families": [
+      "cas8a5",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 11
+  },
+  "C25_Cas8a_7__kira20260915": {
+    "alignment_sha256": "14aa40fb3572e6ce3d8d92fd0dc1caba6ae08a0e1d4962f2fb55320fbbfedafc",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8a_7",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Cas8a_8": {
+    "alignment_sha256": "18a1db590053caa60e7f92301fba8eeebb8cc4ddb71dd6d09c773547ca8a4294",
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 6
+  },
+  "C25_Cas8a_8__kira20260915": {
+    "alignment_sha256": "4d7e7a03b018c36167d93f14d78f75807f8316a28850881d59edf2ae0b592ce1",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8a_8",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 30
+  },
+  "C25_Cas8a_9": {
+    "alignment_sha256": "3135deb523e8ea5a613653fefe2a4104ddfe851e1406b75d155fbbbe647ed271",
+    "families": [
+      "cas8a9",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8a_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 5
+  },
+  "C25_Cas8b_1": {
+    "alignment_sha256": "11ee6b66ae48e384b7f7a9a3a28bb8b598a7d0f1ac6cbf965dfd288981d23894",
+    "families": [
+      "cas8b1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 307
+  },
+  "C25_Cas8b_10": {
+    "alignment_sha256": "c5597d8be88bf456587c191b9c3f74ceaff979cf264187d6f5bcb70ada412ab8",
+    "families": [
+      "cas8b4",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_10",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 10
+  },
+  "C25_Cas8b_11": {
+    "alignment_sha256": "5509435395610e7297053c8108efd9c01504103bdf8e23b2f0d772b14f2f3d3e",
+    "families": [
+      "cas8b7",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_11",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas8b_12": {
+    "alignment_sha256": "76e8b72267d162df7422e14f1d9a5562821be16a97190db3c6d259e3f28e59b7",
+    "families": [
+      "cas8b11",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_12",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas8b_13": {
+    "alignment_sha256": "0288ecb855f5222f0f991e6ad812eabbd7eb437a8c9c2d188b93787b9ac7c0e4",
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_13",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 6
+  },
+  "C25_Cas8b_14": {
+    "alignment_sha256": "99db849888eddd8d2b24c73976490880e85ef5bfc4143eb7ce003d3435d48339",
+    "families": [
+      "cas8b",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_14",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 4
+  },
+  "C25_Cas8b_15": {
+    "alignment_sha256": "46a845c761ed28e771975907a2a4de0410923a6f02eea959ee059043173ff4f1",
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_15",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 4
+  },
+  "C25_Cas8b_1__kira20260915": {
+    "alignment_sha256": "97ccce9aed3b4ec69fd1516a903c8254065f9d8f03bd7b6230a730aae99adf24",
+    "families": [
+      "cas8"
+    ],
+    "hierarchy_policy": "withheld_pending_authoritative_updated_mapping",
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Cas8b_1",
+    "profile_origin": "revised",
+    "raw_classification": "",
+    "training_sequences": 290
+  },
+  "C25_Cas8b_2": {
+    "alignment_sha256": "d30ed953dcaa9c1645f04f6b6d584b5ea20f4c4d4ddfac4b2a68d86c1534715c",
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 173
+  },
+  "C25_Cas8b_3": {
+    "alignment_sha256": "7fad419335d4f2936bf1d9eb0c869c7700de055f2a2385b6daf99364acf6aab4",
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 175
+  },
+  "C25_Cas8b_4": {
+    "alignment_sha256": "985039653d03a87bab223b9b4a8fbecb74c9f27db35aff47f73339cfac42ed48",
+    "families": [
+      "cas8b1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 160
+  },
+  "C25_Cas8b_5": {
+    "alignment_sha256": "3a676e2ed116e9f7d76518ce844e87cadefb41fbf32feeac735ba36367a87079",
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 93
+  },
+  "C25_Cas8b_6": {
+    "alignment_sha256": "b4146d9640ed89c73c57b3e1094289a87c49230edce8519a4b42416923dfaf23",
+    "families": [
+      "cas8b6",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_6",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 66
+  },
+  "C25_Cas8b_7": {
+    "alignment_sha256": "599c663ec6655666dc02624b6c89bdb208d390d206afd2db09d3d26a4a5c7d58",
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_7",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 46
+  },
+  "C25_Cas8b_8": {
+    "alignment_sha256": "78bf8da189b9233dc1feb685e23f05483db35c61bbeb49c7c71b475fc78d4b15",
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_8",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 32
+  },
+  "C25_Cas8b_9": {
+    "alignment_sha256": "3e882d7ff1f9bfa3e69950f3746827c744f956afe998a50227f5f70e2e17c925",
+    "families": [
+      "cas8b5",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8b_9",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 20
+  },
+  "C25_Cas8c_1": {
+    "alignment_sha256": "ed0b576680b2236fab0ccd4fd5799c68938e3a85e5d1132d336f286f1e94ef1d",
+    "families": [
+      "cas8c",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-C"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8c_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-C",
+    "training_sequences": 786
+  },
+  "C25_Cas8e_1": {
+    "alignment_sha256": "40061857a02e84d532974346c8f414f2ad763afe1860fa54a5a2894f3e9f34e7",
+    "families": [
+      "cas8e",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8e_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 527
+  },
+  "C25_Cas8e_2": {
+    "alignment_sha256": "5b20201cfdbd630e43c105c038bf2d1757163d36a177671c702510695452e601",
+    "families": [
+      "cas8e",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8e_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 484
+  },
+  "C25_Cas8f1_1": {
+    "alignment_sha256": "43738fc85fee6cbe9bd788bf181632d364edb77e3960db722d255f38fa4037c0",
+    "families": [
+      "cas8f",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8f1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 492
+  },
+  "C25_Cas8f1_2": {
+    "alignment_sha256": "d707071fc27a83ce202683e93590ca42a6d2c513af668212748dffaa38b90e27",
+    "families": [
+      "cas8f1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8f1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 7
+  },
+  "C25_Cas8g_1": {
+    "alignment_sha256": "9daf0799b356f87330c6b3c1cae9a097190e6c79948ba975682030fa590a8046",
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8g_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 65
+  },
+  "C25_Cas8g_2": {
+    "alignment_sha256": "2e8a1a70ca9346e3be87720feb48cbf658e8ac561ac9d98d81935159412ef4e2",
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8g_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 60
+  },
+  "C25_Cas8g_3": {
+    "alignment_sha256": "43d2c7df62fb09c33f9171bd93f7a09d5389445220c321eec57280d2169c0adb",
+    "families": [
+      "cas8g2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8g_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 29
+  },
+  "C25_Cas8g_4": {
+    "alignment_sha256": "c5a158d8c790b416bd72d28914c7647ddc97ed88d82b2f812cfce669f3f9d966",
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8g_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 17
+  },
+  "C25_Cas8g_5": {
+    "alignment_sha256": "d5490a889b013b9e9badea9941918e7975cff1c835b38c038ba6a870c98b23d6",
+    "families": [
+      "cas8g2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Cas8g_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 16
+  },
+  "C25_Cas9_1": {
+    "alignment_sha256": "9a41e3d3160bd56e24a37da3c493a012c0e3c2a8d46dc2c54a8dc2b781182652",
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 605
+  },
+  "C25_Cas9_2": {
+    "alignment_sha256": "ce95774df28f80ae92e15a1845b21c549cd65e4f813632292ba4be6f954a5510",
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 269
+  },
+  "C25_Cas9_3": {
+    "alignment_sha256": "9c2ea10bac2be3d3c5e74b20d35f9e0e79574f07903fa65874940d5c68d38ea4",
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 7
+  },
+  "C25_Cas9_4": {
+    "alignment_sha256": "c5f5a0e88f678318a13c5ff6890716f88b1987fb324c223f19fc3f9537692404",
+    "families": [
+      "cas9c",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-C",
+    "training_sequences": 45
+  },
+  "C25_Cas9b_1": {
+    "alignment_sha256": "d243876f1f347f88420b30839e93d491d57cfef8d45c75d9f4f0e21d3a644484",
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-B"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9b_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-B",
+    "training_sequences": 21
+  },
+  "C25_Cas9d_1": {
+    "alignment_sha256": "0818eaab871b80697ee9572013f3d7deb64f548b1b6e7278164ac35bd3ad7ed9",
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-D"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "original_profile_id": "C25_Cas9d_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-II-D",
+    "training_sequences": 25
+  },
+  "C25_Cmr7_1": {
+    "alignment_sha256": "4a13987903c958136485ccf9e236601aa64068156977e1bf826820d5b2231cfc",
+    "families": [
+      "cmr7",
+      "cmr7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Cmr7_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 24
+  },
+  "C25_Crf10_1": {
+    "alignment_sha256": "fdd08086f13fd85021c36ec1b1ffe6375c7e5d1710e2f40bf27accaa9112d067",
+    "families": [
+      "Crf10",
+      "CARF_m3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf10_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 27
+  },
+  "C25_Crf11_1": {
+    "alignment_sha256": "3ab33c9611328eaefea9b9c83c3cba2cd97011d3cf212236eed396e603803a3d",
+    "families": [
+      "Crf11",
+      "CARF_m3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf11_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 25
+  },
+  "C25_Crf1_1": {
+    "alignment_sha256": "56ab5631422c71db96e9a8097dcf2a70142ad9ad147e334f6c1364b8fed3ef22",
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 24
+  },
+  "C25_Crf1_2": {
+    "alignment_sha256": "c93c98cdf9487ad21a644604e980391bcdef39bac8415e49eaeef52c2f71d32a",
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf1_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 287
+  },
+  "C25_Crf1_3": {
+    "alignment_sha256": "dc7433d4c4a967294be44efab83e17d67589c39c127a24fb645eb20f4a9cdd51",
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf1_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 62
+  },
+  "C25_Crf2_1": {
+    "alignment_sha256": "2f35672c338f66f215013c6d8ea2770ddffe01af458e1bf91170a42858416cec",
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 14
+  },
+  "C25_Crf2_2": {
+    "alignment_sha256": "7148f59c47360b709d944681bb4c9ab2830b7cbcf8df3a77fb0acabfc71eea00",
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf2_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 4
+  },
+  "C25_Crf2_3": {
+    "alignment_sha256": "4d62be3453fe9f56a3ba8ae34723d3beb10b93e59258483845efbb25e6bf6385",
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf2_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 17
+  },
+  "C25_Crf2_4": {
+    "alignment_sha256": "84346bbf46ff3293e6233c689410f51feccd8d98aa3ad9204438cb0c863bb6ae",
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf2_4",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 28
+  },
+  "C25_Crf2_5": {
+    "alignment_sha256": "dcab9606ce53009c7ef5c68314aed837ed2f8cd5f7188de7ff93a2e188027c67",
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf2_5",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 285
+  },
+  "C25_Crf3_1": {
+    "alignment_sha256": "39cc7d0a617b3a28c0a0125b681c2c8d4e454aa92c7f6a7b57d2623c069a3a1e",
+    "families": [
+      "Crf3_Csa3",
+      "CARF3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf3_2": {
+    "alignment_sha256": "e8527c0727b53fbf8b8a12c835388f43cad359e9609d96e3915041d8a1a4e884",
+    "families": [
+      "Crf3_Csa3",
+      "CARF3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf3_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 511
+  },
+  "C25_Crf4_1": {
+    "alignment_sha256": "470438dfbef1256aab8f575681639fba354d872a70c46ee4e32ae26153f47952",
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf4_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_Crf4_2": {
+    "alignment_sha256": "d553aabf95f41f69cc9c149b260ab20e8f10316a01ece6a55f2dffba39969005",
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf4_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf4_3": {
+    "alignment_sha256": "d81dd7b4e7bea146c516b53b06a0bcf4e062c35e6345e8a571c0397abeae29aa",
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf4_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Crf4_4": {
+    "alignment_sha256": "b8752db7005a2f3f27f3765b7f4f83cfa18edb68dba3668a03c65170a0903c30",
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf4_4",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 338
+  },
+  "C25_Crf5_1": {
+    "alignment_sha256": "da22cca06bd54284efd0ab6b7be0d382f7a40bae24a2786d26ce5517808e46ef",
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf5_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 19
+  },
+  "C25_Crf5_2": {
+    "alignment_sha256": "4290e3d030e6faf863ba584298cdc8205355cd95050735f4000b50167490627b",
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf5_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 198
+  },
+  "C25_Crf5_3": {
+    "alignment_sha256": "2969e21a35db978e3bd2713f152c7fad0786130f0952798585be4e69dae86131",
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf5_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 51
+  },
+  "C25_Crf6_3": {
+    "alignment_sha256": "eff34d6448d611b988a1c617b26bd24219523ef9b9890069a3fcf26ec03914fb",
+    "families": [
+      "Crf6",
+      "CARF6"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf6_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 74
+  },
+  "C25_Crf7_1": {
+    "alignment_sha256": "e3f3aa1197701ec250bcaf63cdca9eef60fd8a95acd007746ba056df53f55b4a",
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf7_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 8
+  },
+  "C25_Crf7_2": {
+    "alignment_sha256": "da42108fb5240098a474efb2ab2c05a12ca3d227468a7e1de51ad99cc1497714",
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf7_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 140
+  },
+  "C25_Crf7_3": {
+    "alignment_sha256": "a43e3ea5aea61ff96184fd5c1642b88918674fb332c0943dd7ee356bf7b6c813",
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf7_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf8_1": {
+    "alignment_sha256": "1179c357253ecc554fdf44ee666082f9c3ea191915cb59c87a14dfe78c8af8ee",
+    "families": [
+      "Crf8_Csm6_2",
+      "Crf8"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf8_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Crf9_1": {
+    "alignment_sha256": "64bbe1caea7cf5f11ab661287297bb2546f09d7188c010d4a8cf723f1634f142",
+    "families": [
+      "Crf9",
+      "CARF9"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crf9_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 143
+  },
+  "C25_Crn1_1": {
+    "alignment_sha256": "f5e14c4cff537ecaea51836f4b8bc7141ca72e3df2809d1758f4402c62b4104b",
+    "families": [
+      "crn1",
+      "CARF_m13"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crn1_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 652
+  },
+  "C25_Crn2_1": {
+    "alignment_sha256": "23613692e2544f19c7136207bef43c700077cafa2e209357a0fa90fad948920f",
+    "families": [
+      "crn2",
+      "DUF1874"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crn2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 4
+  },
+  "C25_Crn3_1": {
+    "alignment_sha256": "e23572f1e1e53f87de888c19511a56e11690fe679d1d132fbba0cfa6a0cb400b",
+    "families": [
+      "crn3",
+      "csx3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Crn3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 24
+  },
+  "C25_Csb3_1": {
+    "alignment_sha256": "c48c17827f7e30729a24fba167815ddeeeccb67d99cbe6f08072c4e4201787dc",
+    "families": [
+      "csb3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "original_profile_id": "C25_Csb3_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 53
+  },
+  "C25_Csm6_2_1": {
+    "alignment_sha256": "af2c292a3b85c539a6ad992d3f30db39a5bdbc832f591c76d7aa452d99478f17",
+    "families": [
+      "Csm6-2",
+      "CARF"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csm6_2_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Csx16_1": {
+    "alignment_sha256": "3a48ce3623dc46c4c7a6e0f2ac5efc0aab33771540614a72a1e210afd01531e8",
+    "families": [
+      "csx16",
+      "csx16"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csx16_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 6
+  },
+  "C25_Csx19_1": {
+    "alignment_sha256": "b84d3d66b330e6b3d84c2b1dd36016d12b7986d6f1c7def0bf3b8ceff5e366b3",
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx19_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 140
+  },
+  "C25_Csx19_2": {
+    "alignment_sha256": "5ebf2c2505e8cdaab1d94b4a313ab5b556dd6bcf9b6f211cb7dc32001f5e38e7",
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx19_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 66
+  },
+  "C25_Csx19_3": {
+    "alignment_sha256": "3be101846090fb9ef94407bc996d723070bdcfc778dd5d46280fa22214f7ca81",
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx19_3",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 56
+  },
+  "C25_Csx19_4": {
+    "alignment_sha256": "4564c13d6af8c300a1dc214035cf25829998b0a19fd07ae7ca4c179b1b842a46",
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx19_4",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 39
+  },
+  "C25_Csx19_5": {
+    "alignment_sha256": "9519743145adbf3d83312fba5a78fb2a5da0a57095f60e3666144cf856d37a55",
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx19_5",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 6
+  },
+  "C25_Csx20_1": {
+    "alignment_sha256": "f400284d5d921ef6c395a5d79620ccfb5c42fd2c12f26753386c22631c82ab40",
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csx20_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Csx20_2": {
+    "alignment_sha256": "b14ffe6d34aa715324ba527f3a49959155dd6c8db4e479afa57827fa372daf94",
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csx20_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 3
+  },
+  "C25_Csx20_3": {
+    "alignment_sha256": "e1a089018aa01682c5016d477d0f95a82f0bda69b857d946519262ce1bbf569f",
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csx20_3",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Csx22_1": {
+    "alignment_sha256": "ff4e58f7ffd0c278e79a11071510449080aa281bd37da06f260037f26fb5b21d",
+    "families": [
+      "csx22",
+      "csx22",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx22_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 2
+  },
+  "C25_Csx24_1": {
+    "alignment_sha256": "df7c0ebebc78db22ff86ba4dfa445a44b2a3490a9ed2b601cc65908492e78b96",
+    "families": [
+      "csx24",
+      "csx24",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx24_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 2
+  },
+  "C25_Csx25_1": {
+    "alignment_sha256": "c0c0e6b7a5894c46735cedbd4a48fa0f8048b694a7921f1387f75b8c3038108b",
+    "families": [
+      "csx25",
+      "csx25",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx25_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 17
+  },
+  "C25_Csx26_1": {
+    "alignment_sha256": "cc4846bfb76b8f81080d41748a8af3b27739d57ff5767d2866fb05392cc533c4",
+    "families": [
+      "csx26",
+      "csx26",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_Csx26_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-G",
+    "training_sequences": 13
+  },
+  "C25_Csx27_1": {
+    "alignment_sha256": "8f5881c4c4a5c29a55d896184bfa5b4b4c93e5ca89329d56480ac48a48e06c60",
+    "families": [
+      "csx27",
+      "csx27"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Csx27_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 15
+  },
+  "C25_Csx27_2": {
+    "alignment_sha256": "2687d29d8fb090e1b2275f9c2cae8b3f42bb46fd35d726632837e05068f8f73e",
+    "families": [
+      "csx27",
+      "csx27"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Csx27_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 17
+  },
+  "C25_Csx28_1": {
+    "alignment_sha256": "b0feda077382cd00cadae700c905bce8d623a21370b35be7d315ed6b11cc4a56",
+    "families": [
+      "csx28",
+      "csx28"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Csx28_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 48
+  },
+  "C25_Csx28_2": {
+    "alignment_sha256": "b547bbb909163e9c3a03d2886fb0fa55048833b8fc6aa433f4e284b0d4a6a9ed",
+    "families": [
+      "csx28",
+      "csx28"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "original_profile_id": "C25_Csx28_2",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 19
+  },
+  "C25_Csx32_1": {
+    "alignment_sha256": "737da88a0bfb0eb943ab58813a212cc3184718127c194be828ee27d2d86f209c",
+    "families": [
+      "csx32",
+      "csx32"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Csx32_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_SAM_DEDDh_1": {
+    "alignment_sha256": "4b0ac8520680541dec2d772b1210221c8d6e77924cafe8981e36efebf8d862f3",
+    "families": [
+      "DEDDh_SAM",
+      "DEDDh_SAM"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_SAM_DEDDh_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III",
+    "training_sequences": 42
+  },
+  "C25_SAM_DHH_1": {
+    "alignment_sha256": "b1a75e921bcc92a0f64f5e1daf1884d3583aadc63891bc62ae138632af35bd52",
+    "families": [
+      "DHH_CorA",
+      "DHH_CorA"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_SAM_DHH_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 3
+  },
+  "C25_SAMase_1": {
+    "alignment_sha256": "75d576443043d0fd94b6172cc94e3c23f2d2963a6786ef12ea4938e45f566536",
+    "families": [
+      "SAMase",
+      "SAMase"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "original_profile_id": "C25_SAMase_1",
+    "profile_origin": "baseline",
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 22
+  },
+  "C25_Unk_01_1": {
+    "alignment_sha256": "0f4ca88afbd7cb91b1fdc596b39ba4528ab0cbad2a740a3a9e8fae13501b86f7",
+    "families": [
+      "crn4",
+      "crn4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Unk_01_1",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 14
+  },
+  "C25_Unk_01_2": {
+    "alignment_sha256": "c39600bed446442289b97af7aa6614421cead09f51b598179f85eff6f5ff9119",
+    "families": [
+      "crn4",
+      "crn4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "original_profile_id": "C25_Unk_01_2",
+    "profile_origin": "baseline",
+    "raw_classification": "",
+    "training_sequences": 3
+  }
+}

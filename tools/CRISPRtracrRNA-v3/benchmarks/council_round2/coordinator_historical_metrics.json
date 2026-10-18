@@ -1,0 +1,720 @@
+{
+  "stage": "benchmarks/final_fixed/complete",
+  "inputs": 79,
+  "mapped": 78,
+  "complete": 79,
+  "localized": 68,
+  "localized_labels": [
+    "Lpn",
+    "Khu",
+    "Ain",
+    "Cgl",
+    "Esp1",
+    "Fma",
+    "Lce",
+    "Lrh",
+    "Lsp1",
+    "Lsp2",
+    "Pac",
+    "Tba",
+    "Tde",
+    "Tpu",
+    "Vpa",
+    "Efa",
+    "Eit",
+    "Lan",
+    "Lmo",
+    "Sag1",
+    "Sag2",
+    "Sdy",
+    "Seq1",
+    "Seq2",
+    "Sga",
+    "Smu",
+    "Sra",
+    "Bni",
+    "Ece",
+    "Edo",
+    "Fho",
+    "Mga",
+    "Mse",
+    "Sgo",
+    "Sma2",
+    "Ssa",
+    "Ssi",
+    "Ssu",
+    "Sth1A",
+    "Tsp",
+    "Bok",
+    "Cco",
+    "Cpe",
+    "Dde",
+    "Ghy3",
+    "Ghy4",
+    "Gsp",
+    "Kki",
+    "Nme2",
+    "Nsp",
+    "Tmo",
+    "Nsa",
+    "Jpa",
+    "Rsp",
+    "Cme2",
+    "Cme3",
+    "Cme4",
+    "Csa",
+    "Ghc1",
+    "Ghe",
+    "Ghh1",
+    "Ghh2",
+    "Ghy1",
+    "Msc",
+    "Sdo",
+    "Spa",
+    "Phi",
+    "Wvi"
+  ],
+  "top_k": {
+    "1": 53,
+    "3": 61,
+    "5": 63,
+    "10": 64
+  },
+  "coverage90": 64,
+  "mrr": 0.7283666082366188,
+  "candidate_count": 3395,
+  "rows": [
+    {
+      "label": "Lpn",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 5,
+      "coverage": 0.9562043795620438
+    },
+    {
+      "label": "Khu",
+      "complete": true,
+      "candidate_count": 72,
+      "localized": true,
+      "best_rank": 3,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ain",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Cgl",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Esp1",
+      "complete": true,
+      "candidate_count": 32,
+      "localized": true,
+      "best_rank": 13,
+      "coverage": 1.0
+    },
+    {
+      "label": "Esp2",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Fma",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Lce",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Lrh",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Lsp1",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Lsp2",
+      "complete": true,
+      "candidate_count": 14,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Pac",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Tba",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Tde",
+      "complete": true,
+      "candidate_count": 228,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Tpu",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Vpa",
+      "complete": true,
+      "candidate_count": 64,
+      "localized": true,
+      "best_rank": 29,
+      "coverage": 1.0
+    },
+    {
+      "label": "Efa",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Eit",
+      "complete": true,
+      "candidate_count": 84,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Lan",
+      "complete": true,
+      "candidate_count": 9,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 0.5858585858585859
+    },
+    {
+      "label": "Lmo",
+      "complete": true,
+      "candidate_count": 16,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sag1",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sag2",
+      "complete": true,
+      "candidate_count": 44,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sdy",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Seq1",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Seq2",
+      "complete": true,
+      "candidate_count": 40,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sga",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Smu",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sra",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Bni",
+      "complete": true,
+      "candidate_count": 64,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ece",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Edo",
+      "complete": true,
+      "candidate_count": 56,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Fho",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Mga",
+      "complete": true,
+      "candidate_count": 108,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Mse",
+      "complete": true,
+      "candidate_count": 464,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sgo",
+      "complete": true,
+      "candidate_count": 100,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sma2",
+      "complete": true,
+      "candidate_count": 145,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ssa",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ssi",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 3,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ssu",
+      "complete": true,
+      "candidate_count": 104,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sth1A",
+      "complete": true,
+      "candidate_count": 128,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Tsp",
+      "complete": true,
+      "candidate_count": 64,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Bok",
+      "complete": true,
+      "candidate_count": 20,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Cco",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 3,
+      "coverage": 1.0
+    },
+    {
+      "label": "Cpe",
+      "complete": true,
+      "candidate_count": 12,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Dde",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghc2",
+      "complete": true,
+      "candidate_count": 0,
+      "localized": null,
+      "best_rank": null,
+      "coverage": null
+    },
+    {
+      "label": "Ghy3",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 2,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghy4",
+      "complete": true,
+      "candidate_count": 84,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Gsp",
+      "complete": true,
+      "candidate_count": 80,
+      "localized": true,
+      "best_rank": 5,
+      "coverage": 1.0
+    },
+    {
+      "label": "Kki",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Nme2",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Nsp",
+      "complete": true,
+      "candidate_count": 168,
+      "localized": true,
+      "best_rank": 83,
+      "coverage": 1.0
+    },
+    {
+      "label": "Tmo",
+      "complete": true,
+      "candidate_count": 20,
+      "localized": true,
+      "best_rank": 9,
+      "coverage": 0.9632352941176471
+    },
+    {
+      "label": "Nsa",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 2,
+      "coverage": 1.0
+    },
+    {
+      "label": "Jpa",
+      "complete": true,
+      "candidate_count": 128,
+      "localized": true,
+      "best_rank": 3,
+      "coverage": 0.9813084112149533
+    },
+    {
+      "label": "Rsp",
+      "complete": true,
+      "candidate_count": 9,
+      "localized": true,
+      "best_rank": 3,
+      "coverage": 0.6185567010309279
+    },
+    {
+      "label": "Bbo",
+      "complete": true,
+      "candidate_count": 44,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Cca2",
+      "complete": true,
+      "candidate_count": 0,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Cme2",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Cme3",
+      "complete": true,
+      "candidate_count": 1,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 0.6236559139784946
+    },
+    {
+      "label": "Cme4",
+      "complete": true,
+      "candidate_count": 176,
+      "localized": true,
+      "best_rank": 88,
+      "coverage": 1.0
+    },
+    {
+      "label": "Csa",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghc1",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghe",
+      "complete": true,
+      "candidate_count": 1,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 0.6354166666666666
+    },
+    {
+      "label": "Ghh1",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 2,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghh2",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Ghy1",
+      "complete": true,
+      "candidate_count": 44,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Msc",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Sdo",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Spa",
+      "complete": true,
+      "candidate_count": 232,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 0.968421052631579
+    },
+    {
+      "label": "Cca1",
+      "complete": true,
+      "candidate_count": 192,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Cga",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Cme1",
+      "complete": true,
+      "candidate_count": 0,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Ffr",
+      "complete": true,
+      "candidate_count": 0,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Ghy2",
+      "complete": true,
+      "candidate_count": 0,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Orh",
+      "complete": true,
+      "candidate_count": 4,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Phi",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 1.0
+    },
+    {
+      "label": "Psp",
+      "complete": true,
+      "candidate_count": 40,
+      "localized": false,
+      "best_rank": null,
+      "coverage": 0.0
+    },
+    {
+      "label": "Wvi",
+      "complete": true,
+      "candidate_count": 8,
+      "localized": true,
+      "best_rank": 1,
+      "coverage": 0.956140350877193
+    }
+  ]
+}

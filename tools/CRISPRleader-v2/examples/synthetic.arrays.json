@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "coordinate_system": "zero_based_half_open",
+  "sources": [
+    {
+      "id": "synthetic|example",
+      "length": 40,
+      "sha256": "7b4f8adc201a891431c0245be063b5e82296847b8e389d30f5053de20a7cdb0f",
+      "topology": "linear",
+      "metadata": {
+        "fixture": "synthetic engineering data"
+      }
+    }
+  ],
+  "arrays": [
+    {
+      "id": "example-array",
+      "source_id": "synthetic|example",
+      "segments": [
+        {
+          "start": 16,
+          "end": 32
+        }
+      ],
+      "terminal_repeats": [
+        {
+          "segments": [
+            {
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "sequence": "AACC"
+        },
+        {
+          "segments": [
+            {
+              "start": 28,
+              "end": 32
+            }
+          ],
+          "sequence": "GGTT"
+        }
+      ],
+      "consensus_repeat": "AACC",
+      "metadata": {
+        "fixture": "synthetic, not a detected or biological CRISPR array"
+      }
+    }
+  ]
+}

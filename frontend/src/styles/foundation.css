@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+}
+
+:root {
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: light;
+  font-family: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #292b2f;
+  --ink-soft: #4e545b;
+  --paper: #ffffff;
+  --paper-deep: #ffffff;
+  --surface: #ffffff;
+  --surface-subtle: #f1f3f4;
+  --line: #d9dde0;
+  --line-dark: #858e96;
+  --green: #0b6b57;
+  --green-dark: #075344;
+  --green-bright: #baf18c;
+  --teal: #62cfae;
+  --coral: #f0785f;
+  --gold: #d7a344;
+  --blue: #8caedb;
+  --danger: #9f382e;
+  --focus: var(--focus-light);
+  --muted: #626970;
+  --night-950: #292b2f;
+  --night-900: #34373b;
+  --night-800: #44494e;
+  --on-night: #ffffff;
+  --on-night-soft: #e0e3e6;
+  --on-night-muted: #c1c8ce;
+  --action: #922c49;
+  --action-hover: #752039;
+  --action-pressed: #5c192d;
+  --action-soft: #faf2f4;
+  --action-soft-hover: #f3e3e8;
+  --action-text: #852540;
+  --on-action: #ffffff;
+  --action-disabled-bg: #e4e7e9;
+  --action-disabled-text: #626970;
+  --focus-light: #922c49;
+  --focus-dark: #ebbecb;
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 6px;
+  --shadow-sm: 0 1px 2px rgba(41, 43, 47, 0.06);
+  --shadow: none;
+  --shadow-lift: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+body {
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper-deep);
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  min-block-size: 44px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:disabled {
+  color: var(--action-disabled-text);
+  border-color: var(--line-dark);
+  background: var(--action-disabled-bg);
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 1;
+  transform: none;
+}
+a {
+  color: inherit;
+}
+code,
+textarea,
+.job-id,
+.raw-score {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+.icon {
+  flex: 0 0 auto;
+}
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 8px;
+  padding: 12px 16px;
+  color: white;
+  background: var(--night-950);
+  border-radius: var(--radius-sm);
+  transform: translateY(-150%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.orientation-landscape :focus-visible {
+  outline-color: var(--focus-light);
+}
+::selection {
+  color: var(--ink);
+  background: #eed5dd;
+}

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-27T00:02:58.408126+00:00",
+  "checks": {
+    "dependency_freeze_sha256.json": {
+      "files_checked": 390,
+      "mismatches": [],
+      "passed": true
+    },
+    "native_executables_baseline.json": {
+      "files_checked": 6,
+      "mismatches": [],
+      "passed": true
+    },
+    "amendment_freeze_sha256.json": {
+      "files_checked": 3,
+      "mismatches": [],
+      "passed": true
+    },
+    "implementation_final_sha256.json": {
+      "files_checked": 32,
+      "mismatches": [],
+      "passed": true
+    },
+    "executor_final_evidence": {
+      "mismatches": [],
+      "passed": true
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,36 @@
+{
+  "changed_enabled_margin_rules": [],
+  "live_deployment": false,
+  "model_fitting_performed": false,
+  "original_v3_card_sha256": "6e33876e26bb680ab6b227102915b2ca115f5b4e2af1b0fb0c1e8cff62b8969d",
+  "source_sha256": {
+    "inherited_competition.json": {
+      "path": "NAR web server publication/false_positive_remediation/models/targeted_exploratory.json",
+      "sha256": "d5ddf6ca8477e3a3c6bb1e302eab1cb73fbc1a4912834534a165f6f29df884ef"
+    },
+    "inherited_floor.json": {
+      "path": "NAR web server publication/false_positive_remediation/models/development_guarded_v2.json",
+      "sha256": "f3c9d5000ab74596e9b38efb987f837239ed45d04246df5b4e2f295304d3a77c"
+    },
+    "inherited_profiles.hmm": {
+      "path": "NAR web server publication/false_positive_remediation/negative_competition/references.hmm",
+      "sha256": "d72000016cab9df16973a0b8902670063a56831790efd75e23dced8986efd242"
+    },
+    "new_bank_source_manifest.json": {
+      "path": "NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/manifest.json",
+      "sha256": "68e2cb7d9535ec0de627b835da75a8c36b32185c26b43db47de8eeb8d20d27d6"
+    },
+    "new_profile_metadata.json": {
+      "path": "NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/metadata.json",
+      "sha256": "e765a3a36fa777bfd791896152e626d65322b6f043d54d21efe2d397e67c6d04"
+    },
+    "new_profiles.hmm": {
+      "path": "NAR web server publication/false_positive_repair_v3/models/negative_bank_v1/negative_profiles.hmm",
+      "sha256": "dc982a66dc835272551d5e8f549474cf1453eed23b19074dec4f5461c7de347b"
+    },
+    "repair_policy.json": {
+      "path": "NAR web server publication/false_positive_repair_v3/models/repair_v3_revision3/candidate.json",
+      "sha256": "6e33876e26bb680ab6b227102915b2ca115f5b4e2af1b0fb0c1e8cff62b8969d"
+    }
+  }
+}

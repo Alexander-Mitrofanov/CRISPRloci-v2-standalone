@@ -1,0 +1,42 @@
+{
+  "name": "crisprloci-v2",
+  "version": "2.13.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run scan:public",
+    "check:boundaries": "node scripts/check-agent-boundaries.mjs",
+    "check:source": "npm run format:check && npm run lint && npm run check:boundaries",
+    "format": "prettier --write src tests scripts index.html package.json vite.config.js eslint.config.js",
+    "format:check": "prettier --check src tests scripts index.html package.json vite.config.js eslint.config.js",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "scan:public": "node scripts/scan-public-example.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "igv": "3.8.10",
+    "vue": "3.5.42"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/user-event": "14.6.1",
+    "@testing-library/vue": "8.1.0",
+    "@vitejs/plugin-vue": "6.0.8",
+    "@vue/test-utils": "2.5.0",
+    "eslint": "^10.9.1",
+    "eslint-plugin-vue": "^10.10.0",
+    "globals": "^17.11.0",
+    "jsdom": "30.0.1",
+    "prettier": "^3.9.6",
+    "vite": "8.2.2",
+    "vitest": "4.1.11",
+    "vue-eslint-parser": "^10.4.1"
+  }
+}

@@ -1,0 +1,6 @@
+include LICENSE
+include CITATION.cff
+recursive-include examples *.fasta *.json
+recursive-include docs *.md *.json
+recursive-include scripts *.py *.sh
+recursive-include tests *.py

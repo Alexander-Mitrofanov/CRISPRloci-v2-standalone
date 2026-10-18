@@ -1,0 +1,25 @@
+{
+  "version": "council-round2-native-reproducibility-v2",
+  "frozen_date": "2026-09-27",
+  "original_protocol_sha256": "e77f6edb949fc1af26cb756f77aaf9fab13d7ef3626158adf3efde870cada15d",
+  "amendment_sha256": "73579600493a709db6ccbabf82c90c4fd8b0151961d982667877ea9b4ee29bac",
+  "amendment": "docs/COUNCIL_REPRODUCIBILITY_AMENDMENT.md",
+  "original_historical_exact_equivalence": "FAIL: Lsp2 16 versus14, overall3397 versus3395",
+  "native_version": "FASTA36 36.3.8g exact source for installed build",
+  "master_seed": 20260927,
+  "worker_seed": "master_seed + worker_index + 1",
+  "fasta_threads": 1,
+  "workers": 2,
+  "source_patch_scope": [
+    "typed RNG declarations",
+    "explicit manager seed",
+    "explicit per-worker seed after worker index initialization"
+  ],
+  "new_paired_panels": [
+    "archived_detector_pinned_native",
+    "current_default_pinned_native"
+  ],
+  "unchanged_scientific_protocol": true,
+  "historical_reference_retention_required": 68,
+  "seed_selected_before_fixed_native_results": true
+}

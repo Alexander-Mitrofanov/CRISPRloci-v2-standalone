@@ -1,0 +1,148 @@
+.history-hypothesis {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 18px;
+  border: 1px solid var(--line-dark);
+  color: #52665e;
+  background: white;
+  text-align: left;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s,
+    transform 0.15s;
+}
+.history-hypothesis:hover {
+  border-color: var(--group-accent);
+  transform: translateY(-1px);
+}
+.history-hypothesis.active {
+  border-color: var(--action);
+  background: var(--action-soft);
+  box-shadow: inset 0 4px 0 var(--group-accent);
+}
+.history-hypothesis:disabled {
+  color: #6c7772;
+  border-style: dashed;
+  background: #edf0eb;
+  cursor: not-allowed;
+  opacity: 0.78;
+  transform: none;
+}
+.history-hypothesis > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: none;
+}
+.history-hypothesis > span b {
+  padding: 4px 6px;
+  color: white;
+  background: var(--group-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0;
+}
+.history-hypothesis > strong {
+  margin-top: 10px;
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.history-hypothesis > small {
+  margin-top: 3px;
+  color: var(--muted);
+  font:
+    0.75rem ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 12px 24px 0;
+  border: 1px solid var(--line);
+  background: white;
+}
+.history-summary > span {
+  min-width: 0;
+  padding: 13px 15px;
+}
+.history-summary > span + span {
+  border-left: 1px solid var(--line);
+}
+.history-summary small,
+.history-summary strong {
+  display: block;
+}
+.history-summary small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.history-summary strong {
+  overflow-wrap: anywhere;
+  margin-top: 4px;
+  color: var(--ink);
+  font:
+    600 0.78rem ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+.history-contrast {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin: 13px 24px 0;
+  padding: 14px 16px;
+  color: #405c53;
+  border-top: 3px solid var(--group-accent);
+  background: white;
+}
+.history-contrast .icon {
+  color: var(--group-accent);
+}
+.history-contrast p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+.history-scale {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 16px 24px 10px;
+  color: var(--muted);
+}
+.history-scale > span {
+  margin-right: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.history-scale button {
+  padding: 6px 9px;
+  border: 1px solid #c6cec6;
+  color: #51665e;
+  background: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.history-scale button.active {
+  color: var(--on-action);
+  border-color: var(--action-pressed);
+  background: var(--action-pressed);
+}
+.history-scale small {
+  margin-left: auto;
+  font-size: 0.72rem;
+}

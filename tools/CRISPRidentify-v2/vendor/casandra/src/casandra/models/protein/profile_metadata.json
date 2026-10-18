@@ -1,0 +1,6680 @@
+{
+  "C25_CRISPR_T_1": {
+    "families": [
+      "CRISPR-T",
+      "CRISPR-T"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-B",
+    "training_sequences": 6
+  },
+  "C25_CRISPR_T_2": {
+    "families": [
+      "CRISPR-T",
+      "CRISPR-T"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-B",
+    "training_sequences": 3
+  },
+  "C25_Calpl_1": {
+    "families": [
+      "CalpI/Crn5",
+      "SAVED"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Cam1_1": {
+    "families": [
+      "Cam2",
+      "Cam2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 7
+  },
+  "C25_Cam2_1": {
+    "families": [
+      "Cam1",
+      "CARF8"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 9
+  },
+  "C25_Cam3_1": {
+    "families": [
+      "Cam3",
+      "Cam3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 11
+  },
+  "C25_Cami_1": {
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Cami_2": {
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 53
+  },
+  "C25_Cami_3": {
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 56
+  },
+  "C25_Cami_4": {
+    "families": [
+      "Cami",
+      "RelE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Cas10_1": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 371
+  },
+  "C25_Cas10_10": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 11
+  },
+  "C25_Cas10_2": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 363
+  },
+  "C25_Cas10_3": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 349
+  },
+  "C25_Cas10_4": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 128
+  },
+  "C25_Cas10_5": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-C",
+    "training_sequences": 57
+  },
+  "C25_Cas10_6": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 52
+  },
+  "C25_Cas10_7": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 27
+  },
+  "C25_Cas10_8": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-F,CAS-III-H",
+    "training_sequences": 16
+  },
+  "C25_Cas10_9": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 15
+  },
+  "C25_Cas10d_1": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 20
+  },
+  "C25_Cas10d_2": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 14
+  },
+  "C25_Cas10d_3": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 10
+  },
+  "C25_Cas10d_4": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 5
+  },
+  "C25_Cas10d_5": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 4
+  },
+  "C25_Cas10d_6": {
+    "families": [
+      "cas10d",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 162
+  },
+  "C25_Cas10i_1": {
+    "families": [
+      "cas10",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-I"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-I",
+    "training_sequences": 104
+  },
+  "C25_Cas11_III_1": {
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 401
+  },
+  "C25_Cas11_III_10": {
+    "families": [
+      "cas11_IIIAD",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 8
+  },
+  "C25_Cas11_III_11": {
+    "families": [
+      "cas11_IIIA",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 7
+  },
+  "C25_Cas11_III_12": {
+    "families": [
+      "cas11_IIIF",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-F",
+    "training_sequences": 7
+  },
+  "C25_Cas11_III_13": {
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 4
+  },
+  "C25_Cas11_III_2": {
+    "families": [
+      "cas11_IIIAD",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 329
+  },
+  "C25_Cas11_III_3": {
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 207
+  },
+  "C25_Cas11_III_4": {
+    "families": [
+      "cas11_IIIC",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-C",
+    "training_sequences": 95
+  },
+  "C25_Cas11_III_5": {
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 89
+  },
+  "C25_Cas11_III_6": {
+    "families": [
+      "cas11_IIIB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 63
+  },
+  "C25_Cas11_III_7": {
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 16
+  },
+  "C25_Cas11_III_8": {
+    "families": [
+      "cas11_IIID",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 16
+  },
+  "C25_Cas11_III_9": {
+    "families": [
+      "cas11_IIIF",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-F",
+    "training_sequences": 14
+  },
+  "C25_Cas11_IVC_1": {
+    "families": [
+      "cas11_IVC",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-C"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-C",
+    "training_sequences": 4
+  },
+  "C25_Cas11_IV_1": {
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 44
+  },
+  "C25_Cas11_IV_2": {
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 8
+  },
+  "C25_Cas11_IV_3": {
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 9
+  },
+  "C25_Cas11_IV_4": {
+    "families": [
+      "cas11_IVB",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 4
+  },
+  "C25_Cas11a_1": {
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 71
+  },
+  "C25_Cas11a_2": {
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 41
+  },
+  "C25_Cas11a_3": {
+    "families": [
+      "cas11a",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 12
+  },
+  "C25_Cas11b_1": {
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 44
+  },
+  "C25_Cas11b_2": {
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 17
+  },
+  "C25_Cas11b_3": {
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 9
+  },
+  "C25_Cas11b_4": {
+    "families": [
+      "cas11b",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas11d_1": {
+    "families": [
+      "cas11d",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 4
+  },
+  "C25_Cas11d_2": {
+    "families": [
+      "cas11d",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 6
+  },
+  "C25_Cas11e_1": {
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 531
+  },
+  "C25_Cas11e_2": {
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 426
+  },
+  "C25_Cas11e_3": {
+    "families": [
+      "cas11e",
+      "SS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 118
+  },
+  "C25_Cas12_A1_1": {
+    "families": [
+      "cas12a1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-A1",
+    "training_sequences": 188
+  },
+  "C25_Cas12_A1_2": {
+    "families": [
+      "cas12a1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-A1",
+    "training_sequences": 61
+  },
+  "C25_Cas12_A2_1": {
+    "families": [
+      "cas12a2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-A2",
+    "training_sequences": 71
+  },
+  "C25_Cas12_A2_2": {
+    "families": [
+      "cas12a2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-A"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-A2",
+    "training_sequences": 20
+  },
+  "C25_Cas12_B1_1": {
+    "families": [
+      "cas12b1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-B1",
+    "training_sequences": 91
+  },
+  "C25_Cas12_B1_2": {
+    "families": [
+      "cas12b1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-B1",
+    "training_sequences": 90
+  },
+  "C25_Cas12_B2_1": {
+    "families": [
+      "cas12b2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-B2",
+    "training_sequences": 10
+  },
+  "C25_Cas12_B2_2": {
+    "families": [
+      "cas12b2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-B"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-B2",
+    "training_sequences": 10
+  },
+  "C25_Cas12_C_1": {
+    "families": [
+      "cas12c",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-C"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-C",
+    "training_sequences": 25
+  },
+  "C25_Cas12_C_2": {
+    "families": [
+      "cas12c",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-C"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-C",
+    "training_sequences": 25
+  },
+  "C25_Cas12_D_1": {
+    "families": [
+      "cas12d",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-D"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-D",
+    "training_sequences": 15
+  },
+  "C25_Cas12_D_2": {
+    "families": [
+      "cas12d",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-D"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-D",
+    "training_sequences": 15
+  },
+  "C25_Cas12_E1_1": {
+    "families": [
+      "cas12e",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-E1",
+    "training_sequences": 2
+  },
+  "C25_Cas12_E1_2": {
+    "families": [
+      "cas12e1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-E1",
+    "training_sequences": 3
+  },
+  "C25_Cas12_E2_1": {
+    "families": [
+      "cas12e2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-E2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_E2_2": {
+    "families": [
+      "cas12e2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-E"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-E2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_F01_1": {
+    "families": [
+      "cas12f01",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F01",
+    "training_sequences": 57
+  },
+  "C25_Cas12_F01_2": {
+    "families": [
+      "cas12f01",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F01",
+    "training_sequences": 57
+  },
+  "C25_Cas12_F02_1": {
+    "families": [
+      "cas12f02",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 14
+  },
+  "C25_Cas12_F02_2": {
+    "families": [
+      "cas12f02-1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 8
+  },
+  "C25_Cas12_F02_3": {
+    "families": [
+      "cas12f02-2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F02",
+    "training_sequences": 6
+  },
+  "C25_Cas12_F03_1": {
+    "families": [
+      "cas12f03",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F03",
+    "training_sequences": 2
+  },
+  "C25_Cas12_F03_2": {
+    "families": [
+      "cas12f03",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F03",
+    "training_sequences": 2
+  },
+  "C25_Cas12_F04_1": {
+    "families": [
+      "cas12f04",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F04",
+    "training_sequences": 67
+  },
+  "C25_Cas12_F04_2": {
+    "families": [
+      "cas12f04",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F04",
+    "training_sequences": 67
+  },
+  "C25_Cas12_F05_1": {
+    "families": [
+      "cas12f05",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F05",
+    "training_sequences": 36
+  },
+  "C25_Cas12_F05_2": {
+    "families": [
+      "cas12f05",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F05",
+    "training_sequences": 35
+  },
+  "C25_Cas12_F06_1": {
+    "families": [
+      "cas12f06",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F06",
+    "training_sequences": 6
+  },
+  "C25_Cas12_F07_1": {
+    "families": [
+      "cas12f07",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F07",
+    "training_sequences": 46
+  },
+  "C25_Cas12_F07_2": {
+    "families": [
+      "cas12f07",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F07",
+    "training_sequences": 29
+  },
+  "C25_Cas12_F08_1": {
+    "families": [
+      "cas12f08",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F08",
+    "training_sequences": 177
+  },
+  "C25_Cas12_F08_2": {
+    "families": [
+      "cas12f08",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F08",
+    "training_sequences": 8
+  },
+  "C25_Cas12_F09_1": {
+    "families": [
+      "cas12f09",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F09",
+    "training_sequences": 303
+  },
+  "C25_Cas12_F09_2": {
+    "families": [
+      "cas12f09",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F09",
+    "training_sequences": 181
+  },
+  "C25_Cas12_F10_1": {
+    "families": [
+      "cas12f10",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F10",
+    "training_sequences": 52
+  },
+  "C25_Cas12_F10_2": {
+    "families": [
+      "cas12f10",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F10",
+    "training_sequences": 39
+  },
+  "C25_Cas12_F11_1": {
+    "families": [
+      "cas12f11",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F11",
+    "training_sequences": 38
+  },
+  "C25_Cas12_F11_2": {
+    "families": [
+      "cas12f11",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F11",
+    "training_sequences": 27
+  },
+  "C25_Cas12_F12_1": {
+    "families": [
+      "cas12f12",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F12",
+    "training_sequences": 35
+  },
+  "C25_Cas12_F12_2": {
+    "families": [
+      "cas12f12",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F12",
+    "training_sequences": 24
+  },
+  "C25_Cas12_F13_1": {
+    "families": [
+      "cas12f13",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F13",
+    "training_sequences": 535
+  },
+  "C25_Cas12_F13_2": {
+    "families": [
+      "cas12f13",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-F"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-F13",
+    "training_sequences": 292
+  },
+  "C25_Cas12_G_1": {
+    "families": [
+      "cas12g",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-G"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-G",
+    "training_sequences": 7
+  },
+  "C25_Cas12_G_2": {
+    "families": [
+      "cas12g",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-G"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-G",
+    "training_sequences": 7
+  },
+  "C25_Cas12_H1_1": {
+    "families": [
+      "cas12h1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-H1",
+    "training_sequences": 8
+  },
+  "C25_Cas12_H1_2": {
+    "families": [
+      "cas12h1",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-H1",
+    "training_sequences": 8
+  },
+  "C25_Cas12_H2_1": {
+    "families": [
+      "cas12h2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-H2",
+    "training_sequences": 5
+  },
+  "C25_Cas12_H2_2": {
+    "families": [
+      "cas12h2",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-H"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-H2",
+    "training_sequences": 4
+  },
+  "C25_Cas12_I_1": {
+    "families": [
+      "cas12i",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-I"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-I",
+    "training_sequences": 2
+  },
+  "C25_Cas12_I_2": {
+    "families": [
+      "cas12i",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-I"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-I",
+    "training_sequences": 2
+  },
+  "C25_Cas12_J_1": {
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 29
+  },
+  "C25_Cas12_J_2": {
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 5
+  },
+  "C25_Cas12_J_3": {
+    "families": [
+      "cas12j",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-J"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-J",
+    "training_sequences": 5
+  },
+  "C25_Cas12_K_1": {
+    "families": [
+      "cas12k",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-K"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-K",
+    "training_sequences": 42
+  },
+  "C25_Cas12_K_2": {
+    "families": [
+      "cas12k",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-K"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-K",
+    "training_sequences": 42
+  },
+  "C25_Cas12_L_1": {
+    "families": [
+      "cas12l",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-L"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-L",
+    "training_sequences": 4
+  },
+  "C25_Cas12_L_2": {
+    "families": [
+      "cas12l",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-L"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-L",
+    "training_sequences": 4
+  },
+  "C25_Cas12_M_1": {
+    "families": [
+      "cas12m",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-M"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-M",
+    "training_sequences": 233
+  },
+  "C25_Cas12_M_2": {
+    "families": [
+      "cas12m",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-M"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-M",
+    "training_sequences": 232
+  },
+  "C25_Cas12_N_1": {
+    "families": [
+      "cas12n",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-N"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-N",
+    "training_sequences": 2
+  },
+  "C25_Cas12_N_2": {
+    "families": [
+      "cas12n",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-N"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-N",
+    "training_sequences": 2
+  },
+  "C25_Cas12_O_1": {
+    "families": [
+      "cas12o",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-O"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-O",
+    "training_sequences": 45
+  },
+  "C25_Cas12_O_2": {
+    "families": [
+      "cas12o",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-O"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-O",
+    "training_sequences": 36
+  },
+  "C25_Cas12_P_1": {
+    "families": [
+      "cas12p",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-P"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-P",
+    "training_sequences": 32
+  },
+  "C25_Cas12_P_2": {
+    "families": [
+      "cas12p",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-P"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-P",
+    "training_sequences": 15
+  },
+  "C25_Cas12_Q_1": {
+    "families": [
+      "cas12q",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-Q"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-Q",
+    "training_sequences": 35
+  },
+  "C25_Cas12_Q_2": {
+    "families": [
+      "cas12q",
+      "cas12"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "V-Q"
+      ],
+      "type": [
+        "V"
+      ]
+    },
+    "raw_classification": "CAS-V-Q",
+    "training_sequences": 26
+  },
+  "C25_Cas13_A_1": {
+    "families": [
+      "cas13a",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-A"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-A",
+    "training_sequences": 18
+  },
+  "C25_Cas13_A_2": {
+    "families": [
+      "cas13a",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-A"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-A",
+    "training_sequences": 18
+  },
+  "C25_Cas13_B_1": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 38
+  },
+  "C25_Cas13_B_2": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 41
+  },
+  "C25_Cas13_B_3": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 27
+  },
+  "C25_Cas13_B_6": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 26
+  },
+  "C25_Cas13_B_7": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 8
+  },
+  "C25_Cas13_B_8": {
+    "families": [
+      "cas13b",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 7
+  },
+  "C25_Cas13_C_1": {
+    "families": [
+      "cas13c",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-C"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-C",
+    "training_sequences": 11
+  },
+  "C25_Cas13_C_2": {
+    "families": [
+      "cas13c",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-C"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-C",
+    "training_sequences": 9
+  },
+  "C25_Cas13_D_1": {
+    "families": [
+      "cas13d",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-D"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-D",
+    "training_sequences": 27
+  },
+  "C25_Cas13_D_2": {
+    "families": [
+      "cas13d",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-D"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-D",
+    "training_sequences": 27
+  },
+  "C25_Cas13_E_1": {
+    "families": [
+      "cas13e",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-E"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-E",
+    "training_sequences": 9
+  },
+  "C25_Cas13_E_2": {
+    "families": [
+      "cas13e",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-E"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-E",
+    "training_sequences": 9
+  },
+  "C25_Cas13_F_1": {
+    "families": [
+      "cas13f",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-F"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-F",
+    "training_sequences": 4
+  },
+  "C25_Cas13_F_2": {
+    "families": [
+      "cas13f",
+      "cas13"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-F"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-F",
+    "training_sequences": 3
+  },
+  "C25_Cas14_1": {
+    "families": [
+      "cas14",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-VII",
+    "training_sequences": 13
+  },
+  "C25_Cas1_1": {
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 3387
+  },
+  "C25_Cas1_2": {
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 245
+  },
+  "C25_Cas1_3": {
+    "families": [
+      "cas1",
+      "cas1"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1",
+        "2"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-II,CAS-V,CAS-VI,CAS-VII",
+    "training_sequences": 43
+  },
+  "C25_Cas2_1": {
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 2922
+  },
+  "C25_Cas2_2": {
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 637
+  },
+  "C25_Cas2_3": {
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 79
+  },
+  "C25_Cas2_4": {
+    "families": [
+      "cas2",
+      "cas2"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 51
+  },
+  "C25_Cas3HD_1": {
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 454
+  },
+  "C25_Cas3HD_2": {
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 88
+  },
+  "C25_Cas3HD_3": {
+    "families": [
+      "cas3HD",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 32
+  },
+  "C25_Cas3_1": {
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 1687
+  },
+  "C25_Cas3_2": {
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 967
+  },
+  "C25_Cas3_3": {
+    "families": [
+      "cas3",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 253
+  },
+  "C25_Cas3_cterm_1": {
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 330
+  },
+  "C25_Cas3_cterm_2": {
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 100
+  },
+  "C25_Cas3_cterm_3": {
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 63
+  },
+  "C25_Cas3_cterm_4": {
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 10
+  },
+  "C25_Cas3_cterm_5": {
+    "families": [
+      "cas3C",
+      "cas3"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 5
+  },
+  "C25_Cas4_1": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 956
+  },
+  "C25_Cas4_2": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 665
+  },
+  "C25_Cas4_3": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 124
+  },
+  "C25_Cas4_4": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 75
+  },
+  "C25_Cas4_5": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 32
+  },
+  "C25_Cas4_6": {
+    "families": [
+      "cas4",
+      "cas4"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_Cas5_1": {
+    "families": [
+      "cas5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 1731
+  },
+  "C25_Cas5_2": {
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 65
+  },
+  "C25_Cas5_3": {
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 12
+  },
+  "C25_Cas5_4": {
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 8
+  },
+  "C25_Cas5_5": {
+    "families": [
+      "cas5b",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas5_6": {
+    "families": [
+      "cas5d",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D",
+    "training_sequences": 184
+  },
+  "C25_Cas5_7": {
+    "families": [
+      "cas5a",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 129
+  },
+  "C25_Cas5_HRAMP_1": {
+    "families": [
+      "cas5_HRAMP",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Cas5_III_HF_1": {
+    "families": [
+      "cas5_IIIHF",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-H,CAS-III-F",
+    "training_sequences": 25
+  },
+  "C25_Cas5_III_HF_2": {
+    "families": [
+      "cas5_IIIFH",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-F,CAS-III-H",
+    "training_sequences": 6
+  },
+  "C25_Cas5_IV_1": {
+    "families": [
+      "cas5_IV",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV",
+    "training_sequences": 128
+  },
+  "C25_Cas5_VII_1": {
+    "families": [
+      "cas5_VII",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-VII",
+    "training_sequences": 15
+  },
+  "C25_Cas5_cmr3_1": {
+    "families": [
+      "cmr3gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 626
+  },
+  "C25_Cas5_csb5_1": {
+    "families": [
+      "csb5gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 250
+  },
+  "C25_Cas5_csm4_1": {
+    "families": [
+      "csm4gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-C",
+    "training_sequences": 498
+  },
+  "C25_Cas5_csm4_2": {
+    "families": [
+      "csm4gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-G",
+    "training_sequences": 13
+  },
+  "C25_Cas5_csm5_1": {
+    "families": [
+      "csm5gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 370
+  },
+  "C25_Cas5_csm5_2": {
+    "families": [
+      "csm5gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 35
+  },
+  "C25_Cas5_csx10_1": {
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 89
+  },
+  "C25_Cas5_csx10_2": {
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 38
+  },
+  "C25_Cas5_csx10_3": {
+    "families": [
+      "csx10gr5",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 9
+  },
+  "C25_Cas5f1_1": {
+    "families": [
+      "cas5f1",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 387
+  },
+  "C25_Cas5f1_2": {
+    "families": [
+      "cas5f1",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 89
+  },
+  "C25_Cas5f2_1": {
+    "families": [
+      "cas5f2",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 42
+  },
+  "C25_Cas5f2_2": {
+    "families": [
+      "cas5f2",
+      "G5",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 7
+  },
+  "C25_Cas6_1": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 880
+  },
+  "C25_Cas6_10": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 9
+  },
+  "C25_Cas6_11": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 9
+  },
+  "C25_Cas6_12": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 4
+  },
+  "C25_Cas6_2": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 843
+  },
+  "C25_Cas6_3": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 146
+  },
+  "C25_Cas6_4": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 71
+  },
+  "C25_Cas6_5": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 68
+  },
+  "C25_Cas6_6": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 41
+  },
+  "C25_Cas6_7": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 19
+  },
+  "C25_Cas6_8": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 11
+  },
+  "C25_Cas6_9": {
+    "families": [
+      "cas6",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I",
+        "III",
+        "IV",
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-III,CAS-I,CAS-IV,CAS-VII",
+    "training_sequences": 10
+  },
+  "C25_Cas6e_1": {
+    "families": [
+      "cas6e",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 1042
+  },
+  "C25_Cas6f_1": {
+    "families": [
+      "cas6f",
+      "cas6"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1",
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1,CAS-I-F2",
+    "training_sequences": 485
+  },
+  "C25_Cas7_1": {
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 1038
+  },
+  "C25_Cas7_11e_1": {
+    "families": [
+      "cas7-11e",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-E",
+    "training_sequences": 23
+  },
+  "C25_Cas7_11i_1": {
+    "families": [
+      "cas7-11i",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-I"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-I",
+    "training_sequences": 96
+  },
+  "C25_Cas7_2": {
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 972
+  },
+  "C25_Cas7_3": {
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I",
+    "training_sequences": 462
+  },
+  "C25_Cas7_4": {
+    "families": [
+      "cas7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B",
+        "I-D"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-D,CAS-I-B",
+    "training_sequences": 162
+  },
+  "C25_Cas7_IV_1": {
+    "families": [
+      "cas7_IV",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV",
+    "training_sequences": 242
+  },
+  "C25_Cas7_cmr1_1": {
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 379
+  },
+  "C25_Cas7_cmr1_2": {
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 59
+  },
+  "C25_Cas7_cmr1_3": {
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 23
+  },
+  "C25_Cas7_cmr1_4": {
+    "families": [
+      "cmr1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 24
+  },
+  "C25_Cas7_cmr4_1": {
+    "families": [
+      "cmr4gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 588
+  },
+  "C25_Cas7_cmr6_1": {
+    "families": [
+      "cmr6gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 438
+  },
+  "C25_Cas7_cmr8_1": {
+    "families": [
+      "cmr8gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B",
+        "III-C"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B,CAS-III-C",
+    "training_sequences": 1
+  },
+  "C25_Cas7_csb1_1": {
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 60
+  },
+  "C25_Cas7_csb1_2": {
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 8
+  },
+  "C25_Cas7_csb1_3": {
+    "families": [
+      "csb1gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 152
+  },
+  "C25_Cas7_csm3_1": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-G",
+    "training_sequences": 680
+  },
+  "C25_Cas7_csm3_10": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D,CAS-III-E",
+    "training_sequences": 18
+  },
+  "C25_Cas7_csm3_11": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "VII"
+      ]
+    },
+    "raw_classification": "CAS-VII",
+    "training_sequences": 14
+  },
+  "C25_Cas7_csm3_12": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 8
+  },
+  "C25_Cas7_csm3_13": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 3
+  },
+  "C25_Cas7_csm3_2": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 480
+  },
+  "C25_Cas7_csm3_3": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 225
+  },
+  "C25_Cas7_csm3_4": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D,CAS-III-E",
+    "training_sequences": 118
+  },
+  "C25_Cas7_csm3_5": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 93
+  },
+  "C25_Cas7_csm3_6": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D",
+        "III-E"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D,CAS-III-E",
+    "training_sequences": 80
+  },
+  "C25_Cas7_csm3_7": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 71
+  },
+  "C25_Cas7_csm3_8": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-F",
+        "III-G",
+        "III-H"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-H,CAS-III-F,CAS-III-G",
+    "training_sequences": 30
+  },
+  "C25_Cas7_csm3_9": {
+    "families": [
+      "csm3gr7",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A",
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A,CAS-III-D",
+    "training_sequences": 21
+  },
+  "C25_Cas7f1_1": {
+    "families": [
+      "cas7f1",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 393
+  },
+  "C25_Cas7f2_1": {
+    "families": [
+      "cas7f2",
+      "G7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F2"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F2",
+    "training_sequences": 29
+  },
+  "C25_Cas8_IVA_1": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 70
+  },
+  "C25_Cas8_IVA_2": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 29
+  },
+  "C25_Cas8_IVA_3": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 30
+  },
+  "C25_Cas8_IVA_4": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 3
+  },
+  "C25_Cas8_IVA_5": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 2
+  },
+  "C25_Cas8_IVA_6": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 2
+  },
+  "C25_Cas8_IVA_7": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 1
+  },
+  "C25_Cas8_IVA_8": {
+    "families": [
+      "cas8_IVA",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-A"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-A",
+    "training_sequences": 1
+  },
+  "C25_Cas8_IVB_1": {
+    "families": [
+      "cas8_IVB",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-B"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-B",
+    "training_sequences": 73
+  },
+  "C25_Cas8_IVC_1": {
+    "families": [
+      "cas8_IVC",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "IV-C"
+      ],
+      "type": [
+        "IV"
+      ]
+    },
+    "raw_classification": "CAS-IV-C",
+    "training_sequences": 5
+  },
+  "C25_Cas8a_1": {
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 52
+  },
+  "C25_Cas8a_10": {
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 3
+  },
+  "C25_Cas8a_2": {
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 49
+  },
+  "C25_Cas8a_3": {
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 32
+  },
+  "C25_Cas8a_4": {
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 28
+  },
+  "C25_Cas8a_5": {
+    "families": [
+      "cas8a2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 22
+  },
+  "C25_Cas8a_6": {
+    "families": [
+      "cas8a3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 12
+  },
+  "C25_Cas8a_7": {
+    "families": [
+      "cas8a5",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 11
+  },
+  "C25_Cas8a_8": {
+    "families": [
+      "cas8a1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 6
+  },
+  "C25_Cas8a_9": {
+    "families": [
+      "cas8a9",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-A"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-A",
+    "training_sequences": 5
+  },
+  "C25_Cas8b_1": {
+    "families": [
+      "cas8b1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 307
+  },
+  "C25_Cas8b_10": {
+    "families": [
+      "cas8b4",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 10
+  },
+  "C25_Cas8b_11": {
+    "families": [
+      "cas8b7",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas8b_12": {
+    "families": [
+      "cas8b11",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 7
+  },
+  "C25_Cas8b_13": {
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 6
+  },
+  "C25_Cas8b_14": {
+    "families": [
+      "cas8b",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 4
+  },
+  "C25_Cas8b_15": {
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 4
+  },
+  "C25_Cas8b_2": {
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 173
+  },
+  "C25_Cas8b_3": {
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 175
+  },
+  "C25_Cas8b_4": {
+    "families": [
+      "cas8b1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 160
+  },
+  "C25_Cas8b_5": {
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 93
+  },
+  "C25_Cas8b_6": {
+    "families": [
+      "cas8b6",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 66
+  },
+  "C25_Cas8b_7": {
+    "families": [
+      "cas8b3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 46
+  },
+  "C25_Cas8b_8": {
+    "families": [
+      "cas8b2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 32
+  },
+  "C25_Cas8b_9": {
+    "families": [
+      "cas8b5",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-B"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-B",
+    "training_sequences": 20
+  },
+  "C25_Cas8c_1": {
+    "families": [
+      "cas8c",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-C"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-C",
+    "training_sequences": 786
+  },
+  "C25_Cas8e_1": {
+    "families": [
+      "cas8e",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 527
+  },
+  "C25_Cas8e_2": {
+    "families": [
+      "cas8e",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-E"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-E",
+    "training_sequences": 484
+  },
+  "C25_Cas8f1_1": {
+    "families": [
+      "cas8f",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 492
+  },
+  "C25_Cas8f1_2": {
+    "families": [
+      "cas8f1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-F1"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-F1",
+    "training_sequences": 7
+  },
+  "C25_Cas8g_1": {
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 65
+  },
+  "C25_Cas8g_2": {
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 60
+  },
+  "C25_Cas8g_3": {
+    "families": [
+      "cas8g2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 29
+  },
+  "C25_Cas8g_4": {
+    "families": [
+      "cas8g1",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 17
+  },
+  "C25_Cas8g_5": {
+    "families": [
+      "cas8g2",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 16
+  },
+  "C25_Cas9_1": {
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 605
+  },
+  "C25_Cas9_2": {
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 269
+  },
+  "C25_Cas9_3": {
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-A",
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-A,CAS-II-C",
+    "training_sequences": 7
+  },
+  "C25_Cas9_4": {
+    "families": [
+      "cas9c",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-C"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-C",
+    "training_sequences": 45
+  },
+  "C25_Cas9b_1": {
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-B"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-B",
+    "training_sequences": 21
+  },
+  "C25_Cas9d_1": {
+    "families": [
+      "cas9",
+      "cas9"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "II-D"
+      ],
+      "type": [
+        "II"
+      ]
+    },
+    "raw_classification": "CAS-II-D",
+    "training_sequences": 25
+  },
+  "C25_Cmr7_1": {
+    "families": [
+      "cmr7",
+      "cmr7",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 24
+  },
+  "C25_Crf10_1": {
+    "families": [
+      "Crf10",
+      "CARF_m3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 27
+  },
+  "C25_Crf11_1": {
+    "families": [
+      "Crf11",
+      "CARF_m3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 25
+  },
+  "C25_Crf1_1": {
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 24
+  },
+  "C25_Crf1_2": {
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 287
+  },
+  "C25_Crf1_3": {
+    "families": [
+      "Crf1_Csm6",
+      "CARF1"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 62
+  },
+  "C25_Crf2_1": {
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 14
+  },
+  "C25_Crf2_2": {
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 4
+  },
+  "C25_Crf2_3": {
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 17
+  },
+  "C25_Crf2_4": {
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 28
+  },
+  "C25_Crf2_5": {
+    "families": [
+      "Crf2_Csx1",
+      "CARF2"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 285
+  },
+  "C25_Crf3_1": {
+    "families": [
+      "Crf3_Csa3",
+      "CARF3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf3_2": {
+    "families": [
+      "Crf3_Csa3",
+      "CARF3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 511
+  },
+  "C25_Crf4_1": {
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_Crf4_2": {
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf4_3": {
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 7
+  },
+  "C25_Crf4_4": {
+    "families": [
+      "Crf4_Can1",
+      "CARF4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 338
+  },
+  "C25_Crf5_1": {
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 19
+  },
+  "C25_Crf5_2": {
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 198
+  },
+  "C25_Crf5_3": {
+    "families": [
+      "Crf5_Crn1",
+      "CARF5"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 51
+  },
+  "C25_Crf6_3": {
+    "families": [
+      "Crf6",
+      "CARF6"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 74
+  },
+  "C25_Crf7_1": {
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 8
+  },
+  "C25_Crf7_2": {
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 140
+  },
+  "C25_Crf7_3": {
+    "families": [
+      "Crf7_Crn1",
+      "CARF7"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 10
+  },
+  "C25_Crf8_1": {
+    "families": [
+      "Crf8_Csm6_2",
+      "Crf8"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Crf9_1": {
+    "families": [
+      "Crf9",
+      "CARF9"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 143
+  },
+  "C25_Crn1_1": {
+    "families": [
+      "crn1",
+      "CARF_m13"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 652
+  },
+  "C25_Crn2_1": {
+    "families": [
+      "crn2",
+      "DUF1874"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 4
+  },
+  "C25_Crn3_1": {
+    "families": [
+      "crn3",
+      "csx3"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 24
+  },
+  "C25_Csb3_1": {
+    "families": [
+      "csb3",
+      "LS",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "I-G"
+      ],
+      "type": [
+        "I"
+      ]
+    },
+    "raw_classification": "CAS-I-G",
+    "training_sequences": 53
+  },
+  "C25_Csm6_2_1": {
+    "families": [
+      "Csm6-2",
+      "CARF"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 20
+  },
+  "C25_Csx16_1": {
+    "families": [
+      "csx16",
+      "csx16"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 6
+  },
+  "C25_Csx19_1": {
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 140
+  },
+  "C25_Csx19_2": {
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 66
+  },
+  "C25_Csx19_3": {
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 56
+  },
+  "C25_Csx19_4": {
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 39
+  },
+  "C25_Csx19_5": {
+    "families": [
+      "csx19",
+      "csx19",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 6
+  },
+  "C25_Csx20_1": {
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Csx20_2": {
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 3
+  },
+  "C25_Csx20_3": {
+    "families": [
+      "csx20",
+      "csx20"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 11
+  },
+  "C25_Csx22_1": {
+    "families": [
+      "csx22",
+      "csx22",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-A"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-A",
+    "training_sequences": 2
+  },
+  "C25_Csx24_1": {
+    "families": [
+      "csx24",
+      "csx24",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 2
+  },
+  "C25_Csx25_1": {
+    "families": [
+      "csx25",
+      "csx25",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-D"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-D",
+    "training_sequences": 17
+  },
+  "C25_Csx26_1": {
+    "families": [
+      "csx26",
+      "csx26",
+      "CASCADE"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-G"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-G",
+    "training_sequences": 13
+  },
+  "C25_Csx27_1": {
+    "families": [
+      "csx27",
+      "csx27"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 15
+  },
+  "C25_Csx27_2": {
+    "families": [
+      "csx27",
+      "csx27"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 17
+  },
+  "C25_Csx28_1": {
+    "families": [
+      "csx28",
+      "csx28"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 48
+  },
+  "C25_Csx28_2": {
+    "families": [
+      "csx28",
+      "csx28"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [
+        "2"
+      ],
+      "subtype": [
+        "VI-B"
+      ],
+      "type": [
+        "VI"
+      ]
+    },
+    "raw_classification": "CAS-VI-B",
+    "training_sequences": 19
+  },
+  "C25_Csx32_1": {
+    "families": [
+      "csx32",
+      "csx32"
+    ],
+    "intended_use": "primary_search",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 5
+  },
+  "C25_SAM_DEDDh_1": {
+    "families": [
+      "DEDDh_SAM",
+      "DEDDh_SAM"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III",
+    "training_sequences": 42
+  },
+  "C25_SAM_DHH_1": {
+    "families": [
+      "DHH_CorA",
+      "DHH_CorA"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 3
+  },
+  "C25_SAMase_1": {
+    "families": [
+      "SAMase",
+      "SAMase"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [
+        "1"
+      ],
+      "subtype": [
+        "III-B"
+      ],
+      "type": [
+        "III"
+      ]
+    },
+    "raw_classification": "CAS-III-B",
+    "training_sequences": 22
+  },
+  "C25_Unk_01_1": {
+    "families": [
+      "crn4",
+      "crn4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 14
+  },
+  "C25_Unk_01_2": {
+    "families": [
+      "crn4",
+      "crn4"
+    ],
+    "intended_use": "hard_negative",
+    "labels": {
+      "class": [],
+      "subtype": [],
+      "type": []
+    },
+    "raw_classification": "",
+    "training_sequences": 3
+  }
+}

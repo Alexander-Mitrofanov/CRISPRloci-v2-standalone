@@ -1,0 +1,17 @@
+{
+  "../old_version": {
+    "returncode": 0,
+    "status": "",
+    "stderr": ""
+  },
+  "external/CRISPRidentify-v2": {
+    "returncode": 0,
+    "status": "",
+    "stderr": ""
+  },
+  "external/CasAndra": {
+    "returncode": 0,
+    "status": "",
+    "stderr": ""
+  }
+}

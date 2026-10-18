@@ -1,0 +1,38 @@
+{
+  "alignment_policy": "preserved curated columns, all eligible biological rows, representative rows removed",
+  "builder": {
+    "pyhmmer": "0.12.1",
+    "seed": 42
+  },
+  "built_by_use": {
+    "hard_negative": 49,
+    "primary_search": 312
+  },
+  "built_profiles": 361,
+  "eligible_reference_sequences": 45645,
+  "inputs": {
+    "dataset_sha256": "29f61d6d072ed6248a19ed25796ddfd425be985905940840fe83a144db3b9271",
+    "evaluation_experiment_manifest_sha256": "7ec47169139a68d4711ef1c1c8acc19652179af14b3ad540e673b2c95d350f18",
+    "old_archive_sha256": "4aa42557945fca356d8791126771d7c39f7245a7526b2116be29e6e0333e7964",
+    "parent_bundle_manifest_sha256": "89657480e1135aec57f7e2b4a45fe5150f10fbdcbf80bf640e4325f7b921a071"
+  },
+  "model_id": "casandra-kira-2026-09-15-full-v1-protein",
+  "not_used_for_training": {
+    "conflicting_source_uses": 1,
+    "forced_open_set": 2237
+  },
+  "role": "deployment_refit_not_evaluation_model",
+  "supplemental_hierarchy_policy": "family evidence only; old labels not transferred",
+  "training_accuracy_not_reported": true,
+  "training_label_counts": {
+    "cas_positive": 42324,
+    "non_cas_confounder": 3321
+  },
+  "training_source_partitions": {
+    "excluded": 2925,
+    "test": 9127,
+    "train": 24468,
+    "validation": 9125
+  },
+  "unique_training_sequences": 45645
+}

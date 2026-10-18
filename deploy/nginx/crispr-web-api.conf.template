@@ -1,0 +1,146 @@
+limit_conn_zone $proxy_protocol_addr zone=crispr_per_ip_connections:10m;
+limit_conn_zone $server_name zone=crispr_global_connections:1m;
+limit_req_zone $proxy_protocol_addr zone=crispr_per_ip_requests:10m rate=5r/s;
+limit_req_zone $server_name zone=crispr_global_requests:1m rate=20r/s;
+map $uri $crispr_status_addr {
+    default "";
+    "~^/api/v1/jobs/[0-9a-f]{32}$" $proxy_protocol_addr;
+}
+limit_conn_zone $crispr_status_addr zone=crispr_status_connections:10m;
+limit_req_zone $crispr_status_addr zone=crispr_status_requests:10m rate=2r/s;
+map $uri $crispr_status_global {
+    default "";
+    "~^/api/v1/jobs/[0-9a-f]{32}$" $server_name;
+}
+limit_conn_zone $crispr_status_global zone=crispr_global_status_connections:1m;
+limit_req_zone $crispr_status_global zone=crispr_global_status_requests:1m rate=8r/s;
+# CORS preflights do not hash or serve files. Keep their requests within the
+# general budgets without consuming the allowance for authenticated downloads.
+map "$request_method:$uri" $crispr_download_addr {
+    default "";
+    "~^(?:GET|HEAD):/api/v1/jobs/[0-9a-f]{32}/(?:result$|artifacts/)" $proxy_protocol_addr;
+}
+limit_conn_zone $crispr_download_addr zone=crispr_download_connections:10m;
+limit_req_zone $crispr_download_addr zone=crispr_download_requests:10m rate=12r/m;
+map "$request_method:$uri" $crispr_download_global {
+    default "";
+    "~^(?:GET|HEAD):/api/v1/jobs/[0-9a-f]{32}/(?:result$|artifacts/)" $server_name;
+}
+limit_conn_zone $crispr_download_global zone=crispr_global_download_connections:1m;
+limit_req_zone $crispr_download_global zone=crispr_global_download_requests:1m rate=30r/m;
+map $request_method $crispr_submission_addr {
+    default "";
+    POST $proxy_protocol_addr;
+}
+limit_req_zone $crispr_submission_addr zone=crispr_submission_requests:10m rate=12r/m;
+map $request_method $crispr_submission_global {
+    default "";
+    POST $server_name;
+}
+limit_req_zone $crispr_submission_global zone=crispr_global_submission_requests:1m rate=30r/m;
+
+server {
+    listen 127.0.0.1:8080 proxy_protocol default_server;
+    server_name _;
+
+    server_tokens off;
+    client_max_body_size 1k;
+    client_body_buffer_size 1k;
+    client_body_timeout 5s;
+    client_header_timeout 5s;
+    keepalive_requests 1;
+    keepalive_timeout 0;
+    send_timeout 5s;
+    reset_timedout_connection on;
+
+    limit_conn_status 429;
+    limit_conn crispr_global_connections 8;
+    limit_conn crispr_per_ip_connections 2;
+    limit_req_status 429;
+    limit_req zone=crispr_per_ip_requests burst=5 nodelay;
+    limit_req zone=crispr_global_requests burst=10 nodelay;
+
+    # A server-level return runs before the limit modules. Deny in the access
+    # phase instead, after the connection/request budgets, then retain the
+    # fail-closed 444 response through an internal redirect.
+    access_log off;
+    error_log /var/log/nginx/crispr_web_error.log crit;
+    error_page 403 = @crispr_reject_unknown_host;
+    location / {
+        deny all;
+    }
+    location @crispr_reject_unknown_host {
+        return 444;
+    }
+}
+
+server {
+    listen 127.0.0.1:8080 proxy_protocol;
+    server_name __PUBLIC_HOST__;
+
+    set_real_ip_from 127.0.0.1;
+    real_ip_header proxy_protocol;
+    real_ip_recursive off;
+
+    server_tokens off;
+    client_max_body_size 4500000;
+    client_body_buffer_size 128k;
+    client_body_temp_path /srv/crispr/nginx-client-body 1 2;
+    client_body_timeout 15s;
+    client_header_timeout 10s;
+    keepalive_requests 100;
+    keepalive_timeout 10s;
+    send_timeout 30s;
+    reset_timedout_connection on;
+
+    limit_conn_status 429;
+    limit_conn_log_level notice;
+    limit_conn crispr_global_connections 32;
+    limit_conn crispr_per_ip_connections 8;
+    limit_conn crispr_status_connections 2;
+    limit_conn crispr_global_status_connections 8;
+    limit_conn crispr_download_connections 2;
+    limit_conn crispr_global_download_connections 4;
+    limit_req_status 429;
+    limit_req_log_level notice;
+    limit_req zone=crispr_per_ip_requests burst=20 nodelay;
+    limit_req zone=crispr_global_requests burst=40 nodelay;
+    limit_req zone=crispr_status_requests burst=4 nodelay;
+    limit_req zone=crispr_global_status_requests burst=12 nodelay;
+    limit_req zone=crispr_submission_requests burst=2 nodelay;
+    limit_req zone=crispr_global_submission_requests burst=8 nodelay;
+    limit_req zone=crispr_download_requests burst=3 nodelay;
+    limit_req zone=crispr_global_download_requests burst=6 nodelay;
+
+    # Genomic-job privacy: do not retain client-address request logs.
+    access_log off;
+    error_log /var/log/nginx/crispr_web_error.log crit;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_request_buffering on;
+        proxy_buffering off;
+        proxy_max_temp_file_size 0;
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 60s;
+        limit_rate_after 1m;
+        limit_rate 8m;
+
+        proxy_set_header Host $host;
+        proxy_set_header Connection "";
+        proxy_set_header X-Forwarded-For $proxy_protocol_addr;
+        proxy_set_header X-Real-IP $proxy_protocol_addr;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header Forwarded "";
+        # Every authorized download is hashed before serving. Prevent tiny
+        # byte-range requests from amplifying that full-file verification.
+        proxy_set_header Range "";
+        proxy_set_header If-Range "";
+        proxy_set_header X-Forwarded-Host "";
+        proxy_set_header X-Forwarded-Port "";
+
+        proxy_hide_header Server;
+    }
+}

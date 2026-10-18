@@ -1,0 +1,38 @@
+# Relative paths resolve from this file; commands are arrays, never shell strings.
+mode = "complete"
+model_type = "II"
+threads = 4
+timeout = 3600
+identify_command = ["external/CRISPRidentify-v2/crispridentify"]
+casandra_command = ["casandra"]
+identify_preset = "balanced"
+gene_mode = "auto"
+search_backend = "fasta36"
+similarity = 0.7
+coverage = 0.6
+mask_arrays = true
+intarna_batch_size = 128
+# Experimental Type II complete-mode branch; fixed corroboration gates.
+short_anti_repeat_rescue = false
+model_rescue = true
+model_rescue_evalue = 1e-5
+tail_length = 150
+upstream_length = 5
+merge_gap = 150
+type_v_motifs = false
+
+# If CRISPRidentify was installed in a different environment:
+# [environment]
+# CRISPRIDENTIFY_ENV = "/absolute/path/to/crispridentify-core"
+
+[weights]
+array = 0.5
+identity = 0.5
+coverage = 0.5
+identity_coverage = 0.5
+interaction = 0.6
+model = 0.9
+terminator = 0.9
+orientation = 0.1
+anti_tail = 0.1
+tail_terminator = 0.1

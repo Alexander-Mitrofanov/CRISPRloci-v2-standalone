@@ -1,0 +1,39 @@
+{
+  "bundle_id": "casandra-full361-v3-cap15-2026-09-20-v1",
+  "bundle_role": "local_successor_candidate",
+  "cassette_architecture_directory": "cassette_architecture",
+  "cassette_parameters": {
+    "max_cas_gap_nt": 5000,
+    "max_non_cas_genes": 5,
+    "min_subtype_vote_fraction": 0.5
+  },
+  "cpu_only": true,
+  "crispr_array_prediction": false,
+  "evaluation_model_separate_from_deployment_refit": true,
+  "genome_evidence_gate": {
+    "class_1_minimum_cas_genes": 2,
+    "class_2_minimum_cas_genes_or_single_effector": 2,
+    "class_2_single_effector_minimum_aa": 400,
+    "class_2_single_effector_minimum_positive_profile_score": 50.0,
+    "selection": "pre-expanded validation and whole-genome acceptance; frozen before paper test",
+    "supported_subtype_required": true
+  },
+  "hybrid_routing": "Type II and Type III ordered-profile architecture ExtraTrees; direct profiles otherwise",
+  "minimum_runtime_version": "0.3.0.dev2",
+  "model_variant": "kira-2026-09-15-full",
+  "offline_inference": true,
+  "routing_policy_evidence": {
+    "aggregate_accuracy_reestimated": false,
+    "type_ii_basis": "targeted canonical Cas9-Cas1-Cas2 regression using the packaged deployment-refit architecture model"
+  },
+  "runtime_cli": "python -m casandra",
+  "schema_version": 4,
+  "scope": "Cas proteins and Cas cassettes only",
+  "specificity_overlay": "casandra-full361-v3-cap15-2026-09-20-v1-specificity",
+  "specificity_runtime_contract": {
+    "protein_model_directory": "protein",
+    "schema_version": 2,
+    "specificity_required": true
+  },
+  "supplemental_hierarchy_policy": "family_only"
+}

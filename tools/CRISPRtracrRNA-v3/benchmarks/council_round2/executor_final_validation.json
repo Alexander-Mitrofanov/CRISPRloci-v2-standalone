@@ -1,0 +1,69 @@
+{
+  "tests": {
+    "command": "PYTHONPATH=src CRISPRTRACRRNA_TEST_CONFIG=$PWD/local.reproducible.toml python -m pytest",
+    "passed": 119,
+    "real_tool_cases": 7,
+    "skipped": 0,
+    "wall_seconds": 18.84,
+    "log_sha256": "4a7370aa25e53688a01f72cee197527ac9e31894e34e497556e71bd0e0dfc466"
+  },
+  "lint": {
+    "command": "python -m ruff check src tests scripts/council_*.py",
+    "passed": true,
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "typing": {
+    "command": "python -m mypy src",
+    "passed": true,
+    "source_files": 12,
+    "log_sha256": "8b88f6d12bd312c1b024b66d07a7f7619a68482ac4d64e475759b1823199faa5"
+  },
+  "final_source_archive": {
+    "path": "benchmarks/council_round2/implementation_final.zip",
+    "sha256": "fb0b61ded6486aadc7dc80e4917e7f1e29622c1435ce8be49254a89b3cb0148f"
+  },
+  "strict_audits": {
+    "audit_current_default_pinned_native.json": {
+      "sha256": "16861096bd46de66d3bb96076404a834ba4573dd0810368094a2dc605cd43c2b",
+      "status": "pass"
+    },
+    "audit_current_experimental_pinned_native.json": {
+      "sha256": "3cbe8a89fad55d4516eb4356be875a6042eb31b1da50e21a3df0a9022e8a2a16",
+      "status": "pass"
+    },
+    "audit_genomic_default.json": {
+      "sha256": "647996f654879564723184687b4b3308f6921af30e4fa1929903fb8b3191796d",
+      "status": "pass"
+    },
+    "audit_genomic_experimental.json": {
+      "sha256": "8ae6df3bd84868af70d45332a3b5d8fd447baf74de90a46b65370a5da84212a6",
+      "status": "pass"
+    },
+    "audit_conditional_dinucleotide_1.json": {
+      "sha256": "f92ceb587ad85dedcb95ad64a83083024b2a0c1017f9f32a9e0214a3ac2b6c7f",
+      "status": "pass"
+    },
+    "audit_conditional_dinucleotide_2.json": {
+      "sha256": "55b9998ca9fa1cf1b9411b4a8926bcc462a5c7bb47374fe320e55b6788c56004",
+      "status": "pass"
+    },
+    "audit_conditional_derangement.json": {
+      "sha256": "b7797368c34d0a48b55655f6df460304cab7fd57949975e19f5277f566eafaec",
+      "status": "pass"
+    }
+  },
+  "result_files": {
+    "final_metrics.json": "e8305b4493734bcaa67bd84502b3f9252035cd029d52f6be73d7b71f2019cc22",
+    "paired_natural_results.json": "9244debdada224cd90b3533c9a589f30cf5baadae24e9f419341b95587407648",
+    "paired_genomic_controls.json": "953eab8a2d97d8412e39a7cbf2f655be2fa585ec35c24d58c29e4c7645640f9e",
+    "conditional_controls_summary.json": "8716713deae5e1f9438fca616ced586765afbbffe5acbc662cd53d1457707e75",
+    "natural_short_proposals.json": "df96443f4aab4551b8984f4a6bbff141013ce9eb56bc7d57f07496861f2f1fdb",
+    "historical_dependency_deltas.json": "8cc327f85ed487a430a2c3dff9980c70909c0af625d140f897ff85236c988025",
+    "experimental_geometry.json": "e4a9a0b622b65376dea67d98ff5c0f36a4185d27823cd0b68d4d6e04b83b853f",
+    "remaining_miss_diagnosis.json": "dba79de40cd7e793b83bef55e642193f8edbbf86569fc043179c204ca83c8b45",
+    "final_stage_source_bindings.json": "58814c1757439c5de005c8d9cf3e543a1680afb0405b0a250582189b174b2867"
+  },
+  "original_historical_equivalence_passed": false,
+  "default_promotion": false,
+  "note": "Executor validation; independent council verdicts and preservation verification are coordinator-owned."
+}

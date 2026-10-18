@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "Mixed absolute/relative/empty PATH through symlink cwd and '..': native subprocess and Runner agree; SHA-256 identifies launched tool",
+    "SIGTERM-ignoring child is killed after bounded timeout; persisted timeout record matches memory",
+    "80 concurrent atomic replacements across eight writers remain parseable and self-consistent, clean their own temporary files, and preserve old fixed sibling",
+    "Second-record write failures count exactly one retained record, never publish report.json and preserve original exception even when failure.json also fails",
+    "Boolean numeric TOML setting rejected with named TracrError; valid CLI-style numeric override still wins"
+  ]
+}

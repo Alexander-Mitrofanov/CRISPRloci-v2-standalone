@@ -1,0 +1,206 @@
+.tool-options {
+  padding: 18px 22px 8px;
+  border-top: 1px solid var(--line);
+}
+.tool-options-intro {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+.tool-options-tool {
+  border-top: 1px solid var(--line);
+}
+.tool-options-tool > summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 12px 0;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+.tool-options-tool > summary::-webkit-details-marker {
+  display: none;
+}
+.tool-options-tool > summary::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: var(--action-text);
+}
+.tool-options-tool[open] > summary::after {
+  content: "−";
+}
+.tool-options-tool > summary > span:first-child {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+.tool-options-tool > summary strong {
+  font-size: 0.9rem;
+}
+.tool-options-tool > summary small,
+.tool-options-count {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.tool-options-count {
+  flex-shrink: 0;
+  color: var(--action-text);
+  font-weight: 600;
+}
+.tool-options-body {
+  padding-bottom: 18px;
+}
+.tool-options-about p,
+.tool-managed p {
+  max-width: 78ch;
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.tool-options-about a {
+  color: var(--action-text);
+  font-size: 0.8rem;
+}
+.tool-cli-modes,
+.tool-managed dl {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) 3fr;
+  gap: 7px 14px;
+  margin: 14px 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.tool-cli-modes dt,
+.tool-managed dt {
+  color: var(--ink);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.tool-cli-modes dd,
+.tool-managed dd {
+  margin: 0;
+  color: var(--muted);
+}
+.tool-option-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 170px);
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.tool-option-field:first-of-type {
+  margin-top: 16px;
+}
+.tool-option-description label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 10px;
+  font-size: 0.84rem;
+}
+.tool-option-description code {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  overflow-wrap: anywhere;
+}
+.tool-option-description p {
+  max-width: 76ch;
+  margin: 6px 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+.tool-option-description > small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.tool-option-control {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+.tool-option-control input,
+.tool-option-control select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 9px 10px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  background: var(--paper);
+  font: inherit;
+  font-size: 0.84rem;
+}
+.tool-option-changed input,
+.tool-option-changed select {
+  border-color: var(--action);
+  background: var(--action-soft);
+}
+.tool-option-control [aria-invalid="true"] {
+  border-color: var(--danger);
+}
+.tool-option-reset,
+.tool-reset-all {
+  padding: 5px 0;
+  border: 0;
+  color: var(--action-text);
+  background: transparent;
+  font-size: 0.78rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.tool-option-reset {
+  align-self: end;
+}
+.tool-reset-all {
+  margin-top: 10px;
+}
+.tool-option-error {
+  color: var(--danger);
+  font-size: 0.75rem;
+}
+.tool-managed {
+  padding: 10px 0 0;
+  border-top: 1px solid var(--line);
+}
+.tool-managed > summary {
+  width: fit-content;
+  min-height: 36px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.workflow-options-title {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+@media (max-width: 700px) {
+  .tool-options {
+    padding-inline: 15px;
+  }
+  .tool-option-field {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .tool-option-control {
+    max-width: 260px;
+  }
+  .tool-cli-modes,
+  .tool-managed dl {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .tool-cli-modes dd,
+  .tool-managed dd {
+    margin-bottom: 8px;
+  }
+}

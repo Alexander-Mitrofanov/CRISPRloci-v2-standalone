@@ -1,0 +1,7477 @@
+{
+  "upstream_commit": "fe94fde10a2855cbcc3bf118a253ec097d3a5e46",
+  "pairs": [
+    {
+      "a": [
+        "8",
+        "3",
+        "5",
+        "9",
+        "5",
+        "9",
+        "4",
+        "1",
+        "5"
+      ],
+      "b": [
+        "8",
+        "9",
+        "4"
+      ],
+      "alignment": [
+        [
+          "8",
+          "3",
+          "5",
+          "9",
+          "5",
+          "9",
+          "4",
+          "1",
+          "5"
+        ],
+        [
+          "8",
+          "-",
+          "-",
+          "-",
+          "-",
+          "9",
+          "4",
+          "-",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "3",
+            "5",
+            "9",
+            "5",
+            "9",
+            "4",
+            "1",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "3",
+                "5"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9",
+                "4"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "1",
+                "5"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "8",
+            "-",
+            "-",
+            "-",
+            "-",
+            "9",
+            "4",
+            "-",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9",
+                "4"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "9",
+        "9",
+        "5"
+      ],
+      "b": [
+        "9",
+        "6",
+        "9",
+        "4",
+        "4",
+        "5"
+      ],
+      "alignment": [
+        [
+          "8",
+          "9",
+          "-",
+          "9",
+          "-",
+          "-",
+          "5"
+        ],
+        [
+          "-",
+          "9",
+          "6",
+          "9",
+          "4",
+          "4",
+          "5"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "9",
+            "-",
+            "9",
+            "-",
+            "-",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "9",
+            "6",
+            "9",
+            "4",
+            "4",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "7",
+        "6"
+      ],
+      "b": [
+        "6",
+        "9"
+      ],
+      "alignment": [
+        [
+          "5",
+          "7",
+          "6",
+          "-"
+        ],
+        [
+          "-",
+          "-",
+          "6",
+          "9"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "5",
+            "7",
+            "6",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "5",
+                "7"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "6",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "9",
+        "9"
+      ],
+      "b": [
+        "7",
+        "5",
+        "9",
+        "4",
+        "4",
+        "3"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "9",
+          "-",
+          "-",
+          "9"
+        ],
+        [
+          "7",
+          "5",
+          "9",
+          "4",
+          "4",
+          "3"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "9",
+            "-",
+            "-",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "7",
+            "5",
+            "9",
+            "4",
+            "4",
+            "3"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "7",
+                "5"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "2"
+      ],
+      "b": [
+        "3",
+        "6",
+        "8",
+        "8",
+        "8",
+        "3"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "5",
+          "2"
+        ],
+        [
+          "3",
+          "6",
+          "8",
+          "8",
+          "8",
+          "3"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "5",
+            "2"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "3",
+            "6",
+            "8",
+            "8",
+            "8",
+            "3"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "8"
+      ],
+      "b": [
+        "2"
+      ],
+      "alignment": [
+        [
+          "8"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "2"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "7",
+        "3",
+        "6",
+        "9"
+      ],
+      "b": [
+        "9",
+        "3",
+        "7",
+        "8",
+        "6",
+        "4",
+        "9"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "7",
+          "3",
+          "6",
+          "-",
+          "9"
+        ],
+        [
+          "9",
+          "3",
+          "7",
+          "8",
+          "6",
+          "4",
+          "9"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "7",
+            "3",
+            "6",
+            "-",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "9",
+            "3",
+            "7",
+            "8",
+            "6",
+            "4",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "9",
+                "3"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "7"
+      ],
+      "b": [
+        "3",
+        "9",
+        "9"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "7"
+        ],
+        [
+          "3",
+          "9",
+          "9"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "7"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "3",
+            "9",
+            "9"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "3",
+        "2",
+        "2",
+        "4",
+        "4",
+        "7",
+        "9"
+      ],
+      "b": [
+        "2",
+        "2"
+      ],
+      "alignment": [
+        [
+          "3",
+          "2",
+          "2",
+          "4",
+          "4",
+          "7",
+          "9"
+        ],
+        [
+          "-",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "3",
+            "2",
+            "2",
+            "4",
+            "4",
+            "7",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2",
+                "2"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "4",
+                "7",
+                "9"
+              ],
+              "indices": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "2",
+            "2",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2",
+                "2"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "9",
+        "9",
+        "3",
+        "2",
+        "4",
+        "6"
+      ],
+      "b": [
+        "9",
+        "3",
+        "7",
+        "8",
+        "3",
+        "8"
+      ],
+      "alignment": [
+        [
+          "8",
+          "9",
+          "9",
+          "3",
+          "-",
+          "2",
+          "4",
+          "6"
+        ],
+        [
+          "-",
+          "-",
+          "9",
+          "3",
+          "7",
+          "8",
+          "3",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "9",
+            "9",
+            "3",
+            "-",
+            "2",
+            "4",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8",
+                "9"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9",
+                "3"
+              ],
+              "indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "2",
+                "4",
+                "6"
+              ],
+              "indices": [
+                5,
+                6,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "9",
+            "3",
+            "7",
+            "8",
+            "3",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9",
+                "3"
+              ],
+              "indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "8",
+                "3",
+                "8"
+              ],
+              "indices": [
+                5,
+                6,
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "1",
+        "9",
+        "5",
+        "1",
+        "7",
+        "9",
+        "2",
+        "9"
+      ],
+      "b": [
+        "4",
+        "7",
+        "1",
+        "8",
+        "5",
+        "5",
+        "2",
+        "8"
+      ],
+      "alignment": [
+        [
+          "-",
+          "2",
+          "1",
+          "9",
+          "5",
+          "1",
+          "7",
+          "9",
+          "2",
+          "9"
+        ],
+        [
+          "4",
+          "7",
+          "1",
+          "8",
+          "5",
+          "-",
+          "-",
+          "5",
+          "2",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "2",
+            "1",
+            "9",
+            "5",
+            "1",
+            "7",
+            "9",
+            "2",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "4",
+            "7",
+            "1",
+            "8",
+            "5",
+            "-",
+            "-",
+            "5",
+            "2",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "4",
+                "7"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "1",
+        "7",
+        "9",
+        "5",
+        "4",
+        "9",
+        "6",
+        "6"
+      ],
+      "b": [
+        "1",
+        "7",
+        "7",
+        "7",
+        "9"
+      ],
+      "alignment": [
+        [
+          "1",
+          "1",
+          "7",
+          "9",
+          "5",
+          "4",
+          "9",
+          "6",
+          "6"
+        ],
+        [
+          "-",
+          "1",
+          "7",
+          "-",
+          "7",
+          "7",
+          "9",
+          "-",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "1",
+            "7",
+            "9",
+            "5",
+            "4",
+            "9",
+            "6",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "7"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9",
+                "5",
+                "4"
+              ],
+              "indices": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "6",
+                "6"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "1",
+            "7",
+            "-",
+            "7",
+            "7",
+            "9",
+            "-",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "7"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-",
+                "7",
+                "7"
+              ],
+              "indices": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "3",
+        "9",
+        "9",
+        "4",
+        "6",
+        "3",
+        "7"
+      ],
+      "b": [
+        "4",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "8",
+        "8",
+        "1"
+      ],
+      "alignment": [
+        [
+          "2",
+          "3",
+          "9",
+          "9",
+          "4",
+          "-",
+          "6",
+          "-",
+          "-",
+          "3",
+          "-",
+          "-",
+          "7"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "4",
+          "7",
+          "6",
+          "5",
+          "4",
+          "3",
+          "8",
+          "8",
+          "1"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "2",
+            "3",
+            "9",
+            "9",
+            "4",
+            "-",
+            "6",
+            "-",
+            "-",
+            "3",
+            "-",
+            "-",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2",
+                "3",
+                "9",
+                "9"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                9
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "-",
+                "7"
+              ],
+              "indices": [
+                10,
+                11,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "4",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "8",
+            "8",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                9
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8",
+                "8",
+                "1"
+              ],
+              "indices": [
+                10,
+                11,
+                12
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "2",
+        "5"
+      ],
+      "b": [
+        "9",
+        "2",
+        "3"
+      ],
+      "alignment": [
+        [
+          "8",
+          "2",
+          "5"
+        ],
+        [
+          "9",
+          "2",
+          "3"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "2",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "9",
+            "2",
+            "3"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "5",
+        "1"
+      ],
+      "b": [
+        "1",
+        "2",
+        "9",
+        "7",
+        "2",
+        "4",
+        "6",
+        "9"
+      ],
+      "alignment": [
+        [
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "5",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "9",
+          "7",
+          "2",
+          "4",
+          "6",
+          "9"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "5",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "5"
+              ],
+              "indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "1",
+            "2",
+            "9",
+            "7",
+            "2",
+            "4",
+            "6",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2",
+                "9",
+                "7",
+                "2",
+                "4",
+                "6"
+              ],
+              "indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "3",
+        "6",
+        "6",
+        "7",
+        "2"
+      ],
+      "b": [
+        "3",
+        "4",
+        "7",
+        "6",
+        "2",
+        "9"
+      ],
+      "alignment": [
+        [
+          "5",
+          "3",
+          "-",
+          "6",
+          "6",
+          "7",
+          "2",
+          "-"
+        ],
+        [
+          "-",
+          "3",
+          "4",
+          "7",
+          "6",
+          "-",
+          "2",
+          "9"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "5",
+            "3",
+            "-",
+            "6",
+            "6",
+            "7",
+            "2",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "3",
+            "4",
+            "7",
+            "6",
+            "-",
+            "2",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "b": [
+        "7",
+        "2",
+        "4",
+        "3",
+        "4"
+      ],
+      "alignment": [
+        [
+          "-",
+          "2",
+          "-",
+          "3",
+          "5",
+          "7"
+        ],
+        [
+          "7",
+          "2",
+          "4",
+          "3",
+          "-",
+          "4"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "2",
+            "-",
+            "3",
+            "5",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "5",
+                "7"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "7",
+            "2",
+            "4",
+            "3",
+            "-",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "4"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "4",
+        "3",
+        "5",
+        "8",
+        "8",
+        "4",
+        "4",
+        "3",
+        "1"
+      ],
+      "b": [
+        "1",
+        "9",
+        "9",
+        "8",
+        "3",
+        "2"
+      ],
+      "alignment": [
+        [
+          "4",
+          "3",
+          "5",
+          "8",
+          "8",
+          "4",
+          "4",
+          "3",
+          "1"
+        ],
+        [
+          "-",
+          "1",
+          "9",
+          "9",
+          "8",
+          "-",
+          "-",
+          "3",
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "4",
+            "3",
+            "5",
+            "8",
+            "8",
+            "4",
+            "4",
+            "3",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "4",
+                "3",
+                "5",
+                "8"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "1",
+            "9",
+            "9",
+            "8",
+            "-",
+            "-",
+            "3",
+            "2"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1",
+                "9",
+                "9"
+              ],
+              "indices": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "7",
+        "7",
+        "9",
+        "6",
+        "6",
+        "4",
+        "6",
+        "5",
+        "8"
+      ],
+      "b": [
+        "3",
+        "2"
+      ],
+      "alignment": [
+        [
+          "7",
+          "7",
+          "9",
+          "6",
+          "6",
+          "4",
+          "6",
+          "5",
+          "8"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "3",
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "7",
+            "7",
+            "9",
+            "6",
+            "6",
+            "4",
+            "6",
+            "5",
+            "8"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "3",
+            "2"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "4",
+        "9",
+        "1",
+        "1",
+        "5",
+        "4",
+        "7",
+        "7",
+        "5"
+      ],
+      "b": [
+        "1",
+        "3",
+        "7",
+        "6",
+        "4",
+        "4",
+        "5",
+        "7"
+      ],
+      "alignment": [
+        [
+          "4",
+          "9",
+          "1",
+          "-",
+          "-",
+          "1",
+          "5",
+          "4",
+          "7",
+          "7",
+          "5"
+        ],
+        [
+          "-",
+          "-",
+          "1",
+          "3",
+          "7",
+          "6",
+          "4",
+          "4",
+          "5",
+          "7",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "4",
+            "9",
+            "1",
+            "-",
+            "-",
+            "1",
+            "5",
+            "4",
+            "7",
+            "7",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "4",
+                "9"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-",
+                "1",
+                "5"
+              ],
+              "indices": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                9
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "1",
+            "3",
+            "7",
+            "6",
+            "4",
+            "4",
+            "5",
+            "7",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7",
+                "6",
+                "4"
+              ],
+              "indices": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                9
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "7",
+        "6",
+        "1"
+      ],
+      "b": [
+        "7",
+        "2",
+        "8",
+        "6",
+        "3",
+        "8",
+        "7",
+        "5",
+        "8"
+      ],
+      "alignment": [
+        [
+          "1",
+          "7",
+          "-",
+          "-",
+          "6",
+          "-",
+          "-",
+          "-",
+          "-",
+          "1"
+        ],
+        [
+          "-",
+          "7",
+          "2",
+          "8",
+          "6",
+          "3",
+          "8",
+          "7",
+          "5",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "7",
+            "-",
+            "-",
+            "6",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "1"
+              ],
+              "indices": [
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "7",
+            "2",
+            "8",
+            "6",
+            "3",
+            "8",
+            "7",
+            "5",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "2",
+                "8"
+              ],
+              "indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "3",
+                "8"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "5",
+                "8"
+              ],
+              "indices": [
+                8,
+                9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "9",
+        "8",
+        "3",
+        "3",
+        "4",
+        "4",
+        "2",
+        "5",
+        "2"
+      ],
+      "b": [
+        "4",
+        "4",
+        "7",
+        "6",
+        "7",
+        "7",
+        "1"
+      ],
+      "alignment": [
+        [
+          "9",
+          "8",
+          "3",
+          "3",
+          "4",
+          "4",
+          "-",
+          "-",
+          "2",
+          "5",
+          "2"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "4",
+          "4",
+          "7",
+          "6",
+          "7",
+          "7",
+          "1"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "9",
+            "8",
+            "3",
+            "3",
+            "4",
+            "4",
+            "-",
+            "-",
+            "2",
+            "5",
+            "2"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "9",
+                "8",
+                "3",
+                "3"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "-",
+                "2",
+                "5",
+                "2"
+              ],
+              "indices": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "4",
+            "4",
+            "7",
+            "6",
+            "7",
+            "7",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "7",
+                "6",
+                "7",
+                "7",
+                "1"
+              ],
+              "indices": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "7",
+        "2",
+        "9",
+        "8",
+        "9",
+        "6",
+        "3",
+        "1"
+      ],
+      "b": [
+        "3",
+        "1",
+        "1",
+        "7",
+        "2",
+        "7"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "8",
+          "7",
+          "2",
+          "9",
+          "8",
+          "9",
+          "6",
+          "3",
+          "1"
+        ],
+        [
+          "3",
+          "1",
+          "1",
+          "7",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "8",
+            "7",
+            "2",
+            "9",
+            "8",
+            "9",
+            "6",
+            "3",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7",
+                "2"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "9",
+                "8",
+                "9",
+                "6",
+                "3"
+              ],
+              "indices": [
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "3",
+            "1",
+            "1",
+            "7",
+            "2",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3",
+                "1",
+                "1"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7",
+                "2"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "2",
+        "7",
+        "5"
+      ],
+      "b": [
+        "4",
+        "8",
+        "3",
+        "4",
+        "6",
+        "1",
+        "9",
+        "5",
+        "8"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "2",
+          "2",
+          "7",
+          "5",
+          "-"
+        ],
+        [
+          "4",
+          "8",
+          "3",
+          "4",
+          "6",
+          "1",
+          "9",
+          "5",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "2",
+            "2",
+            "7",
+            "5",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2",
+                "2",
+                "7"
+              ],
+              "indices": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "4",
+            "8",
+            "3",
+            "4",
+            "6",
+            "1",
+            "9",
+            "5",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "4",
+                "8",
+                "3",
+                "4",
+                "6",
+                "1",
+                "9"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "7"
+      ],
+      "b": [
+        "6",
+        "2"
+      ],
+      "alignment": [
+        [
+          "-",
+          "7"
+        ],
+        [
+          "6",
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "7"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "6",
+            "2"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "6",
+        "7",
+        "3"
+      ],
+      "b": [
+        "3",
+        "6",
+        "8",
+        "6",
+        "7"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "6",
+          "7",
+          "3"
+        ],
+        [
+          "3",
+          "6",
+          "8",
+          "6",
+          "7",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "6",
+            "7",
+            "3"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6",
+                "7"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "3",
+            "6",
+            "8",
+            "6",
+            "7",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3",
+                "6",
+                "8"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6",
+                "7"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1"
+      ],
+      "b": [
+        "6",
+        "5",
+        "8",
+        "5",
+        "2"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "1"
+        ],
+        [
+          "6",
+          "5",
+          "8",
+          "5",
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "1"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "6",
+            "5",
+            "8",
+            "5",
+            "2"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "7"
+      ],
+      "b": [
+        "3"
+      ],
+      "alignment": [
+        [
+          "5",
+          "7"
+        ],
+        [
+          "-",
+          "3"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "5",
+            "7"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "-",
+            "3"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "4",
+        "3",
+        "1",
+        "9"
+      ],
+      "b": [
+        "2",
+        "3",
+        "4"
+      ],
+      "alignment": [
+        [
+          "1",
+          "4",
+          "3",
+          "1",
+          "9"
+        ],
+        [
+          "-",
+          "2",
+          "3",
+          "-",
+          "4"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "4",
+            "3",
+            "1",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1",
+                "4"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "1",
+                "9"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "2",
+            "3",
+            "-",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "4"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "8",
+        "1"
+      ],
+      "b": [
+        "5",
+        "9",
+        "6",
+        "1",
+        "8",
+        "6"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "1",
+          "8",
+          "1"
+        ],
+        [
+          "5",
+          "9",
+          "6",
+          "1",
+          "8",
+          "6"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "1",
+            "8",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "8"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "5",
+            "9",
+            "6",
+            "1",
+            "8",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "5",
+                "9",
+                "6"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "8"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "5",
+        "2",
+        "7",
+        "5",
+        "4",
+        "7",
+        "1",
+        "4"
+      ],
+      "b": [
+        "7",
+        "8",
+        "3",
+        "6"
+      ],
+      "alignment": [
+        [
+          "1",
+          "5",
+          "2",
+          "7",
+          "5",
+          "4",
+          "7",
+          "1",
+          "4"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "7",
+          "-",
+          "-",
+          "8",
+          "3",
+          "6"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "5",
+            "2",
+            "7",
+            "5",
+            "4",
+            "7",
+            "1",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1",
+                "5",
+                "2"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "5",
+                "4"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "1",
+                "4"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "7",
+            "-",
+            "-",
+            "8",
+            "3",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "3",
+                "6"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8"
+      ],
+      "b": [
+        "4"
+      ],
+      "alignment": [
+        [
+          "8"
+        ],
+        [
+          "4"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "4"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "8",
+        "7",
+        "1",
+        "9",
+        "2",
+        "5",
+        "9"
+      ],
+      "b": [
+        "3",
+        "4",
+        "9",
+        "5",
+        "6",
+        "8",
+        "6"
+      ],
+      "alignment": [
+        [
+          "5",
+          "8",
+          "7",
+          "1",
+          "9",
+          "2",
+          "5",
+          "-",
+          "-",
+          "9"
+        ],
+        [
+          "-",
+          "-",
+          "3",
+          "4",
+          "9",
+          "-",
+          "5",
+          "6",
+          "8",
+          "6"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "5",
+            "8",
+            "7",
+            "1",
+            "9",
+            "2",
+            "5",
+            "-",
+            "-",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "5",
+                "8",
+                "7",
+                "1"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "3",
+            "4",
+            "9",
+            "-",
+            "5",
+            "6",
+            "8",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3",
+                "4"
+              ],
+              "indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "6",
+                "8"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "4",
+        "2",
+        "7"
+      ],
+      "b": [
+        "7",
+        "8",
+        "2",
+        "7",
+        "3",
+        "5",
+        "7"
+      ],
+      "alignment": [
+        [
+          "-",
+          "8",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "7"
+        ],
+        [
+          "7",
+          "8",
+          "-",
+          "2",
+          "7",
+          "3",
+          "5",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "8",
+            "4",
+            "2",
+            "-",
+            "-",
+            "-",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "7",
+            "8",
+            "-",
+            "2",
+            "7",
+            "3",
+            "5",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "3",
+                "5"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "1",
+        "1",
+        "3",
+        "5",
+        "8"
+      ],
+      "b": [
+        "9",
+        "5",
+        "3",
+        "1"
+      ],
+      "alignment": [
+        [
+          "8",
+          "1",
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        [
+          "-",
+          "9",
+          "5",
+          "3",
+          "-",
+          "1"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "1",
+            "1",
+            "3",
+            "5",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8",
+                "1",
+                "1"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "5",
+                "8"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "9",
+            "5",
+            "3",
+            "-",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "9",
+                "5"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "1"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "5",
+        "2",
+        "8",
+        "9"
+      ],
+      "b": [
+        "5",
+        "4"
+      ],
+      "alignment": [
+        [
+          "2",
+          "5",
+          "2",
+          "8",
+          "9"
+        ],
+        [
+          "-",
+          "5",
+          "-",
+          "-",
+          "4"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "2",
+            "5",
+            "2",
+            "8",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2",
+                "8",
+                "9"
+              ],
+              "indices": [
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "5",
+            "-",
+            "-",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "-",
+                "4"
+              ],
+              "indices": [
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "5",
+        "4",
+        "6",
+        "9",
+        "8",
+        "4",
+        "8",
+        "4"
+      ],
+      "b": [
+        "5",
+        "1",
+        "1"
+      ],
+      "alignment": [
+        [
+          "1",
+          "5",
+          "4",
+          "6",
+          "9",
+          "8",
+          "4",
+          "8",
+          "4"
+        ],
+        [
+          "-",
+          "5",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "1",
+          "1"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "5",
+            "4",
+            "6",
+            "9",
+            "8",
+            "4",
+            "8",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "6",
+                "9",
+                "8",
+                "4"
+              ],
+              "indices": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "8",
+                "4"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "5",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1",
+                "1"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "3",
+        "6",
+        "4",
+        "7",
+        "3",
+        "3",
+        "5"
+      ],
+      "b": [
+        "3",
+        "6",
+        "6",
+        "2",
+        "2",
+        "3"
+      ],
+      "alignment": [
+        [
+          "3",
+          "6",
+          "4",
+          "7",
+          "3",
+          "3",
+          "5"
+        ],
+        [
+          "3",
+          "6",
+          "6",
+          "2",
+          "2",
+          "3",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "3",
+            "6",
+            "4",
+            "7",
+            "3",
+            "3",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "3",
+                "6"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "3",
+            "6",
+            "6",
+            "2",
+            "2",
+            "3",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "shared",
+              "spacers": [
+                "3",
+                "6"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "6",
+        "8",
+        "8"
+      ],
+      "b": [
+        "3",
+        "3",
+        "6",
+        "2",
+        "8",
+        "3",
+        "6",
+        "7",
+        "2"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "2",
+          "-",
+          "-",
+          "6",
+          "8",
+          "8"
+        ],
+        [
+          "3",
+          "3",
+          "6",
+          "2",
+          "8",
+          "3",
+          "6",
+          "7",
+          "2"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "2",
+            "-",
+            "-",
+            "6",
+            "8",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "8",
+                "8"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "3",
+            "3",
+            "6",
+            "2",
+            "8",
+            "3",
+            "6",
+            "7",
+            "2"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3",
+                "3",
+                "6"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "8",
+                "3"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7",
+                "2"
+              ],
+              "indices": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "6",
+        "6",
+        "6",
+        "9"
+      ],
+      "b": [
+        "8",
+        "4",
+        "8",
+        "4",
+        "4",
+        "8"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "6",
+          "6",
+          "6",
+          "9"
+        ],
+        [
+          "8",
+          "4",
+          "8",
+          "4",
+          "4",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "6",
+            "6",
+            "6",
+            "9"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "8",
+            "4",
+            "8",
+            "4",
+            "4",
+            "8"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "5",
+        "5",
+        "7",
+        "6",
+        "2",
+        "3",
+        "3"
+      ],
+      "b": [
+        "2",
+        "8",
+        "5",
+        "4",
+        "7",
+        "7"
+      ],
+      "alignment": [
+        [
+          "-",
+          "1",
+          "5",
+          "5",
+          "7",
+          "6",
+          "2",
+          "3",
+          "3"
+        ],
+        [
+          "2",
+          "8",
+          "5",
+          "4",
+          "7",
+          "-",
+          "-",
+          "-",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "1",
+            "5",
+            "5",
+            "7",
+            "6",
+            "2",
+            "3",
+            "3"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "6",
+                "2",
+                "3"
+              ],
+              "indices": [
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "3"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "2",
+            "8",
+            "5",
+            "4",
+            "7",
+            "-",
+            "-",
+            "-",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2",
+                "8"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2"
+      ],
+      "b": [
+        "9",
+        "7",
+        "5",
+        "9",
+        "3",
+        "5",
+        "6"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "2"
+        ],
+        [
+          "9",
+          "7",
+          "5",
+          "9",
+          "3",
+          "5",
+          "6"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "2"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "9",
+            "7",
+            "5",
+            "9",
+            "3",
+            "5",
+            "6"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "1",
+        "6",
+        "6",
+        "9"
+      ],
+      "b": [
+        "2",
+        "2",
+        "5",
+        "7"
+      ],
+      "alignment": [
+        [
+          "1",
+          "6",
+          "6",
+          "9"
+        ],
+        [
+          "2",
+          "2",
+          "5",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "1",
+            "6",
+            "6",
+            "9"
+          ],
+          "modules": []
+        },
+        {
+          "aligned": [
+            "2",
+            "2",
+            "5",
+            "7"
+          ],
+          "modules": []
+        }
+      ]
+    },
+    {
+      "a": [
+        "5",
+        "6",
+        "9",
+        "5",
+        "5",
+        "4",
+        "5",
+        "4"
+      ],
+      "b": [
+        "5",
+        "7",
+        "8"
+      ],
+      "alignment": [
+        [
+          "5",
+          "6",
+          "9",
+          "5",
+          "5",
+          "4",
+          "5",
+          "4"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "-",
+          "5",
+          "-",
+          "7",
+          "8"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "5",
+            "6",
+            "9",
+            "5",
+            "5",
+            "4",
+            "5",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "5",
+                "6",
+                "9",
+                "5"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "5",
+            "-",
+            "7",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "2",
+        "9",
+        "6",
+        "4",
+        "8"
+      ],
+      "b": [
+        "4",
+        "7",
+        "7"
+      ],
+      "alignment": [
+        [
+          "2",
+          "9",
+          "6",
+          "4",
+          "-",
+          "8"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "4",
+          "7",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "2",
+            "9",
+            "6",
+            "4",
+            "-",
+            "8"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "2",
+                "9",
+                "6"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "8"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "-",
+            "4",
+            "7",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "7",
+                "7"
+              ],
+              "indices": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "7",
+        "5",
+        "7",
+        "8",
+        "7",
+        "5",
+        "5",
+        "6"
+      ],
+      "b": [
+        "6",
+        "9",
+        "9",
+        "9",
+        "5"
+      ],
+      "alignment": [
+        [
+          "7",
+          "5",
+          "7",
+          "8",
+          "7",
+          "5",
+          "5",
+          "6"
+        ],
+        [
+          "-",
+          "-",
+          "6",
+          "9",
+          "9",
+          "9",
+          "5",
+          "-"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "7",
+            "5",
+            "7",
+            "8",
+            "7",
+            "5",
+            "5",
+            "6"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "7",
+                "5",
+                "7",
+                "8",
+                "7",
+                "5"
+              ],
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "6"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "-",
+            "6",
+            "9",
+            "9",
+            "9",
+            "5",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "6",
+                "9",
+                "9",
+                "9"
+              ],
+              "indices": [
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "trailer_loss",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "4",
+        "2",
+        "2",
+        "6",
+        "5",
+        "2",
+        "3",
+        "2"
+      ],
+      "b": [
+        "3",
+        "8",
+        "4",
+        "1"
+      ],
+      "alignment": [
+        [
+          "-",
+          "-",
+          "4",
+          "2",
+          "2",
+          "6",
+          "5",
+          "2",
+          "3",
+          "2"
+        ],
+        [
+          "3",
+          "8",
+          "4",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "1"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "-",
+            "4",
+            "2",
+            "2",
+            "6",
+            "5",
+            "2",
+            "3",
+            "2"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2",
+                "2",
+                "6",
+                "5",
+                "2",
+                "3",
+                "2"
+              ],
+              "indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "3",
+            "8",
+            "4",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "3",
+                "8"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1"
+              ],
+              "indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "9",
+        "4",
+        "1",
+        "2",
+        "5"
+      ],
+      "b": [
+        "8",
+        "1",
+        "9",
+        "5"
+      ],
+      "alignment": [
+        [
+          "9",
+          "4",
+          "1",
+          "2",
+          "5"
+        ],
+        [
+          "-",
+          "8",
+          "1",
+          "9",
+          "5"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "9",
+            "4",
+            "1",
+            "2",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "9",
+                "4"
+              ],
+              "indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "2"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "-",
+            "8",
+            "1",
+            "9",
+            "5"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "6",
+        "1",
+        "8",
+        "7",
+        "1",
+        "9",
+        "9"
+      ],
+      "b": [
+        "4",
+        "3",
+        "5",
+        "1",
+        "5",
+        "7",
+        "9",
+        "4",
+        "7"
+      ],
+      "alignment": [
+        [
+          "-",
+          "8",
+          "6",
+          "1",
+          "8",
+          "7",
+          "1",
+          "9",
+          "-",
+          "9"
+        ],
+        [
+          "4",
+          "3",
+          "5",
+          "1",
+          "5",
+          "7",
+          "-",
+          "9",
+          "4",
+          "7"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "-",
+            "8",
+            "6",
+            "1",
+            "8",
+            "7",
+            "1",
+            "9",
+            "-",
+            "9"
+          ],
+          "modules": [
+            {
+              "type": "no_acquisition",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8",
+                "6"
+              ],
+              "indices": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "4",
+            "3",
+            "5",
+            "1",
+            "5",
+            "7",
+            "-",
+            "9",
+            "4",
+            "7"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "4",
+                "3",
+                "5"
+              ],
+              "indices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                3
+              ]
+            },
+            {
+              "type": "indel_mm",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                4
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                5
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                6
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "9"
+              ],
+              "indices": [
+                7
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4"
+              ],
+              "indices": [
+                8
+              ]
+            },
+            {
+              "type": "duplication",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "a": [
+        "8",
+        "7",
+        "1",
+        "3"
+      ],
+      "b": [
+        "1",
+        "7",
+        "5",
+        "1",
+        "3",
+        "4",
+        "4"
+      ],
+      "alignment": [
+        [
+          "8",
+          "7",
+          "-",
+          "1",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "1",
+          "7",
+          "5",
+          "1",
+          "3",
+          "4",
+          "4"
+        ]
+      ],
+      "modules": [
+        {
+          "aligned": [
+            "8",
+            "7",
+            "-",
+            "1",
+            "3",
+            "-",
+            "-"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "8"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "3"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "-",
+                "-"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "aligned": [
+            "1",
+            "7",
+            "5",
+            "1",
+            "3",
+            "4",
+            "4"
+          ],
+          "modules": [
+            {
+              "type": "acquisition",
+              "spacers": [
+                "1"
+              ],
+              "indices": [
+                0
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "7"
+              ],
+              "indices": [
+                1
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "5"
+              ],
+              "indices": [
+                2
+              ]
+            },
+            {
+              "type": "shared",
+              "spacers": [
+                "1",
+                "3"
+              ],
+              "indices": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "indel_gap",
+              "spacers": [
+                "4",
+                "4"
+              ],
+              "indices": [
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "order": [
+    "A",
+    "B",
+    "C",
+    "isolated"
+  ],
+  "score": 4,
+  "colors": [
+    [
+      "#e69f00",
+      "#000000"
+    ],
+    [
+      "#000000",
+      "#D55E00"
+    ],
+    [
+      "#D55E00",
+      "#D55E00"
+    ],
+    [
+      "#009E73",
+      "#56B4E9"
+    ],
+    [
+      "#CC79A7",
+      "#F0E442"
+    ],
+    [
+      "#e69f00",
+      "#F0E442"
+    ],
+    [
+      "#D55E00",
+      "#0072B2"
+    ],
+    [
+      "#CC79A7",
+      "#56B4E9"
+    ],
+    [
+      "#D55E00",
+      "#000000"
+    ],
+    [
+      "#CC79A7",
+      "#0072B2"
+    ],
+    [
+      "#56B4E9",
+      "#D55E00"
+    ],
+    [
+      "#56B4E9",
+      "#009E73"
+    ],
+    [
+      "#0072B2",
+      "#009E73"
+    ],
+    [
+      "#e69f00",
+      "#CC79A7"
+    ],
+    [
+      "#000000",
+      "#000000"
+    ],
+    [
+      "#000000",
+      "#009E73"
+    ],
+    [
+      "#0072B2",
+      "#56B4E9"
+    ],
+    [
+      "#D55E00",
+      "#e69f00"
+    ],
+    [
+      "#56B4E9",
+      "#56B4E9"
+    ],
+    [
+      "#009E73",
+      "#CC79A7"
+    ],
+    [
+      "#0072B2",
+      "#D55E00"
+    ],
+    [
+      "#009E73",
+      "#0072B2"
+    ],
+    [
+      "#F0E442",
+      "#0072B2"
+    ],
+    [
+      "#F0E442",
+      "#F0E442"
+    ],
+    [
+      "#F0E442",
+      "#CC79A7"
+    ],
+    [
+      "#F0E442",
+      "#000000"
+    ],
+    [
+      "#0072B2",
+      "#CC79A7"
+    ],
+    [
+      "#56B4E9",
+      "#F0E442"
+    ],
+    [
+      "#D55E00",
+      "#CC79A7"
+    ],
+    [
+      "#000000",
+      "#56B4E9"
+    ],
+    [
+      "#D55E00",
+      "#F0E442"
+    ],
+    [
+      "#F0E442",
+      "#e69f00"
+    ],
+    [
+      "#56B4E9",
+      "#CC79A7"
+    ],
+    [
+      "#e69f00",
+      "#e69f00"
+    ],
+    [
+      "#e69f00",
+      "#D55E00"
+    ],
+    [
+      "#CC79A7",
+      "#e69f00"
+    ],
+    [
+      "#CC79A7",
+      "#009E73"
+    ],
+    [
+      "#0072B2",
+      "#0072B2"
+    ],
+    [
+      "#0072B2",
+      "#e69f00"
+    ],
+    [
+      "#009E73",
+      "#D55E00"
+    ],
+    [
+      "#CC79A7",
+      "#CC79A7"
+    ],
+    [
+      "#F0E442",
+      "#D55E00"
+    ],
+    [
+      "#000000",
+      "#e69f00"
+    ],
+    [
+      "#009E73",
+      "#F0E442"
+    ],
+    [
+      "#D55E00",
+      "#009E73"
+    ],
+    [
+      "#F0E442",
+      "#009E73"
+    ],
+    [
+      "#000000",
+      "#0072B2"
+    ],
+    [
+      "#D55E00",
+      "#56B4E9"
+    ],
+    [
+      "#e69f00",
+      "#0072B2"
+    ],
+    [
+      "#e69f00",
+      "#56B4E9"
+    ],
+    [
+      "#009E73",
+      "#009E73"
+    ],
+    [
+      "#56B4E9",
+      "#000000"
+    ],
+    [
+      "#0072B2",
+      "#000000"
+    ],
+    [
+      "#009E73",
+      "#e69f00"
+    ],
+    [
+      "#000000",
+      "#CC79A7"
+    ],
+    [
+      "#F0E442",
+      "#56B4E9"
+    ],
+    [
+      "#56B4E9",
+      "#0072B2"
+    ],
+    [
+      "#e69f00",
+      "#009E73"
+    ],
+    [
+      "#CC79A7",
+      "#D55E00"
+    ],
+    [
+      "#56B4E9",
+      "#e69f00"
+    ],
+    [
+      "#CC79A7",
+      "#000000"
+    ],
+    [
+      "#0072B2",
+      "#F0E442"
+    ],
+    [
+      "#009E73",
+      "#000000"
+    ],
+    [
+      "#000000",
+      "#F0E442"
+    ]
+  ],
+  "nodes": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "aa",
+    "ab",
+    "ac",
+    "ad",
+    "ae",
+    "af",
+    "ag",
+    "ah",
+    "ai",
+    "aj",
+    "ak",
+    "al",
+    "am",
+    "an"
+  ]
+}

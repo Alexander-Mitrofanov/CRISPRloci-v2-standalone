@@ -1,0 +1,12 @@
+{
+  "original_files_checked": 346,
+  "changed_original_files": [
+    "fasta36-fasta-v36.3.8g/src/comp_lib9.c",
+    "fasta36-fasta-v36.3.8g/src/work_thr2.c"
+  ],
+  "missing_original_files": [],
+  "changes_match_frozen_scope": true,
+  "added_source_header": "src/council_seed.h",
+  "binary_hash_matches": true,
+  "rng_recurrence_source_unchanged": true
+}

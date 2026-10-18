@@ -1,0 +1,14 @@
+{
+  "dependency_freeze_files": 390,
+  "dependency_freeze_changed": [],
+  "native_binary_seed_threads_control_hash_linkage": "pass",
+  "archived_source_original_files": 40,
+  "active_archived_run_provenance": "pass",
+  "configuration_changed_keys": [
+    "fasta36",
+    "threads"
+  ],
+  "stock_manifest_under_current_default_pinned_native": "INCORRECTLY ACCEPTED",
+  "stock_manifest_under_current_experimental_pinned_native": "INCORRECTLY ACCEPTED",
+  "auditor_sha256": "2e2db45d878047b16e3b8900de5d17173af3df03dc1d6c917e217d23c38128a2"
+}

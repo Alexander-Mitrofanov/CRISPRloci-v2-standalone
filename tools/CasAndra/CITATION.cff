@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: CasAndra
+message: "CasAndra is pre-release research software; cite the version used and its database manifest."
+type: software
+authors:
+  - name: CasAndra contributors
+version: 0.3.0.dev2
+date-released: 2026-09-26
+repository-code: https://github.com/Alexander-Mitrofanov/CasAndra
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: An updated evolutionary classification of CRISPR-Cas systems including rare variants
+  authors:
+    - family-names: Makarova
+      given-names: Kira S.
+    - family-names: Shmakov
+      given-names: Sergey A.
+    - family-names: Wolf
+      given-names: Yuri I.
+  journal: Nature Microbiology
+  year: 2025
+  doi: 10.1038/s41564-025-02180-8

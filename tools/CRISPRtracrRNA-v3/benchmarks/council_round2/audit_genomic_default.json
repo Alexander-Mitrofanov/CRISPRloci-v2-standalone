@@ -1,0 +1,127 @@
+{
+  "stage": "genomic_default",
+  "auditor_sha256": "ac47bd91aec881528a15285a75ac45cd73f7839049dc7bfb2966ed3ff14cb0dc",
+  "comparison_stage": null,
+  "status": "pass",
+  "runs": 19,
+  "totals": {
+    "evidence_files": 993,
+    "predictions": 60
+  },
+  "results": [
+    {
+      "label": "Ain",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Esp2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lsp1",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Lan",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Mse",
+      "predictions": 16,
+      "proposals": 0,
+      "evidence_files": 84
+    },
+    {
+      "label": "Sth1A",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Kki",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Rsp",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Bbo",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cca2",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Cme3",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ghe",
+      "predictions": 8,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cca1",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Cga",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Cme1",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ffr",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Ghy2",
+      "predictions": 4,
+      "proposals": 0,
+      "evidence_files": 60
+    },
+    {
+      "label": "Orh",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    },
+    {
+      "label": "Psp",
+      "predictions": 0,
+      "proposals": 0,
+      "evidence_files": 41
+    }
+  ]
+}

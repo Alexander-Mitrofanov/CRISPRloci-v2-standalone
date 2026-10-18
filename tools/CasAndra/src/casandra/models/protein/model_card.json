@@ -1,0 +1,18 @@
+{
+  "model_id": "casandra-full361-v3-cap15-2026-09-20-v1-protein",
+  "positive_profile_required": true,
+  "required_specificity_core": {
+    "detection_threshold": 0.0,
+    "report_evalue": 1000.0,
+    "schema_version": 2
+  },
+  "role": "deployment_refit_not_evaluation_model",
+  "selection": "frozen settings from prior extension experiments; no tuning after full-data refit",
+  "source_splits_reused_for_deployment": true,
+  "specificity_overlay": {
+    "manifest": "specificity/manifest.json",
+    "manifest_sha256": "c2f5a60f4390c15965f4eae5864f12865fadef886503fb60a9a8f0db4e702c5c",
+    "schema_version": 1
+  },
+  "supplemental_profiles": 20
+}

@@ -1,0 +1,45 @@
+.references {
+  margin-top: 28px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.references summary {
+  padding: 14px 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 16px;
+}
+.reference-grid article {
+  min-width: 0;
+}
+.reference-grid article > span {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+.reference-grid h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.reference-grid p {
+  margin: 8px 0 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.reference-grid article > div {
+  display: flex;
+  gap: 16px;
+}
+.reference-grid a {
+  color: var(--action-text);
+  font-size: 0.8rem;
+  text-underline-offset: 3px;
+}

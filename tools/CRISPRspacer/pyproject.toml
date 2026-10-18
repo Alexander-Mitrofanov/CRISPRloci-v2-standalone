@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crisprspacer"
+version = "0.3.1"
+description = "Reproducible, source-bound CRISPR spacer and candidate protospacer sequence analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Alexander Mitrofanov"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "ruff>=0.9"]
+
+[project.scripts]
+crisprspacer = "crisprspacer.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Alexander-Mitrofanov/CRISPRspacer"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

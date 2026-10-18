@@ -1,0 +1,236 @@
+{
+  "job_id": "cccccccccccccccccccccccccccccccc",
+  "status": "completed",
+  "mode": "spacer_association",
+  "options": {
+    "association_grouping": "per_source"
+  },
+  "summary": {
+    "spacer_association": {
+      "schema": {
+        "name": "crisprloci.spacer-association",
+        "version": "1.0.0"
+      },
+      "execution_completed": true,
+      "reference": {
+        "name": "upstream-three-phages",
+        "engine_version": "2.0.2",
+        "control_method": "reversed_translated_orfs",
+        "manifest_sha256": "94e2e3618a36792cfbf0f1b086c8666f0eced525314d70b0e61a78b08c3c25cb",
+        "genomes": [
+          {
+            "id": "AF063097.1",
+            "length": 33593,
+            "sha256": "9869e68acba95e0b132761f7c3a7681ff01bb85cd56f8a0b54bb5824e166c58f"
+          },
+          {
+            "id": "AY369265.2",
+            "length": 48177,
+            "sha256": "59f317539bc539147e82a98ab14c2cee2da4c3cf6a55f1e4ca76c9d6dff275db"
+          },
+          {
+            "id": "AJ242593.1",
+            "length": 40834,
+            "sha256": "d5e15b155af28f6de728993d1ae2432d7e96aee7059f9b4a4beb8fadba4b5680"
+          }
+        ]
+      },
+      "requested_fdr": 0.05,
+      "calibration_status": "unavailable",
+      "calibration": {
+        "control_score_count": 4,
+        "schema_version": "spacepharer.calibration/1.0.0",
+        "status": "unavailable",
+        "target_score_count": 5
+      },
+      "groups": [
+        {
+          "id": "source1",
+          "members": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5",
+            "s6",
+            "s7",
+            "s8",
+            "s9",
+            "s10",
+            "s11",
+            "s12",
+            "s13",
+            "s14",
+            "s15",
+            "duplicate"
+          ],
+          "supported_occurrence_count": 16,
+          "unique_sequence_count": 15,
+          "unsupported_occurrence_ids": []
+        },
+        {
+          "id": "source2",
+          "members": [
+            "s16",
+            "s17",
+            "s18",
+            "s19",
+            "s20",
+            "s21",
+            "s22",
+            "s23",
+            "s24",
+            "s25",
+            "s26",
+            "s27",
+            "s28",
+            "s29",
+            "s30",
+            "s31",
+            "s32",
+            "s33",
+            "s34",
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43",
+            "s44",
+            "s45",
+            "s46",
+            "s47",
+            "s48",
+            "s49",
+            "s50",
+            "s51",
+            "s52",
+            "s53",
+            "s54",
+            "s55",
+            "s56",
+            "s57",
+            "s58",
+            "s59",
+            "s60",
+            "s61",
+            "s62",
+            "s63",
+            "s64",
+            "s65",
+            "s66",
+            "s67",
+            "s68",
+            "s69"
+          ],
+          "supported_occurrence_count": 54,
+          "unique_sequence_count": 54,
+          "unsupported_occurrence_ids": []
+        }
+      ],
+      "associations": [
+        {
+          "group_id": "source1",
+          "target_id": "AY369265.2",
+          "combined_score": 12.24,
+          "native_fdr": null,
+          "status": "uncalibrated_candidate",
+          "native_hit_count": 1,
+          "hits": [
+            {
+              "occurrence_ids": ["s11", "duplicate"],
+              "query_sequence": "ACAGATTTCGGCCCTTACACGCTGCGCCTCGACG",
+              "p_best_hit": 4.833e-6,
+              "query_start": 1,
+              "query_end": 33,
+              "target_start": 42273,
+              "target_end": 42305,
+              "query_alignment": "ACAGATTTCGGCCCTTACACGCTGCGCCTCGAC",
+              "target_alignment": "ACGGACTTCGGCCCGTACCGCCTGCGGCTCGAC"
+            }
+          ]
+        },
+        {
+          "group_id": "source2",
+          "target_id": "AJ242593.1",
+          "combined_score": 74.56,
+          "native_fdr": null,
+          "status": "uncalibrated_candidate",
+          "native_hit_count": 5,
+          "hits": [
+            {
+              "occurrence_ids": ["s42"],
+              "query_sequence": "AAAACTAGCGAATCAATACGGAATTAAGAATTACAC",
+              "p_best_hit": 3.466e-5,
+              "query_start": 2,
+              "query_end": 34,
+              "target_start": 20574,
+              "target_end": 20606,
+              "query_alignment": "AAACTAGCGAATCAATACGGAATTAAGAATTAC",
+              "target_alignment": "AAACTAGCGACAAGTTACGGAATTAAAAATTAC"
+            },
+            {
+              "occurrence_ids": ["s46"],
+              "query_sequence": "TACATGTCGTTTAACCCGCCTCGAAATCCTTATGAG",
+              "p_best_hit": 7.088e-11,
+              "query_start": 1,
+              "query_end": 36,
+              "target_start": 1051,
+              "target_end": 1086,
+              "query_alignment": "TACATGTCGTTTAACCCGCCTCGAAATCCTTATGAG",
+              "target_alignment": "TACATGTCATTTAACCCGCCTCGCAATCCATATGAA"
+            },
+            {
+              "occurrence_ids": ["s47"],
+              "query_sequence": "TCCAAACTCCTTCCGCACATTGGGCAATATTTTATA",
+              "p_best_hit": 6.476e-7,
+              "query_start": 35,
+              "query_end": 3,
+              "target_start": 36859,
+              "target_end": 36891,
+              "query_alignment": "ATAAAATATTGCCCAATGTGCGGAAGGAGTTTG",
+              "target_alignment": "ATACTATATTGCCCGCTCTGCGGAAGGAGTTTG"
+            },
+            {
+              "occurrence_ids": ["s52"],
+              "query_sequence": "ATTGAGGTGTATTACTGTCGCCAGTTGAGTAACCAG",
+              "p_best_hit": 6.95e-15,
+              "query_start": 34,
+              "query_end": 2,
+              "target_start": 18565,
+              "target_end": 18597,
+              "query_alignment": "GGTTACTCAACTGGCGACAGTAATACACCTCAA",
+              "target_alignment": "GGTTACTCAACTGGCGACAGTAATACACCTCAA"
+            },
+            {
+              "occurrence_ids": ["s31"],
+              "query_sequence": "CTTGCCAAGTTTTCTGGTCCAGCTTCCCATATTTCT",
+              "p_best_hit": 1.321e-7,
+              "query_start": 34,
+              "query_end": 5,
+              "target_start": 34780,
+              "target_end": 34809,
+              "query_alignment": "AAATATGGGAAGCTGGACCAGAAAACTTGG",
+              "target_alignment": "AAATATGGGAAGTTAGACCAGAGAACTTGG"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "records": 70,
+        "groups": 2,
+        "associations": 0,
+        "candidates": 2,
+        "support_hits": 6,
+        "unsupported": 0
+      },
+      "interpretation": "Spacer similarity supports a group\u2013target association hypothesis, not active infection, cleavage or a PAM prediction.",
+      "available": true,
+      "associations_truncated": false
+    }
+  },
+  "artifacts": []
+}

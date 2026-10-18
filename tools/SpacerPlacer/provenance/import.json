@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "import_date": "2026-09-27",
+  "source_directory": "web_server_identify_placer_evor/SpacerPlacer",
+  "upstream_repository": "https://github.com/fbaumdicker/SpacerPlacer.git",
+  "upstream_commit": "f2424aef2f79d6ee5b0f7c222abf33aa2d464aea",
+  "source_state": "Working tree, including uncommitted fixes and untracked source/tests",
+  "source_file_count": 143,
+  "modified_from_upstream": [
+    ".gitignore",
+    "README.md",
+    "additional_data/additional_scripts/analyze_real_data_results.py",
+    "additional_data/additional_scripts/analyze_sim_data_results.py",
+    "additional_data/additional_scripts/iqtree_integration.py",
+    "additional_data/additional_scripts/main.py",
+    "additional_data/additional_scripts/model/helpers/raw_data_tools.py",
+    "setup.py",
+    "sp_model/bdm_likelihood_computation/symbolic_lh_computation.py",
+    "sp_model/coalescent_tree_sim.py",
+    "sp_model/crisprfinder_to_spacerfasta.py",
+    "sp_model/data_classes/advanced_tree.py",
+    "sp_model/data_classes/crisprdata.py",
+    "sp_model/distance_tree_constructor.py",
+    "sp_model/experiments_tools.py",
+    "sp_model/helpers/import_data.py",
+    "sp_model/helpers/misc.py",
+    "sp_model/helpers/stats.py",
+    "sp_model/input_parser.py",
+    "sp_model/mafft_integration.py",
+    "sp_model/model_tools.py",
+    "sp_model/orientation/orientation_tools.py",
+    "sp_model/reconstruction_tree.py",
+    "sp_model/run_experiments.py",
+    "sp_model/run_reconstruction.py",
+    "sp_model/run_simulation.py",
+    "sp_model/simulation_tree.py",
+    "sp_model/spacer_visualization/custom_ete3.py",
+    "sp_model/spacer_visualization/visualization.py",
+    "sp_model/summary.py",
+    "spacerplacer.py"
+  ],
+  "added_to_upstream": [
+    "constraints-tested.txt",
+    "pyproject.toml",
+    "sp_model/helpers/sequence.py",
+    "tests/fixtures/crisprcasfinder/example/result.json",
+    "tests/test_input_adapters.py",
+    "tests/test_mafft_and_cli_safety.py",
+    "tests/test_orientation_and_numerics.py",
+    "tests/test_packaging.py",
+    "tests/test_reconstructed_event_export.py",
+    "tests/test_sequence_helpers.py",
+    "tests/test_simulation_parameters.py"
+  ],
+  "export_changes": [
+    "Standalone repository README and provenance documentation",
+    "Extended .gitignore; no scientific runtime or test changes"
+  ],
+  "excluded": [
+    "Original .git history",
+    "Ignored caches, bytecode, build/, dist/, and egg-info"
+  ]
+}

@@ -1,0 +1,40 @@
+/*
+ * Import order is part of the cascade. Keep domain rules before refinements
+ * and responsive/accessibility rules last.
+ */
+@import "./foundation.css";
+@import "./shell.css";
+@import "./submission/layout.css";
+@import "./submission/input.css";
+@import "./submission/readiness.css";
+@import "./submission/options.css";
+@import "./submission/tool-options.css";
+@import "./submission/actions.css";
+@import "./jobs.css";
+@import "./results/base.css";
+@import "./results/groups.css";
+@import "./results/orientation.css";
+@import "./results/history/story.css";
+@import "./results/history/controls.css";
+@import "./results/history/hypotheses.css";
+@import "./results/history/canvas.css";
+@import "./results/history/ancestry.css";
+@import "./results/reconstruction.css";
+@import "./results/provenance.css";
+@import "./results/repeats.css";
+@import "./results/sequence-search.css";
+@import "./content.css";
+@import "./loci.css";
+@import "./catalog.css";
+@import "./refinements/global-shell.css";
+@import "./refinements/submission.css";
+@import "./refinements/jobs.css";
+@import "./refinements/results.css";
+@import "./refinements/content.css";
+@import "./responsive/tablet.css";
+@import "./responsive/mobile.css";
+@import "./responsive/compact.css";
+@import "./responsive/catalog.css";
+@import "./responsive/sequence-search.css";
+@import "./responsive/accessibility.css";
+@import "./responsive/print.css";

@@ -1,0 +1,135 @@
+@media (pointer: coarse) {
+  .nav-shell nav > a,
+  .text-button,
+  .history-scale button,
+  .history-view-controls button,
+  .reference-grid a {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --line: #879a91;
+    --line-dark: #5d746a;
+    --muted: #40574f;
+  }
+  .mode-card,
+  .input-panel,
+  .advanced,
+  .results,
+  .job-panel,
+  .history-canvas,
+  .table-wrap {
+    border-width: 2px;
+  }
+  .service-status,
+  .history-hypothesis,
+  .result-tabs {
+    border-color: currentColor;
+  }
+  .history-spacer.present {
+    stroke-width: 2;
+  }
+  .history-spacer.absent {
+    stroke-width: 1.5;
+    stroke-dasharray: 3 1;
+  }
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 3px solid Highlight;
+  }
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+  .result-tabs button[aria-selected="true"],
+  .mode-card.selected,
+  .history-hypothesis.active,
+  .history-scale button.active,
+  .history-view-controls button.active,
+  .ancestor-tabs button.active,
+  .segmented button[aria-pressed="true"] {
+    border: 3px solid Highlight;
+  }
+  .status-pulse {
+    forced-color-adjust: none;
+    border: 2px solid CanvasText;
+    background: CanvasText;
+    box-shadow: none;
+  }
+  .service-online .status-pulse {
+    border-radius: 50%;
+    background: Highlight;
+  }
+  .service-offline .status-pulse {
+    border-radius: 1px;
+    background: CanvasText;
+  }
+  .history-spacer.present,
+  .history-spacer-strip i.present {
+    forced-color-adjust: none;
+    fill: Highlight;
+    color: HighlightText;
+    border-color: CanvasText;
+    stroke: CanvasText;
+  }
+  .history-spacer.absent,
+  .history-spacer-strip i.absent {
+    forced-color-adjust: none;
+    fill: Canvas;
+    color: CanvasText;
+    border-color: CanvasText;
+    stroke: CanvasText;
+    stroke-dasharray: 3 2;
+  }
+  .history-node,
+  .tree-node {
+    fill: CanvasText;
+    stroke: Canvas;
+  }
+  .history-node.leaf,
+  .tree-leaf-node {
+    fill: Highlight;
+    stroke: CanvasText;
+  }
+  .history-node.selected {
+    fill: Canvas;
+    stroke: Highlight;
+  }
+  .legend-gain,
+  .legend-loss,
+  .legend-absence,
+  .event-glyph {
+    forced-color-adjust: none;
+    border-color: CanvasText !important;
+    background: Canvas !important;
+  }
+  .legend-gain {
+    border-radius: 50%;
+    background: Highlight !important;
+  }
+  .legend-loss {
+    border-width: 3px !important;
+  }
+  .result-tabs,
+  .service-status {
+    background: Canvas;
+  }
+}

@@ -1,0 +1,2 @@
+Real CasAndra 0.3.0.dev2 native evidence generated against the corresponding insertion-context toy or upstream defense-context test input. The native source hash and output checksums are retained for independent validation. These files are scientific regression fixtures, not deployment records.
+Only machine-local source paths were replaced with fixture/input.fasta and the corresponding retained-file checksum regenerated; sequence, coordinates and scientific calls were not modified.

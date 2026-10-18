@@ -1,0 +1,35 @@
+{
+  "schema": {
+    "name": "crisprloci.sequence-set",
+    "version": "1.0.0"
+  },
+  "kind": "spacer",
+  "molecule": "DNA",
+  "complete": true,
+  "records": [
+    {
+      "id": "spacer_1ab1e4e9c89d6295c60f390a",
+      "sequence": "TGCTCTCTTTTGTGTAAAGCACATCAAGCATGTAG",
+      "origin": {
+        "source_id": "example_record_01",
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "array_id": "CRISPR-422-580-bf1",
+        "ordinal": 2,
+        "start": 516,
+        "end": 550
+      }
+    },
+    {
+      "id": "spacer_34e2a73fee6dd626aed63e9d",
+      "sequence": "ACAGATCAAACTCCGGAAGGGTGATTGTAAATGG",
+      "origin": {
+        "source_id": "example_record_01",
+        "source_sha256": "db767896bd39a3b7149c37385493a6a5bb89b255b15e88d76a383f4f8e7c3157",
+        "array_id": "CRISPR-422-580-bf1",
+        "ordinal": 1,
+        "start": 452,
+        "end": 485
+      }
+    }
+  ]
+}

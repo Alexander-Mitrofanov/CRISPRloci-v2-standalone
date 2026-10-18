@@ -1,0 +1,480 @@
+{
+  "status": "pass",
+  "runs": 79,
+  "rows": [
+    {
+      "label": "Lpn",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Khu",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ain",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cgl",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Esp1",
+      "proposals": 6,
+      "short_admitted": 0,
+      "evidence_files": 50
+    },
+    {
+      "label": "Esp2",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Fma",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Lce",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Lrh",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Lsp1",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Lsp2",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Pac",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Tba",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Tde",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Tpu",
+      "proposals": 4,
+      "short_admitted": 1,
+      "evidence_files": 38
+    },
+    {
+      "label": "Vpa",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Efa",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Eit",
+      "proposals": 4,
+      "short_admitted": 1,
+      "evidence_files": 38
+    },
+    {
+      "label": "Lan",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Lmo",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Sag1",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Sag2",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Sdy",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Seq1",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Seq2",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Sga",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Smu",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Sra",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Bni",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Ece",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Edo",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Fho",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Mga",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Mse",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Sgo",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Sma2",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ssa",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ssi",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Ssu",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Sth1A",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Tsp",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Bok",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cco",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Cpe",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Dde",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghc2",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Ghy3",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghy4",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Gsp",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Kki",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Nme2",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Nsp",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Tmo",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Nsa",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Jpa",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Rsp",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Bbo",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cca2",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cme2",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Cme3",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Cme4",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Csa",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghc1",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghe",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghh1",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghh2",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ghy1",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Msc",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Sdo",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Spa",
+      "proposals": 4,
+      "short_admitted": 0,
+      "evidence_files": 38
+    },
+    {
+      "label": "Cca1",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cga",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Cme1",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Ffr",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Ghy2",
+      "proposals": 2,
+      "short_admitted": 0,
+      "evidence_files": 26
+    },
+    {
+      "label": "Orh",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Phi",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Psp",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    },
+    {
+      "label": "Wvi",
+      "proposals": 0,
+      "short_admitted": 0,
+      "evidence_files": 7
+    }
+  ]
+}
