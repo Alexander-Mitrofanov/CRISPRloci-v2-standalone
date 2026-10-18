@@ -1,7 +1,7 @@
 # CRISPRloci v2
 
 The complete publication source repository is
-[Alexander-Mitrofanov/CRISPRloci-v2](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2).
+[Alexander-Mitrofanov/CRISPRloci-v2-standalone](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2-standalone).
 It includes the frontend, API, isolated worker, Integration adapters and all
 17 scientific modules at the exact revisions in `tools/tools.lock.json`.
 See [source availability and reproduction](docs/source-availability.md) for
@@ -68,7 +68,39 @@ directory; scientific jobs never download or modify reference data. See
 [catalogue import and operation](docs/catalogue.md) and the
 [agent council's scientific/design decisions](docs/catalog-council.md).
 
-## Run locally
+## Standalone installation
+
+Use Linux x86-64 and an existing Python 3.10 or newer. Allow at least **35 GiB
+free disk space** for the scientific software; full reference collections need
+additional space. Keep the checkout in its final location.
+
+```bash
+git clone https://github.com/Alexander-Mitrofanov/CRISPRloci-v2-standalone.git
+cd CRISPRloci-v2-standalone
+bash install.sh
+```
+
+The graphical installer opens in your browser. Choose bundled examples, supported
+public reference downloads, or local input files; review the plan; then install.
+It installs a private Python 3.12/Node 24/build environment, all 17 isolated
+scientific modules and required models, builds your chosen databases, validates
+the scientific release and activates the local installation. Download and database
+build progress appears in the wizard. No system package or administrator access
+is used by the installer.
+
+After installation, use **Start CRISPRloci** in the wizard, or run:
+
+```bash
+bash start.sh
+```
+
+Open `http://127.0.0.1:5173`. The API and scientific worker run locally; Ctrl+C
+stops them. Samples demonstrate all workflows with limited reference coverage.
+The full hosted production catalogue is a separate data collection and is not
+silently downloaded. See the [standalone setup guide](docs/standalone-setup.md)
+for choices, headless installation, cancellation, retries and reference provenance.
+
+## Manual development setup
 
 Requirements: Linux x86_64, Python 3.12, Node 24, Git, Conda/Mamba, a C++ build
 toolchain. The complete publication repository bundles all scientific sources;

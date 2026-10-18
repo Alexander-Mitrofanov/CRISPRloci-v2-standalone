@@ -2,6 +2,7 @@
 
 # Local environments, job output and Python caches
 .publication/
+.installer/
 .envs/
 .venv/
 runs/

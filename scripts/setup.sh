@@ -4,11 +4,20 @@ project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
 cd "$project_root"
 python3 scripts/install_git_guards.py --allow-source-archive
 python_runtime="${PYTHON:-python3.12}"
+setup_mode="${1:---development}"
+if [[ "$setup_mode" != --development && "$setup_mode" != --runtime-only ]]; then
+  echo 'Usage: scripts/setup.sh [--development|--runtime-only]' >&2
+  exit 2
+fi
 "$python_runtime" -c 'import sys; assert sys.version_info[:2] == (3, 12), "Use Python 3.12"'
 if [[ ! -x backend/.venv/bin/python ]]; then
   "$python_runtime" -m venv backend/.venv
 fi
-backend/.venv/bin/python -m pip install -e './backend[test]' -e ./Integration build playwright
+if [[ "$setup_mode" == --runtime-only ]]; then
+  backend/.venv/bin/python -m pip install -e ./backend -e ./Integration build
+else
+  backend/.venv/bin/python -m pip install -e './backend[test]' -e ./Integration build playwright
+fi
 backend/.venv/bin/python -m pip check
 (cd frontend && npm ci --ignore-scripts)
 python3 scripts/sync_tools.py

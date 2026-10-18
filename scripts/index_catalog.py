@@ -10,6 +10,7 @@ commits search keys and completion receipts together for safe resumption.
 from __future__ import annotations
 
 import argparse
+from runtime.progress import emit
 from collections import Counter
 from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
 from datetime import datetime, timezone
@@ -212,6 +213,7 @@ def build_index(directory, workers=4, min_free=MIN_FREE, commit_batch=50, cache_
                             shard_id, digest, json.dumps(counts, sort_keys=True), json.dumps(hit_counts, sort_keys=True),
                         ))
                 processed += len(batch)
+                emit("Building the catalogue search index", processed, len(shards), "shards")
                 inserted += sum(len(item[4]) for item in batch)
                 batch.clear()
                 if processed - last_reported >= 250:

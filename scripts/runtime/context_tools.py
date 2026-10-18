@@ -12,6 +12,7 @@ import tempfile
 from urllib.request import urlopen
 
 from .common import atomic_json, digest
+from .progress import emit
 
 DEFENSE_COMMIT = "5bdb41257fc7234fb8c3b70e3d362c52541860dd"
 DEFENSE_MANIFEST = "bb4dc6de8dfce9179e5d14b1649d1af1e27ca5b0e14840787e883aa46a8d7348"
@@ -29,11 +30,14 @@ def download(url, destination, *, limit, sha256=None):
     try:
         with urlopen(url, timeout=120) as response, temporary.open("xb") as stream:
             total = 0
+            expected = int(response.headers.get("Content-Length", 0)) or None
+            emit("Downloading " + destination.name, 0, expected, "bytes")
             while block := response.read(1024 * 1024):
                 total += len(block)
                 if total > limit:
                     raise ValueError("Reference archive exceeds provisioning limit")
                 stream.write(block)
+                emit("Downloading " + destination.name, total, expected, "bytes")
         if sha256 and digest(temporary) != sha256:
             raise ValueError("Reference archive differs from pinned identity")
         temporary.replace(destination)

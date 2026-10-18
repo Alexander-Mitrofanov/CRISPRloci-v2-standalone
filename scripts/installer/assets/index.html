@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRISPRloci · Standalone setup</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="brand">CRISPRloci <span>Standalone</span></span
+      ><span class="local">Local installation</span>
+    </header>
+    <div class="workspace">
+      <aside aria-label="Setup steps">
+        <ol id="navigation">
+          <li class="current">Choose your references</li>
+          <li>Review installation</li>
+          <li>Install and validate</li>
+        </ol>
+        <div class="machine">
+          <h2>This computer</h2>
+          <p id="platform">Checking…</p>
+          <p id="storage"></p>
+          <p id="location"></p>
+        </div>
+        <p class="aside-note">
+          All 20 analysis modes. Separate scientific environments. Your data
+          stays on this computer.
+        </p>
+      </aside>
+      <main>
+        <div id="message" role="alert" hidden></div>
+        <section id="choose">
+          <h1>Set up your CRISPR workspace.</h1>
+          <p class="intro">
+            Install the complete analysis suite, then choose the references you
+            want to search. Start with the small examples or prepare your own
+            research collection.
+          </p>
+          <div class="software">
+            <span class="checkmark" aria-hidden="true">✓</span>
+            <div>
+              <h2>The complete scientific suite</h2>
+              <p>
+                17 modules, the web interface and the local job worker. Python,
+                Node, build tools and required scientific models are installed
+                automatically.
+              </p>
+            </div>
+          </div>
+          <h2 class="section-heading">Reference data</h2>
+          <p class="hint">
+            Examples demonstrate the workflows; their small collections do not
+            provide full biological coverage.
+          </p>
+          <div id="references"></div>
+          <div class="preferences">
+            <label for="cpu">CPU threads per analysis</label
+            ><input id="cpu" type="number" min="1" max="32" value="2" /><label
+              class="checkbox"
+              ><input id="developer" type="checkbox" /> Include developer
+              dependencies and regression checks</label
+            >
+          </div>
+          <div class="actions">
+            <button id="review">Review installation</button
+            ><span>Nothing is downloaded until you start.</span>
+          </div>
+        </section>
+        <section id="review-panel" hidden>
+          <h1>Review your installation.</h1>
+          <p class="intro">
+            This will prepare a local installation in the project directory
+            shown on the left. Keep that directory in its final location.
+          </p>
+          <div class="notice">
+            <h2>Allow time and disk space</h2>
+            <p>
+              The software requires at least 35 GiB of free space. Full viral
+              and phage collections require additional space and can take hours
+              to download and index. Required software and model downloads
+              happen even when you select sample references.
+            </p>
+            <p>
+              Progress uses actual bytes, records or completed stages. Work
+              without a known total is shown as an active progress bar.
+            </p>
+          </div>
+          <ol id="plan" class="plan"></ol>
+          <p class="hint">
+            Scientific methods, databases and native dependencies retain their
+            original licenses. The installer downloads selected third-party
+            references for your local use.
+          </p>
+          <div class="actions">
+            <button id="install">Install selected components</button
+            ><button id="back" class="secondary">Change choices</button>
+          </div>
+        </section>
+        <section id="progress-panel" hidden>
+          <h1 id="status-title">Preparing your workspace.</h1>
+          <p id="status-description" class="intro">
+            You can leave this page open while installation runs.
+          </p>
+          <div class="overall">
+            <div class="progress-caption">
+              <strong id="stage-title">Starting</strong
+              ><span id="overall-text"></span>
+            </div>
+            <progress
+              id="overall"
+              max="1"
+              value="0"
+              aria-label="Overall installation progress"
+            ></progress>
+          </div>
+          <div class="operation">
+            <div id="tool-progress" hidden>
+              <div class="progress-caption">
+                <span>Scientific environments</span><span id="tool-text"></span>
+              </div>
+              <progress
+                id="tools"
+                max="17"
+                value="0"
+                aria-label="Scientific environment progress"
+              ></progress>
+            </div>
+            <div class="progress-caption">
+              <span id="operation-title">Preparing</span
+              ><span id="operation-text"></span>
+            </div>
+            <progress
+              id="operation"
+              aria-label="Current operation progress"
+            ></progress>
+          </div>
+          <ol id="stage-list" class="stage-list"></ol>
+          <div class="actions">
+            <button id="cancel" class="secondary">Cancel installation</button
+            ><button id="retry" hidden>Review and retry</button
+            ><button id="start" hidden>Start CRISPRloci</button
+            ><a
+              id="open"
+              href="http://127.0.0.1:5173"
+              target="_blank"
+              rel="noreferrer"
+              hidden
+              >Open CRISPRloci</a
+            ><button id="stop-app" class="secondary" hidden>
+              Stop CRISPRloci
+            </button>
+          </div>
+          <p id="start-help" class="hint" hidden>
+            Next time, run <code>bash start.sh</code> from this project
+            directory.
+          </p>
+          <details>
+            <summary>Installation log</summary>
+            <pre id="log" aria-label="Installation log"></pre>
+          </details>
+        </section>
+      </main>
+    </div>
+    <footer>
+      CRISPRloci standalone setup
+      <span>Built for Linux x86-64 · Local access only</span>
+    </footer>
+  </body>
+</html>

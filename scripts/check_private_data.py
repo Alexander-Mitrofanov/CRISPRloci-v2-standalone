@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 # The complete source archive includes pinned HMM models up to 58 MiB.
 # Inspect their full contents, retaining a fixed upper bound on every read.
 MAX_BYTES = 64 * 1024 * 1024
-PRIVATE_PARTS = {".ops-private", ".ssh", ".runtime", ".runtime-data", ".catalog", ".venv", ".envs", "runs"}
+PRIVATE_PARTS = {".ops-private", ".ssh", ".runtime", ".runtime-data", ".catalog", ".venv", ".envs", ".installer", "runs"}
 GENERATED = {".git", "node_modules", "dist", "build", "coverage", "__pycache__"}
 PATTERNS = {
     "private key": re.compile(rb"-----BEGIN (?:OPENSSH |RSA |EC |DSA |ENCRYPTED )?PRIVATE KEY-----"),

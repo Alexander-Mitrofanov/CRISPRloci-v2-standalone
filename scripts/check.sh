@@ -10,6 +10,8 @@ if [[ "$target" == backend || "$target" == all ]]; then
   "$python_runtime" -m ruff check backend/src backend/tests Integration/crispr_integration scripts tests
 fi
 if [[ "$target" == frontend || "$target" == all ]]; then
+  node --check scripts/installer/assets/app.js
+  frontend/node_modules/.bin/prettier --check scripts/installer/assets
   (cd frontend && npm run check:source && npm test && VITE_API_BASE_URL="${VITE_API_BASE_URL:-https://analysis.example.org}" npm run build)
 fi
 if [[ "$target" != backend && "$target" != frontend && "$target" != all ]]; then

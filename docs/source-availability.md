@@ -1,7 +1,7 @@
 # Complete source availability and reproduction
 
 The publication repository is
-[Alexander-Mitrofanov/CRISPRloci-v2](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2).
+[Alexander-Mitrofanov/CRISPRloci-v2-standalone](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2-standalone).
 It contains the application and all 17 scientific source modules. An ordinary
 clone or GitHub source download includes the module files directly: there are
 no submodules, Git LFS pointers or private-origin downloads required to inspect
@@ -46,14 +46,14 @@ continues to use separate pinned Git checkouts.
 
 ## Install and run
 
-Use Linux x86-64, Python 3.12, Node 24, Git, Conda/Mamba and a C++ toolchain.
-Follow [Run locally](../README.md#run-locally). Network access is needed for
+The graphical installer starts with Linux x86-64 and Python 3.10 or newer; it
+provisions Python 3.12, Node 24, Micromamba and a C++ toolchain privately. Follow [standalone installation](../README.md#standalone-installation). Network access is needed for
 public package/native dependencies and explicitly acquired reference datasets;
 access to the private module origins is unnecessary for the bundled snapshot.
 SpacerPlacer and evOr must retain separate environments because both own
 `sp_model`. API processes never import or execute scientific tools.
 
-After setup, run `bash scripts/check.sh` for application regression tests and
+With developer dependencies selected, run `bash scripts/check.sh` for application regression tests and
 source/build checks. Scientific runtime provisioning and the real-science
 release gate are separate, as documented in the README. The tests and documented
 [precomputed examples](precomputed-examples.md) provide reproducible inputs and
@@ -84,7 +84,7 @@ Availability wording once a DOI has been issued:
 
 > The complete CRISPRloci v2 source code, including its web interface, API,
 > isolated worker, integration adapters and 17 pinned scientific modules, is
-> available at https://github.com/Alexander-Mitrofanov/CRISPRloci-v2. The exact
+> available at https://github.com/Alexander-Mitrofanov/CRISPRloci-v2-standalone. The exact
 > version used for this study is archived in Figshare [insert assigned DOI].
 > Individual scientific tools retain their original licenses and attribution.
 

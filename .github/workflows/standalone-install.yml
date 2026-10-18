@@ -1,0 +1,32 @@
+name: Complete standalone installation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  install-and-validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Make room for isolated scientific environments
+        run: |
+          # This is a disposable hosted runner, not a deployment machine.
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          df -h .
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Verify complete public source snapshot
+        run: |
+          python3 scripts/check_private_data.py index
+          python3 scripts/sync_tools.py --check
+      - name: Install all software and sample references from scratch
+        run: |
+          python3 -c 'import json, os; from pathlib import Path; Path(os.environ["RUNNER_TEMP"], "standalone-choices.json").write_text(json.dumps({"cpu": 2, "developer": False}))'
+          bash install.sh --headless "$RUNNER_TEMP/standalone-choices.json"
+      - name: Record successful full scientific installation
+        run: |
+          echo 'All 17 scientific environments, selected sample databases, real-science acceptance gate and all-mode API readiness completed successfully.' >> "$GITHUB_STEP_SUMMARY"

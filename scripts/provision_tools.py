@@ -30,6 +30,7 @@ from runtime.context_tools import (
     native_identity,
     verify_context_native_receipt,
 )
+from runtime.progress import emit
 
 CONTEXT_TOOLS = {
     "clinker-v2",
@@ -245,8 +246,9 @@ def build(lock_path, resume=False):
                 f"{tool['name']} differs from CRISPRtracrRNA's validated dependency lock; update the compatible set together"
             )
     identities = {}
-    for tool in lock["tools"]:
+    for position, tool in enumerate(lock["tools"], 1):
         name = tool["name"]
+        emit("Scientific environments: " + name, position - 1, len(lock["tools"]), "tools")
         package = source / name
         marker = target / f".{name}.installed.json"
         if marker.exists() and resume:
@@ -282,6 +284,7 @@ def build(lock_path, resume=False):
             if name in CONTEXT_TOOLS:
                 verify_context_native_receipt(record, expected_prefix)
             identities[name] = record
+            emit("Scientific environments: " + name, position, len(lock["tools"]), "tools")
             continue
         if name == "CRISPRidentify-v2":
             run(["bash", package / "install.sh"], cwd=package, env=env)
@@ -418,6 +421,7 @@ def build(lock_path, resume=False):
             record["native_tools"] = native_tools
         atomic_json(marker, record)
         identities[name] = record
+        emit("Scientific environments: " + name, position, len(lock["tools"]), "tools")
     atomic_json(
         target / "runners.json",
         {

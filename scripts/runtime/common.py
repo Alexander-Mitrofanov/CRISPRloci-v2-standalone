@@ -14,6 +14,9 @@ RUNTIME = ROOT / ".runtime"
 
 
 def run(command, *, cwd=None, env=None):
+    from .progress import emit
+
+    emit("Running " + Path(command[0]).name)
     print("+", " ".join(str(part) for part in command), flush=True)
     subprocess.run([str(part) for part in command], cwd=cwd, env=env, check=True)
 

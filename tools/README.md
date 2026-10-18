@@ -1,6 +1,6 @@
 # Scientific tools
 
-The complete [publication repository](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2)
+The complete [publication repository](https://github.com/Alexander-Mitrofanov/CRISPRloci-v2-standalone)
 bundles all 17 module source trees directly. Their original GitHub repositories
 are independent development origins; [tools.lock.json](tools.lock.json) records
 exact commits. In a publication snapshot, `bundled-sources.json` records the

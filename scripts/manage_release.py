@@ -150,7 +150,7 @@ def verify_toolset(path):
     return document
 
 
-def build(lock_path):
+def build(lock_path, resume=False):
     lock = load_lock(lock_path)
     toolset_path = RUNTIME / "toolsets" / lock_id(lock)
     toolset = verify_toolset(toolset_path)
@@ -168,7 +168,7 @@ def build(lock_path):
         verify(release)
         print("Existing application release:", release)
         return release
-    release.mkdir(parents=True, exist_ok=False)
+    release.mkdir(parents=True, exist_ok=resume)
     source_root = release / "sources"
     for name, inventory in sources.items():
         for relative in inventory:
@@ -176,7 +176,7 @@ def build(lock_path):
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / name / relative, target)
     wheels = release / "wheels"
-    wheels.mkdir()
+    wheels.mkdir(exist_ok=resume)
     for name in ("backend", "Integration"):
         run(
             [
@@ -401,13 +401,14 @@ def main():
     subs = parser.add_subparsers(dest="action", required=True)
     command = subs.add_parser("build")
     command.add_argument("--lock", type=Path, default=ROOT / "tools/tools.lock.json")
+    command.add_argument("--resume", action="store_true", help="Resume an incomplete, unactivated build of these exact sources")
     for action in ("verify", "activate"):
         command = subs.add_parser(action)
         command.add_argument("release", type=Path)
     subs.add_parser("rollback")
     args = parser.parse_args()
     if args.action == "build":
-        build(args.lock)
+        build(args.lock, args.resume)
     elif args.action == "verify":
         verify(args.release)
         print("Release verified")
