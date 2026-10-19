@@ -133,6 +133,7 @@
       "version": "2.0.2"
     },
     {
+      "bundled_tree": "ff061b0748a842691e50af272698a6f01b13d989",
       "commit": "1526377ef54bedaae2980c4013c6de91805cf59a",
       "entrypoint": "clinker-v2",
       "name": "clinker-v2",

@@ -6,22 +6,28 @@ definition. This entry point does not call the HTML renderer or HTTP server.
 from __future__ import annotations
 
 import argparse
+import ctypes
+import errno
 import hashlib
 import io
 import json
 import math
-from pathlib import Path
+import os
 import re
 import shutil
+import sys
 import tempfile
-from itertools import combinations, product
 from functools import lru_cache
+from itertools import combinations, product
+from pathlib import Path
 
-from Bio import Align, SeqIO, __version__ as bio_version
+from Bio import Align, SeqIO
+from Bio import __version__ as bio_version
 from Bio.Align import substitution_matrices
 from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
 from Bio.SeqFeature import SeqFeature, SimpleLocation
+from Bio.SeqRecord import SeqRecord
+
 from clinker import __version__
 from clinker.align import compute_identity, extend_matrix_alphabet
 
@@ -236,6 +242,34 @@ def write_exports(directory, report, records):
     SeqIO.write(proteins, directory / "proteins.faa", "fasta")
 
 
+def _rename_new_directory(source: Path, destination: Path) -> None:
+    """Atomically publish without replacing a concurrently created directory."""
+    if os.name == "nt":
+        # Windows rename already refuses to replace an existing destination.
+        source.rename(destination)
+        return
+    library = ctypes.CDLL(None, use_errno=True)
+    if sys.platform.startswith("linux") and hasattr(library, "renameat2"):
+        rename = library.renameat2
+        rename.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+        rename.restype = ctypes.c_int
+        # AT_FDCWD, RENAME_NOREPLACE: the existence check occurs inside rename.
+        result = rename(-100, os.fsencode(source), -100, os.fsencode(destination), 1)
+    elif sys.platform == "darwin" and hasattr(library, "renamex_np"):
+        rename = library.renamex_np
+        rename.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+        rename.restype = ctypes.c_int
+        result = rename(os.fsencode(source), os.fsencode(destination), 4)  # RENAME_EXCL
+    else:
+        raise ValueError("This platform does not support atomic directory publication without replacement")
+    if result:
+        error = ctypes.get_errno()
+        if error in (errno.EEXIST, errno.ENOTEMPTY):
+            raise ValueError("Output must be a new non-symlink directory")
+        raise OSError(error, os.strerror(error), str(destination))
+
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--version", action="version", version=__version__)
@@ -254,7 +288,7 @@ def main(argv=None):
         args.outdir.parent.mkdir(parents=True, exist_ok=True)
         staging = Path(tempfile.mkdtemp(prefix=".clinker-", dir=args.outdir.parent))
         write_exports(staging, report, records)
-        staging.rename(args.outdir)
+        _rename_new_directory(staging, args.outdir)
         staging = None
     except (ValueError, OSError, UnicodeError) as exc:
         parser.exit(2, f"clinker-v2: {exc}\n")
