@@ -14,6 +14,9 @@ the exported `tree` in `bundled-sources.json`. This pin participates in the
 runtime identity, so patched sources build a new isolated toolset instead of
 reusing a runtime built from older bundled code.
 
+The [19 October standalone audit](../docs/standalone-tool-audit-2026-10-19.md)
+lists per-tool fixes, commits and verification limits.
+
 | Tool | Version | Pinned commit | Command |
 | --- | --- | --- | --- |
 | [CRISPRidentify-v2](CRISPRidentify-v2/README.md) | 2.3.2 | `e8a3d7c038ea` | `./crispridentify` |
