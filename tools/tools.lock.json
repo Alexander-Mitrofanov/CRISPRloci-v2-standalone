@@ -144,6 +144,7 @@
       "version": "2.0.1"
     },
     {
+      "bundled_tree": "d6740fff7b2f87970f8748bd4bdeeec42020e638",
       "commit": "30877d2ca43f042a4789c4185859e97d4d9a1a7a",
       "entrypoint": "isescan-v2",
       "name": "ISEScan-v2",
