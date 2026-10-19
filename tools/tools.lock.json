@@ -49,6 +49,7 @@
       "version": "1.0.1.post3"
     },
     {
+      "bundled_tree": "02a5422c07632e2266aeee84671d0114ff151b35",
       "commit": "505dafe5bc1134d935b33dfd1de7d9872a6eeae3",
       "entrypoint": "crispr-evor",
       "name": "evOr",
