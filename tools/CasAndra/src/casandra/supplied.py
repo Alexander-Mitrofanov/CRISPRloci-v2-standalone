@@ -15,6 +15,7 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 
 from casandra.orf import read_nucleotide_fasta, sha256_file
+from casandra.utils import _rename_new_directory
 
 
 def _wrap(sequence: str, width: int = 80):
@@ -94,7 +95,7 @@ def _write_annotation_dataset(
         (staging / "manifest.json").write_text(
             json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
         )
-        staging.replace(output_dir)
+        _rename_new_directory(staging, output_dir)
         return manifest
     except Exception:
         shutil.rmtree(staging, ignore_errors=True)

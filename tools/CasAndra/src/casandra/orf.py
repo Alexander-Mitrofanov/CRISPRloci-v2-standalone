@@ -14,6 +14,7 @@ from urllib.parse import quote
 
 import pyrodigal
 
+from casandra.utils import _rename_new_directory
 
 ORF_SCHEMA_VERSION = 1
 DNA_ALPHABET = set("ACGTURYSWKMBDHVN")
@@ -278,7 +279,7 @@ def extract_genome_proteins(
                 "sha256": sha256_file(path),
             }
         _write_json(staging / "manifest.json", manifest)
-        staging.replace(output_dir)
+        _rename_new_directory(staging, output_dir)
         return manifest
     except Exception:
         shutil.rmtree(staging, ignore_errors=True)

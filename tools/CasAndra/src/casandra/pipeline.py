@@ -19,7 +19,7 @@ from casandra.orf_fast import extract_genome_proteins_fast
 from casandra.prediction import predict_proteins
 from casandra.reporting import read_jsonl, write_jsonl, write_outputs
 from casandra.supplied import extract_genbank_proteins, extract_gff3_proteins
-from casandra.utils import sha256_file
+from casandra.utils import _rename_new_directory, sha256_file
 
 # Historical research code imports these private names. Keep aliases while the
 # installed production entry points use the public reporting module.
@@ -162,7 +162,7 @@ def predict_genome(
             json.dumps(output_manifest, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
-        staging.replace(output_dir)
+        _rename_new_directory(staging, output_dir)
         return run
     except Exception:
         shutil.rmtree(staging, ignore_errors=True)

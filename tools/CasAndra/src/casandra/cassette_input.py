@@ -17,7 +17,7 @@ from casandra.model import ProteinModel, validate_threads
 from casandra.prediction import predict_proteins
 from casandra.reporting import read_jsonl
 from casandra.runtime import parse_fasta
-from casandra.utils import sha256_file
+from casandra.utils import _rename_new_directory, sha256_file
 
 
 def _ordered_gene_records(
@@ -191,7 +191,7 @@ def classify_protein_cassette(
             json.dumps(output_manifest, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
-        staging.replace(output_dir)
+        _rename_new_directory(staging, output_dir)
         return run
     except Exception:
         shutil.rmtree(staging, ignore_errors=True)
