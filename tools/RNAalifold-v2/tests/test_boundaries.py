@@ -6,7 +6,7 @@ import sys
 
 import pytest
 
-from rna_family_tool import core
+from rna_family_tool import cli, core
 from rna_family_tool.cli import run
 
 FIXTURE = Path(__file__).parent / "data/family.fasta"
@@ -81,7 +81,7 @@ def test_library_run_checks_bounds_before_native_work(tmp_path, monkeypatch, opt
     def unexpected_native(*args, **kwargs):
         pytest.fail("Invalid options reached native execution")
 
-    monkeypatch.setattr(subprocess, "run", unexpected_native)
+    monkeypatch.setattr(cli, "_run_native", unexpected_native)
     output = tmp_path / "invalid"
     with pytest.raises(ValueError):
         run(FIXTURE, output, **{"molecule": "DNA", **options})
@@ -178,7 +178,7 @@ def test_native_timeout_does_not_install_report(tmp_path, monkeypatch):
             return subprocess.CompletedProcess(command, 0, "v7.505", "")
         raise subprocess.TimeoutExpired(command, kwargs["timeout"])
 
-    monkeypatch.setattr(subprocess, "run", timeout)
+    monkeypatch.setattr(cli, "_run_native", timeout)
     output = tmp_path / "timeout"
     with pytest.raises(subprocess.TimeoutExpired):
         run(FIXTURE, output, molecule="DNA", timeout_seconds=1)

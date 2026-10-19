@@ -166,6 +166,7 @@
       "version": "2.0.1"
     },
     {
+      "bundled_tree": "eafdf955850ec4151f65a3a3f3c3596d9cfe7408",
       "commit": "0498c888203ba7bd6a8e6c6e35a27229adc61d1e",
       "entrypoint": "rnaalifold-v2",
       "name": "RNAalifold-v2",

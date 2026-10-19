@@ -104,7 +104,7 @@ def test_both_mafft_children_remove_ambient_helpers_and_keep_temp_paths(tmp_path
         if "--version" in command:
             return SimpleNamespace(stdout="", stderr="v7.526")
         kwargs["stdout"].write(b">rna_000001\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n>rna_000002\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC\n")
-    monkeypatch.setattr(cli.subprocess, "run", execute)
+    monkeypatch.setattr(cli, "_run_native", execute)
     groups = [{"id": "rna_000001", "sequence": "A" * 30}, {"id": "rna_000002", "sequence": "A" * 29 + "C"}]
     cli.align(groups, tmp_path, mafft="/pinned/mafft", threads=1, timeout_seconds=60)
     assert len(observed) == 2

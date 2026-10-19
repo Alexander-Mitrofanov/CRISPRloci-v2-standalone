@@ -1,15 +1,57 @@
 """Offline bounded worker entry point; MAFFT is operator supplied."""
 import argparse
+import contextlib
 import json
 import os
-from pathlib import Path
 import re
+import signal
 import subprocess
 import sys
+import threading
+from pathlib import Path
 
 from . import __version__
-from .core import (LIMITS, POLICY, alignment_rows, columns, fasta, fold, pair_evidence,
-                   representatives, sha, structure_pairs)
+from .core import (
+    LIMITS,
+    POLICY,
+    alignment_rows,
+    columns,
+    fasta,
+    fold,
+    pair_evidence,
+    representatives,
+    sha,
+    structure_pairs,
+)
+
+
+def _stop_native(signum, frame):
+    # Raising lets the command's finally block reap its isolated group.
+    raise SystemExit(128 + signum)
+
+
+def _run_native(command, *, timeout, check=True, capture_output=False, **kwargs):
+    """Contain the native command and every descendant on all exit paths."""
+    if capture_output:
+        kwargs.update(stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    child = subprocess.Popen(command, start_new_session=True, **kwargs)
+    previous = None
+    if threading.current_thread() is threading.main_thread():
+        previous = signal.signal(signal.SIGTERM, _stop_native)
+    try:
+        stdout, stderr = child.communicate(timeout=timeout)
+    finally:
+        with contextlib.suppress(ProcessLookupError):
+            os.killpg(child.pid, signal.SIGKILL)
+        child.wait()
+        for stream in (child.stdin, child.stdout, child.stderr):
+            if stream is not None:
+                stream.close()
+        if previous is not None:
+            signal.signal(signal.SIGTERM, previous)
+    if check and child.returncode:
+        raise subprocess.CalledProcessError(child.returncode, command, stdout, stderr)
+    return subprocess.CompletedProcess(command, child.returncode, stdout, stderr)
 
 
 def write_json(path, value):
@@ -24,12 +66,12 @@ def align(groups, work, *, mafft, threads, timeout_seconds):
     (work / "representatives.fasta").write_text(native_input, encoding="ascii")
     child_environment = os.environ.copy()
     child_environment.pop("MAFFT_BINARIES", None)
-    version_run = subprocess.run([mafft, "--version"], capture_output=True, text=True, check=True, timeout=10, env=child_environment)
+    version_run = _run_native([mafft, "--version"], capture_output=True, text=True, check=True, timeout=10, env=child_environment)
     match = re.search(r"v(7\.[0-9]+)\b", version_run.stdout + version_run.stderr)
     if not match:
         raise ValueError("Unsupported MAFFT version")
     with (work / "aligned.fasta").open("wb") as out, (work / "mafft.stderr").open("wb") as err:
-        subprocess.run([mafft, "--nuc", "--inputorder", "--thread", str(threads), "--retree", "2", "--maxiterate", "0",
+        _run_native([mafft, "--nuc", "--inputorder", "--thread", str(threads), "--retree", "2", "--maxiterate", "0",
                         str(work / "representatives.fasta")], stdout=out, stderr=err, check=True, timeout=timeout_seconds, env=child_environment)
     aligned_path = work / "aligned.fasta"
     if aligned_path.stat().st_size > LIMITS["max_input_bytes"]:
