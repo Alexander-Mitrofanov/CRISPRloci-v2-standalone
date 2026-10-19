@@ -112,6 +112,7 @@
       "version": "2.0.1"
     },
     {
+      "bundled_tree": "484be2fc09acd6277a275031de5f8d7587492490",
       "commit": "8dabb0d0f4d7c880854d8cf0190215e09b1b641d",
       "entrypoint": "spacepharer",
       "name": "SpacePHARER",

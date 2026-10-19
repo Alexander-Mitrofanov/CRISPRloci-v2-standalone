@@ -10,12 +10,12 @@
 *.png binary
 
 # Visual Studio
-*.sln text eol=crlf
-*.vcxproj* text eol=crlf
-*.vcproj* text eol=crlf
+*.sln text eol=lf
+*.vcxproj* text eol=lf
+*.vcproj* text eol=lf
 *.suo binary
-*.rc text eol=crlf
+*.rc text eol=lf
 
 # Windows
-*.bat text eol=crlf
-*.cmd text eol=crlf
+*.bat text eol=lf
+*.cmd text eol=lf
