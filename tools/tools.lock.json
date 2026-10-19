@@ -38,6 +38,7 @@
       "version": "3.0.0"
     },
     {
+      "bundled_tree": "20bd6b063a22eacbb00799cfc52d592b0ed88514",
       "commit": "2a91510a8ec98e02507921b56e94df16cf6e0bd5",
       "entrypoint": "spacerplacer",
       "name": "SpacerPlacer",

@@ -1,4 +1,8 @@
+import contextlib
 import itertools
+import signal
+import threading
+import tempfile
 import subprocess
 import shutil
 import os
@@ -332,19 +336,40 @@ def align_crispr_groups(work_path, dict_crispr_groups, mafft_options=None, logge
     return dict_crispr_groups
 
 
+def _stop_native(signum, frame):
+    # Raising lets the command's finally block reap its isolated group.
+    raise SystemExit(128 + signum)
+
+
 def _run_command(command, output_file, logger=None, timeout=300):
     if logger is not None:
         logger.info("Calling %s", " ".join(command))
     try:
-        with open(output_file, "w", encoding="utf-8") as outfile:
-            subprocess.run(  # noqa: S603 - fixed executable paths/list args; shell execution is disabled
-                command,
-                stdout=outfile,
-                stderr=subprocess.PIPE,
-                text=True,
-                check=True,
-                timeout=timeout,
+        with open(output_file, "w", encoding="utf-8") as outfile, tempfile.TemporaryFile() as errfile:
+            process = subprocess.Popen(  # noqa: S603 - fixed argv; no shell
+                command, stdout=outfile, stderr=errfile, start_new_session=True,
             )
+            previous = None
+            if threading.current_thread() is threading.main_thread():
+                previous = signal.signal(signal.SIGTERM, _stop_native)
+            try:
+                code = process.wait(timeout=timeout)
+            finally:
+                # MAFFT launches native children. Reap the entire command group
+                # even when its launcher exits successfully or is interrupted.
+                if os.name == "posix":
+                    with contextlib.suppress(ProcessLookupError):
+                        os.killpg(process.pid, signal.SIGKILL)
+                elif process.poll() is None:
+                    process.kill()
+                process.wait()
+                if previous is not None:
+                    signal.signal(signal.SIGTERM, previous)
+            if code:
+                errfile.seek(0, os.SEEK_END)
+                errfile.seek(max(0, errfile.tell() - 65536))
+                details = errfile.read().decode("utf-8", errors="replace")
+                raise subprocess.CalledProcessError(code, command, stderr=details)
     except FileNotFoundError as error:
         raise RuntimeError(f"Required executable was not found: {command[0]}") from error
     except subprocess.TimeoutExpired as error:
