@@ -30,12 +30,22 @@ def fold_sequence(sequence, *, expected_version=PINNED_VIENNA):
     if not isinstance(sequence, str) or not 1 <= len(sequence) <= 200 or set(sequence) - set('ACGT'):
         raise InputError('Folding requires 1–200 unambiguous DNA bases')
     RNA.params_load_RNA_Turner2004()
+    # Constructor keywords rebuild pair tables and ignore mutable process-wide
+    # defaults. Copy the reviewed Turner2004 tables before creating compounds.
+    model = RNA.md(
+        temperature=37.0, dangles=2, noLP=0, salt=1.021,
+        noGU=0, noGUclosure=0, gquad=0, circ=0, min_loop_size=3,
+        compute_bpp=1, energy_set=0, logML=0, special_hp=1,
+        betaScale=1.0, pf_smooth=1, sfact=1.07, backtrack=1,
+        backtrack_type="F", max_bp_span=-1, window_size=-1,
+    )
+    parameters = RNA.param(model)
+    partition_parameters = RNA.exp_param(model)
     predictions = []
     for orientation, dna in ((1, sequence), (-1, reverse_complement(sequence))):
-        model = RNA.md()
-        model.temperature = 37.0
-        model.dangles = 2
         compound = RNA.fold_compound(dna.replace('T', 'U'), model)
+        compound.params_subst(parameters)
+        compound.exp_params_subst(partition_parameters)
         structure, mfe = compound.mfe()
         compound.exp_params_rescale(mfe)
         _, ensemble_free_energy = compound.pf()

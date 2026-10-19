@@ -91,6 +91,7 @@
       "version": "0.3.1"
     },
     {
+      "bundled_tree": "7d899d3d04e64570f8d2c77e5b9c2e205a0024d5",
       "commit": "4b35029a3600a983a7e3d0a63190377d60a31769",
       "entrypoint": "crisprmap",
       "name": "CRISPRmap-v2",

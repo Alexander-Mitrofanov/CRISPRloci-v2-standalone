@@ -99,3 +99,32 @@ def test_fold_cli_forwards_explicit_and_default_checkpoint_size(tmp_path, monkey
     modern_command(parser().parse_args(command))
     modern_command(parser().parse_args(command + ['--checkpoint-nodes', '250']))
     assert [kwargs['checkpoint_nodes'] for kwargs in seen] == [100, 250]
+
+
+@pytest.mark.parametrize('name,value', [('dangles', 0), ('min_loop_size', 8),
+                                       ('energy_set', 2), ('betaScale', 0.2),
+                                       ('backtrack_type', 'C'), ('max_bp_span', 8)])
+def test_folding_ignores_ambient_model_defaults(monkeypatch, name, value):
+    RNA = pytest.importorskip('RNA')
+    sequence = 'GCGCGCAAAAGCGCGC'
+    clean = fold_sequence(sequence)
+    monkeypatch.setattr(RNA.cvar, name, value)
+    assert fold_sequence(sequence) == clean
+    assert getattr(RNA.cvar, name) == value
+
+
+def test_folding_owns_verified_thermodynamic_tables(monkeypatch):
+    RNA = pytest.importorskip('RNA')
+    sequence = 'GCGCGCAAAAGCGCGC'
+    clean = fold_sequence(sequence)
+    original = RNA.fold_compound
+
+    def foreign_tables(*args):
+        RNA.params_load_DNA_Mathews2004()
+        return original(*args)
+
+    monkeypatch.setattr(RNA, 'fold_compound', foreign_tables)
+    try:
+        assert fold_sequence(sequence) == clean
+    finally:
+        RNA.params_load_RNA_Turner2004()
