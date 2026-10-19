@@ -2,18 +2,21 @@
 
 from __future__ import annotations
 
-from contextlib import contextmanager
+import ctypes
+import errno
 import gzip
 import hashlib
 import io
 import json
 import math
 import os
-from pathlib import Path
 import shutil
 import stat
+import sys
 import tempfile
 import zlib
+from contextlib import contextmanager
+from pathlib import Path
 
 DNA = frozenset("ACGTRYSWKMBDHVN")
 MAX_BYTES = 256 * 1024 * 1024
@@ -191,6 +194,34 @@ def metadata(records: list[dict], path: Path | None) -> list[dict]:
     return records
 
 
+def _rename_new_directory(source: Path, destination: Path) -> None:
+    """Atomically publish without replacing a concurrently created directory."""
+    if os.name == "nt":
+        # Windows rename already refuses to replace an existing destination.
+        source.rename(destination)
+        return
+    library = ctypes.CDLL(None, use_errno=True)
+    if sys.platform.startswith("linux") and hasattr(library, "renameat2"):
+        rename = library.renameat2
+        rename.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+        rename.restype = ctypes.c_int
+        # AT_FDCWD, RENAME_NOREPLACE: the existence check occurs inside rename.
+        result = rename(-100, os.fsencode(source), -100, os.fsencode(destination), 1)
+    elif sys.platform == "darwin" and hasattr(library, "renamex_np"):
+        rename = library.renamex_np
+        rename.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+        rename.restype = ctypes.c_int
+        result = rename(os.fsencode(source), os.fsencode(destination), 4)  # RENAME_EXCL
+    else:
+        raise InputError("This platform does not support atomic directory publication without replacement")
+    if result:
+        error = ctypes.get_errno()
+        if error in (errno.EEXIST, errno.ENOTEMPTY):
+            raise InputError("Output must be a new non-symlink directory")
+        raise OSError(error, os.strerror(error), str(destination))
+
+
+
 @contextmanager
 def atomic_directory(destination: Path):
     """Never replace prior results; exclusive reservation protects concurrent writers."""
@@ -214,7 +245,7 @@ def atomic_directory(destination: Path):
             if path.is_file():
                 with path.open("rb") as handle:
                     os.fsync(handle.fileno())
-        os.rename(work, destination)
+        _rename_new_directory(work, destination)
         descriptor = os.open(destination.parent, os.O_RDONLY)
         try:
             os.fsync(descriptor)

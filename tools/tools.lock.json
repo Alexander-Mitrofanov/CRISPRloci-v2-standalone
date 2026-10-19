@@ -80,6 +80,7 @@
       "version": "1.0.1"
     },
     {
+      "bundled_tree": "c4e590b738adf45ab5b5ef76d9d85eeddf81d185",
       "commit": "ddea3f5da9d5ff6a33802046bdb0e0a762029d23",
       "entrypoint": "crisprspacer",
       "name": "CRISPRspacer",
