@@ -139,6 +139,8 @@ def test_native_command_is_shell_free_and_propagates_failure(tmp_path, monkeypat
         )
         raise subprocess.CalledProcessError(7, command)
 
-    monkeypatch.setattr(subprocess, "run", fail)
+    from phigaro import bounded
+
+    monkeypatch.setattr(bounded, "_run_native", fail)
     with pytest.raises(subprocess.CalledProcessError):
         process(["tool with spaces", "input with spaces"], tmp_path, "native", 1)

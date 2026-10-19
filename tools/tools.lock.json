@@ -177,6 +177,7 @@
       "version": "1.0.1"
     },
     {
+      "bundled_tree": "86af952f07c123f1f02003607a0cb916ea15f160",
       "commit": "0fae62b856a6b76d716a2dca230ced12e4221e9f",
       "entrypoint": "phigaro-v2",
       "name": "Phigaro-v2",

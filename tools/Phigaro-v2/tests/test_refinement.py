@@ -152,3 +152,41 @@ def test_hmmer_best_hit_ties_are_independent_of_native_row_order(tmp_path):
         )
         read_hits(hits, [gene], {row[0] for row in rows})
         assert gene["best_hit"] == dict(profile="VOG0001", evalue=1e-20, score=100.0)
+
+
+def test_input_hash_binds_the_exact_parsed_fasta_snapshot(tmp_path, monkeypatch):
+    import hashlib
+    from types import SimpleNamespace
+    from phigaro import bounded
+
+    source, models = tmp_path / 'input.fa', tmp_path / 'models.hmm'
+    original = b'>original\nacgt\n'
+    source.write_bytes(original)
+    models.write_text('NAME VOG0001\n')
+    model_digest = hashlib.sha256(models.read_bytes()).hexdigest()
+    original_digest = bounded.file_digest
+
+    def change_input_after_parsing(path):
+        if path == models:
+            source.write_bytes(b'>changed\nTTTTTT\n')
+        return original_digest(path)
+
+    monkeypatch.setattr(bounded, 'file_digest', change_input_after_parsing)
+    result = bounded.predict(SimpleNamespace(input=source, models_hmm=models,
+        models_sha256=model_digest, output=tmp_path / 'result'))
+    assert result['input_sha256'] == hashlib.sha256(original).hexdigest()
+    assert result['sources'][0]['id'] == 'original'
+    assert result['sources'][0]['sha256'] == hashlib.sha256(b'ACGT').hexdigest()
+
+
+def test_fasta_snapshot_preserves_universal_newlines_and_rejects_embedded_controls(tmp_path):
+    import hashlib
+    from phigaro.bounded import read_fasta_snapshot
+
+    source = tmp_path / 'input.fa'
+    payload = b'>source\r\nac\rgt\n'
+    source.write_bytes(payload)
+    assert read_fasta_snapshot(source) == ({'source': 'ACGT'}, hashlib.sha256(payload).hexdigest())
+    source.write_bytes(b'>source\nAC\vGT\n')
+    with pytest.raises(ValueError):
+        read_fasta_snapshot(source)

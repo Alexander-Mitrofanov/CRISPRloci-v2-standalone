@@ -3,18 +3,23 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import csv
 import hashlib
+import io
 import json
 import math
-from collections import defaultdict
-from pathlib import Path
+import os
 import re
+import signal
 import subprocess
 import sys
+import threading
+from collections import defaultdict
+from pathlib import Path
 
-from Bio.Seq import Seq
 from Bio.Data import CodonTable
+from Bio.Seq import Seq
 
 from . import const
 from .finder.v2 import calc_scores, scan_phages
@@ -56,7 +61,7 @@ def file_digest(path):
     return value.hexdigest()
 
 
-def read_fasta(path):
+def read_fasta_snapshot(path):
     path = Path(path)
     if (
         path.is_symlink()
@@ -67,37 +72,73 @@ def read_fasta(path):
     chunks = {}
     ident = None
     bases = 0
-    with path.open(encoding="ascii") as stream:
-        for line in stream:
-            if line.startswith(">"):
-                tokens = line[1:].split()
-                ident = tokens[0] if tokens else ""
-                if (
-                    not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.:-]{0,199}", ident)
-                    or ident in chunks
-                ):
-                    raise ValueError("Invalid or duplicate FASTA identifier")
-                chunks[ident] = []
-                if len(chunks) > 20:
-                    raise ValueError(
-                        "Input is limited to 20 records and 2 million bases"
-                    )
-            elif line.strip():
-                if ident is None:
-                    raise ValueError("Sequence appears before a FASTA header")
-                sequence = line.strip().upper()
-                chunks[ident].append(sequence)
-                bases += len(sequence)
-                if bases > 2_000_000:
-                    raise ValueError(
-                        "Input is limited to 20 records and 2 million bases"
-                    )
+    with path.open("rb") as stream:
+        payload = stream.read(5_000_001)
+    if not payload or len(payload) > 5_000_000:
+        raise ValueError("Input must be a bounded regular FASTA file")
+    for line in io.StringIO(payload.decode("ascii"), newline=None):
+        if line.startswith(">"):
+            tokens = line[1:].split()
+            ident = tokens[0] if tokens else ""
+            if (
+                not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.:-]{0,199}", ident)
+                or ident in chunks
+            ):
+                raise ValueError("Invalid or duplicate FASTA identifier")
+            chunks[ident] = []
+            if len(chunks) > 20:
+                raise ValueError(
+                    "Input is limited to 20 records and 2 million bases"
+                )
+        elif line.strip():
+            if ident is None:
+                raise ValueError("Sequence appears before a FASTA header")
+            sequence = line.strip().upper()
+            chunks[ident].append(sequence)
+            bases += len(sequence)
+            if bases > 2_000_000:
+                raise ValueError(
+                    "Input is limited to 20 records and 2 million bases"
+                )
     if not chunks:
         raise ValueError("Input is limited to 20 records and 2 million bases")
     records = {key: "".join(parts) for key, parts in chunks.items()}
     if any(not seq or set(seq) - set("ACGTRYSWKMBDHVN") for seq in records.values()):
         raise ValueError("Empty or invalid DNA sequence")
-    return records
+    return records, sha256(payload)
+
+
+def read_fasta(path):
+    return read_fasta_snapshot(path)[0]
+
+
+def _stop_native(signum, frame):
+    # Raising lets the command's finally block reap its isolated group.
+    raise SystemExit(128 + signum)
+
+
+def _run_native(command, *, timeout, check=True, capture_output=False, **kwargs):
+    """Contain the native command and every descendant on all exit paths."""
+    if capture_output:
+        kwargs.update(stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    child = subprocess.Popen(command, start_new_session=True, **kwargs)
+    previous = None
+    if threading.current_thread() is threading.main_thread():
+        previous = signal.signal(signal.SIGTERM, _stop_native)
+    try:
+        stdout, stderr = child.communicate(timeout=timeout)
+    finally:
+        with contextlib.suppress(ProcessLookupError):
+            os.killpg(child.pid, signal.SIGKILL)
+        child.wait()
+        for stream in (child.stdin, child.stdout, child.stderr):
+            if stream is not None:
+                stream.close()
+        if previous is not None:
+            signal.signal(signal.SIGTERM, previous)
+    if check and child.returncode:
+        raise subprocess.CalledProcessError(child.returncode, command, stdout, stderr)
+    return subprocess.CompletedProcess(command, child.returncode, stdout, stderr)
 
 
 def process(command, work, name, timeout):
@@ -105,7 +146,7 @@ def process(command, work, name, timeout):
         (work / f"{name}.stdout").open("wb") as out,
         (work / f"{name}.stderr").open("wb") as err,
     ):
-        subprocess.run(command, stdout=out, stderr=err, check=True, timeout=timeout)
+        _run_native(command, stdout=out, stderr=err, check=True, timeout=timeout)
 
 
 def parse_genes(path, sequences, native_ids):
@@ -289,7 +330,7 @@ def regions_for(sequences, genes):
 
 
 def predict(args):
-    records = read_fasta(args.input)
+    records, input_digest = read_fasta_snapshot(args.input)
     models = Path(args.models_hmm)
     if (
         models.is_symlink()
@@ -379,7 +420,7 @@ def predict(args):
         "schema": {"name": "phigaro.regions", "version": "1.0.0"},
         "tool": {"name": "Phigaro-v2", "version": VERSION},
         "coordinate_system": "1-based-inclusive-source-forward",
-        "input_sha256": file_digest(args.input),
+        "input_sha256": input_digest,
         "reference": {
             "name": "pVOGs",
             "sha256": args.models_sha256,
