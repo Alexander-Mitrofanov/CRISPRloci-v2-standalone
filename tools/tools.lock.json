@@ -27,6 +27,7 @@
       "version": "0.3.0.dev2"
     },
     {
+      "bundled_tree": "73c20410d0da8511e1931dfe5a3d3b644b9bdc74",
       "commit": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
       "entrypoint": "crisprtracrrna",
       "name": "CRISPRtracrRNA-v3",

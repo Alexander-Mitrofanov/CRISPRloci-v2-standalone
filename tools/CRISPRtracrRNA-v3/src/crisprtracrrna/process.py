@@ -10,8 +10,10 @@ import os
 import shutil
 import signal
 import subprocess
+import threading
 import time
 from pathlib import Path
+from typing import NoReturn
 
 from .errors import ToolError
 
@@ -24,6 +26,11 @@ def _stderr_tail(path: Path, limit: int = 3000) -> str:
         size = handle.seek(0, os.SEEK_END)
         handle.seek(max(0, size - 4 * limit))
         return handle.read(4 * limit).decode("utf-8", errors="replace")[-limit:]
+
+
+def _stop_native(signum: int, frame: object) -> NoReturn:
+    # Raising lets the command's finally block reap its isolated group.
+    raise SystemExit(128 + signum)
 
 
 class Runner:
@@ -91,6 +98,9 @@ class Runner:
                     stderr=err,
                     start_new_session=True,
                 )
+                previous = None
+                if threading.current_thread() is threading.main_thread():
+                    previous = signal.signal(signal.SIGTERM, _stop_native)
                 try:
                     code = proc.wait(timeout=self.timeout)
                 except BaseException:
@@ -103,6 +113,14 @@ class Runner:
                         os.killpg(proc.pid, signal.SIGKILL)
                     proc.wait()
                     raise
+                finally:
+                    # The launcher can exit while descendants still hold output
+                    # files open. Stop them before validation and publication.
+                    with contextlib.suppress(ProcessLookupError):
+                        os.killpg(proc.pid, signal.SIGKILL)
+                    proc.wait()
+                    if previous is not None:
+                        signal.signal(signal.SIGTERM, previous)
                 record["returncode"] = code
                 if code:
                     tail = _stderr_tail(error)
