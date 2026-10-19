@@ -8,6 +8,12 @@ original and exported Git tree IDs and allows offline verification without priva
 Every source tree retains its original license and upstream provenance; see
 [the license inventory](../THIRD_PARTY.md).
 
+Standalone bug fixes retain the original upstream commit and `upstream_tree` as
+provenance. Patched entries also pin `bundled_tree` in `tools.lock.json`, matching
+the exported `tree` in `bundled-sources.json`. This pin participates in the
+runtime identity, so patched sources build a new isolated toolset instead of
+reusing a runtime built from older bundled code.
+
 | Tool | Version | Pinned commit | Command |
 | --- | --- | --- | --- |
 | [CRISPRidentify-v2](CRISPRidentify-v2/README.md) | 2.3.2 | `e8a3d7c038ea` | `./crispridentify` |

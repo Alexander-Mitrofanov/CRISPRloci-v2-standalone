@@ -52,6 +52,8 @@ def verify_bundled(root, entry):
     """Return False in a development checkout; fail closed for invalid bundles."""
     manifest = root / "tools/bundled-sources.json"
     if not manifest.exists():
+        if "bundled_tree" in entry:
+            raise ValueError("Missing bundled source manifest for the requested tree pin")
         return False
     if manifest.is_symlink():
         raise ValueError("Bundled source manifest must not be a symlink")
@@ -65,6 +67,8 @@ def verify_bundled(root, entry):
     record = matches[0]
     if any(record.get(key) != entry[key] for key in ("repository", "commit", "path")):
         raise ValueError(f"{entry['name']}: bundled source differs from requested lock")
+    if "bundled_tree" in entry and entry["bundled_tree"] != record.get("tree"):
+        raise ValueError(f"{entry['name']}: bundled tree differs from requested lock")
     path = root / entry["path"]
     if path.is_symlink() or not path.is_dir():
         raise ValueError(f"{entry['name']}: missing or unsafe bundled source directory")

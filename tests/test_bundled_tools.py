@@ -88,3 +88,33 @@ def test_bundle_ignores_only_generated_python_caches(bundle):
 
 def test_development_checkout_keeps_original_git_workflow(tmp_path):
     assert not verify_bundled(tmp_path, {})
+
+
+def test_patched_bundle_cannot_silently_fall_back_to_upstream_git(tmp_path):
+    with pytest.raises(ValueError, match="Missing bundled source manifest"):
+        verify_bundled(tmp_path, {"bundled_tree": "1" * 40})
+
+
+def test_bundled_patch_identity_changes_runtime_lock_and_binds_export(bundle, tmp_path):
+    root, source, entry, tree = bundle
+    pinned = {**entry, "bundled_tree": tree}
+    assert verify_bundled(root, pinned)
+    before = common.lock_id({"tools": [pinned]})
+    (source / "main.py").write_text("print('fixed science')\n")
+    changed = source_tree(source).hex()
+    manifest = root / "tools/bundled-sources.json"
+    document = json.loads(manifest.read_text())
+    document["tools"][0]["tree"] = changed
+    manifest.write_text(json.dumps(document))
+    with pytest.raises(ValueError, match="tree differs"):
+        export_bundled(root, pinned, tmp_path / "stale")
+    fixed = {**pinned, "bundled_tree": changed}
+    assert common.lock_id({"tools": [fixed]}) != before
+    assert export_bundled(root, fixed, tmp_path / "fixed")
+
+
+@pytest.mark.parametrize("tree", [None, 42, "", "0" * 39, "G" * 40])
+def test_invalid_bundled_tree_pin_is_rejected_before_sync(bundle, tree):
+    _, _, entry, _ = bundle
+    with pytest.raises(ValueError, match="bundled tree"):
+        sync_tools.validate_entry({**entry, "bundled_tree": tree})

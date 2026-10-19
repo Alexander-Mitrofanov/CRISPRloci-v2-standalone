@@ -28,6 +28,11 @@ def validate_entry(entry):
         raise ValueError(f"Invalid checkout path for {name}")
     if not re.fullmatch(r"[0-9a-f]{40}", entry["commit"]):
         raise ValueError(f"Missing or invalid commit for {name}")
+    if "bundled_tree" in entry and (
+        not isinstance(entry["bundled_tree"], str)
+        or not re.fullmatch(r"[0-9a-f]{40}", entry["bundled_tree"])
+    ):
+        raise ValueError(f"Invalid bundled tree for {name}")
     if not re.fullmatch(
         r"https://github\.com/[A-Za-z0-9_-]+/[A-Za-z0-9_.-]+\.git", entry["repository"]
     ):
