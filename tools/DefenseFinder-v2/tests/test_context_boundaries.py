@@ -220,3 +220,20 @@ def test_config_resolution_matches_virtualenv_precedence(tmp_path, monkeypatch):
     poison.write_text("[score_opt]\nmandatory_weight = 3\n")
     monkeypatch.setenv("MACSY_CONF", str(poison))
     pipeline.reject_ambient_configuration(tmp_path / "models")
+
+
+@pytest.mark.parametrize('column,value', [(7, '-0.1'), (7, '1.01'), (8, '-0.1'), (8, '1.01')])
+def test_profile_coverages_are_fractions(work, column, value):
+    row = hit()
+    row[column] = value
+    extract(work, [row])
+    with pytest.raises(ValueError, match='coverage'):
+        pipeline.collect(work, [gene()])
+
+
+@pytest.mark.parametrize('changes', [dict(sys_wholeness='-0.1'),
+    dict(hit_i_eval='-1'), dict(hit_profile_cov='-0.1'), dict(hit_profile_cov='1.01')])
+def test_system_evidence_rejects_impossible_fractions_and_evalues(work, changes):
+    systems(work, [system_row(**changes)])
+    with pytest.raises(ValueError):
+        pipeline.collect(work, [gene()])

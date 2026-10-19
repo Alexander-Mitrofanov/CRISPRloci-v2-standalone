@@ -168,6 +168,8 @@ def profile_hit(row, lookup, ranks):
     if (not hit["profile"] or hit["i_evalue"] < 0
             or not 1 <= hit["protein_start"] <= hit["protein_end"] <= len(gene["protein"])):
         raise ValueError("Invalid HMM hit evidence")
+    if any(not 0 <= hit[key] <= 1 for key in ("profile_coverage", "sequence_coverage")):
+        raise ValueError("Invalid HMM coverage fraction")
     return hit
 
 
@@ -195,6 +197,8 @@ def collect(work: Path, genes):
             if not system_id or len(parts) < 4 or parts[:2] != ["defense-finder-models", family]:
                 raise ValueError("Native system model mismatch")
             wholeness, score = number(row, "sys_wholeness"), number(row, "sys_score")
+            if wholeness < 0:
+                raise ValueError("Invalid negative system wholeness")
             if system_id not in system_map:
                 system_map[system_id] = {"id": system_id, "source_id": gene["source_id"],
                     "type": parts[-2], "subtype": parts[-1], "model": model,
@@ -207,9 +211,12 @@ def collect(work: Path, genes):
             if gene["id"] not in members[system_id]:
                 system["gene_ids"].append(gene["id"])
                 members[system_id].add(gene["id"])
-            components.append({"system_id": system_id, "gene_id": gene["id"], "profile": row["gene_name"],
+            component = {"system_id": system_id, "gene_id": gene["id"], "profile": row["gene_name"],
                 "status": row["hit_status"], "score": number(row, "hit_score"),
-                "i_evalue": number(row, "hit_i_eval"), "profile_coverage": number(row, "hit_profile_cov")})
+                "i_evalue": number(row, "hit_i_eval"), "profile_coverage": number(row, "hit_profile_cov")}
+            if component["i_evalue"] < 0 or not 0 <= component["profile_coverage"] <= 1:
+                raise ValueError("Invalid system component evidence")
+            components.append(component)
         for path in sorted((directory / "hmmer_results").glob("*.res_hmm_extract")):
             for row in csv.reader(native_lines(path), delimiter="\t"):
                 if not row:

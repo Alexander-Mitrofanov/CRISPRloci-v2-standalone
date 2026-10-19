@@ -155,6 +155,7 @@
       "version": "2.0.0"
     },
     {
+      "bundled_tree": "04be74d3be6206c9eb5195bb998acd74ca51281e",
       "commit": "f579941ca35fb4bd26fcd4c35fcffc23df9d91a2",
       "entrypoint": "defense-context",
       "name": "DefenseFinder-v2",
