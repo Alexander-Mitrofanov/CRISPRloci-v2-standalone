@@ -14,6 +14,7 @@ import math
 import os
 import selectors
 import signal
+import threading
 import subprocess
 import time
 from typing import Mapping, Optional, Sequence, Union
@@ -207,6 +208,11 @@ def _close_streams(
     selector.close()
 
 
+def _stop_native(signum, frame):
+    # Raising lets the command's finally block reap its isolated group.
+    raise SystemExit(128 + signum)
+
+
 def run_bounded(
         argv: Sequence[Arg],
         *,
@@ -257,6 +263,9 @@ def run_bounded(
 
     deadline = time.monotonic() + timeout
     timed_out = False
+    previous = None
+    if threading.current_thread() is threading.main_thread():
+        previous = signal.signal(signal.SIGTERM, _stop_native)
     try:
         while process.poll() is None or selector.get_map():
             remaining = deadline - time.monotonic()
@@ -282,7 +291,12 @@ def run_bounded(
         _reap_after_kill(process, selector)
         raise
     finally:
+        # Descendants may detach their output pipes before the launcher exits.
+        # EOF therefore does not prove that the command's process group is gone.
+        _kill_process_group(process)
         _close_streams(process, selector)
+        if previous is not None:
+            signal.signal(signal.SIGTERM, previous)
 
     result = BoundedCompletedProcess(
         args=command,

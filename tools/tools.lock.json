@@ -1,10 +1,11 @@
 {
   "checkout_strategy": "Independent Git repositories pinned by commit; managed by scripts/sync_tools.py",
-  "locked_at": "2026-10-18",
+  "locked_at": "2026-10-19",
   "runtime_profile": "crisprloci-council-hardening-v1",
   "schema_version": 1,
   "tools": [
     {
+      "bundled_tree": "19c49ce7d03ce4783d827f5e183341c751917ef7",
       "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
       "entrypoint": "./crispridentify",
       "name": "CRISPRidentify-v2",

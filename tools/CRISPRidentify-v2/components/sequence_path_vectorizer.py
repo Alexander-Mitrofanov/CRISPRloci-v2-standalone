@@ -596,6 +596,8 @@ def _neighborhood_radius_hashes(sequence):
 def _native_packed_feature_row(sequence, output_buffers=None):
     """Return one exact normalized native sparse row, or None."""
 
+    if not sequence.isascii():
+        raise ValueError("native packed path-feature row requires ASCII input")
     if _NATIVE_PATH_FEATURE_ROW is None:
         return None
     length = len(sequence)
