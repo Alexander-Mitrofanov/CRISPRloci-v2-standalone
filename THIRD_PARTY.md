@@ -13,9 +13,9 @@ point, not a replacement for those notices.
 
 | Module | Version | Source commit | License entry point |
 | --- | --- | --- | --- |
-| [CRISPRidentify-v2](tools/CRISPRidentify-v2/README.md) | 2.3.2 | `e8a3d7c038ea` | [MIT; bundled CasAndra notices retained](tools/CRISPRidentify-v2/LICENSE) |
+| [CRISPRidentify-v2](tools/CRISPRidentify-v2/README.md) | 2.4.3 | `63e563ec3707` | [MIT; bundled CasAndra notices retained](tools/CRISPRidentify-v2/LICENSE) |
 | [CasAndra](tools/CasAndra/README.md) | 0.3.0.dev2 | `ba046f90242a` | [Apache-2.0](tools/CasAndra/LICENSE) |
-| [CRISPRtracrRNA-v3](tools/CRISPRtracrRNA-v3/README.md) | 3.0.0 | `9307e2667733` | [MIT; native FASTA notices retained](tools/CRISPRtracrRNA-v3/LICENSE) |
+| [CRISPRtracrRNA-v3](tools/CRISPRtracrRNA-v3/README.md) | 3.0.0 | `9461c6eea80d` | [MIT; native FASTA notices retained](tools/CRISPRtracrRNA-v3/LICENSE) |
 | [SpacerPlacer](tools/SpacerPlacer/README.md) | 1.0.1.post3 | `2a91510a8ec9` | [GPL-3.0](tools/SpacerPlacer/LICENSE) |
 | [evOr](tools/evOr/README.md) | 1.0.4 | `505dafe5bc11` | [GPL-3.0](tools/evOr/LICENSE) |
 | [CRISPRleader-v2](tools/CRISPRleader-v2/README.md) | 2.0.0a1 | `b53101638356` | [MIT](tools/CRISPRleader-v2/LICENSE) |

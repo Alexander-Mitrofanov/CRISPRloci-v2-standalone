@@ -1,41 +1,43 @@
 import copy
-from dataclasses import replace
 import hashlib
 import json
-from pathlib import Path
 import random
 import tempfile
 import unittest
+from dataclasses import replace
+from pathlib import Path
 
-from components.components_detection import (
+from components.detection.search import (
+    FUZZY_SOURCE_PATH_SCHEMA,
     FuzzySearch,
     FuzzySourceOccurrence,
     FuzzySourcePathProvenance,
-    FUZZY_SOURCE_PATH_SCHEMA,
 )
-from components.components_evaluated_arrays_enhancement import (
+from components.refinement.enhancement_search import (
     build_source_backed_candidate_from_boundaries as build,
 )
-from components.internal_repeat_completion import (
+from components.refinement.internal_repeat_completion import (
+    BROKEN_REASON,
     InternalSearchContext,
     InternalSearchPolicy,
     analyze_gap_graph,
     analyze_internal_geometry,
     propose_internal_repairs,
     replay_internal_attestation,
-    BROKEN_REASON,
 )
-from components.internal_repeat_transaction import (
+from components.refinement.internal_repeat_transaction import (
+    METHOD,
     complete_internal_repeats,
     replay_internal_completion_basis,
-    METHOD,
 )
-from components.module_detection_refinement import DetectionRefinement
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.repeat_boundary_repair import propose_terminal_repairs, source_geometry
-from components.report_model import ReportModelBuilder
-from tests.test_repeat_boundary_repair import PARAMETERS, fuzzy, Locus
-
+from components.refinement.repeat_boundary_repair import (
+    propose_terminal_repairs,
+    source_geometry,
+)
+from components.refinement.stage import DetectionRefinement
+from components.reporting.report_model import ReportModelBuilder
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
+from tests.test_repeat_boundary_repair import PARAMETERS, Locus, fuzzy
 
 MOTIF = "TGTTTCAGACATGCCCGGTTTAGACGGGATTAAGAC"
 

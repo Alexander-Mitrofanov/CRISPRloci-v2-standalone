@@ -20,7 +20,7 @@ SOURCES = {
     "rnaalifold": ("RNAalifold-v2", "rna_family_tool/cli.py"),
     "cctk": ("CCTK", "src/cctk/cli.py"),
     "spacepharer": ("SpacePHARER", "python/spacepharer/cli.py"),
-    "crispridentify": ("CRISPRidentify-v2", "CRISPRidentify.py"),
+    "crispridentify": ("CRISPRidentify-v2", "components/cli/parser.py"),
     "casandra": ("CasAndra", "src/casandra/cli.py"),
     "crispr_tracrrna": ("CRISPRtracrRNA-v3", "src/crisprtracrrna/cli.py"),
     "spacerplacer": ("SpacerPlacer", "spacerplacer.py"),

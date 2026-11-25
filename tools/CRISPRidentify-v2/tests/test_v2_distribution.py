@@ -1,12 +1,11 @@
 import hashlib
 import json
 import os
-from pathlib import Path, PurePosixPath
 import stat
 import subprocess
 import tempfile
 import unittest
-
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT
@@ -95,7 +94,7 @@ class V2DistributionTests(unittest.TestCase):
             self.assertEqual([], list(native.glob(".libliteral_fuzzy.*.so")))
 
     def test_v2_is_a_complete_release_tree_and_legacy_cas_is_absent(self):
-        self.assertEqual("2.3.2", (V2 / "VERSION").read_text().strip())
+        self.assertEqual("2.4.3", (V2 / "VERSION").read_text().strip())
         ignore = (V2 / ".gitignore").read_text(encoding="utf-8")
         self.assertNotIn("vendor/", ignore)
         self.assertNotIn("trained_models/", ignore)
@@ -113,7 +112,7 @@ class V2DistributionTests(unittest.TestCase):
             V2 / "docs" / "CLUSTER.md",
             V2 / ".github" / "workflows" / "ci.yml",
             V2 / "tests" / "__init__.py",
-            V2 / "components" / "casandra_adapter.py",
+            V2 / "components" / "annotation" / "casandra_adapter.py",
             VENDOR / "VENDORING.json",
             VENDOR / "SOURCE_MANIFEST.sha256",
             MODEL_ROOT / "protein" / "profiles.hmm",
@@ -136,7 +135,7 @@ class V2DistributionTests(unittest.TestCase):
         for path in V2.rglob("*"):
             relative_parts = path.relative_to(V2).parts
             if (
-                    relative_parts[0] in {".envs", ".git"}
+                    relative_parts[0] in {".envs", ".git", "runs", "Results"}
                     or "__pycache__" in path.parts
                     or path.name.endswith((".pyc", ".pyo"))):
                 continue
@@ -164,7 +163,7 @@ class V2DistributionTests(unittest.TestCase):
                 continue
             relative_parts = path.relative_to(V2).parts
             if (
-                    relative_parts[0] in {".envs", ".git"}
+                    relative_parts[0] in {".envs", ".git", "runs", "Results"}
                     or "__pycache__" in relative_parts
                     or path.name.endswith((".pyc", ".pyo", ".so"))):
                 continue

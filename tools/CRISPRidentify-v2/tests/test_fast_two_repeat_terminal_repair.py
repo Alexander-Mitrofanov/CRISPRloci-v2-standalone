@@ -2,14 +2,15 @@ import random
 import unittest
 from unittest.mock import patch
 
-from components.components_detection import (
+from components.detection.search import (
     RejectedFuzzyCandidateTopology,
     TwoRepeatTerminalRepairSeed,
 )
-from components.components_evaluated_arrays_enhancement import (
+from components.detection.stage import Detection
+from components.refinement.enhancement_search import (
     build_source_backed_candidate_from_boundaries,
 )
-from components.fast_two_repeat_terminal_repair import (
+from components.rescue.fast_two_repeat_terminal_repair import (
     FLANK_CONTINUATION_RADIUS,
     MINIMUM_TANDEM_REPEAT_DERIVED_SPACER_COVERAGE,
     MINIMUM_TANDEM_REPEAT_DUST_SCORE,
@@ -21,9 +22,7 @@ from components.fast_two_repeat_terminal_repair import (
     repeat_derived_spacer_coverage,
     repeat_dust_triplet_score,
 )
-from components.module_detection import Detection
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 
 PARAMETERS = {
     "param_min_avg_repeat_length": 21,
@@ -271,7 +270,7 @@ class FastTwoRepeatTerminalRepairTests(unittest.TestCase):
             (first.repeat_ends[0] + 1, first.repeat_ends[1] + 1),
         )
         with patch(
-                "components.fast_two_repeat_terminal_repair."
+                "components.rescue.fast_two_repeat_terminal_repair."
                 "MAXIMUM_SEEDS_PER_SOURCE",
                 1):
             winners, stats = generate_source_winners(

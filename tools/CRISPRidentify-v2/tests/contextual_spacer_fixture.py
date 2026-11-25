@@ -10,11 +10,11 @@ from pathlib import Path
 
 import numpy as np
 
-from components.compact_model import predict_compact_scores
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.localized_spacer_context import capture_pending_context
-from components.module_evaluation import build_advanced_fuzzy_search_filter
+from components.reconstruction.localized_spacer_context import capture_pending_context
+from components.refinement.candidates import CrisprCandidate
+from components.scoring.compact_model import predict_compact_scores
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
 
 

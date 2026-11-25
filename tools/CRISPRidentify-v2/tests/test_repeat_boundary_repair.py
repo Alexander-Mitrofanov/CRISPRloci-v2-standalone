@@ -1,31 +1,34 @@
 import copy
 import hashlib
 import json
-from collections import namedtuple
-from pathlib import Path
 import random
 import tempfile
 import unittest
+from collections import namedtuple
+from pathlib import Path
 from unittest.mock import patch
 
-from components.components_detection_refinement import CrisprCandidate
-from components.components_evaluated_arrays_enhancement import (
+from components.detection.fuzzy_alignment_merge import merge_fuzzy_alignments
+from components.pipeline import CandidateScoreCache, Pipeline
+from components.refinement.candidates import CrisprCandidate
+from components.refinement.enhancement_search import (
     _minimal_edit_changes,
     _source_only_alignment_seed,
-    build_source_backed_candidate_from_boundaries as build,
     collapse_source_backed_phase_equivalent_candidates,
     validate_candidate_source_reconstruction,
 )
-from components.fuzzy_alignment_merge import merge_fuzzy_alignments
-from components.fast_run_rescue import candidate_score_fingerprint
-from components.module_detection_refinement import DetectionRefinement
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.pipeline import CandidateScoreCache, Pipeline
-from components.report_model import ReportModelBuilder
-from components.repeat_boundary_repair import (
-    MAX_PARENTS_PER_LOCUS, propose_terminal_repairs, source_geometry,
+from components.refinement.enhancement_search import (
+    build_source_backed_candidate_from_boundaries as build,
 )
-
+from components.refinement.repeat_boundary_repair import (
+    MAX_PARENTS_PER_LOCUS,
+    propose_terminal_repairs,
+    source_geometry,
+)
+from components.refinement.stage import DetectionRefinement
+from components.reporting.report_model import ReportModelBuilder
+from components.rescue.fast_run_rescue import candidate_score_fingerprint
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 
 PARAMETERS = {
     "param_min_repeats": 3,
@@ -291,8 +294,8 @@ class RepeatBoundaryRepairTests(unittest.TestCase):
             calls[0] += 1
             return real_evidence(candidate) if calls[0] == 1 else passed
 
-        with patch("components.repeat_boundary_repair._weak_removed_columns", return_value=True), \
-                patch("components.repeat_boundary_repair._source_phase_boundary_evidence", return_value={"passes": True}), \
+        with patch("components.refinement.repeat_boundary_repair._weak_removed_columns", return_value=True), \
+                patch("components.refinement.repeat_boundary_repair._source_phase_boundary_evidence", return_value={"passes": True}), \
                 patch.object(self.structural, "evidence", side_effect=evidence):
             children, records, _ = self.repair(dna, [parent])
         self.assertEqual([], children)

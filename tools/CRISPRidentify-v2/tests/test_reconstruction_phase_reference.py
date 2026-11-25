@@ -5,36 +5,46 @@ features or predicted acceptance. Transaction vectors below are deliberately
 synthetic, scored by the bundled compact model without external predictors.
 """
 import copy
-from dataclasses import replace
 import hashlib
 import json
-from pathlib import Path
 import random
 import tempfile
 import unittest
+from dataclasses import replace
+from pathlib import Path
 from unittest import mock
 
 import numpy as np
 
-from components.compact_model import predict_compact_scores
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.reconstruction_boundary_family import METHOD as FAMILY_METHOD, digest
-from components.reconstruction_reference import (
-    ANCHOR_REFERENCE, MAPPED_CORE_REFERENCE, assess_added_repeat_reference,
+from components.reconstruction.reconstruction_boundary_family import (
+    METHOD as FAMILY_METHOD,
+)
+from components.reconstruction.reconstruction_boundary_family import digest
+from components.reconstruction.reconstruction_reference import (
+    ANCHOR_REFERENCE,
+    MAPPED_CORE_REFERENCE,
+    assess_added_repeat_reference,
     recorded_reference_rule,
 )
-from components.reconstruction_selection import (
-    candidate_geometry, monotone_repeat_mapping, relationship, select_reconstructions,
+from components.reconstruction.reconstruction_selection import (
+    candidate_geometry,
+    monotone_repeat_mapping,
+    relationship,
+    select_reconstructions,
 )
-from components.reconstruction_transaction import (
-    reconstruct_accepted_arrays, validate_boundary_family_basis, validate_reconstruction_basis,
+from components.reconstruction.reconstruction_transaction import (
+    reconstruct_accepted_arrays,
+    validate_boundary_family_basis,
+    validate_reconstruction_basis,
 )
-from components.report_model import ReportModelBuilder
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.report_model import ReportModelBuilder
+from components.scoring.compact_model import predict_compact_scores
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
-from tests.test_reconstruction_boundary_family import qualified, fixture as legacy_family_fixture
+from tests.test_reconstruction_boundary_family import fixture as legacy_family_fixture
+from tests.test_reconstruction_boundary_family import qualified
 from tests.test_reconstruction_transaction import fixture as legacy_fixture
-
 
 CORE = "ACCACCCCCACGGGCGTGGGGAGCAC"
 PHASE = "CGG" + CORE
@@ -311,7 +321,7 @@ class PhaseTransactionTests(unittest.TestCase):
         for fixture in (legacy_fixture,legacy_family_fixture):
             source,categories,scorer = fixture()
             output,audit = reconstruct_accepted_arrays(source,categories,PARAMETERS,scorer,lambda:())
-            with mock.patch("components.reconstruction_transaction.MAPPED_CORE_REFERENCE",ANCHOR_REFERENCE):
+            with mock.patch("components.reconstruction.reconstruction_transaction.MAPPED_CORE_REFERENCE",ANCHOR_REFERENCE):
                 legacy,legacy_audit = reconstruct_accepted_arrays(source,categories,PARAMETERS,scorer,lambda:())
             row = next(iter(output[0].values()))[0]
             basis = row[3]["classification_basis"]
@@ -401,8 +411,8 @@ class PhaseTransactionTests(unittest.TestCase):
         self.assertNotEqual(decision.action,"selected")
 
     def test_fallback_cannot_erase_an_original_s1_occurrence_witness(self):
-        from components.candidate_origins import mark_repair_origin
-        from components.initial_competition import initial_competition_groups
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.evidence.initial_competition import initial_competition_groups
         source,categories,_ = phase_fixture()
         key = next(iter(categories[0]))
         core = categories[0][key][0]

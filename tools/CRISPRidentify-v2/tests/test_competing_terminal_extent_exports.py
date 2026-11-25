@@ -1,21 +1,24 @@
 """Public terminal disclosure preserves accepted science and output lifecycle."""
 
-from contextlib import nullcontext
 import copy
 import csv
 import gzip
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from contextlib import nullcontext
+from pathlib import Path
 from unittest import mock
 
-from components import module_output_maker, output_transaction
-from components.components_detection_refinement import CrisprCandidate
-from components.competing_terminal_extent_outputs import CSV_FILENAME
-from components.competing_terminal_extents import competing_terminal_extent_summaries
-from components.html_report import CanonicalReportMaker, render_html_report
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
+from components.reconstruction.competing_terminal_extents import (
+    competing_terminal_extent_summaries,
+)
+from components.refinement.candidates import CrisprCandidate
+from components.reporting import output_transaction
+from components.reporting import stage as module_output_maker
+from components.reporting.competing_terminal_extent_outputs import CSV_FILENAME
+from components.reporting.html_report import CanonicalReportMaker, render_html_report
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
 from tests.test_candidate_evidence import PARAMETERS, _fixture
 
 

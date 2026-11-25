@@ -9,20 +9,23 @@ import copy
 import csv
 import gzip
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 from unittest import mock
 
-from components import module_output_maker, output_transaction
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.html_report import CanonicalReportMaker, render_html_report
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
-from components.possible_reconstruction import (
-    EVIDENCE_FILENAME, METHOD, reconstruct_possible_arrays,
+from components.reconstruction.possible_reconstruction import (
+    EVIDENCE_FILENAME,
+    METHOD,
+    reconstruct_possible_arrays,
 )
-from components.report_model import ReportModelBuilder, ReportModelError
+from components.refinement.candidates import CrisprCandidate
+from components.reporting import output_transaction
+from components.reporting import stage as module_output_maker
+from components.reporting.html_report import CanonicalReportMaker, render_html_report
+from components.reporting.report_model import ReportModelBuilder, ReportModelError
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
 from tests.test_possible_reconstruction import fixture
 from tests.test_reconstruction_transaction import fixture as bf_fixture

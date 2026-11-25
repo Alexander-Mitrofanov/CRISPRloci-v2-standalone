@@ -1,27 +1,38 @@
 """Coupled boundary-family selection, proof and export fixture."""
 import copy
-from dataclasses import replace
 import hashlib
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from dataclasses import replace
+from pathlib import Path
 
 import numpy as np
 
-from components.components_detection_refinement import CrisprCandidate
-from tests.test_reconstruction_transaction import fixture as exact_fixture
+from components.reconstruction.reconstruction_boundary_family import (
+    METHOD,
+    boundary_family_summary,
+    describe_family,
+    digest,
+    family_occurrence_evidence,
+    report_boundary_family_summary,
+    validate_boundary_family_audit,
+)
+from components.reconstruction.reconstruction_selection import (
+    CandidateValidation,
+    RowLocation,
+    select_reconstructions,
+)
+from components.reconstruction.reconstruction_transaction import (
+    _snapshot,
+    reconstruct_accepted_arrays,
+    validate_boundary_family_basis,
+)
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.report_model import ReportModelBuilder
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.reconstruction_selection import CandidateValidation, select_reconstructions, RowLocation
-from components.reconstruction_transaction import (
-    reconstruct_accepted_arrays, validate_boundary_family_basis, _snapshot,
-)
-from components.reconstruction_boundary_family import (
-    METHOD, boundary_family_summary, describe_family, digest,
-    report_boundary_family_summary, validate_boundary_family_audit, family_occurrence_evidence,
-)
-from components.report_model import ReportModelBuilder
+from tests.test_reconstruction_transaction import fixture as exact_fixture
 
 
 def fixture(*, end_trim=1):
@@ -62,6 +73,7 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
         first = categories[1][key][0]
         baseline = select_reconstructions(categories, qualified).decisions[0]
         self.assertEqual(len(baseline.family_members), 2)
+        self.assertEqual(baseline.selected.geometry, RowLocation(1, key, 0, first).geometry)
         for rows in (list(reversed(categories[1][key])), categories[1][key] + [first]):
             altered = list(categories)
             altered[1] = {key: rows}
@@ -112,7 +124,8 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
             self.assertEqual(len(selected.family_members), expected)
 
     def test_different_start_tie_cannot_be_dropped_as_a_subgroup(self):
-        from tests.test_reconstruction_selection import categories as make_categories, row
+        from tests.test_reconstruction_selection import categories as make_categories
+        from tests.test_reconstruction_selection import row
         a = row([60,100,140,180], .7)
         b = row([60,100,140,180], .7, repeats=["ACGTTGCAA"] * 4)
         c = row([100,140,180,220], .7)
@@ -121,7 +134,8 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
         self.assertEqual(len(result.tied_geometry_ids), 3)
 
     def test_non_display_member_collision_still_blocks(self):
-        from tests.test_reconstruction_selection import categories as make_categories, row, REPEAT
+        from tests.test_reconstruction_selection import REPEAT, row
+        from tests.test_reconstruction_selection import categories as make_categories
         a = row([60,100,140,180,220], .7)
         b = row([60,100,140,180,220], .7, repeats=[REPEAT] * 4 + [REPEAT + "A"])
         inputs = make_categories(donors=[a,b], possible=[row([230,270,310], .65)])
@@ -130,7 +144,7 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
         self.assertIn("overlaps_other_accepted_core", decision.evidence["same_rank_peers"][1]["vetoes"])
 
     def test_family_union_proposal_collision_is_symmetric(self):
-        from tests.test_reconstruction_selection import row, REPEAT
+        from tests.test_reconstruction_selection import REPEAT, row
         first, second = row([100,140,180], .9), row([500,540,580], .9)
         short = row([100,140,180,220,260,300,340], .7000000000005)
         long = row([100,140,180,220,260,300,340], .7,
@@ -149,7 +163,7 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
             self.assertTrue(all(not d.family_members for d in result.decisions))
 
     def test_s1_witness_on_non_display_member_is_not_erased(self):
-        from tests.test_initial_competition import row, evaluate, members
+        from tests.test_initial_competition import evaluate, members, row
         ordinary = row(.8, [(10,16),(40,46),(70,76)])
         repaired = row(.9, [(13,19),(43,49),(73,79)], repair=True)
         inputs = evaluate([ordinary, repaired])
@@ -165,8 +179,8 @@ class BoundaryFamilySelectionTests(unittest.TestCase):
                             for p in decision.evidence["same_rank_peers"]))
 
     def test_member_specific_witness_applies_to_every_family_geometry(self):
+        from components.evidence.initial_competition import initial_competition_groups
         from tests.test_initial_competition import row
-        from components.initial_competition import initial_competition_groups
         ordinary = row(.8, [(10,16),(40,46),(70,76)])
         a = row(.7, [(13,19),(43,49),(73,79),(103,109)], repair=True)
         groups, conflicts = initial_competition_groups([ordinary,a])
@@ -229,8 +243,8 @@ class BoundaryFamilyTransactionTests(unittest.TestCase):
         self.assertEqual(boundary_family_summary(wrapped), boundary_family_summary(row))
 
     def test_member_s1_witness_is_bound_after_accepted_metadata_is_removed(self):
-        from components.candidate_origins import mark_repair_origin
-        from components.initial_competition import initial_competition_groups
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.evidence.initial_competition import initial_competition_groups
         source, categories, scorer = fixture()
         key = next(iter(categories[1]))
         core = categories[0][key][0]
@@ -266,9 +280,12 @@ class BoundaryFamilyTransactionTests(unittest.TestCase):
                 validate_boundary_family_basis(source, current[1], basis, current[0], 0, current, changed)
 
     def test_source_valid_member_specific_witness_blocks_producer_and_replay(self):
-        from components.candidate_origins import mark_repair_origin, candidate_origin_evidence
-        from components.initial_competition import initial_competition_groups
-        from components.reconstruction_validator import validate_candidate_reconstruction
+        from components.evidence.candidate_origins import (
+            candidate_origin_evidence,
+            mark_repair_origin,
+        )
+        from components.evidence.initial_competition import initial_competition_groups
+        from components.sequence.validation import validate_candidate_reconstruction
         source, categories, scorer = fixture(end_trim=2)
         output, _ = reconstruct_accepted_arrays(source, categories, PARAMETERS, scorer, lambda: ())
         key = next(iter(categories[1]))
@@ -421,7 +438,7 @@ class BoundaryFamilyTransactionTests(unittest.TestCase):
         member["original"] = member["fresh"] = _snapshot(hybrid)
         newloc = RowLocation(1, old_location["locus_key"], old_location["row_index"], hybrid).as_dict()
         member["location"] = newloc
-        from components.candidate_origins import candidate_origin_evidence
+        from components.evidence.candidate_origins import candidate_origin_evidence
         member["origins"] = candidate_origin_evidence(c, proof["source_sha256"])
         for peer in proof["selection"]["evidence"]["same_rank_peers"]:
             if peer["candidate"] == old_location:

@@ -1,14 +1,14 @@
 import io
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 from unittest import mock
 
-from components import html_report
-from components import module_output_maker
-from components.output_transaction import OutputTransaction
-from components.report_model import ReportModelBuilder
+from components.reporting import html_report
+from components.reporting import stage as module_output_maker
+from components.reporting.output_transaction import OutputTransaction
+from components.reporting.report_model import ReportModelBuilder
 
 
 class ReportStreamingTests(unittest.TestCase):

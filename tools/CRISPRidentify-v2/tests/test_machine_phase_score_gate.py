@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import patch
 
-from components.components_detection_refinement import CrisprCandidate
-from components.components_evaluated_arrays_enhancement import (
+from components.refinement.candidates import CrisprCandidate
+from components.refinement.enhancement_search import (
     collapse_source_backed_phase_equivalent_candidates,
 )
 
@@ -53,7 +53,7 @@ class MachinePhaseScoreGateTests(unittest.TestCase):
     def test_all_boundary_rejections_skip_scores_and_preserve_candidates(self):
         dna, candidates = self._weak_boundary_family()
         with patch(
-                "components.components_evaluated_arrays_enhancement."
+                "components.refinement.enhancement_search."
                 "_source_phase_geometry_score") as source_score:
             collapsed, provenance, stats = (
                 collapse_source_backed_phase_equivalent_candidates(

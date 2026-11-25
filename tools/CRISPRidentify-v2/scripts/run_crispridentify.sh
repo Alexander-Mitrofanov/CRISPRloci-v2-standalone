@@ -24,6 +24,20 @@ rewritten_arguments=()
 result_folder_seen=0
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --repeat-*=*|--repeat_*=*)
+            option="${1%%=*}"
+            value="${1#*=}"
+            rewritten_arguments+=("${option}=$(caller_absolute_path "${value}")")
+            shift
+            ;;
+        --repeat-*|--repeat_*)
+            rewritten_arguments+=("$1")
+            shift
+            if [[ $# -gt 0 ]]; then
+                rewritten_arguments+=("$(caller_absolute_path "$1")")
+                shift
+            fi
+            ;;
         --file|--input_folder|--input_folder_multifasta|\
         --result_folder|--pickle_report|--json_report|\
         --sequence_topology_manifest|--_folder_queue)

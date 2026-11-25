@@ -3,25 +3,27 @@
 import copy
 import hashlib
 import json
-from pathlib import Path
 import random
 import tempfile
 import unittest
+from pathlib import Path
 
 import numpy as np
 
-from components.compact_model import predict_compact_scores
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.initial_competition import (
+from components.evidence.initial_competition import (
     initial_competition_groups,
     with_competition_evidence,
 )
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
-from components.reconstruction_transaction import (
-    METHOD, reconstruct_accepted_arrays, validate_reconstruction_basis,
+from components.reconstruction.reconstruction_transaction import (
+    METHOD,
+    reconstruct_accepted_arrays,
+    validate_reconstruction_basis,
 )
-from components.report_model import ReportModelBuilder, ReportModelError
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.report_model import ReportModelBuilder, ReportModelError
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
+from components.scoring.compact_model import predict_compact_scores
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
 
 
@@ -164,8 +166,10 @@ class ReconstructionTransactionTests(unittest.TestCase):
             reconstruct_accepted_arrays(source, malformed, PARAMETERS, scorer, lambda: ())
 
     def test_occurrence_witness_survives_proof_only_projection_and_replay(self):
-        from components.candidate_origins import mark_repair_origin
-        from components.initial_competition import validate_ordinary_witness_inventory
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.evidence.initial_competition import (
+            validate_ordinary_witness_inventory,
+        )
         source, categories, scorer = fixture()
         key = next(iter(categories[0]))
         core, donor = categories[0][key][0], categories[1][key][0]
@@ -212,8 +216,10 @@ class ReconstructionTransactionTests(unittest.TestCase):
             validate_ordinary_witness_inventory(without_original, source)
 
     def test_proof_only_deferred_summary_matches_retained_repair(self):
-        from components.candidate_origins import mark_repair_origin
-        from components.initial_competition import validate_ordinary_witness_inventory
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.evidence.initial_competition import (
+            validate_ordinary_witness_inventory,
+        )
         source, categories, scorer = fixture()
         key = next(iter(categories[0]))
         core, donor = categories[0][key][0], categories[1][key][0]

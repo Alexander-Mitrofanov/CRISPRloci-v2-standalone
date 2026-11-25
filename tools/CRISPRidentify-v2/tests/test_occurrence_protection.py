@@ -3,13 +3,16 @@ import copy
 import itertools
 import unittest
 
-from components.initial_competition import (
-    OCCURRENCE_RULE, competition_evidence, guard_reconstructed_occurrences,
-    initial_competition_groups, with_competition_evidence,
+from components.evidence.initial_competition import (
+    OCCURRENCE_RULE,
+    competition_evidence,
+    guard_reconstructed_occurrences,
+    initial_competition_groups,
+    with_competition_evidence,
 )
-from components.occurrence_protection import occurrence_relation
-from components.reconstruction_selection import select_reconstructions
-from tests.test_initial_competition import row, evaluate, members
+from components.evidence.occurrence_protection import occurrence_relation
+from components.reconstruction.reconstruction_selection import select_reconstructions
+from tests.test_initial_competition import evaluate, members, row
 from tests.test_reconstruction_selection import valid
 
 
@@ -183,12 +186,16 @@ class OccurrenceCompetitionTests(unittest.TestCase):
 class OccurrencePublicationTests(unittest.TestCase):
     def test_accepted_only_without_sidecar_discloses_conflict_and_binds_witness(self):
         import hashlib
-        from pathlib import Path
         import tempfile
-        from components.candidate_origins import mark_repair_origin
-        from components.module_evaluation import ArrayEvaluation
-        from components.report_model import ReportModelBuilder, ReportModelError
-        from tests.test_candidate_evidence import _fixture, PARAMETERS
+        from pathlib import Path
+
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.reporting.report_model import (
+            ReportModelBuilder,
+            ReportModelError,
+        )
+        from components.scoring.evaluation import ArrayEvaluation
+        from tests.test_candidate_evidence import PARAMETERS, _fixture
         source, original = _fixture()
         key = next(iter(original[0]))
         repair = original[0][key][0]  # three copies, .90
@@ -221,7 +228,7 @@ class OccurrencePublicationTests(unittest.TestCase):
                 with self.subTest(field=field), self.assertRaisesRegex(ReportModelError, "retained deferred repair"):
                     ReportModelBuilder(fasta, corrupt, {}, [], parameters=params).build()
             corrupt = copy.deepcopy(categories)
-            from components.candidate_origins import mark_ordinary_birth
+            from components.evidence.candidate_origins import mark_ordinary_birth
             mark_ordinary_birth(members(corrupt, 1)[0][1])
             with self.assertRaisesRegex(ReportModelError, "retained deferred repair"):
                 ReportModelBuilder(fasta, corrupt, {}, [], parameters=params).build()

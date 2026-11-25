@@ -1,42 +1,42 @@
 import copy
-from dataclasses import replace
 import gzip
 import hashlib
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from dataclasses import replace
+from pathlib import Path
 from unittest.mock import patch
 
-from components.components_evaluated_arrays_enhancement import (
+from components.refinement.enhancement_search import (
     build_source_backed_candidate_from_boundaries as build,
 )
-from components.internal_completion_authority import (
+from components.refinement.internal_completion_authority import (
     capture_current_authority_inventory,
     current_by_geometry,
 )
-from components.internal_local_core_bridge import (
-    _restore,
+from components.refinement.internal_local_core_bridge import (
     _digest,
+    _restore,
     collect_bridge_inventory,
     compose_local_core,
     replay_local_core,
     validate_declared_family_against_run,
 )
-from components.internal_repeat_completion import (
+from components.refinement.internal_repeat_completion import (
     InternalSearchContext,
     InternalSearchPolicy,
     analyze_gap_graph,
 )
-from components.internal_repeat_transaction import complete_internal_repeats
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.repeat_boundary_repair import source_geometry
-from components.report_model import ReportModelBuilder
-from components.report_provenance_validation import (
+from components.refinement.internal_repeat_transaction import complete_internal_repeats
+from components.refinement.repeat_boundary_repair import source_geometry
+from components.reporting.report_model import ReportModelBuilder
+from components.reporting.report_provenance_validation import (
     ReportProvenanceError,
     ReportProvenanceValidationContext,
     validate_classification_basis,
 )
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 from tests import test_internal_repeat_completion as source_tests
 
 
@@ -425,7 +425,7 @@ class NativeLocalCoreTests(unittest.TestCase):
             "weak_source_boundary_evidence",
         ):
             with patch(
-                "components.internal_local_core_bridge.compare_source_backed_phase_candidates",
+                "components.refinement.internal_local_core_bridge.compare_source_backed_phase_candidates",
                 return_value={"status": "abstained", "reason": reason},
             ):
                 with self.assertRaisesRegex(ValueError, "did not select"):
@@ -434,7 +434,7 @@ class NativeLocalCoreTests(unittest.TestCase):
         if source_geometry(other) == self.target:
             other = build(self.source, None, *self.proof["geometry_family"][1])
         with patch(
-            "components.internal_local_core_bridge.compare_source_backed_phase_candidates",
+            "components.refinement.internal_local_core_bridge.compare_source_backed_phase_candidates",
             return_value={
                 "status": "selected",
                 "reason": "unique_source_phase_winner",
@@ -694,10 +694,10 @@ class NativeLocalCoreTests(unittest.TestCase):
         }
         with (
             patch(
-                "components.internal_local_core_bridge.resolve_bridge_family",
+                "components.refinement.internal_local_core_bridge.resolve_bridge_family",
                 return_value=resolved,
             ),
-            patch("components.internal_local_core_bridge._corridor", return_value=0),
+            patch("components.refinement.internal_local_core_bridge._corridor", return_value=0),
         ):
             with self.assertRaisesRegex(ValueError, "unique agreeing"):
                 self.compose()

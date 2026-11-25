@@ -1,11 +1,11 @@
 """Adversarial contracts for core-versus-extent reconstruction."""
 
 import copy
+import unittest
 from dataclasses import replace
 from types import SimpleNamespace
-import unittest
 
-from components.reconstruction_selection import (
+from components.reconstruction.reconstruction_selection import (
     CandidateValidation,
     ReconstructionPolicy,
     candidate_geometry,
@@ -16,7 +16,6 @@ from components.reconstruction_selection import (
     row_locations,
     select_reconstructions,
 )
-
 
 REPEAT = "ACGTTGCAAC"
 

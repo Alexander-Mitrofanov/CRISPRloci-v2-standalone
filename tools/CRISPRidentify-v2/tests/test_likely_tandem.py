@@ -6,21 +6,21 @@ import unittest
 from dataclasses import replace
 from unittest import mock
 
-from components.likely_tandem import evaluate_likely_tandem
-from components.html_report import render_html_report
-from components.components_detection_refinement import CrisprCandidate
-from components.likely_tandem_transaction import (
-    LikelyTandemQuarantineStats,
-    apply_likely_tandem_quarantine,
-)
-from components.report_extensions import (
+from components.pipeline import Pipeline
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.html_report import render_html_report
+from components.reporting.report_extensions import (
     ReportExtensionError,
     attach_report_extensions,
 )
-from components.module_output_maker import OutputMaker
-from components.pipeline import Pipeline
-from components.report_model import ReportModelBuilder, ReportModelError
-from components.folder_scheduler import pipeline_result_key
+from components.reporting.report_model import ReportModelBuilder, ReportModelError
+from components.reporting.stage import OutputMaker
+from components.rescue.likely_tandem import evaluate_likely_tandem
+from components.rescue.likely_tandem_transaction import (
+    LikelyTandemQuarantineStats,
+    apply_likely_tandem_quarantine,
+)
+from components.runtime.folder_scheduler import pipeline_result_key
 
 
 class _Candidate:

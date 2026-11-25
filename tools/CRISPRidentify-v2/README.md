@@ -3,8 +3,14 @@
 CRISPRidentify detects and classifies CRISPR arrays in bacterial and archaeal
 DNA. This release combines the CRISPR array workflow with an optional,
 bundled CasAndra runtime for offline Cas-gene and CRISPR-Cas cassette
-annotation. The current GitHub source enables core-supported reconstruction
-by default. The published 2.3.2 archives below predate this source change.
+annotation. Version 2.4.3 refines how the default balanced workflow reports
+ambiguous repeat widths and the consensus of arrays with divergent terminal
+copies. The archive instructions below apply to the published
+2.3.2 release.
+
+For code changes, start with the [code and test map](docs/CODE_MAP.md) and
+[agent guide](AGENTS.md). Application modules are grouped by responsibility
+under `components/`; installation and usage instructions follow below.
 
 ## Quick start from the release archive
 
@@ -69,6 +75,16 @@ to that original core. This keeps the identity threshold unchanged and avoids
 using added repeats to justify themselves. The source-bound proof records the
 reference; all full-array checks still apply.
 
+For a Bona-fide core with at least four repeats, a retained longer path may
+uniformly extend the same edge of every original repeat. All core intervals
+must remain fully contained in consecutive donor repeats, with one exact edge
+and at least 80% reciprocal overlap at each copy. Every added terminal repeat
+must meet the existing identity threshold against its nearest mapped copy and
+pass the usual added-repeat reference check. The original strict mapping is
+tried first. The candidate's own score, source and negative checks, collision
+vetoes and tie decisions apply. A selected expansion records the offsets,
+mapped indices and per-copy checks for source replay.
+
 The new geometry keeps its **own** classifier score, which may be below 0.75;
 its Bona-fide classification records the separately supported core. The score
 is not a calibrated probability. `reconstruction_evidence.json` records all
@@ -104,6 +120,56 @@ presets, and explicit `--architecture_rescue True` runs, retain `legacy` unless
 an incompatible reconstruction request is supplied, in which case the CLI
 rejects it. Both resolved policies are recorded in the effective configuration.
 Candidate-evidence retention remains independently opt-in.
+
+## Discovery settings and supplied repeat templates
+
+`--min_len_rep`, `--max_len_rep`, `--min_len_spacer`, and `--max_len_spacer`
+control later structural averages. They do not expand the earlier discovery
+query. The maximum average spacer check excludes terminal spacers when there
+are more than four spacers. Vmatch's fast `balanced`, `legacy`, and `sensitive`
+profiles use `-l 23 -10 100`, `-l 23 25 60`, and `-l 21 -10 100`, respectively.
+Non-fast search always uses `-l 21 -10 100`, regardless of the stored fast
+profile label. These pair-gap parameters do not guarantee biological spacer
+coverage. `--print-effective-config` and each report disclose the actual query,
+fuzzy error/flank settings, and source-chain limits.
+
+An optional small repeat panel can initiate candidates that self-repeat
+seeding misses:
+
+```bash
+./crispridentify \
+  --file tests/data/template_discovery/four_copy_known_like.fa \
+  --repeat-template-fasta tests/data/template_discovery/four_copy_panel.fa \
+  --result_folder runs/template-example --parallel False
+```
+
+`--repeat_template_fasta` is an alias. Supply strict ASCII FASTA with unique
+IDs and literal A/C/G/T sequences of 15–63 bases. Wrapped lines and lowercase
+letters are accepted; ambiguity symbols, gaps, and sequence whitespace are
+errors. Both orientations are scanned separately; duplicate sequences and
+reverse complements add aliases without extra scans. Templates supply queries,
+while every repeat and spacer still comes from the input genome. Existing
+structural filters, scores, competition, tandem checks, and reconstruction
+remain authoritative. The bundled BLAST reference database is unchanged.
+
+This feature requires `balanced` or `full`, `--accepted_only False`, and fuzzy
+mode `native` or `full`. The `full` preset still defaults to the native matcher;
+it is distinct from `--fuzzy_search_mode full`. The native template lane permits
+50 million source bases and one billion base-pattern positions. The slower
+pinned-regex lane permits one million bases and two million base-pattern
+positions. Both support at most 32 canonical motifs / 64 oriented patterns;
+[all operational bounds and evidence fields](docs/OUTPUTS.md#supplied-repeat-discovery)
+are recorded in effective configuration. Exceeding a bound fails the record
+instead of publishing a partial search. No panel means no template scan.
+
+Folder workers consume a snapshot of the original panel bytes. For resumable
+cohorts, pass the batch runner's managed `--repeat-template-fasta` option with
+`--preset balanced` or `full`; changing panel contents requires a new run
+directory. Do not pass the panel through `--tool-arg`.
+
+The frozen examples are synthetic engineering controls, including a Low-score
+negative control. They establish candidate recovery and source geometry, not
+natural-genome sensitivity or biological validation. The feature is opt-in.
 
 ## Choose a preset
 
@@ -207,6 +273,11 @@ contains records emitted by its preset and output profile:
 | **Possible Discarded** | A non-accepted candidate. |
 | **Low score** | A non-accepted review candidate. |
 
+Low-score output retains one highest-scoring candidate per competition group,
+using the same grouping policy and stable input-order tie-break as Bona-fide
+and Possible selection. The complete low-score inventory remains available to
+rescue stages and the optional candidate evidence file.
+
 For candidate-selection research, add `--retain_candidate_evidence True`.
 Each sequence then also receives `candidate_evidence.jsonl.gz`, retaining
 all five final internal categories, including Alternative and Possible
@@ -220,7 +291,7 @@ identifies a final accepted-row demotion under the complete-link
 low-spacer-diversity rule; its scientific disposition is `likely_tandem`.
 Current reports preserve a source-replayed audit ledger for these decisions,
 and the HTML renders it as a visible **Tandem demotion audit** table even when
-accepted-only projection omits the Low-score row. The writer exhaustively
+accepted-only projection or low-score selection omits the row. The writer exhaustively
 reruns the transaction over all pre-quarantine accepted rows, and independent
 HTML/benchmark consumers rescreen accepted architectures before trusting an
 empty ledger.
@@ -390,3 +461,29 @@ redistributing a complete Conda environment.
 - Security disclosures: [`SECURITY.md`](SECURITY.md)
 - Project history: [`CHANGELOG.md`](CHANGELOG.md)
 - Community expectations: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+
+### Potential degenerate repeat members
+
+Balanced conservative runs use 28 reviewed repeat consensuses to resolve a
+one-base boundary choice on newly extended arrays with supporting source
+copies. These curated calls appear as Possible and carry their own score and
+boundary evidence. Use `--boundary-consensuses none` for a source-only run.
+See [output evidence](docs/OUTPUTS.md) for the support and abstention rules.
+
+With `--degenerated True` (the balanced default), Identify checks both ends of an
+accepted core and internal gaps that can contain one additional repeat and two
+ordinary-length spacers. It uses the core consensus on the forward reference.
+The second pass allows substitutions and indels, with up to four edits above
+`--max_edit_distance_enhanced` and a ceiling of one third of consensus length.
+A copy can also qualify by exceeding the ordinary per-edit-type limit. Each
+tested copy spans the consensus length plus or minus two bases. A core needs at
+least three copies, including two close matches to its consensus. Competing
+placements, neighboring arrays, ambiguous bases, fresh model scoring and
+structural filtering can prevent acceptance. The pass does not extend
+recursively from provisional copies.
+
+A retained member is included in the reported array span, repeats, spacers and
+copy count. In `report.json`, the repeat and its architecture entry carry
+`status="potential_degenerate_repeat"`, the original core consensus, edit counts,
+limits and search location. HTML and text reports mark the member. Its status
+expresses uncertainty about homology at that position.

@@ -7,20 +7,22 @@ import copy
 import csv
 import gzip
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 
-from components.contextual_spacer_rescue import (
-    EVIDENCE_FILENAME, METHOD, rescue_contextual_spacer_arrays,
+from components.reconstruction.contextual_spacer_rescue import (
+    EVIDENCE_FILENAME,
+    METHOD,
+    rescue_contextual_spacer_arrays,
 )
-from components.contextual_spacer_outputs import FASTA_FILENAMES
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.html_report import render_html_report
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
-from components.module_output_maker import OutputMaker
-from tests.test_candidate_evidence import PARAMETERS
+from components.reporting.contextual_spacer_outputs import FASTA_FILENAMES
+from components.reporting.html_report import render_html_report
+from components.reporting.stage import OutputMaker
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.contextual_spacer_fixture import fixture
+from tests.test_candidate_evidence import PARAMETERS
 
 
 def publication_fixture():

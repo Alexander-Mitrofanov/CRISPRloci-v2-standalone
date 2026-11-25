@@ -2,9 +2,66 @@
 
 All notable CRISPRidentify v2 changes are recorded here.
 
-## Unreleased
+## 2.4.3 - 2026-11-24
+
+- Select a qualified, common-width representation when a recurrent indel and
+  a uniform path describe the same extended array with regular spacers. Both
+  paths retain their source intervals, validation records and model scores.
+- Resolve a narrow class of ambiguous repeat-edge insertions using the local
+  repeat and flanking sequence. Retain the competing insertion interpretation.
+- Report a core repeat representative when a divergent terminal alone breaks
+  a tie between common core alleles and both ends of the core support the
+  same allele. Preserve the full-alignment consensus used for scoring.
+
+## 2.4.2 - 2026-11-24
+
+- Compare repeat boundaries and fragmentary arrays against nearby repeat copies,
+  retained candidates, distinct spacers and alternative terminal placements.
+  Rebuild and score the chosen path on the original chromosome, retaining the
+  earlier accepted call and its evidence.
+- Recognize a locally duplicated spacer segment when competing interpretations
+  include a displaced repeat. Report the earlier occurrence and the competing
+  segmentation. Require coding and tandem checks on newly proposed arrays.
+- Represent a single insertion relative to the majority repeat when an earlier
+  alignment gives the identical copies a deletion. Score competing uniform-width
+  paths separately when the sequence supports another interpretation.
+
+## 2.4.1 - 2026-11-24
+
+- Preserve competing internal repeat boundaries when every member of a
+  validated boundary family supports the same additional terminal repeat and
+  every extended member independently qualifies for the Bona-fide category.
+- Recover an embedded three-copy fragment when distinct longer donor lengths
+  converge on the same source-backed extent and the rebuilt path passes
+  sequence, occurrence, and classification checks. A replacement must add a
+  repeat to the path already accepted by ordinary reconstruction. Competing
+  boundaries at an already complete locus remain available for review.
+- Retain source-derived competing boundaries, internal segmentations, and
+  terminal placements in the optional research evidence. Reports distinguish
+  the accepted path from these unselected hypotheses.
+- Include the earlier comment-driven repairs to embedded fragments,
+  internal repeat boundaries, and recurrent repeat variants.
+
+## 2.4.0 - 2026-11-23
+
+- In conservative reconstruction, use local spacer spacing to recover skipped
+  copies and adjacent fragments, and use the bundled repeat references to
+  resolve corroborated clipped boundaries. Rebuild and score each changed
+  path from source. A divergent terminal copy retains its uncertainty marker.
+- Keep below-band small-core reconstructions in Possible with a replayable
+  classification basis. The bundled development-review consensus panel
+  can resolve a one-base phase on a newly extended array. Reports record
+  the supporting copies, fresh scores and any conflicting edge predicates.
+  Set `--boundary-consensuses none` to use the source-only boundaries.
+
 
 ### Added
+
+- Add opt-in `--repeat-template-fasta` discovery with immutable panel identity,
+  bounded native/regex searches, source-window projection, cross-route
+  competition, replayed discovery evidence and managed folder/batch snapshots.
+  Preserve ordinary structural filters, scores and defaults. Ship frozen
+  synthetic positive and Low-score controls with regression coverage.
 
 - Add `--reconstruction_policy conservative` for balanced runs.
   Separate Bona-fide core confidence from reconstructed geometry: freshly
@@ -16,6 +73,14 @@ All notable CRISPRidentify v2 changes are recorded here.
   transactional decision sidecar.
 
 ### Changed
+
+- Report one highest-scoring Low-score candidate per competition group, using
+  the accepted categories' grouping policy and stable tie-break. Preserve the
+  complete inventory for rescue and optional candidate evidence, and retain
+  audit records for tandem demotions omitted by the output selection.
+
+- Report the executed Vmatch/fuzzy discovery contract in effective configuration
+  and clarify the distinction from later repeat/spacer average-length filters.
 
 - Enable the benchmarked conservative reconstruction policy by default for
   `balanced`, including runs with no preset flag. Keep an explicit `legacy`

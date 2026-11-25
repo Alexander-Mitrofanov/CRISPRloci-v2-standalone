@@ -2,23 +2,22 @@ import hashlib
 import importlib.util
 import json
 import shutil
-from pathlib import Path
 import sys
 import tempfile
 import types
 import unittest
+from pathlib import Path
 from unittest import mock
-
 
 ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = (
-    ROOT / "components" / "casandra_adapter.py"
+    ROOT / "components" / "annotation" / "casandra_adapter.py"
 )
 
 
 def load_module():
-    external = types.ModuleType("components.external_tools")
-    bounded = types.ModuleType("components.bounded_subprocess")
+    external = types.ModuleType("components.runtime.external_tools")
+    bounded = types.ModuleType("components.runtime.bounded_subprocess")
 
     class ExternalToolError(RuntimeError):
         pass
@@ -49,8 +48,8 @@ def load_module():
         sys.modules,
         {
             "components": package,
-            "components.bounded_subprocess": bounded,
-            "components.external_tools": external,
+            "components.runtime.bounded_subprocess": bounded,
+            "components.runtime.external_tools": external,
             spec.name: module,
         },
     ):

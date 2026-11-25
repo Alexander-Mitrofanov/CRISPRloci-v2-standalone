@@ -12,6 +12,17 @@ representations or boundaries to `balanced` or historical `full` search.
 
 ## 1. Install identically on every VM
 
+For a supplied repeat panel, select `--preset balanced` or `--preset full`
+and pass the managed `--repeat-template-fasta PATH` option to `run`.
+The supervisor snapshots its captured bytes under
+`inputs/repeat-template-<raw-sha256>.fa` while holding the run lock, binds the
+panel identity/policy/limits to the configuration hash, verifies the snapshot
+before attempts, and checks child-reported identity before completion.
+Replacing the original file after preparation cannot affect active children;
+changing its contents between invocations rejects resume into that run.
+Panel aliases and argparse abbreviations are forbidden through `--tool-arg`.
+An older runner without panel support fails preparation explicitly.
+
 Check out one immutable release tag on all four machines and run:
 
 ```bash

@@ -1,12 +1,12 @@
 """Obsolete owners must die without erasing shared scientific evidence."""
-from contextlib import ExitStack
+import unittest
+import weakref
 from collections import Counter
+from contextlib import ExitStack
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
-import unittest
 from unittest import mock
-import weakref
 
 from components.pipeline import Pipeline
 

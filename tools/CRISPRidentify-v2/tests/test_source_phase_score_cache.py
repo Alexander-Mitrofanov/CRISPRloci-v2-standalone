@@ -3,7 +3,7 @@ import random
 import struct
 import unittest
 
-from components.components_evaluated_arrays_enhancement import (
+from components.refinement.enhancement_search import (
     _CANONICAL_DNA_BASES,
     _canonical_base_counts,
     _jeffreys_column_log_bayes_factor,

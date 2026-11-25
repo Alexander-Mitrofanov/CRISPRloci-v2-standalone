@@ -8,12 +8,15 @@ import weakref
 import zlib
 from unittest import mock
 
-from components.components_detection import ClusterSequence, FuzzySearch
-from components.components_detection_refinement import SameStartEndFilter
-from components.fuzzy_boundary_lattice import _canonical_sha256
-from components.fuzzy_lattice_storage import CompressedLattice, LatticeDecodeCache
-from components.module_detection import Detection, _initialize_fuzzy_source
-from components.module_detection_refinement import DetectionRefinement
+from components.detection.fuzzy_boundary_lattice import _canonical_sha256
+from components.detection.fuzzy_lattice_storage import (
+    CompressedLattice,
+    LatticeDecodeCache,
+)
+from components.detection.search import ClusterSequence, FuzzySearch
+from components.detection.stage import Detection, _initialize_fuzzy_source
+from components.refinement.candidates import SameStartEndFilter
+from components.refinement.stage import DetectionRefinement
 
 ERROR = '{i<=3,d<=3,s<=3,i+d+s<=6}'
 REPEAT = 'ACGTACGTTGCAACGTTACGTTAGCT'

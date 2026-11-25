@@ -7,7 +7,6 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT
 CLI_PATH = V2 / "CRISPRidentify.py"
@@ -23,7 +22,7 @@ def _load_file(name, path):
 
 CLI_UTILS = _load_file(
     "crispridentify_v2_timeout_cli_utils",
-    V2 / "components" / "cli_utils.py",
+    V2 / "components" / "cli" / "validation.py",
 )
 
 
@@ -32,27 +31,27 @@ def _load_non_array_module():
     components.__path__ = []
 
     computations = types.ModuleType(
-        "components.components_non_array_computations"
+        "components.annotation.sequence_annotations"
     )
     computations.FullISElementSearch = object
     computations.FullLeaderSeqSearch = object
     computations.StrandComputation = object
 
-    adapter = types.ModuleType("components.casandra_adapter")
+    adapter = types.ModuleType("components.annotation.casandra_adapter")
     adapter.CasAndraPredictor = object
 
-    reconstruction = types.ModuleType("components.reconstruction_validator")
+    reconstruction = types.ModuleType("components.sequence.validation")
     reconstruction.read_single_fasta = lambda _path: ("source", "ACGT")
 
     with mock.patch.dict(sys.modules, {
         "components": components,
-        "components.components_non_array_computations": computations,
-        "components.casandra_adapter": adapter,
-        "components.reconstruction_validator": reconstruction,
+        "components.annotation.sequence_annotations": computations,
+        "components.annotation.casandra_adapter": adapter,
+        "components.sequence.validation": reconstruction,
     }):
         return _load_file(
             "crispridentify_v2_timeout_non_array",
-            V2 / "components" / "module_non_array_computations.py",
+            V2 / "components" / "annotation" / "stage.py",
         )
 
 
@@ -60,7 +59,11 @@ NON_ARRAY = _load_non_array_module()
 
 
 def _cli_tree():
-    return ast.parse(CLI_PATH.read_text(encoding="utf-8"), filename=str(CLI_PATH))
+    parser_path = CLI_PATH.parent / "components" / "cli" / "parser.py"
+    return ast.parse(
+        parser_path.read_text(encoding="utf-8")
+        + "\n" + CLI_PATH.read_text(encoding="utf-8")
+    )
 
 
 def _argument_call(tree, option):

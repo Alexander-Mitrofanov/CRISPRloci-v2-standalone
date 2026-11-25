@@ -1,14 +1,13 @@
 import json
 import os
-from pathlib import Path
 import subprocess
 import sys
 import unittest
+from pathlib import Path
 from unittest import mock
 
-from components import runtime_resources
-from components.components_detection import FilterApproximation
-
+from components.detection.search import FilterApproximation
+from components.runtime import runtime_resources
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -33,7 +32,7 @@ with contextlib.redirect_stdout(io.StringIO()):
     except SystemExit as error:
         assert error.code in (0, None), error.code
 from threadpoolctl import threadpool_info
-from components.runtime_resources import external_thread_budget
+from components.runtime.runtime_resources import external_thread_budget
 print(json.dumps({"pools": threadpool_info(), "budget": external_thread_budget(),
                   "omp": os.environ["OMP_NUM_THREADS"]}))
 '''
@@ -60,9 +59,9 @@ print(json.dumps({"pools": threadpool_info(), "budget": external_thread_budget()
         approximation.max_seq = "ACGT"
         approximation.min_seq = "ACG"
         with mock.patch(
-                "components.components_detection.external_thread_budget",
+                "components.detection.search.external_thread_budget",
                 return_value=2), mock.patch(
-                "components.components_detection.subprocess.run") as run, \
+                "components.detection.search.subprocess.run") as run, \
                 mock.patch("builtins.open", mock.mock_open()):
             approximation._run_clustal_omega_repeats()
             approximation._run_clustal_omega_min_max()

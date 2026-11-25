@@ -3,26 +3,31 @@ import copy
 import gzip
 import hashlib
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 
 import numpy as np
 
-from components.candidate_evidence import stage_candidate_evidence, _identity
-from components.candidate_origins import inherit_candidate_origins, mark_repair_origin
-from components.components_detection_refinement import CrisprCandidate
-from components.competing_terminal_extents import (
-    KEY, build_competing_terminal_extents, competing_terminal_extent_summaries,
-    exact_terminal_relation, validate_competing_terminal_extents,
+from components.evidence.candidate_origins import (
+    inherit_candidate_origins,
+    mark_repair_origin,
 )
-from components.initial_competition import initial_competition_groups
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
-from components.output_transaction import OutputTransaction
-from components.report_extensions import attach_report_extensions
-from components.report_model import ReportModelBuilder
+from components.evidence.initial_competition import initial_competition_groups
+from components.reconstruction.competing_terminal_extents import (
+    KEY,
+    build_competing_terminal_extents,
+    competing_terminal_extent_summaries,
+    exact_terminal_relation,
+    validate_competing_terminal_extents,
+)
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.candidate_evidence import _identity, stage_candidate_evidence
+from components.reporting.output_transaction import OutputTransaction
+from components.reporting.report_extensions import attach_report_extensions
+from components.reporting.report_model import ReportModelBuilder
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
 from tests.test_candidate_evidence import PARAMETERS as BASE_PARAMETERS
-
 
 PARAMETERS = dict(BASE_PARAMETERS, param_reconstruction_policy="conservative")
 
@@ -229,10 +234,14 @@ class CompetingTerminalTests(unittest.TestCase):
             validate_competing_terminal_extents(report, extension, **context(source, categories, []))
 
     def test_collision_visible_only_in_actual_coupled_family_union(self):
+        from components.reconstruction.reconstruction_boundary_family import (
+            boundary_family_summary,
+        )
+        from components.reconstruction.reconstruction_transaction import (
+            reconstruct_accepted_arrays,
+        )
+        from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
         from tests.test_reconstruction_transaction import fixture as family_fixture
-        from components.reconstruction_transaction import reconstruct_accepted_arrays
-        from components.reconstruction_boundary_family import boundary_family_summary
-        from components.feature_schema import COMPACT_FEATURE_SCHEMA
         source, categories, scorer = family_fixture()
         key = next(iter(categories[1]))
         donor = categories[1][key][0][1]

@@ -4,8 +4,8 @@ message: >-
   software release version and archive SHA-256 used.
 title: CRISPRidentify v2
 type: software
-version: 2.3.2
-date-released: 2026-08-27
+version: 2.4.3
+date-released: 2026-11-24
 license: MIT
 repository-code: "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2"
 authors:

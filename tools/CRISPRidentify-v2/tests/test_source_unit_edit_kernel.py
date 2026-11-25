@@ -1,15 +1,15 @@
-from concurrent.futures import ThreadPoolExecutor
 import itertools
 import json
-from pathlib import Path
 import random
 import unittest
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 from unittest.mock import patch
 
 from Bio.Align import PairwiseAligner
 
-from components import components_evaluated_arrays_enhancement as enhancement
-from components.fast_run_rescue import candidate_score_fingerprint
+from components.refinement import enhancement_search as enhancement
+from components.rescue.fast_run_rescue import candidate_score_fingerprint
 from tests.test_repeat_boundary_repair import synthetic
 
 

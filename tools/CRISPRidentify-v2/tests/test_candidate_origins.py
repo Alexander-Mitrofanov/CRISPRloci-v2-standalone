@@ -4,19 +4,26 @@ import hashlib
 import json
 import unittest
 
-from components.candidate_origins import (
-    candidate_origin_evidence, candidate_origin_kind, inherit_candidate_origins,
+from components.evidence.candidate_origins import (
+    candidate_origin_evidence,
+    candidate_origin_kind,
+    inherit_candidate_origins,
     mark_repair_origin,
 )
-from components.components_evaluated_arrays_enhancement import (
+from components.refinement.enhancement import EvaluatedArraysEnhancement
+from components.refinement.enhancement_search import (
     build_source_backed_candidate_from_boundaries as build,
+)
+from components.refinement.enhancement_search import (
     collapse_source_backed_phase_equivalent_candidates,
 )
-from components.module_detection_refinement import DetectionRefinement
-from components.module_evaluated_arrays_enhancement import EvaluatedArraysEnhancement
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.repeat_boundary_repair import propose_terminal_repairs, source_geometry
-from tests.test_repeat_boundary_repair import synthetic, fuzzy, PARAMETERS, Locus
+from components.refinement.repeat_boundary_repair import (
+    propose_terminal_repairs,
+    source_geometry,
+)
+from components.refinement.stage import DetectionRefinement
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
+from tests.test_repeat_boundary_repair import PARAMETERS, Locus, fuzzy, synthetic
 
 
 class CandidateOriginTests(unittest.TestCase):

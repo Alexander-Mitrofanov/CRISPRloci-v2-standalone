@@ -4,15 +4,14 @@ import hashlib
 import importlib.util
 import json
 import os
-from pathlib import Path
 import sqlite3
 import sys
 import tempfile
 import threading
 import time
 import unittest
+from pathlib import Path
 from unittest import mock
-
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "run_crispridentify_batch.py"

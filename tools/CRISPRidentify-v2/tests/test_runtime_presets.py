@@ -1,20 +1,21 @@
 import argparse
 import json
 import os
-from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from pathlib import Path
 
-from components.runtime_presets import BALANCED_DEFAULTS
-from components.runtime_presets import FULL_CONFIG
-from components.runtime_presets import REGION_SCREEN_CONFIG
-from components.runtime_presets import PresetConflictError
-from components.runtime_presets import explicit_option_destinations
-from components.runtime_presets import preset_provenance
-from components.runtime_presets import resolve_preset
-
+from components.cli.presets import (
+    BALANCED_DEFAULTS,
+    FULL_CONFIG,
+    REGION_SCREEN_CONFIG,
+    PresetConflictError,
+    explicit_option_destinations,
+    preset_provenance,
+    resolve_preset,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE = ROOT / "examples" / "NC_017040.1.fasta"

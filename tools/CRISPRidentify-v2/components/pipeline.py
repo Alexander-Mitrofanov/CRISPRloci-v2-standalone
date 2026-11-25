@@ -1,48 +1,81 @@
-from collections import Counter, deque
+"""Orchestrate analysis stages; see docs/CODE_MAP.md for stage ownership."""
+
 import json
 import math
 import os
+from collections import Counter, deque
 
-from components.accepted_core_boundary_attestation import (
+from components.annotation.stage import NonArrayComputations
+from components.detection.stage import Detection
+from components.evidence.boundary_assessment import BoundaryAssessmentNormalizer
+from components.evidence.initial_competition import select_low_score_representatives
+from components.reconstruction.contextual_spacer_rescue import (
+    rescue_contextual_spacer_arrays,
+)
+from components.reconstruction.possible_reconstruction import (
+    reconstruct_possible_arrays,
+)
+from components.reconstruction.reconstruction_transaction import (
+    reconstruct_accepted_arrays,
+)
+from components.refinement import comparative_transaction, extent_trials, periodic_transaction, potential_degenerate
+from components.refinement.enhancement import (
+    EvaluatedArraysEnhancement,
+    build_source_backed_terminal_variants,
+)
+from components.refinement.enhancement_search import (
+    build_source_backed_candidate_from_boundaries,
+    collapse_source_backed_phase_equivalent_candidates,
+    source_alignment_cache_info,
+)
+from components.refinement.internal_completion_authority import (
+    capture_current_authority_inventory,
+)
+from components.refinement.internal_repeat_completion import POLICY as INTERNAL_POLICY
+from components.refinement.internal_repeat_completion import InternalSearchContext
+from components.refinement.internal_repeat_transaction import complete_internal_repeats
+from components.refinement.repeat_boundary_repair import POLICY_VERSION, source_geometry
+from components.refinement.stage import DetectionRefinement
+from components.refinement.terminal_repair_completion import (
+    apply_terminal_repair_completion,
+    plan_terminal_repair_completion,
+)
+from components.reporting.report_provenance_validation import (
+    ReportProvenanceError,
+    canonical_source_architecture_rescue_boundary_assessment,
+)
+from components.reporting.stage import OutputMaker
+from components.rescue.accepted_core_boundary_attestation import (
+    KNOWN_LINEAGE_DERIVATIONS,
     BoundaryPhaseCompletenessEvidence,
     BoundaryPhaseLineageEntry,
-    KNOWN_LINEAGE_DERIVATIONS,
     attest_accepted_core_boundary_phase,
 )
-from components.accepted_core_boundary_completion import (
+from components.rescue.accepted_core_boundary_completion import (
     BoundaryGeometryWitness,
     CoreAuthorizationEvidence,
     FinalBoundaryEvidence,
     SourceGeometry,
     WitnessContextEvidence,
 )
-from components.accepted_core_boundary_transaction import (
+from components.rescue.accepted_core_boundary_transaction import (
     AcceptedCoreBoundaryContext,
     BoundaryCompletionScoreResult,
     apply_accepted_core_boundary_completion_batch,
     plan_accepted_core_boundary_completion_batch,
 )
-from components.accepted_family_tandem_transaction import (
+from components.rescue.accepted_family_tandem_transaction import (
     AcceptedRowFamilyContext,
     apply_accepted_family_tandem_demotions,
 )
-from components.accepted_family_tandem_validator import (
+from components.rescue.accepted_family_tandem_validator import (
     validate_accepted_family_tandem,
 )
-from components.circular_array_join_integration import (
-    evaluate_accepted_circular_edge_joins,
-)
-from components.likely_tandem_transaction import (
-    apply_likely_tandem_quarantine,
-)
-from components.reconstruction_transaction import reconstruct_accepted_arrays
-from components.possible_reconstruction import reconstruct_possible_arrays
-from components.contextual_spacer_rescue import rescue_contextual_spacer_arrays
-from components.architecture_rescue_coding_context import (
+from components.rescue.architecture_rescue_coding_context import (
     batch_source_coding_context_evidence,
     predict_source_cds,
 )
-from components.architecture_rescue_integration import (
+from components.rescue.architecture_rescue_integration import (
     arbitrate_cross_family_phase_proposals,
     candidate_repeat_path,
     evaluate_scored_architecture_candidate,
@@ -50,69 +83,36 @@ from components.architecture_rescue_integration import (
     select_augmentation_seed_ids,
     select_lineage_family_proposals,
 )
-from components.boundary_assessment import BoundaryAssessmentNormalizer
-from components.module_detection import Detection
-from components.module_detection_refinement import DetectionRefinement
-from components.repeat_boundary_repair import POLICY_VERSION, source_geometry
-from components.internal_repeat_completion import InternalSearchContext, POLICY as INTERNAL_POLICY
-from components.internal_completion_authority import capture_current_authority_inventory
-from components.internal_repeat_transaction import complete_internal_repeats
-from components.terminal_repair_completion import (
-    plan_terminal_repair_completion,
-    apply_terminal_repair_completion,
+from components.rescue.circular_array_join_integration import (
+    evaluate_accepted_circular_edge_joins,
 )
-from components.module_evaluation import (
-    ArrayEvaluation,
-    build_advanced_fuzzy_search_filter,
+from components.rescue.fast_accepted_family_rescue import (
+    classification_basis as accepted_family_classification_basis,
 )
-from components.components_evaluated_arrays_enhancement import (
-    build_source_backed_candidate_from_boundaries,
-    collapse_source_backed_phase_equivalent_candidates,
-    source_alignment_cache_info,
+from components.rescue.fast_accepted_family_rescue import (
+    completed_score_is_admissible as accepted_family_score_is_admissible,
 )
-from components.module_evaluated_arrays_enhancement import EvaluatedArraysEnhancement
-from components.module_evaluated_arrays_enhancement import (
-    build_source_backed_terminal_variants,
+from components.rescue.fast_accepted_family_rescue import (
+    generate_accepted_family_rescue_proposals,
+    select_exact_template_raw_seed_parents,
 )
-from components.module_non_array_computations import NonArrayComputations
-from components.module_output_maker import OutputMaker
-from components.folder_scheduler import pipeline_result_key
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.fast_run_rescue import candidate_score_fingerprint
-from components.fast_run_rescue import candidate_source_interval
-from components.fast_run_rescue import compact_feature_values
-from components.fast_run_rescue import select_unresolved_components
-from components.fast_two_repeat_terminal_repair import (
+from components.rescue.fast_run_rescue import (
+    candidate_score_fingerprint,
+    candidate_source_interval,
+    compact_feature_values,
+    select_unresolved_components,
+)
+from components.rescue.fast_two_repeat_terminal_repair import (
     MAXIMUM_ADMISSION_REPEAT_DERIVED_SPACER_COVERAGE,
     MINIMUM_ADMISSION_MODEL_SCORE,
     fast_two_repeat_admission_allowed,
     flank_continuation_identities,
     generate_source_winners,
 )
-from components.fast_accepted_family_rescue import (
-    classification_basis as accepted_family_classification_basis,
-    completed_score_is_admissible as accepted_family_score_is_admissible,
-    generate_accepted_family_rescue_proposals,
-    select_exact_template_raw_seed_parents,
+from components.rescue.likely_tandem_transaction import (
+    apply_likely_tandem_quarantine,
 )
-from components.reconstruction_validator import (
-    read_single_fasta,
-    validate_candidate_reconstruction,
-)
-from components.report_provenance_validation import (
-    ReportProvenanceError,
-    canonical_source_architecture_rescue_boundary_assessment,
-)
-from components.sequence_topology import (
-    to_circular_topology_evidence,
-    unknown_sequence_topology,
-)
-from components.source_superlocus_augmentation import (
-    _validated_source_path_family_keys,
-    augment_source_superloci_to_fixed_point,
-    replay_source_superlocus_path_local_convergence_proof,
-)
-from components.source_intact_recovery_transaction import (
+from components.rescue.source_intact_recovery_transaction import (
     SourceBackedRowFamilyEvidence,
     SourceIntactRecoveryCandidateContext,
     SourceIntactRecoveryLocusContext,
@@ -120,23 +120,44 @@ from components.source_intact_recovery_transaction import (
     plan_source_intact_recoveries,
     validate_source_intact_alternative_relationship,
 )
-from components.source_periodic_lattice_category_transaction import (
+from components.rescue.source_periodic_lattice_category_transaction import (
     SourcePeriodicLatticeScoreResult,
     apply_source_periodic_lattice_repairs,
     plan_source_periodic_lattice_repairs,
 )
-from components.source_regular_subpath_recovery import (
+from components.rescue.source_regular_subpath_recovery import (
     DIAGNOSTIC_PARENT,
     SourceRegularSubpathContext,
     propose_source_regular_subpaths_in_context,
 )
-from components.source_regular_subpath_recovery_transaction import (
+from components.rescue.source_regular_subpath_recovery_transaction import (
     RegularSubpathFreshScoreResult,
     RegularSubpathProposalTandemEvidence,
     SourceRegularSubpathDiagnosticRowContext,
     apply_source_regular_subpath_recovery_batch,
     plan_source_regular_subpath_recovery_batch,
 )
+from components.rescue.source_superlocus_augmentation import (
+    _validated_source_path_family_keys,
+    augment_source_superloci_to_fixed_point,
+    replay_source_superlocus_path_local_convergence_proof,
+)
+from components.runtime.folder_scheduler import pipeline_result_key
+from components.scoring.cache import CandidateScoreCache as CandidateScoreCache
+from components.scoring.evaluation import (
+    ArrayEvaluation,
+    build_advanced_fuzzy_search_filter,
+)
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
+from components.sequence.topology import (
+    to_circular_topology_evidence,
+    unknown_sequence_topology,
+)
+from components.sequence.validation import (
+    read_single_fasta,
+    validate_candidate_reconstruction,
+)
+
 CATEGORY_NAMES = (
     "Bona-fide",
     "Alternative",
@@ -163,126 +184,6 @@ def _empty_source_phase_collapse_stats():
         {field: 0 for field in _SOURCE_PHASE_COLLAPSE_COUNT_FIELDS},
         enabled=False,
     )
-
-
-class _CandidateScoreSnapshot:
-    __slots__ = ("candidate", "entry", "row")
-
-    def __init__(self, entry):
-        self.entry = entry
-        self.candidate = entry[1]
-        self.row = tuple(entry)
-
-
-class CandidateScoreCache:
-    """Reuse scores only while the exact scored entry remains unchanged.
-
-    Enhancement replaces the candidate at index one of an existing score row.
-    The row object's identity is therefore a stable provenance token even when
-    structural filtering moves the row to another category. Equality with the
-    original candidate is an independent fence: provenance alone never permits
-    reuse after sequence, alignment, spacer, or coordinate changes.
-    """
-
-    def __init__(self, categories):
-        self._snapshots = {}
-        self.reused_count = 0
-        self.recomputed_count = 0
-        for _category_index, _interval, _entry_index, entry in self._entries(
-                categories):
-            self._snapshots.setdefault(
-                id(entry), _CandidateScoreSnapshot(entry)
-            )
-
-    @staticmethod
-    def _entries(categories):
-        for category_index, category in enumerate(categories):
-            for interval in sorted(category):
-                for entry_index, entry in enumerate(category[interval]):
-                    if not isinstance(entry, (tuple, list)) or len(entry) < 2:
-                        raise RuntimeError(
-                            "cannot cache a malformed scored candidate entry"
-                        )
-                    yield category_index, interval, entry_index, entry
-
-    @staticmethod
-    def _candidate_is_unchanged(snapshot, entry):
-        return (
-            snapshot is not None
-            and snapshot.entry is entry
-            and snapshot.candidate == entry[1]
-        )
-
-    def merge_after_enhancement(self, categories, score_changed_candidates):
-        """Return all score rows in legacy traversal order.
-
-        ``score_changed_candidates`` receives only candidates that failed the
-        provenance-plus-structural-equality fence. It must return the ordinary
-        ``{interval: [score rows...]}`` representation in candidate order.
-        """
-
-        slots = []
-        changed_candidates = {}
-        reused_count = 0
-        recomputed_count = 0
-
-        for _category_index, interval, _entry_index, entry in self._entries(
-                categories):
-            candidate = entry[1]
-            snapshot = self._snapshots.get(id(entry))
-            if self._candidate_is_unchanged(snapshot, entry):
-                cached_row = list(snapshot.row)
-                # Preserve the final post-enhancement object even when it is a
-                # newly constructed but structurally equal candidate.
-                cached_row[1] = candidate
-                slots.append((interval, candidate, cached_row))
-                reused_count += 1
-            else:
-                changed_candidates.setdefault(interval, []).append(candidate)
-                slots.append((interval, candidate, None))
-                recomputed_count += 1
-
-        if changed_candidates:
-            fresh_rows = score_changed_candidates(changed_candidates)
-        else:
-            fresh_rows = {}
-
-        unexpected_intervals = set(fresh_rows).difference(changed_candidates)
-        if unexpected_intervals:
-            raise RuntimeError(
-                "fresh evaluation returned unexpected intervals: {}".format(
-                    sorted(unexpected_intervals)
-                )
-            )
-        fresh_queues = {
-            interval: deque(fresh_rows.get(interval, ()))
-            for interval in changed_candidates
-        }
-
-        merged_rows = {}
-        for interval, candidate, cached_row in slots:
-            if cached_row is None:
-                queue = fresh_queues[interval]
-                if not queue:
-                    raise RuntimeError(
-                        "fresh evaluation omitted a changed candidate"
-                    )
-                row = list(queue.popleft())
-                if len(row) < 2 or row[1] is not candidate:
-                    raise RuntimeError(
-                        "fresh evaluation changed candidate order or identity"
-                    )
-                row[1] = candidate
-            else:
-                row = cached_row
-            merged_rows.setdefault(interval, []).append(row)
-
-        if any(fresh_queues.values()):
-            raise RuntimeError("fresh evaluation returned surplus score rows")
-
-        self.reused_count = reused_count
-        self.recomputed_count = recomputed_count
-        return merged_rows
 
 
 def retain_requested_categories(categories, accepted_only):
@@ -312,7 +213,9 @@ class CandidateReconstructionError(RuntimeError):
 class Pipeline:
     def __init__(self, result_folder_path, pickle_folder_path, json_folder_path, file_path,
                  parameters, flags, flag_dev_mode,
-                 sequence_topology_manifest=None, retain_candidate_evidence=False):
+                 sequence_topology_manifest=None, retain_candidate_evidence=False,
+                 repeat_template_panel=None):
+        self.repeat_template_panel = repeat_template_panel
         self.retain_candidate_evidence = retain_candidate_evidence
         self._candidate_evidence_categories = None
         self.result_folder_path = (
@@ -497,6 +400,17 @@ class Pipeline:
             project_requested_categories=False
         )
         self._validate_candidate_categories("post-reevaluation")
+        degenerate_members = []
+        if self.flags.get("flag_degenerated", False):
+            self.categories, self._post_enhancement_scored_rows, degenerate_members = (
+                potential_degenerate.complete(
+                    self.genome_sequence, self.categories, self._post_enhancement_scored_rows,
+                    self.parameters["param_max_edit_distance"], self._score_candidates_complete,
+                    lambda rows: ArrayEvaluation.categorize_scored_rows(
+                        rows, self.parameters, self.flag_dev_mode),
+                )
+            )
+            self._final_scored_rows = self._post_enhancement_scored_rows
         self._candidate_score_cache = None
         if self.flags.get("flag_fast_accepted_family_rescue", False):
             self._fast_accepted_family_anchor_categories = (
@@ -558,6 +472,7 @@ class Pipeline:
         self._validate_candidate_categories(
             "post-likely-tandem-quarantine"
         )
+        potential_degenerate.annotate_members(self.categories, degenerate_members)
         self._evaluate_circular_origin_joins()
         if self.retain_candidate_evidence:
             # Snapshot containers before accepted-only projection clears them.
@@ -604,22 +519,62 @@ class Pipeline:
                 self._source_cds = predict_source_cds(self.genome_sequence)
             return self._source_cds
 
-        self.categories, self.reconstruction_evidence = reconstruct_accepted_arrays(
-            self.genome_sequence, self.categories, self.parameters,
-            self._score_candidates_complete, source_cds,
-        )
-        # The lower-confidence lane cannot change the completed Bona-fide
-        # transaction. Its proposals must respect those accepted extents.
-        self.categories, self.possible_reconstruction_evidence = reconstruct_possible_arrays(
-            self.genome_sequence, self.categories, self.parameters,
-            self._score_candidates_complete, source_cds,
-        )
+        def reconstruct(seeds):
+            bona_fide, self.reconstruction_evidence = reconstruct_accepted_arrays(
+                self.genome_sequence, seeds, self.parameters,
+                self._score_candidates_complete, source_cds,
+            )
+            possible, self.possible_reconstruction_evidence = reconstruct_possible_arrays(
+                self.genome_sequence, bona_fide, self.parameters,
+                self._score_candidates_complete, source_cds,
+            )
+            return possible
+
+        seeds = self.categories
+        self.categories = reconstruct(seeds)
+        deferred_extents = {} if getattr(self, "retain_candidate_evidence", False) else None
+        periodic_enabled = (self.parameters.get("param_degenerated")
+                            and not self.parameters.get("param_source_backed_architecture_rescue"))
+        if periodic_enabled:
+            updated = extent_trials.recover_embedded(
+                self.genome_sequence, seeds, self.parameters,
+                self._score_candidates_complete, source_cds, self.categories, deferred_extents,
+            )
+            if updated is not None:
+                self.categories = updated
+                self._annotate_model_score_classification_bases()
+                seeds = self.categories
+                self.categories = reconstruct(seeds)
+            updated, hypotheses = periodic_transaction.refine(
+                self.genome_sequence, seeds, self.categories, self.parameters,
+                self._score_candidates_complete, source_cds,
+            )
+            if updated is not None:
+                self.categories = updated
+                self._annotate_model_score_classification_bases()
+                self.categories = reconstruct(self.categories)
+            for index in (0, 2):
+                for rows in self.categories[index].values():
+                    for row in rows:
+                        hypothesis = hypotheses.get(potential_degenerate.geometry(row[1]))
+                        if hypothesis:
+                            row[1].periodic_hypothesis = hypothesis
+        if periodic_enabled:
+            self.categories = comparative_transaction.apply(
+                self.genome_sequence, self.categories, self.parameters,
+                self._score_candidates_complete, source_cds,
+            )
         self.categories, self.contextual_spacer_evidence = rescue_contextual_spacer_arrays(
             self.genome_sequence, self.categories,
             getattr(self, "pending_contextual_spacers", ()), self.parameters,
             self._score_candidates_complete, source_cds,
         )
         self.pending_contextual_spacers = []
+        if periodic_enabled and getattr(self, "retain_candidate_evidence", False):
+            extent_trials.annotate_trials(
+                self.genome_sequence, self.categories, self.parameters,
+                self._score_candidates_complete, source_cds, deferred_extents,
+            )
         self._final_scored_rows = self._scored_rows_from_categories(self.categories)
 
     def _run_detection(self):
@@ -627,7 +582,11 @@ class Pipeline:
         detection = Detection(file_path=self.file_path,
                               flags=self.flags,
                               parameters=self.parameters,
-                              flag_dev_mode=self.flag_dev_mode)
+                              flag_dev_mode=self.flag_dev_mode,
+                              **({"repeat_template_panel": self.repeat_template_panel}
+                                 if getattr(self, "repeat_template_panel", None) is not None else {}))
+        if getattr(detection, "template_discovery_audit", None) is not None:
+            self.parameters = dict(self.parameters, param_repeat_template_discovery=detection.template_discovery_audit)
         if (
                 self.flags.get("flag_fast_run", False)
                 and (
@@ -1325,17 +1284,9 @@ class Pipeline:
                 routed_intervals = tuple(
                     record["source_interval"] for record in records
                 )
-                local_sequences = {
-                    occurrence.sequence
-                    for occurrence in self._raw_detection.clusters[
-                        cluster_index
-                    ].list_cluster_occurrences
-                    if any(
-                        occurrence.begin < interval[1]
-                        and interval[0] < occurrence.end
-                        for interval in routed_intervals
-                    )
-                }
+                local_sequences = self._raw_detection.locus_seed_patterns(
+                    cluster_index, routed_intervals)
+
                 selected = [
                     repeat for repeat in cluster.tuple_repeats
                     if repeat in trigger_seeds or repeat in local_sequences
@@ -5453,6 +5404,9 @@ class Pipeline:
         self.categories = final_categories
 
     def _drop_nonaccepted_categories(self):
+        self.categories[4] = select_low_score_representatives(
+            self.categories[4], self.parameters,
+        )
         retain_requested_categories(
             self.categories,
             self.parameters.get("param_accepted_only", False),

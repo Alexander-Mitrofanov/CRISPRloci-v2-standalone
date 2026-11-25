@@ -4,18 +4,29 @@ import hashlib
 import unittest
 from unittest.mock import patch
 
-from components.candidate_origins import mark_repair_origin
-from components.contextual_spacer_rescue import (
-    METHOD, OBSERVATION_KEY, _choose, _geometry, _scope_checks,
-    contextual_spacer_member_intervals, contextual_spacer_summary,
-    rescue_contextual_spacer_arrays, validate_contextual_spacer_basis,
-    validate_contextual_spacer_audit, validate_contextual_recorded_metrics, _references, _qualified,
+from components.evidence.candidate_origins import mark_repair_origin
+from components.evidence.initial_competition import initial_competition_groups
+from components.reconstruction.contextual_spacer_rescue import (
+    METHOD,
+    OBSERVATION_KEY,
+    _choose,
+    _geometry,
+    _qualified,
+    _references,
+    _scope_checks,
+    contextual_spacer_member_intervals,
+    contextual_spacer_summary,
+    rescue_contextual_spacer_arrays,
+    validate_contextual_recorded_metrics,
+    validate_contextual_spacer_audit,
+    validate_contextual_spacer_basis,
 )
-from components.initial_competition import initial_competition_groups
-from components.localized_spacer_context import (
-    capture_pending_context, digest, localized_block,
+from components.reconstruction.localized_spacer_context import (
+    capture_pending_context,
+    digest,
+    localized_block,
 )
-from components.module_evaluation import build_advanced_fuzzy_search_filter
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 from tests.contextual_spacer_fixture import fixture, load_fixture, local_candidate
 from tests.test_candidate_evidence import PARAMETERS
 
@@ -162,7 +173,7 @@ class ContextualSpacerTests(unittest.TestCase):
         decision, _ = _choose(audit["source_sha256"], records, [barrier])
         self.assertEqual(decision["reason"], "accepted_envelope_collision")
         altered = copy.deepcopy(records)
-        from components.occurrence_protection import occurrence_snapshot
+        from components.evidence.occurrence_protection import occurrence_snapshot
         witness = copy.deepcopy(flatten(output, 4)[0])
         # An exact source-valid terminal occurrence outside both admitted paths.
         witness[1].list_repeat_starts = [len(source)-1]
@@ -320,9 +331,9 @@ class ContextualSpacerTests(unittest.TestCase):
                                             likely_tandem_records=[disposition], source_sequence=source)
 
     def test_refinement_capture_is_side_channel_and_keeps_default_fallback_exact(self):
-        from components.module_detection_refinement import DetectionRefinement
-        from tests.test_repeat_boundary_repair import fuzzy, Locus
-        from components.localized_spacer_context import candidate_capture
+        from components.reconstruction.localized_spacer_context import candidate_capture
+        from components.refinement.stage import DetectionRefinement
+        from tests.test_repeat_boundary_repair import Locus, fuzzy
         data = load_fixture()
         source = data["source_window"]["sequence"]
         source_hash = hashlib.sha256(source.encode()).hexdigest()
@@ -331,8 +342,8 @@ class ContextualSpacerTests(unittest.TestCase):
         outcomes = []
         for enabled in (False, True):
             mapping = {Locus(0, len(source)): [fuzzy(p) for p in paths]}
-            with patch("components.module_detection_refinement.propose_terminal_repairs", return_value=([], [], {})), \
-                    patch("components.module_detection_refinement.propose_internal_repairs", return_value=([], [])):
+            with patch("components.refinement.stage.propose_terminal_repairs", return_value=([], [], {})), \
+                    patch("components.refinement.stage.propose_internal_repairs", return_value=([], [])):
                 refined = DetectionRefinement(mapping, PARAMETERS, False, source_dna=source,
                                               capture_contextual_spacers=enabled)
             outcomes.append([[candidate_capture(candidate, source_hash) for candidate in values]
@@ -349,7 +360,7 @@ class ContextualSpacerTests(unittest.TestCase):
         source, categories, _pending, _scorer = fixture()
         def forbidden(*args, **kwargs):
             raise AssertionError("empty contextual lane performed work")
-        with patch("components.contextual_spacer_rescue.validate_ordinary_witness_inventory", side_effect=forbidden):
+        with patch("components.reconstruction.contextual_spacer_rescue.validate_ordinary_witness_inventory", side_effect=forbidden):
             output, audit = rescue_contextual_spacer_arrays(source, categories, [], PARAMETERS, forbidden, forbidden)
         self.assertIs(output, categories)
         replay(source, output, audit)

@@ -34,6 +34,15 @@ import time
 from typing import Dict, Iterable, Iterator, Mapping, Optional, Sequence, Tuple
 
 
+# The panel parser is standard-library-only, including under the system Python
+# used by this supervisor. Scientific modules remain confined to child runners.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from components.detection.repeat_templates import (
+    PANEL_OPTIONS, TemplateDiscoveryError, load_repeat_template_panel,
+    panel_configuration, snapshot_repeat_template_panel, validate_template_workflow,
+)
+
+
 BATCH_SCHEMA = "CRISPRidentify-batch"
 BATCH_VERSION = "1.0.0"
 COMPLETION_SCHEMA = "CRISPRidentify-batch-completion"
@@ -133,6 +142,8 @@ class ToolConfiguration:
     runtime_tree_sha256: str
     runtime_version: str
     runtime_commit: Optional[str]
+    repeat_template_snapshot: Optional[Path] = None
+    repeat_template_config: Optional[dict] = None
 
 
 @dataclasses.dataclass(frozen=True)
@@ -709,7 +720,9 @@ def _validate_extra_arguments(arguments: Sequence[str]) -> Tuple[str, ...]:
         if not isinstance(token, str) or "\x00" in token:
             raise InputError("extra tool arguments must be safe strings")
         option = token.split("=", 1)[0]
-        if option in FORBIDDEN_EXTRA_OPTIONS:
+        panel_option = (option.startswith("--") and any(
+            name.startswith(option) for name in PANEL_OPTIONS + ("--_repeat_template_sha256",)))
+        if option in FORBIDDEN_EXTRA_OPTIONS or panel_option:
             raise InputError("{} is controlled by crispridentify-batch".format(option))
     return arguments
 
@@ -750,6 +763,29 @@ def build_tool_configuration(
             )
         analysis_arguments += ("--sequence_topology_manifest", str(topology_manifest))
     extra_arguments = _validate_extra_arguments(args.tool_arg)
+    panel_snapshot, panel_config = None, None
+    panel_path = getattr(args, "repeat_template_fasta", None)
+    if panel_path is not None:
+        try:
+            panel = load_repeat_template_panel(panel_path)
+            panel_snapshot = Path(snapshot_repeat_template_panel(
+                panel, args.run_dir / "inputs" / ("repeat-template-" + panel.raw_sha256 + ".fa")))
+            # Ask the actual runner to resolve overrides and reject unsupported
+            # combinations before scheduling, including older detector versions.
+            probe = subprocess.run(
+                (str(runner),) + analysis_arguments + extra_arguments
+                + ("--repeat-template-fasta", str(panel_snapshot),
+                   "--_repeat_template_sha256", panel.raw_sha256, "--print-effective-config"),
+                capture_output=True, text=True, timeout=60, check=False)
+            if probe.returncode:
+                raise InputError("detector does not support the requested repeat panel: " + probe.stderr[-1000:])
+            effective = json.loads(probe.stdout)["effective_config"]
+            validate_template_workflow(args.preset, effective["accepted_only"], effective["fuzzy_search_mode"])
+            panel_config = panel_configuration(panel, effective["fuzzy_search_mode"])
+            if effective.get("repeat_template_discovery") != panel_config:
+                raise InputError("detector repeat-panel configuration differs")
+        except (TemplateDiscoveryError, KeyError, json.JSONDecodeError, subprocess.SubprocessError) as error:
+            raise InputError("cannot prepare repeat panel: " + str(error)) from error
     return ToolConfiguration(
         runner=runner,
         preset=args.preset,
@@ -764,6 +800,8 @@ def build_tool_configuration(
         runtime_tree_sha256=runtime_tree_sha256(project_root, runner),
         runtime_version=_runtime_version(project_root),
         runtime_commit=_runtime_commit(project_root),
+        repeat_template_snapshot=panel_snapshot,
+        repeat_template_config=panel_config,
     )
 
 
@@ -784,6 +822,7 @@ def _tool_config_record(tool: ToolConfiguration) -> Mapping[str, object]:
         "cas_gene_mode": tool.cas_gene_mode if tool.cas else None,
         "cas_timeout_seconds": tool.cas_timeout_seconds if tool.cas else None,
         "sequence_topology_manifest": topology,
+        "repeat_template_discovery": tool.repeat_template_config,
         "runtime": {
             "version": tool.runtime_version,
             "git_commit": tool.runtime_commit,
@@ -1516,6 +1555,19 @@ def _validate_likely_tandem_extension(
     ):
         raise CompletionError("likely-tandem audit counts are invalid")
 
+    projection = extension.get("low_score_projection")
+    if projection is not None and (
+        not isinstance(projection, dict)
+        or projection.get("representative_rule")
+        != "maximum_score_then_legacy_stable_input_order"
+        or not _is_plain_int(projection.get("rows_before"))
+        or not _is_plain_int(projection.get("rows_after"))
+        or projection["rows_before"] != stats["diagnostic_rows_after"]
+        or not 0 <= projection["rows_after"] <= projection["rows_before"]
+        or projection["rows_after"] != report["summary"]["category_counts"]["Low score"]
+    ):
+        raise CompletionError("likely-tandem Low score projection is invalid")
+
     core_by_id = {
         array["id"]: (array, geometry)
         for array, geometry in zip(arrays, geometries)
@@ -1606,6 +1658,10 @@ def _validate_likely_tandem_extension(
                 )
         else:
             reported_id = record.get("reported_array_id")
+            if record.get("core_projection") == "omitted_by_low_score_selection":
+                if projection is None or reported_id is not None:
+                    raise CompletionError("likely-tandem omitted projection is invalid")
+                continue
             if (
                 not isinstance(reported_id, str)
                 or not reported_id
@@ -1660,6 +1716,7 @@ def _validate_likely_tandem_extension(
         or stats["accepted_rows_after"] != summary["accepted_array_count"]
         or (
             not accepted_only
+            and projection is None
             and stats["diagnostic_rows_after"]
             != category_counts["Low score"]
         )
@@ -1677,6 +1734,7 @@ def validate_report(
     region_screen: bool,
     expected_preset: Optional[str] = None,
     require_preset_provenance: bool = False,
+    expected_repeat_template_config=None,
 ) -> Mapping[str, object]:
     try:
         report = json.loads(path.read_text(encoding="utf-8"))
@@ -1694,6 +1752,22 @@ def validate_report(
     if isinstance(configuration, dict) and expected_preset is not None:
         if configuration.get("preset") != expected_preset:
             raise CompletionError("report detector preset differs")
+    if expected_repeat_template_config is not None:
+        try:
+            actual = configuration["effective_config"]["repeat_template_discovery"]
+            ledger = run["parameters"]["param_repeat_template_discovery"]
+            if actual != expected_repeat_template_config or not isinstance(ledger, dict):
+                raise CompletionError("child repeat panel identity differs or ledger is missing")
+            if any(ledger.get(key) != actual[key] for key in ("policy", "engine", "limits", "panel")):
+                raise CompletionError("child repeat discovery ledger identity differs")
+            if ledger.get("source_sha256") != report["source"]["sha256"]:
+                raise CompletionError("child repeat discovery source differs")
+            for count, rows in (("task_count", "tasks"), ("candidate_count", "births")):
+                if (type(ledger[count]) is not int or not isinstance(ledger[rows], list)
+                        or ledger[count] != len(ledger[rows])):
+                    raise CompletionError("child repeat discovery inventory differs")
+        except (KeyError, TypeError, AttributeError) as error:
+            raise CompletionError("child repeat discovery evidence is malformed") from error
     schema = report.get("schema")
     if not isinstance(schema, dict) or schema.get("name") != REPORT_SCHEMA:
         raise CompletionError("report schema name differs")
@@ -1816,6 +1890,7 @@ def collect_and_validate_reports(
     sources: Mapping[str, str],
     preset: str,
     require_preset_provenance: bool,
+    expected_repeat_template_config=None,
 ) -> Tuple[Mapping[str, object], ...]:
     report_paths = sorted(result_root.rglob("report.json"))
     if not report_paths:
@@ -1833,6 +1908,7 @@ def collect_and_validate_reports(
                 preset == "region-screen",
                 expected_preset=preset,
                 require_preset_provenance=require_preset_provenance,
+                expected_repeat_template_config=expected_repeat_template_config,
             )
         )
         source_id = record["source_id"]
@@ -1856,11 +1932,26 @@ def _completion_path(worker: WorkerConfiguration, job: Job) -> Path:
     return worker.run_dir / "samples" / _sample_slug(job.sample_id) / "completion.json"
 
 
+def _verify_repeat_template_snapshot(tool):
+    if tool.repeat_template_snapshot is None:
+        return
+    try:
+        panel = load_repeat_template_panel(tool.repeat_template_snapshot)
+        if panel_configuration(panel, tool.repeat_template_config["engine"]) != tool.repeat_template_config:
+            raise TemplateDiscoveryError("repeat panel snapshot changed")
+    except TemplateDiscoveryError as error:
+        raise InputError(str(error)) from error
+
+
 def _validate_completion(
     completion_path: Path,
     job: Job,
     worker: WorkerConfiguration,
 ) -> Mapping[str, object]:
+    try:
+        _verify_repeat_template_snapshot(worker.tool)
+    except InputError as error:
+        raise CompletionError(str(error)) from error
     try:
         completion = json.loads(completion_path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as error:
@@ -1898,6 +1989,7 @@ def _validate_completion(
             region_screen=worker.tool.preset == "region-screen",
             expected_preset=worker.tool.preset,
             require_preset_provenance=(worker.tool.preset_mode == "detector-preset"),
+            expected_repeat_template_config=worker.tool.repeat_template_config,
         )
         if validated["array_count"] != report_record.get("array_count"):
             raise CompletionError("completion array count differs")
@@ -2017,7 +2109,11 @@ def _attempt_command(
         "--parallel",
         "True",
     )
-    return command + worker.tool.analysis_arguments + worker.tool.extra_arguments
+    panel_arguments = ()
+    if worker.tool.repeat_template_snapshot is not None:
+        panel_arguments = ("--repeat-template-fasta", str(worker.tool.repeat_template_snapshot),
+                           "--_repeat_template_sha256", worker.tool.repeat_template_config["panel"]["raw_sha256"])
+    return command + worker.tool.analysis_arguments + worker.tool.extra_arguments + panel_arguments
 
 
 def _attempt_environment(worker: WorkerConfiguration) -> Dict[str, str]:
@@ -2156,6 +2252,7 @@ def execute_job(job: Job, worker: WorkerConfiguration) -> JobResult:
         }
         atomic_write_json(attempt_root / "attempt.json", running_record)
         try:
+            _verify_repeat_template_snapshot(worker.tool)
             process_status, return_code, duration = run_process(
                 command,
                 cwd=worker.run_dir,
@@ -2173,6 +2270,7 @@ def execute_job(job: Job, worker: WorkerConfiguration) -> JobResult:
                         sources,
                         worker.tool.preset,
                         worker.tool.preset_mode == "detector-preset",
+                        expected_repeat_template_config=worker.tool.repeat_template_config,
                     )
                     attempt_relative = attempt_root.relative_to(item_root)
                     reports = tuple(
@@ -2237,7 +2335,7 @@ def execute_job(job: Job, worker: WorkerConfiguration) -> JobResult:
                     time.monotonic() - started,
                     completion=completion_path.relative_to(worker.run_dir).as_posix(),
                 )
-        except (OSError, subprocess.SubprocessError, BatchError) as error:
+        except (OSError, subprocess.SubprocessError, BatchError, TemplateDiscoveryError) as error:
             final_code = "runner_error"
             final_message = str(error)
             failed_record = dict(running_record)
@@ -2677,6 +2775,7 @@ def build_parser(project_root: Path) -> argparse.ArgumentParser:
     )
     run.add_argument("--cas-timeout-seconds", type=int, default=3600)
     run.add_argument("--sequence-topology-manifest", type=Path)
+    run.add_argument("--repeat-template-fasta", "--repeat_template_fasta", type=Path)
     run.add_argument(
         "--tool-arg",
         action="append",

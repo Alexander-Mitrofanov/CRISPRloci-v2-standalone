@@ -31,6 +31,17 @@ higher-confidence set is required. Do not compare exact representation counts
 as if they were biological-region counts: overlapping candidates can be
 different boundaries or repeat phases for one region.
 
+Low-score output selects one maximum-score candidate per competition group,
+with equal scores resolved by stable input order, just as for Bona-fide and
+Possible candidates. Groups remain within each search key. When competitive
+component splitting is enabled, disjoint source intervals compete separately;
+conservative mode also preserves its repair-origin scope and occurrence fences.
+These groups are not a new biological-locus inference. Selection runs only at
+final output projection, after rescue, reconstruction and tandem decisions.
+It does not promote a low-score candidate or change scores or accepted calls.
+`candidate_evidence.jsonl.gz` retains all final low-score candidates when
+requested, including nonselected representations.
+
 Extract accepted regions as TSV:
 
 ```bash
@@ -88,6 +99,39 @@ observations, not accepted arrays. The primary `Summary.csv`, accepted FASTA
 headers and sequences, and legacy JSON/pickle scientific contents are unchanged.
 The companion is published transactionally with `report.json` last and removed
 when absent or when the machine output profile suppresses presentation files.
+
+## Shared repeat occurrences in unresolved reconstructions
+
+The optional `extensions.tied_reconstruction_occurrences` records exact repeat
+intervals present in every distinct best geometry when a Bona-fide reconstruction
+abstains with `ambiguous_best_geometry`. The writer checks native direct-peer
+validation completeness, fresh tied scores, candidate vetoes and the full set of
+geometry IDs. A published record requires a unique canonical Bona-fide anchor
+with the original geometry, score and search key.
+
+Schema `CRISPRidentify-tied-reconstruction-occurrences` version `1.0.0` uses
+zero-based, half-open intervals on the input forward strand. Under `anchors`,
+each record contains the ordered `common_repeat_intervals` and the subset
+`additional_repeat_intervals` that are wholly disjoint from every anchor repeat.
+The common set may skip contested repeat positions. It describes unaccepted
+observations. The caller's accepted geometry, spacers, confidence and biological
+extent continue to come from the canonical array.
+
+The extension binds the source ID, length and uppercase-sequence SHA-256.
+`reconstruction_evidence.sha256` covers the uncompressed bytes of the adjacent
+`reconstruction_evidence.json`, including its final newline. Each record gives
+the canonical anchor ID, anchor geometry ID, zero-based ledger decision index
+and every distinct tied geometry ID. The native decision's `same_rank_peers`
+holds the complete alternative paths, including repeated alignment observations.
+The extension is omitted when no such anchor has additional shared occurrences,
+when the audit is unavailable, or when the final report omits the original core.
+
+To replay, verify the sidecar checksum and call
+`components.reporting.tied_occurrences.validate_tied_reconstruction_occurrences(report, audit, source)`
+with the parsed report, parsed native sidecar and uppercase source sequence.
+Replay checks the recorded ranking attestations, coordinates, source and anchor
+binding and recomputes the interval intersection. Original classifier execution
+and biological activity require separate evidence.
 
 ## Candidate research evidence
 
@@ -405,6 +449,9 @@ including when optional candidate retention is disabled.
 The ordinary array coordinates, repeat/spacer sequences, consensus, features,
 orientation and `certainty_score` describe one explicitly named **actual full
 member**. This deterministic display choice does not settle the repeat ends.
+When fresh scores tie exactly, the members span the same source interval, and
+the accepted core has uniform repeat width, the display favors a member whose copies share that width. Geometry and
+representation IDs break remaining ties. The proof records the display rule.
 The original core and member observations remain retained. Each member has its
 own score and checks; the original core's confidence is separate. All members
 must directly preserve the protected original ordinary occurrences carried by
@@ -522,18 +569,24 @@ The decision uses no external-tool call, model-score override, or benchmark
 label. A qualifying row moves to the existing public `Low score` category and
 receives the sorted array tag `tandem`; `likely_tandem` remains its scientific
 disposition in classification provenance. It is therefore absent from
-`Possible` and from `summary.accepted_array_count`, but remains visible in a
-full canonical report and `Low_Score_Candidates.txt`. Optional HTML,
+`Possible` and from `summary.accepted_array_count`. When selected as its
+low-score group's representative, it appears in the full canonical report and
+`Low_Score_Candidates.txt`. Optional HTML,
 legacy-JSON, and pickle writers preserve the same tag when enabled. Its
 separate source-hash-bound record at
-`extensions.likely_tandem` binds one-to-one to that Low-score array and
+`extensions.likely_tandem` binds one-to-one to a selected Low-score array and
 preserves the original category and score, source interval, spacer sequences,
 pairwise evidence, policy, and transaction counts. With
 `--accepted_only True`, the row is projected out and the ledger explicitly
-records that omission; current canonical output requires this ledger even
+records that omission. Nonselected low-score demotions remain in the ledger
+with `core_projection: omitted_by_low_score_selection` and no reported array ID.
+The extension's `low_score_projection` records the representative rule and
+counts before and after output projection; transaction counts still describe
+the complete inventory. The writer replays selection against that inventory.
+Current canonical output requires this ledger even
 when no tandem rows exist. For a non-empty ledger, the writer replays each
 record against the original FASTA, verifies the whole-source hash, and
-requires an exact repeat/spacer/core match to its report row. The writer also
+requires an exact repeat/spacer/core match for each selected report row. The writer also
 reruns the transaction across every pre-quarantine accepted row and requires
 the complete positive ledger and exact transaction counts. HTML rendering and
 benchmark ingestion independently rescreen accepted core architectures and
@@ -604,6 +657,75 @@ hierarchy-normalization provenance. Type VII type-only calls are experimental
 and are labeled as such. CasAndra is opt-in and should normally be a second
 stage after region screening at multi-million-genome scale.
 
+## Executed discovery configuration
+
+`run.configuration.effective_config.effective_discovery` uses policy
+`vmatch-source-discovery-v1`. Its fields are `requested_fast_profile`,
+`fast_profile_applies`, `vmatch` (`-l`, `-e`, `-evalue`, `result_limit`),
+`seed_text_truncation`, `local_chain_max_gap`, `fuzzy_flank`, `fuzzy_engine`,
+and `fuzzy_error`. The exact Vmatch `-l` arrays are `[23,-10,100]` (fast
+balanced), `[23,25,60]` (fast legacy), and `[21,-10,100]` (fast sensitive or
+any non-fast run). Edit/e-value settings remain 1; the accepted result limit
+is 1,000,000 with one extra sentinel requested. Seed text is truncated at 55
+bases, and direct source chains split at gaps greater than 140 bases.
+
+These values also appear in `--print-effective-config`. Their addition changes
+the effective configuration hash. Repeat/spacer length flags remain later
+structural averages, not individual discovery limits. In particular, the
+maximum average spacer predicate omits terminal spacers for arrays with more
+than four spacers. A wider structural setting does not broaden Vmatch's query.
+
+## Supplied repeat discovery
+
+With an explicit panel, `effective_config.repeat_template_discovery` contains
+`policy` (`supplied-literal-discovery-v1`), `engine`, `limits`, and `panel`.
+The manifest records raw byte SHA-256, normalized SHA-256, byte count, canonical
+sequences, sorted unique oriented patterns, and aliases with their original ID,
+supplied sequence and orientation relative to the canonical sequence. The
+normalization policy is `acgt-min-reverse-complement-v1`; normalized identity
+hashes this policy and the sorted canonical sequence set. Aliases do not add
+model votes. Snapshot paths are excluded from scientific identity.
+
+Operational bounds are enforced without truncation:
+
+| Limit | Native | Pinned regex (`full` fuzzy mode) |
+| --- | ---: | ---: |
+| Raw panel bytes / records | 65,536 / 256 | 65,536 / 256 |
+| Canonical motifs / oriented patterns | 32 / 64 | 32 / 64 |
+| Source bases | 50,000,000 | 1,000,000 |
+| Source bases × oriented patterns | 1,000,000,000 | 2,000,000 |
+| Selected hits per pattern / per source | 8,192 / 65,536 | 8,192 / 65,536 |
+| Window/pattern tasks | 4,096 | 4,096 |
+| Complete baseline hits per task | 256 | 256 |
+| Padded window span | 50,000 | 50,000 |
+
+Regex bounds were reduced after operational measurements; they do not change
+biological admission. Native mode requires the native engine, and full fuzzy
+mode requires the locked regex 2024.11.6 (`2.5.148`) coordinate contract.
+Neither route falls back silently on engine failure. Native cap+1 allocation
+bounds stored records; its C scan still counts the whole source. These limits
+are not an execution-time guarantee for every sequence composition.
+
+`run.parameters.param_repeat_template_discovery` is the per-record root
+ledger. It contains the same static identity, source SHA-256/length, flank,
+ordered `patterns` with their selected `hits`, deterministic `tasks`, and
+direct candidate `births`, plus hit/task/candidate counts. Coordinates in this
+ledger are **zero-based, half-open**; canonical array tables remain one-based,
+inclusive. A hit records query identity, observed source slice, edit counts,
+owned edit positions and deletion-coordinate shift. A task binds the complete
+contained baseline hit signatures to a source window. A birth records its
+task, pattern, representation hash and exact starts/repeats/gapped repeats/
+spacers. Later lattice alternatives are birth hypotheses, not extra baseline
+scan matches. The report builder replays identities, source slices, edit
+alignments, task projection and birth geometry before publication.
+
+This ledger establishes candidate generation. It does not claim that every
+final overlapping array descends from a template. Internal observational
+ancestry retains the original birth across validated derivations and grants
+no repair or classification authority. Match orientation is independent of
+predicted transcription strand. Opposite orientations, separate records, and
+circular-origin padding are never combined by this linear discovery route.
+
 ## JSON schema and version policy
 
 The current report contract is `CRISPRidentify-report` version `1.2.0`.
@@ -621,3 +743,101 @@ Within report schema major version 1:
 
 Consumers should reject an unknown schema name or major version and preserve
 unknown optional fields.
+
+## Repeat completion in 2.4.0
+
+In 2.4.1 a high-confidence boundary family can gain one terminal repeat when
+every retained member independently projects the same terminal interval and
+each extended member qualifies on its own fresh score. The family retains the
+competing internal placements. A separately supported longer reconstruction
+can replace an embedded three-copy fragment when it adds an occurrence to the
+ordinary reconstruction and preserves the existing repeat occurrences.
+An alternative that only changes the boundaries of a complete array stays in
+the research evidence. The accepted reconstruction's `periodic_refinement` records
+the contributing repeat intervals and scores under
+`convergent_retained_extents`.
+
+With `--retain_candidate_evidence True`, the candidate-evidence JSONL header
+may contain `review_hypotheses`, keyed by accepted array ID. It records the
+primary intervals and competing source-derived repeat and spacer placements.
+The observed score on an alternative belongs to its referenced candidate.
+Unscored source hypotheses carry local sequence metrics. Candidate rows may
+also contain `extent_trials.proposals`, with a rebuilt path's own model score,
+consensus, and qualification result. Both fields use zero-based, half-open
+repeat intervals. The canonical report supplies accepted calls.
+
+Conservative reconstruction with degenerate search uses the accepted core's
+spacer lengths to look for one missing copy inside a long spacer and for copies
+outside either end. A divergent terminal copy ends the outward search. Two
+accepted fragments can merge when their occurrences align with the proposed
+path and a retained observation bridges disjoint cores. The caller rescores
+the complete source path and applies the structural and tandem checks.
+
+Changed accepted arrays carry `periodic_refinement` with the parent intervals
+(zero-based, half-open) and parent model scores. A `periodic_hypothesis`
+records a rejected geometry where the parent survives. A three-copy core can
+support a provisional extended or rephased Possible array below the ordinary
+score band. Its `core_supported_periodic_geometry` classification basis records
+both scored geometries. The published `certainty_score` belongs to the displayed
+array. An ordinary internal bridge can restore a copy within the usual edit
+limit. More divergent copies carry `potential_degenerate_repeat` evidence.
+
+Conservative reconstruction with degenerate search uses the 28 curated
+consensuses in `tools/blasting/curated_boundary_consensuses.txt`. They are
+the unique motifs, after strand normalization, from 37 explicit development
+choices in the November 2026 array review. Use `--boundary-consensuses none`
+for source-only resolution or supply comma-separated consensus sequences to
+replace the bundled panel. The caller records both orientations in the
+effective configuration. It compares the
+panel with newly extended arrays, allowing one base of movement at each edge.
+At least two source copies must match a reference exactly, and at least three
+quarters of copies must match within one substitution per five bases. Competing
+supported phases leave the source-only boundaries in place. A selected curated
+phase appears as Possible and retains its own score, the source-only path and
+the native structural assessment under `curated_periodic_boundary`. It can
+resolve a conflict with repeat-end conservation or spacer-end conservation.
+The other structural predicates and tandem checks still apply.
+
+A Possible call with the `recurrent_allele_boundary` classification basis
+resolves a one-base trim into an adjacent spacer using complete repeat alleles
+already present in the array. The bases at the disputed edge must represent two
+variants, each supported by a whole allele seen at least twice among the
+unmodified copies. Every trimmed copy must match such an allele exactly.
+At least three quarters of the copies keep their original intervals. The
+evidence records the altered copy indexes, allele counts, original and proposed
+geometries, fresh score, and the failed repeat-edge conservation check.
+
+### Source-supported competing geometries in 2.4.2
+
+In conservative, degenerate-enabled reconstruction, an accepted array may carry
+the classification method `source_supported_competing_geometry`. Its
+`previous` and `selected` records contain the ordered zero-based half-open
+intervals, gapped repeats, feature values and own model scores. The
+`geometry_status` describes the chosen interpretation, including provisional
+terminal boundaries and a competing repeat embedded in a duplicated spacer.
+The model score applies to the complete array. The rule-specific evidence
+identifies the source copies and spacers used for the decision.
+
+For a majority-repeat insertion alignment or a competing uniform-width
+interpretation of a repeated indel, `alternative` records the source-built,
+independently scored alternative with its structural and negative checks.
+For terminal membership with tied variable widths, the rule records the other
+intervals having the same edit cost. An internal repeat that splits a spacer
+is additionally checked for a predicted CDS containing the original spacer.
+The earlier accepted path remains in the retained inventory and the published
+proof. Caller identity, reviewer choices and supplied locus coordinates are
+absent from the selection inputs.
+
+### Reporting ambiguous boundaries in 2.4.3
+
+For a qualified common-width and compact pair, the primary may follow an
+explicit boundary convention. The selected geometry and its own score appear
+in `selected`. The other interpretation and its own score appear in
+`alternative`. The representation choice is provisional.
+
+When a divergent terminal repeat breaks a tie between frequent alleles in the
+intact core, both intact core ends can support the same representative allele.
+In this case `consensus_repeat` reports that representative. The optional
+`consensus_basis` record names the reported allele and the full-alignment
+consensus used for model scoring. The raw source intervals and repeat
+sequences include the terminal copy.

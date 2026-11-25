@@ -1,26 +1,24 @@
 """Research retention is complete evidence, never extra ordinary arrays."""
 
-from contextlib import ExitStack
 import copy
 import gzip
 import hashlib
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from contextlib import ExitStack
+from pathlib import Path
 from unittest import mock
 
 import numpy as np
 
-from components import candidate_evidence
-from components import module_output_maker
-from components import output_transaction
-from components.components_detection_refinement import CrisprCandidate
-from components.likely_tandem_transaction import apply_likely_tandem_quarantine
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.output_transaction import OutputTransaction
 from components.pipeline import Pipeline
-
+from components.refinement.candidates import CrisprCandidate
+from components.reporting import candidate_evidence, output_transaction
+from components.reporting import stage as module_output_maker
+from components.reporting.output_transaction import OutputTransaction
+from components.rescue.likely_tandem_transaction import apply_likely_tandem_quarantine
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 
 PARAMETERS = {
     "param_min_avg_repeat_length": 21,

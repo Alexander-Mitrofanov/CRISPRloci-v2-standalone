@@ -29,9 +29,9 @@ defaults. Read the specified commit, not an independently updated checkout's HEA
 
 | Tool | Locked version / commit | Authoritative CLI source |
 | --- | --- | --- |
-| CRISPRidentify-v2 | 2.3.2 / `e8a3d7c` | [CRISPRidentify.py](https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc/CRISPRidentify.py) |
+| CRISPRidentify-v2 | 2.4.3 / `63e563e` | [CLI parser](https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/63e563ec3707efdb238637d1a3cd325b8830fad2/components/cli/parser.py) |
 | CasAndra | 0.3.0.dev2 / `ba046f9` | [src/casandra/cli.py](https://github.com/Alexander-Mitrofanov/CasAndra/blob/ba046f90242ac91dc075183ea51dcbedfac28484/src/casandra/cli.py) |
-| CRISPRtracrRNA-v3 | 3.0.0 / `1e173bc` | [src/crisprtracrrna/cli.py](https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/1e173bcd4e7d59b86412dac17a0f6ebcb4353eef/src/crisprtracrrna/cli.py) and [config.py](https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/1e173bcd4e7d59b86412dac17a0f6ebcb4353eef/src/crisprtracrrna/config.py) |
+| CRISPRtracrRNA-v3 | 3.0.0 / `9461c6e` | [src/crisprtracrrna/cli.py](https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/9461c6eea80d98832f4474bcf456ac3483ab927a/src/crisprtracrrna/cli.py) and [config.py](https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/9461c6eea80d98832f4474bcf456ac3483ab927a/src/crisprtracrrna/config.py) |
 | SpacerPlacer | 1.0.1.post2 / `2742b6e` | [spacerplacer.py](https://github.com/Alexander-Mitrofanov/SpacerPlacer/blob/2742b6ec5336fcbc40add772e1128441807ae239/spacerplacer.py) |
 | evOr | 1.0.2 / `5310ba9` | [crispr_evor.py](https://github.com/Alexander-Mitrofanov/evOr/blob/5310ba9e75836717c58d037606de17f98fc5d7b1/crispr_evor.py) and [spacerplacer.py](https://github.com/Alexander-Mitrofanov/evOr/blob/5310ba9e75836717c58d037606de17f98fc5d7b1/spacerplacer.py) |
 | CRISPRleader-v2 | 2.0.0a1 / `da7b4d6` | [src/crisprleader/cli.py](https://github.com/Alexander-Mitrofanov/CRISPRleader-v2/blob/da7b4d659afaa8b0eb8873ebc2ccec00aad1000f/src/crisprleader/cli.py) |

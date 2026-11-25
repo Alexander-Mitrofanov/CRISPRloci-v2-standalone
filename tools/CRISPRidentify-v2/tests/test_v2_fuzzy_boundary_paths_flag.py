@@ -4,11 +4,10 @@ import pathlib
 import unittest
 from unittest import mock
 
-from components import module_detection
-from components.cli_utils import parse_boolean
-from components.components_detection import FuzzySearch
-from components.module_detection import Detection
-
+from components.cli.validation import parse_boolean
+from components.detection import stage as module_detection
+from components.detection.search import FuzzySearch
+from components.detection.stage import Detection
 
 V2_ROOT = pathlib.Path(__file__).resolve().parents[1]
 CLI_PATH = V2_ROOT / "CRISPRidentify.py"
@@ -19,7 +18,11 @@ SOURCE_START = 137
 
 
 def _cli_tree():
-    return ast.parse(CLI_PATH.read_text(encoding="utf-8"))
+    parser_path = CLI_PATH.parent / "components" / "cli" / "parser.py"
+    return ast.parse(
+        parser_path.read_text(encoding="utf-8")
+        + "\n" + CLI_PATH.read_text(encoding="utf-8")
+    )
 
 
 def _argument_call(tree, option):

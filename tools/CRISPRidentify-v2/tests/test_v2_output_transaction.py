@@ -1,11 +1,9 @@
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 from unittest import mock
 
-from tests.test_v2_casandra_reporting import _casandra_result
-from tests.test_v2_casandra_reporting import cas_output
-
+from tests.test_v2_casandra_reporting import _casandra_result, cas_output
 
 publication_module = cas_output._output_publication
 

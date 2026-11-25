@@ -4,10 +4,10 @@
 import argparse
 import hashlib
 import os
-from pathlib import Path
 import shutil
 import subprocess
 import sys
+from pathlib import Path
 
 try:
     from importlib import metadata as importlib_metadata
@@ -182,7 +182,7 @@ def collect_environment_errors(profile="core"):
                 errors.append("missing BLAST database file: {}".format(relative_path))
 
     try:
-        from components import literal_fuzzy
+        from components.detection import literal_fuzzy
         if not literal_fuzzy.AVAILABLE:
             errors.append(
                 "native fuzzy matcher unavailable: {}".format(
@@ -193,7 +193,7 @@ def collect_environment_errors(profile="core"):
         errors.append("native fuzzy matcher check failed: {}".format(error))
 
     try:
-        from components.sequence_path_vectorizer import (
+        from components.scoring.sequence_path_vectorizer import (
             NATIVE_ASCII_PATH_FEATURES_AVAILABLE,
             NATIVE_PACKED_PATH_FEATURES_AVAILABLE,
             NATIVE_PATH_FEATURE_COUNTS_AVAILABLE,
@@ -220,8 +220,9 @@ def collect_environment_errors(profile="core"):
 
     try:
         import numpy as np
-        from components.feature_schema import COMPACT_FEATURE_SCHEMA
-        from components.compact_model import predict_compact_scores
+
+        from components.scoring.compact_model import predict_compact_scores
+        from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 
         scores = predict_compact_scores(
             np.zeros((1, len(COMPACT_FEATURE_SCHEMA)), dtype=np.float64)
@@ -236,8 +237,9 @@ def collect_environment_errors(profile="core"):
 
     try:
         import json
-        import joblib
+
         import casandra
+        import joblib
         from casandra.production_v2 import load_model
 
         if casandra.__version__ != "0.1.0.dev0+crispridentify.3":
@@ -273,7 +275,9 @@ def collect_environment_errors(profile="core"):
         errors.append("CasAndra check failed: {}".format(error))
 
     try:
-        from components.portable_strand import load_default_portable_strand_model
+        from components.annotation.portable_strand import (
+            load_default_portable_strand_model,
+        )
 
         model = load_default_portable_strand_model()
         labels = model.predict_strands(

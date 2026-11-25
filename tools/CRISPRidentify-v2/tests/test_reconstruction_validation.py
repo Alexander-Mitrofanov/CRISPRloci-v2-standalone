@@ -5,16 +5,15 @@ import json
 import random
 import unittest
 
-from components.architecture_rescue_coding_context import SourceCDS
-from components.components_detection_refinement import (
-    AdvancedFuzzySearchFilter,
-    CrisprCandidate,
-)
-from components.reconstruction_validation import (
+from components.reconstruction.reconstruction_validation import (
     needs_coding_context,
     validate_reconstruction_candidate,
 )
-
+from components.refinement.candidates import (
+    AdvancedFuzzySearchFilter,
+    CrisprCandidate,
+)
+from components.rescue.architecture_rescue_coding_context import SourceCDS
 
 PARAMETERS = {
     "param_min_avg_repeat_length": 21,

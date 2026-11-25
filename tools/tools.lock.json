@@ -1,18 +1,18 @@
 {
   "checkout_strategy": "Independent Git repositories pinned by commit; managed by scripts/sync_tools.py",
-  "locked_at": "2026-10-18",
+  "locked_at": "2026-11-25",
   "runtime_profile": "crisprloci-council-hardening-v1",
   "schema_version": 1,
   "tools": [
     {
-      "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "commit": "63e563ec3707efdb238637d1a3cd325b8830fad2",
       "entrypoint": "./crispridentify",
       "name": "CRISPRidentify-v2",
       "path": "tools/CRISPRidentify-v2",
       "purpose": "CRISPR array detection",
       "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git",
       "runtime": "Linux x86-64; use its locked Conda/Mamba environment",
-      "version": "2.3.2"
+      "version": "2.4.3"
     },
     {
       "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
@@ -25,7 +25,7 @@
       "version": "0.3.0.dev2"
     },
     {
-      "commit": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "commit": "9461c6eea80d98832f4474bcf456ac3483ab927a",
       "entrypoint": "crisprtracrrna",
       "name": "CRISPRtracrRNA-v3",
       "path": "tools/CRISPRtracrRNA-v3",

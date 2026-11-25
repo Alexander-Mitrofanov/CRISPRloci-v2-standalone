@@ -3,25 +3,29 @@ import copy
 import gzip
 import hashlib
 import json
-from pathlib import Path
 import tempfile
-from types import SimpleNamespace
 import unittest
+from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 
-from components.candidate_evidence import stage_candidate_evidence
-from components.candidate_origins import candidate_origin_evidence, inherit_candidate_origins
-from components.compact_model import predict_compact_scores
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.output_transaction import OutputTransaction
-from components.reconstruction_transaction import reconstruct_accepted_arrays
-from components.report_model import ReportModelBuilder
+from components.evidence.candidate_origins import (
+    candidate_origin_evidence,
+    inherit_candidate_origins,
+)
+from components.reconstruction.reconstruction_transaction import (
+    reconstruct_accepted_arrays,
+)
+from components.refinement.candidates import CrisprCandidate
+from components.reporting.candidate_evidence import stage_candidate_evidence
+from components.reporting.output_transaction import OutputTransaction
+from components.reporting.report_model import ReportModelBuilder
+from components.scoring.compact_model import predict_compact_scores
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
 from tests.test_reconstruction_boundary_family import fixture as family_fixture
 from tests.test_reconstruction_transaction import fixture as ordinary_fixture
-
 
 FIXTURE = Path(__file__).with_name('fixtures') / 'reconstruction_alias_cp108133.json'
 FIXTURE_SHA = '10ed84b5a4f934a474498b7da1ce5f13ecd5530dfcc6d4a219a76254977ba7c5'

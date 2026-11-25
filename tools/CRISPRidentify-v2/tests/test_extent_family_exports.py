@@ -3,21 +3,27 @@
 import copy
 import csv
 import json
-from pathlib import Path
 import pickle
 import tempfile
 import unittest
+from pathlib import Path
 
-from components.components_output_maker import (
-    CompleteFolderSummaryMaker, FastaOutputArrayMaker, SummaryMakerCSV,
+from components.reconstruction.reconstruction_boundary_family import (
+    boundary_family_summary,
+)
+from components.reconstruction.reconstruction_transaction import (
+    reconstruct_accepted_arrays,
+)
+from components.reporting.html_report import render_html_report
+from components.reporting.legacy_exports import (
+    CompleteFolderSummaryMaker,
+    FastaOutputArrayMaker,
+    SummaryMakerCSV,
     _iter_fasta_records,
 )
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.html_report import render_html_report
-from components.module_output_maker import OutputMaker
-from components.reconstruction_boundary_family import boundary_family_summary
-from components.reconstruction_transaction import reconstruct_accepted_arrays
-from components.sequence_utils import reverse_complement
+from components.reporting.stage import OutputMaker
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
+from components.sequence.utils import reverse_complement
 from tests.test_candidate_evidence import PARAMETERS
 from tests.test_reconstruction_boundary_family import fixture
 

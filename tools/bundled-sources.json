@@ -2,12 +2,12 @@
   "schema_version": 1,
   "tools": [
     {
-      "commit": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "commit": "63e563ec3707efdb238637d1a3cd325b8830fad2",
       "name": "CRISPRidentify-v2",
       "path": "tools/CRISPRidentify-v2",
       "repository": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2.git",
-      "tree": "b90ef17799a6bf019a4330c83dc8171cedcfabbf",
-      "upstream_tree": "b90ef17799a6bf019a4330c83dc8171cedcfabbf"
+      "tree": "846b2b9bc856c3d6437c3796699a60d99777146d",
+      "upstream_tree": "846b2b9bc856c3d6437c3796699a60d99777146d"
     },
     {
       "commit": "ba046f90242ac91dc075183ea51dcbedfac28484",
@@ -18,12 +18,12 @@
       "upstream_tree": "5f79ef429fca1cf14f64f8a185bd621b786a0ff2"
     },
     {
-      "commit": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "commit": "9461c6eea80d98832f4474bcf456ac3483ab927a",
       "name": "CRISPRtracrRNA-v3",
       "path": "tools/CRISPRtracrRNA-v3",
       "repository": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3.git",
-      "tree": "17bc4350e78cf7b534d5d038acf3c163dda55b9a",
-      "upstream_tree": "17bc4350e78cf7b534d5d038acf3c163dda55b9a"
+      "tree": "0eaf0d6f1b8f8288d6a9fdbaa620cc04244b9bfa",
+      "upstream_tree": "0eaf0d6f1b8f8288d6a9fdbaa620cc04244b9bfa"
     },
     {
       "commit": "2a91510a8ec98e02507921b56e94df16cf6e0bd5",
@@ -86,7 +86,7 @@
       "name": "SpacePHARER",
       "path": "tools/SpacePHARER",
       "repository": "https://github.com/Alexander-Mitrofanov/SpacePHARER.git",
-      "tree": "822f2f3e3d7596115f60670ce4e22a341b8676f7",
+      "tree": "c51b2ccf76f3d007d696a55e02bea524b2480580",
       "upstream_tree": "c51b2ccf76f3d007d696a55e02bea524b2480580"
     },
     {

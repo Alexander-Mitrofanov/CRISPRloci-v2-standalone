@@ -1,17 +1,27 @@
 """Scheduling bounds must preserve every ordered candidate and native match."""
 import os
 import pickle
-from types import SimpleNamespace
 import unittest
+from types import SimpleNamespace
 from unittest import mock
 
-from components import literal_fuzzy
-from components.components_detection import ClusterSequence, FuzzySearch, RejectedFuzzyCandidateTopology
-from components.module_detection import Detection, _initialize_fuzzy_source, _initialize_fuzzy_worker, _native_worker_pool, _ordered_bounded_results
+from components.detection import literal_fuzzy
+from components.detection.search import (
+    ClusterSequence,
+    FuzzySearch,
+    RejectedFuzzyCandidateTopology,
+)
+from components.detection.stage import (
+    Detection,
+    _initialize_fuzzy_source,
+    _initialize_fuzzy_worker,
+    _native_worker_pool,
+    _ordered_bounded_results,
+)
 
 
 def worker_runtime_probe(unused):
-    from components import module_detection
+    from components.detection import stage as module_detection
     return {'cpus': sorted(os.sched_getaffinity(0)),
             'omp': os.environ['OMP_NUM_THREADS'],
             'blas': os.environ['OPENBLAS_NUM_THREADS'],
@@ -92,7 +102,7 @@ class DetectionStreamingTests(unittest.TestCase):
             pool = RecordingPool()
             manager = mock.MagicMock()
             manager.__enter__.return_value = pool
-            with mock.patch('components.module_detection._native_worker_pool', return_value=manager), \
+            with mock.patch('components.detection.stage._native_worker_pool', return_value=manager), \
                     mock.patch.object(Detection, '_parallel_run_fuzzy_native_batch', side_effect=worker):
                 detector._run_native_array_detection('unchanged')
             outputs.append(detector.dict_fuzzy_crisprs)

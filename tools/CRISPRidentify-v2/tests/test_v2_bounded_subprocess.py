@@ -6,10 +6,9 @@ import time
 import unittest
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = (
-    ROOT / "components" / "bounded_subprocess.py"
+    ROOT / "components" / "runtime" / "bounded_subprocess.py"
 )
 
 

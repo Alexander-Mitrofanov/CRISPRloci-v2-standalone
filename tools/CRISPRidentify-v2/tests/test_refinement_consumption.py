@@ -1,15 +1,19 @@
 """Owned rescue storage may shrink only after complete evidence transfer."""
-from contextlib import ExitStack
 import gc
 import pickle
 import unittest
 import weakref
+from contextlib import ExitStack
 from unittest import mock
 
-from components.components_detection import ClusterSequence, FuzzySearch, RejectedFuzzyCandidateTopology
-from components.module_detection_refinement import DetectionRefinement
-from components import module_detection_refinement as module
-from tests.test_fuzzy_lattice_storage import family, compact, PARAMETERS, REPEAT, SOURCE
+from components.detection.search import (
+    ClusterSequence,
+    FuzzySearch,
+    RejectedFuzzyCandidateTopology,
+)
+from components.refinement import stage as module
+from components.refinement.stage import DetectionRefinement
+from tests.test_fuzzy_lattice_storage import PARAMETERS, REPEAT, SOURCE, compact, family
 
 
 def clone(value):
@@ -76,8 +80,9 @@ class RefinementConsumptionTests(unittest.TestCase):
         self.assertTrue(result['output'])
 
     def test_actual_terminal_and_pending_internal_repairs_keep_complete_records(self):
-        from tests.test_repeat_boundary_repair import synthetic as terminal_fixture, fuzzy, Locus
         from tests.test_internal_repeat_completion import synthetic as internal_fixture
+        from tests.test_repeat_boundary_repair import Locus, fuzzy
+        from tests.test_repeat_boundary_repair import synthetic as terminal_fixture
         source, parent = terminal_fixture()
         terminal = self.compare({Locus(0, len(source)): [fuzzy(parent)]}, source=source)
         self.assertGreater(terminal['boundary_stats']['children_generated'], 0)

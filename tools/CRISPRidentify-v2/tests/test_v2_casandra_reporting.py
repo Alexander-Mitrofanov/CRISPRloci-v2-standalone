@@ -1,10 +1,9 @@
 import copy
 import csv
 import importlib.util
-from pathlib import Path
 import tempfile
 import unittest
-
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT
@@ -23,11 +22,11 @@ def _load(name, path):
 
 cas_output = _load(
     "v2_cas_output_reporting_contract",
-    V2 / "components" / "cas_output.py",
+    V2 / "components" / "reporting" / "cas_output.py",
 )
 cas_html = _load(
     "v2_cas_html_reporting_contract",
-    V2 / "components" / "cas_html.py",
+    V2 / "components" / "reporting" / "cas_html.py",
 )
 
 

@@ -89,13 +89,16 @@ def test_candidate_reference_rejects_command_options_before_fetch():
 @pytest.mark.parametrize("version_file,readme,expected", [
     ("2.3.2\n", "# CRISPRidentify v2\n", "2.3.2"),
     (None, "# CRISPRidentify v2.3.1\n", "2.3.1"),
-    (None, "# CRISPRidentify v2\n", "2.3.2"),
+    (None, "# CRISPRidentify v2\n", None),
 ])
 def test_identify_candidate_version(tmp_path, monkeypatch, version_file, readme, expected):
     import update_tools
 
     lock = json.loads((update_tools.ROOT / "tools/tools.lock.json").read_text())
     entries = {entry["name"]: entry for entry in lock["tools"]}
+
+    if expected is None:
+        expected = entries["CRISPRidentify-v2"]["version"]
 
     def output(command, **kwargs):
         if command[-2:] == ["--get", "remote.origin.url"]:

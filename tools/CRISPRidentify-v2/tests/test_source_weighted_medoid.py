@@ -1,9 +1,9 @@
-from collections import Counter
 import itertools
 import random
 import unittest
+from collections import Counter
 
-from components import components_evaluated_arrays_enhancement as enhancement
+from components.refinement import enhancement_search as enhancement
 from tests.test_source_unit_edit_kernel import independent_distance
 
 

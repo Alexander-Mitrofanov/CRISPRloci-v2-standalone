@@ -1,18 +1,25 @@
 import copy
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
 
-from components.components_evaluated_arrays_enhancement import build_source_backed_candidate_from_boundaries as build
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-from components.report_model import ReportModelBuilder, ReportModelError
-from components.repeat_boundary_repair import propose_terminal_repairs, source_geometry
-from components.terminal_repair_completion import (
-    METHOD, apply_terminal_repair_completion, plan_terminal_repair_completion,
+from components.refinement.enhancement_search import (
+    build_source_backed_candidate_from_boundaries as build,
+)
+from components.refinement.repeat_boundary_repair import (
+    propose_terminal_repairs,
+    source_geometry,
+)
+from components.refinement.terminal_repair_completion import (
+    METHOD,
+    apply_terminal_repair_completion,
+    plan_terminal_repair_completion,
     replay_terminal_completion_basis,
 )
+from components.reporting.report_model import ReportModelBuilder, ReportModelError
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 from tests.test_repeat_boundary_repair import CORE, PARAMETERS, synthetic
 
 

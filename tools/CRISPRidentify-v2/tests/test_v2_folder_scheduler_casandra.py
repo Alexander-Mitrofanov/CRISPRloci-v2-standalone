@@ -3,10 +3,9 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SCHEDULER_PATH = (
-    ROOT / "components" / "folder_scheduler.py"
+    ROOT / "components" / "runtime" / "folder_scheduler.py"
 )
 
 

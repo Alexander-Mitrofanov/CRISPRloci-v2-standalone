@@ -2,20 +2,22 @@ import random
 import unittest
 from unittest.mock import mock_open, patch
 
-from components.components_detection import VmatchRun
-from components.legacy_hash import py37_hash_int_tuple
-from components.module_detection import NATIVE_PATTERN_BATCH_SIZE
-from components.sequence_path_vectorizer import BITMASK_16
-from components.sequence_path_vectorizer import NATIVE_ASCII_PATH_FEATURES_AVAILABLE
-from components.sequence_path_vectorizer import NATIVE_PATH_FEATURE_COUNTS_AVAILABLE
-from components.sequence_path_vectorizer import NATIVE_PACKED_PATH_FEATURES_AVAILABLE
-from components.sequence_path_vectorizer import SparseFeatureMatrix
-from components.sequence_path_vectorizer import _copy_packed_feature_row
-from components.sequence_path_vectorizer import _direct_feature_dict
-from components.sequence_path_vectorizer import _native_packed_feature_row
-from components.sequence_path_vectorizer import vectorize_sequence_paths
-from components.sequence_path_vectorizer import _feature_hash3
-from components.sequence_path_vectorizer import _feature_hash4
+from components.detection.search import VmatchRun
+from components.detection.stage import NATIVE_PATTERN_BATCH_SIZE
+from components.scoring.legacy_hash import py37_hash_int_tuple
+from components.scoring.sequence_path_vectorizer import (
+    BITMASK_16,
+    NATIVE_ASCII_PATH_FEATURES_AVAILABLE,
+    NATIVE_PACKED_PATH_FEATURES_AVAILABLE,
+    NATIVE_PATH_FEATURE_COUNTS_AVAILABLE,
+    SparseFeatureMatrix,
+    _copy_packed_feature_row,
+    _direct_feature_dict,
+    _feature_hash3,
+    _feature_hash4,
+    _native_packed_feature_row,
+    vectorize_sequence_paths,
+)
 
 
 class ExactWidthFeatureHashTests(unittest.TestCase):
@@ -55,13 +57,13 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
             _direct_feature_dict(sequence) for sequence in sequences
         ]
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_NATIVE_PATH_FEATURE_COUNTS", None):
             native_events = [
                 _direct_feature_dict(sequence) for sequence in sequences
             ]
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "NATIVE_PATH_FEATURES_AVAILABLE", False):
             fallback = [
                 _direct_feature_dict(sequence) for sequence in sequences
@@ -120,7 +122,7 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
             _direct_feature_dict(sequence) for sequence in sequences
         ]
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_neighborhood_radius_hashes",
                 side_effect=AssertionError("Python neighborhood fallback used")):
             observed = [
@@ -137,7 +139,7 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
         sequence = "ACGTN-xyz"
         expected = _direct_feature_dict(sequence)
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_NATIVE_PATH_FEATURE_ASCII_ROW",
                 return_value=-2) as ascii_row:
             observed = _native_packed_feature_row(sequence).as_dict()
@@ -146,7 +148,7 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
 
     def test_native_ascii_rejects_unsupported_inputs_before_ffi(self):
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_NATIVE_PATH_FEATURE_ASCII_ROW") as ascii_row:
             with self.assertRaisesRegex(ValueError, "requires ASCII"):
                 _native_packed_feature_row("é")
@@ -176,9 +178,9 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
             _direct_feature_dict(sequence) for sequence in sequences
         ]
         with patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_NATIVE_PATH_FEATURE_ROW", None), patch(
-                "components.sequence_path_vectorizer."
+                "components.scoring.sequence_path_vectorizer."
                 "_NATIVE_PATH_FEATURE_DOT", None):
             observed = vectorize_sequence_paths(sequences)
         self.assertEqual(expected, list(observed._rows))
@@ -189,7 +191,7 @@ class ExactWidthFeatureHashTests(unittest.TestCase):
     def test_vmatch_index_omits_unused_tables(self):
         runner = VmatchRun.__new__(VmatchRun)
         with patch(
-                "components.components_detection.subprocess.run") as run:
+                "components.detection.search.subprocess.run") as run:
             runner._mkvtree_command()
         # Index the call tuple for compatibility with the older mock runtime
         # in the frozen CRISPRidentify test environment.

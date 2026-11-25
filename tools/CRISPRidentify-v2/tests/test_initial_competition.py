@@ -3,20 +3,24 @@ import copy
 import gzip
 import itertools
 import json
-from pathlib import Path
 import tempfile
-from types import SimpleNamespace
 import unittest
+from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
-from components.candidate_origins import (
-    candidate_origin_kind, candidate_origin_evidence, inherit_candidate_origins,
-    mark_ordinary_birth, mark_repair_origin,
+from components.evidence.candidate_origins import (
+    candidate_origin_evidence,
+    candidate_origin_kind,
+    inherit_candidate_origins,
+    mark_ordinary_birth,
+    mark_repair_origin,
 )
-from components.initial_competition import (
-    METADATA_KEY, competition_evidence,
+from components.evidence.initial_competition import (
+    METADATA_KEY,
+    competition_evidence,
 )
-from components.module_evaluation import ArrayEvaluation
+from components.scoring.evaluation import ArrayEvaluation
 
 
 def row(score, intervals, *, repair=False, eligible=True, valid=True):
@@ -37,7 +41,7 @@ def row(score, intervals, *, repair=False, eligible=True, valid=True):
 
 
 def evaluate(rows, policy="conservative", split=True):
-    with patch("components.module_evaluation.build_advanced_fuzzy_search_filter",
+    with patch("components.scoring.evaluation.build_advanced_fuzzy_search_filter",
                return_value=lambda candidate: candidate.valid):
         return ArrayEvaluation({}, {"param_reconstruction_policy": policy,
             "param_split_competitive_components": split},
@@ -174,10 +178,13 @@ class InitialCompetitionTests(unittest.TestCase):
 
 class InitialCompetitionReportingTests(unittest.TestCase):
     def test_report_and_sidecar_expose_same_tie_and_origin(self):
-        from tests.test_candidate_evidence import _fixture, PARAMETERS
-        from components.candidate_evidence import stage_candidate_evidence
-        from components.output_transaction import OutputTransaction
-        from components.report_model import ReportModelBuilder, ReportModelError
+        from components.reporting.candidate_evidence import stage_candidate_evidence
+        from components.reporting.output_transaction import OutputTransaction
+        from components.reporting.report_model import (
+            ReportModelBuilder,
+            ReportModelError,
+        )
+        from tests.test_candidate_evidence import PARAMETERS, _fixture
         source, original = _fixture()
         key = next(iter(original[0]))
         anchor, donor = original[0][key][0], original[1][key][0]

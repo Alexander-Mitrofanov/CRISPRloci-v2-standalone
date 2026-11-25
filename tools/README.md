@@ -10,9 +10,9 @@ Every source tree retains its original license and upstream provenance; see
 
 | Tool | Version | Pinned commit | Command |
 | --- | --- | --- | --- |
-| [CRISPRidentify-v2](CRISPRidentify-v2/README.md) | 2.3.2 | `e8a3d7c038ea` | `./crispridentify` |
+| [CRISPRidentify-v2](CRISPRidentify-v2/README.md) | 2.4.3 | `63e563ec3707` | `./crispridentify` |
 | [CasAndra](CasAndra/README.md) | 0.3.0.dev2 | `ba046f90242a` | `casandra` |
-| [CRISPRtracrRNA-v3](CRISPRtracrRNA-v3/README.md) | 3.0.0 | `9307e2667733` | `crisprtracrrna` |
+| [CRISPRtracrRNA-v3](CRISPRtracrRNA-v3/README.md) | 3.0.0 | `9461c6eea80d` | `crisprtracrrna` |
 | [SpacerPlacer](SpacerPlacer/README.md) | 1.0.1.post3 | `2a91510a8ec9` | `spacerplacer` |
 | [evOr](evOr/README.md) | 1.0.4 | `505dafe5bc11` | `crispr-evor` |
 | [CRISPRleader-v2](CRISPRleader-v2/README.md) | 2.0.0a1 | `b53101638356` | `crisprleader` |

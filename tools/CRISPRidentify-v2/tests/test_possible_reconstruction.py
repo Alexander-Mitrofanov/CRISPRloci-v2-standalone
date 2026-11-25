@@ -1,26 +1,36 @@
 """Possible-tier extents preserve original confidence and full observations."""
 
 import copy
-from dataclasses import replace
 import hashlib
 import json
-from pathlib import Path
 import unittest
+from dataclasses import replace
+from pathlib import Path
 
 import numpy as np
 
-from components.components_detection_refinement import CrisprCandidate
-from components.feature_schema import COMPACT_FEATURE_SCHEMA
-from components.compact_model import predict_compact_scores
-from components.possible_reconstruction import (
-    METHOD, POLICY, reconstruct_possible_arrays, validate_possible_reconstruction_basis,
-    possible_reconstruction_summary, validate_possible_reconstruction_audit,
+from components.reconstruction.possible_reconstruction import (
+    METHOD,
+    POLICY,
+    possible_reconstruction_summary,
+    reconstruct_possible_arrays,
+    validate_possible_reconstruction_audit,
+    validate_possible_reconstruction_basis,
 )
-from components.reconstruction_selection import CandidateValidation, select_reconstructions
-from components.reconstruction_transaction import _digest, reconstruct_accepted_arrays
+from components.reconstruction.reconstruction_selection import (
+    CandidateValidation,
+    select_reconstructions,
+)
+from components.reconstruction.reconstruction_transaction import (
+    _digest,
+    reconstruct_accepted_arrays,
+)
+from components.refinement.candidates import CrisprCandidate
+from components.scoring.compact_model import predict_compact_scores
+from components.scoring.feature_schema import COMPACT_FEATURE_SCHEMA
 from tests.test_candidate_evidence import PARAMETERS
-from tests.test_reconstruction_transaction import fixture as bf_fixture
 from tests.test_reconstruction_boundary_family import fixture as family_fixture
+from tests.test_reconstruction_transaction import fixture as bf_fixture
 
 
 def fixture(*, equal_period=False, boundary_tie=False):
@@ -97,8 +107,11 @@ class PossibleReconstructionTests(unittest.TestCase):
         self.assertEqual(chosen[3]["classification_basis"]["method"], METHOD)
 
     def test_original_witness_survives_selected_proof_only_metadata(self):
-        from components.candidate_origins import mark_repair_origin
-        from components.initial_competition import initial_competition_groups, validate_ordinary_witness_inventory
+        from components.evidence.candidate_origins import mark_repair_origin
+        from components.evidence.initial_competition import (
+            initial_competition_groups,
+            validate_ordinary_witness_inventory,
+        )
         source, categories, scorer = fixture()
         key = next(iter(categories[2]))
         core, donor = categories[2][key][0], categories[3][key][0]
@@ -121,7 +134,7 @@ class PossibleReconstructionTests(unittest.TestCase):
             validate_ordinary_witness_inventory(missing, source)
 
     def test_s1_nontransitive_conflict_and_symmetric_proposal_collisions(self):
-        from tests.test_initial_competition import row, evaluate, members
+        from tests.test_initial_competition import evaluate, members, row
         ordinary = row(.68, [(10, 16), (40, 46), (70, 76)])
         repaired = row(.73, [(13, 19), (43, 49), (73, 79)], repair=True)
         inputs = evaluate([ordinary, repaired])
@@ -145,8 +158,8 @@ class PossibleReconstructionTests(unittest.TestCase):
             self.assertEqual([d.reason for d in decision.decisions], ["proposal_collision"] * 2)
 
     def test_recorded_multi_owner_scope_does_not_reenter_after_other_core_is_absent(self):
+        from components.evidence.initial_competition import initial_competition_groups
         from tests.test_initial_competition import row
-        from components.initial_competition import initial_competition_groups
         a = row(.71, [(100, 110), (140, 150), (180, 190)])
         b = row(.70, [(300, 310), (340, 350), (380, 390)])
         bridge = row(.65, [(i, i + 10) for i in (100, 140, 180, 220, 260, 300, 340, 380)], repair=True)
@@ -247,7 +260,7 @@ class PossibleReconstructionTests(unittest.TestCase):
         self.assertIs(out[3][key][2], categories[2][key][0])
 
     def test_only_direct_anchors_are_scored_and_original_origin_mutation_fails(self):
-        from components.candidate_origins import inherit_candidate_origins
+        from components.evidence.candidate_origins import inherit_candidate_origins
         source, categories, scorer = fixture()
         key = next(iter(categories[2]))
         core, donor = categories[2][key][0], categories[3][key][0]

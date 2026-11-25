@@ -2,10 +2,11 @@ import copy
 import unittest
 from unittest.mock import patch
 
-from components.components_evaluated_arrays_enhancement import (
+from components.detection.search import TwoRepeatTerminalRepairSeed
+from components.refinement.enhancement_search import (
     build_source_backed_candidate_from_boundaries,
 )
-from components.fast_accepted_family_rescue import (
+from components.rescue.fast_accepted_family_rescue import (
     ACCEPTED_FAMILY_RESCUE_POLICY,
     EXACT_TEMPLATE_SATELLITE,
     FAMILY_TERMINAL,
@@ -16,9 +17,7 @@ from components.fast_accepted_family_rescue import (
     replay_classification_evidence,
     select_exact_template_raw_seed_parents,
 )
-from components.components_detection import TwoRepeatTerminalRepairSeed
-from components.module_evaluation import build_advanced_fuzzy_search_filter
-
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 
 PARAMETERS = {
     "param_min_repeats": 3,
@@ -296,11 +295,11 @@ class FastAcceptedFamilyRescueTests(unittest.TestCase):
 
         def select(selected_seeds):
             with patch(
-                "components.fast_accepted_family_rescue."
+                "components.rescue.fast_accepted_family_rescue."
                 "_template_satellite_proposals",
                 return_value=(object(),),
             ) as proposal_builder, patch(
-                "components.fast_accepted_family_rescue."
+                "components.rescue.fast_accepted_family_rescue."
                 "_select_unique_source_winner",
                 return_value=object(),
             ):

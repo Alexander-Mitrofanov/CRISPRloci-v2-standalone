@@ -24,6 +24,10 @@ behavior are unambiguous.
 
 ## Development setup
 
+Use the [code and test map](docs/CODE_MAP.md) to locate the owning package and
+focused tests. [AGENTS.md](AGENTS.md) records repository boundaries, import
+conventions, and the short verification workflow for coding agents.
+
 Use the locked Linux x86-64 environment:
 
 ```bash

@@ -3,7 +3,7 @@ import random
 import unittest
 from unittest.mock import patch
 
-from components import components_evaluated_arrays_enhancement as enhancement
+from components.refinement import enhancement_search as enhancement
 
 
 def _legacy_distance(first, second):

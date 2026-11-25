@@ -1,11 +1,11 @@
 import json
+import unittest
 from concurrent.futures import ThreadPoolExecutor
 from threading import Barrier, Event
-import unittest
 from unittest.mock import patch
 
-from components import components_evaluated_arrays_enhancement as enhancement
-from components.fast_run_rescue import candidate_score_fingerprint
+from components.refinement import enhancement_search as enhancement
+from components.rescue.fast_run_rescue import candidate_score_fingerprint
 from tests.test_repeat_boundary_repair import synthetic
 
 

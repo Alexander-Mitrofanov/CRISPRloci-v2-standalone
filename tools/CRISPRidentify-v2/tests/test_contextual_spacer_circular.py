@@ -9,14 +9,14 @@ import random
 import unittest
 from unittest.mock import Mock
 
-from components.circular_array_join import CircularTopologyEvidence
-from components.circular_array_join_integration import (
+from components.reconstruction.localized_spacer_context import localized_block
+from components.refinement.candidates import CrisprCandidate
+from components.rescue.circular_array_join import CircularTopologyEvidence
+from components.rescue.circular_array_join_integration import (
     candidate_from_circular_view,
     evaluate_accepted_circular_edge_joins,
 )
-from components.components_detection_refinement import CrisprCandidate
-from components.localized_spacer_context import localized_block
-from components.module_evaluation import build_advanced_fuzzy_search_filter
+from components.scoring.evaluation import build_advanced_fuzzy_search_filter
 from tests.test_reconstruction_validation import PARAMETERS, REPEAT, candidate_source
 
 

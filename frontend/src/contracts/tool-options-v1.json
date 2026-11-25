@@ -6,8 +6,8 @@
       "name": "CRISPRidentify",
       "modes": ["detection", "reconstruction", "orientation", "leader", "repeat_context"],
       "description": "Detect CRISPR arrays and score candidates.",
-      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc/README.md",
-      "revision": "e8a3d7c038eab27bdb955f97c5cd6bc3666a17dc",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRidentify-v2/blob/63e563ec3707efdb238637d1a3cd325b8830fad2/README.md",
+      "revision": "63e563ec3707efdb238637d1a3cd325b8830fad2",
       "cli_modes": [
         {
           "name": "crispridentify (direct flags)",
@@ -148,8 +148,8 @@
       "name": "CRISPRtracrRNA",
       "modes": ["tracrrna", "loci"],
       "description": "Screen covariance models or run the complete locus workflow.",
-      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/9307e26677335ac4d2cf67fbd3c9294c9a08f7f4/README.md",
-      "revision": "9307e26677335ac4d2cf67fbd3c9294c9a08f7f4",
+      "documentation": "https://github.com/Alexander-Mitrofanov/CRISPRtracrRNA-v3/blob/9461c6eea80d98832f4474bcf456ac3483ab927a/README.md",
+      "revision": "9461c6eea80d98832f4474bcf456ac3483ab927a",
       "cli_modes": [
         {
           "name": "run --mode model",
